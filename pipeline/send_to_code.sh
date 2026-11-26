@@ -13,6 +13,8 @@
 #        FIGMA_FILE  file key             (default: the Ascendum DS file)
 #        GH    gh command                 (default: gh)
 set -euo pipefail
+# The whole script is one block, read before it runs: switching branches below rewrites this file on disk.
+{
 
 MSG="${1:?usage: send_to_code.sh \"<what changed>\" [Collection,Collection]}"
 ONLY="${2:-}"
@@ -83,3 +85,5 @@ BODY="$TMP/body.md"
 } > "$BODY"
 $GH pr create --base main --head "$BRANCH" --title "Send to code: $MSG" --body-file "$BODY"
 git switch -q -
+exit 0
+}
