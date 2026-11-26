@@ -24,7 +24,7 @@ export const Who = ({ k }) => <b style={{ display: 'block', marginBottom: 4, fon
     ['Pull request', <><Who k="Automatic" />GitHub Actions turns the snapshot into a branch and a pull request with the token diff. If another collection is still being edited, only the ready one is taken (scoped sync).</>],
     ['Tokens and contracts', <><Who k="Automatic" />One script turns the snapshot into tokens.json, tokens.css, the AI contract and one contract per component. Nobody edits these files by hand.</>],
     ['Gate', <><Who k="Automatic" />GitHub Actions runs the blocking checks: aliases, palette, contrast, code names, text kept when a variant changes, breaking changes, colours typed by hand in code, undefined CSS properties. One failure turns the pull request red.</>],
-    ['Review', <><Who k="A person" />Someone looks at the preview build and merges. A breaking change must be accepted by name in the same pull request.</>],
+    ['Review', <><Who k="A person" />Someone looks at the preview build and merges. GitHub refuses the merge while Design system checks is red, for everyone, admins included (tested: pull request 28). A breaking change must be accepted by name in the same pull request.</>],
     ['Publish and release', <><Who k="Automatic" />After the merge, the site is built and published only if every check passed. A release in GitHub points to the commit and to the Figma version.</>],
   ]} />
 </Section>
