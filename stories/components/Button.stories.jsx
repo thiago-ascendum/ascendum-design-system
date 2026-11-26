@@ -19,11 +19,11 @@ export default {
       use: ['Start the label with a verb and say what happens: "Save changes".', 'Keep one Solid button per view.', 'Use the inverted surface on dark sections.'],
       avoid: ['Two Solid buttons side by side.', 'Labels such as "Button", "OK" or "Click here".', 'Decorative arrows or icons that add no meaning.', 'Rounded corners: 0px is the brand signature.'],
       tokens: [
-        ['button/fill-hover', '--button-fill-hover', 'Fill and border of Solid; fill of Outline and Ghost on hover'],
+        ['button/fill-solid', '--button-fill-solid', 'Fill and border of Solid; fill of Outline and Ghost on hover'],
         ['button/fill-solid-hover', '--button-fill-solid-hover', 'Solid on hover (a proposal)'],
         ['button/stroke', '--button-stroke', 'Border of Outline'],
         ['button/label', '--button-label', 'Label of Outline and Ghost'],
-        ['button/label-hover', '--button-label-hover', 'Label of Solid, and of the others on hover'],
+        ['button/label-solid', '--button-label-solid', 'Label of Solid, and of the others on hover'],
         ['component/button/padding-h', '--button-padding-h', 'Left and right padding: 28 desktop, 22 mobile'],
         ['component/button/padding-v', '--button-padding-v', 'Top and bottom padding: 16 desktop, 12 mobile'],
         ['radius/none', '--button-radius', 'Corners: 0'],

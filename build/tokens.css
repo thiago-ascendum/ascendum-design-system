@@ -65,16 +65,16 @@
   --quote-line: var(--neutral-700);
   --border-strong: var(--brand-midnight);
   --button-fill: #00000000;
-  --button-fill-hover: var(--brand-midnight);
-  --button-fill-hover-inverted: var(--brand-milkyway);
   --button-fill-pressed: var(--neutral-800);
   --button-fill-pressed-inverted: var(--neutral-400);
+  --button-fill-hover: var(--brand-midnight);
   --button-fill-solid-hover: var(--neutral-850);
   --button-fill-solid-hover-inverted: var(--neutral-200);
+  --button-fill-hover-inverted: var(--brand-milkyway);
   --button-label: var(--brand-midnight);
+  --button-label-inverted: var(--brand-milkyway);
   --button-label-hover: var(--brand-milkyway);
   --button-label-hover-inverted: var(--brand-midnight);
-  --button-label-inverted: var(--brand-milkyway);
   --button-stroke: var(--brand-midnight);
   --button-stroke-inverted: var(--brand-milkyway);
   --control-fill-hover: var(--neutral-200);
@@ -99,8 +99,8 @@
   --text-muted: var(--neutral-750);
   --text-on-accent: var(--brand-midnight);
   --form-placeholder: var(--neutral-750);
-  --button-surface-fill-hover: var(--button-fill-hover);
   --button-surface-fill-pressed: var(--button-fill-pressed);
+  --button-surface-fill-hover: var(--button-fill-hover);
   --button-surface-fill-solid-hover: var(--button-fill-solid-hover);
   --button-surface-focus: var(--border-focus);
   --button-surface-label: var(--button-label);
@@ -287,16 +287,16 @@
   --border-muted: var(--neutral-700);
   --quote-line: var(--neutral-600);
   --border-strong: var(--brand-milkyway);
-  --button-fill-hover: var(--brand-milkyway);
-  --button-fill-hover-inverted: var(--brand-midnight);
   --button-fill-pressed: var(--neutral-400);
   --button-fill-pressed-inverted: var(--neutral-800);
+  --button-fill-hover: var(--brand-milkyway);
   --button-fill-solid-hover: var(--neutral-200);
   --button-fill-solid-hover-inverted: var(--neutral-850);
+  --button-fill-hover-inverted: var(--brand-midnight);
   --button-label: var(--brand-milkyway);
+  --button-label-inverted: var(--brand-midnight);
   --button-label-hover: var(--brand-midnight);
   --button-label-hover-inverted: var(--brand-milkyway);
-  --button-label-inverted: var(--brand-midnight);
   --button-stroke: var(--brand-milkyway);
   --button-stroke-inverted: var(--brand-midnight);
   --control-fill-hover: var(--neutral-850);
@@ -322,8 +322,8 @@
   --form-placeholder: var(--neutral-600);
 }
 [data-surface="inverted"] {
-  --button-surface-fill-hover: var(--button-fill-hover-inverted);
   --button-surface-fill-pressed: var(--button-fill-pressed-inverted);
+  --button-surface-fill-hover: var(--button-fill-hover-inverted);
   --button-surface-fill-solid-hover: var(--button-fill-solid-hover-inverted);
   --button-surface-focus: var(--button-stroke-inverted);
   --button-surface-label: var(--button-label-inverted);

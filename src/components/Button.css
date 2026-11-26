@@ -10,20 +10,20 @@
 .ds-button:disabled { opacity: 0.4; cursor: not-allowed; }
 
 /* Primary surface */
-.ds-button--solid { background: var(--button-fill-hover); border-color: var(--button-fill-hover); color: var(--button-label-hover); }
+.ds-button--solid { background: var(--button-fill-solid); border-color: var(--button-fill-solid); color: var(--button-label-solid); }
 .ds-button--solid:hover:not(:disabled) { background: var(--button-fill-solid-hover); border-color: var(--button-fill-solid-hover); }
 .ds-button--outline { border-color: var(--button-stroke); }
-.ds-button--outline:hover:not(:disabled), .ds-button--ghost:hover:not(:disabled) { background: var(--button-fill-hover); color: var(--button-label-hover); }
+.ds-button--outline:hover:not(:disabled), .ds-button--ghost:hover:not(:disabled) { background: var(--button-fill-solid); color: var(--button-label-solid); }
 
 /* Pressed: one step past hover. */
 .ds-button--solid:active:not(:disabled) { background: var(--button-fill-pressed); border-color: var(--button-fill-pressed); }
-.ds-button--outline:active:not(:disabled), .ds-button--ghost:active:not(:disabled) { background: var(--button-fill-solid-hover); border-color: var(--button-fill-solid-hover); color: var(--button-label-hover); }
+.ds-button--outline:active:not(:disabled), .ds-button--ghost:active:not(:disabled) { background: var(--button-fill-solid-hover); border-color: var(--button-fill-solid-hover); color: var(--button-label-solid); }
 /* Inverted surface: for dark sections. It follows the mode. */
 .ds-button--inverted { color: var(--button-label-inverted); }
 .ds-button--inverted:focus-visible { outline-color: var(--button-stroke-inverted); }
-.ds-button--inverted.ds-button--solid { background: var(--button-fill-hover-inverted); border-color: var(--button-fill-hover-inverted); color: var(--button-label-hover-inverted); }
+.ds-button--inverted.ds-button--solid { background: var(--button-fill-solid-inverted); border-color: var(--button-fill-solid-inverted); color: var(--button-label-solid-inverted); }
 .ds-button--inverted.ds-button--solid:hover:not(:disabled) { background: var(--button-fill-solid-hover-inverted); border-color: var(--button-fill-solid-hover-inverted); }
 .ds-button--inverted.ds-button--outline { border-color: var(--button-stroke-inverted); }
-.ds-button--inverted.ds-button--outline:hover:not(:disabled), .ds-button--inverted.ds-button--ghost:hover:not(:disabled) { background: var(--button-fill-hover-inverted); color: var(--button-label-hover-inverted); }
+.ds-button--inverted.ds-button--outline:hover:not(:disabled), .ds-button--inverted.ds-button--ghost:hover:not(:disabled) { background: var(--button-fill-solid-inverted); color: var(--button-label-solid-inverted); }
 .ds-button--inverted.ds-button--solid:active:not(:disabled) { background: var(--button-fill-pressed-inverted); border-color: var(--button-fill-pressed-inverted); }
-.ds-button--inverted.ds-button--outline:active:not(:disabled), .ds-button--inverted.ds-button--ghost:active:not(:disabled) { background: var(--button-fill-solid-hover-inverted); border-color: var(--button-fill-solid-hover-inverted); color: var(--button-label-hover-inverted); }
+.ds-button--inverted.ds-button--outline:active:not(:disabled), .ds-button--inverted.ds-button--ghost:active:not(:disabled) { background: var(--button-fill-solid-hover-inverted); border-color: var(--button-fill-solid-hover-inverted); color: var(--button-label-solid-inverted); }

@@ -2,9 +2,9 @@
   "added": {
     "components": 0,
     "textStyles": 0,
-    "tokens": 50
+    "tokens": 54
   },
-  "breaking": 57,
+  "breaking": 61,
   "removedComponents": [
     "SectionTag"
   ],
@@ -102,6 +102,10 @@
     "UI/Tag"
   ],
   "removedTokens": [
+    "button/fill-hover",
+    "button/fill-hover-inverted",
+    "button/label-hover",
+    "button/label-hover-inverted",
     "component/avatar/font-xl",
     "component/avatar/size-xl",
     "component/combobox/max-width",
