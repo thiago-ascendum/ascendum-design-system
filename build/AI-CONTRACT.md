@@ -1,6 +1,6 @@
 # Ascendum Design System · contract for AI tools
 
-Generated from snapshot `5lhRMZkLHZijqgdigjk3J1` on 2026-11-26. Do not edit by hand: change the design system, then regenerate.
+Generated from snapshot `live` on 2026-11-26. Do not edit by hand: change the design system, then regenerate.
 
 Read this file instead of the Figma pages. The pages are documentation for people; their layout is not a pattern to copy.
 
@@ -128,7 +128,7 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--error` | error | #B02A32 |  | Solid error fill: the same strong colour in Light and Dark, with on-error (white) on top |
 | `--error-container` | error-container | #FDF1F2 | #3E2324 | Background of an error message. |
 | `--focus` | focus | #212121 | #F5F5F5 | Focus ring on every interactive element. |
-| `--info` | info | #2369AA |  | Solid information fill: the same strong colour in Light and Dark, with on-info (white) on  |
+| `--info` | info | #427BB1 | #2369AA | Solid information fill: the same strong colour in Light and Dark, with on-info (white) on  |
 | `--info-container` | info-container | #F3F8FD | #212F3C | Background of an information message. |
 | `--inverse-on-primary` | inverse-on-primary | #212121 | #F5F5F5 | Text and icons on inverse-primary. |
 | `--inverse-on-surface` | inverse-on-surface | #F5F5F5 | #212121 | Text and icons on inverse-surface. |

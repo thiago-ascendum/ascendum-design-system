@@ -197,7 +197,7 @@ Not in a snapshot, so not in this list: prototype interactions (110 on 18 compon
 | Semantic | `accent-stone-container` | Dark: accent/stone-soft; Light: accent/stone-soft |
 | Semantic | `error` | Dark: error/40; Light: error/40 |
 | Semantic | `focus` | Dark: brand/milkyway; Light: brand/midnight |
-| Semantic | `info` | Dark: info/40; Light: info/40 |
+| Semantic | `info` | Dark: info/40; Light: info/50 |
 | Semantic | `inverse-on-surface-variant` | Dark: neutral/750; Light: neutral/500 |
 | Semantic | `inverse-primary-hover` | Dark: neutral/850; Light: neutral/200 |
 | Semantic | `inverse-primary-pressed` | Dark: neutral/800; Light: neutral/400 |
