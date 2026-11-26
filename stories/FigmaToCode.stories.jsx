@@ -174,7 +174,7 @@ const Page = () => (
 
 export default {
   title: 'Start here/Figma to Code',
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: 'fullscreen', options: { showPanel: false } },
 };
 
 export const FigmaToCode = { name: 'Figma to Code', render: () => <Page /> };
