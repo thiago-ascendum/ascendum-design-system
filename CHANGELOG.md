@@ -51,6 +51,8 @@ Clean-up after the design review of 5 November.
 - File Uploader: the failed state shows a warning icon, the reason and a Try again action.
 - Team and stakeholder cards use the Avatar component.
 - Getting Started, Changelog and Contribution & Governance are guided pages built from the components of the library.
+- Documentation cards: every card and every dark panel was looked at. Fixed: the logo in the inverted Key Stakeholders Card, the Side Nav Item rows, the Select samples and two raw labels.
+- Every page canvas in the Figma file is now dark (#1E1E1E), so the page frames read against it.
 
 ### Added
 
@@ -58,6 +60,17 @@ Clean-up after the design review of 5 November.
 - Colour page: Status and Semantic roles sections, in light and dark.
 - A documentation card on 45 components. 31 also show dark mode.
 - A card on each pattern that lists the components it is built from.
+- Section pages 04 to 10: an opening statement and an index of the pages in the section, counted from the file. Page 10 says plainly that it is empty.
+- Pages 90 and 99: an opening card saying tools and designers must ignore the page.
+- Typography: a specimen of all 16 text styles in desktop and mobile, and a guide to which style does which job.
+- Spacing, Grid & Layout: the spacing scale with what each step is for, the column grid drawn from the tokens, and one layout on desktop and on mobile.
+- Radius & Elevation: every radius on a real component that binds it, and the elevation styles on real overlays.
+- Iconography: a "Missing: UI icon set" card, and a counted list of which components already use which icon.
+- Logo: the four variants on light and dark surfaces. Clear space and minimum size are marked as proposals.
+- Photography: the brief for the six missing reference photographs. No photographs were added.
+- Tone of Voice: each principle has a before and after shown in a real component.
+- Colour: a contrast table of every text role on its surfaces, light and dark, computed from the variable values.
+- Code: 14 components built from the tokens, with a documentation site published on every change.
 
 ## 1.0.0 · never published
 
