@@ -27,7 +27,7 @@ export default {
         ['component/input/padding-h', '--input-padding-h', 'Left and right padding: 16'],
         ['component/input/textarea-min', '--input-textarea-min', 'Minimum height of the textarea: 80'],
         ['on-surface-placeholder', '--on-surface-placeholder', 'Placeholder text'],
-        ['error', '--error', 'Border in the error state'],
+        ['error', '--on-surface-error', 'Border in the error state'],
         ['focus', '--focus', 'Focus ring, 2px, set 4px off the edge'],
       ],
       a11y: [

@@ -2,9 +2,9 @@
   "added": {
     "components": 0,
     "textStyles": 0,
-    "tokens": 75
+    "tokens": 127
   },
-  "breaking": 93,
+  "breaking": 105,
   "removedComponents": [
     "SectionTag"
   ],
@@ -157,9 +157,21 @@
     "neutral/300",
     "neutral/950",
     "size/container-half",
+    "status/error",
+    "status/error-bg",
+    "status/error-bg-dark",
     "status/error-border",
+    "status/info",
+    "status/info-bg",
+    "status/info-bg-dark",
     "status/info-border",
+    "status/success",
+    "status/success-bg",
+    "status/success-bg-dark",
     "status/success-border",
+    "status/warning",
+    "status/warning-bg",
+    "status/warning-bg-dark",
     "status/warning-border",
     "text/access-muted",
     "text/default",

@@ -26,9 +26,9 @@ export default {
         ['radius/pill', '--radius-pill', 'Corners of the track and the fill'],
         ['outline-variant', '--outline-variant', 'Track'],
         ['outline', '--outline', 'Fill of the Default tone'],
-        ['success', '--success', 'Fill of Success'],
-        ['warning', '--warning', 'Fill of Warning'],
-        ['error', '--error', 'Fill of Error'],
+        ['success', '--on-surface-success', 'Fill of Success'],
+        ['warning', '--on-surface-warning', 'Fill of Warning'],
+        ['error', '--on-surface-error', 'Fill of Error'],
       ],
       a11y: [
         'The bar has role="progressbar" with aria-valuenow, aria-valuemin 0 and aria-valuemax 100. The value is kept between 0 and 100.',

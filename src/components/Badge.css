@@ -6,7 +6,7 @@
   background: var(--surface-container-low); color: var(--on-surface);
 }
 .ds-badge__dot { width: var(--badge-dot); height: var(--badge-dot); border-radius: var(--radius-pill); background: currentColor; }
-.ds-badge--success { background: var(--success-container); color: var(--success); }
-.ds-badge--info { background: var(--info-container); color: var(--info); }
-.ds-badge--warning { background: var(--warning-container); color: var(--warning); }
-.ds-badge--error { background: var(--error-container); color: var(--error); }
+.ds-badge--success { background: var(--success-container); color: var(--on-surface-success); }
+.ds-badge--info { background: var(--info-container); color: var(--on-surface-info); }
+.ds-badge--warning { background: var(--warning-container); color: var(--on-surface-warning); }
+.ds-badge--error { background: var(--error-container); color: var(--on-surface-error); }

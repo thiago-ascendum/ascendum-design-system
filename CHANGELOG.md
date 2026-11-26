@@ -23,6 +23,14 @@ Clean-up after the design review of 5 November.
 | A colour token | Colour tokens are named by their job now: surface, on-surface, primary, outline and their inverse versions. 65 names became 41 roles and 13 Context tokens. | Nothing in Figma: every binding moved with the rename. In code, use the table below. |
 | A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: text/access-muted to on-surface-variant, UI/Tag and UI/Eyebrow to UI/Label. |
 
+### Status colours, solid and tonal
+
+- Error, warning, success and info are tonal palettes of 11 tones (10 to 98), built from the four colours already approved (tones 40, 95, 20, 60). Tone is CIE L*: two tones 50 apart pass 4.5:1.
+- Five roles per status, as in the DS StratNova: `error` is the solid fill, tone 40 in both modes, with `on-error` (white) on it; `error-container` with `on-error-container`; `on-surface-error` for text, icons and borders on any surface (tone 40 Light, 80 Dark).
+- The old `error` role is now `on-surface-error`: every binding kept its colour. In code, `--error` used for text becomes `--on-surface-error`.
+- In Dark mode status text moved from tone 60 to 80: lighter, and AA on every dark surface.
+- Found while documenting: `outline-medium` (borders of controls at rest) is 1.3:1 on the Light page, under the 3:1 that control borders need. A decision for the owner.
+
 ### Colour roles: old name to new name
 
 One name per job, like Material 3. In Figma the bindings moved by themselves. In code, rename the CSS variables.
