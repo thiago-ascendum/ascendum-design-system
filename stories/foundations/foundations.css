@@ -1,0 +1,94 @@
+/* Foundations pages (Colour, Typography, Spacing), drawn like the Figma foundations frames: page colour, 64 padding,
+   56 between sections, Display title, H4 section titles with a lead under them, white cards. Tokens only. */
+.fx-page { background: var(--surface); color: var(--on-surface); padding: 64px; display: grid; gap: 56px; font-family: Barlow, system-ui, sans-serif; min-height: 100vh; box-sizing: border-box; }
+.fx-title { font: 700 var(--text-display-size)/1 Barlow, system-ui, sans-serif; margin: 0; color: var(--on-surface); }
+.fx-section { display: grid; gap: 16px; min-width: 0; }
+.fx-h4 { font: 700 var(--text-h4-size)/1.2 Barlow, system-ui, sans-serif; margin: 0; color: var(--on-surface); }
+.fx-h5 { font: 700 var(--text-h5-size)/1.3 Barlow, system-ui, sans-serif; margin: 0; color: var(--on-surface); display: flex; gap: 8px; align-items: baseline; }
+.fx-lead { font: 400 var(--text-body-size)/1.45 Barlow, sans-serif; color: var(--on-surface-variant); margin: 0 0 8px; max-width: 980px; }
+.fx-cap { font: 400 var(--font-size-caption)/1.35 Barlow, sans-serif; color: var(--on-surface-variant); }
+.fx-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.fx-row--top { align-items: flex-start; gap: 16px; }
+
+/* swatches */
+.fx-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 24px 16px; }
+.fx-swatch { display: grid; gap: 2px; align-content: start; }
+.fx-swatch--wide { grid-column: span 2; }
+.fx-chip { height: 72px; border-radius: var(--radius-surface); box-shadow: inset 0 0 0 1px var(--outline-variant); margin-bottom: 8px; }
+
+/* panels: a whole block in one mode */
+.fx-panel { background: var(--surface); color: var(--on-surface); border-radius: var(--container-radius); padding: 24px; display: grid; gap: 12px; box-shadow: inset 0 0 0 1px var(--outline-variant); min-width: 0; }
+.fx-panel--flat { padding: 24px; }
+.fx-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+@media (max-width: 1100px) { .fx-two { grid-template-columns: 1fr; } }
+.fx-group { display: grid; gap: 8px; }
+.fx-quad { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.fx-quad--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.fx-tile { border-radius: var(--radius-surface); padding: 12px; display: grid; gap: 4px; min-height: 64px; box-shadow: inset 0 0 0 1px var(--outline-variant); font: 400 var(--font-size-caption)/1.3 Barlow, sans-serif; align-content: space-between; }
+.fx-tile b { font: 700 var(--text-label-size)/1.3 Barlow, sans-serif; word-break: break-word; }
+.fx-tile span + span { justify-self: end; margin-top: -17px; }
+
+/* status */
+.fx-status { display: grid; gap: 4px; width: 160px; }
+.fx-status-tile { height: 56px; border-radius: var(--radius-surface); display: grid; place-items: center; font: 700 var(--text-label-size)/1 Barlow, sans-serif; margin-bottom: 6px; }
+
+/* tonal palettes */
+.fx-tonal { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 16px; align-items: start; }
+.fx-tonal-name { display: grid; gap: 4px; }
+.fx-tones { display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); }
+.fx-tone { display: grid; gap: 2px; }
+.fx-tone-chip { height: 56px; padding: 8px; font: 700 var(--font-size-caption)/1 Barlow, sans-serif; margin-bottom: 6px; }
+
+/* how it works */
+.fx-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 1100px) { .fx-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.fx-card { background: var(--surface-container); border-radius: var(--radius-card); padding: 24px; display: grid; gap: 8px; align-content: start; }
+.fx-card b { font: 700 var(--text-h5-size)/1.3 Barlow, sans-serif; }
+.fx-card span { font: 400 var(--text-footnote-size)/1.4 Barlow, sans-serif; color: var(--on-surface-variant); }
+.fx-chain { background: var(--surface-container); border-radius: var(--radius-card); padding: 24px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.fx-chain > div { display: grid; gap: 4px; }
+.fx-chain b { font: 700 var(--text-label-size)/1.3 Barlow, sans-serif; }
+
+/* surfaces */
+.fx-strip { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-radius: var(--radius-surface); overflow: hidden; }
+.fx-strip-cell { min-height: 150px; padding: 16px; display: grid; gap: 4px; align-content: start; font: 400 var(--font-size-caption)/1.3 Barlow, sans-serif; }
+.fx-strip-cell b { font: 700 var(--text-label-size)/1.3 Barlow, sans-serif; }
+.fx-push { align-self: end; margin-top: 48px; }
+.fx-lines { display: grid; gap: 8px; padding-top: 12px; }
+.fx-line { display: grid; grid-template-columns: 20px 240px 120px 1fr; gap: 12px; align-items: center; font: 400 var(--font-size-caption)/1.3 Barlow, sans-serif; color: var(--on-surface-variant); }
+.fx-line b { color: var(--on-surface); font-weight: 700; }
+.fx-line i { width: 20px; height: 20px; border-radius: 4px; box-shadow: inset 0 0 0 1px var(--outline-variant); }
+
+/* bands */
+.fx-bands { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 1100px) { .fx-bands { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.fx-band-col { display: grid; gap: 8px; }
+.fx-band { background: var(--ctx-surface); color: var(--ctx-on-surface); border-radius: var(--radius-card); padding: 24px; display: grid; gap: 8px; }
+.fx-band b { font: 700 var(--text-h5-size)/1.3 Barlow, sans-serif; }
+.fx-band span { font: 400 var(--text-footnote-size)/1.3 Barlow, sans-serif; color: var(--ctx-on-surface-variant); margin-bottom: 8px; }
+
+/* gradients */
+.fx-gradients { width: 100%; height: auto; display: block; }
+
+/* contrast */
+.fx-table-wrap { overflow-x: auto; background: var(--surface-container-low); border-radius: var(--radius-card); padding: 8px; }
+.fx-table { border-collapse: separate; border-spacing: 6px; width: 100%; font: 400 var(--font-size-caption)/1.3 Barlow, sans-serif; color: var(--on-surface-variant); }
+.fx-table th { text-align: left; font-weight: 400; vertical-align: bottom; padding: 4px; }
+.fx-table tbody th { font: 700 var(--text-label-size)/1.3 Barlow, sans-serif; color: var(--on-surface); vertical-align: middle; white-space: nowrap; }
+.fx-table td { vertical-align: top; padding: 0; }
+.fx-aa { border-radius: var(--radius-surface); padding: 8px; display: grid; gap: 2px; min-width: 72px; box-shadow: inset 0 0 0 1px var(--outline-variant); }
+.fx-aa b { font: 400 var(--text-body-size)/1 Barlow, sans-serif; }
+.fx-aa span { font: 400 var(--font-size-caption)/1.3 Barlow, sans-serif; }
+
+/* sections exported from Figma, and the live sections next to them */
+.fx-page--sections { gap: 56px; max-width: 1600px; }
+.fx-figma { display: block; width: 100%; max-width: 1472px; height: auto; }
+.fx-sample { display: grid; gap: 16px; padding: 24px; border-radius: var(--radius-card); background: var(--surface-container); box-shadow: inset 0 0 0 1px var(--outline-variant); }
+.fx-plain { border-collapse: collapse; width: 100%; font: 400 var(--font-size-caption)/1.3 Barlow, sans-serif; color: var(--on-surface); }
+.fx-plain th { text-align: left; font-weight: 400; color: var(--on-surface-variant); padding: 8px 8px 8px 0; border-bottom: var(--border-width-hairline) solid var(--outline-variant); }
+.fx-plain td { padding: 8px 8px 8px 0; border-bottom: var(--border-width-hairline) solid var(--outline-variant); }
+.fx-plain tr:last-child td { border-bottom: 0; }
+.fx-plain code { font-size: 0.92em; color: var(--on-surface-variant); }
+.fx-space { display: grid; grid-template-columns: 140px 200px minmax(0, 320px) 1fr; gap: 16px; align-items: center; padding: 8px 0; border-bottom: var(--border-width-hairline) solid var(--outline-variant); font: 400 var(--text-label-size)/1.3 Barlow, sans-serif; }
+.fx-space:last-child { border-bottom: 0; }
+.fx-space-bar { height: 16px; background: var(--accent-blue-container); min-width: 1px; max-width: 320px; }
