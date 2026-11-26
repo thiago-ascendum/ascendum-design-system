@@ -9,6 +9,7 @@ export default {
   decorators: [(Story) => <div style={{ width: 280 }}><Story /></div>],
   parameters: {
     ds: {
+      sample: { value: 60, ariaLabel: 'Upload progress' },
       lead: 'Shows how far a task with a known length has got, such as an upload or a migration.',
       group: 'Molecules',
       figma: '83:157',

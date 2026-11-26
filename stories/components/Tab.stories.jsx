@@ -8,6 +8,7 @@ export default {
   args: { label: 'Overview', state: 'default' },
   parameters: {
     ds: {
+      sample: { countValue: 12 },
       lead: 'One tab in a row that switches between views of the same page.',
       group: 'Molecules',
       figma: '79:59',

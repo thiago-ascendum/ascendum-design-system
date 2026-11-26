@@ -1,5 +1,5 @@
 /* Generated from the design system snapshot 5lhRMZkLHZijqgdigjk3J1, Figma version 2426243595526184925 "Snapshot for Git". Do not edit by hand. */
-:root {
+:root, [data-theme="light"] {
   --accent-blue: #89cff0;
   --accent-blue-soft: #cae6f3;
   --accent-purple: #ca86ff;
@@ -377,6 +377,19 @@
   --ctx-primary: var(--primary);
   --ctx-surface-container: var(--surface-container);
   --ctx-surface: var(--surface);
+  --ctx-focus: var(--focus);
+  --ctx-logo: var(--inverse-surface);
+  --ctx-logo-glyph: var(--surface);
+  --ctx-on-primary: var(--on-primary);
+  --ctx-on-surface: var(--on-surface);
+  --ctx-on-surface-variant: var(--on-surface-variant);
+  --ctx-outline: var(--outline);
+  --ctx-outline-variant: var(--outline-variant);
+  --ctx-primary: var(--primary);
+  --ctx-primary-hover: var(--primary-hover);
+  --ctx-primary-pressed: var(--primary-pressed);
+  --ctx-surface: var(--surface);
+  --ctx-surface-container: var(--surface-container);
 }
 [data-context="inverted"] {
   --ctx-focus: var(--inverse-outline);
