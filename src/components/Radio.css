@@ -11,3 +11,6 @@
 .ds-radio__input:focus-visible + .ds-radio__ring { outline: var(--border-width-focus) solid var(--focus); outline-offset: 3px; }
 .ds-radio__input:disabled ~ * { opacity: 0.4; }
 .ds-radio:has(.ds-radio__input:disabled) { cursor: not-allowed; }
+/* Hover and Pressed, as in Figma: the ring takes surface-hover / surface-pressed, checked or not. */
+.ds-radio:hover .ds-radio__input:not(:disabled) + .ds-radio__ring { background: var(--surface-hover); }
+.ds-radio:active .ds-radio__input:not(:disabled) + .ds-radio__ring { background: var(--surface-pressed); }

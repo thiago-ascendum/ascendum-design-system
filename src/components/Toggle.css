@@ -13,3 +13,8 @@
 .ds-toggle__input:focus-visible + .ds-toggle__track { outline: var(--border-width-focus) solid var(--focus); outline-offset: 3px; }
 .ds-toggle__input:disabled ~ * { opacity: 0.4; }
 .ds-toggle:has(.ds-toggle__input:disabled) { cursor: not-allowed; }
+/* Hover and Pressed, as in Figma: an off track takes surface-hover / surface-pressed; an on track takes primary-hover / primary-pressed. */
+.ds-toggle:hover .ds-toggle__input:not(:checked):not(:disabled) + .ds-toggle__track { background: var(--surface-hover); }
+.ds-toggle:active .ds-toggle__input:not(:checked):not(:disabled) + .ds-toggle__track { background: var(--surface-pressed); }
+.ds-toggle:hover .ds-toggle__input:checked:not(:disabled) + .ds-toggle__track { background: var(--primary-hover); border-color: var(--primary-hover); }
+.ds-toggle:active .ds-toggle__input:checked:not(:disabled) + .ds-toggle__track { background: var(--primary-pressed); border-color: var(--primary-pressed); }

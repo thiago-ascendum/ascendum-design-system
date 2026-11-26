@@ -24,3 +24,8 @@
 .ds-checkbox__input:focus-visible + .ds-checkbox__box { outline: var(--border-width-focus) solid var(--focus); outline-offset: 3px; border-radius: var(--checkbox-radius); }
 .ds-checkbox__input:disabled ~ * { opacity: 0.4; }
 .ds-checkbox:has(.ds-checkbox__input:disabled) { cursor: not-allowed; }
+/* Hover and Pressed, as in Figma: an empty box takes surface-hover / surface-pressed; a checked or partly checked box takes primary-hover / primary-pressed. */
+.ds-checkbox:hover .ds-checkbox__input:not(:checked):not(:indeterminate):not(:disabled) + .ds-checkbox__box { background: var(--surface-hover); }
+.ds-checkbox:active .ds-checkbox__input:not(:checked):not(:indeterminate):not(:disabled) + .ds-checkbox__box { background: var(--surface-pressed); }
+.ds-checkbox:hover .ds-checkbox__input:is(:checked, :indeterminate):not(:disabled) + .ds-checkbox__box { background: var(--primary-hover); border-color: var(--primary-hover); }
+.ds-checkbox:active .ds-checkbox__input:is(:checked, :indeterminate):not(:disabled) + .ds-checkbox__box { background: var(--primary-pressed); border-color: var(--primary-pressed); }
