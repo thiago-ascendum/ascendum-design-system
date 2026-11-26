@@ -28,7 +28,7 @@ const preview = {
     layout: 'centered',
     controls: { expanded: true },
     docs: { page: DocPage, container: ThemedDocsContainer },
-    options: { storySort: { order: ['Start here', ['Getting started', 'Pipeline proof', 'Lifecycle', 'Audit status', 'Changelog', 'Every change', 'Governance'], 'Foundations', ['Typography', 'Spacing, Grid & Layout', 'Radius & Elevation', 'Iconography', 'Tone of Voice', 'Logo', 'Colour', 'Photography'], 'Components', ['Catalogue'], 'Patterns'] } },
+    options: { storySort: { order: ['Start here', ['Getting started', 'Pipeline proof', 'Lifecycle', 'Audit status', 'Changelog', 'Every change', 'Governance', 'Figma to Code'], 'Foundations', ['Typography', 'Spacing, Grid & Layout', 'Radius & Elevation', 'Iconography', 'Tone of Voice', 'Logo', 'Colour', 'Photography'], 'Components', ['Catalogue'], 'Patterns'] } },
   },
 };
 
