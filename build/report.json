@@ -4,14 +4,14 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T18:03:44.864Z",
+  "generatedAt": "2026-11-26T18:05:07.033Z",
   "nodes": 17601,
   "pages": 77,
   "fileKey": "5lhRMZkLHZijqgdigjk3J1",
   "figmaVersion": {
-   "id": "2426229247083432084",
+   "id": "2426229907997522857",
    "title": "Snapshot for Git",
-   "savedAt": "2026-11-26T18:03:44.863Z",
+   "savedAt": "2026-11-26T18:05:07.033Z",
    "status": "saved"
   },
   "aliasCount": 138,
@@ -959,7 +959,7 @@
      283
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      279
     ],
     [
@@ -967,7 +967,7 @@
      64
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      57
     ],
     [
@@ -979,11 +979,11 @@
      44
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      32
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      30
     ]
    ]
@@ -1053,7 +1053,7 @@
      277
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      105
     ],
     [
@@ -1065,11 +1065,11 @@
      17
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      17
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      17
     ],
     [
@@ -1077,7 +1077,7 @@
      12
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      11
     ]
    ]
@@ -1135,11 +1135,11 @@
      211
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      65
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      57
     ],
     [
@@ -1147,11 +1147,11 @@
      44
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      43
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      42
     ],
     [
@@ -1205,7 +1205,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      124
     ],
     [
@@ -1213,7 +1213,7 @@
      31
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      27
     ],
     [
@@ -1221,7 +1221,7 @@
      22
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      19
     ],
     [
@@ -1229,11 +1229,11 @@
      18
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      18
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      12
     ]
    ]
@@ -1299,7 +1299,7 @@
      9
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      8
     ],
     [
@@ -1315,7 +1315,7 @@
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      5
     ]
    ]
@@ -1588,7 +1588,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -1852,7 +1852,7 @@
      5
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -2136,19 +2136,19 @@
    ],
    "pages": [
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      23
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      18
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      18
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      18
     ],
     [
@@ -2238,7 +2238,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      66
     ],
     [
@@ -2344,7 +2344,7 @@
      138
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      115
     ],
     [
@@ -2356,7 +2356,7 @@
      17
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      12
     ],
     [
@@ -2368,7 +2368,7 @@
      10
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      9
     ]
    ]
@@ -2458,7 +2458,7 @@
      6
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -2508,19 +2508,19 @@
      2
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      1
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      1
     ],
     [
@@ -2598,7 +2598,7 @@
      4
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      3
     ]
    ]
@@ -2660,11 +2660,11 @@
      19
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      18
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      17
     ],
     [
@@ -2986,7 +2986,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      233
     ],
     [
@@ -3002,7 +3002,7 @@
      46
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      43
     ],
     [
@@ -3248,7 +3248,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      52
     ],
     [
@@ -3276,7 +3276,7 @@
      27
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      26
     ]
    ]
@@ -3447,11 +3447,11 @@
      12
     ],
     [
-     "Avatar",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Avatar",
      12
     ],
     [
@@ -3527,11 +3527,11 @@
      5
     ],
     [
-     "Section / Showcase",
+     "Inline Edit",
      4
     ],
     [
-     "Inline Edit",
+     "Section / Showcase",
      4
     ],
     [
@@ -3565,7 +3565,7 @@
      303
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      246
     ],
     [
@@ -3653,11 +3653,11 @@
      25
     ],
     [
-     "Overview Card",
+     "Search Bar",
      24
     ],
     [
-     "Search Bar",
+     "Overview Card",
      24
     ],
     [
@@ -3765,15 +3765,15 @@
      5
     ],
     [
+     "Inline Edit",
+     4
+    ],
+    [
      "Key Stakeholders Card",
      4
     ],
     [
      "Section / Showcase",
-     4
-    ],
-    [
-     "Inline Edit",
      4
     ],
     [
@@ -3807,7 +3807,7 @@
      278
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      233
     ],
     [
@@ -3929,10 +3929,6 @@
      2
     ],
     [
-     "Overview Card",
-     1
-    ],
-    [
      "Avatar",
      1
     ],
@@ -4019,6 +4015,10 @@
     [
      "Section / Let's Connect",
      1
+    ],
+    [
+     "Overview Card",
+     1
     ]
    ],
    "pages": [
@@ -4039,7 +4039,7 @@
      36
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      32
     ],
     [
@@ -4047,7 +4047,7 @@
      29
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      28
     ],
     [
@@ -4340,19 +4340,19 @@
    ],
    "pages": [
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      33
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      24
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      21
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      19
     ],
     [
@@ -4368,7 +4368,7 @@
      17
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      17
     ]
    ]
@@ -4518,16 +4518,28 @@
      4
     ],
     [
-     "Accordion Item",
-     3
-    ],
-    [
      "Checkbox",
      3
     ],
     [
      "Button",
      3
+    ],
+    [
+     "Accordion Item",
+     3
+    ],
+    [
+     "Radio",
+     2
+    ],
+    [
+     "Toggle",
+     2
+    ],
+    [
+     "Search Bar",
+     2
     ],
     [
      "Divider",
@@ -4538,20 +4550,12 @@
      2
     ],
     [
-     "Toggle",
-     2
-    ],
-    [
      "Key Stakeholders Card",
      2
     ],
     [
-     "Radio",
-     2
-    ],
-    [
-     "Search Bar",
-     2
+     "Combobox",
+     1
     ],
     [
      "Alert",
@@ -4568,10 +4572,6 @@
     [
      "Team Card",
      1
-    ],
-    [
-     "Combobox",
-     1
     ]
    ],
    "pages": [
@@ -4580,7 +4580,7 @@
      145
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      117
     ],
     [
@@ -4636,11 +4636,11 @@
      3
     ],
     [
-     "Radio",
+     "Toggle",
      2
     ],
     [
-     "Toggle",
+     "Radio",
      2
     ],
     [
@@ -4658,11 +4658,11 @@
      9
     ],
     [
-     "Radio button",
+     "Toggle",
      6
     ],
     [
-     "Toggle",
+     "Radio button",
      6
     ],
     [
@@ -4807,7 +4807,7 @@
      338
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      130
     ],
     [
@@ -4887,7 +4887,7 @@
      3
     ],
     [
-     "Section / Showcase",
+     "Section / Quote",
      2
     ],
     [
@@ -4895,8 +4895,12 @@
      2
     ],
     [
-     "Section / Quote",
+     "Section / Showcase",
      2
+    ],
+    [
+     "Team Card",
+     1
     ],
     [
      "Code Block",
@@ -4916,10 +4920,6 @@
     ],
     [
      "Jira Annotation",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -5096,7 +5096,7 @@
      7
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      2
     ],
     [
@@ -5163,20 +5163,12 @@
      4
     ],
     [
-     "Checkbox",
-     3
-    ],
-    [
      "Accordion Item",
      3
     ],
     [
-     "Radio",
-     2
-    ],
-    [
-     "Toggle",
-     2
+     "Checkbox",
+     3
     ],
     [
      "Divider",
@@ -5199,8 +5191,20 @@
      2
     ],
     [
+     "Toggle",
+     2
+    ],
+    [
+     "Radio",
+     2
+    ],
+    [
      "Key Stakeholders Card",
      2
+    ],
+    [
+     "Button",
+     1
     ],
     [
      "Alert",
@@ -5217,10 +5221,6 @@
     [
      "Team Card",
      1
-    ],
-    [
-     "Button",
-     1
     ]
    ],
    "pages": [
@@ -5229,7 +5229,7 @@
      145
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      116
     ],
     [
@@ -5290,19 +5290,15 @@
      3
     ],
     [
-     "Toggle",
-     2
-    ],
-    [
-     "Menu Item",
-     2
-    ],
-    [
      "Input",
      2
     ],
     [
      "Radio",
+     2
+    ],
+    [
+     "Toggle",
      2
     ],
     [
@@ -5318,7 +5314,11 @@
      2
     ],
     [
-     "Slider",
+     "Menu Item",
+     2
+    ],
+    [
+     "Combobox",
      1
     ],
     [
@@ -5342,7 +5342,7 @@
      1
     ],
     [
-     "Combobox",
+     "Slider",
      1
     ]
    ],
@@ -5364,15 +5364,15 @@
      7
     ],
     [
-     "Toggle",
-     6
-    ],
-    [
      "Input",
      6
     ],
     [
      "Radio button",
+     6
+    ],
+    [
+     "Toggle",
      6
     ],
     [
@@ -5580,7 +5580,7 @@
      36
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      32
     ],
     [
@@ -5588,7 +5588,7 @@
      29
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      28
     ],
     [
@@ -5656,7 +5656,7 @@
      8
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
@@ -5664,11 +5664,11 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      5
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ]
    ]
@@ -5711,15 +5711,15 @@
      7
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      5
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -5787,7 +5787,7 @@
      9
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      4
     ],
     [
@@ -5799,7 +5799,7 @@
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      1
     ]
    ]
@@ -5854,7 +5854,7 @@
      5
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      4
     ],
     [
@@ -5866,7 +5866,7 @@
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      1
     ]
    ]
@@ -5910,7 +5910,7 @@
      19
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      17
     ],
     [
@@ -5922,11 +5922,11 @@
      7
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      5
     ],
     [
@@ -5973,7 +5973,7 @@
      18
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      18
     ],
     [
@@ -5981,11 +5981,11 @@
      7
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
@@ -6250,7 +6250,7 @@
      9
     ],
     [
-     "Button",
+     "Page rhythm",
      8
     ]
    ]
@@ -6454,7 +6454,7 @@
      36
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      32
     ],
     [
@@ -6462,7 +6462,7 @@
      29
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      28
     ],
     [
@@ -6528,19 +6528,19 @@
    ],
    "pages": [
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      33
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      24
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      21
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      19
     ],
     [
@@ -6556,7 +6556,7 @@
      17
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      17
     ]
    ]
@@ -6675,11 +6675,11 @@
      13
     ],
     [
-     "Overview",
+     "Group Cards",
      12
     ],
     [
-     "Group Cards",
+     "Overview",
      12
     ],
     [
@@ -6725,11 +6725,11 @@
      18
     ],
     [
-     "Overview Card",
+     "Table",
      17
     ],
     [
-     "Table",
+     "Overview Card",
      17
     ],
     [
@@ -6745,11 +6745,11 @@
      15
     ],
     [
-     "Button",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Button",
      12
     ],
     [
@@ -6773,14 +6773,6 @@
      8
     ],
     [
-     "Team Card",
-     6
-    ],
-    [
-     "Navigation Bar",
-     6
-    ],
-    [
      "Accordion Item",
      6
     ],
@@ -6789,8 +6781,12 @@
      6
     ],
     [
-     "Section / Quote",
-     4
+     "Team Card",
+     6
+    ],
+    [
+     "Navigation Bar",
+     6
     ],
     [
      "Input",
@@ -6805,7 +6801,15 @@
      4
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
+     4
+    ],
+    [
+     "Badge",
+     3
+    ],
+    [
+     "Inline Edit",
      3
     ],
     [
@@ -6814,6 +6818,14 @@
     ],
     [
      "Modal",
+     3
+    ],
+    [
+     "Side Nav Item",
+     3
+    ],
+    [
+     "Key Stakeholders Card",
      3
     ],
     [
@@ -6829,27 +6841,15 @@
      3
     ],
     [
-     "Badge",
-     3
-    ],
-    [
-     "Inline Edit",
-     3
-    ],
-    [
-     "Side Nav Item",
-     3
-    ],
-    [
-     "Section / Showcase",
-     2
-    ],
-    [
      "Breadcrumb Item",
      2
     ],
     [
      "Side Navigation",
+     2
+    ],
+    [
+     "Section / Showcase",
      2
     ],
     [
@@ -6863,7 +6863,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      217
     ],
     [
@@ -7015,7 +7015,7 @@
      333
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      130
     ],
     [
@@ -7109,7 +7109,7 @@
      10
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      4
     ],
     [
@@ -7183,12 +7183,16 @@
      5
     ],
     [
+     "Combobox",
+     4
+    ],
+    [
      "Section / Quote",
      4
     ],
     [
-     "Combobox",
-     4
+     "Side Nav Item",
+     3
     ],
     [
      "Key Stakeholders Card",
@@ -7207,8 +7211,8 @@
      3
     ],
     [
-     "Side Nav Item",
-     3
+     "Tooltip",
+     2
     ],
     [
      "File Uploader",
@@ -7224,10 +7228,6 @@
     ],
     [
      "Section / Showcase",
-     2
-    ],
-    [
-     "Tooltip",
      2
     ],
     [
@@ -7365,7 +7365,7 @@
      140
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      116
     ],
     [
@@ -7389,7 +7389,7 @@
      20
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      12
     ]
    ]
@@ -7447,11 +7447,11 @@
      6
     ],
     [
-     "Combobox",
+     "Button",
      4
     ],
     [
-     "Button",
+     "Combobox",
      4
     ],
     [
@@ -7467,15 +7467,15 @@
      2
     ],
     [
-     "Inline Edit",
-     1
-    ],
-    [
      "Navigation Bar",
      1
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Inline Edit",
      1
     ]
    ],
@@ -7505,11 +7505,11 @@
      27
     ],
     [
-     "Select",
+     "Button",
      22
     ],
     [
-     "Button",
+     "Select",
      22
     ]
    ]
@@ -7565,7 +7565,7 @@
      7
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      2
     ],
     [
@@ -7633,7 +7633,7 @@
      5
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -7701,7 +7701,7 @@
      20
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      8
     ],
     [
@@ -7779,7 +7779,7 @@
      8
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
@@ -7787,11 +7787,11 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      5
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ]
    ]
@@ -7833,15 +7833,15 @@
      7
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      5
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -7907,7 +7907,7 @@
      9
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      4
     ],
     [
@@ -7919,7 +7919,7 @@
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      1
     ]
    ]
@@ -7973,7 +7973,7 @@
      5
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      4
     ],
     [
@@ -7985,7 +7985,7 @@
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      1
     ]
    ]
@@ -8023,7 +8023,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      17
     ],
     [
@@ -8039,11 +8039,11 @@
      7
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      5
     ],
     [
@@ -8085,7 +8085,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      18
     ],
     [
@@ -8097,11 +8097,11 @@
      7
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
@@ -8402,19 +8402,19 @@
    ],
    "pages": [
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      33
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      24
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      21
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      19
     ],
     [
@@ -8430,7 +8430,7 @@
      17
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      17
     ]
    ]
@@ -8473,15 +8473,15 @@
      7
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      5
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -8548,7 +8548,7 @@
      5
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      4
     ],
     [
@@ -8560,7 +8560,7 @@
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      1
     ]
    ]
@@ -8595,7 +8595,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      18
     ],
     [
@@ -8607,11 +8607,11 @@
      7
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
@@ -8807,7 +8807,7 @@
      14
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -8883,7 +8883,7 @@
      20
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      8
     ],
     [
@@ -9039,7 +9039,7 @@
      33
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      10
     ],
     [
@@ -9047,11 +9047,11 @@
      9
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      7
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      2
     ]
    ]
@@ -9101,7 +9101,7 @@
      33
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      10
     ],
     [
@@ -9109,15 +9109,15 @@
      9
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      8
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      3
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ]
    ]
@@ -9175,15 +9175,15 @@
      33
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      13
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      11
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -9269,7 +9269,7 @@
      6
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -9355,7 +9355,7 @@
      6
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -9413,11 +9413,11 @@
      2
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -9471,11 +9471,11 @@
      2
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -9551,7 +9551,7 @@
      49
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      10
     ],
     [
@@ -9559,11 +9559,11 @@
      9
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      7
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -9627,15 +9627,15 @@
      33
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -9669,15 +9669,15 @@
      33
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -9711,15 +9711,15 @@
      33
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -9753,7 +9753,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      45
     ],
     [
@@ -9761,15 +9761,15 @@
      39
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      17
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      16
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      13
     ],
     [
@@ -9777,11 +9777,11 @@
      12
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      11
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      11
     ]
    ]
@@ -9815,7 +9815,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      45
     ],
     [
@@ -9823,15 +9823,15 @@
      39
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      17
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      16
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      13
     ],
     [
@@ -9839,11 +9839,11 @@
      12
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      11
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      11
     ]
    ]
@@ -9877,7 +9877,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      45
     ],
     [
@@ -9885,15 +9885,15 @@
      39
     ],
     [
-     "07 · Components: Organisms",
+     "🧱 07 · Components: Organisms",
      17
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      16
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      13
     ],
     [
@@ -9901,11 +9901,11 @@
      12
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      11
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      11
     ]
    ]
@@ -9997,19 +9997,19 @@
      12
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      4
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -10103,7 +10103,7 @@
      19
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -10137,7 +10137,7 @@
      38
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      2
     ]
    ]
@@ -10171,7 +10171,7 @@
      38
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      2
     ]
    ]
@@ -10205,7 +10205,7 @@
      16
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -10239,7 +10239,7 @@
      19
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -10273,7 +10273,7 @@
      15
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -10371,7 +10371,7 @@
      2
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -10405,15 +10405,15 @@
      33
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -10447,15 +10447,15 @@
      33
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ],
     [
-     "05 · Components: Atoms",
+     "⚛️ 05 · Components: Atoms",
      1
     ]
    ]
@@ -10497,7 +10497,7 @@
      2
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -10531,7 +10531,7 @@
      16
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ],
     [
@@ -10599,7 +10599,7 @@
      16
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ],
     [
@@ -10667,7 +10667,7 @@
      16
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ],
     [
@@ -10851,7 +10851,7 @@
      3
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -10889,7 +10889,7 @@
      3
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -10923,7 +10923,7 @@
      33
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -10957,7 +10957,7 @@
      33
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -10991,7 +10991,7 @@
      33
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11025,7 +11025,7 @@
      33
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11071,11 +11071,11 @@
      3
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      2
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      2
     ],
     [
@@ -11083,7 +11083,7 @@
      2
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      2
     ]
    ]
@@ -11207,7 +11207,7 @@
      2
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11253,7 +11253,7 @@
      2
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11299,7 +11299,7 @@
      2
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11341,7 +11341,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11383,7 +11383,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11425,7 +11425,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11467,7 +11467,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11505,7 +11505,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11543,7 +11543,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11581,7 +11581,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11619,7 +11619,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11653,7 +11653,7 @@
      18
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11687,7 +11687,7 @@
      7
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11721,7 +11721,7 @@
      7
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11791,7 +11791,7 @@
    ],
    "pages": [
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      21
     ],
     [
@@ -11799,7 +11799,7 @@
      20
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      19
     ],
     [
@@ -11807,7 +11807,7 @@
      19
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      16
     ],
     [
@@ -11849,7 +11849,7 @@
    ],
    "pages": [
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      7
     ],
     [
@@ -11857,7 +11857,7 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      3
     ],
     [
@@ -11869,7 +11869,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11899,7 +11899,7 @@
    ],
    "pages": [
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      7
     ],
     [
@@ -11907,7 +11907,7 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      3
     ],
     [
@@ -11919,7 +11919,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -11953,7 +11953,7 @@
      30
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      2
     ]
    ]
@@ -12013,11 +12013,11 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      8
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      7
     ],
     [
@@ -12033,7 +12033,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12067,7 +12067,7 @@
      13
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12101,7 +12101,7 @@
      27
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12135,7 +12135,7 @@
      27
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12169,7 +12169,7 @@
      13
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12233,7 +12233,7 @@
      11
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12267,7 +12267,7 @@
      4
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12301,7 +12301,7 @@
      4
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12335,7 +12335,7 @@
      4
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12369,7 +12369,7 @@
      10
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12403,7 +12403,7 @@
      10
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -12461,15 +12461,15 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      31
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      18
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      15
     ],
     [
@@ -12531,7 +12531,7 @@
      1
     ],
     [
-     "10 · Templates & Presentation Layouts",
+     "🗂️ 10 · Templates & Presentation Layouts",
      1
     ]
    ]
@@ -12573,7 +12573,7 @@
      1
     ],
     [
-     "10 · Templates & Presentation Layouts",
+     "🗂️ 10 · Templates & Presentation Layouts",
      1
     ]
    ]
@@ -12615,7 +12615,7 @@
      1
     ],
     [
-     "10 · Templates & Presentation Layouts",
+     "🗂️ 10 · Templates & Presentation Layouts",
      1
     ]
    ]
@@ -12657,7 +12657,7 @@
      1
     ],
     [
-     "10 · Templates & Presentation Layouts",
+     "🗂️ 10 · Templates & Presentation Layouts",
      1
     ]
    ]
@@ -13581,7 +13581,7 @@
      2
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -13627,7 +13627,7 @@
      48
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      4
     ]
    ]
@@ -13673,7 +13673,7 @@
      36
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      2
     ]
    ]
@@ -13727,7 +13727,7 @@
      2
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -13773,7 +13773,7 @@
      9
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -14135,15 +14135,15 @@
      4
     ],
     [
+     "Toast",
+     3
+    ],
+    [
      "Combobox",
      3
     ],
     [
      "Section / Full Width",
-     3
-    ],
-    [
-     "Toast",
      3
     ],
     [
@@ -14189,7 +14189,7 @@
      358
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      130
     ],
     [
@@ -14368,19 +14368,19 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      2
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      2
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      1
     ]
    ]
@@ -14435,19 +14435,19 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      3
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      1
     ]
    ]
@@ -14510,11 +14510,11 @@
      11
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      5
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      3
     ],
     [
@@ -14565,7 +14565,7 @@
      10
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      7
     ],
     [
@@ -14577,7 +14577,7 @@
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      3
     ],
     [
@@ -14585,7 +14585,7 @@
      2
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ]
    ]
@@ -14639,19 +14639,19 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      2
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      2
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      1
     ]
    ]
@@ -14705,19 +14705,19 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      3
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ],
     [
-     "04 · Foundations",
+     "🎨 04 · Foundations",
      1
     ]
    ]
@@ -14779,11 +14779,11 @@
      10
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      5
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      3
     ],
     [
@@ -14833,7 +14833,7 @@
      10
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      7
     ],
     [
@@ -14845,7 +14845,7 @@
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      3
     ],
     [
@@ -14853,7 +14853,7 @@
      2
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      1
     ]
    ]
@@ -14947,11 +14947,11 @@
      45
     ],
     [
-     "Checkbox",
+     "Button",
      3
     ],
     [
-     "Button",
+     "Checkbox",
      3
     ],
     [
@@ -15133,7 +15133,7 @@
      1
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -15167,7 +15167,7 @@
      7
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      1
     ]
    ]
@@ -15353,7 +15353,7 @@
      3
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ]
    ]
@@ -15389,7 +15389,7 @@
      15
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ]
    ]
@@ -15419,15 +15419,15 @@
      2
     ],
     [
-     "Button",
-     1
-    ],
-    [
      "Slider",
      1
     ],
     [
      "Toggle",
+     1
+    ],
+    [
+     "Button",
      1
     ]
    ],
@@ -15531,7 +15531,7 @@
      6
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ],
     [
@@ -15605,7 +15605,7 @@
      12
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      8
     ],
     [
@@ -15659,7 +15659,7 @@
      15
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      1
     ]
    ]
@@ -16159,7 +16159,7 @@
      18
     ],
     [
-     "06 · Components: Molecules",
+     "🧪 06 · Components: Molecules",
      2
     ]
    ]
@@ -16713,7 +16713,7 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      17
     ],
     [
@@ -16729,11 +16729,11 @@
      7
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      6
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      5
     ],
     [
@@ -16954,7 +16954,7 @@
      8
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      6
     ],
     [
@@ -16962,11 +16962,11 @@
      6
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      5
     ],
     [
-     "01 · Getting Started",
+     "📖 01 · Getting Started",
      4
     ]
    ]
@@ -17175,7 +17175,7 @@
      9
     ],
     [
-     "02 · Changelog",
+     "📝 02 · Changelog",
      4
     ],
     [
@@ -17187,7 +17187,7 @@
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "🤝 03 · Contribution & Governance",
      1
     ]
    ]
