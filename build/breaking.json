@@ -4,7 +4,7 @@
     "textStyles": 0,
     "tokens": 72
   },
-  "breaking": 79,
+  "breaking": 78,
   "removedComponents": [
     "SectionTag"
   ],
@@ -206,11 +206,6 @@
       "component": "Progress Bar",
       "property": "Size",
       "value": "XS"
-    },
-    {
-      "component": "Search Bar",
-      "property": "State",
-      "value": "Error"
     },
     {
       "component": "Section / Let's Connect",

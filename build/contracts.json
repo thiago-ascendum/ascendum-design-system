@@ -1044,6 +1044,7 @@
       ],
       "State": [
         "Default",
+        "Error",
         "Focus",
         "Hover",
         "Muted"
@@ -1055,6 +1056,7 @@
     ],
     "states": [
       "Default",
+      "Error",
       "Focus",
       "Hover",
       "Muted"
@@ -1064,6 +1066,7 @@
       "--container-radius",
       "--field-radius",
       "--on-surface",
+      "--on-surface-error",
       "--on-surface-placeholder",
       "--on-surface-variant",
       "--outline",
@@ -1078,8 +1081,8 @@
       "--surface-hover",
       "--text-body-lg-size"
     ],
-    "use": "A single-line field for searching a list or a page. Use Default in page headers and Compact inside toolbars and tables. Muted is for a search that sits on a busy surface and should stay quiet until used. Do not use it for filtering by several fields, use Form Field instead.",
-    "variants": 8
+    "use": "A single-line field for searching a list or a page. Use Default in page headers and Compact inside toolbars and tables. Muted is for a search that sits on a busy surface and should stay quiet until used. Do not use it for filtering by several fields, use Form Field instead. Error is for a search that cannot run, with the reason said next to the field; the border uses on-surface-error, like Input.",
+    "variants": 10
   },
   {
     "component": "Section / Columns",

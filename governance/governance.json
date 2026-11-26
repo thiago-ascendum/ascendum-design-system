@@ -100,11 +100,6 @@
       4.5
     ],
     [
-      "on-surface",
-      "surface",
-      4.5
-    ],
-    [
       "on-primary",
       "primary",
       4.5
@@ -155,16 +150,6 @@
       3.0
     ],
     [
-      "on-surface",
-      "surface",
-      3.0
-    ],
-    [
-      "on-surface-variant",
-      "surface",
-      3.0
-    ],
-    [
       "on-accent-container",
       "accent-red-container",
       4.5
@@ -182,21 +167,6 @@
     [
       "on-accent-container",
       "accent-stone-container",
-      4.5
-    ],
-    [
-      "inverse-on-surface",
-      "bg/inverted-raised",
-      4.5
-    ],
-    [
-      "text/access-muted",
-      "surface",
-      4.5
-    ],
-    [
-      "text/access-muted",
-      "surface-container",
       4.5
     ],
     [
@@ -258,6 +228,76 @@
       "outline-medium",
       "surface-container-high",
       3
+    ],
+    [
+      "on-surface",
+      "surface-container-high",
+      4.5
+    ],
+    [
+      "on-surface",
+      "surface-container-highest",
+      4.5
+    ],
+    [
+      "on-surface",
+      "surface-hover",
+      4.5
+    ],
+    [
+      "on-surface",
+      "surface-pressed",
+      4.5
+    ],
+    [
+      "on-surface-placeholder",
+      "surface",
+      4.5
+    ],
+    [
+      "on-surface-placeholder",
+      "surface-container-low",
+      4.5
+    ],
+    [
+      "on-surface-error",
+      "surface",
+      4.5
+    ],
+    [
+      "on-surface-error",
+      "surface-container-low",
+      4.5
+    ],
+    [
+      "on-surface-warning",
+      "surface",
+      4.5
+    ],
+    [
+      "on-surface-warning",
+      "surface-container-low",
+      4.5
+    ],
+    [
+      "on-surface-success",
+      "surface",
+      4.5
+    ],
+    [
+      "on-surface-success",
+      "surface-container-low",
+      4.5
+    ],
+    [
+      "on-surface-info",
+      "surface",
+      4.5
+    ],
+    [
+      "on-surface-info",
+      "surface-container-low",
+      4.5
     ]
   ],
   "neverRules": [

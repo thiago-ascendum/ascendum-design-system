@@ -334,16 +334,18 @@
     ]
   },
   {
-    "description": "A single-line field for searching a list or a page. Use Default in page headers and Compact inside toolbars and tables. Muted is for a search that sits on a busy surface and should stay quiet until used. Do not use it for filtering by several fields, use Form Field instead.",
+    "description": "A single-line field for searching a list or a page. Use Default in page headers and Compact inside toolbars and tables. Muted is for a search that sits on a busy surface and should stay quiet until used. Do not use it for filtering by several fields, use Form Field instead. Error is for a search that cannot run, with the reason said next to the field; the border uses on-surface-error, like Input.",
     "name": "Search Bar",
     "page": "Search Bar",
-    "variantCount": 8,
+    "variantCount": 10,
     "variants": [
       "Size=Compact, State=Default",
+      "Size=Compact, State=Error",
       "Size=Compact, State=Focus",
       "Size=Compact, State=Hover",
       "Size=Compact, State=Muted",
       "Size=Default, State=Default",
+      "Size=Default, State=Error",
       "Size=Default, State=Focus",
       "Size=Default, State=Hover",
       "Size=Default, State=Muted"

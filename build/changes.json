@@ -278,13 +278,10 @@
     ]
    },
    {
-    "after": 8,
+    "after": 10,
     "before": 8,
     "component": "Search Bar",
-    "gone": [
-     "Size=Compact, State=Error",
-     "Size=Default, State=Error"
-    ],
+    "gone": [],
     "new": [
      "Size=Compact, State=Hover",
      "Size=Default, State=Hover"
@@ -428,7 +425,7 @@
     ]
    }
   ],
-  "variantsAfter": 205,
+  "variantsAfter": 207,
   "variantsBefore": 243
  },
  "from": "2026-11-25T22:35:13.816Z",
@@ -460,10 +457,10 @@
   ],
   "variants": [
    243,
-   205
+   207
   ]
  },
- "to": "2026-11-26T17:57:42.525Z",
+ "to": "2026-11-26T18:03:44.864Z",
  "variables": {
   "added": [
    [
