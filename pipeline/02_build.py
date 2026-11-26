@@ -423,7 +423,7 @@ def css_val(v, m):
     return str(x).lower() if isinstance(x, str) and x.startswith("#") else str(x)
 
 
-base, dark, mobile, surface = [], [], [], []  # surface: tokens that follow the Surface mode (Default / Inverted)
+base, dark, mobile, surface = [], [], [], []  # surface: tokens that follow the Context mode (Default / Inverted)
 for v in sorted(local.values(), key=lambda v: (GOV["collectionOrder"].index(v["collection"]) if v["collection"] in GOV["collectionOrder"] else 9, v["name"])):
     if css_name.get(css_var(v), v)["id"] != v["id"]:
         continue  # collision: first one wins here, and the gate reports it
@@ -437,7 +437,7 @@ for v in sorted(local.values(), key=lambda v: (GOV["collectionOrder"].index(v["c
         if x is not None and x != d0:
             (dark if mode == "Dark" else surface if mode == "Inverted" else mobile).append(f"  {css_var(v)}: {x};")
 css = ["/* Generated from the design system snapshot " + S["meta"]["sourceSha256"] + ". Do not edit by hand. */",
-       ":root {", *base, "}", '[data-theme="dark"] {', *dark, "}", '[data-surface="inverted"] {', *surface, "}",
+       ":root {", *base, "}", '[data-theme="dark"] {', *dark, "}", '[data-context="inverted"] {', *surface, "}",
        f"@media (max-width: {GOV['mobileBreakpoint'] - 1}px) {{", "  :root {", *["  " + x for x in mobile], "  }", "}", ""]
 open(os.path.join(out_dir, "tokens.css"), "w").write("\n".join(css))
 

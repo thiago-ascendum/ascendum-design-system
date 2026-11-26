@@ -1,5 +1,5 @@
 /* Skeleton. Line, line-large and block stretch to the width of their container; circle is fixed. The placeholder pulses gently. */
-.ds-skeleton { display: block; background: var(--bg-skeleton); animation: ds-skeleton-pulse 1.5s ease-in-out infinite; }
+.ds-skeleton { display: block; background: var(--surface-container-highest); animation: ds-skeleton-pulse 1.5s ease-in-out infinite; }
 .ds-skeleton--line { width: 100%; height: var(--skeleton-line); border-radius: var(--field-radius); }
 .ds-skeleton--line-large { width: 100%; height: var(--skeleton-line-lg); border-radius: var(--field-radius); }
 .ds-skeleton--block { width: 100%; height: var(--skeleton-block); border-radius: var(--field-radius); }

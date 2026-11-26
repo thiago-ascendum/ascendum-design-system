@@ -21,7 +21,7 @@ export default {
       use: ['Copy the layout of the content that will replace it.', 'Use it for lists and cards that take more than a moment to appear.', 'Remove it as soon as the content arrives.'],
       avoid: ['Using it for missing content or an empty list: use an empty state.', 'Using it for actions.', 'Mixing skeletons with real content in one card.'],
       tokens: [
-        ['bg/skeleton', '--bg-skeleton', 'Fill of every shape'],
+        ['surface-container-highest', '--surface-container-highest', 'Fill of every shape'],
         ['component/skeleton/line', '--skeleton-line', 'Height of a line: 14'],
         ['component/skeleton/line-lg', '--skeleton-line-lg', 'Height of a large line: 18'],
         ['component/skeleton/block', '--skeleton-block', 'Height of a block: 80'],

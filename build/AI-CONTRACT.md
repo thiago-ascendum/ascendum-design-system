@@ -44,6 +44,19 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--input-padding-h` | component/input/padding-h | 16 |  | Input: left and right padding. |
 | `--input-padding-v` | component/input/padding-v | 18 |  | Input: top and bottom padding. |
 | `--input-textarea-min` | component/input/textarea-min | 80 |  | Minimum height for a multiline field, from textarea.field-input in components-fields.html. |
+| `--ctx-focus` | ctx/focus | #212121 | #F5F5F5 | Follows the Context mode: focus, or inverse-outline. |
+| `--ctx-logo` | ctx/logo | #212121 | #F5F5F5 | Logo colour |
+| `--ctx-logo-glyph` | ctx/logo-glyph | #F5F5F5 | #212121 | The glyph inside the compact logo mark |
+| `--ctx-on-primary` | ctx/on-primary | #F5F5F5 | #212121 | Follows the Context mode: on-primary, or inverse-on-primary. |
+| `--ctx-on-surface` | ctx/on-surface | #212121 | #F5F5F5 | Follows the Context mode: on-surface, or inverse-on-surface. |
+| `--ctx-on-surface-variant` | ctx/on-surface-variant | #6F6F6F | #C0C0C0 | Follows the Context mode: on-surface-variant, or inverse-on-surface-variant. |
+| `--ctx-outline` | ctx/outline | #212121 | #F5F5F5 | Follows the Context mode: outline, or inverse-outline. |
+| `--ctx-outline-variant` | ctx/outline-variant | #ECECEC | #777777 | Follows the Context mode: outline-variant, or inverse-outline-variant. |
+| `--ctx-primary` | ctx/primary | #212121 | #F5F5F5 | Follows the Context mode: primary, or inverse-primary. |
+| `--ctx-primary-hover` | ctx/primary-hover | #444444 | #ECECEC | Follows the Context mode: primary-hover, or inverse-primary-hover. |
+| `--ctx-primary-pressed` | ctx/primary-pressed | #555555 | #D6D6D6 | Follows the Context mode: primary-pressed, or inverse-primary-pressed. |
+| `--ctx-surface` | ctx/surface | #F5F5F5 | #212121 | Follows the Context mode: surface, or inverse-surface on an inverted band. |
+| `--ctx-surface-container` | ctx/surface-container | #FFFFFF | #212121 | Follows the Context mode: surface-container, or inverse-surface. |
 | `--border-width-button` | border-width/button | 2 |  | Button outline weight. |
 | `--border-width-field` | border-width/field | 1.5 |  | Form field border |
 | `--border-width-focus` | border-width/focus | 2 |  | Weight of the keyboard focus ring. |
@@ -87,77 +100,53 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--space-none` | space/none | 0 |  | No gap: parts that touch. |
 | `--space-sm` | space/sm | 48 | 32 | Gap between blocks inside a section |
 | `--space-xs` | space/xs | 32 | 24 | Padding inside a card |
-| `--bg-accent-blue` | bg/accent-blue | #CAE6F3 |  | Soft accent surface (avatars, tags) |
-| `--bg-accent-purple` | bg/accent-purple | #E4C9F9 |  | Soft accent surface (avatars, tags) |
-| `--bg-accent-red` | bg/accent-red | #F0D3D5 |  | Soft accent surface (avatars, tags) |
-| `--bg-accent-stone` | bg/accent-stone | #DEDBDA |  | Soft accent surface (avatars, tags) |
-| `--bg-hover` | bg/hover | #F5F5F5 | #444444 | Row and menu-item hover |
-| `--inverted-background` | bg/inverted | #212121 | #F5F5F5 | BUG FIX vs source: --inverted-background was never redeclared in the dark block, so invert |
-| `--background` | bg/page | #F5F5F5 | #212121 | Page background. |
-| `--bg-skeleton` | bg/skeleton | #ECECEC | #555555 | Skeleton placeholder fill |
-| `--bg-subtle` | bg/subtle | #FAFAFA | #262626 | Sits between page and surface |
-| `--container-fill` | bg/surface | #FFFFFF | #2A2A2A | Card and container fill. |
-| `--border-default` | border/default | #ECECEC | #555555 | Hairline divider. |
-| `--form-border` | border/field | #212121 | #F5F5F5 | Border of inputs and other fields. |
-| `--border-focus` | border/focus | #212121 | #F5F5F5 | Keyboard focus ring |
-| `--border-muted` | border/muted | #D6D6D6 | #777777 | De-emphasised field border |
-| `--quote-line` | border/quote | #777777 | #999999 | BUG FIX vs source: same undeclared --brand-mid-grey alias as text/placeholder. |
-| `--border-strong` | border/strong | #212121 | #F5F5F5 | Strong borders and selected lines. |
-| `--button-fill` | button/fill | #00000000 |  | Transparent by default, the outline button fills only on hover |
-| `--button-fill-pressed` | button/fill-pressed | #555555 | #D6D6D6 | Solid button while it is pressed |
-| `--button-fill-pressed-inverted` | button/fill-pressed-inverted | #D6D6D6 | #555555 | Solid button on an inverted surface while it is pressed. |
-| `--button-fill-hover` | button/fill-solid | #212121 | #F5F5F5 | Fill of the Solid button, and of Outline and Ghost on hover. |
-| `--button-fill-solid-hover` | button/fill-solid-hover | #444444 | #ECECEC | Solid button under the pointer |
-| `--button-fill-solid-hover-inverted` | button/fill-solid-hover-inverted | #ECECEC | #444444 | Solid inverted button under the pointer. |
-| `--button-fill-hover-inverted` | button/fill-solid-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
-| `--button-label` | button/label | #212121 | #F5F5F5 | Label of the Outline and Ghost buttons. |
-| `--button-label-inverted` | button/label-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
-| `--button-label-hover` | button/label-solid | #F5F5F5 | #212121 | Label of the Solid button, and of the others on hover. |
-| `--button-label-hover-inverted` | button/label-solid-inverted | #212121 | #F5F5F5 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
-| `--button-stroke` | button/stroke | #212121 | #F5F5F5 | Border of the Outline button. |
-| `--button-stroke-inverted` | button/stroke-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
-| `--control-fill-hover` | control/fill-hover | #ECECEC | #444444 | Fill of an empty control under the pointer: checkbox, radio, toggle, input and select. |
-| `--control-fill-pressed` | control/fill-pressed | #D6D6D6 | #555555 | Fill of an empty control while it is pressed. |
-| `--control-fill-selected-hover` | control/fill-selected-hover | #444444 | #ECECEC | Fill of a checked or switched-on control under the pointer. |
-| `--control-fill-selected-pressed` | control/fill-selected-pressed | #555555 | #D6D6D6 | Fill of a checked or switched-on control while it is pressed. |
-| `--feedback-error` | feedback/error | #B02A32 | #CE7B80 | Error text, icons and borders |
-| `--feedback-error-bg` | feedback/error-bg | #FDF1F2 | #3E2324 | Dark value is derived (status flattened over the dark page colour), not authored in the so |
-| `--feedback-info` | feedback/info | #2369AA | #6C9AC6 | Info text, icons and borders |
-| `--feedback-info-bg` | feedback/info-bg | #F3F8FD | #212F3C | Dark value is derived (status flattened over the dark page colour), not authored in the so |
-| `--feedback-success` | feedback/success | #1C7A4A | #65A584 | Success text, icons and borders |
-| `--feedback-success-bg` | feedback/success-bg | #EEF7F1 | #203329 | Dark value is derived (status flattened over the dark page colour), not authored in the so |
-| `--feedback-warning` | feedback/warning | #8A5A00 | #B29257 | Warning text, icons and borders |
-| `--feedback-warning-bg` | feedback/warning-bg | #FFF2D8 | #362C1A | Dark value is derived (status flattened over the dark page colour), not authored in the so |
-| `--icon` | icon/default | #212121 | #F5F5F5 | Bind all 203 icon components to this |
-| `--icon-inverted` | icon/inverted | #F5F5F5 | #212121 | Icons on inverted surfaces. |
-| `--icon-muted` | icon/muted | #888888 | #C0C0C0 | Secondary icons |
-| `--text` | text/default | #212121 | #F5F5F5 | Default text. |
-| `--inverted-text` | text/inverted | #F5F5F5 | #212121 | Text on inverted surfaces. |
-| `--text-inverted-muted` | text/inverted-muted | #C0C0C0 | #6F6F6F | Secondary text on bg/inverted |
-| `--link` | text/link | #212121 | #F5F5F5 | Links |
-| `--text-muted` | text/muted | #6F6F6F | #C0C0C0 | Secondary text |
-| `--text-on-accent` | text/on-accent | #212121 |  | Dark text on a soft accent surface or a light gradient |
-| `--form-placeholder` | text/placeholder | #6F6F6F | #999999 | BUG FIX vs source: --form-placeholder aliased --brand-mid-grey, which is never declared an |
-| `--button-surface-fill-pressed` | button-surface/fill-pressed | #555555 | #D6D6D6 | Solid button while it is pressed |
-| `--button-surface-fill-hover` | button-surface/fill-solid | #212121 | #F5F5F5 | Fill of the Solid button, and of Outline and Ghost on hover |
-| `--button-surface-fill-solid-hover` | button-surface/fill-solid-hover | #444444 | #ECECEC | Solid button under the pointer, and Outline and Ghost while pressed |
-| `--button-surface-focus` | button-surface/focus | #212121 | #F5F5F5 | Focus ring of the button |
-| `--button-surface-label` | button-surface/label | #212121 | #F5F5F5 | Label of the Outline and Ghost buttons |
-| `--button-surface-label-hover` | button-surface/label-solid | #F5F5F5 | #212121 | Label of the Solid button, and of the others on hover |
-| `--button-surface-stroke` | button-surface/stroke | #212121 | #F5F5F5 | Border of the Outline button |
-| `--surface-bg` | surface/bg | #F5F5F5 | #212121 | Background of a section |
-| `--surface-bg-raised` | surface/bg-raised | #FFFFFF | #212121 | Background of a card that sits on a section |
-| `--surface-border` | surface/border | #ECECEC | #777777 | Hairlines and card borders on a section |
-| `--surface-logo` | surface/logo | #212121 | #F5F5F5 | Logo colour |
-| `--surface-logo-glyph` | surface/logo-glyph | #F5F5F5 | #212121 | The glyph inside the compact logo mark |
-| `--surface-text` | surface/text | #212121 | #F5F5F5 | Text and logo colour on a section |
-| `--surface-text-muted` | surface/text-muted | #6F6F6F | #C0C0C0 | Secondary text on a section |
+| `--accent-blue-container` | accent-blue-container | #CAE6F3 |  | Blue brand accent background. |
+| `--accent-purple-container` | accent-purple-container | #E4C9F9 |  | Purple brand accent background. |
+| `--accent-red-container` | accent-red-container | #F0D3D5 |  | Red brand accent background: tags and avatars. |
+| `--accent-stone-container` | accent-stone-container | #DEDBDA |  | Stone brand accent background. |
+| `--error` | error | #B02A32 | #CE7B80 | Error text, icons and borders on any surface. |
+| `--error-container` | error-container | #FDF1F2 | #3E2324 | Background of an error message. |
+| `--focus` | focus | #212121 | #F5F5F5 | Focus ring on every interactive element. |
+| `--info` | info | #2369AA | #6C9AC6 | Information text and icons on any surface. |
+| `--info-container` | info-container | #F3F8FD | #212F3C | Background of an information message. |
+| `--inverse-on-primary` | inverse-on-primary | #212121 | #F5F5F5 | Text and icons on inverse-primary. |
+| `--inverse-on-surface` | inverse-on-surface | #F5F5F5 | #212121 | Text and icons on inverse-surface. |
+| `--inverse-on-surface-variant` | inverse-on-surface-variant | #C0C0C0 | #6F6F6F | Secondary text on inverse-surface. |
+| `--inverse-outline` | inverse-outline | #F5F5F5 | #212121 | Strong borders and focus on inverse-surface. |
+| `--inverse-outline-variant` | inverse-outline-variant | #777777 | #999999 | Dividers and quiet borders on inverse-surface. |
+| `--inverse-primary` | inverse-primary | #F5F5F5 | #212121 | Primary on inverse-surface. |
+| `--inverse-primary-hover` | inverse-primary-hover | #ECECEC | #444444 | Inverse-primary under the pointer. |
+| `--inverse-primary-pressed` | inverse-primary-pressed | #D6D6D6 | #555555 | Inverse-primary while pressed. |
+| `--inverse-surface` | inverse-surface | #212121 | #F5F5F5 | A surface that is the opposite of the page: dark bands, toasts, tooltips. |
+| `--on-accent-container` | on-accent-container | #212121 |  | Text and icons on any accent container. |
+| `--on-primary` | on-primary | #F5F5F5 | #212121 | Text and icons on primary. |
+| `--on-surface` | on-surface | #212121 | #F5F5F5 | Main text and icons on any surface. |
+| `--on-surface-placeholder` | on-surface-placeholder | #6F6F6F | #999999 | Placeholder text inside empty fields. |
+| `--on-surface-variant` | on-surface-variant | #6F6F6F | #C0C0C0 | Secondary text, labels and quiet icons. |
+| `--outline` | outline | #212121 | #F5F5F5 | Strong borders: fields, outline buttons, selected controls. |
+| `--outline-medium` | outline-medium | #D6D6D6 | #777777 | Borders of controls at rest: checkbox, radio, toggle track. |
+| `--outline-variant` | outline-variant | #ECECEC | #555555 | Dividers and card borders. |
+| `--primary` | primary | #212121 | #F5F5F5 | The main action: Solid button fill, links, selected controls. |
+| `--primary-hover` | primary-hover | #444444 | #ECECEC | Primary under the pointer. |
+| `--primary-pressed` | primary-pressed | #555555 | #D6D6D6 | Primary while pressed. |
+| `--success` | success | #1C7A4A | #65A584 | Success text and icons on any surface. |
+| `--success-container` | success-container | #EEF7F1 | #203329 | Background of a success message. |
+| `--surface` | surface | #F5F5F5 | #212121 | Page background |
+| `--surface-container` | surface-container | #FFFFFF | #2A2A2A | Cards, dialogs, panels and fields |
+| `--surface-container-high` | surface-container-high | #F5F5F5 | #444444 | Menus, popovers and the hover of a row or card. |
+| `--surface-container-highest` | surface-container-highest | #ECECEC | #555555 | Highest container: skeleton blocks and tracks. |
+| `--surface-container-low` | surface-container-low | #FAFAFA | #262626 | Quiet areas inside a page: rails, table headers, grouped rows. |
+| `--surface-hover` | surface-hover | #ECECEC | #444444 | An unselected control or neutral element under the pointer. |
+| `--surface-pressed` | surface-pressed | #D6D6D6 | #555555 | An unselected control or neutral element while pressed. |
+| `--transparent` | transparent | #00000000 |  | No fill |
+| `--warning` | warning | #8A5A00 | #B29257 | Warning text and icons on any surface. |
+| `--warning-container` | warning-container | #FFF2D8 | #362C1A | Background of a warning message. |
 
 ## 5. Components in this slice
 
 ### Button
 
-Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Surface mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.
+Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Context mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.
 
 - **Style**: Ghost, Outline, Solid
 - **State**: Default, Disabled, Focus, Hover, Pressed

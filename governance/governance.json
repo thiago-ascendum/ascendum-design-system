@@ -6,7 +6,7 @@
   "collectionOrder": [
     "Primitives",
     "Semantic",
-    "Surface",
+    "Context",
     "Dimension",
     "Component"
   ],
@@ -15,7 +15,7 @@
   ],
   "publicCollections": [
     "Semantic",
-    "Surface",
+    "Context",
     "Dimension",
     "Component"
   ],
@@ -50,153 +50,153 @@
   "rampMinimumUses": 3,
   "contrastPairs": [
     [
-      "text/default",
-      "bg/page",
+      "on-surface",
+      "surface",
       4.5
     ],
     [
-      "text/default",
-      "bg/surface",
+      "on-surface",
+      "surface-container",
       4.5
     ],
     [
-      "text/default",
-      "bg/subtle",
+      "on-surface",
+      "surface-container-low",
       4.5
     ],
     [
-      "text/muted",
-      "bg/page",
+      "on-surface-variant",
+      "surface",
       4.5
     ],
     [
-      "text/muted",
-      "bg/surface",
+      "on-surface-variant",
+      "surface-container",
       4.5
     ],
     [
-      "text/muted",
-      "bg/subtle",
+      "on-surface-variant",
+      "surface-container-low",
       4.5
     ],
     [
-      "text/link",
-      "bg/page",
+      "primary",
+      "surface",
       4.5
     ],
     [
-      "text/link",
-      "bg/surface",
+      "primary",
+      "surface-container",
       4.5
     ],
     [
-      "text/placeholder",
-      "bg/surface",
+      "on-surface-placeholder",
+      "surface-container",
       4.5
     ],
     [
-      "text/inverted",
-      "bg/inverted",
+      "inverse-on-surface",
+      "inverse-surface",
       4.5
     ],
     [
-      "button/label",
-      "bg/page",
+      "on-surface",
+      "surface",
       4.5
     ],
     [
-      "button/label-solid",
-      "button/fill-solid",
+      "on-primary",
+      "primary",
       4.5
     ],
     [
-      "feedback/error",
-      "feedback/error-bg",
+      "error",
+      "error-container",
       4.5
     ],
     [
-      "feedback/success",
-      "feedback/success-bg",
+      "success",
+      "success-container",
       4.5
     ],
     [
-      "feedback/warning",
-      "feedback/warning-bg",
+      "warning",
+      "warning-container",
       4.5
     ],
     [
-      "feedback/info",
-      "feedback/info-bg",
+      "info",
+      "info-container",
       4.5
     ],
     [
-      "feedback/error",
-      "bg/surface",
+      "error",
+      "surface-container",
       4.5
     ],
     [
-      "feedback/success",
-      "bg/surface",
+      "success",
+      "surface-container",
       4.5
     ],
     [
-      "feedback/warning",
-      "bg/surface",
+      "warning",
+      "surface-container",
       4.5
     ],
     [
-      "feedback/info",
-      "bg/surface",
+      "info",
+      "surface-container",
       4.5
     ],
     [
-      "border/field",
-      "bg/surface",
+      "outline",
+      "surface-container",
       3.0
     ],
     [
-      "icon/default",
-      "bg/page",
+      "on-surface",
+      "surface",
       3.0
     ],
     [
-      "icon/muted",
-      "bg/page",
+      "on-surface-variant",
+      "surface",
       3.0
     ],
     [
-      "text/on-accent",
-      "bg/accent-red",
+      "on-accent-container",
+      "accent-red-container",
       4.5
     ],
     [
-      "text/on-accent",
-      "bg/accent-purple",
+      "on-accent-container",
+      "accent-purple-container",
       4.5
     ],
     [
-      "text/on-accent",
-      "bg/accent-blue",
+      "on-accent-container",
+      "accent-blue-container",
       4.5
     ],
     [
-      "text/on-accent",
-      "bg/accent-stone",
+      "on-accent-container",
+      "accent-stone-container",
       4.5
     ],
     [
-      "text/inverted",
+      "inverse-on-surface",
       "bg/inverted-raised",
       4.5
     ],
     [
       "text/access-muted",
-      "bg/page",
+      "surface",
       4.5
     ],
     [
       "text/access-muted",
-      "bg/surface",
+      "surface-container",
       4.5
     ]
   ],

@@ -23,9 +23,9 @@ export default {
       tokens: [
         ['component/form-field/gap', '--form-field-gap', 'Space between the label, the field and the message'],
         ['font-size/label', '--text-label-size', 'Label size'],
-        ['text/default', '--text', 'Label colour'],
+        ['on-surface', '--on-surface', 'Label colour'],
         ['font-size/caption', '--font-size-caption', 'Message size'],
-        ['feedback/error', '--feedback-error', 'Message colour'],
+        ['error', '--error', 'Message colour'],
       ],
       a11y: [
         'The label is a real label tied to the field with for and id. A unique id is made when you leave it out.',

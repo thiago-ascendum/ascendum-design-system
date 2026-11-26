@@ -1,4 +1,4 @@
-/* Divider. One hairline in border/default. It has no weight or colour options. */
+/* Divider. One hairline in outline-variant. It has no weight or colour options. */
 .ds-divider { margin: 0; padding: 0; border: 0; flex: none; }
-.ds-divider--horizontal { display: block; width: 100%; height: 0; border-top: var(--border-width-hairline) solid var(--border-default); }
-.ds-divider--vertical { align-self: stretch; width: 0; border-left: var(--border-width-hairline) solid var(--border-default); }
+.ds-divider--horizontal { display: block; width: 100%; height: 0; border-top: var(--border-width-hairline) solid var(--outline-variant); }
+.ds-divider--vertical { align-self: stretch; width: 0; border-left: var(--border-width-hairline) solid var(--outline-variant); }

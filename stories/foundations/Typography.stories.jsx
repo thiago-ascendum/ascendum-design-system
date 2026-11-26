@@ -23,7 +23,7 @@ export const TextStyles = {
                 {s.size}px, {s.weight}, line height {pct(s.lineHeight)}, letter spacing {pct(s.letterSpacing)}
               </span>
             </div>
-            <div style={{ fontFamily: `${s.family}, sans-serif`, fontSize: s.size, fontWeight: WEIGHT[s.weight] || 400, lineHeight: pct(s.lineHeight), letterSpacing: `${s.letterSpacing[0] / 100}em`, color: 'var(--text)' }}>
+            <div style={{ fontFamily: `${s.family}, sans-serif`, fontSize: s.size, fontWeight: WEIGHT[s.weight] || 400, lineHeight: pct(s.lineHeight), letterSpacing: `${s.letterSpacing[0] / 100}em`, color: 'var(--on-surface)' }}>
               Design that holds together
             </div>
           </div>

@@ -17,10 +17,83 @@ Clean-up after the design review of 5 November.
 | Avatar | The Fill property is now Tone, and Size has three values instead of four. | Pick the tone and the size again on instances set to Fill=Midnight or Size=Small. |
 | Stat Card | The five Accent variants are gone. | Nothing. Those instances fall back to the plain card. |
 | Badge | The tones Muted and Solid are gone. | Pick a new tone on those instances. |
-| A component set to Inverted | Inverted is no longer a variant on Logo, the three cards, Footer, Navigation Bar and the six sections. | Set the Surface mode to Inverted on the instance or on its section. |
-| Button | The Variant property is gone. Inverted is now the Surface mode, set on the section. | Pick the style again on instances that were Inverted, and set the Surface mode to Inverted on their section. |
+| A component set to Inverted | Inverted is no longer a variant on Logo, the three cards, Footer, Navigation Bar and the six sections. | Set the Context mode to Inverted on the instance or on its section. |
+| Button | The Variant property is gone. Inverted is now the Context mode, set on the section. | Pick the style again on instances that were Inverted, and set the Context mode to Inverted on their section. |
 | Breadcrumb Item | Three variants instead of six. Separator is now a switch, not a variant. | Turn the Separator switch off on instances that were set to Separator=False. |
-| A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: text/access-muted to text/muted, UI/Tag and UI/Eyebrow to UI/Label. |
+| A colour token | Colour tokens are named by their job now: surface, on-surface, primary, outline and their inverse versions. 65 names became 41 roles and 13 Context tokens. | Nothing in Figma: every binding moved with the rename. In code, use the table below. |
+| A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: text/access-muted to on-surface-variant, UI/Tag and UI/Eyebrow to UI/Label. |
+
+### Colour roles: old name to new name
+
+One name per job, like Material 3. In Figma the bindings moved by themselves. In code, rename the CSS variables.
+
+| Old token | Old CSS | New token | New CSS |
+|---|---|---|---|
+| `bg/accent-blue` | `--bg-accent-blue` | `accent-blue-container` | `--accent-blue-container` |
+| `bg/accent-purple` | `--bg-accent-purple` | `accent-purple-container` | `--accent-purple-container` |
+| `bg/accent-red` | `--bg-accent-red` | `accent-red-container` | `--accent-red-container` |
+| `bg/accent-stone` | `--bg-accent-stone` | `accent-stone-container` | `--accent-stone-container` |
+| `button-surface/focus` | `--button-surface-focus` | `ctx/focus` | `--ctx-focus` |
+| `surface/logo` | `--surface-logo` | `ctx/logo` | `--ctx-logo` |
+| `surface/logo-glyph` | `--surface-logo-glyph` | `ctx/logo-glyph` | `--ctx-logo-glyph` |
+| `button-surface/label-solid` | `--button-surface-label-hover` | `ctx/on-primary` | `--ctx-on-primary` |
+| `button-surface/label` | `--button-surface-label` | `ctx/on-surface` | `--ctx-on-surface` |
+| `surface/text` | `--surface-text` | `ctx/on-surface` | `--ctx-on-surface` |
+| `surface/text-muted` | `--surface-text-muted` | `ctx/on-surface-variant` | `--ctx-on-surface-variant` |
+| `button-surface/stroke` | `--button-surface-stroke` | `ctx/outline` | `--ctx-outline` |
+| `surface/border` | `--surface-border` | `ctx/outline-variant` | `--ctx-outline-variant` |
+| `button-surface/fill-solid` | `--button-surface-fill-hover` | `ctx/primary` | `--ctx-primary` |
+| `button-surface/fill-solid-hover` | `--button-surface-fill-solid-hover` | `ctx/primary-hover` | `--ctx-primary-hover` |
+| `button-surface/fill-pressed` | `--button-surface-fill-pressed` | `ctx/primary-pressed` | `--ctx-primary-pressed` |
+| `surface/bg` | `--surface-bg` | `ctx/surface` | `--ctx-surface` |
+| `surface/bg-raised` | `--surface-bg-raised` | `ctx/surface-container` | `--ctx-surface-container` |
+| `feedback/error` | `--feedback-error` | `error` | `--error` |
+| `feedback/error-bg` | `--feedback-error-bg` | `error-container` | `--error-container` |
+| `border/focus` | `--border-focus` | `focus` | `--focus` |
+| `feedback/info` | `--feedback-info` | `info` | `--info` |
+| `feedback/info-bg` | `--feedback-info-bg` | `info-container` | `--info-container` |
+| `button/label-solid-inverted` | `--button-label-hover-inverted` | `inverse-on-primary` | `--inverse-on-primary` |
+| `text/inverted` | `--inverted-text` | `inverse-on-surface` | `--inverse-on-surface` |
+| `icon/inverted` | `--icon-inverted` | `inverse-on-surface` | `--inverse-on-surface` |
+| `button/label-inverted` | `--button-label-inverted` | `inverse-on-surface` | `--inverse-on-surface` |
+| `text/inverted-muted` | `--text-inverted-muted` | `inverse-on-surface-variant` | `--inverse-on-surface-variant` |
+| `button/stroke-inverted` | `--button-stroke-inverted` | `inverse-outline` | `--inverse-outline` |
+| `border/quote` | `--quote-line` | `inverse-outline-variant` | `--inverse-outline-variant` |
+| `button/fill-solid-inverted` | `--button-fill-hover-inverted` | `inverse-primary` | `--inverse-primary` |
+| `button/fill-solid-hover-inverted` | `--button-fill-solid-hover-inverted` | `inverse-primary-hover` | `--inverse-primary-hover` |
+| `button/fill-pressed-inverted` | `--button-fill-pressed-inverted` | `inverse-primary-pressed` | `--inverse-primary-pressed` |
+| `bg/inverted` | `--inverted-background` | `inverse-surface` | `--inverse-surface` |
+| `text/on-accent` | `--text-on-accent` | `on-accent-container` | `--on-accent-container` |
+| `button/label-solid` | `--button-label-hover` | `on-primary` | `--on-primary` |
+| `text/default` | `--text` | `on-surface` | `--on-surface` |
+| `icon/default` | `--icon` | `on-surface` | `--on-surface` |
+| `button/label` | `--button-label` | `on-surface` | `--on-surface` |
+| `text/placeholder` | `--form-placeholder` | `on-surface-placeholder` | `--on-surface-placeholder` |
+| `text/muted` | `--text-muted` | `on-surface-variant` | `--on-surface-variant` |
+| `icon/muted` | `--icon-muted` | `on-surface-variant` | `--on-surface-variant` |
+| `border/strong` | `--border-strong` | `outline` | `--outline` |
+| `border/field` | `--form-border` | `outline` | `--outline` |
+| `button/stroke` | `--button-stroke` | `outline` | `--outline` |
+| `border/muted` | `--border-muted` | `outline-medium` | `--outline-medium` |
+| `border/default` | `--border-default` | `outline-variant` | `--outline-variant` |
+| `text/link` | `--link` | `primary` | `--primary` |
+| `button/fill-solid` | `--button-fill-hover` | `primary` | `--primary` |
+| `button/fill-solid-hover` | `--button-fill-solid-hover` | `primary-hover` | `--primary-hover` |
+| `control/fill-selected-hover` | `--control-fill-selected-hover` | `primary-hover` | `--primary-hover` |
+| `button/fill-pressed` | `--button-fill-pressed` | `primary-pressed` | `--primary-pressed` |
+| `control/fill-selected-pressed` | `--control-fill-selected-pressed` | `primary-pressed` | `--primary-pressed` |
+| `feedback/success` | `--feedback-success` | `success` | `--success` |
+| `feedback/success-bg` | `--feedback-success-bg` | `success-container` | `--success-container` |
+| `bg/page` | `--background` | `surface` | `--surface` |
+| `bg/surface` | `--container-fill` | `surface-container` | `--surface-container` |
+| `bg/hover` | `--bg-hover` | `surface-container-high` | `--surface-container-high` |
+| `bg/skeleton` | `--bg-skeleton` | `surface-container-highest` | `--surface-container-highest` |
+| `bg/subtle` | `--bg-subtle` | `surface-container-low` | `--surface-container-low` |
+| `control/fill-hover` | `--control-fill-hover` | `surface-hover` | `--surface-hover` |
+| `control/fill-pressed` | `--control-fill-pressed` | `surface-pressed` | `--surface-pressed` |
+| `button/fill` | `--button-fill` | `transparent` | `--transparent` |
+| `feedback/warning` | `--feedback-warning` | `warning` | `--warning` |
+| `feedback/warning-bg` | `--feedback-warning-bg` | `warning-container` | `--warning-container` |
 
 ### Measured before and after
 
@@ -49,7 +122,7 @@ Clean-up after the design review of 5 November.
 - Contrast: muted text, placeholder and muted icons in light mode, and the four feedback colours in dark mode, now pass WCAG AA.
 - Input: vertical padding 8 to 18.
 - Focus is a visible ring on Button, Input, Checkbox, Radio, Toggle and Slider.
-- Button: 15 variants instead of 24. Pressed is new. Inverted is no longer a variant: the section sets the Surface mode and every button inside follows, in light and in dark. Breaking. Solid has a visible hover.
+- Button: 15 variants instead of 24. Pressed is new. Inverted is no longer a variant: the section sets the Context mode and every button inside follows, in light and in dark. Breaking. Solid has a visible hover.
 - Modal and Section / Showcase: the small label above the title is gone.
 - File Uploader: the failed state shows a warning icon, the reason and a Try again action.
 - Team and stakeholder cards use the Avatar component.
@@ -58,13 +131,13 @@ Clean-up after the design review of 5 November.
 - Every page canvas in the Figma file is now dark (#1E1E1E), so the page frames read against it.
 - Variables and styles: every variable has a description (73 had none). 22 component variables are scoped to spacing instead of showing in every picker. The two text styles and five gradient styles without a description have one.
 - Breadcrumb Item: three variants instead of six. The separator is a switch on the same three states. Breaking.
-- Inverted: Logo, the three cards, Footer, Navigation Bar and the six sections no longer have an Inverted variant. The section sets the Surface mode and everything inside follows. 44 variants became 22. Breaking.
+- Inverted: Logo, the three cards, Footer, Navigation Bar and the six sections no longer have an Inverted variant. The section sets the Context mode and everything inside follows. 44 variants became 22. Breaking.
 - Select: a visible focus ring like Input, and the disabled border uses the same token as Input.
 - Card labels: Checkbox and Radio say "Not checked", Toggle says "Off". Skeleton names its four shapes and lines its samples up.
 
 ### Added
 
-- Tokens: `neutral/750`, `status/*-on-dark`, `accent/*-soft`, `bg/accent-*`, `text/on-accent`, `border/focus`, `border-width/focus`, `text/inverted-muted`, `button/fill-solid-hover`.
+- Tokens: `neutral/750`, `status/*-on-dark`, `accent/*-soft`, `bg/accent-*`, `on-accent-container`, `focus`, `border-width/focus`, `inverse-on-surface-variant`, `primary-hover`.
 - Colour page: Status and Semantic roles sections, in light and dark.
 - A documentation card on 45 components. 31 also show dark mode.
 - A card on each pattern that lists the components it is built from.
@@ -85,8 +158,8 @@ Clean-up after the design review of 5 November.
 - Lifecycle: a page that follows Button from Figma to code, documentation and checks, with what ran on its own, what needed a person and what infrastructure is missing.
 - States: Hover and Pressed on Checkbox, Radio, Toggle and Slider. Hover on Input, Form Field, Select, Combobox and Search Bar. 25 new variants.
 - Surface collection: one collection with two modes, Default and Inverted, and 14 tokens that follow it: seven for Button, five for sections and cards, two for the logo.
-- Control tokens: control/fill-hover, control/fill-pressed, control/fill-selected-hover and control/fill-selected-pressed.
-- Pressed tokens: `button/fill-pressed` and `button/fill-pressed-inverted`.
+- Control tokens: surface-hover, surface-pressed, primary-hover and primary-pressed.
+- Pressed tokens: `primary-pressed` and `inverse-primary-pressed`.
 - Skeleton: loading behaviour shown in three steps, and a two-frame prototype.
 - Slider: a three-frame prototype of the budget filter.
 - Select: the open state, drawn with Menu Item rows, and a consistency table measured against Input.
@@ -99,7 +172,7 @@ Clean-up after the design review of 5 November.
 Fourteen decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.
 
 - Unused tokens: removed three that nothing bound: `component/combobox/max-width`, `component/dropzone/icon` and `size/container-half`. The layout sizes (`size/col-*`, `size/container`, `size/full-width`) stay as reference for page layouts.
-- Link colour: `text/link` keeps the colour of the text on purpose. A link is told apart by its underline, never by colour alone.
+- Link colour: `primary` keeps the colour of the text on purpose. A link is told apart by its underline, never by colour alone.
 - Column widths: `size/col-4` is 269.5 (was 268) and `size/col-5` is 209.2 (was 206), so both add up to the 1174 container. On mobile every `size/col` token is one container wide, so layouts stack on their own.
 - Gradient angles: all five gradients run at the same 44 degrees. Develop Beyond was turned and its stops mirrored, so it looks the same.
 - Small text: the 12px text in Jira Annotation uses UI/Caption (13px). No style existed at 12px.
@@ -108,7 +181,7 @@ Fourteen decisions taken with a reason and marked as proposals in the file. Each
 - Corner radius: brand-facing pages keep 0 px buttons. Internal tools may use `radius/field`, 4 px. Shown side by side on the Radius & Elevation page.
 - Behaviour: Skeleton and Slider each have a Behaviour block with timings, motion and keyboard steps.
 - Illustration guidelines: five rules for where brand illustrations may be used. For the brand owner to confirm.
-- Button surface: a Surface mode replaces the twelve Inverted variants. A section is inverted once, not button by button.
+- Button surface: a Context mode replaces the twelve Inverted variants. A section is inverted once, not button by button.
 - Pressed colour: one grey step past hover on Solid. Outline and Ghost take the Solid hover colour while pressed.
 - Muted text on inverted: secondary text on inverted cards and on the footer uses the inverted muted colour, the same as the sections.
 - Control states: an empty control takes one grey step on hover and two when pressed. A checked one takes the same steps as the Solid button.

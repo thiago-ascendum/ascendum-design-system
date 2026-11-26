@@ -53,7 +53,7 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
   <Table head={['Component', 'What the review asked', 'State', 'What was done']} rows={[
     ['Avatar', 'Saturated colours and light text.', <Done />, 'Soft tint, dark initials, three sizes, four tones. From 20 variants to 12.'],
     ['Badge', 'What does blue mean?', <Done />, 'Five tones, each with one meaning. Two tones with no meaning removed. Our reading of blue is "in progress": to confirm.'],
-    ['Button', 'Too many variants, unclear hierarchy, arrows.', <Done />, 'Solid, Outline and a borderless Ghost, with the hierarchy shown in use. 15 variants instead of 24, with Pressed added and hover and press working in a prototype. Inverted is a Surface mode, not a variant.'],
+    ['Button', 'Too many variants, unclear hierarchy, arrows.', <Done />, 'Solid, Outline and a borderless Ghost, with the hierarchy shown in use. 15 variants instead of 24, with Pressed added and hover and press working in a prototype. Inverted is a Context mode, not a variant.'],
     ['Checkbox', 'Redundant states.', <Partly />, 'Focus is now a visible ring. The nine states are kept and explained. Whether Disabled stays is a decision.'],
     ['Divider', 'No criticism.', <Done />, 'No change needed.'],
     ['Input', 'Too many states, wrong padding.', <Partly />, 'Vertical padding from 8 to 18. Five states remain: whether Filled is a state is a decision.'],
@@ -83,7 +83,7 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
 
 <Section n={5} title="Global issues">
   <Table head={['Issue', 'State', 'Where it stands']} rows={[
-    ['Component rationalisation', <Partly />, 'Inverted is a Surface mode on 13 components instead of a variant: 56 variants gone. Button went from 24 to 15 and Breadcrumb Item from six to three. Hover and Pressed added 25. Button and Checkbox are three over the limit of 12: Focus could become a switch.'],
+    ['Component rationalisation', <Partly />, 'Inverted is a Context mode on 13 components instead of a variant: 56 variants gone. Button went from 24 to 15 and Breadcrumb Item from six to three. Hover and Pressed added 25. Button and Checkbox are three over the limit of 12: Focus could become a switch.'],
     ['Token compliance', <Done />, 'Checked on every change: no colour set by hand, no component bound straight to a primitive, no text without a style.'],
     ['Contextual documentation', <Done />, '45 components and 5 patterns have a documentation card that ends with the component in use. 14 are also in code on this site.'],
     ['AI interpretation', <Done />, 'A contract file says what a tool may use, must never use and should ignore, and each component has its own contract with its properties, states and tokens.'],

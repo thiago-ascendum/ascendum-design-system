@@ -4,26 +4,26 @@
   padding: var(--button-padding-v) var(--button-padding-h);
   font: 700 var(--text-button-size)/0.95 Barlow, system-ui, sans-serif; letter-spacing: 0;
   border: var(--border-width-button) solid transparent; border-radius: var(--button-radius);
-  background: transparent; color: var(--button-label); cursor: pointer; text-decoration: none;
+  background: transparent; color: var(--on-surface); cursor: pointer; text-decoration: none;
 }
-.ds-button:focus-visible { outline: var(--border-width-focus) solid var(--border-focus); outline-offset: 4px; }
+.ds-button:focus-visible { outline: var(--border-width-focus) solid var(--focus); outline-offset: 4px; }
 .ds-button:disabled { opacity: 0.4; cursor: not-allowed; }
 
 /* Primary surface */
-.ds-button--solid { background: var(--button-fill-solid); border-color: var(--button-fill-solid); color: var(--button-label-solid); }
-.ds-button--solid:hover:not(:disabled) { background: var(--button-fill-solid-hover); border-color: var(--button-fill-solid-hover); }
-.ds-button--outline { border-color: var(--button-stroke); }
-.ds-button--outline:hover:not(:disabled), .ds-button--ghost:hover:not(:disabled) { background: var(--button-fill-solid); color: var(--button-label-solid); }
+.ds-button--solid { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+.ds-button--solid:hover:not(:disabled) { background: var(--primary-hover); border-color: var(--primary-hover); }
+.ds-button--outline { border-color: var(--outline); }
+.ds-button--outline:hover:not(:disabled), .ds-button--ghost:hover:not(:disabled) { background: var(--primary); color: var(--on-primary); }
 
 /* Pressed: one step past hover. */
-.ds-button--solid:active:not(:disabled) { background: var(--button-fill-pressed); border-color: var(--button-fill-pressed); }
-.ds-button--outline:active:not(:disabled), .ds-button--ghost:active:not(:disabled) { background: var(--button-fill-solid-hover); border-color: var(--button-fill-solid-hover); color: var(--button-label-solid); }
+.ds-button--solid:active:not(:disabled) { background: var(--primary-pressed); border-color: var(--primary-pressed); }
+.ds-button--outline:active:not(:disabled), .ds-button--ghost:active:not(:disabled) { background: var(--primary-hover); border-color: var(--primary-hover); color: var(--on-primary); }
 /* Inverted surface: for dark sections. It follows the mode. */
-.ds-button--inverted { color: var(--button-label-inverted); }
-.ds-button--inverted:focus-visible { outline-color: var(--button-stroke-inverted); }
-.ds-button--inverted.ds-button--solid { background: var(--button-fill-solid-inverted); border-color: var(--button-fill-solid-inverted); color: var(--button-label-solid-inverted); }
-.ds-button--inverted.ds-button--solid:hover:not(:disabled) { background: var(--button-fill-solid-hover-inverted); border-color: var(--button-fill-solid-hover-inverted); }
-.ds-button--inverted.ds-button--outline { border-color: var(--button-stroke-inverted); }
-.ds-button--inverted.ds-button--outline:hover:not(:disabled), .ds-button--inverted.ds-button--ghost:hover:not(:disabled) { background: var(--button-fill-solid-inverted); color: var(--button-label-solid-inverted); }
-.ds-button--inverted.ds-button--solid:active:not(:disabled) { background: var(--button-fill-pressed-inverted); border-color: var(--button-fill-pressed-inverted); }
-.ds-button--inverted.ds-button--outline:active:not(:disabled), .ds-button--inverted.ds-button--ghost:active:not(:disabled) { background: var(--button-fill-solid-hover-inverted); border-color: var(--button-fill-solid-hover-inverted); color: var(--button-label-solid-inverted); }
+.ds-button--inverted { color: var(--inverse-on-surface); }
+.ds-button--inverted:focus-visible { outline-color: var(--inverse-outline); }
+.ds-button--inverted.ds-button--solid { background: var(--inverse-primary); border-color: var(--inverse-primary); color: var(--inverse-on-primary); }
+.ds-button--inverted.ds-button--solid:hover:not(:disabled) { background: var(--inverse-primary-hover); border-color: var(--inverse-primary-hover); }
+.ds-button--inverted.ds-button--outline { border-color: var(--inverse-outline); }
+.ds-button--inverted.ds-button--outline:hover:not(:disabled), .ds-button--inverted.ds-button--ghost:hover:not(:disabled) { background: var(--inverse-primary); color: var(--inverse-on-primary); }
+.ds-button--inverted.ds-button--solid:active:not(:disabled) { background: var(--inverse-primary-pressed); border-color: var(--inverse-primary-pressed); }
+.ds-button--inverted.ds-button--outline:active:not(:disabled), .ds-button--inverted.ds-button--ghost:active:not(:disabled) { background: var(--inverse-primary-hover); border-color: var(--inverse-primary-hover); color: var(--inverse-on-primary); }

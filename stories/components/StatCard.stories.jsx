@@ -22,14 +22,14 @@ export default {
       tokens: [
         ['component/stat-card/padding', '--stat-card-padding', 'Padding on all sides'],
         ['component/stat-card/gap', '--stat-card-gap', 'Space between the label and the value'],
-        ['bg/surface', '--container-fill', 'Fill'],
-        ['border/default', '--border-default', 'Border'],
+        ['surface-container', '--surface-container', 'Fill'],
+        ['outline-variant', '--outline-variant', 'Border'],
         ['border-width/hairline', '--border-width-hairline', 'Border width'],
         ['radius/card', '--radius-card', 'Corners'],
         ['font-size/body-sm', '--font-size-body-sm', 'Label size'],
         ['font-size/stat', '--text-stat-size', 'Value size: 44 desktop, 36 mobile'],
-        ['text/default', '--text', 'Value colour'],
-        ['text/muted', '--text-muted', 'Label colour'],
+        ['on-surface', '--on-surface', 'Value colour'],
+        ['on-surface-variant', '--on-surface-variant', 'Label colour'],
       ],
       a11y: [
         'The card is a group, named by its label, so a screen reader reads "Active projects, group" and then the value.',

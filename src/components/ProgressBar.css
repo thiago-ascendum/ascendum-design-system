@@ -1,8 +1,8 @@
 /* Progress bar. Every value is a token from build/tokens.css, bound the same way as the Figma component. */
-.ds-progress { display: flex; width: 100%; background: var(--border-default); border-radius: var(--radius-pill); overflow: hidden; }
+.ds-progress { display: flex; width: 100%; background: var(--outline-variant); border-radius: var(--radius-pill); overflow: hidden; }
 .ds-progress--sm { height: var(--progress-height-sm); }
 .ds-progress--lg { height: var(--progress-height-lg); }
-.ds-progress__fill { height: 100%; border-radius: var(--radius-pill); background: var(--border-strong); }
-.ds-progress__fill--success { background: var(--feedback-success); }
-.ds-progress__fill--warning { background: var(--feedback-warning); }
-.ds-progress__fill--error { background: var(--feedback-error); }
+.ds-progress__fill { height: 100%; border-radius: var(--radius-pill); background: var(--outline); }
+.ds-progress__fill--success { background: var(--success); }
+.ds-progress__fill--warning { background: var(--warning); }
+.ds-progress__fill--error { background: var(--error); }

@@ -20,7 +20,7 @@ export default {
       use: ['Stretch it to the width or height of the content it divides.', 'Use it only where spacing alone is not clear enough.'],
       avoid: ['Stacking it with a border or a card that already separates the content.', 'Changing its weight or colour: it has no options for either.'],
       tokens: [
-        ['border/default', '--border-default', 'Colour of the line'],
+        ['outline-variant', '--outline-variant', 'Colour of the line'],
         ['border-width/hairline', '--border-width-hairline', 'Weight of the line: 1'],
       ],
       a11y: [

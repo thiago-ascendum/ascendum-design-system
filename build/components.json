@@ -73,7 +73,7 @@
     ]
   },
   {
-    "description": "Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Surface mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.",
+    "description": "Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Context mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.",
     "name": "Button",
     "page": "Button",
     "variantCount": 15,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "description": "Ascendum logo. Full is the wordmark lockup, Compact is the mark only. Colours are deliberately not bound to Light and Dark: a logo is chosen, not recoloured by a theme. The choice is the Surface mode: Default gives the dark logo, Inverted gives the light one. The light mark has no backing layer and reads only on a dark surface.",
+    "description": "Ascendum logo. Full is the wordmark lockup, Compact is the mark only. Colours are deliberately not bound to Light and Dark: a logo is chosen, not recoloured by a theme. The choice is the Context mode: Default gives the dark logo, Inverted gives the light one. The light mark has no backing layer and reads only on a dark surface.",
     "name": "Logo",
     "page": "Logo",
     "variantCount": 2,
@@ -282,7 +282,7 @@
     "variants": []
   },
   {
-    "description": "Top navigation with the logo, links and one call to action. Use it once per page, at the top. For a dark bar, set the Surface mode to Inverted: the bar, the logo and the button follow. Horizontal padding matches the page sections so the logo lines up with the content.",
+    "description": "Top navigation with the logo, links and one call to action. Use it once per page, at the top. For a dark bar, set the Context mode to Inverted: the bar, the logo and the button follow. Horizontal padding matches the page sections so the logo lines up with the content.",
     "name": "Navigation Bar",
     "page": "Navigation Bar",
     "variantCount": 1,
@@ -361,7 +361,7 @@
     ]
   },
   {
-    "description": "Full-bleed section with four layouts: Text Left, Text Right, Text Only and Media Only. Use it for the main moments of a page, alternating the Surface mode between Default and Inverted.",
+    "description": "Full-bleed section with four layouts: Text Left, Text Right, Text Only and Media Only. Use it for the main moments of a page, alternating the Context mode between Default and Inverted.",
     "name": "Section / Full Width",
     "page": "Section / Full Width",
     "variantCount": 4,
@@ -384,7 +384,7 @@
     ]
   },
   {
-    "description": "Closing call to action. Use it once, as the last block of a page. For a dark band, set the Surface mode to Inverted: the section and its button follow. Centred, with the gradient on the second line.",
+    "description": "Closing call to action. Use it once, as the last block of a page. For a dark band, set the Context mode to Inverted: the section and its button follow. Centred, with the gradient on the second line.",
     "name": "Section / Let's Connect",
     "page": "Section / Let's Connect",
     "variantCount": 1,
@@ -393,7 +393,7 @@
     ]
   },
   {
-    "description": "Pull quote with attribution. Use it once per page to give weight to a customer's or leader's words. The 2px rule beside the attribution uses border/quote. On an inverted surface the role line uses the inverted muted text colour, through the Surface mode.",
+    "description": "Pull quote with attribution. Use it once per page to give weight to a customer's or leader's words. The 2px rule beside the attribution uses border/quote. On an inverted surface the role line uses the inverted muted text colour, through the Context mode.",
     "name": "Section / Quote",
     "page": "Section / Quote",
     "variantCount": 2,

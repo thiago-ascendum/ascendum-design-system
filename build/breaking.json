@@ -2,9 +2,9 @@
   "added": {
     "components": 0,
     "textStyles": 0,
-    "tokens": 54
+    "tokens": 75
   },
-  "breaking": 61,
+  "breaking": 93,
   "removedComponents": [
     "SectionTag"
   ],
@@ -102,10 +102,26 @@
     "UI/Tag"
   ],
   "removedTokens": [
+    "bg/hover",
+    "bg/inverted",
+    "bg/page",
+    "bg/skeleton",
+    "bg/subtle",
+    "bg/surface",
+    "border/default",
+    "border/field",
+    "border/muted",
+    "border/quote",
+    "border/strong",
+    "button/fill",
     "button/fill-hover",
     "button/fill-hover-inverted",
+    "button/label",
     "button/label-hover",
     "button/label-hover-inverted",
+    "button/label-inverted",
+    "button/stroke",
+    "button/stroke-inverted",
     "component/avatar/font-xl",
     "component/avatar/size-xl",
     "component/combobox/max-width",
@@ -123,9 +139,20 @@
     "dept/mortgages",
     "dept/products",
     "dept/talent",
+    "feedback/error",
+    "feedback/error-bg",
+    "feedback/info",
+    "feedback/info-bg",
+    "feedback/success",
+    "feedback/success-bg",
+    "feedback/warning",
+    "feedback/warning-bg",
     "gradient-stop/mortgages-end",
     "gradient-stop/products-end",
     "gradient-stop/talent-end",
+    "icon/default",
+    "icon/inverted",
+    "icon/muted",
     "neutral/0",
     "neutral/300",
     "neutral/950",
@@ -135,8 +162,13 @@
     "status/success-border",
     "status/warning-border",
     "text/access-muted",
+    "text/default",
+    "text/inverted",
+    "text/link",
+    "text/muted",
     "text/on-gradient-dark",
-    "text/on-gradient-light"
+    "text/on-gradient-light",
+    "text/placeholder"
   ],
   "removedValues": [
     {

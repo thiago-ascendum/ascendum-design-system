@@ -57,7 +57,7 @@ import { Hero, Section, Index, Cards, Steps, Table, List } from './_shared/Doc.j
 <Section n={5} title="Before you change a token, look at what moves">
   <Cards items={[
     { title: 'Look at the list first', text: <>Every token knows which roles alias it and which components bind it. Look at that list first. The <a href="/report/#impact-map" target="_top">impact map</a> in the health report shows it.</> },
-    { title: 'An example', text: <>For example, <code>neutral/300</code> had no role and no component, so it was safe to remove. A token such as <code>button/fill</code> or <code>bg/surface</code> is bound by components: preview all of them before you change it.</> },
+    { title: 'An example', text: <>For example, <code>neutral/300</code> had no role and no component, so it was safe to remove. A token such as <code>transparent</code> or <code>surface-container</code> is bound by components: preview all of them before you change it.</> },
   ]} />
 </Section>
 
@@ -66,6 +66,7 @@ import { Hero, Section, Index, Cards, Steps, Table, List } from './_shared/Doc.j
     <>A new <code>component/*</code> token needs no discussion. It is that component's own business.</>,
     <>A new <code>space/*</code>, <code>radius/*</code> or <code>font-size/*</code> token changes the shared language and needs a reason.</>,
     'Ask: if this value changed, how many components should move? If the answer is one, it belongs in Component.',
+    'A colour is named by its job, never by where it sits or the mode it is in: surface, on-surface, primary, outline. No colour tokens per component, no -inverted or -dark twins. Light and Dark, and an inverted band, are modes that switch the same names.',
   ]} />
 </Section>
 
