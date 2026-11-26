@@ -1,0 +1,50 @@
+{
+  "version": "1.1.0",
+  "tag": "v1.1.0",
+  "commit": "22fda5c3f4864fec7fc6f9b259524c08ea7e995e",
+  "figma": {
+    "fileKey": "5lhRMZkLHZijqgdigjk3J1",
+    "release": {
+      "title": "Colour roles",
+      "savedAt": "2026-11-26T17:28:15Z",
+      "id": null,
+      "content": "Colour tokens named by role: 41 Semantic roles, 13 Context tokens, 262 variables. The content of release 1.1.0."
+    },
+    "snapshotVersion": {
+      "id": null,
+      "status": "read before the snapshot recorded versions",
+      "generatedAt": "2026-11-26T17:57:42.525Z"
+    },
+    "versions": [
+      {
+        "title": "Colour roles",
+        "savedAt": "2026-11-26T17:28:15Z",
+        "id": null,
+        "content": "Colour tokens named by role: 41 Semantic roles, 13 Context tokens, 262 variables. The content of release 1.1.0."
+      },
+      {
+        "title": "Snapshot for Git",
+        "savedAt": "2026-11-26T17:45:35Z",
+        "id": "2426222688165894604",
+        "content": "First version saved and recorded by the snapshot itself (pipeline/01b). Pull request 2."
+      },
+      {
+        "title": "Pipeline proof: Button padding-h 28 to 32",
+        "savedAt": "2026-11-26T17:48:23Z",
+        "id": "2426224325050437201",
+        "content": "Token change test. Pull request 3."
+      },
+      {
+        "title": "Pipeline proof: Button padding-h back to 28",
+        "savedAt": "2026-11-26T17:49Z",
+        "id": "2426225909391439100",
+        "content": "Token change reverted in Figma."
+      }
+    ]
+  },
+  "checks": {
+    "blocking": 5,
+    "blockingFailing": 0,
+    "breakingAccepted": 79
+  }
+}
