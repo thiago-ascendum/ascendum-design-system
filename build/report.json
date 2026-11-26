@@ -9,10 +9,13 @@
   "pages": 77,
   "fileKey": "5lhRMZkLHZijqgdigjk3J1",
   "figmaVersion": {
-   "id": "2426236861553833122",
-   "title": "Snapshot for Git",
-   "savedAt": "2026-11-26T18:38:10.689Z",
-   "status": "saved"
+   "id": "2426245129891222555",
+   "title": "Send to code: plugin test",
+   "savedAt": "2026-11-26T18:45:04.457Z",
+   "status": "saved",
+   "collectionsTaken": [
+    "Component"
+   ]
   },
   "aliasCount": 138,
   "gate": "OPEN",
@@ -191,7 +194,7 @@
    "evidence": [
     "bound by nothing, by group: ctx (2)",
     "names: ctx/logo, ctx/logo-glyph",
-    "documentation-only, by group: error (8), warning (8), info (8), success (8), accent (4), space (2), size (2), brand (1), component (1), on-error (1), on-error-container (1), on-warning (1)",
+    "documentation-only, by group: error (8), warning (8), info (8), success (8), accent (4), space (2), size (2), brand (1), on-error (1), on-error-container (1), on-warning (1), on-warning-container (1)",
     "names: accent/blue, accent/purple, accent/red, accent/stone, brand/grey, component/tabs/gap, error, error/10, error/30, error/50, error/60, error/70, error/90, error/98, info, info/10, info/30, info/50, info/60, info/70, info/90, info/98, on-error, on-error-container, on-info, on-info-container, on-success, on-success-container, on-warning, on-warning-container, size/icon-body, size/icon-md, space/lg, space/none, success, success/10, success/30, success/50, success/60, success/70, success/90, success/98, warning, warning/10, warning/30, warning/50, warning/60, warning/70, warning/90, warning/98"
    ],
    "gary": [
@@ -3439,15 +3442,11 @@
      13
     ],
     [
-     "Team Card",
-     12
-    ],
-    [
-     "Section / Columns",
-     12
-    ],
-    [
      "Avatar",
+     12
+    ],
+    [
+     "Team Card",
      12
     ],
     [
@@ -3455,15 +3454,19 @@
      12
     ],
     [
+     "Section / Columns",
+     12
+    ],
+    [
      "Footer",
      11
     ],
     [
-     "Side Navigation",
+     "File Uploader",
      10
     ],
     [
-     "File Uploader",
+     "Side Navigation",
      10
     ],
     [
@@ -3487,27 +3490,11 @@
      7
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
      "Empty State",
      6
     ],
     [
      "Modal",
-     6
-    ],
-    [
-     "Section / Header",
-     6
-    ],
-    [
-     "Section / Quote",
      6
     ],
     [
@@ -3519,11 +3506,27 @@
      6
     ],
     [
-     "Section / Let's Connect",
-     5
+     "Section / Header",
+     6
+    ],
+    [
+     "Section / Quote",
+     6
+    ],
+    [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
+     6
     ],
     [
      "Key Stakeholders Card",
+     5
+    ],
+    [
+     "Section / Let's Connect",
      5
     ],
     [
@@ -3531,11 +3534,11 @@
      4
     ],
     [
-     "Section / Showcase",
+     "Menu Item",
      4
     ],
     [
-     "Menu Item",
+     "Section / Showcase",
      4
     ],
     [
@@ -3685,11 +3688,11 @@
      13
     ],
     [
-     "Section / Columns",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Section / Columns",
      12
     ],
     [
@@ -3697,11 +3700,11 @@
      11
     ],
     [
-     "Side Navigation",
+     "File Uploader",
      10
     ],
     [
-     "File Uploader",
+     "Side Navigation",
      10
     ],
     [
@@ -3729,27 +3732,11 @@
      7
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
      "Empty State",
      6
     ],
     [
      "Modal",
-     6
-    ],
-    [
-     "Section / Header",
-     6
-    ],
-    [
-     "Section / Quote",
      6
     ],
     [
@@ -3761,6 +3748,22 @@
      6
     ],
     [
+     "Section / Header",
+     6
+    ],
+    [
+     "Section / Quote",
+     6
+    ],
+    [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
+     6
+    ],
+    [
      "Section / Let's Connect",
      5
     ],
@@ -3769,15 +3772,15 @@
      4
     ],
     [
+     "Menu Item",
+     4
+    ],
+    [
      "Key Stakeholders Card",
      4
     ],
     [
      "Section / Showcase",
-     4
-    ],
-    [
-     "Menu Item",
      4
     ],
     [
@@ -4486,16 +4489,20 @@
      7
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
      "Jira Annotation",
      5
+    ],
+    [
+     "Skeleton",
+     4
     ],
     [
      "Input",
@@ -4507,10 +4514,6 @@
     ],
     [
      "Select",
-     4
-    ],
-    [
-     "Skeleton",
      4
     ],
     [
@@ -4757,11 +4760,11 @@
      4
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
@@ -4879,16 +4882,12 @@
      5
     ],
     [
-     "Section / Full Width",
-     3
-    ],
-    [
      "Combobox",
      3
     ],
     [
-     "Section / Showcase",
-     2
+     "Section / Full Width",
+     3
     ],
     [
      "Key Stakeholders Card",
@@ -4897,6 +4896,14 @@
     [
      "Section / Quote",
      2
+    ],
+    [
+     "Section / Showcase",
+     2
+    ],
+    [
+     "Team Card",
+     1
     ],
     [
      "Code Block",
@@ -4916,10 +4923,6 @@
     ],
     [
      "Jira Annotation",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -4953,7 +4956,7 @@
      17
     ],
     [
-     "Section / Full Width",
+     "Combobox",
      10
     ]
    ]
@@ -5070,11 +5073,11 @@
      6
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -5143,11 +5146,11 @@
      7
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
@@ -5171,15 +5174,15 @@
      3
     ],
     [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
      "Toggle",
      2
     ],
     [
      "Radio",
-     2
-    ],
-    [
-     "Key Stakeholders Card",
      2
     ],
     [
@@ -5282,12 +5285,16 @@
      73
     ],
     [
+     "Checkbox",
+     3
+    ],
+    [
      "Button",
      3
     ],
     [
-     "Checkbox",
-     3
+     "Toggle",
+     2
     ],
     [
      "Input",
@@ -5295,10 +5302,6 @@
     ],
     [
      "Radio",
-     2
-    ],
-    [
-     "Toggle",
      2
     ],
     [
@@ -5318,11 +5321,11 @@
      2
     ],
     [
-     "Combobox",
+     "Slider",
      1
     ],
     [
-     "Slider",
+     "Combobox",
      1
     ],
     [
@@ -5364,15 +5367,15 @@
      7
     ],
     [
+     "Toggle",
+     6
+    ],
+    [
      "Input",
      6
     ],
     [
      "Radio button",
-     6
-    ],
-    [
-     "Toggle",
      6
     ],
     [
@@ -6589,15 +6592,15 @@
      172
     ],
     [
-     "Overview Card",
-     4
-    ],
-    [
      "Combobox",
      4
     ],
     [
      "Tooltip",
+     4
+    ],
+    [
+     "Overview Card",
      4
     ],
     [
@@ -6679,11 +6682,11 @@
      13
     ],
     [
-     "Overview",
+     "Group Cards",
      12
     ],
     [
-     "Group Cards",
+     "Overview",
      12
     ],
     [
@@ -7187,16 +7190,12 @@
      5
     ],
     [
-     "Combobox",
-     4
-    ],
-    [
      "Section / Quote",
      4
     ],
     [
-     "Side Nav Item",
-     3
+     "Combobox",
+     4
     ],
     [
      "Key Stakeholders Card",
@@ -7215,8 +7214,8 @@
      3
     ],
     [
-     "Tooltip",
-     2
+     "Side Nav Item",
+     3
     ],
     [
      "File Uploader",
@@ -7232,6 +7231,10 @@
     ],
     [
      "Section / Showcase",
+     2
+    ],
+    [
+     "Tooltip",
      2
     ],
     [
@@ -7543,11 +7546,11 @@
      6
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -7641,11 +7644,11 @@
      5
     ],
     [
-     "Overview",
+     "Tone of Voice",
      4
     ],
     [
-     "Tone of Voice",
+     "Overview",
      4
     ],
     [
@@ -9208,1156 +9211,6 @@
     ]
    ]
   },
-  "component/button/padding-v · Component": {
-   "name": "component/button/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--button-padding-v",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 12
-   },
-   "direct": 158,
-   "aliases": [],
-   "layers": 158,
-   "productLayers": 24,
-   "components": [
-    [
-     "(documentation, not a component)",
-     134
-    ],
-    [
-     "Button",
-     15
-    ],
-    [
-     "Empty State",
-     2
-    ],
-    [
-     "Modal",
-     2
-    ],
-    [
-     "File Uploader",
-     1
-    ],
-    [
-     "Overview Card",
-     1
-    ],
-    [
-     "Jira Annotation",
-     1
-    ],
-    [
-     "Navigation Bar",
-     1
-    ],
-    [
-     "Section / Let's Connect",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Button",
-     83
-    ],
-    [
-     "Colour",
-     12
-    ],
-    [
-     "Empty State",
-     8
-    ],
-    [
-     "Modal",
-     8
-    ],
-    [
-     "Radius & Elevation",
-     6
-    ],
-    [
-     "Tone of Voice",
-     6
-    ],
-    [
-     "📖 01 · Getting Started",
-     4
-    ],
-    [
-     "File Uploader",
-     4
-    ]
-   ]
-  },
-  "component/button/padding-h · Component": {
-   "name": "component/button/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--button-padding-h",
-   "values": {
-    "Desktop": 28,
-    "Mobile": 22
-   },
-   "direct": 160,
-   "aliases": [],
-   "layers": 160,
-   "productLayers": 25,
-   "components": [
-    [
-     "(documentation, not a component)",
-     135
-    ],
-    [
-     "Button",
-     15
-    ],
-    [
-     "Empty State",
-     2
-    ],
-    [
-     "Modal",
-     2
-    ],
-    [
-     "Jira Annotation",
-     2
-    ],
-    [
-     "File Uploader",
-     1
-    ],
-    [
-     "Overview Card",
-     1
-    ],
-    [
-     "Navigation Bar",
-     1
-    ],
-    [
-     "Section / Let's Connect",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Button",
-     83
-    ],
-    [
-     "Colour",
-     12
-    ],
-    [
-     "Empty State",
-     8
-    ],
-    [
-     "Modal",
-     8
-    ],
-    [
-     "Radius & Elevation",
-     6
-    ],
-    [
-     "Tone of Voice",
-     6
-    ],
-    [
-     "📖 01 · Getting Started",
-     4
-    ],
-    [
-     "File Uploader",
-     4
-    ]
-   ]
-  },
-  "component/input/padding-v · Component": {
-   "name": "component/input/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--input-padding-v",
-   "values": {
-    "Desktop": 18,
-    "Mobile": 18
-   },
-   "direct": 88,
-   "aliases": [],
-   "layers": 88,
-   "productLayers": 24,
-   "components": [
-    [
-     "(documentation, not a component)",
-     64
-    ],
-    [
-     "Input",
-     12
-    ],
-    [
-     "Form Field",
-     12
-    ]
-   ],
-   "pages": [
-    [
-     "Input",
-     39
-    ],
-    [
-     "Form Field",
-     39
-    ],
-    [
-     "Form with validation",
-     4
-    ],
-    [
-     "Radius & Elevation",
-     2
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/input/padding-h · Component": {
-   "name": "component/input/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--input-padding-h",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 88,
-   "aliases": [],
-   "layers": 88,
-   "productLayers": 24,
-   "components": [
-    [
-     "(documentation, not a component)",
-     64
-    ],
-    [
-     "Input",
-     12
-    ],
-    [
-     "Form Field",
-     12
-    ]
-   ],
-   "pages": [
-    [
-     "Input",
-     39
-    ],
-    [
-     "Form Field",
-     39
-    ],
-    [
-     "Form with validation",
-     4
-    ],
-    [
-     "Radius & Elevation",
-     2
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/input/textarea-min · Component": {
-   "name": "component/input/textarea-min",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--input-textarea-min",
-   "values": {
-    "Desktop": 80,
-    "Mobile": 80
-   },
-   "direct": 39,
-   "aliases": [],
-   "layers": 39,
-   "productLayers": 12,
-   "components": [
-    [
-     "(documentation, not a component)",
-     27
-    ],
-    [
-     "Input",
-     6
-    ],
-    [
-     "Form Field",
-     6
-    ]
-   ],
-   "pages": [
-    [
-     "Input",
-     19
-    ],
-    [
-     "Form Field",
-     19
-    ],
-    [
-     "Form with validation",
-     1
-    ]
-   ]
-  },
-  "component/checkbox/radius · Component": {
-   "name": "component/checkbox/radius",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--checkbox-radius",
-   "values": {
-    "Desktop": 3,
-    "Mobile": 3
-   },
-   "direct": 84,
-   "aliases": [],
-   "layers": 84,
-   "productLayers": 15,
-   "components": [
-    [
-     "(documentation, not a component)",
-     69
-    ],
-    [
-     "Checkbox",
-     15
-    ]
-   ],
-   "pages": [
-    [
-     "Checkbox",
-     49
-    ],
-    [
-     "🤝 03 · Contribution & Governance",
-     10
-    ],
-    [
-     "Iconography",
-     9
-    ],
-    [
-     "📖 01 · Getting Started",
-     8
-    ],
-    [
-     "📝 02 · Changelog",
-     7
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/radio/dot · Component": {
-   "name": "component/radio/dot",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--radio-dot",
-   "values": {
-    "Desktop": 9,
-    "Mobile": 9
-   },
-   "direct": 16,
-   "aliases": [],
-   "layers": 16,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     11
-    ],
-    [
-     "Radio",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Radio button",
-     16
-    ]
-   ]
-  },
-  "component/toggle/width · Component": {
-   "name": "component/toggle/width",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toggle-width",
-   "values": {
-    "Desktop": 44,
-    "Mobile": 44
-   },
-   "direct": 36,
-   "aliases": [],
-   "layers": 36,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     26
-    ],
-    [
-     "Toggle",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Toggle",
-     33
-    ],
-    [
-     "📖 01 · Getting Started",
-     1
-    ],
-    [
-     "📝 02 · Changelog",
-     1
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/toggle/height · Component": {
-   "name": "component/toggle/height",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toggle-height",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 36,
-   "aliases": [],
-   "layers": 36,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     26
-    ],
-    [
-     "Toggle",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Toggle",
-     33
-    ],
-    [
-     "📖 01 · Getting Started",
-     1
-    ],
-    [
-     "📝 02 · Changelog",
-     1
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/toggle/knob · Component": {
-   "name": "component/toggle/knob",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toggle-knob",
-   "values": {
-    "Desktop": 17,
-    "Mobile": 17
-   },
-   "direct": 36,
-   "aliases": [],
-   "layers": 36,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     26
-    ],
-    [
-     "Toggle",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Toggle",
-     33
-    ],
-    [
-     "📖 01 · Getting Started",
-     1
-    ],
-    [
-     "📝 02 · Changelog",
-     1
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/badge/padding-v · Component": {
-   "name": "component/badge/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--badge-padding-v",
-   "values": {
-    "Desktop": 6,
-    "Mobile": 6
-   },
-   "direct": 414,
-   "aliases": [],
-   "layers": 414,
-   "productLayers": 12,
-   "components": [
-    [
-     "(documentation, not a component)",
-     402
-    ],
-    [
-     "Badge",
-     10
-    ],
-    [
-     "Jira Annotation",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "📝 02 · Changelog",
-     45
-    ],
-    [
-     "Badge",
-     39
-    ],
-    [
-     "📖 01 · Getting Started",
-     21
-    ],
-    [
-     "🧱 07 · Components: Organisms",
-     17
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     16
-    ],
-    [
-     "🤝 03 · Contribution & Governance",
-     13
-    ],
-    [
-     "Tone of Voice",
-     12
-    ],
-    [
-     "🎨 04 · Foundations",
-     11
-    ]
-   ]
-  },
-  "component/badge/padding-h · Component": {
-   "name": "component/badge/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--badge-padding-h",
-   "values": {
-    "Desktop": 14,
-    "Mobile": 14
-   },
-   "direct": 414,
-   "aliases": [],
-   "layers": 414,
-   "productLayers": 12,
-   "components": [
-    [
-     "(documentation, not a component)",
-     402
-    ],
-    [
-     "Badge",
-     10
-    ],
-    [
-     "Jira Annotation",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "📝 02 · Changelog",
-     45
-    ],
-    [
-     "Badge",
-     39
-    ],
-    [
-     "📖 01 · Getting Started",
-     21
-    ],
-    [
-     "🧱 07 · Components: Organisms",
-     17
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     16
-    ],
-    [
-     "🤝 03 · Contribution & Governance",
-     13
-    ],
-    [
-     "Tone of Voice",
-     12
-    ],
-    [
-     "🎨 04 · Foundations",
-     11
-    ]
-   ]
-  },
-  "component/badge/gap · Component": {
-   "name": "component/badge/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--badge-gap",
-   "values": {
-    "Desktop": 6,
-    "Mobile": 6
-   },
-   "direct": 414,
-   "aliases": [],
-   "layers": 414,
-   "productLayers": 12,
-   "components": [
-    [
-     "(documentation, not a component)",
-     402
-    ],
-    [
-     "Badge",
-     10
-    ],
-    [
-     "Jira Annotation",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "📝 02 · Changelog",
-     45
-    ],
-    [
-     "Badge",
-     39
-    ],
-    [
-     "📖 01 · Getting Started",
-     21
-    ],
-    [
-     "🧱 07 · Components: Organisms",
-     17
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     16
-    ],
-    [
-     "🤝 03 · Contribution & Governance",
-     13
-    ],
-    [
-     "Tone of Voice",
-     12
-    ],
-    [
-     "🎨 04 · Foundations",
-     11
-    ]
-   ]
-  },
-  "component/badge/dot · Component": {
-   "name": "component/badge/dot",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--badge-dot",
-   "values": {
-    "Desktop": 6,
-    "Mobile": 6
-   },
-   "direct": 19,
-   "aliases": [],
-   "layers": 19,
-   "productLayers": 7,
-   "components": [
-    [
-     "(documentation, not a component)",
-     12
-    ],
-    [
-     "Badge",
-     5
-    ],
-    [
-     "Jira Annotation",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "Badge",
-     15
-    ],
-    [
-     "Annotation",
-     4
-    ]
-   ]
-  },
-  "component/avatar/size-sm · Component": {
-   "name": "component/avatar/size-sm",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--avatar-size-sm",
-   "values": {
-    "Desktop": 32,
-    "Mobile": 32
-   },
-   "direct": 93,
-   "aliases": [],
-   "layers": 93,
-   "productLayers": 21,
-   "components": [
-    [
-     "(documentation, not a component)",
-     72
-    ],
-    [
-     "Overview Card",
-     11
-    ],
-    [
-     "Team Card",
-     5
-    ],
-    [
-     "Avatar",
-     4
-    ],
-    [
-     "Key Stakeholders Card",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Group Cards",
-     36
-    ],
-    [
-     "Overview",
-     33
-    ],
-    [
-     "Avatar",
-     12
-    ],
-    [
-     "🤝 03 · Contribution & Governance",
-     6
-    ],
-    [
-     "📝 02 · Changelog",
-     4
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/avatar/size-md · Component": {
-   "name": "component/avatar/size-md",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--avatar-size-md",
-   "values": {
-    "Desktop": 48,
-    "Mobile": 48
-   },
-   "direct": 15,
-   "aliases": [],
-   "layers": 15,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     11
-    ],
-    [
-     "Avatar",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Avatar",
-     15
-    ]
-   ]
-  },
-  "component/avatar/size-lg · Component": {
-   "name": "component/avatar/size-lg",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--avatar-size-lg",
-   "values": {
-    "Desktop": 72,
-    "Mobile": 72
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     8
-    ],
-    [
-     "Avatar",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Avatar",
-     12
-    ]
-   ]
-  },
-  "component/slider/height · Component": {
-   "name": "component/slider/height",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--slider-height",
-   "values": {
-    "Desktop": 22,
-    "Mobile": 22
-   },
-   "direct": 20,
-   "aliases": [],
-   "layers": 20,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     15
-    ],
-    [
-     "Slider",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Slider",
-     19
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/slider/track-height · Component": {
-   "name": "component/slider/track-height",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--slider-track-height",
-   "values": {
-    "Desktop": 3,
-    "Mobile": 3
-   },
-   "direct": 40,
-   "aliases": [],
-   "layers": 40,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     30
-    ],
-    [
-     "Slider",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Slider",
-     38
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     2
-    ]
-   ]
-  },
-  "component/slider/track-radius · Component": {
-   "name": "component/slider/track-radius",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--slider-track-radius",
-   "values": {
-    "Desktop": 2,
-    "Mobile": 2
-   },
-   "direct": 40,
-   "aliases": [],
-   "layers": 40,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     30
-    ],
-    [
-     "Slider",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Slider",
-     38
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     2
-    ]
-   ]
-  },
-  "component/slider/thumb · Component": {
-   "name": "component/slider/thumb",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--slider-thumb",
-   "values": {
-    "Desktop": 18,
-    "Mobile": 18
-   },
-   "direct": 17,
-   "aliases": [],
-   "layers": 17,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     13
-    ],
-    [
-     "Slider",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Slider",
-     16
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/slider/thumb-border · Component": {
-   "name": "component/slider/thumb-border",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--slider-thumb-border",
-   "values": {
-    "Desktop": 3,
-    "Mobile": 3
-   },
-   "direct": 20,
-   "aliases": [],
-   "layers": 20,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     15
-    ],
-    [
-     "Slider",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Slider",
-     19
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/skeleton/line · Component": {
-   "name": "component/skeleton/line",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--skeleton-line",
-   "values": {
-    "Desktop": 14,
-    "Mobile": 14
-   },
-   "direct": 16,
-   "aliases": [],
-   "layers": 16,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     15
-    ],
-    [
-     "Skeleton",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Skeleton",
-     15
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/skeleton/line-lg · Component": {
-   "name": "component/skeleton/line-lg",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--skeleton-line-lg",
-   "values": {
-    "Desktop": 18,
-    "Mobile": 18
-   },
-   "direct": 7,
-   "aliases": [],
-   "layers": 7,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     6
-    ],
-    [
-     "Skeleton",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Skeleton",
-     7
-    ]
-   ]
-  },
-  "component/skeleton/circle · Component": {
-   "name": "component/skeleton/circle",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--skeleton-circle",
-   "values": {
-    "Desktop": 40,
-    "Mobile": 40
-   },
-   "direct": 7,
-   "aliases": [],
-   "layers": 7,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     6
-    ],
-    [
-     "Skeleton",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Skeleton",
-     7
-    ]
-   ]
-  },
   "surface-container-highest · Semantic": {
    "name": "surface-container-highest",
    "collection": "Semantic",
@@ -10393,336 +9246,6 @@
     [
      "⚛️ 05 · Components: Atoms",
      1
-    ]
-   ]
-  },
-  "component/toggle/inset-h · Component": {
-   "name": "component/toggle/inset-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toggle-inset-h",
-   "values": {
-    "Desktop": 3.5,
-    "Mobile": 3.5
-   },
-   "direct": 36,
-   "aliases": [],
-   "layers": 36,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     26
-    ],
-    [
-     "Toggle",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Toggle",
-     33
-    ],
-    [
-     "📖 01 · Getting Started",
-     1
-    ],
-    [
-     "📝 02 · Changelog",
-     1
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/toggle/inset-v · Component": {
-   "name": "component/toggle/inset-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toggle-inset-v",
-   "values": {
-    "Desktop": 2,
-    "Mobile": 2
-   },
-   "direct": 36,
-   "aliases": [],
-   "layers": 36,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     26
-    ],
-    [
-     "Toggle",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Toggle",
-     33
-    ],
-    [
-     "📖 01 · Getting Started",
-     1
-    ],
-    [
-     "📝 02 · Changelog",
-     1
-    ],
-    [
-     "⚛️ 05 · Components: Atoms",
-     1
-    ]
-   ]
-  },
-  "component/form-field/gap · Component": {
-   "name": "component/form-field/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--form-field-gap",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 46,
-   "aliases": [],
-   "layers": 46,
-   "productLayers": 12,
-   "components": [
-    [
-     "(documentation, not a component)",
-     34
-    ],
-    [
-     "Form Field",
-     12
-    ]
-   ],
-   "pages": [
-    [
-     "Form Field",
-     39
-    ],
-    [
-     "Form with validation",
-     4
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/search/height · Component": {
-   "name": "component/search/height",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--search-height",
-   "values": {
-    "Desktop": 52,
-    "Mobile": 52
-   },
-   "direct": 18,
-   "aliases": [],
-   "layers": 18,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     13
-    ],
-    [
-     "Search Bar",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Search Bar",
-     16
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ],
-    [
-     "Search and results",
-     1
-    ]
-   ]
-  },
-  "component/search/height-compact · Component": {
-   "name": "component/search/height-compact",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--search-height-compact",
-   "values": {
-    "Desktop": 44,
-    "Mobile": 44
-   },
-   "direct": 15,
-   "aliases": [],
-   "layers": 15,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Search Bar",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Search Bar",
-     15
-    ]
-   ]
-  },
-  "component/search/padding-h · Component": {
-   "name": "component/search/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--search-padding-h",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 18,
-   "aliases": [],
-   "layers": 18,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     13
-    ],
-    [
-     "Search Bar",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Search Bar",
-     16
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ],
-    [
-     "Search and results",
-     1
-    ]
-   ]
-  },
-  "component/search/padding-h-compact · Component": {
-   "name": "component/search/padding-h-compact",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--search-padding-h-compact",
-   "values": {
-    "Desktop": 14,
-    "Mobile": 14
-   },
-   "direct": 15,
-   "aliases": [],
-   "layers": 15,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Search Bar",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Search Bar",
-     15
-    ]
-   ]
-  },
-  "component/search/gap · Component": {
-   "name": "component/search/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--search-gap",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 18,
-   "aliases": [],
-   "layers": 18,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     13
-    ],
-    [
-     "Search Bar",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Search Bar",
-     16
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ],
-    [
-     "Search and results",
-     1
-    ]
-   ]
-  },
-  "component/search/gap-compact · Component": {
-   "name": "component/search/gap-compact",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--search-gap-compact",
-   "values": {
-    "Desktop": 10,
-    "Mobile": 10
-   },
-   "direct": 15,
-   "aliases": [],
-   "layers": 15,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Search Bar",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Search Bar",
-     15
     ]
    ]
   },
@@ -10809,244 +9332,6 @@
     [
      "Annotation",
      3
-    ]
-   ]
-  },
-  "component/tabs/gap · Component": {
-   "name": "component/tabs/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--tabs-gap",
-   "values": {
-    "Desktop": 28,
-    "Mobile": 28
-   },
-   "direct": 1,
-   "aliases": [],
-   "layers": 1,
-   "productLayers": 0,
-   "components": [
-    [
-     "(documentation, not a component)",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Tab",
-     1
-    ]
-   ]
-  },
-  "component/tabs/padding-v · Component": {
-   "name": "component/tabs/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--tabs-padding-v",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 25,
-   "aliases": [],
-   "layers": 25,
-   "productLayers": 6,
-   "components": [
-    [
-     "(documentation, not a component)",
-     19
-    ],
-    [
-     "Tab",
-     6
-    ]
-   ],
-   "pages": [
-    [
-     "Tab",
-     21
-    ],
-    [
-     "Search and results",
-     3
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/tabs/count-gap · Component": {
-   "name": "component/tabs/count-gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--tabs-count-gap",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 25,
-   "aliases": [],
-   "layers": 25,
-   "productLayers": 6,
-   "components": [
-    [
-     "(documentation, not a component)",
-     19
-    ],
-    [
-     "Tab",
-     6
-    ]
-   ],
-   "pages": [
-    [
-     "Tab",
-     21
-    ],
-    [
-     "Search and results",
-     3
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/select/padding-v · Component": {
-   "name": "component/select/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--select-padding-v",
-   "values": {
-    "Desktop": 13.5,
-    "Mobile": 13.5
-   },
-   "direct": 34,
-   "aliases": [],
-   "layers": 34,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Select",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Select",
-     33
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/select/padding-h · Component": {
-   "name": "component/select/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--select-padding-h",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 34,
-   "aliases": [],
-   "layers": 34,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Select",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Select",
-     33
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/select/gap · Component": {
-   "name": "component/select/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--select-gap",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 34,
-   "aliases": [],
-   "layers": 34,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Select",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Select",
-     33
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/select/min-width · Component": {
-   "name": "component/select/min-width",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--select-min-width",
-   "values": {
-    "Desktop": 220,
-    "Mobile": 220
-   },
-   "direct": 34,
-   "aliases": [],
-   "layers": 34,
-   "productLayers": 10,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Select",
-     10
-    ]
-   ],
-   "pages": [
-    [
-     "Select",
-     33
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
     ]
    ]
   },
@@ -11186,566 +9471,6 @@
     ]
    ]
   },
-  "component/menu-item/padding-v · Component": {
-   "name": "component/menu-item/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--menu-item-padding-v",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 29,
-   "aliases": [],
-   "layers": 29,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Menu Item",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Menu Item",
-     19
-    ],
-    [
-     "Select",
-     4
-    ],
-    [
-     "Radius & Elevation",
-     3
-    ],
-    [
-     "Combobox",
-     2
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/menu-item/padding-h · Component": {
-   "name": "component/menu-item/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--menu-item-padding-h",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 29,
-   "aliases": [],
-   "layers": 29,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Menu Item",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Menu Item",
-     19
-    ],
-    [
-     "Select",
-     4
-    ],
-    [
-     "Radius & Elevation",
-     3
-    ],
-    [
-     "Combobox",
-     2
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/menu-item/gap · Component": {
-   "name": "component/menu-item/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--menu-item-gap",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 29,
-   "aliases": [],
-   "layers": 29,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Menu Item",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Menu Item",
-     19
-    ],
-    [
-     "Select",
-     4
-    ],
-    [
-     "Radius & Elevation",
-     3
-    ],
-    [
-     "Combobox",
-     2
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/alert/padding-v · Component": {
-   "name": "component/alert/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--alert-padding-v",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 21,
-   "aliases": [],
-   "layers": 21,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     16
-    ],
-    [
-     "Alert",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Alert",
-     17
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/alert/padding-h · Component": {
-   "name": "component/alert/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--alert-padding-h",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 21,
-   "aliases": [],
-   "layers": 21,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     16
-    ],
-    [
-     "Alert",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Alert",
-     17
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/alert/gap · Component": {
-   "name": "component/alert/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--alert-gap",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 21,
-   "aliases": [],
-   "layers": 21,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     16
-    ],
-    [
-     "Alert",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Alert",
-     17
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/alert/body-gap · Component": {
-   "name": "component/alert/body-gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--alert-body-gap",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 21,
-   "aliases": [],
-   "layers": 21,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     16
-    ],
-    [
-     "Alert",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Alert",
-     17
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/toast/padding-v · Component": {
-   "name": "component/toast/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toast-padding-v",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     9
-    ],
-    [
-     "Toast",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Toast",
-     10
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/toast/padding-h · Component": {
-   "name": "component/toast/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toast-padding-h",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     9
-    ],
-    [
-     "Toast",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Toast",
-     10
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/toast/gap · Component": {
-   "name": "component/toast/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toast-gap",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     9
-    ],
-    [
-     "Toast",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Toast",
-     10
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/toast/max-width · Component": {
-   "name": "component/toast/max-width",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toast-max-width",
-   "values": {
-    "Desktop": 440,
-    "Mobile": 440
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     9
-    ],
-    [
-     "Toast",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Toast",
-     10
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/breadcrumb/gap · Component": {
-   "name": "component/breadcrumb/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--breadcrumb-gap",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 19,
-   "aliases": [],
-   "layers": 19,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     16
-    ],
-    [
-     "Breadcrumb Item",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Breadcrumb Item",
-     18
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/tooltip/padding-v · Component": {
-   "name": "component/tooltip/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--tooltip-padding-v",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 8,
-   "aliases": [],
-   "layers": 8,
-   "productLayers": 2,
-   "components": [
-    [
-     "(documentation, not a component)",
-     6
-    ],
-    [
-     "Tooltip",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "Tooltip",
-     7
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/tooltip/padding-h · Component": {
-   "name": "component/tooltip/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--tooltip-padding-h",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 8,
-   "aliases": [],
-   "layers": 8,
-   "productLayers": 2,
-   "components": [
-    [
-     "(documentation, not a component)",
-     6
-    ],
-    [
-     "Tooltip",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "Tooltip",
-     7
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
   "radius/card · Dimension": {
    "name": "radius/card",
    "collection": "Dimension",
@@ -11844,170 +9569,6 @@
     ]
    ]
   },
-  "component/stat-card/padding · Component": {
-   "name": "component/stat-card/padding",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--stat-card-padding",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 21,
-   "aliases": [],
-   "layers": 21,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     20
-    ],
-    [
-     "Stat Card",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "📖 01 · Getting Started",
-     7
-    ],
-    [
-     "Stat Card",
-     6
-    ],
-    [
-     "📝 02 · Changelog",
-     3
-    ],
-    [
-     "Dashboard shell",
-     3
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/stat-card/gap · Component": {
-   "name": "component/stat-card/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--stat-card-gap",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 21,
-   "aliases": [],
-   "layers": 21,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     20
-    ],
-    [
-     "Stat Card",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "📖 01 · Getting Started",
-     7
-    ],
-    [
-     "Stat Card",
-     6
-    ],
-    [
-     "📝 02 · Changelog",
-     3
-    ],
-    [
-     "Dashboard shell",
-     3
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/progress/height-sm · Component": {
-   "name": "component/progress/height-sm",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--progress-height-sm",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 32,
-   "aliases": [],
-   "layers": 32,
-   "productLayers": 8,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Progress Bar",
-     8
-    ]
-   ],
-   "pages": [
-    [
-     "Progress Bar",
-     30
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     2
-    ]
-   ]
-  },
-  "component/progress/height-lg · Component": {
-   "name": "component/progress/height-lg",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--progress-height-lg",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 24,
-   "aliases": [],
-   "layers": 24,
-   "productLayers": 8,
-   "components": [
-    [
-     "(documentation, not a component)",
-     16
-    ],
-    [
-     "Progress Bar",
-     8
-    ]
-   ],
-   "pages": [
-    [
-     "Progress Bar",
-     24
-    ]
-   ]
-  },
   "font-size/stat · Dimension": {
    "name": "font-size/stat",
    "collection": "Dimension",
@@ -12051,376 +9612,6 @@
     [
      "Radius & Elevation",
      1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/combobox/padding-v · Component": {
-   "name": "component/combobox/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--combobox-padding-v",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 14,
-   "aliases": [],
-   "layers": 14,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Combobox",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Combobox",
-     13
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/combobox/padding-h · Component": {
-   "name": "component/combobox/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--combobox-padding-h",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 28,
-   "aliases": [],
-   "layers": 28,
-   "productLayers": 8,
-   "components": [
-    [
-     "(documentation, not a component)",
-     20
-    ],
-    [
-     "Combobox",
-     8
-    ]
-   ],
-   "pages": [
-    [
-     "Combobox",
-     27
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/combobox/gap · Component": {
-   "name": "component/combobox/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--combobox-gap",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 28,
-   "aliases": [],
-   "layers": 28,
-   "productLayers": 8,
-   "components": [
-    [
-     "(documentation, not a component)",
-     20
-    ],
-    [
-     "Combobox",
-     8
-    ]
-   ],
-   "pages": [
-    [
-     "Combobox",
-     27
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/combobox/min-height · Component": {
-   "name": "component/combobox/min-height",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--combobox-min-height",
-   "values": {
-    "Desktop": 52,
-    "Mobile": 52
-   },
-   "direct": 14,
-   "aliases": [],
-   "layers": 14,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Combobox",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Combobox",
-     13
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/combobox/token-height · Component": {
-   "name": "component/combobox/token-height",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--combobox-token-height",
-   "values": {
-    "Desktop": 32,
-    "Mobile": 32
-   },
-   "direct": 14,
-   "aliases": [],
-   "layers": 14,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Combobox",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Combobox",
-     14
-    ]
-   ]
-  },
-  "component/dropzone/padding · Component": {
-   "name": "component/dropzone/padding",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--dropzone-padding",
-   "values": {
-    "Desktop": 40,
-    "Mobile": 40
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     9
-    ],
-    [
-     "File Uploader",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "File Uploader",
-     11
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/code/head-padding-v · Component": {
-   "name": "component/code/head-padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--code-head-padding-v",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 5,
-   "aliases": [],
-   "layers": 5,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     4
-    ],
-    [
-     "Code Block",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Code Block",
-     4
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/code/head-padding-h · Component": {
-   "name": "component/code/head-padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--code-head-padding-h",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 5,
-   "aliases": [],
-   "layers": 5,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     4
-    ],
-    [
-     "Code Block",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Code Block",
-     4
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/code/body-padding · Component": {
-   "name": "component/code/body-padding",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--code-body-padding",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 5,
-   "aliases": [],
-   "layers": 5,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     4
-    ],
-    [
-     "Code Block",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Code Block",
-     4
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/inline-edit/padding-v · Component": {
-   "name": "component/inline-edit/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--inline-edit-padding-v",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 4
-   },
-   "direct": 11,
-   "aliases": [],
-   "layers": 11,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     8
-    ],
-    [
-     "Inline Edit",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Inline Edit",
-     10
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/inline-edit/padding-h · Component": {
-   "name": "component/inline-edit/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--inline-edit-padding-h",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 8
-   },
-   "direct": 11,
-   "aliases": [],
-   "layers": 11,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     8
-    ],
-    [
-     "Inline Edit",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Inline Edit",
-     10
     ],
     [
      "🧪 06 · Components: Molecules",
@@ -12514,1560 +9705,6 @@
     ]
    ]
   },
-  "component/empty/padding-v · Component": {
-   "name": "component/empty/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--empty-padding-v",
-   "values": {
-    "Desktop": 44,
-    "Mobile": 44
-   },
-   "direct": 8,
-   "aliases": [],
-   "layers": 8,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     7
-    ],
-    [
-     "Empty State",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Empty State",
-     4
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "Zero state",
-     1
-    ],
-    [
-     "🗂️ 10 · Templates & Presentation Layouts",
-     1
-    ]
-   ]
-  },
-  "component/empty/padding-h · Component": {
-   "name": "component/empty/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--empty-padding-h",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 8,
-   "aliases": [],
-   "layers": 8,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     7
-    ],
-    [
-     "Empty State",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Empty State",
-     4
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "Zero state",
-     1
-    ],
-    [
-     "🗂️ 10 · Templates & Presentation Layouts",
-     1
-    ]
-   ]
-  },
-  "component/empty/icon · Component": {
-   "name": "component/empty/icon",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--empty-icon",
-   "values": {
-    "Desktop": 76,
-    "Mobile": 76
-   },
-   "direct": 8,
-   "aliases": [],
-   "layers": 8,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     7
-    ],
-    [
-     "Empty State",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Empty State",
-     4
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "Zero state",
-     1
-    ],
-    [
-     "🗂️ 10 · Templates & Presentation Layouts",
-     1
-    ]
-   ]
-  },
-  "component/empty/max-width · Component": {
-   "name": "component/empty/max-width",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--empty-max-width",
-   "values": {
-    "Desktop": 360,
-    "Mobile": 360
-   },
-   "direct": 8,
-   "aliases": [],
-   "layers": 8,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     7
-    ],
-    [
-     "Empty State",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Empty State",
-     4
-    ],
-    [
-     "Tone of Voice",
-     2
-    ],
-    [
-     "Zero state",
-     1
-    ],
-    [
-     "🗂️ 10 · Templates & Presentation Layouts",
-     1
-    ]
-   ]
-  },
-  "component/accordion/padding-v · Component": {
-   "name": "component/accordion/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--accordion-padding-v",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     8
-    ],
-    [
-     "Accordion Item",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Accordion Item",
-     12
-    ]
-   ]
-  },
-  "component/accordion/padding-h · Component": {
-   "name": "component/accordion/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--accordion-padding-h",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     8
-    ],
-    [
-     "Accordion Item",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Accordion Item",
-     12
-    ]
-   ]
-  },
-  "component/accordion/gap · Component": {
-   "name": "component/accordion/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--accordion-gap",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 9,
-   "aliases": [],
-   "layers": 9,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     6
-    ],
-    [
-     "Accordion Item",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Accordion Item",
-     9
-    ]
-   ]
-  },
-  "component/modal/max-width · Component": {
-   "name": "component/modal/max-width",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--modal-max-width",
-   "values": {
-    "Desktop": 480,
-    "Mobile": 480
-   },
-   "direct": 10,
-   "aliases": [],
-   "layers": 10,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     7
-    ],
-    [
-     "Modal",
-     1
-    ],
-    [
-     "Overview Card",
-     1
-    ],
-    [
-     "Jira Annotation",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Modal",
-     4
-    ],
-    [
-     "Overview",
-     3
-    ],
-    [
-     "Annotation",
-     2
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ]
-   ]
-  },
-  "component/modal/padding-h · Component": {
-   "name": "component/modal/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--modal-padding-h",
-   "values": {
-    "Desktop": 32,
-    "Mobile": 32
-   },
-   "direct": 15,
-   "aliases": [],
-   "layers": 15,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     12
-    ],
-    [
-     "Modal",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Modal",
-     12
-    ],
-    [
-     "Radius & Elevation",
-     3
-    ]
-   ]
-  },
-  "component/modal/head-padding · Component": {
-   "name": "component/modal/head-padding",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--modal-head-padding",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 10,
-   "aliases": [],
-   "layers": 10,
-   "productLayers": 2,
-   "components": [
-    [
-     "(documentation, not a component)",
-     8
-    ],
-    [
-     "Modal",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "Modal",
-     8
-    ],
-    [
-     "Radius & Elevation",
-     2
-    ]
-   ]
-  },
-  "component/modal/body-padding · Component": {
-   "name": "component/modal/body-padding",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--modal-body-padding",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 13,
-   "aliases": [],
-   "layers": 13,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Modal",
-     2
-    ],
-    [
-     "Overview Card",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Modal",
-     8
-    ],
-    [
-     "Overview",
-     3
-    ],
-    [
-     "Radius & Elevation",
-     2
-    ]
-   ]
-  },
-  "component/modal/actions-gap · Component": {
-   "name": "component/modal/actions-gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--modal-actions-gap",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 5,
-   "aliases": [],
-   "layers": 5,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     4
-    ],
-    [
-     "Modal",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Modal",
-     4
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ]
-   ]
-  },
-  "component/drawer/width · Component": {
-   "name": "component/drawer/width",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--drawer-width",
-   "values": {
-    "Desktop": 420,
-    "Mobile": 420
-   },
-   "direct": 4,
-   "aliases": [],
-   "layers": 4,
-   "productLayers": 2,
-   "components": [
-    [
-     "Drawer",
-     2
-    ],
-    [
-     "(documentation, not a component)",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "Drawer",
-     4
-    ]
-   ]
-  },
-  "component/drawer/padding · Component": {
-   "name": "component/drawer/padding",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--drawer-padding",
-   "values": {
-    "Desktop": 32,
-    "Mobile": 32
-   },
-   "direct": 8,
-   "aliases": [],
-   "layers": 8,
-   "productLayers": 4,
-   "components": [
-    [
-     "Drawer",
-     4
-    ],
-    [
-     "(documentation, not a component)",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Drawer",
-     8
-    ]
-   ]
-  },
-  "component/sidenav/width · Component": {
-   "name": "component/sidenav/width",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--sidenav-width",
-   "values": {
-    "Desktop": 240,
-    "Mobile": 240
-   },
-   "direct": 4,
-   "aliases": [],
-   "layers": 4,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     3
-    ],
-    [
-     "Side Navigation",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Side Navigation",
-     3
-    ],
-    [
-     "Dashboard shell",
-     1
-    ]
-   ]
-  },
-  "component/sidenav/padding-v · Component": {
-   "name": "component/sidenav/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--sidenav-padding-v",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 4,
-   "aliases": [],
-   "layers": 4,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     3
-    ],
-    [
-     "Side Navigation",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Side Navigation",
-     3
-    ],
-    [
-     "Dashboard shell",
-     1
-    ]
-   ]
-  },
-  "component/sidenav/padding-h · Component": {
-   "name": "component/sidenav/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--sidenav-padding-h",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 4,
-   "aliases": [],
-   "layers": 4,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     3
-    ],
-    [
-     "Side Navigation",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Side Navigation",
-     3
-    ],
-    [
-     "Dashboard shell",
-     1
-    ]
-   ]
-  },
-  "component/sidenav/gap · Component": {
-   "name": "component/sidenav/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--sidenav-gap",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 4,
-   "aliases": [],
-   "layers": 4,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     3
-    ],
-    [
-     "Side Navigation",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Side Navigation",
-     3
-    ],
-    [
-     "Dashboard shell",
-     1
-    ]
-   ]
-  },
-  "component/sidenav/item-padding-v · Component": {
-   "name": "component/sidenav/item-padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--sidenav-item-padding-v",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 25,
-   "aliases": [],
-   "layers": 25,
-   "productLayers": 7,
-   "components": [
-    [
-     "(documentation, not a component)",
-     18
-    ],
-    [
-     "Side Navigation",
-     4
-    ],
-    [
-     "Side Nav Item",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Side Navigation",
-     12
-    ],
-    [
-     "Side Nav Item",
-     9
-    ],
-    [
-     "Dashboard shell",
-     4
-    ]
-   ]
-  },
-  "component/sidenav/item-padding-h · Component": {
-   "name": "component/sidenav/item-padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--sidenav-item-padding-h",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 25,
-   "aliases": [],
-   "layers": 25,
-   "productLayers": 7,
-   "components": [
-    [
-     "(documentation, not a component)",
-     18
-    ],
-    [
-     "Side Navigation",
-     4
-    ],
-    [
-     "Side Nav Item",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Side Navigation",
-     12
-    ],
-    [
-     "Side Nav Item",
-     9
-    ],
-    [
-     "Dashboard shell",
-     4
-    ]
-   ]
-  },
-  "component/table/toolbar-padding-v · Component": {
-   "name": "component/table/toolbar-padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--table-toolbar-padding-v",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 5,
-   "aliases": [],
-   "layers": 5,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     4
-    ],
-    [
-     "Table",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Table",
-     3
-    ],
-    [
-     "Dashboard shell",
-     1
-    ],
-    [
-     "Search and results",
-     1
-    ]
-   ]
-  },
-  "component/table/toolbar-padding-h · Component": {
-   "name": "component/table/toolbar-padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--table-toolbar-padding-h",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 5,
-   "aliases": [],
-   "layers": 5,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     4
-    ],
-    [
-     "Table",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Table",
-     3
-    ],
-    [
-     "Dashboard shell",
-     1
-    ],
-    [
-     "Search and results",
-     1
-    ]
-   ]
-  },
-  "component/table/cell-padding-v · Component": {
-   "name": "component/table/cell-padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--table-cell-padding-v",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 33,
-   "aliases": [],
-   "layers": 33,
-   "productLayers": 9,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Table",
-     5
-    ],
-    [
-     "Table Row",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Table",
-     15
-    ],
-    [
-     "Table Row",
-     8
-    ],
-    [
-     "Dashboard shell",
-     5
-    ],
-    [
-     "Search and results",
-     5
-    ]
-   ]
-  },
-  "component/table/cell-padding-h · Component": {
-   "name": "component/table/cell-padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--table-cell-padding-h",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 33,
-   "aliases": [],
-   "layers": 33,
-   "productLayers": 9,
-   "components": [
-    [
-     "(documentation, not a component)",
-     24
-    ],
-    [
-     "Table",
-     5
-    ],
-    [
-     "Table Row",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Table",
-     15
-    ],
-    [
-     "Table Row",
-     8
-    ],
-    [
-     "Dashboard shell",
-     5
-    ],
-    [
-     "Search and results",
-     5
-    ]
-   ]
-  },
-  "component/overview/padding-h · Component": {
-   "name": "component/overview/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--overview-padding-h",
-   "values": {
-    "Desktop": 32,
-    "Mobile": 32
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 4,
-   "components": [
-    [
-     "(documentation, not a component)",
-     8
-    ],
-    [
-     "Overview Card",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Overview",
-     12
-    ]
-   ]
-  },
-  "component/overview/body-padding · Component": {
-   "name": "component/overview/body-padding",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--overview-body-padding",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 9,
-   "aliases": [
-    "component/annotation/body-padding-v"
-   ],
-   "layers": 19,
-   "productLayers": 8,
-   "components": [
-    [
-     "(documentation, not a component)",
-     11
-    ],
-    [
-     "Jira Annotation",
-     5
-    ],
-    [
-     "Overview Card",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     10
-    ],
-    [
-     "Overview",
-     9
-    ]
-   ]
-  },
-  "component/overview/head-padding · Component": {
-   "name": "component/overview/head-padding",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--overview-head-padding",
-   "values": {
-    "Desktop": 24,
-    "Mobile": 24
-   },
-   "direct": 3,
-   "aliases": [],
-   "layers": 3,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     2
-    ],
-    [
-     "Overview Card",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Overview",
-     3
-    ]
-   ]
-  },
-  "component/overview/actions-gap · Component": {
-   "name": "component/overview/actions-gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--overview-actions-gap",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 5,
-   "aliases": [],
-   "layers": 5,
-   "productLayers": 2,
-   "components": [
-    [
-     "(documentation, not a component)",
-     3
-    ],
-    [
-     "Overview Card",
-     1
-    ],
-    [
-     "Jira Annotation",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Overview",
-     3
-    ],
-    [
-     "Annotation",
-     2
-    ]
-   ]
-  },
-  "component/group-card/padding-h · Component": {
-   "name": "component/group-card/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--group-card-padding-h",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 24,
-   "aliases": [],
-   "layers": 24,
-   "productLayers": 6,
-   "components": [
-    [
-     "(documentation, not a component)",
-     18
-    ],
-    [
-     "Overview Card",
-     3
-    ],
-    [
-     "Key Stakeholders Card",
-     1
-    ],
-    [
-     "Team Card",
-     1
-    ],
-    [
-     "Jira Annotation",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Group Cards",
-     12
-    ],
-    [
-     "Overview",
-     9
-    ],
-    [
-     "Annotation",
-     2
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/group-card/body-gap-h · Component": {
-   "name": "component/group-card/body-gap-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--group-card-body-gap-h",
-   "values": {
-    "Desktop": 12,
-    "Mobile": 12
-   },
-   "direct": 112,
-   "aliases": [],
-   "layers": 112,
-   "productLayers": 26,
-   "components": [
-    [
-     "(documentation, not a component)",
-     86
-    ],
-    [
-     "Overview Card",
-     16
-    ],
-    [
-     "Team Card",
-     6
-    ],
-    [
-     "Key Stakeholders Card",
-     4
-    ]
-   ],
-   "pages": [
-    [
-     "Group Cards",
-     60
-    ],
-    [
-     "Overview",
-     48
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     4
-    ]
-   ]
-  },
-  "component/group-card/body-gap-v · Component": {
-   "name": "component/group-card/body-gap-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--group-card-body-gap-v",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 80,
-   "aliases": [],
-   "layers": 80,
-   "productLayers": 19,
-   "components": [
-    [
-     "(documentation, not a component)",
-     61
-    ],
-    [
-     "Overview Card",
-     12
-    ],
-    [
-     "Team Card",
-     5
-    ],
-    [
-     "Key Stakeholders Card",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "Group Cards",
-     42
-    ],
-    [
-     "Overview",
-     36
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     2
-    ]
-   ]
-  },
-  "component/group-card/padding-v · Component": {
-   "name": "component/group-card/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--group-card-padding-v",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 24,
-   "aliases": [],
-   "layers": 24,
-   "productLayers": 6,
-   "components": [
-    [
-     "(documentation, not a component)",
-     18
-    ],
-    [
-     "Overview Card",
-     3
-    ],
-    [
-     "Key Stakeholders Card",
-     1
-    ],
-    [
-     "Team Card",
-     1
-    ],
-    [
-     "Jira Annotation",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Group Cards",
-     12
-    ],
-    [
-     "Overview",
-     9
-    ],
-    [
-     "Annotation",
-     2
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/group-card/gap · Component": {
-   "name": "component/group-card/gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--group-card-gap",
-   "values": {
-    "Desktop": 16,
-    "Mobile": 16
-   },
-   "direct": 22,
-   "aliases": [],
-   "layers": 22,
-   "productLayers": 5,
-   "components": [
-    [
-     "(documentation, not a component)",
-     17
-    ],
-    [
-     "Overview Card",
-     3
-    ],
-    [
-     "Key Stakeholders Card",
-     1
-    ],
-    [
-     "Team Card",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Group Cards",
-     12
-    ],
-    [
-     "Overview",
-     9
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/overview/padding-v · Component": {
-   "name": "component/overview/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--overview-padding-v",
-   "values": {
-    "Desktop": 32,
-    "Mobile": 32
-   },
-   "direct": 3,
-   "aliases": [],
-   "layers": 3,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     2
-    ],
-    [
-     "Overview Card",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Overview",
-     3
-    ]
-   ]
-  },
-  "component/annotation/gap-header · Component": {
-   "name": "component/annotation/gap-header",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--annotation-gap-header",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 28,
-   "aliases": [],
-   "layers": 28,
-   "productLayers": 14,
-   "components": [
-    [
-     "Jira Annotation",
-     14
-    ],
-    [
-     "(documentation, not a component)",
-     14
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     28
-    ]
-   ]
-  },
-  "component/annotation/padding-h · Component": {
-   "name": "component/annotation/padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--annotation-padding-h",
-   "values": {
-    "Desktop": 32,
-    "Mobile": 32
-   },
-   "direct": 10,
-   "aliases": [],
-   "layers": 10,
-   "productLayers": 5,
-   "components": [
-    [
-     "Jira Annotation",
-     5
-    ],
-    [
-     "(documentation, not a component)",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     10
-    ]
-   ]
-  },
-  "component/annotation/padding-v · Component": {
-   "name": "component/annotation/padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--annotation-padding-v",
-   "values": {
-    "Desktop": 32,
-    "Mobile": 32
-   },
-   "direct": 6,
-   "aliases": [],
-   "layers": 6,
-   "productLayers": 3,
-   "components": [
-    [
-     "Jira Annotation",
-     3
-    ],
-    [
-     "(documentation, not a component)",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     6
-    ]
-   ]
-  },
-  "component/annotation/padding-bottom-header · Component": {
-   "name": "component/annotation/padding-bottom-header",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--annotation-padding-bottom-header",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 2,
-   "aliases": [],
-   "layers": 2,
-   "productLayers": 1,
-   "components": [
-    [
-     "Jira Annotation",
-     1
-    ],
-    [
-     "(documentation, not a component)",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     2
-    ]
-   ]
-  },
-  "component/annotation/padding-badges-top · Component": {
-   "name": "component/annotation/padding-badges-top",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--annotation-padding-badges-top",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 8
-   },
-   "direct": 2,
-   "aliases": [],
-   "layers": 2,
-   "productLayers": 1,
-   "components": [
-    [
-     "Jira Annotation",
-     1
-    ],
-    [
-     "(documentation, not a component)",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     2
-    ]
-   ]
-  },
-  "component/annotation/padding-badges-bottom · Component": {
-   "name": "component/annotation/padding-badges-bottom",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--annotation-padding-badges-bottom",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 2,
-   "aliases": [],
-   "layers": 2,
-   "productLayers": 1,
-   "components": [
-    [
-     "Jira Annotation",
-     1
-    ],
-    [
-     "(documentation, not a component)",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     2
-    ]
-   ]
-  },
-  "component/annotation/body-padding-v · Component": {
-   "name": "component/annotation/body-padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--annotation-body-padding-v",
-   "values": {
-    "Desktop": "component/overview/body-padding",
-    "Mobile": "component/overview/body-padding"
-   },
-   "direct": 10,
-   "aliases": [],
-   "layers": 10,
-   "productLayers": 5,
-   "components": [
-    [
-     "Jira Annotation",
-     5
-    ],
-    [
-     "(documentation, not a component)",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     10
-    ]
-   ]
-  },
-  "component/annotation/body-gap · Component": {
-   "name": "component/annotation/body-gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--annotation-body-gap",
-   "values": {
-    "Desktop": 20,
-    "Mobile": 20
-   },
-   "direct": 10,
-   "aliases": [],
-   "layers": 10,
-   "productLayers": 5,
-   "components": [
-    [
-     "Jira Annotation",
-     5
-    ],
-    [
-     "(documentation, not a component)",
-     5
-    ]
-   ],
-   "pages": [
-    [
-     "Annotation",
-     10
-    ]
-   ]
-  },
   "neutral/750 · Primitives": {
    "name": "neutral/750",
    "collection": "Primitives",
@@ -14119,10 +9756,6 @@
      6
     ],
     [
-     "Team Card",
-     5
-    ],
-    [
      "Select",
      5
     ],
@@ -14132,6 +9765,10 @@
     ],
     [
      "Table",
+     5
+    ],
+    [
+     "Team Card",
      5
     ],
     [
@@ -14155,7 +9792,7 @@
      4
     ],
     [
-     "Section / Full Width",
+     "Combobox",
      3
     ],
     [
@@ -14163,8 +9800,12 @@
      3
     ],
     [
-     "Combobox",
+     "Section / Full Width",
      3
+    ],
+    [
+     "Drawer",
+     2
     ],
     [
      "Key Stakeholders Card",
@@ -14176,10 +9817,6 @@
     ],
     [
      "Section / Showcase",
-     2
-    ],
-    [
-     "Drawer",
      2
     ],
     [
@@ -14878,74 +10515,6 @@
     ]
    ]
   },
-  "component/tabs/count-padding-v · Component": {
-   "name": "component/tabs/count-padding-v",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--tabs-count-padding-v",
-   "values": {
-    "Desktop": 2,
-    "Mobile": 0
-   },
-   "direct": 13,
-   "aliases": [],
-   "layers": 13,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Tab",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Tab",
-     11
-    ],
-    [
-     "Search and results",
-     2
-    ]
-   ]
-  },
-  "component/tabs/count-padding-h · Component": {
-   "name": "component/tabs/count-padding-h",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--tabs-count-padding-h",
-   "values": {
-    "Desktop": 8,
-    "Mobile": 0
-   },
-   "direct": 13,
-   "aliases": [],
-   "layers": 13,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     10
-    ],
-    [
-     "Tab",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Tab",
-     11
-    ],
-    [
-     "Search and results",
-     2
-    ]
-   ]
-  },
   "focus · Semantic": {
    "name": "focus",
    "collection": "Semantic",
@@ -15120,78 +10689,6 @@
     ]
    ]
   },
-  "component/toast/body-gap · Component": {
-   "name": "component/toast/body-gap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--toast-body-gap",
-   "values": {
-    "Desktop": 4,
-    "Mobile": 0
-   },
-   "direct": 12,
-   "aliases": [],
-   "layers": 12,
-   "productLayers": 3,
-   "components": [
-    [
-     "(documentation, not a component)",
-     9
-    ],
-    [
-     "Toast",
-     3
-    ]
-   ],
-   "pages": [
-    [
-     "Toast",
-     10
-    ],
-    [
-     "Radius & Elevation",
-     1
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
-  "component/tooltip/arrow-overlap · Component": {
-   "name": "component/tooltip/arrow-overlap",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--tooltip-arrow-overlap",
-   "values": {
-    "Desktop": -7,
-    "Mobile": 0
-   },
-   "direct": 8,
-   "aliases": [],
-   "layers": 8,
-   "productLayers": 2,
-   "components": [
-    [
-     "(documentation, not a component)",
-     6
-    ],
-    [
-     "Tooltip",
-     2
-    ]
-   ],
-   "pages": [
-    [
-     "Tooltip",
-     7
-    ],
-    [
-     "🧪 06 · Components: Molecules",
-     1
-    ]
-   ]
-  },
   "inverse-on-surface-variant · Semantic": {
    "name": "inverse-on-surface-variant",
    "collection": "Semantic",
@@ -15229,11 +10726,11 @@
      4
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
@@ -15263,11 +10760,11 @@
      42
     ],
     [
-     "Button",
+     "Section / Columns",
      30
     ],
     [
-     "Section / Columns",
+     "Button",
      30
     ],
     [
@@ -15284,36 +10781,6 @@
     ],
     [
      "Page rhythm",
-     9
-    ]
-   ]
-  },
-  "component/skeleton/block · Component": {
-   "name": "component/skeleton/block",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--skeleton-block",
-   "values": {
-    "Desktop": 80,
-    "Mobile": 80
-   },
-   "direct": 9,
-   "aliases": [],
-   "layers": 9,
-   "productLayers": 1,
-   "components": [
-    [
-     "(documentation, not a component)",
-     8
-    ],
-    [
-     "Skeleton",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Skeleton",
      9
     ]
    ]
@@ -17597,6 +13064,4542 @@
     [
      "Colour",
      8
+    ]
+   ]
+  },
+  "component/tabs/count-padding-v · Component": {
+   "name": "component/tabs/count-padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--tabs-count-padding-v",
+   "values": {
+    "Desktop": 2,
+    "Mobile": 0
+   },
+   "direct": 13,
+   "aliases": [],
+   "layers": 13,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Tab",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Tab",
+     11
+    ],
+    [
+     "Search and results",
+     2
+    ]
+   ]
+  },
+  "component/tabs/count-padding-h · Component": {
+   "name": "component/tabs/count-padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--tabs-count-padding-h",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 0
+   },
+   "direct": 13,
+   "aliases": [],
+   "layers": 13,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Tab",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Tab",
+     11
+    ],
+    [
+     "Search and results",
+     2
+    ]
+   ]
+  },
+  "component/toast/body-gap · Component": {
+   "name": "component/toast/body-gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toast-body-gap",
+   "values": {
+    "Desktop": 4,
+    "Mobile": 0
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     9
+    ],
+    [
+     "Toast",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Toast",
+     10
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/tooltip/arrow-overlap · Component": {
+   "name": "component/tooltip/arrow-overlap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--tooltip-arrow-overlap",
+   "values": {
+    "Desktop": -7,
+    "Mobile": 0
+   },
+   "direct": 8,
+   "aliases": [],
+   "layers": 8,
+   "productLayers": 2,
+   "components": [
+    [
+     "(documentation, not a component)",
+     6
+    ],
+    [
+     "Tooltip",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Tooltip",
+     7
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/skeleton/block · Component": {
+   "name": "component/skeleton/block",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--skeleton-block",
+   "values": {
+    "Desktop": 80,
+    "Mobile": 80
+   },
+   "direct": 9,
+   "aliases": [],
+   "layers": 9,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     8
+    ],
+    [
+     "Skeleton",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Skeleton",
+     9
+    ]
+   ]
+  },
+  "component/overview/padding-h · Component": {
+   "name": "component/overview/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--overview-padding-h",
+   "values": {
+    "Desktop": 32,
+    "Mobile": 32
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     8
+    ],
+    [
+     "Overview Card",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Overview",
+     12
+    ]
+   ]
+  },
+  "component/overview/body-padding · Component": {
+   "name": "component/overview/body-padding",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--overview-body-padding",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 9,
+   "aliases": [
+    "component/annotation/body-padding-v"
+   ],
+   "layers": 19,
+   "productLayers": 8,
+   "components": [
+    [
+     "(documentation, not a component)",
+     11
+    ],
+    [
+     "Jira Annotation",
+     5
+    ],
+    [
+     "Overview Card",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     10
+    ],
+    [
+     "Overview",
+     9
+    ]
+   ]
+  },
+  "component/overview/head-padding · Component": {
+   "name": "component/overview/head-padding",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--overview-head-padding",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 3,
+   "aliases": [],
+   "layers": 3,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     2
+    ],
+    [
+     "Overview Card",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Overview",
+     3
+    ]
+   ]
+  },
+  "component/overview/actions-gap · Component": {
+   "name": "component/overview/actions-gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--overview-actions-gap",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 5,
+   "aliases": [],
+   "layers": 5,
+   "productLayers": 2,
+   "components": [
+    [
+     "(documentation, not a component)",
+     3
+    ],
+    [
+     "Overview Card",
+     1
+    ],
+    [
+     "Jira Annotation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Overview",
+     3
+    ],
+    [
+     "Annotation",
+     2
+    ]
+   ]
+  },
+  "component/group-card/padding-h · Component": {
+   "name": "component/group-card/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--group-card-padding-h",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 24,
+   "aliases": [],
+   "layers": 24,
+   "productLayers": 6,
+   "components": [
+    [
+     "(documentation, not a component)",
+     18
+    ],
+    [
+     "Overview Card",
+     3
+    ],
+    [
+     "Key Stakeholders Card",
+     1
+    ],
+    [
+     "Team Card",
+     1
+    ],
+    [
+     "Jira Annotation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Group Cards",
+     12
+    ],
+    [
+     "Overview",
+     9
+    ],
+    [
+     "Annotation",
+     2
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/group-card/body-gap-h · Component": {
+   "name": "component/group-card/body-gap-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--group-card-body-gap-h",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 112,
+   "aliases": [],
+   "layers": 112,
+   "productLayers": 26,
+   "components": [
+    [
+     "(documentation, not a component)",
+     86
+    ],
+    [
+     "Overview Card",
+     16
+    ],
+    [
+     "Team Card",
+     6
+    ],
+    [
+     "Key Stakeholders Card",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Group Cards",
+     60
+    ],
+    [
+     "Overview",
+     48
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     4
+    ]
+   ]
+  },
+  "component/group-card/body-gap-v · Component": {
+   "name": "component/group-card/body-gap-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--group-card-body-gap-v",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 80,
+   "aliases": [],
+   "layers": 80,
+   "productLayers": 19,
+   "components": [
+    [
+     "(documentation, not a component)",
+     61
+    ],
+    [
+     "Overview Card",
+     12
+    ],
+    [
+     "Team Card",
+     5
+    ],
+    [
+     "Key Stakeholders Card",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Group Cards",
+     42
+    ],
+    [
+     "Overview",
+     36
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     2
+    ]
+   ]
+  },
+  "component/group-card/padding-v · Component": {
+   "name": "component/group-card/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--group-card-padding-v",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 24,
+   "aliases": [],
+   "layers": 24,
+   "productLayers": 6,
+   "components": [
+    [
+     "(documentation, not a component)",
+     18
+    ],
+    [
+     "Overview Card",
+     3
+    ],
+    [
+     "Key Stakeholders Card",
+     1
+    ],
+    [
+     "Team Card",
+     1
+    ],
+    [
+     "Jira Annotation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Group Cards",
+     12
+    ],
+    [
+     "Overview",
+     9
+    ],
+    [
+     "Annotation",
+     2
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/group-card/gap · Component": {
+   "name": "component/group-card/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--group-card-gap",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 22,
+   "aliases": [],
+   "layers": 22,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     17
+    ],
+    [
+     "Overview Card",
+     3
+    ],
+    [
+     "Key Stakeholders Card",
+     1
+    ],
+    [
+     "Team Card",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Group Cards",
+     12
+    ],
+    [
+     "Overview",
+     9
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/overview/padding-v · Component": {
+   "name": "component/overview/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--overview-padding-v",
+   "values": {
+    "Desktop": 32,
+    "Mobile": 32
+   },
+   "direct": 3,
+   "aliases": [],
+   "layers": 3,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     2
+    ],
+    [
+     "Overview Card",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Overview",
+     3
+    ]
+   ]
+  },
+  "component/annotation/gap-header · Component": {
+   "name": "component/annotation/gap-header",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--annotation-gap-header",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 28,
+   "aliases": [],
+   "layers": 28,
+   "productLayers": 14,
+   "components": [
+    [
+     "Jira Annotation",
+     14
+    ],
+    [
+     "(documentation, not a component)",
+     14
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     28
+    ]
+   ]
+  },
+  "component/annotation/padding-h · Component": {
+   "name": "component/annotation/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--annotation-padding-h",
+   "values": {
+    "Desktop": 32,
+    "Mobile": 32
+   },
+   "direct": 10,
+   "aliases": [],
+   "layers": 10,
+   "productLayers": 5,
+   "components": [
+    [
+     "Jira Annotation",
+     5
+    ],
+    [
+     "(documentation, not a component)",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     10
+    ]
+   ]
+  },
+  "component/annotation/padding-v · Component": {
+   "name": "component/annotation/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--annotation-padding-v",
+   "values": {
+    "Desktop": 32,
+    "Mobile": 32
+   },
+   "direct": 6,
+   "aliases": [],
+   "layers": 6,
+   "productLayers": 3,
+   "components": [
+    [
+     "Jira Annotation",
+     3
+    ],
+    [
+     "(documentation, not a component)",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     6
+    ]
+   ]
+  },
+  "component/annotation/padding-bottom-header · Component": {
+   "name": "component/annotation/padding-bottom-header",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--annotation-padding-bottom-header",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 2,
+   "aliases": [],
+   "layers": 2,
+   "productLayers": 1,
+   "components": [
+    [
+     "Jira Annotation",
+     1
+    ],
+    [
+     "(documentation, not a component)",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     2
+    ]
+   ]
+  },
+  "component/annotation/padding-badges-top · Component": {
+   "name": "component/annotation/padding-badges-top",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--annotation-padding-badges-top",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 2,
+   "aliases": [],
+   "layers": 2,
+   "productLayers": 1,
+   "components": [
+    [
+     "Jira Annotation",
+     1
+    ],
+    [
+     "(documentation, not a component)",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     2
+    ]
+   ]
+  },
+  "component/annotation/padding-badges-bottom · Component": {
+   "name": "component/annotation/padding-badges-bottom",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--annotation-padding-badges-bottom",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 2,
+   "aliases": [],
+   "layers": 2,
+   "productLayers": 1,
+   "components": [
+    [
+     "Jira Annotation",
+     1
+    ],
+    [
+     "(documentation, not a component)",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     2
+    ]
+   ]
+  },
+  "component/annotation/body-padding-v · Component": {
+   "name": "component/annotation/body-padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--annotation-body-padding-v",
+   "values": {
+    "Desktop": "component/overview/body-padding",
+    "Mobile": "component/overview/body-padding"
+   },
+   "direct": 10,
+   "aliases": [],
+   "layers": 10,
+   "productLayers": 5,
+   "components": [
+    [
+     "Jira Annotation",
+     5
+    ],
+    [
+     "(documentation, not a component)",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     10
+    ]
+   ]
+  },
+  "component/annotation/body-gap · Component": {
+   "name": "component/annotation/body-gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--annotation-body-gap",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 10,
+   "aliases": [],
+   "layers": 10,
+   "productLayers": 5,
+   "components": [
+    [
+     "Jira Annotation",
+     5
+    ],
+    [
+     "(documentation, not a component)",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Annotation",
+     10
+    ]
+   ]
+  },
+  "component/toggle/width · Component": {
+   "name": "component/toggle/width",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toggle-width",
+   "values": {
+    "Desktop": 44,
+    "Mobile": 44
+   },
+   "direct": 36,
+   "aliases": [],
+   "layers": 36,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     26
+    ],
+    [
+     "Toggle",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Toggle",
+     33
+    ],
+    [
+     "📖 01 · Getting Started",
+     1
+    ],
+    [
+     "📝 02 · Changelog",
+     1
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/toggle/height · Component": {
+   "name": "component/toggle/height",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toggle-height",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 36,
+   "aliases": [],
+   "layers": 36,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     26
+    ],
+    [
+     "Toggle",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Toggle",
+     33
+    ],
+    [
+     "📖 01 · Getting Started",
+     1
+    ],
+    [
+     "📝 02 · Changelog",
+     1
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/toggle/knob · Component": {
+   "name": "component/toggle/knob",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toggle-knob",
+   "values": {
+    "Desktop": 17,
+    "Mobile": 17
+   },
+   "direct": 36,
+   "aliases": [],
+   "layers": 36,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     26
+    ],
+    [
+     "Toggle",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Toggle",
+     33
+    ],
+    [
+     "📖 01 · Getting Started",
+     1
+    ],
+    [
+     "📝 02 · Changelog",
+     1
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/badge/padding-v · Component": {
+   "name": "component/badge/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--badge-padding-v",
+   "values": {
+    "Desktop": 6,
+    "Mobile": 6
+   },
+   "direct": 414,
+   "aliases": [],
+   "layers": 414,
+   "productLayers": 12,
+   "components": [
+    [
+     "(documentation, not a component)",
+     402
+    ],
+    [
+     "Badge",
+     10
+    ],
+    [
+     "Jira Annotation",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "📝 02 · Changelog",
+     45
+    ],
+    [
+     "Badge",
+     39
+    ],
+    [
+     "📖 01 · Getting Started",
+     21
+    ],
+    [
+     "🧱 07 · Components: Organisms",
+     17
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     16
+    ],
+    [
+     "🤝 03 · Contribution & Governance",
+     13
+    ],
+    [
+     "Tone of Voice",
+     12
+    ],
+    [
+     "🎨 04 · Foundations",
+     11
+    ]
+   ]
+  },
+  "component/badge/padding-h · Component": {
+   "name": "component/badge/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--badge-padding-h",
+   "values": {
+    "Desktop": 14,
+    "Mobile": 14
+   },
+   "direct": 414,
+   "aliases": [],
+   "layers": 414,
+   "productLayers": 12,
+   "components": [
+    [
+     "(documentation, not a component)",
+     402
+    ],
+    [
+     "Badge",
+     10
+    ],
+    [
+     "Jira Annotation",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "📝 02 · Changelog",
+     45
+    ],
+    [
+     "Badge",
+     39
+    ],
+    [
+     "📖 01 · Getting Started",
+     21
+    ],
+    [
+     "🧱 07 · Components: Organisms",
+     17
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     16
+    ],
+    [
+     "🤝 03 · Contribution & Governance",
+     13
+    ],
+    [
+     "Tone of Voice",
+     12
+    ],
+    [
+     "🎨 04 · Foundations",
+     11
+    ]
+   ]
+  },
+  "component/badge/gap · Component": {
+   "name": "component/badge/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--badge-gap",
+   "values": {
+    "Desktop": 6,
+    "Mobile": 6
+   },
+   "direct": 414,
+   "aliases": [],
+   "layers": 414,
+   "productLayers": 12,
+   "components": [
+    [
+     "(documentation, not a component)",
+     402
+    ],
+    [
+     "Badge",
+     10
+    ],
+    [
+     "Jira Annotation",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "📝 02 · Changelog",
+     45
+    ],
+    [
+     "Badge",
+     39
+    ],
+    [
+     "📖 01 · Getting Started",
+     21
+    ],
+    [
+     "🧱 07 · Components: Organisms",
+     17
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     16
+    ],
+    [
+     "🤝 03 · Contribution & Governance",
+     13
+    ],
+    [
+     "Tone of Voice",
+     12
+    ],
+    [
+     "🎨 04 · Foundations",
+     11
+    ]
+   ]
+  },
+  "component/badge/dot · Component": {
+   "name": "component/badge/dot",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--badge-dot",
+   "values": {
+    "Desktop": 6,
+    "Mobile": 6
+   },
+   "direct": 19,
+   "aliases": [],
+   "layers": 19,
+   "productLayers": 7,
+   "components": [
+    [
+     "(documentation, not a component)",
+     12
+    ],
+    [
+     "Badge",
+     5
+    ],
+    [
+     "Jira Annotation",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Badge",
+     15
+    ],
+    [
+     "Annotation",
+     4
+    ]
+   ]
+  },
+  "component/avatar/size-sm · Component": {
+   "name": "component/avatar/size-sm",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--avatar-size-sm",
+   "values": {
+    "Desktop": 32,
+    "Mobile": 32
+   },
+   "direct": 93,
+   "aliases": [],
+   "layers": 93,
+   "productLayers": 21,
+   "components": [
+    [
+     "(documentation, not a component)",
+     72
+    ],
+    [
+     "Overview Card",
+     11
+    ],
+    [
+     "Team Card",
+     5
+    ],
+    [
+     "Avatar",
+     4
+    ],
+    [
+     "Key Stakeholders Card",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Group Cards",
+     36
+    ],
+    [
+     "Overview",
+     33
+    ],
+    [
+     "Avatar",
+     12
+    ],
+    [
+     "🤝 03 · Contribution & Governance",
+     6
+    ],
+    [
+     "📝 02 · Changelog",
+     4
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/avatar/size-md · Component": {
+   "name": "component/avatar/size-md",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--avatar-size-md",
+   "values": {
+    "Desktop": 48,
+    "Mobile": 48
+   },
+   "direct": 15,
+   "aliases": [],
+   "layers": 15,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     11
+    ],
+    [
+     "Avatar",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Avatar",
+     15
+    ]
+   ]
+  },
+  "component/avatar/size-lg · Component": {
+   "name": "component/avatar/size-lg",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--avatar-size-lg",
+   "values": {
+    "Desktop": 72,
+    "Mobile": 72
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     8
+    ],
+    [
+     "Avatar",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Avatar",
+     12
+    ]
+   ]
+  },
+  "component/button/padding-v · Component": {
+   "name": "component/button/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--button-padding-v",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 12
+   },
+   "direct": 158,
+   "aliases": [],
+   "layers": 158,
+   "productLayers": 24,
+   "components": [
+    [
+     "(documentation, not a component)",
+     134
+    ],
+    [
+     "Button",
+     15
+    ],
+    [
+     "Empty State",
+     2
+    ],
+    [
+     "Modal",
+     2
+    ],
+    [
+     "File Uploader",
+     1
+    ],
+    [
+     "Overview Card",
+     1
+    ],
+    [
+     "Jira Annotation",
+     1
+    ],
+    [
+     "Navigation Bar",
+     1
+    ],
+    [
+     "Section / Let's Connect",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     83
+    ],
+    [
+     "Colour",
+     12
+    ],
+    [
+     "Empty State",
+     8
+    ],
+    [
+     "Modal",
+     8
+    ],
+    [
+     "Radius & Elevation",
+     6
+    ],
+    [
+     "Tone of Voice",
+     6
+    ],
+    [
+     "📖 01 · Getting Started",
+     4
+    ],
+    [
+     "File Uploader",
+     4
+    ]
+   ]
+  },
+  "component/button/padding-h · Component": {
+   "name": "component/button/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--button-padding-h",
+   "values": {
+    "Desktop": 28,
+    "Mobile": 22
+   },
+   "direct": 160,
+   "aliases": [],
+   "layers": 160,
+   "productLayers": 25,
+   "components": [
+    [
+     "(documentation, not a component)",
+     135
+    ],
+    [
+     "Button",
+     15
+    ],
+    [
+     "Empty State",
+     2
+    ],
+    [
+     "Modal",
+     2
+    ],
+    [
+     "Jira Annotation",
+     2
+    ],
+    [
+     "File Uploader",
+     1
+    ],
+    [
+     "Overview Card",
+     1
+    ],
+    [
+     "Navigation Bar",
+     1
+    ],
+    [
+     "Section / Let's Connect",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     83
+    ],
+    [
+     "Colour",
+     12
+    ],
+    [
+     "Empty State",
+     8
+    ],
+    [
+     "Modal",
+     8
+    ],
+    [
+     "Radius & Elevation",
+     6
+    ],
+    [
+     "Tone of Voice",
+     6
+    ],
+    [
+     "📖 01 · Getting Started",
+     4
+    ],
+    [
+     "File Uploader",
+     4
+    ]
+   ]
+  },
+  "component/input/padding-v · Component": {
+   "name": "component/input/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--input-padding-v",
+   "values": {
+    "Desktop": 18,
+    "Mobile": 18
+   },
+   "direct": 88,
+   "aliases": [],
+   "layers": 88,
+   "productLayers": 24,
+   "components": [
+    [
+     "(documentation, not a component)",
+     64
+    ],
+    [
+     "Input",
+     12
+    ],
+    [
+     "Form Field",
+     12
+    ]
+   ],
+   "pages": [
+    [
+     "Input",
+     39
+    ],
+    [
+     "Form Field",
+     39
+    ],
+    [
+     "Form with validation",
+     4
+    ],
+    [
+     "Radius & Elevation",
+     2
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/input/padding-h · Component": {
+   "name": "component/input/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--input-padding-h",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 88,
+   "aliases": [],
+   "layers": 88,
+   "productLayers": 24,
+   "components": [
+    [
+     "(documentation, not a component)",
+     64
+    ],
+    [
+     "Input",
+     12
+    ],
+    [
+     "Form Field",
+     12
+    ]
+   ],
+   "pages": [
+    [
+     "Input",
+     39
+    ],
+    [
+     "Form Field",
+     39
+    ],
+    [
+     "Form with validation",
+     4
+    ],
+    [
+     "Radius & Elevation",
+     2
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/input/textarea-min · Component": {
+   "name": "component/input/textarea-min",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--input-textarea-min",
+   "values": {
+    "Desktop": 80,
+    "Mobile": 80
+   },
+   "direct": 39,
+   "aliases": [],
+   "layers": 39,
+   "productLayers": 12,
+   "components": [
+    [
+     "(documentation, not a component)",
+     27
+    ],
+    [
+     "Input",
+     6
+    ],
+    [
+     "Form Field",
+     6
+    ]
+   ],
+   "pages": [
+    [
+     "Input",
+     19
+    ],
+    [
+     "Form Field",
+     19
+    ],
+    [
+     "Form with validation",
+     1
+    ]
+   ]
+  },
+  "component/checkbox/radius · Component": {
+   "name": "component/checkbox/radius",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--checkbox-radius",
+   "values": {
+    "Desktop": 3,
+    "Mobile": 3
+   },
+   "direct": 84,
+   "aliases": [],
+   "layers": 84,
+   "productLayers": 15,
+   "components": [
+    [
+     "(documentation, not a component)",
+     69
+    ],
+    [
+     "Checkbox",
+     15
+    ]
+   ],
+   "pages": [
+    [
+     "Checkbox",
+     49
+    ],
+    [
+     "🤝 03 · Contribution & Governance",
+     10
+    ],
+    [
+     "Iconography",
+     9
+    ],
+    [
+     "📖 01 · Getting Started",
+     8
+    ],
+    [
+     "📝 02 · Changelog",
+     7
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/radio/dot · Component": {
+   "name": "component/radio/dot",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--radio-dot",
+   "values": {
+    "Desktop": 9,
+    "Mobile": 9
+   },
+   "direct": 16,
+   "aliases": [],
+   "layers": 16,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     11
+    ],
+    [
+     "Radio",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Radio button",
+     16
+    ]
+   ]
+  },
+  "component/slider/height · Component": {
+   "name": "component/slider/height",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--slider-height",
+   "values": {
+    "Desktop": 22,
+    "Mobile": 22
+   },
+   "direct": 20,
+   "aliases": [],
+   "layers": 20,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     15
+    ],
+    [
+     "Slider",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Slider",
+     19
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/slider/track-height · Component": {
+   "name": "component/slider/track-height",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--slider-track-height",
+   "values": {
+    "Desktop": 3,
+    "Mobile": 3
+   },
+   "direct": 40,
+   "aliases": [],
+   "layers": 40,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     30
+    ],
+    [
+     "Slider",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Slider",
+     38
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     2
+    ]
+   ]
+  },
+  "component/slider/track-radius · Component": {
+   "name": "component/slider/track-radius",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--slider-track-radius",
+   "values": {
+    "Desktop": 2,
+    "Mobile": 2
+   },
+   "direct": 40,
+   "aliases": [],
+   "layers": 40,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     30
+    ],
+    [
+     "Slider",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Slider",
+     38
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     2
+    ]
+   ]
+  },
+  "component/slider/thumb · Component": {
+   "name": "component/slider/thumb",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--slider-thumb",
+   "values": {
+    "Desktop": 18,
+    "Mobile": 18
+   },
+   "direct": 17,
+   "aliases": [],
+   "layers": 17,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     13
+    ],
+    [
+     "Slider",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Slider",
+     16
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/slider/thumb-border · Component": {
+   "name": "component/slider/thumb-border",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--slider-thumb-border",
+   "values": {
+    "Desktop": 3,
+    "Mobile": 3
+   },
+   "direct": 20,
+   "aliases": [],
+   "layers": 20,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     15
+    ],
+    [
+     "Slider",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Slider",
+     19
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/skeleton/line · Component": {
+   "name": "component/skeleton/line",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--skeleton-line",
+   "values": {
+    "Desktop": 14,
+    "Mobile": 14
+   },
+   "direct": 16,
+   "aliases": [],
+   "layers": 16,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     15
+    ],
+    [
+     "Skeleton",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Skeleton",
+     15
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/skeleton/line-lg · Component": {
+   "name": "component/skeleton/line-lg",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--skeleton-line-lg",
+   "values": {
+    "Desktop": 18,
+    "Mobile": 18
+   },
+   "direct": 7,
+   "aliases": [],
+   "layers": 7,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     6
+    ],
+    [
+     "Skeleton",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Skeleton",
+     7
+    ]
+   ]
+  },
+  "component/skeleton/circle · Component": {
+   "name": "component/skeleton/circle",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--skeleton-circle",
+   "values": {
+    "Desktop": 40,
+    "Mobile": 40
+   },
+   "direct": 7,
+   "aliases": [],
+   "layers": 7,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     6
+    ],
+    [
+     "Skeleton",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Skeleton",
+     7
+    ]
+   ]
+  },
+  "component/toggle/inset-h · Component": {
+   "name": "component/toggle/inset-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toggle-inset-h",
+   "values": {
+    "Desktop": 3.5,
+    "Mobile": 3.5
+   },
+   "direct": 36,
+   "aliases": [],
+   "layers": 36,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     26
+    ],
+    [
+     "Toggle",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Toggle",
+     33
+    ],
+    [
+     "📖 01 · Getting Started",
+     1
+    ],
+    [
+     "📝 02 · Changelog",
+     1
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/toggle/inset-v · Component": {
+   "name": "component/toggle/inset-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toggle-inset-v",
+   "values": {
+    "Desktop": 2,
+    "Mobile": 2
+   },
+   "direct": 36,
+   "aliases": [],
+   "layers": 36,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     26
+    ],
+    [
+     "Toggle",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Toggle",
+     33
+    ],
+    [
+     "📖 01 · Getting Started",
+     1
+    ],
+    [
+     "📝 02 · Changelog",
+     1
+    ],
+    [
+     "⚛️ 05 · Components: Atoms",
+     1
+    ]
+   ]
+  },
+  "component/form-field/gap · Component": {
+   "name": "component/form-field/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--form-field-gap",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 46,
+   "aliases": [],
+   "layers": 46,
+   "productLayers": 12,
+   "components": [
+    [
+     "(documentation, not a component)",
+     34
+    ],
+    [
+     "Form Field",
+     12
+    ]
+   ],
+   "pages": [
+    [
+     "Form Field",
+     39
+    ],
+    [
+     "Form with validation",
+     4
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/search/height · Component": {
+   "name": "component/search/height",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--search-height",
+   "values": {
+    "Desktop": 52,
+    "Mobile": 52
+   },
+   "direct": 18,
+   "aliases": [],
+   "layers": 18,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     13
+    ],
+    [
+     "Search Bar",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Search Bar",
+     16
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ],
+    [
+     "Search and results",
+     1
+    ]
+   ]
+  },
+  "component/search/height-compact · Component": {
+   "name": "component/search/height-compact",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--search-height-compact",
+   "values": {
+    "Desktop": 44,
+    "Mobile": 44
+   },
+   "direct": 15,
+   "aliases": [],
+   "layers": 15,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Search Bar",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Search Bar",
+     15
+    ]
+   ]
+  },
+  "component/search/padding-h · Component": {
+   "name": "component/search/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--search-padding-h",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 18,
+   "aliases": [],
+   "layers": 18,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     13
+    ],
+    [
+     "Search Bar",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Search Bar",
+     16
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ],
+    [
+     "Search and results",
+     1
+    ]
+   ]
+  },
+  "component/search/padding-h-compact · Component": {
+   "name": "component/search/padding-h-compact",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--search-padding-h-compact",
+   "values": {
+    "Desktop": 14,
+    "Mobile": 14
+   },
+   "direct": 15,
+   "aliases": [],
+   "layers": 15,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Search Bar",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Search Bar",
+     15
+    ]
+   ]
+  },
+  "component/search/gap · Component": {
+   "name": "component/search/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--search-gap",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 18,
+   "aliases": [],
+   "layers": 18,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     13
+    ],
+    [
+     "Search Bar",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Search Bar",
+     16
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ],
+    [
+     "Search and results",
+     1
+    ]
+   ]
+  },
+  "component/search/gap-compact · Component": {
+   "name": "component/search/gap-compact",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--search-gap-compact",
+   "values": {
+    "Desktop": 10,
+    "Mobile": 10
+   },
+   "direct": 15,
+   "aliases": [],
+   "layers": 15,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Search Bar",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Search Bar",
+     15
+    ]
+   ]
+  },
+  "component/tabs/gap · Component": {
+   "name": "component/tabs/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--tabs-gap",
+   "values": {
+    "Desktop": 28,
+    "Mobile": 28
+   },
+   "direct": 1,
+   "aliases": [],
+   "layers": 1,
+   "productLayers": 0,
+   "components": [
+    [
+     "(documentation, not a component)",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Tab",
+     1
+    ]
+   ]
+  },
+  "component/tabs/padding-v · Component": {
+   "name": "component/tabs/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--tabs-padding-v",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 25,
+   "aliases": [],
+   "layers": 25,
+   "productLayers": 6,
+   "components": [
+    [
+     "(documentation, not a component)",
+     19
+    ],
+    [
+     "Tab",
+     6
+    ]
+   ],
+   "pages": [
+    [
+     "Tab",
+     21
+    ],
+    [
+     "Search and results",
+     3
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/tabs/count-gap · Component": {
+   "name": "component/tabs/count-gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--tabs-count-gap",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 25,
+   "aliases": [],
+   "layers": 25,
+   "productLayers": 6,
+   "components": [
+    [
+     "(documentation, not a component)",
+     19
+    ],
+    [
+     "Tab",
+     6
+    ]
+   ],
+   "pages": [
+    [
+     "Tab",
+     21
+    ],
+    [
+     "Search and results",
+     3
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/select/padding-v · Component": {
+   "name": "component/select/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--select-padding-v",
+   "values": {
+    "Desktop": 13.5,
+    "Mobile": 13.5
+   },
+   "direct": 34,
+   "aliases": [],
+   "layers": 34,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Select",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Select",
+     33
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/select/padding-h · Component": {
+   "name": "component/select/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--select-padding-h",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 34,
+   "aliases": [],
+   "layers": 34,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Select",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Select",
+     33
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/select/gap · Component": {
+   "name": "component/select/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--select-gap",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 34,
+   "aliases": [],
+   "layers": 34,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Select",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Select",
+     33
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/select/min-width · Component": {
+   "name": "component/select/min-width",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--select-min-width",
+   "values": {
+    "Desktop": 220,
+    "Mobile": 220
+   },
+   "direct": 34,
+   "aliases": [],
+   "layers": 34,
+   "productLayers": 10,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Select",
+     10
+    ]
+   ],
+   "pages": [
+    [
+     "Select",
+     33
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/menu-item/padding-v · Component": {
+   "name": "component/menu-item/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--menu-item-padding-v",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 29,
+   "aliases": [],
+   "layers": 29,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Menu Item",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Menu Item",
+     19
+    ],
+    [
+     "Select",
+     4
+    ],
+    [
+     "Radius & Elevation",
+     3
+    ],
+    [
+     "Combobox",
+     2
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/menu-item/padding-h · Component": {
+   "name": "component/menu-item/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--menu-item-padding-h",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 29,
+   "aliases": [],
+   "layers": 29,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Menu Item",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Menu Item",
+     19
+    ],
+    [
+     "Select",
+     4
+    ],
+    [
+     "Radius & Elevation",
+     3
+    ],
+    [
+     "Combobox",
+     2
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/menu-item/gap · Component": {
+   "name": "component/menu-item/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--menu-item-gap",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 29,
+   "aliases": [],
+   "layers": 29,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Menu Item",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Menu Item",
+     19
+    ],
+    [
+     "Select",
+     4
+    ],
+    [
+     "Radius & Elevation",
+     3
+    ],
+    [
+     "Combobox",
+     2
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/alert/padding-v · Component": {
+   "name": "component/alert/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--alert-padding-v",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 21,
+   "aliases": [],
+   "layers": 21,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     16
+    ],
+    [
+     "Alert",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Alert",
+     17
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/alert/padding-h · Component": {
+   "name": "component/alert/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--alert-padding-h",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 21,
+   "aliases": [],
+   "layers": 21,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     16
+    ],
+    [
+     "Alert",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Alert",
+     17
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/alert/gap · Component": {
+   "name": "component/alert/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--alert-gap",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 21,
+   "aliases": [],
+   "layers": 21,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     16
+    ],
+    [
+     "Alert",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Alert",
+     17
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/alert/body-gap · Component": {
+   "name": "component/alert/body-gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--alert-body-gap",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 21,
+   "aliases": [],
+   "layers": 21,
+   "productLayers": 5,
+   "components": [
+    [
+     "(documentation, not a component)",
+     16
+    ],
+    [
+     "Alert",
+     5
+    ]
+   ],
+   "pages": [
+    [
+     "Alert",
+     17
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/toast/padding-v · Component": {
+   "name": "component/toast/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toast-padding-v",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     9
+    ],
+    [
+     "Toast",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Toast",
+     10
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/toast/padding-h · Component": {
+   "name": "component/toast/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toast-padding-h",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     9
+    ],
+    [
+     "Toast",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Toast",
+     10
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/toast/gap · Component": {
+   "name": "component/toast/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toast-gap",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     9
+    ],
+    [
+     "Toast",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Toast",
+     10
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/toast/max-width · Component": {
+   "name": "component/toast/max-width",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--toast-max-width",
+   "values": {
+    "Desktop": 440,
+    "Mobile": 440
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     9
+    ],
+    [
+     "Toast",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Toast",
+     10
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/breadcrumb/gap · Component": {
+   "name": "component/breadcrumb/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--breadcrumb-gap",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 19,
+   "aliases": [],
+   "layers": 19,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     16
+    ],
+    [
+     "Breadcrumb Item",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Breadcrumb Item",
+     18
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/tooltip/padding-v · Component": {
+   "name": "component/tooltip/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--tooltip-padding-v",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 8,
+   "aliases": [],
+   "layers": 8,
+   "productLayers": 2,
+   "components": [
+    [
+     "(documentation, not a component)",
+     6
+    ],
+    [
+     "Tooltip",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Tooltip",
+     7
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/tooltip/padding-h · Component": {
+   "name": "component/tooltip/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--tooltip-padding-h",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 8,
+   "aliases": [],
+   "layers": 8,
+   "productLayers": 2,
+   "components": [
+    [
+     "(documentation, not a component)",
+     6
+    ],
+    [
+     "Tooltip",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Tooltip",
+     7
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/stat-card/padding · Component": {
+   "name": "component/stat-card/padding",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--stat-card-padding",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 21,
+   "aliases": [],
+   "layers": 21,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     20
+    ],
+    [
+     "Stat Card",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "📖 01 · Getting Started",
+     7
+    ],
+    [
+     "Stat Card",
+     6
+    ],
+    [
+     "📝 02 · Changelog",
+     3
+    ],
+    [
+     "Dashboard shell",
+     3
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/stat-card/gap · Component": {
+   "name": "component/stat-card/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--stat-card-gap",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 21,
+   "aliases": [],
+   "layers": 21,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     20
+    ],
+    [
+     "Stat Card",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "📖 01 · Getting Started",
+     7
+    ],
+    [
+     "Stat Card",
+     6
+    ],
+    [
+     "📝 02 · Changelog",
+     3
+    ],
+    [
+     "Dashboard shell",
+     3
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/progress/height-sm · Component": {
+   "name": "component/progress/height-sm",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--progress-height-sm",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 32,
+   "aliases": [],
+   "layers": 32,
+   "productLayers": 8,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Progress Bar",
+     8
+    ]
+   ],
+   "pages": [
+    [
+     "Progress Bar",
+     30
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     2
+    ]
+   ]
+  },
+  "component/progress/height-lg · Component": {
+   "name": "component/progress/height-lg",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--progress-height-lg",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 24,
+   "aliases": [],
+   "layers": 24,
+   "productLayers": 8,
+   "components": [
+    [
+     "(documentation, not a component)",
+     16
+    ],
+    [
+     "Progress Bar",
+     8
+    ]
+   ],
+   "pages": [
+    [
+     "Progress Bar",
+     24
+    ]
+   ]
+  },
+  "component/combobox/padding-v · Component": {
+   "name": "component/combobox/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--combobox-padding-v",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 14,
+   "aliases": [],
+   "layers": 14,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Combobox",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Combobox",
+     13
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/combobox/padding-h · Component": {
+   "name": "component/combobox/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--combobox-padding-h",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 28,
+   "aliases": [],
+   "layers": 28,
+   "productLayers": 8,
+   "components": [
+    [
+     "(documentation, not a component)",
+     20
+    ],
+    [
+     "Combobox",
+     8
+    ]
+   ],
+   "pages": [
+    [
+     "Combobox",
+     27
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/combobox/gap · Component": {
+   "name": "component/combobox/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--combobox-gap",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 28,
+   "aliases": [],
+   "layers": 28,
+   "productLayers": 8,
+   "components": [
+    [
+     "(documentation, not a component)",
+     20
+    ],
+    [
+     "Combobox",
+     8
+    ]
+   ],
+   "pages": [
+    [
+     "Combobox",
+     27
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/combobox/min-height · Component": {
+   "name": "component/combobox/min-height",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--combobox-min-height",
+   "values": {
+    "Desktop": 52,
+    "Mobile": 52
+   },
+   "direct": 14,
+   "aliases": [],
+   "layers": 14,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Combobox",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Combobox",
+     13
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/combobox/token-height · Component": {
+   "name": "component/combobox/token-height",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--combobox-token-height",
+   "values": {
+    "Desktop": 32,
+    "Mobile": 32
+   },
+   "direct": 14,
+   "aliases": [],
+   "layers": 14,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Combobox",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Combobox",
+     14
+    ]
+   ]
+  },
+  "component/dropzone/padding · Component": {
+   "name": "component/dropzone/padding",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--dropzone-padding",
+   "values": {
+    "Desktop": 40,
+    "Mobile": 40
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     9
+    ],
+    [
+     "File Uploader",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "File Uploader",
+     11
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/code/head-padding-v · Component": {
+   "name": "component/code/head-padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--code-head-padding-v",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 5,
+   "aliases": [],
+   "layers": 5,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     4
+    ],
+    [
+     "Code Block",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Code Block",
+     4
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/code/head-padding-h · Component": {
+   "name": "component/code/head-padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--code-head-padding-h",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 5,
+   "aliases": [],
+   "layers": 5,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     4
+    ],
+    [
+     "Code Block",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Code Block",
+     4
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/code/body-padding · Component": {
+   "name": "component/code/body-padding",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--code-body-padding",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 5,
+   "aliases": [],
+   "layers": 5,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     4
+    ],
+    [
+     "Code Block",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Code Block",
+     4
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/inline-edit/padding-v · Component": {
+   "name": "component/inline-edit/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--inline-edit-padding-v",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 4
+   },
+   "direct": 11,
+   "aliases": [],
+   "layers": 11,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     8
+    ],
+    [
+     "Inline Edit",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Inline Edit",
+     10
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/inline-edit/padding-h · Component": {
+   "name": "component/inline-edit/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--inline-edit-padding-h",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 8
+   },
+   "direct": 11,
+   "aliases": [],
+   "layers": 11,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     8
+    ],
+    [
+     "Inline Edit",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Inline Edit",
+     10
+    ],
+    [
+     "🧪 06 · Components: Molecules",
+     1
+    ]
+   ]
+  },
+  "component/accordion/gap · Component": {
+   "name": "component/accordion/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--accordion-gap",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 9,
+   "aliases": [],
+   "layers": 9,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     6
+    ],
+    [
+     "Accordion Item",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Accordion Item",
+     9
+    ]
+   ]
+  },
+  "component/empty/padding-v · Component": {
+   "name": "component/empty/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--empty-padding-v",
+   "values": {
+    "Desktop": 44,
+    "Mobile": 44
+   },
+   "direct": 8,
+   "aliases": [],
+   "layers": 8,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     7
+    ],
+    [
+     "Empty State",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Empty State",
+     4
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "Zero state",
+     1
+    ],
+    [
+     "🗂️ 10 · Templates & Presentation Layouts",
+     1
+    ]
+   ]
+  },
+  "component/empty/padding-h · Component": {
+   "name": "component/empty/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--empty-padding-h",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 8,
+   "aliases": [],
+   "layers": 8,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     7
+    ],
+    [
+     "Empty State",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Empty State",
+     4
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "Zero state",
+     1
+    ],
+    [
+     "🗂️ 10 · Templates & Presentation Layouts",
+     1
+    ]
+   ]
+  },
+  "component/empty/icon · Component": {
+   "name": "component/empty/icon",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--empty-icon",
+   "values": {
+    "Desktop": 76,
+    "Mobile": 76
+   },
+   "direct": 8,
+   "aliases": [],
+   "layers": 8,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     7
+    ],
+    [
+     "Empty State",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Empty State",
+     4
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "Zero state",
+     1
+    ],
+    [
+     "🗂️ 10 · Templates & Presentation Layouts",
+     1
+    ]
+   ]
+  },
+  "component/empty/max-width · Component": {
+   "name": "component/empty/max-width",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--empty-max-width",
+   "values": {
+    "Desktop": 360,
+    "Mobile": 360
+   },
+   "direct": 8,
+   "aliases": [],
+   "layers": 8,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     7
+    ],
+    [
+     "Empty State",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Empty State",
+     4
+    ],
+    [
+     "Tone of Voice",
+     2
+    ],
+    [
+     "Zero state",
+     1
+    ],
+    [
+     "🗂️ 10 · Templates & Presentation Layouts",
+     1
+    ]
+   ]
+  },
+  "component/accordion/padding-v · Component": {
+   "name": "component/accordion/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--accordion-padding-v",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     8
+    ],
+    [
+     "Accordion Item",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Accordion Item",
+     12
+    ]
+   ]
+  },
+  "component/accordion/padding-h · Component": {
+   "name": "component/accordion/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--accordion-padding-h",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 12,
+   "aliases": [],
+   "layers": 12,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     8
+    ],
+    [
+     "Accordion Item",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Accordion Item",
+     12
+    ]
+   ]
+  },
+  "component/modal/max-width · Component": {
+   "name": "component/modal/max-width",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--modal-max-width",
+   "values": {
+    "Desktop": 480,
+    "Mobile": 480
+   },
+   "direct": 10,
+   "aliases": [],
+   "layers": 10,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     7
+    ],
+    [
+     "Modal",
+     1
+    ],
+    [
+     "Overview Card",
+     1
+    ],
+    [
+     "Jira Annotation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Modal",
+     4
+    ],
+    [
+     "Overview",
+     3
+    ],
+    [
+     "Annotation",
+     2
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ]
+   ]
+  },
+  "component/modal/padding-h · Component": {
+   "name": "component/modal/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--modal-padding-h",
+   "values": {
+    "Desktop": 32,
+    "Mobile": 32
+   },
+   "direct": 15,
+   "aliases": [],
+   "layers": 15,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     12
+    ],
+    [
+     "Modal",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Modal",
+     12
+    ],
+    [
+     "Radius & Elevation",
+     3
+    ]
+   ]
+  },
+  "component/modal/head-padding · Component": {
+   "name": "component/modal/head-padding",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--modal-head-padding",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 10,
+   "aliases": [],
+   "layers": 10,
+   "productLayers": 2,
+   "components": [
+    [
+     "(documentation, not a component)",
+     8
+    ],
+    [
+     "Modal",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Modal",
+     8
+    ],
+    [
+     "Radius & Elevation",
+     2
+    ]
+   ]
+  },
+  "component/modal/body-padding · Component": {
+   "name": "component/modal/body-padding",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--modal-body-padding",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 13,
+   "aliases": [],
+   "layers": 13,
+   "productLayers": 3,
+   "components": [
+    [
+     "(documentation, not a component)",
+     10
+    ],
+    [
+     "Modal",
+     2
+    ],
+    [
+     "Overview Card",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Modal",
+     8
+    ],
+    [
+     "Overview",
+     3
+    ],
+    [
+     "Radius & Elevation",
+     2
+    ]
+   ]
+  },
+  "component/modal/actions-gap · Component": {
+   "name": "component/modal/actions-gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--modal-actions-gap",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 5,
+   "aliases": [],
+   "layers": 5,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     4
+    ],
+    [
+     "Modal",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Modal",
+     4
+    ],
+    [
+     "Radius & Elevation",
+     1
+    ]
+   ]
+  },
+  "component/drawer/width · Component": {
+   "name": "component/drawer/width",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--drawer-width",
+   "values": {
+    "Desktop": 420,
+    "Mobile": 420
+   },
+   "direct": 4,
+   "aliases": [],
+   "layers": 4,
+   "productLayers": 2,
+   "components": [
+    [
+     "Drawer",
+     2
+    ],
+    [
+     "(documentation, not a component)",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Drawer",
+     4
+    ]
+   ]
+  },
+  "component/drawer/padding · Component": {
+   "name": "component/drawer/padding",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--drawer-padding",
+   "values": {
+    "Desktop": 32,
+    "Mobile": 32
+   },
+   "direct": 8,
+   "aliases": [],
+   "layers": 8,
+   "productLayers": 4,
+   "components": [
+    [
+     "Drawer",
+     4
+    ],
+    [
+     "(documentation, not a component)",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Drawer",
+     8
+    ]
+   ]
+  },
+  "component/table/cell-padding-v · Component": {
+   "name": "component/table/cell-padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--table-cell-padding-v",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 33,
+   "aliases": [],
+   "layers": 33,
+   "productLayers": 9,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Table",
+     5
+    ],
+    [
+     "Table Row",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Table",
+     15
+    ],
+    [
+     "Table Row",
+     8
+    ],
+    [
+     "Dashboard shell",
+     5
+    ],
+    [
+     "Search and results",
+     5
+    ]
+   ]
+  },
+  "component/table/cell-padding-h · Component": {
+   "name": "component/table/cell-padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--table-cell-padding-h",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 33,
+   "aliases": [],
+   "layers": 33,
+   "productLayers": 9,
+   "components": [
+    [
+     "(documentation, not a component)",
+     24
+    ],
+    [
+     "Table",
+     5
+    ],
+    [
+     "Table Row",
+     4
+    ]
+   ],
+   "pages": [
+    [
+     "Table",
+     15
+    ],
+    [
+     "Table Row",
+     8
+    ],
+    [
+     "Dashboard shell",
+     5
+    ],
+    [
+     "Search and results",
+     5
+    ]
+   ]
+  },
+  "component/sidenav/width · Component": {
+   "name": "component/sidenav/width",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--sidenav-width",
+   "values": {
+    "Desktop": 240,
+    "Mobile": 240
+   },
+   "direct": 4,
+   "aliases": [],
+   "layers": 4,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     3
+    ],
+    [
+     "Side Navigation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Side Navigation",
+     3
+    ],
+    [
+     "Dashboard shell",
+     1
+    ]
+   ]
+  },
+  "component/sidenav/padding-v · Component": {
+   "name": "component/sidenav/padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--sidenav-padding-v",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 4,
+   "aliases": [],
+   "layers": 4,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     3
+    ],
+    [
+     "Side Navigation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Side Navigation",
+     3
+    ],
+    [
+     "Dashboard shell",
+     1
+    ]
+   ]
+  },
+  "component/sidenav/padding-h · Component": {
+   "name": "component/sidenav/padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--sidenav-padding-h",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 4,
+   "aliases": [],
+   "layers": 4,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     3
+    ],
+    [
+     "Side Navigation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Side Navigation",
+     3
+    ],
+    [
+     "Dashboard shell",
+     1
+    ]
+   ]
+  },
+  "component/sidenav/gap · Component": {
+   "name": "component/sidenav/gap",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--sidenav-gap",
+   "values": {
+    "Desktop": 24,
+    "Mobile": 24
+   },
+   "direct": 4,
+   "aliases": [],
+   "layers": 4,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     3
+    ],
+    [
+     "Side Navigation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Side Navigation",
+     3
+    ],
+    [
+     "Dashboard shell",
+     1
+    ]
+   ]
+  },
+  "component/sidenav/item-padding-v · Component": {
+   "name": "component/sidenav/item-padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--sidenav-item-padding-v",
+   "values": {
+    "Desktop": 8,
+    "Mobile": 8
+   },
+   "direct": 25,
+   "aliases": [],
+   "layers": 25,
+   "productLayers": 7,
+   "components": [
+    [
+     "(documentation, not a component)",
+     18
+    ],
+    [
+     "Side Navigation",
+     4
+    ],
+    [
+     "Side Nav Item",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Side Navigation",
+     12
+    ],
+    [
+     "Side Nav Item",
+     9
+    ],
+    [
+     "Dashboard shell",
+     4
+    ]
+   ]
+  },
+  "component/sidenav/item-padding-h · Component": {
+   "name": "component/sidenav/item-padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--sidenav-item-padding-h",
+   "values": {
+    "Desktop": 12,
+    "Mobile": 12
+   },
+   "direct": 25,
+   "aliases": [],
+   "layers": 25,
+   "productLayers": 7,
+   "components": [
+    [
+     "(documentation, not a component)",
+     18
+    ],
+    [
+     "Side Navigation",
+     4
+    ],
+    [
+     "Side Nav Item",
+     3
+    ]
+   ],
+   "pages": [
+    [
+     "Side Navigation",
+     12
+    ],
+    [
+     "Side Nav Item",
+     9
+    ],
+    [
+     "Dashboard shell",
+     4
+    ]
+   ]
+  },
+  "component/table/toolbar-padding-v · Component": {
+   "name": "component/table/toolbar-padding-v",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--table-toolbar-padding-v",
+   "values": {
+    "Desktop": 16,
+    "Mobile": 16
+   },
+   "direct": 5,
+   "aliases": [],
+   "layers": 5,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     4
+    ],
+    [
+     "Table",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Table",
+     3
+    ],
+    [
+     "Dashboard shell",
+     1
+    ],
+    [
+     "Search and results",
+     1
+    ]
+   ]
+  },
+  "component/table/toolbar-padding-h · Component": {
+   "name": "component/table/toolbar-padding-h",
+   "collection": "Component",
+   "type": "FLOAT",
+   "code": "--table-toolbar-padding-h",
+   "values": {
+    "Desktop": 20,
+    "Mobile": 20
+   },
+   "direct": 5,
+   "aliases": [],
+   "layers": 5,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     4
+    ],
+    [
+     "Table",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Table",
+     3
+    ],
+    [
+     "Dashboard shell",
+     1
+    ],
+    [
+     "Search and results",
+     1
     ]
    ]
   }
