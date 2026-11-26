@@ -13,6 +13,8 @@
 #        FIGMA_FILE  file key             (default: the Ascendum DS file)
 #        GH    gh command                 (default: gh)
 set -euo pipefail
+# The whole script is one block, read before it runs: switching branches below rewrites this file on disk.
+{
 
 MSG="${1:?usage: send_to_code.sh \"<what changed>\" [Collection,Collection]}"
 ONLY="${2:-}"
@@ -61,7 +63,9 @@ node pipeline/tests/migrate_sim.mjs build/before/ds-snapshot.json build/ds-snaps
 python3 pipeline/03_compare.py build/before/report.json build/report.json build/compare.js > /dev/null
 
 GENERATED="build/ds-snapshot.json build/tokens.json build/tokens.css build/AI-CONTRACT.md build/components.json build/text-styles.json build/contracts.json build/breaking.json build/report.json build/report.js build/compare.js build/CHANGES.md build/changes.json build/migration-plan.json build/migrate.figma.js"
-if git diff --quiet -- build/tokens.json build/tokens.css build/contracts.json build/components.json build/text-styles.json; then
+# The first line of tokens.css names the Figma version, so it changes on every read: compare the rest.
+if git diff --quiet -- build/tokens.json build/contracts.json build/components.json build/text-styles.json \
+   && diff -q <(git show HEAD:build/tokens.css | tail -n +2) <(tail -n +2 build/tokens.css) > /dev/null; then
   echo "Figma and Git already match (version $VERSION). Nothing to send."
   git checkout -q -- build; git switch -q -; git branch -q -D "$BRANCH"
   exit 0
@@ -81,3 +85,5 @@ BODY="$TMP/body.md"
 } > "$BODY"
 $GH pr create --base main --head "$BRANCH" --title "Send to code: $MSG" --body-file "$BODY"
 git switch -q -
+exit 0
+}
