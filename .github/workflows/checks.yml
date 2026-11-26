@@ -15,9 +15,13 @@ jobs:
         # Exit code 1 while a blocking check fails. That is the gate.
         run: python3 pipeline/02_build.py build/ds-snapshot.json governance build && python3 pipeline/04_catalogue.py build/ds-snapshot.json build
 
+      - name: Breaking changes since the last release
+        # Lists every token, component, property and text style a consumer would lose. It reports, it does not block.
+        run: python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json
+
       - name: Generated files match the snapshot
         # Tokens and the AI contract are never edited by hand.
-        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md build/components.json build/text-styles.json
+        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md build/components.json build/text-styles.json build/contracts.json build/breaking.json
 
       - name: Before and after
         run: python3 pipeline/03_compare.py build/before/report.json build/report.json build/compare.js

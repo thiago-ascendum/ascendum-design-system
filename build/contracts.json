@@ -1,0 +1,1771 @@
+[
+  {
+    "component": "Accordion Item",
+    "figmaPage": "Accordion Item",
+    "properties": {
+      "State": [
+        "Collapsed",
+        "Expanded",
+        "Hover"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Collapsed",
+      "Expanded",
+      "Hover"
+    ],
+    "tokens": [
+      "--accordion-gap",
+      "--accordion-padding-h",
+      "--accordion-padding-v",
+      "--bg-hover",
+      "--border-default",
+      "--border-width-hairline",
+      "--container-fill",
+      "--container-radius",
+      "--icon",
+      "--text",
+      "--text-body-lg-size",
+      "--text-h4-size",
+      "--text-muted"
+    ],
+    "use": "One row of an accordion. Use it to tuck away secondary detail, such as FAQs, so the page stays short. Stack instances in an auto-layout and set the last row's bottom stroke to zero. Do not hide content people need to compare side by side.",
+    "variants": 3
+  },
+  {
+    "component": "Alert",
+    "figmaPage": "Alert",
+    "properties": {
+      "Tone": [
+        "Error",
+        "Info",
+        "Neutral",
+        "Success",
+        "Warning"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--alert-body-gap",
+      "--alert-gap",
+      "--alert-padding-h",
+      "--alert-padding-v",
+      "--border-default",
+      "--border-width-hairline",
+      "--container-fill",
+      "--container-radius",
+      "--feedback-error",
+      "--feedback-error-bg",
+      "--feedback-info",
+      "--feedback-info-bg",
+      "--feedback-success",
+      "--feedback-success-bg",
+      "--feedback-warning",
+      "--feedback-warning-bg",
+      "--icon",
+      "--radius-surface",
+      "--text",
+      "--text-body-lg-size",
+      "--text-h3-size",
+      "--text-muted"
+    ],
+    "use": "Inline message about the state of the page or a form. Use it when the person needs to read something before carrying on. Use Neutral for general notes and the coloured tones for feedback only. For a message that disappears on its own, use Toast instead.",
+    "variants": 5
+  },
+  {
+    "component": "Avatar",
+    "figmaPage": "Avatar",
+    "properties": {
+      "Size": [
+        "Large",
+        "Medium",
+        "Small"
+      ],
+      "Tone": [
+        "Blue",
+        "Purple",
+        "Red",
+        "Stone"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--avatar-size-lg",
+      "--avatar-size-md",
+      "--avatar-size-sm",
+      "--bg-accent-blue",
+      "--bg-accent-purple",
+      "--bg-accent-red",
+      "--bg-accent-stone",
+      "--container-fill",
+      "--container-radius",
+      "--radius-pill",
+      "--text-button-size",
+      "--text-h4-size",
+      "--text-label-size",
+      "--text-on-accent"
+    ],
+    "use": "Initials on a soft accent tint with dark text. Three sizes: Small 32, Medium 48, Large 72. The tone only tells people apart; it carries no meaning, so never use it for status. For a photo, place an image fill on the instance.",
+    "variants": 12
+  },
+  {
+    "component": "Badge",
+    "figmaPage": "Badge",
+    "properties": {
+      "Dot": [
+        "False",
+        "True"
+      ],
+      "Tone": [
+        "Error",
+        "Info",
+        "Neutral",
+        "Success",
+        "Warning"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--badge-dot",
+      "--badge-gap",
+      "--badge-padding-h",
+      "--badge-padding-v",
+      "--bg-subtle",
+      "--container-fill",
+      "--container-radius",
+      "--feedback-error",
+      "--feedback-error-bg",
+      "--feedback-info",
+      "--feedback-info-bg",
+      "--feedback-success",
+      "--feedback-success-bg",
+      "--feedback-warning",
+      "--feedback-warning-bg",
+      "--font-size-body-sm",
+      "--radius-pill",
+      "--text"
+    ],
+    "use": "Small status pill. Use it to show the state of an item in a table or list. Do not use it for actions or for decoration.\n\nEach tone has one meaning. Neutral is the default state with nothing to flag. Success means done or healthy. Info means in progress or worth knowing, with no problem. Warning means it needs attention soon. Error means it is blocked or has failed.\n\nThe dot is optional and repeats the colour for people who cannot tell the tones apart.",
+    "variants": 10
+  },
+  {
+    "component": "Breadcrumb Item",
+    "figmaPage": "Breadcrumb Item",
+    "properties": {
+      "State": [
+        "Current",
+        "Hover",
+        "Link"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Current",
+      "Hover",
+      "Link"
+    ],
+    "tokens": [
+      "--breadcrumb-gap",
+      "--container-fill",
+      "--container-radius",
+      "--icon-muted",
+      "--size-icon-sm",
+      "--text",
+      "--text-body-size",
+      "--text-muted"
+    ],
+    "use": "One step in a breadcrumb trail, followed by a chevron. Use it on pages that sit two or more levels deep, so people can step back up. Set Separator to False on the last item, which is the current page. Do not use it on top-level pages.",
+    "variants": 3
+  },
+  {
+    "component": "Button",
+    "figmaPage": "Button",
+    "properties": {
+      "State": [
+        "Default",
+        "Disabled",
+        "Focus",
+        "Hover",
+        "Pressed"
+      ],
+      "Style": [
+        "Ghost",
+        "Outline",
+        "Solid"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Disabled",
+      "Focus",
+      "Hover",
+      "Pressed"
+    ],
+    "tokens": [
+      "--border-width-button",
+      "--border-width-focus",
+      "--button-fill",
+      "--button-padding-h",
+      "--button-padding-v",
+      "--button-radius",
+      "--button-surface-fill-hover",
+      "--button-surface-fill-pressed",
+      "--button-surface-fill-solid-hover",
+      "--button-surface-focus",
+      "--button-surface-label",
+      "--button-surface-label-hover",
+      "--button-surface-stroke",
+      "--container-fill",
+      "--container-radius",
+      "--space-3xs",
+      "--text-button-size"
+    ],
+    "use": "Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Surface mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.",
+    "variants": 15
+  },
+  {
+    "component": "Checkbox",
+    "figmaPage": "Checkbox",
+    "properties": {
+      "Checked": [
+        "False",
+        "Indeterminate",
+        "True"
+      ],
+      "State": [
+        "Default",
+        "Disabled",
+        "Focus",
+        "Hover",
+        "Pressed"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Disabled",
+      "Focus",
+      "Hover",
+      "Pressed"
+    ],
+    "tokens": [
+      "--border-focus",
+      "--border-strong",
+      "--border-width-field",
+      "--border-width-focus",
+      "--checkbox-radius",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-hover",
+      "--control-fill-pressed",
+      "--control-fill-selected-hover",
+      "--control-fill-selected-pressed",
+      "--field-radius",
+      "--form-border",
+      "--inverted-text",
+      "--size-control",
+      "--space-control-gap",
+      "--text",
+      "--text-button-size"
+    ],
+    "use": "Choose any number of options from a list. Use it for settings and filters where each option stands alone. Use Radio when only one answer is allowed, and Toggle when the change takes effect straight away.\n\nChecked and Indeterminate fill the box so the state reads without colour. Indeterminate is for a parent whose children are only partly selected. Focus adds a ring around the box. Disabled is for options that are unavailable right now, so say why in nearby text.",
+    "variants": 15
+  },
+  {
+    "component": "Code Block",
+    "figmaPage": "Code Block",
+    "properties": {},
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-muted",
+      "--border-width-hairline",
+      "--code-body-padding",
+      "--code-head-padding-h",
+      "--code-head-padding-v",
+      "--font-size-body-sm",
+      "--inverted-background",
+      "--inverted-text",
+      "--radius-card",
+      "--space-3xs",
+      "--text-inverted-muted",
+      "--text-label-size"
+    ],
+    "use": "A read-only snippet of code with its language and a Copy action. Use it for short examples of five lines or fewer, in documentation or a hand-off. For longer files, link to the source instead. Barlow is the only typeface, so code does not align in columns.",
+    "variants": 0
+  },
+  {
+    "component": "Combobox",
+    "figmaPage": "Combobox",
+    "properties": {
+      "State": [
+        "Empty",
+        "Filled",
+        "Focus",
+        "Hover"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Empty",
+      "Filled",
+      "Focus",
+      "Hover"
+    ],
+    "tokens": [
+      "--border-width-field",
+      "--combobox-gap",
+      "--combobox-min-height",
+      "--combobox-padding-h",
+      "--combobox-padding-v",
+      "--combobox-token-height",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-hover",
+      "--field-radius",
+      "--font-size-body-sm",
+      "--form-border",
+      "--form-placeholder",
+      "--icon-inverted",
+      "--inverted-background",
+      "--inverted-text",
+      "--text",
+      "--text-body-size"
+    ],
+    "use": "A multi-select field where people type to filter a list and pick several items, which then sit inside the field as removable tokens. Use it when there are more than about seven options. For a single choice use Select, for a handful of options use checkboxes. Pair it with Menu Item for the open list.",
+    "variants": 4
+  },
+  {
+    "component": "Divider",
+    "figmaPage": "Divider",
+    "properties": {
+      "Orientation": [
+        "Horizontal",
+        "Vertical"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-default",
+      "--border-width-hairline",
+      "--container-fill",
+      "--container-radius"
+    ],
+    "use": "A thin line that separates groups of content. Use it between sections of a list or items in a toolbar when spacing alone is not clear enough. Do not stack it with borders or cards that already separate the content.\n\nOne hairline in border/default, horizontal or vertical. Stretch it to the width or height of the content it divides.",
+    "variants": 2
+  },
+  {
+    "component": "Drawer",
+    "figmaPage": "Drawer",
+    "properties": {
+      "Side": [
+        "Left",
+        "Right"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-default",
+      "--border-width-hairline",
+      "--container-fill",
+      "--container-radius",
+      "--drawer-padding",
+      "--drawer-width",
+      "--icon",
+      "--radius-card",
+      "--text",
+      "--text-body-size",
+      "--text-h4-size",
+      "--text-muted"
+    ],
+    "use": "Side panel for detail or editing while the page stays visible behind it. Use it for a secondary task on one item; use Modal for a short confirmation. Width and padding are not yet checked against a real design.",
+    "variants": 2
+  },
+  {
+    "component": "Empty State",
+    "figmaPage": "Empty State",
+    "properties": {},
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-muted",
+      "--border-width-button",
+      "--border-width-field",
+      "--button-fill",
+      "--button-padding-h",
+      "--button-padding-v",
+      "--button-radius",
+      "--button-surface-fill-hover",
+      "--button-surface-label",
+      "--button-surface-label-hover",
+      "--container-fill",
+      "--empty-icon",
+      "--empty-max-width",
+      "--empty-padding-h",
+      "--empty-padding-v",
+      "--icon",
+      "--radius-card",
+      "--space-3xs",
+      "--text",
+      "--text-body-lg-size",
+      "--text-button-size",
+      "--text-h4-size",
+      "--text-muted"
+    ],
+    "use": "Shown when a list or search has nothing to display. Use it to say why it is empty and offer one next step. Do not use it for errors or loading. Body text is capped at 360px so the line stays readable.",
+    "variants": 0
+  },
+  {
+    "component": "File Uploader",
+    "figmaPage": "File Uploader",
+    "properties": {
+      "State": [
+        "Active",
+        "Error",
+        "Idle"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Active",
+      "Error",
+      "Idle"
+    ],
+    "tokens": [
+      "--bg-subtle",
+      "--border-muted",
+      "--border-width-button",
+      "--button-fill",
+      "--button-padding-h",
+      "--button-padding-v",
+      "--button-radius",
+      "--button-surface-label",
+      "--button-surface-stroke",
+      "--container-fill",
+      "--container-radius",
+      "--dropzone-padding",
+      "--feedback-error",
+      "--form-border",
+      "--icon",
+      "--radius-card",
+      "--space-2xs",
+      "--space-3xs",
+      "--text",
+      "--text-body-lg-size",
+      "--text-body-size",
+      "--text-button-size",
+      "--text-footnote-size",
+      "--text-muted"
+    ],
+    "use": "Drop zone for adding files. Use it when someone needs to upload one or more files to a form or project. Do not use it for a single small attachment, where a plain button is enough. The file list and progress live in code.",
+    "variants": 3
+  },
+  {
+    "component": "Footer",
+    "figmaPage": "Footer",
+    "properties": {
+      "Variant": [
+        "Default"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--container-fill",
+      "--container-radius",
+      "--inverted-background",
+      "--space-2xs",
+      "--space-3xs",
+      "--space-md",
+      "--space-sm",
+      "--surface-bg",
+      "--surface-logo",
+      "--surface-text",
+      "--surface-text-muted",
+      "--text-body-size",
+      "--text-footnote-size",
+      "--text-inverted-muted",
+      "--text-label-size"
+    ],
+    "use": "Page footer: a row of links above a legal bar. Use it once, at the bottom of every page. The legal bar is always dark, in both variants and both modes, so it anchors the page.",
+    "variants": 1
+  },
+  {
+    "component": "Form Field",
+    "figmaPage": "Form Field",
+    "properties": {
+      "State": [
+        "Default",
+        "Disabled",
+        "Error",
+        "Filled",
+        "Focus",
+        "Hover"
+      ],
+      "Type": [
+        "Text",
+        "Textarea"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Disabled",
+      "Error",
+      "Filled",
+      "Focus",
+      "Hover"
+    ],
+    "tokens": [
+      "--border-default",
+      "--border-focus",
+      "--border-width-field",
+      "--border-width-focus",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-hover",
+      "--feedback-error",
+      "--field-radius",
+      "--font-size-caption",
+      "--form-border",
+      "--form-field-gap",
+      "--form-placeholder",
+      "--input-padding-h",
+      "--input-padding-v",
+      "--input-textarea-min",
+      "--text",
+      "--text-body-size",
+      "--text-label-size",
+      "--text-muted"
+    ],
+    "use": "A label, an input and, only when needed, a message. Use it for every text entry in a form. Help text is hidden by default: add it only when the label alone is not enough, and show it before the person types. Validation messages replace help text and use the error colour.",
+    "variants": 12
+  },
+  {
+    "component": "Inline Edit",
+    "figmaPage": "Inline Edit",
+    "properties": {
+      "State": [
+        "Editing",
+        "Hover",
+        "Read"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Editing",
+      "Hover",
+      "Read"
+    ],
+    "tokens": [
+      "--bg-hover",
+      "--border-muted",
+      "--border-width-field",
+      "--border-width-hairline",
+      "--container-fill",
+      "--container-radius",
+      "--field-radius",
+      "--form-border",
+      "--inline-edit-padding-h",
+      "--inline-edit-padding-v",
+      "--text",
+      "--text-h3-size"
+    ],
+    "use": "Text that becomes a field when clicked. Use it for a title or name the person edits in place, such as a project name. It takes the text style of the heading it replaces, so nothing jumps when editing starts. Do not use it for forms with several fields, use Form Field instead.",
+    "variants": 3
+  },
+  {
+    "component": "Input",
+    "figmaPage": "Input",
+    "properties": {
+      "State": [
+        "Default",
+        "Disabled",
+        "Error",
+        "Filled",
+        "Focus",
+        "Hover"
+      ],
+      "Type": [
+        "Text",
+        "Textarea"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Disabled",
+      "Error",
+      "Filled",
+      "Focus",
+      "Hover"
+    ],
+    "tokens": [
+      "--border-default",
+      "--border-focus",
+      "--border-width-field",
+      "--border-width-focus",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-hover",
+      "--feedback-error",
+      "--field-radius",
+      "--form-border",
+      "--form-placeholder",
+      "--input-padding-h",
+      "--input-padding-v",
+      "--input-textarea-min",
+      "--text",
+      "--text-body-size"
+    ],
+    "use": "Text field for short answers, and a textarea for longer ones.\n\nUse it when the person has to type something. Use Select or Combobox when the answers come from a list. Always pair it with a visible label above the field; the placeholder is an example, not a label.\n\n1.5 px border and 4 px radius, between the sharp button and the round card. Focus adds a ring around the field. Errors use feedback/error and need a short message under the field that says how to fix it.",
+    "variants": 12
+  },
+  {
+    "component": "Jira Annotation",
+    "figmaPage": "Annotation",
+    "properties": {},
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--annotation-body-gap",
+      "--annotation-body-padding-v",
+      "--annotation-gap-header",
+      "--annotation-padding-badges-bottom",
+      "--annotation-padding-badges-top",
+      "--annotation-padding-bottom-header",
+      "--annotation-padding-h",
+      "--annotation-padding-v",
+      "--badge-dot",
+      "--badge-gap",
+      "--badge-padding-h",
+      "--badge-padding-v",
+      "--bg-subtle",
+      "--border-default",
+      "--border-muted",
+      "--border-width-button",
+      "--border-width-hairline",
+      "--button-padding-h",
+      "--button-padding-v",
+      "--button-radius",
+      "--button-surface-fill-hover",
+      "--button-surface-label-hover",
+      "--feedback-info",
+      "--feedback-info-bg",
+      "--feedback-success",
+      "--field-radius",
+      "--font-size-body-sm",
+      "--font-size-caption",
+      "--group-card-padding-h",
+      "--group-card-padding-v",
+      "--modal-max-width",
+      "--overview-actions-gap",
+      "--radius-card",
+      "--radius-pill",
+      "--space-3xs",
+      "--text",
+      "--text-body-size",
+      "--text-h4-size",
+      "--text-label-size",
+      "--text-muted"
+    ],
+    "use": "Jira-powered annotation panel for design review.\nBrings Jira context directly into Figma while preserving Ascendum Design System styling and structure. Populate using the shared Jira Annotation Agent skill and Atlassian connector. Jira remains the source of truth; Objective, Review Focus, Design Requirements, and Acceptance Criteria are semantically derived from the Jira work item.\n\n\n//INSTRUCTIONS\n\n\nFirst-time setup only\nOpen Figma Agent.\nClick Add context → Connectors → Atlassian.\nConnect your Atlassian account.\nWhen Atlassian asks which site to authorize, select the site that contains the Jira project you are working on.\nFor each Jira ticket\nInsert Jira Annotation from the Ascendum Design System.\nSelect the annotation component on the canvas.\nOpen Figma Agent.\nRun the /populate-jira-annotation skill.\nIn the same message, provide the actual Jira issue key for the ticket you want to display.\n\nFor example, if your real Jira ticket is RAIL-248, type:\n/populate-jira-annotation @Atlassian RAIL-248\nYou can also paste the full URL of the actual Jira ticket instead of the issue key.\nImportant: Do not type ABC-123, JIRA-123, PROJ-1234, <JIRA-KEY>, or any other example shown in documentation. These are placeholders, not real Jira tickets. Always replace them with the key or URL of the Jira ticket you are currently working on.\nThe Agent will retrieve the Jira ticket, populate the annotation, adjust the number of requirement and acceptance-criteria rows, apply the appropriate priority treatment, and link the Open Jira button to that ticket.\nDo not detach the annotation component.",
+    "variants": 0
+  },
+  {
+    "component": "Key Stakeholders Card",
+    "figmaPage": "Group Cards",
+    "properties": {
+      "Inverted": [
+        "False"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--avatar-size-sm",
+      "--bg-accent-blue",
+      "--container-radius",
+      "--font-size-body-sm",
+      "--group-card-body-gap-h",
+      "--group-card-body-gap-v",
+      "--group-card-gap",
+      "--group-card-padding-h",
+      "--group-card-padding-v",
+      "--radius-pill",
+      "--surface-bg",
+      "--surface-border",
+      "--surface-text",
+      "--surface-text-muted",
+      "--text-body-lg-size",
+      "--text-body-size",
+      "--text-label-size",
+      "--text-on-accent"
+    ],
+    "use": "A titled list of the client and delivery partners on a project. Use it in a project overview. Each row has a logo or Avatar, a name and a one-line relationship. Do not use it for more than four organisations.",
+    "variants": 1
+  },
+  {
+    "component": "Logo",
+    "figmaPage": "Logo",
+    "properties": {
+      "Size": [
+        "Compact",
+        "Full"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--container-fill",
+      "--container-radius",
+      "--surface-logo",
+      "--surface-logo-glyph"
+    ],
+    "use": "Ascendum logo. Full is the wordmark lockup, Compact is the mark only. Colours are deliberately not bound to Light and Dark: a logo is chosen, not recoloured by a theme. The choice is the Surface mode: Default gives the dark logo, Inverted gives the light one. The light mark has no backing layer and reads only on a dark surface.",
+    "variants": 2
+  },
+  {
+    "component": "Menu Item",
+    "figmaPage": "Menu Item",
+    "properties": {
+      "State": [
+        "Default",
+        "Hover",
+        "Selected"
+      ],
+      "Tone": [
+        "Default",
+        "Error"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Hover",
+      "Selected"
+    ],
+    "tokens": [
+      "--bg-hover",
+      "--container-fill",
+      "--container-radius",
+      "--feedback-error",
+      "--icon",
+      "--menu-item-gap",
+      "--menu-item-padding-h",
+      "--menu-item-padding-v",
+      "--text",
+      "--text-body-size",
+      "--text-label-size",
+      "--text-muted"
+    ],
+    "use": "One row in a dropdown or context menu. Use Default for everyday actions and Error for the one action that destroys something. Selected shows a tick for a choice that is on. Do not use it for navigation between pages.",
+    "variants": 5
+  },
+  {
+    "component": "Modal",
+    "figmaPage": "Modal",
+    "properties": {},
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-default",
+      "--border-width-button",
+      "--border-width-hairline",
+      "--button-fill",
+      "--button-padding-h",
+      "--button-padding-v",
+      "--button-radius",
+      "--button-surface-fill-hover",
+      "--button-surface-label",
+      "--button-surface-label-hover",
+      "--container-fill",
+      "--modal-actions-gap",
+      "--modal-body-padding",
+      "--modal-head-padding",
+      "--modal-max-width",
+      "--modal-padding-h",
+      "--radius-card",
+      "--space-3xs",
+      "--text",
+      "--text-body-lg-size",
+      "--text-button-size",
+      "--text-h4-size",
+      "--text-muted"
+    ],
+    "use": "Confirmation dialogue over a scrim. Use it when someone must confirm or cancel before carrying on, with the main action last on the right. Do not use it for long forms or content people may want to keep open (use Drawer).",
+    "variants": 0
+  },
+  {
+    "component": "Navigation Bar",
+    "figmaPage": "Navigation Bar",
+    "properties": {
+      "Variant": [
+        "Default"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-width-button",
+      "--button-fill",
+      "--button-padding-h",
+      "--button-padding-v",
+      "--button-radius",
+      "--button-surface-label",
+      "--button-surface-stroke",
+      "--container-fill",
+      "--container-radius",
+      "--space-2xs",
+      "--space-3xs",
+      "--space-md",
+      "--space-xs",
+      "--surface-bg",
+      "--surface-logo",
+      "--surface-text",
+      "--text-button-size"
+    ],
+    "use": "Top navigation with the logo, links and one call to action. Use it once per page, at the top. For a dark bar, set the Surface mode to Inverted: the bar, the logo and the button follow. Horizontal padding matches the page sections so the logo lines up with the content.",
+    "variants": 1
+  },
+  {
+    "component": "Overview Card",
+    "figmaPage": "Overview",
+    "properties": {
+      "Inverted": [
+        "False"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--avatar-size-sm",
+      "--bg-accent-blue",
+      "--bg-accent-purple",
+      "--bg-accent-red",
+      "--bg-accent-stone",
+      "--border-width-button",
+      "--border-width-hairline",
+      "--button-padding-h",
+      "--button-padding-v",
+      "--button-radius",
+      "--button-surface-fill-hover",
+      "--button-surface-label-hover",
+      "--container-radius",
+      "--font-size-body-sm",
+      "--group-card-body-gap-h",
+      "--group-card-body-gap-v",
+      "--group-card-gap",
+      "--group-card-padding-h",
+      "--group-card-padding-v",
+      "--modal-body-padding",
+      "--modal-max-width",
+      "--overview-actions-gap",
+      "--overview-body-padding",
+      "--overview-head-padding",
+      "--overview-padding-h",
+      "--overview-padding-v",
+      "--radius-card",
+      "--radius-pill",
+      "--space-3xs",
+      "--surface-bg",
+      "--surface-bg-raised",
+      "--surface-border",
+      "--surface-text",
+      "--surface-text-muted",
+      "--text-body-lg-size",
+      "--text-body-size",
+      "--text-button-size",
+      "--text-h3-size",
+      "--text-h4-size",
+      "--text-label-size",
+      "--text-on-accent"
+    ],
+    "use": "Project summary card for a project page: intro text, key stakeholders, team groups and a link out. Use it once per project as the single summary. Do not use it for a list of projects or for one number (use Stat Card). Has Light and Dark variants.",
+    "variants": 1
+  },
+  {
+    "component": "Progress Bar",
+    "figmaPage": "Progress Bar",
+    "properties": {
+      "Size": [
+        "LG",
+        "SM"
+      ],
+      "Tone": [
+        "Default",
+        "Error",
+        "Success",
+        "Warning"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-default",
+      "--border-strong",
+      "--container-fill",
+      "--container-radius",
+      "--feedback-error",
+      "--feedback-success",
+      "--feedback-warning",
+      "--progress-height-lg",
+      "--progress-height-sm",
+      "--radius-pill"
+    ],
+    "use": "Determinate progress for a task with a known length, such as an upload or a migration. Set the width of the Fill layer on the instance to show the value. Use Small inside cards and tables and Large when the bar is the main thing on screen. Pair it with a label and a percentage. Do not use it when the length is unknown.",
+    "variants": 8
+  },
+  {
+    "component": "Radio",
+    "figmaPage": "Radio button",
+    "properties": {
+      "Checked": [
+        "False",
+        "True"
+      ],
+      "State": [
+        "Default",
+        "Disabled",
+        "Focus",
+        "Hover",
+        "Pressed"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Disabled",
+      "Focus",
+      "Hover",
+      "Pressed"
+    ],
+    "tokens": [
+      "--border-focus",
+      "--border-strong",
+      "--border-width-field",
+      "--border-width-focus",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-hover",
+      "--control-fill-pressed",
+      "--form-border",
+      "--radio-dot",
+      "--radius-pill",
+      "--size-control",
+      "--space-control-gap",
+      "--text",
+      "--text-button-size"
+    ],
+    "use": "Choose one option from a short list. Use it when every option should be visible at once. Use a Select when there are more than five options, and Checkbox when more than one answer is allowed.\n\nThe selected option shows a filled dot. Focus is a separate ring around the circle, so it never gets mistaken for a selection. Always have one option selected by default.",
+    "variants": 10
+  },
+  {
+    "component": "Search Bar",
+    "figmaPage": "Search Bar",
+    "properties": {
+      "Size": [
+        "Compact",
+        "Default"
+      ],
+      "State": [
+        "Default",
+        "Focus",
+        "Hover",
+        "Muted"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Focus",
+      "Hover",
+      "Muted"
+    ],
+    "tokens": [
+      "--border-muted",
+      "--border-width-field",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-hover",
+      "--field-radius",
+      "--form-border",
+      "--form-placeholder",
+      "--icon",
+      "--icon-muted",
+      "--search-gap",
+      "--search-gap-compact",
+      "--search-height",
+      "--search-height-compact",
+      "--search-padding-h",
+      "--search-padding-h-compact",
+      "--text",
+      "--text-body-lg-size"
+    ],
+    "use": "A single-line field for searching a list or a page. Use Default in page headers and Compact inside toolbars and tables. Muted is for a search that sits on a busy surface and should stay quiet until used. Do not use it for filtering by several fields, use Form Field instead.",
+    "variants": 8
+  },
+  {
+    "component": "Section / Columns",
+    "figmaPage": "Section / Columns",
+    "properties": {
+      "Columns": [
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--columns-gap",
+      "--container-fill",
+      "--container-radius",
+      "--space-2xs",
+      "--space-md",
+      "--space-sm",
+      "--surface-bg",
+      "--surface-text",
+      "--surface-text-muted",
+      "--text-body-size",
+      "--text-h3-size"
+    ],
+    "use": "Feature block with two to four columns. Use it to set out parallel points of equal weight. Columns share the width evenly with gap/columns (32px). Built at 2, 3 and 4; for other counts, resize one of them.",
+    "variants": 3
+  },
+  {
+    "component": "Section / Full Width",
+    "figmaPage": "Section / Full Width",
+    "properties": {
+      "Layout": [
+        "Media Only",
+        "Text Left",
+        "Text Only",
+        "Text Right"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--bg-subtle",
+      "--border-muted",
+      "--container-fill",
+      "--container-radius",
+      "--radius-card",
+      "--space-2xs",
+      "--space-md",
+      "--space-sm",
+      "--space-xs",
+      "--surface-bg",
+      "--surface-text",
+      "--surface-text-muted",
+      "--text-body-lg-size",
+      "--text-h2-size"
+    ],
+    "use": "Full-bleed section with four layouts: Text Left, Text Right, Text Only and Media Only. Use it for the main moments of a page, alternating the Surface mode between Default and Inverted.",
+    "variants": 4
+  },
+  {
+    "component": "Section / Header",
+    "figmaPage": "Section / Header",
+    "properties": {
+      "Level": [
+        "H1",
+        "H2",
+        "H3"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--container-fill",
+      "--container-radius",
+      "--space-md",
+      "--space-sm",
+      "--surface-bg",
+      "--surface-text",
+      "--text-display-size",
+      "--text-h2-size",
+      "--text-h3-size"
+    ],
+    "use": "Section heading with a gradient second line. Use it to open a page section. Leave Gradient Line empty for a single line. Gradient paints do not follow Light and Dark, so the accent line looks the same in both. Padding binds to space/sm and space/md, so Mobile mode drops it to 32/48.",
+    "variants": 3
+  },
+  {
+    "component": "Section / Let's Connect",
+    "figmaPage": "Section / Let's Connect",
+    "properties": {
+      "Variant": [
+        "Default"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-width-button",
+      "--button-fill",
+      "--button-padding-h",
+      "--button-padding-v",
+      "--button-radius",
+      "--button-surface-label",
+      "--button-surface-stroke",
+      "--container-fill",
+      "--container-radius",
+      "--space-3xs",
+      "--space-md",
+      "--space-sm",
+      "--space-xs",
+      "--surface-bg",
+      "--surface-text",
+      "--text-button-size",
+      "--text-h2-size"
+    ],
+    "use": "Closing call to action. Use it once, as the last block of a page. For a dark band, set the Surface mode to Inverted: the section and its button follow. Centred, with the gradient on the second line.",
+    "variants": 1
+  },
+  {
+    "component": "Section / Quote",
+    "figmaPage": "Section / Quote",
+    "properties": {
+      "Size": [
+        "H1",
+        "H2"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-width-button",
+      "--container-fill",
+      "--container-radius",
+      "--quote-line",
+      "--space-2xs",
+      "--space-md",
+      "--space-sm",
+      "--space-xs",
+      "--surface-bg",
+      "--surface-text",
+      "--surface-text-muted",
+      "--text-body-lg-size",
+      "--text-body-size",
+      "--text-display-size",
+      "--text-h2-size"
+    ],
+    "use": "Pull quote with attribution. Use it once per page to give weight to a customer's or leader's words. The 2px rule beside the attribution uses border/quote. On an inverted surface the role line uses the inverted muted text colour, through the Surface mode.",
+    "variants": 2
+  },
+  {
+    "component": "Section / Showcase",
+    "figmaPage": "Section / Showcase",
+    "properties": {
+      "MediaLeft": [
+        "False",
+        "True"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--bg-subtle",
+      "--border-muted",
+      "--container-fill",
+      "--container-radius",
+      "--radius-card",
+      "--space-2xs",
+      "--space-md",
+      "--space-sm",
+      "--space-xs",
+      "--surface-bg",
+      "--surface-text",
+      "--surface-text-muted",
+      "--text-body-lg-size",
+      "--text-h2-size"
+    ],
+    "use": "Text beside an image or video. Use it to explain one idea with a visual. MediaLeft swaps the order, so do not drag layers to do it. The media slot is a dashed placeholder; replace its fill with an image on the instance.",
+    "variants": 2
+  },
+  {
+    "component": "Select",
+    "figmaPage": "Select",
+    "properties": {
+      "State": [
+        "Default",
+        "Disabled",
+        "Error",
+        "Focus",
+        "Hover"
+      ],
+      "Value": [
+        "Placeholder",
+        "Selected"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Disabled",
+      "Error",
+      "Focus",
+      "Hover"
+    ],
+    "tokens": [
+      "--border-default",
+      "--border-focus",
+      "--border-width-field",
+      "--border-width-focus",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-hover",
+      "--feedback-error",
+      "--field-radius",
+      "--form-border",
+      "--form-placeholder",
+      "--icon",
+      "--select-gap",
+      "--select-min-width",
+      "--select-padding-h",
+      "--select-padding-v",
+      "--text",
+      "--text-body-size"
+    ],
+    "use": "A closed dropdown for choosing one option from a list of two to about seven. Use it inside forms and filter bars. For more options with typing, use Combobox, and for a handful of options consider radio buttons. Pair it with Menu Item for the open list.",
+    "variants": 10
+  },
+  {
+    "component": "Side Nav Item",
+    "figmaPage": "Side Nav Item",
+    "properties": {
+      "State": [
+        "Active",
+        "Default",
+        "Hover"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Active",
+      "Default",
+      "Hover"
+    ],
+    "tokens": [
+      "--bg-hover",
+      "--container-fill",
+      "--container-radius",
+      "--field-radius",
+      "--icon",
+      "--icon-inverted",
+      "--inverted-background",
+      "--inverted-text",
+      "--sidenav-item-padding-h",
+      "--sidenav-item-padding-v",
+      "--text",
+      "--text-button-size"
+    ],
+    "use": "One row in the side navigation. Use it only inside Side Navigation. The panel is always dark, so labels use text/inverted, and Active turns into a light pill. Hover is a 15% white wash.",
+    "variants": 3
+  },
+  {
+    "component": "Side Navigation",
+    "figmaPage": "Side Navigation",
+    "properties": {},
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--container-fill",
+      "--field-radius",
+      "--icon",
+      "--icon-inverted",
+      "--inverted-background",
+      "--inverted-text",
+      "--sidenav-gap",
+      "--sidenav-item-padding-h",
+      "--sidenav-item-padding-v",
+      "--sidenav-padding-h",
+      "--sidenav-padding-v",
+      "--sidenav-width",
+      "--text",
+      "--text-body-lg-size",
+      "--text-button-size"
+    ],
+    "use": "Application side navigation, always dark in every mode. Use it for apps with several top-level areas. Do not use it on marketing pages (use Navigation Bar). Fixed width of 240px.",
+    "variants": 0
+  },
+  {
+    "component": "Skeleton",
+    "figmaPage": "Skeleton",
+    "properties": {
+      "Shape": [
+        "Block",
+        "Circle",
+        "Line",
+        "Line Large"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--bg-skeleton",
+      "--container-fill",
+      "--container-radius",
+      "--field-radius",
+      "--radius-pill",
+      "--skeleton-block",
+      "--skeleton-circle",
+      "--skeleton-line",
+      "--skeleton-line-lg"
+    ],
+    "use": "A grey placeholder that holds the shape of content while it loads. Use it for lists and cards that take more than a moment to appear. Do not use it for actions or for content that is missing; use an empty state for that.\n\nMatch the real layout: Circle for an avatar, Line for text, Line Large for a heading and Block for an image. In code the placeholder pulses gently. Figma cannot animate, so this shows the still state.",
+    "variants": 4
+  },
+  {
+    "component": "Slider",
+    "figmaPage": "Slider",
+    "properties": {
+      "State": [
+        "Default",
+        "Disabled",
+        "Focus",
+        "Hover",
+        "Pressed"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Disabled",
+      "Focus",
+      "Hover",
+      "Pressed"
+    ],
+    "tokens": [
+      "--border-default",
+      "--border-focus",
+      "--border-strong",
+      "--border-width-focus",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-selected-hover",
+      "--control-fill-selected-pressed",
+      "--radius-pill",
+      "--slider-height",
+      "--slider-thumb",
+      "--slider-thumb-border",
+      "--slider-track-height",
+      "--slider-track-radius"
+    ],
+    "use": "Pick a value inside a range by dragging. Use it when an approximate value is fine and the range is bounded. Use an Input when people need to type an exact number.\n\nAlways show a label and the current value next to it. Focus adds a ring around the thumb. Disabled is for a range that is locked, so say why in nearby text. Fill width and thumb position are set on the instance.",
+    "variants": 5
+  },
+  {
+    "component": "Stat Card",
+    "figmaPage": "Stat Card",
+    "properties": {},
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--border-default",
+      "--border-width-hairline",
+      "--container-fill",
+      "--font-size-body-sm",
+      "--radius-card",
+      "--stat-card-gap",
+      "--stat-card-padding",
+      "--text",
+      "--text-muted",
+      "--text-stat-size"
+    ],
+    "use": "One number and what it counts. Label in sentence case, value in Heading/Stat. No accent strip, no icon, no capitals: the number is the emphasis. Use in a row of two to four, same height. Do not use for values that need a sentence to explain; use a table or a paragraph.",
+    "variants": 0
+  },
+  {
+    "component": "Tab",
+    "figmaPage": "Tab",
+    "properties": {
+      "Count": [
+        "False",
+        "True"
+      ],
+      "State": [
+        "Active",
+        "Default",
+        "Hover"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Active",
+      "Default",
+      "Hover"
+    ],
+    "tokens": [
+      "--bg-subtle",
+      "--border-strong",
+      "--border-width-button",
+      "--button-fill",
+      "--container-fill",
+      "--container-radius",
+      "--inverted-background",
+      "--inverted-text",
+      "--radius-pill",
+      "--tabs-count-gap",
+      "--tabs-count-padding-h",
+      "--tabs-count-padding-v",
+      "--tabs-padding-v",
+      "--text",
+      "--text-button-size",
+      "--text-label-size",
+      "--text-muted"
+    ],
+    "use": "One tab in a row that switches between views of the same page. Use it for two to five peer views. The count is optional and only for things that can be counted, such as open items. For steps in a process or navigation between pages, use something else.",
+    "variants": 6
+  },
+  {
+    "component": "Table",
+    "figmaPage": "Table",
+    "properties": {},
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--bg-hover",
+      "--bg-subtle",
+      "--border-default",
+      "--border-width-hairline",
+      "--container-fill",
+      "--font-size-body-sm",
+      "--radius-card",
+      "--table-cell-padding-h",
+      "--table-cell-padding-v",
+      "--table-toolbar-padding-h",
+      "--table-toolbar-padding-v",
+      "--text",
+      "--text-body-size",
+      "--text-h4-size",
+      "--text-label-size",
+      "--text-muted"
+    ],
+    "use": "Table with a toolbar, header row and body rows. Use it to compare many records across the same fields. Built from Table Row instances, so a change to the row reaches every table. The container clips to radius/card, which rounds the corner rows.",
+    "variants": 0
+  },
+  {
+    "component": "Table Row",
+    "figmaPage": "Table Row",
+    "properties": {
+      "State": [
+        "Default",
+        "Header",
+        "Hover",
+        "Selected"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Header",
+      "Hover",
+      "Selected"
+    ],
+    "tokens": [
+      "--bg-hover",
+      "--bg-subtle",
+      "--border-default",
+      "--border-width-hairline",
+      "--container-fill",
+      "--container-radius",
+      "--table-cell-padding-h",
+      "--table-cell-padding-v",
+      "--text",
+      "--text-body-size",
+      "--text-label-size",
+      "--text-muted"
+    ],
+    "use": "One table row, including the Header variant. Use it only inside Table. Cells share the row by weight, so columns survive a resize. Stack rows in a clipped container and set the last row's bottom stroke to zero.",
+    "variants": 4
+  },
+  {
+    "component": "Team Card",
+    "figmaPage": "Group Cards",
+    "properties": {
+      "Inverted": [
+        "False"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--avatar-size-sm",
+      "--bg-accent-blue",
+      "--bg-accent-purple",
+      "--bg-accent-red",
+      "--bg-accent-stone",
+      "--container-radius",
+      "--font-size-body-sm",
+      "--group-card-body-gap-h",
+      "--group-card-body-gap-v",
+      "--group-card-gap",
+      "--group-card-padding-h",
+      "--group-card-padding-v",
+      "--radius-pill",
+      "--surface-bg",
+      "--surface-border",
+      "--surface-text",
+      "--surface-text-muted",
+      "--text-body-lg-size",
+      "--text-body-size",
+      "--text-label-size",
+      "--text-on-accent"
+    ],
+    "use": "A titled list of the people on one discipline of a project. Each row has an Avatar, a name and a role with the company. Use one card per discipline and keep to six people or fewer.",
+    "variants": 1
+  },
+  {
+    "component": "Toast",
+    "figmaPage": "Toast",
+    "properties": {
+      "Tone": [
+        "Error",
+        "Neutral",
+        "Success"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--container-fill",
+      "--container-radius",
+      "--font-size-body-sm",
+      "--icon-inverted",
+      "--inverted-background",
+      "--inverted-text",
+      "--radius-surface",
+      "--text-button-size",
+      "--text-inverted-muted",
+      "--toast-body-gap",
+      "--toast-gap",
+      "--toast-max-width",
+      "--toast-padding-h",
+      "--toast-padding-v"
+    ],
+    "use": "A short message that appears over the page after an action and goes away on its own. Use it to confirm something that already happened. Do not use it for errors that need a decision or for anything the person must read, use Alert instead.",
+    "variants": 3
+  },
+  {
+    "component": "Toggle",
+    "figmaPage": "Toggle",
+    "properties": {
+      "On": [
+        "False",
+        "True"
+      ],
+      "State": [
+        "Default",
+        "Disabled",
+        "Focus",
+        "Hover",
+        "Pressed"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [
+      "Default",
+      "Disabled",
+      "Focus",
+      "Hover",
+      "Pressed"
+    ],
+    "tokens": [
+      "--border-focus",
+      "--border-strong",
+      "--border-width-field",
+      "--border-width-focus",
+      "--container-fill",
+      "--container-radius",
+      "--control-fill-hover",
+      "--control-fill-pressed",
+      "--control-fill-selected-hover",
+      "--control-fill-selected-pressed",
+      "--form-border",
+      "--inverted-text",
+      "--radius-pill",
+      "--space-control-gap",
+      "--text",
+      "--text-button-size",
+      "--toggle-height",
+      "--toggle-inset-h",
+      "--toggle-inset-v",
+      "--toggle-knob",
+      "--toggle-width"
+    ],
+    "use": "Switch one setting on or off, with the change applying straight away. Use Checkbox when the choice only counts after a Save button is pressed.\n\nThe track fills when On and the knob moves to the right. Focus adds a ring around the track. Label it with the setting itself, not the action, so the same words work for On and Off.",
+    "variants": 10
+  },
+  {
+    "component": "Tooltip",
+    "figmaPage": "Tooltip",
+    "properties": {
+      "Arrow": [
+        "Above",
+        "Below"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--container-fill",
+      "--container-radius",
+      "--field-radius",
+      "--inverted-background",
+      "--inverted-text",
+      "--text-label-size",
+      "--tooltip-arrow-overlap",
+      "--tooltip-padding-h",
+      "--tooltip-padding-v"
+    ],
+    "use": "A short label that appears when someone hovers or focuses an icon or control. Use it to name an icon-only button or add a few words of context. Keep it to one line. Do not put links, buttons or anything needed to finish a task inside it.",
+    "variants": 2
+  }
+]

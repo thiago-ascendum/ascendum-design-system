@@ -1,0 +1,94 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Hero, Section, Index, Cards, Steps, Table, List } from './_shared/Doc.jsx';
+import breaking from '../build/breaking.json';
+import contracts from '../build/contracts.json';
+
+<Meta title="Start here/Lifecycle" />
+
+export const button = contracts.find((c) => c.component === 'Button');
+
+<Hero title="One component, the whole way: Button.">
+  The experiment of 26 November. We took one representative component from the Figma file to code, documentation and checks, and wrote down what ran on its own, what needed a person and what we do not have yet.
+</Hero>
+
+<Index items={['The path Button took', 'What an AI tool gets', 'What the checks caught', 'What works on its own', 'What needs a person', 'What needs infrastructure', 'What we would do next']} />
+
+<Section n={1} title="The path Button took" lead="The same path every component would take. Two tracks leave Figma: exact values go through a script, design intent goes through Claude with a person reviewing.">
+  <Steps items={[
+    ['Design in Figma', 'Button: three styles and five states. Every colour, size and space is bound to a variable.'],
+    ['A change is approved', 'By a named person. Today nobody is named, so every change is a proposal.'],
+    ['Tokens are extracted', 'A script reads the variables and writes tokens.json and tokens.css. No AI: exact values are copied, not interpreted.'],
+    ['Intent becomes code', 'Claude wrote Button.jsx and Button.css from the tokens the Figma component binds. A person checked it in the browser, light and dark.'],
+    ['Contract, documentation, checks', 'The contract and the catalogue are generated from the same snapshot. The documentation page reads them.'],
+    ['Repository', 'Snapshot, tokens, contract, components and changelog live in one versioned place.'],
+    ['Pipeline', 'On every push: five blocking checks, generated files compared with the snapshot, a breaking change report, and the site build.'],
+    ['Release', 'A closed gate stops the site from publishing. An open gate publishes the components, this documentation and the AI context.'],
+  ]} />
+</Section>
+
+<Section n={2} title="What an AI tool gets" lead="Not a picture of the Figma page. A contract per component, generated from the file, that says what exists and what does not.">
+  <Table head={['Field', 'For Button, read from the file']} rows={[
+    ['Use', button.use],
+    ['Properties', Object.entries(button.properties).map(([k, v]) => `${k}: ${v.join(', ')}`).join(' · ')],
+    ['States', button.states.join(', ')],
+    ['Variants', String(button.variants)],
+    ['Tokens it may bind', `${button.tokens.length}: ${button.tokens.slice(0, 6).join(', ')} and ${Math.max(0, button.tokens.length - 6)} more`],
+    ['Rules', button.rules.join(' ')],
+  ]} />
+  <List items={[
+    <><code>build/contracts.json</code>: one contract for each of the {contracts.length} components.</>,
+    <><code>build/AI-CONTRACT.md</code>: the rules for the whole system, what to take from Figma and what to ignore.</>,
+    'Both are regenerated from the snapshot. Nobody edits them by hand, and the pipeline fails if they do not match it.',
+  ]} />
+</Section>
+
+<Section n={3} title="What the checks caught" lead="The same checks, run on the file as we received it and on this version.">
+  <Cards columns={3} items={[
+    { tone: 'avoid', title: 'File as received: blocked', text: 'Two blocking checks failed: 28 deprecated items still published and 16 colour pairs under WCAG AA. The gate returned an error and nothing would have been released.' },
+    { tone: 'do', title: 'This version: passes', text: 'All five blocking checks pass. The site you are reading was published by that run.' },
+    { tone: 'ask', title: `Breaking changes: ${breaking.breaking}`, text: `Detected by comparing the two snapshots: ${breaking.removedTokens.length} tokens, ${breaking.removedComponents.length} component, ${breaking.removedProperties.length} properties, ${breaking.removedValues.length} property values and ${breaking.removedTextStyles.length} text styles are gone. The list feeds the changelog.` },
+  ]} />
+  <Table head={['Property removed', 'Values a file may still be using']} rows={breaking.removedProperties.map((p) => [`${p.component} · ${p.property}`, p.values.join(', ')])} />
+</Section>
+
+<Section n={4} title="What works on its own">
+  <List items={[
+    'Token extraction: variables to tokens.json and tokens.css, with modes kept.',
+    'The AI contract and one contract per component.',
+    'Five blocking checks on every push, including contrast for every text colour on its surface.',
+    'A check that the generated files match the snapshot, so nobody edits tokens by hand.',
+    'Breaking change detection between two snapshots.',
+    'The release gate: when a blocking check fails, the site does not publish.',
+    'Publishing the documentation after every push that passes.',
+  ]} />
+</Section>
+
+<Section n={5} title="What needs a person">
+  <List items={[
+    'Taking the snapshot. It is one command, but the Figma file has to be open, so it does not run by itself when a designer publishes.',
+    'The first version of a coded component. Claude writes it from the tokens and the Figma component; a person has to look at it in every state.',
+    'Design decisions: which variants and states stay. Button went from 24 variants to 15 because a person decided Inverted is a property of the section, not of the button.',
+    'Approving a release. The changelog has three names per version: proposed by, checked by, approved by. Nothing enforces the third one yet.',
+    'Looking at the result. Structural checks pass on components that look wrong.',
+  ]} />
+</Section>
+
+<Section n={6} title="What needs infrastructure" lead="None of this is hard. It is not there today.">
+  <Table head={['Missing', 'Why it matters', 'What it takes']} rows={[
+    ['Snapshot on publish', 'Today a person starts it.', 'The Figma Variables REST API, which is on the Enterprise plan, or a scheduled plugin run.'],
+    ['A published library', 'The file lives in drafts, so nothing subscribes to it and a real publish was never tested.', 'Move the file to a team project and publish it against one test file.'],
+    ['Visual regression', 'A component can change its look and still pass every check.', 'A screenshot comparison service on the documentation build.'],
+    ['Accessibility in the browser', 'Contrast is checked from the tokens. Focus order and roles are not.', 'An automated accessibility run over the documentation in the pipeline.'],
+    ['A package', 'The coded components live in the repository only.', 'A package registry and a version number that follows the changelog.'],
+    ['Enforced approval', 'A release can be published without a name on it.', 'A named owner and a protected branch that needs that review.'],
+  ]} />
+</Section>
+
+<Section n={7} title="What we would do next">
+  <Steps items={[
+    ['Name the owner', 'Everything marked as a proposal is waiting for this.'],
+    ['Publish once, on purpose', 'Move the file, publish it against a test file, and see what the breaking changes do there.'],
+    ['Automate the snapshot', 'So the path starts when a designer publishes, not when someone remembers.'],
+    ['Repeat with a second component', 'Button proved the path. A composed one, such as Form Field, would prove it scales.'],
+  ]} />
+</Section>

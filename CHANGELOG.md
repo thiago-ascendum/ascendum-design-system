@@ -79,7 +79,10 @@ Clean-up after the design review of 5 November.
 - Tone of Voice: each principle has a before and after shown in a real component.
 - Colour: a contrast table of every text role on its surfaces, light and dark, computed from the variable values.
 - Code: 14 components built from the tokens, with a documentation site published on every change.
-- Interactions: 98 prototype interactions on 18 components. Hover, click and press move between the states.
+- Interactions: 110 prototype interactions on 18 components. Hover is mouse enter and mouse leave. A click presses a Button and changes the value of a Checkbox, Radio or Toggle.
+- Component contracts: one contract per component for AI tools, generated from the file: when to use it, properties and values, states and the tokens it binds.
+- Breaking change detection: the pipeline compares two snapshots and lists every token, component, property and text style a consumer would lose. 57 since the file as received.
+- Lifecycle: a page that follows Button from Figma to code, documentation and checks, with what ran on its own, what needed a person and what infrastructure is missing.
 - States: Hover and Pressed on Checkbox, Radio, Toggle and Slider. Hover on Input, Form Field, Select, Combobox and Search Bar. 25 new variants.
 - Surface collection: one collection with two modes, Default and Inverted, and 14 tokens that follow it: seven for Button, five for sections and cards, two for the logo.
 - Control tokens: control/fill-hover, control/fill-pressed, control/fill-selected-hover and control/fill-selected-pressed.

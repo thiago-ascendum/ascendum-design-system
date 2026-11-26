@@ -205,17 +205,6 @@
     ]
   },
   {
-    "description": "",
-    "name": "GhostButtonPrimary",
-    "page": "Button",
-    "variantCount": 3,
-    "variants": [
-      "Property 1=Default",
-      "Property 1=Hover",
-      "Property 1=Selected"
-    ]
-  },
-  {
     "description": "Text that becomes a field when clicked. Use it for a title or name the person edits in place, such as a project name. It takes the text style of the heading it replaces, so nothing jumps when editing starts. Do not use it for forms with several fields, use Form Field instead.",
     "name": "Inline Edit",
     "page": "Inline Edit",
@@ -299,17 +288,6 @@
     "variantCount": 1,
     "variants": [
       "Variant=Default"
-    ]
-  },
-  {
-    "description": "",
-    "name": "OutlineButtonPrimary",
-    "page": "Button",
-    "variantCount": 3,
-    "variants": [
-      "Property 1=Default",
-      "Property 1=Hover",
-      "Property 1=Selected"
     ]
   },
   {
@@ -493,17 +471,6 @@
       "State=Focus",
       "State=Hover",
       "State=Pressed"
-    ]
-  },
-  {
-    "description": "",
-    "name": "SolidButtonPrimary",
-    "page": "Button",
-    "variantCount": 3,
-    "variants": [
-      "State=Default",
-      "State=Hover",
-      "State=Selected"
     ]
   },
   {

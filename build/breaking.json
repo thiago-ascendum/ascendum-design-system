@@ -1,0 +1,205 @@
+{
+  "added": {
+    "components": 0,
+    "textStyles": 0,
+    "tokens": 50
+  },
+  "breaking": 57,
+  "removedComponents": [
+    "SectionTag"
+  ],
+  "removedProperties": [
+    {
+      "component": "Avatar",
+      "property": "Fill",
+      "values": [
+        "Digital",
+        "Midnight",
+        "Mortgages",
+        "Products",
+        "Talent"
+      ]
+    },
+    {
+      "component": "Breadcrumb Item",
+      "property": "Separator",
+      "values": [
+        "False",
+        "True"
+      ]
+    },
+    {
+      "component": "Button",
+      "property": "Variant",
+      "values": [
+        "Inverted",
+        "Primary"
+      ]
+    },
+    {
+      "component": "Logo",
+      "property": "Inverted",
+      "values": [
+        "False",
+        "True"
+      ]
+    },
+    {
+      "component": "Section / Columns",
+      "property": "Variant",
+      "values": [
+        "Default",
+        "Inverted"
+      ]
+    },
+    {
+      "component": "Section / Full Width",
+      "property": "Variant",
+      "values": [
+        "Default",
+        "Inverted"
+      ]
+    },
+    {
+      "component": "Section / Header",
+      "property": "Variant",
+      "values": [
+        "Default",
+        "Inverted"
+      ]
+    },
+    {
+      "component": "Section / Quote",
+      "property": "Variant",
+      "values": [
+        "Default",
+        "Inverted"
+      ]
+    },
+    {
+      "component": "Section / Showcase",
+      "property": "Variant",
+      "values": [
+        "Default",
+        "Inverted"
+      ]
+    },
+    {
+      "component": "Stat Card",
+      "property": "Accent",
+      "values": [
+        "Digital",
+        "Mortgages",
+        "None",
+        "Products",
+        "Talent",
+        "Team"
+      ]
+    }
+  ],
+  "removedTextStyles": [
+    "UI/Eyebrow",
+    "UI/Tag"
+  ],
+  "removedTokens": [
+    "component/avatar/font-xl",
+    "component/avatar/size-xl",
+    "component/combobox/max-width",
+    "component/dropzone/icon",
+    "component/progress/height-md",
+    "component/progress/height-xs",
+    "component/stat-card/accent-bar",
+    "component/tag/gap",
+    "component/tag/padding-left",
+    "component/tag/padding-right",
+    "component/tag/padding-v",
+    "component/tag/swatch",
+    "component/tag/swatch-radius",
+    "dept/digital",
+    "dept/mortgages",
+    "dept/products",
+    "dept/talent",
+    "gradient-stop/mortgages-end",
+    "gradient-stop/products-end",
+    "gradient-stop/talent-end",
+    "neutral/0",
+    "neutral/300",
+    "neutral/950",
+    "size/container-half",
+    "status/error-border",
+    "status/info-border",
+    "status/success-border",
+    "status/warning-border",
+    "text/access-muted",
+    "text/on-gradient-dark",
+    "text/on-gradient-light"
+  ],
+  "removedValues": [
+    {
+      "component": "Avatar",
+      "property": "Size",
+      "value": "XLarge"
+    },
+    {
+      "component": "Badge",
+      "property": "Tone",
+      "value": "Muted"
+    },
+    {
+      "component": "Badge",
+      "property": "Tone",
+      "value": "Solid"
+    },
+    {
+      "component": "Footer",
+      "property": "Variant",
+      "value": "Inverted"
+    },
+    {
+      "component": "Key Stakeholders Card",
+      "property": "Inverted",
+      "value": "True"
+    },
+    {
+      "component": "Menu Item",
+      "property": "Tone",
+      "value": "Danger"
+    },
+    {
+      "component": "Navigation Bar",
+      "property": "Variant",
+      "value": "Inverted"
+    },
+    {
+      "component": "Overview Card",
+      "property": "Inverted",
+      "value": "True"
+    },
+    {
+      "component": "Progress Bar",
+      "property": "Size",
+      "value": "MD"
+    },
+    {
+      "component": "Progress Bar",
+      "property": "Size",
+      "value": "XS"
+    },
+    {
+      "component": "Search Bar",
+      "property": "State",
+      "value": "Error"
+    },
+    {
+      "component": "Section / Let's Connect",
+      "property": "Variant",
+      "value": "Inverted"
+    },
+    {
+      "component": "Team Card",
+      "property": "Inverted",
+      "value": "True"
+    }
+  ],
+  "retypedTokens": []
+}
