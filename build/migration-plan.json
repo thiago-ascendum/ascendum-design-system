@@ -18,7 +18,7 @@
   "collectionsRenamed": 0,
   "modesAdded": 0,
   "toReview": 32,
-  "toReviewNeedingDecision": 0,
+  "toReviewNeedingDecision": 1,
   "variablesCreated": 80,
   "variablesRenamed": 50,
   "variablesUpdated": 217
@@ -870,8 +870,10 @@
     "collection": "Component",
     "id": "VariableID:42:23",
     "name": "component/avatar/size-sm",
+    "nameNowUsedBy": "VariableID:42:24",
+    "parkAs": "_review/component/avatar/size-sm",
     "replacedBy": null,
-    "status": "same name, new id: kept and updated"
+    "status": "needs a decision"
    },
    {
     "collection": "Component",

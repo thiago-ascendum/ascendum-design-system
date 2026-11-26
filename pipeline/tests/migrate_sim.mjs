@@ -73,6 +73,11 @@ const oldIds = new Set(OLD.variables.map((v) => v.id));
 let kept = 0, lost = [];
 for (const [k, w] of want) if (oldIds.has(w.id)) { if (got.get(k) && got.get(k).id === w.id) kept++; else lost.push(k); }
 const extra = [...got.keys()].filter((k) => !want.has(k));
+// Figma does not allow two variables with one name in a collection, and no temporary name may be left behind.
+const seen = new Map();
+for (const v of variables.values()) { const k = v.variableCollectionId + "/" + v.name; seen.set(k, (seen.get(k) || 0) + 1); }
+for (const [k, n] of seen) if (n > 1) diffs.push(`${k} name used ${n} times`);
+for (const v of variables.values()) if (v.name.startsWith("__migrating__")) diffs.push(`${v.name} left with a temporary name`);
 
 console.log(`MIGRATION SIMULATION (old file -> script -> compared with new file)`);
 console.log(`  changes applied ${report.changes}, already there ${report.alreadyThere}, not found ${report.notFound.length}`);

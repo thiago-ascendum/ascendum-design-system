@@ -93,16 +93,18 @@ for vid, o in sorted(OV.items(), key=lambda kv: (kv[1]["collection"], kv[1]["nam
     if vid in NV and vid not in moved:
         continue
     published = next((c.get("published", True) for c in old["collections"] if c["id"] == o["collectionId"]), True)
-    recreated = any(v["collection"] == o["collection"] and v["name"] == o["name"] for v in NV.values())
-    if recreated:
-        # Deleted and made again with the same name. In the target the old one is kept and updated, so its layers stay bound.
-        status = "same name, new id: kept and updated"
-    elif f"token removed: {o['name']}" in accepted:
+    taken = next((v for v in NV.values() if v["collection"] == o["collection"] and v["name"] == o["name"]), None)
+    if f"token removed: {o['name']}" in accepted:
         status = "accepted"
     else:
         status = "private" if not published else "needs a decision"
-    plan["variables"]["review"].append({"id": vid, "collection": o["collection"], "name": o["name"], "status": status,
-                                        "replacedBy": new_names[vid] if vid in moved else None})
+    item = {"id": vid, "collection": o["collection"], "name": o["name"], "status": status,
+            "replacedBy": new_names[vid] if vid in moved else None}
+    if taken:
+        # Its name now belongs to another variable (a rename or a new one). It is moved out of the way, never deleted.
+        item["parkAs"] = "_review/" + o["name"]
+        item["nameNowUsedBy"] = taken["id"]
+    plan["variables"]["review"].append(item)
 
 plan["summary"] = {
     "collectionsCreated": len(plan["collections"]["create"]), "collectionsRenamed": len(plan["collections"]["rename"]),
