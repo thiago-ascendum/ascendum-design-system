@@ -40,9 +40,14 @@ jobs:
         # The full list for the changelog, matched by Figma id. Written from the files, not from memory.
         run: python3 pipeline/06_changes.py build/before/ds-snapshot.json build/ds-snapshot.json build
 
+      - name: Migration keeps identities (blocking)
+        # Builds the migration from the file as received to this one, runs it on a simulated copy of the old file
+        # and fails if any variable differs or loses its Figma id (bound layers would come loose).
+        run: python3 pipeline/09_migrate.py build/before/ds-snapshot.json build/ds-snapshot.json governance/accepted-breaking.json build && node pipeline/tests/migrate_sim.mjs build/before/ds-snapshot.json build/ds-snapshot.json build/migrate.figma.js
+
       - name: Generated files match the snapshot
         # Tokens and the AI contract are never edited by hand.
-        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md build/components.json build/text-styles.json build/contracts.json build/breaking.json build/changes.json build/CHANGES.md
+        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md build/components.json build/text-styles.json build/contracts.json build/breaking.json build/migration-plan.json build/migrate.figma.js build/changes.json build/CHANGES.md
 
       - name: Before and after
         run: python3 pipeline/03_compare.py build/before/report.json build/report.json build/compare.js

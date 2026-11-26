@@ -1,0 +1,3784 @@
+{
+ "collections": {
+  "addModes": [],
+  "create": [
+   {
+    "id": "VariableCollectionId:1110:13480",
+    "modes": [
+     "Default",
+     "Inverted"
+    ],
+    "name": "Context"
+   }
+  ],
+  "rename": []
+ },
+ "summary": {
+  "collectionsCreated": 1,
+  "collectionsRenamed": 0,
+  "modesAdded": 0,
+  "toReview": 32,
+  "toReviewNeedingDecision": 0,
+  "variablesCreated": 80,
+  "variablesRenamed": 50,
+  "variablesUpdated": 217
+ },
+ "variables": {
+  "create": [
+   {
+    "collection": "Component",
+    "id": "VariableID:1103:1415",
+    "name": "component/skeleton/block",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:1099:641",
+    "name": "component/tabs/count-padding-h",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:1099:640",
+    "name": "component/tabs/count-padding-v",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:1101:1567",
+    "name": "component/toast/body-gap",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:1101:1602",
+    "name": "component/tooltip/arrow-overlap",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:13487",
+    "name": "ctx/focus",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:15247",
+    "name": "ctx/logo",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:15248",
+    "name": "ctx/logo-glyph",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:13482",
+    "name": "ctx/on-primary",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:14578",
+    "name": "ctx/on-surface",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:14579",
+    "name": "ctx/on-surface-variant",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:13485",
+    "name": "ctx/outline",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:14580",
+    "name": "ctx/outline-variant",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:13481",
+    "name": "ctx/primary",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:13483",
+    "name": "ctx/primary-hover",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:13484",
+    "name": "ctx/primary-pressed",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:14576",
+    "name": "ctx/surface",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Context",
+    "id": "VariableID:1110:14577",
+    "name": "ctx/surface-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Dimension",
+    "id": "VariableID:1101:21",
+    "name": "border-width/focus",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1096:1046",
+    "name": "accent/blue-soft",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1096:1045",
+    "name": "accent/purple-soft",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1096:1044",
+    "name": "accent/red-soft",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1096:1047",
+    "name": "accent/stone-soft",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24723",
+    "name": "error/10",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24724",
+    "name": "error/30",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24725",
+    "name": "error/50",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1095:1033",
+    "name": "error/60",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24726",
+    "name": "error/70",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24727",
+    "name": "error/80",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24728",
+    "name": "error/90",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24729",
+    "name": "error/98",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24744",
+    "name": "info/10",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24745",
+    "name": "info/30",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24746",
+    "name": "info/50",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1095:1035",
+    "name": "info/60",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24747",
+    "name": "info/70",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24748",
+    "name": "info/80",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24749",
+    "name": "info/90",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24750",
+    "name": "info/98",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1095:1032",
+    "name": "neutral/750",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24737",
+    "name": "success/10",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24738",
+    "name": "success/30",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24739",
+    "name": "success/50",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1095:1036",
+    "name": "success/60",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24740",
+    "name": "success/70",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24741",
+    "name": "success/80",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24742",
+    "name": "success/90",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24743",
+    "name": "success/98",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24730",
+    "name": "warning/10",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24731",
+    "name": "warning/30",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24732",
+    "name": "warning/50",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1095:1034",
+    "name": "warning/60",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24733",
+    "name": "warning/70",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24734",
+    "name": "warning/80",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24735",
+    "name": "warning/90",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:1110:24736",
+    "name": "warning/98",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1096:1050",
+    "name": "accent-blue-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1096:1049",
+    "name": "accent-purple-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1096:1048",
+    "name": "accent-red-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1096:1051",
+    "name": "accent-stone-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:29635",
+    "name": "error",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1101:20",
+    "name": "focus",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:29638",
+    "name": "info",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1103:20",
+    "name": "inverse-on-surface-variant",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1103:1417",
+    "name": "inverse-primary-hover",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:13479",
+    "name": "inverse-primary-pressed",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:24751",
+    "name": "on-error",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:24752",
+    "name": "on-error-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:24757",
+    "name": "on-info",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:24758",
+    "name": "on-info-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:24755",
+    "name": "on-success",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:24756",
+    "name": "on-success-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:24753",
+    "name": "on-warning",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:24754",
+    "name": "on-warning-container",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1103:1416",
+    "name": "primary-hover",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:13478",
+    "name": "primary-pressed",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:29637",
+    "name": "success",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:15249",
+    "name": "surface-hover",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:15250",
+    "name": "surface-pressed",
+    "type": "COLOR"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:1110:29636",
+    "name": "warning",
+    "type": "COLOR"
+   }
+  ],
+  "rename": [
+   {
+    "collection": "Component",
+    "from": "component/avatar/size-xl",
+    "id": "VariableID:42:26",
+    "oldCollection": "Component",
+    "to": "component/avatar/size-lg"
+   },
+   {
+    "collection": "Component",
+    "from": "component/avatar/size-lg",
+    "id": "VariableID:42:25",
+    "oldCollection": "Component",
+    "to": "component/avatar/size-md"
+   },
+   {
+    "collection": "Component",
+    "from": "component/avatar/size-md",
+    "id": "VariableID:42:24",
+    "oldCollection": "Component",
+    "to": "component/avatar/size-sm"
+   },
+   {
+    "collection": "Primitives",
+    "from": "dept/talent",
+    "id": "VariableID:8:10",
+    "oldCollection": "Primitives",
+    "to": "accent/blue"
+   },
+   {
+    "collection": "Primitives",
+    "from": "dept/mortgages",
+    "id": "VariableID:8:11",
+    "oldCollection": "Primitives",
+    "to": "accent/purple"
+   },
+   {
+    "collection": "Primitives",
+    "from": "dept/products",
+    "id": "VariableID:8:12",
+    "oldCollection": "Primitives",
+    "to": "accent/red"
+   },
+   {
+    "collection": "Primitives",
+    "from": "dept/digital",
+    "id": "VariableID:8:9",
+    "oldCollection": "Primitives",
+    "to": "accent/stone"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/error-bg-dark",
+    "id": "VariableID:19:6",
+    "oldCollection": "Primitives",
+    "to": "error/20"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/error",
+    "id": "VariableID:8:44",
+    "oldCollection": "Primitives",
+    "to": "error/40"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/error-bg",
+    "id": "VariableID:8:45",
+    "oldCollection": "Primitives",
+    "to": "error/95"
+   },
+   {
+    "collection": "Primitives",
+    "from": "gradient-stop/talent-end",
+    "id": "VariableID:8:18",
+    "oldCollection": "Primitives",
+    "to": "gradient-stop/careers-end"
+   },
+   {
+    "collection": "Primitives",
+    "from": "gradient-stop/mortgages-end",
+    "id": "VariableID:8:19",
+    "oldCollection": "Primitives",
+    "to": "gradient-stop/process-solutions-end"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/info-bg-dark",
+    "id": "VariableID:19:4",
+    "oldCollection": "Primitives",
+    "to": "info/20"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/info",
+    "id": "VariableID:8:38",
+    "oldCollection": "Primitives",
+    "to": "info/40"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/info-bg",
+    "id": "VariableID:8:39",
+    "oldCollection": "Primitives",
+    "to": "info/95"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/success-bg-dark",
+    "id": "VariableID:19:3",
+    "oldCollection": "Primitives",
+    "to": "success/20"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/success",
+    "id": "VariableID:8:35",
+    "oldCollection": "Primitives",
+    "to": "success/40"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/success-bg",
+    "id": "VariableID:8:36",
+    "oldCollection": "Primitives",
+    "to": "success/95"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/warning-bg-dark",
+    "id": "VariableID:19:5",
+    "oldCollection": "Primitives",
+    "to": "warning/20"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/warning",
+    "id": "VariableID:8:41",
+    "oldCollection": "Primitives",
+    "to": "warning/40"
+   },
+   {
+    "collection": "Primitives",
+    "from": "status/warning-bg",
+    "id": "VariableID:8:42",
+    "oldCollection": "Primitives",
+    "to": "warning/95"
+   },
+   {
+    "collection": "Semantic",
+    "from": "feedback/error-bg",
+    "id": "VariableID:9:30",
+    "oldCollection": "Semantic",
+    "to": "error-container"
+   },
+   {
+    "collection": "Semantic",
+    "from": "feedback/info-bg",
+    "id": "VariableID:9:26",
+    "oldCollection": "Semantic",
+    "to": "info-container"
+   },
+   {
+    "collection": "Semantic",
+    "from": "button/label-hover-inverted",
+    "id": "VariableID:22:6",
+    "oldCollection": "Semantic",
+    "to": "inverse-on-primary"
+   },
+   {
+    "collection": "Semantic",
+    "from": "text/inverted",
+    "id": "VariableID:9:10",
+    "oldCollection": "Semantic",
+    "to": "inverse-on-surface"
+   },
+   {
+    "collection": "Semantic",
+    "from": "button/stroke-inverted",
+    "id": "VariableID:22:3",
+    "oldCollection": "Semantic",
+    "to": "inverse-outline"
+   },
+   {
+    "collection": "Semantic",
+    "from": "border/quote",
+    "id": "VariableID:9:15",
+    "oldCollection": "Semantic",
+    "to": "inverse-outline-variant"
+   },
+   {
+    "collection": "Semantic",
+    "from": "button/fill-hover-inverted",
+    "id": "VariableID:22:5",
+    "oldCollection": "Semantic",
+    "to": "inverse-primary"
+   },
+   {
+    "collection": "Semantic",
+    "from": "bg/inverted",
+    "id": "VariableID:9:6",
+    "oldCollection": "Semantic",
+    "to": "inverse-surface"
+   },
+   {
+    "collection": "Semantic",
+    "from": "text/on-gradient-dark",
+    "id": "VariableID:40:8",
+    "oldCollection": "Semantic",
+    "to": "on-accent-container"
+   },
+   {
+    "collection": "Semantic",
+    "from": "button/label-hover",
+    "id": "VariableID:9:22",
+    "oldCollection": "Semantic",
+    "to": "on-primary"
+   },
+   {
+    "collection": "Semantic",
+    "from": "text/default",
+    "id": "VariableID:9:7",
+    "oldCollection": "Semantic",
+    "to": "on-surface"
+   },
+   {
+    "collection": "Semantic",
+    "from": "feedback/error",
+    "id": "VariableID:9:29",
+    "oldCollection": "Semantic",
+    "to": "on-surface-error"
+   },
+   {
+    "collection": "Semantic",
+    "from": "feedback/info",
+    "id": "VariableID:9:25",
+    "oldCollection": "Semantic",
+    "to": "on-surface-info"
+   },
+   {
+    "collection": "Semantic",
+    "from": "text/placeholder",
+    "id": "VariableID:9:9",
+    "oldCollection": "Semantic",
+    "to": "on-surface-placeholder"
+   },
+   {
+    "collection": "Semantic",
+    "from": "feedback/success",
+    "id": "VariableID:9:23",
+    "oldCollection": "Semantic",
+    "to": "on-surface-success"
+   },
+   {
+    "collection": "Semantic",
+    "from": "text/muted",
+    "id": "VariableID:9:8",
+    "oldCollection": "Semantic",
+    "to": "on-surface-variant"
+   },
+   {
+    "collection": "Semantic",
+    "from": "feedback/warning",
+    "id": "VariableID:9:27",
+    "oldCollection": "Semantic",
+    "to": "on-surface-warning"
+   },
+   {
+    "collection": "Semantic",
+    "from": "border/strong",
+    "id": "VariableID:9:13",
+    "oldCollection": "Semantic",
+    "to": "outline"
+   },
+   {
+    "collection": "Semantic",
+    "from": "border/muted",
+    "id": "VariableID:69:2",
+    "oldCollection": "Semantic",
+    "to": "outline-medium"
+   },
+   {
+    "collection": "Semantic",
+    "from": "border/default",
+    "id": "VariableID:9:12",
+    "oldCollection": "Semantic",
+    "to": "outline-variant"
+   },
+   {
+    "collection": "Semantic",
+    "from": "button/fill-hover",
+    "id": "VariableID:9:21",
+    "oldCollection": "Semantic",
+    "to": "primary"
+   },
+   {
+    "collection": "Semantic",
+    "from": "feedback/success-bg",
+    "id": "VariableID:9:24",
+    "oldCollection": "Semantic",
+    "to": "success-container"
+   },
+   {
+    "collection": "Semantic",
+    "from": "bg/page",
+    "id": "VariableID:9:3",
+    "oldCollection": "Semantic",
+    "to": "surface"
+   },
+   {
+    "collection": "Semantic",
+    "from": "bg/surface",
+    "id": "VariableID:9:4",
+    "oldCollection": "Semantic",
+    "to": "surface-container"
+   },
+   {
+    "collection": "Semantic",
+    "from": "bg/hover",
+    "id": "VariableID:80:2",
+    "oldCollection": "Semantic",
+    "to": "surface-container-high"
+   },
+   {
+    "collection": "Semantic",
+    "from": "bg/skeleton",
+    "id": "VariableID:44:10",
+    "oldCollection": "Semantic",
+    "to": "surface-container-highest"
+   },
+   {
+    "collection": "Semantic",
+    "from": "bg/subtle",
+    "id": "VariableID:9:5",
+    "oldCollection": "Semantic",
+    "to": "surface-container-low"
+   },
+   {
+    "collection": "Semantic",
+    "from": "button/fill",
+    "id": "VariableID:9:31",
+    "oldCollection": "Semantic",
+    "to": "transparent"
+   },
+   {
+    "collection": "Semantic",
+    "from": "feedback/warning-bg",
+    "id": "VariableID:9:28",
+    "oldCollection": "Semantic",
+    "to": "warning-container"
+   }
+  ],
+  "review": [
+   {
+    "collection": "Component",
+    "id": "VariableID:42:27",
+    "name": "component/avatar/font-xl",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:42:23",
+    "name": "component/avatar/size-sm",
+    "replacedBy": null,
+    "status": "same name, new id: kept and updated"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:84:6",
+    "name": "component/combobox/max-width",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:84:9",
+    "name": "component/dropzone/icon",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:83:8",
+    "name": "component/progress/height-md",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:83:6",
+    "name": "component/progress/height-xs",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:83:5",
+    "name": "component/stat-card/accent-bar",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:42:20",
+    "name": "component/tag/gap",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:42:19",
+    "name": "component/tag/padding-left",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:42:18",
+    "name": "component/tag/padding-right",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:42:17",
+    "name": "component/tag/padding-v",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:42:21",
+    "name": "component/tag/swatch",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:42:22",
+    "name": "component/tag/swatch-radius",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Dimension",
+    "id": "VariableID:7:12",
+    "name": "size/container-half",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:8:20",
+    "name": "gradient-stop/products-end",
+    "replacedBy": null,
+    "status": "private"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:8:21",
+    "name": "neutral/0",
+    "replacedBy": null,
+    "status": "private"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:8:25",
+    "name": "neutral/300",
+    "replacedBy": null,
+    "status": "private"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:8:34",
+    "name": "neutral/950",
+    "replacedBy": null,
+    "status": "private"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:8:46",
+    "name": "status/error-border",
+    "replacedBy": null,
+    "status": "private"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:8:40",
+    "name": "status/info-border",
+    "replacedBy": null,
+    "status": "private"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:8:37",
+    "name": "status/success-border",
+    "replacedBy": null,
+    "status": "private"
+   },
+   {
+    "collection": "Primitives",
+    "id": "VariableID:8:43",
+    "name": "status/warning-border",
+    "replacedBy": null,
+    "status": "private"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:9:14",
+    "name": "border/field",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:9:20",
+    "name": "button/label",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:22:4",
+    "name": "button/label-inverted",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:9:19",
+    "name": "button/stroke",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:9:16",
+    "name": "icon/default",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:9:18",
+    "name": "icon/inverted",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:9:17",
+    "name": "icon/muted",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:235:2686",
+    "name": "text/access-muted",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:9:11",
+    "name": "text/link",
+    "replacedBy": null,
+    "status": "accepted"
+   },
+   {
+    "collection": "Semantic",
+    "id": "VariableID:40:7",
+    "name": "text/on-gradient-light",
+    "replacedBy": null,
+    "status": "accepted"
+   }
+  ],
+  "update": [
+   {
+    "codeSyntax": "var(--annotation-body-gap)",
+    "collection": "Component",
+    "description": "Jira Annotation: gap inside the body.",
+    "id": "VariableID:244:240",
+    "name": "component/annotation/body-gap",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--annotation-body-padding-v)",
+    "collection": "Component",
+    "description": "Jira Annotation: top and bottom padding of the body. Follows the Overview Card body.",
+    "id": "VariableID:244:239",
+    "name": "component/annotation/body-padding-v",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--annotation-gap-header)",
+    "collection": "Component",
+    "description": "Jira Annotation: gap inside the header.",
+    "id": "VariableID:244:233",
+    "name": "component/annotation/gap-header",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--annotation-padding-badges-bottom)",
+    "collection": "Component",
+    "description": "Jira Annotation: padding under the badges.",
+    "id": "VariableID:244:238",
+    "name": "component/annotation/padding-badges-bottom",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--annotation-padding-badges-top)",
+    "collection": "Component",
+    "description": "Jira Annotation: padding above the badges.",
+    "id": "VariableID:244:237",
+    "name": "component/annotation/padding-badges-top",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--annotation-padding-bottom-header)",
+    "collection": "Component",
+    "description": "Jira Annotation: padding under the header.",
+    "id": "VariableID:244:236",
+    "name": "component/annotation/padding-bottom-header",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--annotation-padding-h)",
+    "collection": "Component",
+    "description": "Jira Annotation: left and right padding.",
+    "id": "VariableID:244:234",
+    "name": "component/annotation/padding-h",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--annotation-padding-v)",
+    "collection": "Component",
+    "description": "Jira Annotation: top and bottom padding.",
+    "id": "VariableID:244:235",
+    "name": "component/annotation/padding-v",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--avatar-size-lg)",
+    "collection": "Component",
+    "description": "Avatar diameter.",
+    "id": "VariableID:42:26",
+    "name": "component/avatar/size-lg"
+   },
+   {
+    "codeSyntax": "var(--avatar-size-md)",
+    "collection": "Component",
+    "description": "Avatar diameter.",
+    "id": "VariableID:42:25",
+    "name": "component/avatar/size-md"
+   },
+   {
+    "codeSyntax": "var(--avatar-size-sm)",
+    "collection": "Component",
+    "description": "Avatar diameter.",
+    "id": "VariableID:42:24",
+    "name": "component/avatar/size-sm"
+   },
+   {
+    "collection": "Component",
+    "description": "Status dot inside a pill. Inherits the pill's text colour.",
+    "id": "VariableID:42:16",
+    "name": "component/badge/dot"
+   },
+   {
+    "collection": "Component",
+    "description": "Gap between a pill's dot and its label.",
+    "id": "VariableID:42:15",
+    "name": "component/badge/gap"
+   },
+   {
+    "collection": "Component",
+    "description": "Pill horizontal padding.",
+    "id": "VariableID:42:14",
+    "name": "component/badge/padding-h"
+   },
+   {
+    "collection": "Component",
+    "description": "Pill vertical padding.",
+    "id": "VariableID:42:13",
+    "name": "component/badge/padding-v"
+   },
+   {
+    "collection": "Component",
+    "description": "Horizontal button padding. Reconciles Button.jsx (28px) and .btn (22px), they were the same button at desktop and mobile, never tokenised.",
+    "id": "VariableID:42:4",
+    "name": "component/button/padding-h"
+   },
+   {
+    "collection": "Component",
+    "description": "Button: top and bottom padding. 12 on mobile.",
+    "id": "VariableID:42:3",
+    "name": "component/button/padding-v"
+   },
+   {
+    "collection": "Component",
+    "description": "Checkbox corner. Source specifies 3px, tighter than radius/field (4px).",
+    "id": "VariableID:42:8",
+    "name": "component/checkbox/radius"
+   },
+   {
+    "collection": "Component",
+    "description": "Combobox minimum height, matches the search bar.",
+    "id": "VariableID:84:5",
+    "name": "component/combobox/min-height"
+   },
+   {
+    "codeSyntax": "var(--group-card-body-gap-h)",
+    "collection": "Component",
+    "description": "Group cards: horizontal gap inside the body.",
+    "id": "VariableID:204:843",
+    "name": "component/group-card/body-gap-h",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--group-card-body-gap-v)",
+    "collection": "Component",
+    "description": "Group cards: vertical gap inside the body.",
+    "id": "VariableID:204:863",
+    "name": "component/group-card/body-gap-v",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--group-card-gap)",
+    "collection": "Component",
+    "description": "Group cards: gap between the header and the body.",
+    "id": "VariableID:207:965",
+    "name": "component/group-card/gap",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--group-card-padding-h)",
+    "collection": "Component",
+    "description": "Group cards: left and right padding.",
+    "id": "VariableID:201:842",
+    "name": "component/group-card/padding-h",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--group-card-padding-v)",
+    "collection": "Component",
+    "description": "Group cards: top and bottom padding.",
+    "id": "VariableID:207:963",
+    "name": "component/group-card/padding-v",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:85:6",
+    "name": "component/inline-edit/padding-h",
+    "values": {
+     "Desktop": {
+      "value": 12
+     }
+    }
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:85:5",
+    "name": "component/inline-edit/padding-v",
+    "values": {
+     "Desktop": {
+      "value": 8
+     }
+    }
+   },
+   {
+    "collection": "Component",
+    "description": "Input: left and right padding.",
+    "id": "VariableID:42:6",
+    "name": "component/input/padding-h"
+   },
+   {
+    "collection": "Component",
+    "description": "Input: top and bottom padding.",
+    "id": "VariableID:42:5",
+    "name": "component/input/padding-v",
+    "values": {
+     "Desktop": {
+      "value": 18
+     },
+     "Mobile": {
+      "value": 18
+     }
+    }
+   },
+   {
+    "collection": "Component",
+    "description": "Minimum height for a multiline field, from textarea.field-input in components-fields.html.",
+    "id": "VariableID:42:7",
+    "name": "component/input/textarea-min"
+   },
+   {
+    "codeSyntax": "var(--overview-actions-gap)",
+    "collection": "Component",
+    "description": "Overview Card: gap between the actions.",
+    "id": "VariableID:201:826",
+    "name": "component/overview/actions-gap",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--overview-body-padding)",
+    "collection": "Component",
+    "description": "Overview Card: padding of the body.",
+    "id": "VariableID:201:811",
+    "name": "component/overview/body-padding",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--overview-head-padding)",
+    "collection": "Component",
+    "description": "Overview Card: padding of the header.",
+    "id": "VariableID:201:812",
+    "name": "component/overview/head-padding",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--overview-padding-h)",
+    "collection": "Component",
+    "description": "Overview Card: left and right padding.",
+    "id": "VariableID:201:809",
+    "name": "component/overview/padding-h",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "codeSyntax": "var(--overview-padding-v)",
+    "collection": "Component",
+    "description": "Overview Card: top and bottom padding.",
+    "id": "VariableID:209:1797",
+    "name": "component/overview/padding-v",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "collection": "Component",
+    "description": "Progress track height, small, the default.",
+    "id": "VariableID:83:7",
+    "name": "component/progress/height-sm"
+   },
+   {
+    "collection": "Component",
+    "description": "Selected radio dot.",
+    "id": "VariableID:42:9",
+    "name": "component/radio/dot"
+   },
+   {
+    "collection": "Component",
+    "id": "VariableID:79:5",
+    "name": "component/select/padding-v",
+    "values": {
+     "Desktop": {
+      "value": 13.5
+     },
+     "Mobile": {
+      "value": 13.5
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--skeleton-block)",
+    "collection": "Component",
+    "description": "Height of the skeleton block, a placeholder for an image or a chart.",
+    "id": "VariableID:1103:1415",
+    "name": "component/skeleton/block",
+    "scopes": [
+     "WIDTH_HEIGHT"
+    ],
+    "values": {
+     "Desktop": {
+      "value": 80
+     },
+     "Mobile": {
+      "value": 80
+     }
+    }
+   },
+   {
+    "collection": "Component",
+    "description": "Skeleton circle diameter, a placeholder for an avatar.",
+    "id": "VariableID:44:9",
+    "name": "component/skeleton/circle"
+   },
+   {
+    "collection": "Component",
+    "description": "Gap between the label and the value.",
+    "id": "VariableID:83:4",
+    "name": "component/stat-card/gap",
+    "values": {
+     "Desktop": {
+      "value": 12
+     },
+     "Mobile": {
+      "value": 12
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--tabs-count-padding-h)",
+    "collection": "Component",
+    "description": "Tab: left and right padding of the count. 0 on mobile.",
+    "id": "VariableID:1099:641",
+    "name": "component/tabs/count-padding-h",
+    "scopes": [
+     "GAP"
+    ],
+    "values": {
+     "Desktop": {
+      "value": 8
+     },
+     "Mobile": {
+      "value": 0
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--tabs-count-padding-v)",
+    "collection": "Component",
+    "description": "Tab: top and bottom padding of the count. 0 on mobile.",
+    "id": "VariableID:1099:640",
+    "name": "component/tabs/count-padding-v",
+    "scopes": [
+     "GAP"
+    ],
+    "values": {
+     "Desktop": {
+      "value": 2
+     },
+     "Mobile": {
+      "value": 0
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--toast-body-gap)",
+    "collection": "Component",
+    "description": "Toast: gap between the title and the meta line. 0 on mobile.",
+    "id": "VariableID:1101:1567",
+    "name": "component/toast/body-gap",
+    "scopes": [
+     "GAP"
+    ],
+    "values": {
+     "Desktop": {
+      "value": 4
+     },
+     "Mobile": {
+      "value": 0
+     }
+    }
+   },
+   {
+    "collection": "Component",
+    "description": "Toggle track height.",
+    "id": "VariableID:42:11",
+    "name": "component/toggle/height"
+   },
+   {
+    "collection": "Component",
+    "description": "Horizontal knob inset. 1.5px border + the source's 2px offset, CSS positions the knob from the padding edge, so the true offset from the outer edge is 3.5px.",
+    "id": "VariableID:50:5",
+    "name": "component/toggle/inset-h"
+   },
+   {
+    "collection": "Component",
+    "description": "Toggle knob diameter, inset 2px from the track.",
+    "id": "VariableID:42:12",
+    "name": "component/toggle/knob"
+   },
+   {
+    "collection": "Component",
+    "description": "Toggle track width.",
+    "id": "VariableID:42:10",
+    "name": "component/toggle/width"
+   },
+   {
+    "codeSyntax": "var(--tooltip-arrow-overlap)",
+    "collection": "Component",
+    "description": "Tooltip: how far the arrow overlaps the bubble. 0 on mobile.",
+    "id": "VariableID:1101:1602",
+    "name": "component/tooltip/arrow-overlap",
+    "scopes": [
+     "GAP"
+    ],
+    "values": {
+     "Desktop": {
+      "value": -7
+     },
+     "Mobile": {
+      "value": 0
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-focus)",
+    "collection": "Context",
+    "description": "Follows the Context mode: focus, or inverse-outline.",
+    "id": "VariableID:1110:13487",
+    "name": "ctx/focus",
+    "scopes": [
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "focus"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-outline"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-logo)",
+    "collection": "Context",
+    "description": "Logo colour. Dark on a light page and light on a dark one, so it never disappears.",
+    "id": "VariableID:1110:15247",
+    "name": "ctx/logo",
+    "scopes": [
+     "SHAPE_FILL"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "inverse-surface"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "surface"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-logo-glyph)",
+    "collection": "Context",
+    "description": "The glyph inside the compact logo mark. Always the opposite of ctx/logo.",
+    "id": "VariableID:1110:15248",
+    "name": "ctx/logo-glyph",
+    "scopes": [
+     "SHAPE_FILL"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "surface"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-surface"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-on-primary)",
+    "collection": "Context",
+    "description": "Follows the Context mode: on-primary, or inverse-on-primary.",
+    "id": "VariableID:1110:13482",
+    "name": "ctx/on-primary",
+    "scopes": [
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "on-primary"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-on-primary"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-on-surface)",
+    "collection": "Context",
+    "description": "Follows the Context mode: on-surface, or inverse-on-surface.",
+    "id": "VariableID:1110:14578",
+    "name": "ctx/on-surface",
+    "scopes": [
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "on-surface"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-on-surface"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-on-surface-variant)",
+    "collection": "Context",
+    "description": "Follows the Context mode: on-surface-variant, or inverse-on-surface-variant.",
+    "id": "VariableID:1110:14579",
+    "name": "ctx/on-surface-variant",
+    "scopes": [
+     "TEXT_FILL"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "on-surface-variant"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-on-surface-variant"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-outline)",
+    "collection": "Context",
+    "description": "Follows the Context mode: outline, or inverse-outline.",
+    "id": "VariableID:1110:13485",
+    "name": "ctx/outline",
+    "scopes": [
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "outline"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-outline"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-outline-variant)",
+    "collection": "Context",
+    "description": "Follows the Context mode: outline-variant, or inverse-outline-variant.",
+    "id": "VariableID:1110:14580",
+    "name": "ctx/outline-variant",
+    "scopes": [
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "outline-variant"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-outline-variant"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-primary)",
+    "collection": "Context",
+    "description": "Follows the Context mode: primary, or inverse-primary.",
+    "id": "VariableID:1110:13481",
+    "name": "ctx/primary",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "primary"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-primary"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-primary-hover)",
+    "collection": "Context",
+    "description": "Follows the Context mode: primary-hover, or inverse-primary-hover.",
+    "id": "VariableID:1110:13483",
+    "name": "ctx/primary-hover",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "primary-hover"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-primary-hover"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-primary-pressed)",
+    "collection": "Context",
+    "description": "Follows the Context mode: primary-pressed, or inverse-primary-pressed.",
+    "id": "VariableID:1110:13484",
+    "name": "ctx/primary-pressed",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "primary-pressed"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-primary-pressed"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-surface)",
+    "collection": "Context",
+    "description": "Follows the Context mode: surface, or inverse-surface on an inverted band.",
+    "id": "VariableID:1110:14576",
+    "name": "ctx/surface",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "surface"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-surface"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--ctx-surface-container)",
+    "collection": "Context",
+    "description": "Follows the Context mode: surface-container, or inverse-surface.",
+    "id": "VariableID:1110:14577",
+    "name": "ctx/surface-container",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL"
+    ],
+    "values": {
+     "Default": {
+      "alias": [
+       "Semantic",
+       "surface-container"
+      ]
+     },
+     "Inverted": {
+      "alias": [
+       "Semantic",
+       "inverse-surface"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "description": "Form field border. Neither hairline (1px) nor button (2px), the field preview specifies 1.5px and it had no token.",
+    "id": "VariableID:30:2",
+    "name": "border-width/field"
+   },
+   {
+    "codeSyntax": "var(--border-width-focus)",
+    "collection": "Dimension",
+    "description": "Weight of the keyboard focus ring.",
+    "id": "VariableID:1101:21",
+    "name": "border-width/focus",
+    "scopes": [
+     "STROKE_FLOAT"
+    ],
+    "values": {
+     "Desktop": {
+      "value": 2
+     },
+     "Mobile": {
+      "value": 2
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "description": "Dividers and card borders.",
+    "id": "VariableID:7:30",
+    "name": "border-width/hairline"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Font size of Body/Default, Body/Default Semi-Bold.",
+    "id": "VariableID:7:37",
+    "name": "font-size/body"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Font size of Body/Large, Body/Large Bold.",
+    "id": "VariableID:7:35",
+    "name": "font-size/body-lg"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Dense-UI text, tables, meta rows, chips. 43 hardcoded uses in the source CSS; legitimised as a role.",
+    "id": "VariableID:8:2",
+    "name": "font-size/body-sm"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Smallest supported size. Only 3 uses in source, weakest case in the scale, drop if it stays unused.",
+    "id": "VariableID:8:3",
+    "name": "font-size/caption"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Font size of Heading/Display. 42 on mobile.",
+    "id": "VariableID:7:32",
+    "name": "font-size/display"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Font size of UI/Footnote.",
+    "id": "VariableID:7:39",
+    "name": "font-size/footnote"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Font size of Heading/H2. 32 on mobile.",
+    "id": "VariableID:7:33",
+    "name": "font-size/h2"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Font size of Heading/H3.",
+    "id": "VariableID:7:34",
+    "name": "font-size/h3"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Fills the gap between H3 (20) and H2 (40). The source used 22, 24 and 26 across empty states, accordions and modals, all drift around the same missing role.",
+    "id": "VariableID:87:2",
+    "name": "font-size/h4"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Font size of UI/Label.",
+    "id": "VariableID:7:38",
+    "name": "font-size/label"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Gap between the columns of the grid.",
+    "id": "VariableID:7:10",
+    "name": "gap/columns"
+   },
+   {
+    "collection": "Dimension",
+    "description": "SIGNATURE, cards and containers.",
+    "id": "VariableID:7:25",
+    "name": "radius/container"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Form fields only, the quiet middle ground.",
+    "id": "VariableID:7:24",
+    "name": "radius/field"
+   },
+   {
+    "collection": "Dimension",
+    "description": "SIGNATURE, the button radius. Sharp corners against 20px cards is the brand fingerprint. Do not round.",
+    "id": "VariableID:7:23",
+    "name": "radius/none"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Overlay and notification corner, menus, popovers, alerts, toasts. Between radius/field (4) and radius/container (20).",
+    "id": "VariableID:79:9",
+    "name": "radius/surface"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Reading column in a one-column layout: narrower than the container on purpose. One container wide on mobile. Proposal, to confirm.",
+    "id": "VariableID:7:17",
+    "name": "size/col-1",
+    "values": {
+     "Mobile": {
+      "alias": [
+       "Dimension",
+       "size/container"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "description": "Width of one column in a two-column layout: six of the twelve grid columns. One container wide on mobile.",
+    "id": "VariableID:7:18",
+    "name": "size/col-2",
+    "values": {
+     "Mobile": {
+      "alias": [
+       "Dimension",
+       "size/container"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "description": "Width of one column in a three-column layout: four of the twelve grid columns. One container wide on mobile.",
+    "id": "VariableID:7:19",
+    "name": "size/col-3",
+    "values": {
+     "Mobile": {
+      "alias": [
+       "Dimension",
+       "size/container"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "description": "Width of one column in a four-column layout: three of the twelve grid columns. Was 268, which did not add up to the container. One container wide on mobile. Proposal, to confirm.",
+    "id": "VariableID:7:20",
+    "name": "size/col-4",
+    "values": {
+     "Desktop": {
+      "value": 269.5
+     },
+     "Mobile": {
+      "alias": [
+       "Dimension",
+       "size/container"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "description": "Width of one column in a five-column layout. Was 206, which did not add up to the container. Five does not sit on the twelve-column grid: prefer four or six. One container wide on mobile. Proposal, to confirm.",
+    "id": "VariableID:7:21",
+    "name": "size/col-5",
+    "values": {
+     "Desktop": {
+      "value": 209.2
+     },
+     "Mobile": {
+      "alias": [
+       "Dimension",
+       "size/container"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "description": "Width of one column in a six-column layout: two of the twelve grid columns. One container wide on mobile.",
+    "id": "VariableID:7:22",
+    "name": "size/col-6",
+    "values": {
+     "Mobile": {
+      "alias": [
+       "Dimension",
+       "size/container"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "description": "Width of the page container. 264 on mobile.",
+    "id": "VariableID:7:11",
+    "name": "size/container"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Checkbox box and radio ring. Fixed geometry, does not scale with breakpoint.",
+    "id": "VariableID:31:2",
+    "name": "size/control"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Full width of the page. 360 on mobile.",
+    "id": "VariableID:7:13",
+    "name": "size/full-width"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Default UI icon.",
+    "id": "VariableID:7:16",
+    "name": "size/icon-md"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Small UI icon, for dense rows.",
+    "id": "VariableID:7:15",
+    "name": "size/icon-sm"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Gap between related items inside a card. 12 on mobile.",
+    "id": "VariableID:7:5",
+    "name": "space/2xs"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Tight pairs, such as a label and its field.",
+    "id": "VariableID:7:4",
+    "name": "space/3xs"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Gap between a control and its label. Sits between space/3xs (8) and space/2xs (16), the source uses 10px and it had no token.",
+    "id": "VariableID:31:8",
+    "name": "space/control-gap"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Largest section padding. Non-linear jump from md, intentional.",
+    "id": "VariableID:7:9",
+    "name": "space/lg"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Gap between sections of a page. 48 on mobile.",
+    "id": "VariableID:7:8",
+    "name": "space/md"
+   },
+   {
+    "collection": "Dimension",
+    "description": "No gap: parts that touch.",
+    "id": "VariableID:7:3",
+    "name": "space/none"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Gap between blocks inside a section. 32 on mobile.",
+    "id": "VariableID:7:7",
+    "name": "space/sm"
+   },
+   {
+    "collection": "Dimension",
+    "description": "Padding inside a card. 24 on mobile.",
+    "id": "VariableID:7:6",
+    "name": "space/xs"
+   },
+   {
+    "codeSyntax": "var(--accent-blue)",
+    "collection": "Primitives",
+    "description": "Brand accent. Use sparingly and never for status. For surfaces use the soft tint.",
+    "id": "VariableID:8:10",
+    "name": "accent/blue"
+   },
+   {
+    "codeSyntax": "var(--accent-blue-soft)",
+    "collection": "Primitives",
+    "description": "Soft tint of accent/blue. Background only; always with dark text on top.",
+    "id": "VariableID:1096:1046",
+    "name": "accent/blue-soft",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#CAE6F3"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--accent-purple)",
+    "collection": "Primitives",
+    "description": "Brand accent. Use sparingly and never for status. For surfaces use the soft tint.",
+    "id": "VariableID:8:11",
+    "name": "accent/purple"
+   },
+   {
+    "codeSyntax": "var(--accent-purple-soft)",
+    "collection": "Primitives",
+    "description": "Soft tint of accent/purple. Background only; always with dark text on top.",
+    "id": "VariableID:1096:1045",
+    "name": "accent/purple-soft",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#E4C9F9"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--accent-red)",
+    "collection": "Primitives",
+    "description": "Brand accent. Use sparingly and never for status. For surfaces use the soft tint.",
+    "id": "VariableID:8:12",
+    "name": "accent/red"
+   },
+   {
+    "codeSyntax": "var(--accent-red-soft)",
+    "collection": "Primitives",
+    "description": "Soft tint of accent/red. Background only; always with dark text on top.",
+    "id": "VariableID:1096:1044",
+    "name": "accent/red-soft",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#F0D3D5"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--accent-stone)",
+    "collection": "Primitives",
+    "description": "Brand accent. Use sparingly and never for status. For surfaces use the soft tint.",
+    "id": "VariableID:8:9",
+    "name": "accent/stone"
+   },
+   {
+    "codeSyntax": "var(--accent-stone-soft)",
+    "collection": "Primitives",
+    "description": "Soft tint of accent/stone. Background only; always with dark text on top.",
+    "id": "VariableID:1096:1047",
+    "name": "accent/stone-soft",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#DEDBDA"
+     }
+    }
+   },
+   {
+    "collection": "Primitives",
+    "description": "Page background. Never pure white, pure white reads cheap.",
+    "id": "VariableID:8:6",
+    "name": "brand/milkyway"
+   },
+   {
+    "codeSyntax": "var(--error-10)",
+    "collection": "Primitives",
+    "description": "Error tone 10. Darkest. Text on a light container in strong cases.",
+    "id": "VariableID:1110:24723",
+    "name": "error/10",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#2A1617"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error-20)",
+    "collection": "Primitives",
+    "description": "Error tone 20. Dark container and the label on a dark solid fill.",
+    "id": "VariableID:19:6",
+    "name": "error/20"
+   },
+   {
+    "codeSyntax": "var(--error-30)",
+    "collection": "Primitives",
+    "description": "Error tone 30. Text on a light container.",
+    "id": "VariableID:1110:24724",
+    "name": "error/30",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#7A2D31"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error-40)",
+    "collection": "Primitives",
+    "description": "Error tone 40. Solid fill and text on light surfaces.",
+    "id": "VariableID:8:44",
+    "name": "error/40"
+   },
+   {
+    "codeSyntax": "var(--error-50)",
+    "collection": "Primitives",
+    "description": "Error tone 50. In between. Not used by a role yet.",
+    "id": "VariableID:1110:24725",
+    "name": "error/50",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#C15459"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error-60)",
+    "collection": "Primitives",
+    "description": "Error tone 60. In between. Not used by a role yet.",
+    "id": "VariableID:1095:1033",
+    "name": "error/60",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#CE7B80"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error-70)",
+    "collection": "Primitives",
+    "description": "Error tone 70. In between. Not used by a role yet.",
+    "id": "VariableID:1110:24726",
+    "name": "error/70",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#DB9A9E"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error-80)",
+    "collection": "Primitives",
+    "description": "Error tone 80. Solid fill and text on dark surfaces.",
+    "id": "VariableID:1110:24727",
+    "name": "error/80",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#E9BBBE"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error-90)",
+    "collection": "Primitives",
+    "description": "Error tone 90. Text on a dark container.",
+    "id": "VariableID:1110:24728",
+    "name": "error/90",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#F4DDDF"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error-95)",
+    "collection": "Primitives",
+    "description": "Error tone 95. Light container.",
+    "id": "VariableID:8:45",
+    "name": "error/95"
+   },
+   {
+    "codeSyntax": "var(--error-98)",
+    "collection": "Primitives",
+    "description": "Error tone 98. Lightest. Not used by a role yet.",
+    "id": "VariableID:1110:24729",
+    "name": "error/98",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#FEF8F8"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--gradient-stop-careers-end)",
+    "collection": "Primitives",
+    "id": "VariableID:8:18",
+    "name": "gradient-stop/careers-end"
+   },
+   {
+    "codeSyntax": "var(--gradient-stop-process-solutions-end)",
+    "collection": "Primitives",
+    "id": "VariableID:8:19",
+    "name": "gradient-stop/process-solutions-end"
+   },
+   {
+    "collection": "Primitives",
+    "description": "Team gradient stop 1 of 4. Figma cannot store gradients as variables, these feed the paint styles.",
+    "id": "VariableID:8:13",
+    "name": "gradient-stop/team-1"
+   },
+   {
+    "codeSyntax": "var(--info-10)",
+    "collection": "Primitives",
+    "description": "Info tone 10. Darkest. Text on a light container in strong cases.",
+    "id": "VariableID:1110:24744",
+    "name": "info/10",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#121D26"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info-20)",
+    "collection": "Primitives",
+    "description": "Info tone 20. Dark container and the label on a dark solid fill.",
+    "id": "VariableID:19:4",
+    "name": "info/20"
+   },
+   {
+    "codeSyntax": "var(--info-30)",
+    "collection": "Primitives",
+    "description": "Info tone 30. Text on a light container.",
+    "id": "VariableID:1110:24745",
+    "name": "info/30",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#1E496E"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info-40)",
+    "collection": "Primitives",
+    "description": "Info tone 40. Solid fill and text on light surfaces.",
+    "id": "VariableID:8:38",
+    "name": "info/40"
+   },
+   {
+    "codeSyntax": "var(--info-50)",
+    "collection": "Primitives",
+    "description": "Info tone 50. In between. Not used by a role yet.",
+    "id": "VariableID:1110:24746",
+    "name": "info/50",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#427BB1"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info-60)",
+    "collection": "Primitives",
+    "description": "Info tone 60. In between. Not used by a role yet.",
+    "id": "VariableID:1095:1035",
+    "name": "info/60",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#6C9AC6"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info-70)",
+    "collection": "Primitives",
+    "description": "Info tone 70. In between. Not used by a role yet.",
+    "id": "VariableID:1110:24747",
+    "name": "info/70",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#8EAFD0"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info-80)",
+    "collection": "Primitives",
+    "description": "Info tone 80. Solid fill and text on dark surfaces.",
+    "id": "VariableID:1110:24748",
+    "name": "info/80",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#B3C9DF"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info-90)",
+    "collection": "Primitives",
+    "description": "Info tone 90. Text on a dark container.",
+    "id": "VariableID:1110:24749",
+    "name": "info/90",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#D9E4EE"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info-95)",
+    "collection": "Primitives",
+    "description": "Info tone 95. Light container.",
+    "id": "VariableID:8:39",
+    "name": "info/95"
+   },
+   {
+    "codeSyntax": "var(--info-98)",
+    "collection": "Primitives",
+    "description": "Info tone 98. Lightest. Not used by a role yet.",
+    "id": "VariableID:1110:24750",
+    "name": "info/98",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#F7FAFC"
+     }
+    }
+   },
+   {
+    "collection": "Primitives",
+    "description": "Hairline divider. 61 uses in source, the most-used unbound colour.",
+    "id": "VariableID:8:24",
+    "name": "neutral/200"
+   },
+   {
+    "collection": "Primitives",
+    "description": "Absorbs #d0d0d0, 6-point delta.",
+    "id": "VariableID:8:26",
+    "name": "neutral/400"
+   },
+   {
+    "collection": "Primitives",
+    "description": "Absorbs #f7f7f7, 3-point delta, imperceptible.",
+    "id": "VariableID:8:22",
+    "name": "neutral/50"
+   },
+   {
+    "collection": "Primitives",
+    "description": "Sits behind text/muted, icon/muted, text/inverted-muted. Bind the role, not this.",
+    "id": "VariableID:8:27",
+    "name": "neutral/500"
+   },
+   {
+    "collection": "Primitives",
+    "description": "Half-step pair with 650, deliberately kept distinct from #888888.",
+    "id": "VariableID:8:28",
+    "name": "neutral/600"
+   },
+   {
+    "collection": "Primitives",
+    "description": "Half-step pair with 600, deliberately kept distinct from #999999.",
+    "id": "VariableID:8:29",
+    "name": "neutral/650"
+   },
+   {
+    "codeSyntax": "var(--neutral-750)",
+    "collection": "Primitives",
+    "description": "Muted text on light surfaces. Closest grey to brand grey (#777777) that passes WCAG AA: 4.61 on page, 4.81 on subtle, 5.02 on surface.",
+    "id": "VariableID:1095:1032",
+    "name": "neutral/750",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#6F6F6F"
+     }
+    }
+   },
+   {
+    "collection": "Primitives",
+    "description": "Half-step pair with 850, deliberately kept distinct from #444444.",
+    "id": "VariableID:8:31",
+    "name": "neutral/800"
+   },
+   {
+    "collection": "Primitives",
+    "description": "Half-step pair with 800, deliberately kept distinct from #555555.",
+    "id": "VariableID:8:32",
+    "name": "neutral/850"
+   },
+   {
+    "collection": "Primitives",
+    "description": "DERIVED, midpoint between neutral/950 (page) and neutral/900 (surface). Added because dark mode had no value between the two, leaving bg/subtle collapsed onto bg/surface.",
+    "id": "VariableID:19:2",
+    "name": "neutral/925"
+   },
+   {
+    "codeSyntax": "var(--success-10)",
+    "collection": "Primitives",
+    "description": "Success tone 10. Darkest. Text on a light container in strong cases.",
+    "id": "VariableID:1110:24737",
+    "name": "success/10",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#101E17"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success-20)",
+    "collection": "Primitives",
+    "description": "Success tone 20. Dark container and the label on a dark solid fill.",
+    "id": "VariableID:19:3",
+    "name": "success/20"
+   },
+   {
+    "codeSyntax": "var(--success-30)",
+    "collection": "Primitives",
+    "description": "Success tone 30. Text on a light container.",
+    "id": "VariableID:1110:24738",
+    "name": "success/30",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#1B5035"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success-40)",
+    "collection": "Primitives",
+    "description": "Success tone 40. Solid fill and text on light surfaces.",
+    "id": "VariableID:8:35",
+    "name": "success/40"
+   },
+   {
+    "codeSyntax": "var(--success-50)",
+    "collection": "Primitives",
+    "description": "Success tone 50. In between. Not used by a role yet.",
+    "id": "VariableID:1110:24739",
+    "name": "success/50",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#38855D"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success-60)",
+    "collection": "Primitives",
+    "description": "Success tone 60. In between. Not used by a role yet.",
+    "id": "VariableID:1095:1036",
+    "name": "success/60",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#65A584"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success-70)",
+    "collection": "Primitives",
+    "description": "Success tone 70. In between. Not used by a role yet.",
+    "id": "VariableID:1110:24740",
+    "name": "success/70",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#87B69B"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success-80)",
+    "collection": "Primitives",
+    "description": "Success tone 80. Solid fill and text on dark surfaces.",
+    "id": "VariableID:1110:24741",
+    "name": "success/80",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#AECEBB"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success-90)",
+    "collection": "Primitives",
+    "description": "Success tone 90. Text on a dark container.",
+    "id": "VariableID:1110:24742",
+    "name": "success/90",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#D6E6DC"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success-95)",
+    "collection": "Primitives",
+    "description": "Success tone 95. Light container.",
+    "id": "VariableID:8:36",
+    "name": "success/95"
+   },
+   {
+    "codeSyntax": "var(--success-98)",
+    "collection": "Primitives",
+    "description": "Success tone 98. Lightest. Not used by a role yet.",
+    "id": "VariableID:1110:24743",
+    "name": "success/98",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#F6FAF7"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-10)",
+    "collection": "Primitives",
+    "description": "Warning tone 10. Darkest. Text on a light container in strong cases.",
+    "id": "VariableID:1110:24730",
+    "name": "warning/10",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#221A0A"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-20)",
+    "collection": "Primitives",
+    "description": "Warning tone 20. Dark container and the label on a dark solid fill.",
+    "id": "VariableID:19:5",
+    "name": "warning/20"
+   },
+   {
+    "codeSyntax": "var(--warning-30)",
+    "collection": "Primitives",
+    "description": "Warning tone 30. Text on a light container.",
+    "id": "VariableID:1110:24731",
+    "name": "warning/30",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#5C4212"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-40)",
+    "collection": "Primitives",
+    "description": "Warning tone 40. Solid fill and text on light surfaces.",
+    "id": "VariableID:8:41",
+    "name": "warning/40"
+   },
+   {
+    "codeSyntax": "var(--warning-50)",
+    "collection": "Primitives",
+    "description": "Warning tone 50. In between. Not used by a role yet.",
+    "id": "VariableID:1110:24732",
+    "name": "warning/50",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#98702A"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-60)",
+    "collection": "Primitives",
+    "description": "Warning tone 60. In between. Not used by a role yet.",
+    "id": "VariableID:1095:1034",
+    "name": "warning/60",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "TEXT_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Value": {
+      "value": "#B29257"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-70)",
+    "collection": "Primitives",
+    "description": "Warning tone 70. In between. Not used by a role yet.",
+    "id": "VariableID:1110:24733",
+    "name": "warning/70",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#C3A876"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-80)",
+    "collection": "Primitives",
+    "description": "Warning tone 80. Solid fill and text on dark surfaces.",
+    "id": "VariableID:1110:24734",
+    "name": "warning/80",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#DAC49B"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-90)",
+    "collection": "Primitives",
+    "description": "Warning tone 90. Text on a dark container.",
+    "id": "VariableID:1110:24735",
+    "name": "warning/90",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#F1E1C2"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-95)",
+    "collection": "Primitives",
+    "description": "Warning tone 95. Light container.",
+    "id": "VariableID:8:42",
+    "name": "warning/95"
+   },
+   {
+    "codeSyntax": "var(--warning-98)",
+    "collection": "Primitives",
+    "description": "Warning tone 98. Lightest. Not used by a role yet.",
+    "id": "VariableID:1110:24736",
+    "name": "warning/98",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Value": {
+      "value": "#FFF9ED"
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--accent-blue-container)",
+    "collection": "Semantic",
+    "description": "Blue brand accent background.",
+    "id": "VariableID:1096:1050",
+    "name": "accent-blue-container",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "accent/blue-soft"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "accent/blue-soft"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--accent-purple-container)",
+    "collection": "Semantic",
+    "description": "Purple brand accent background.",
+    "id": "VariableID:1096:1049",
+    "name": "accent-purple-container",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "accent/purple-soft"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "accent/purple-soft"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--accent-red-container)",
+    "collection": "Semantic",
+    "description": "Red brand accent background: tags and avatars.",
+    "id": "VariableID:1096:1048",
+    "name": "accent-red-container",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "accent/red-soft"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "accent/red-soft"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--accent-stone-container)",
+    "collection": "Semantic",
+    "description": "Stone brand accent background.",
+    "id": "VariableID:1096:1051",
+    "name": "accent-stone-container",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "accent/stone-soft"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "accent/stone-soft"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error)",
+    "collection": "Semantic",
+    "description": "Solid error fill: the same strong colour in Light and Dark, with on-error (white) on top. For error text on a surface use on-surface-error.",
+    "id": "VariableID:1110:29635",
+    "name": "error",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "error/40"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "error/40"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--error-container)",
+    "collection": "Semantic",
+    "description": "Background of an error message.",
+    "id": "VariableID:9:30",
+    "name": "error-container"
+   },
+   {
+    "codeSyntax": "var(--focus)",
+    "collection": "Semantic",
+    "description": "Focus ring on every interactive element.",
+    "id": "VariableID:1101:20",
+    "name": "focus",
+    "scopes": [
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "brand/milkyway"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "brand/midnight"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info)",
+    "collection": "Semantic",
+    "description": "Solid information fill: the same strong colour in Light and Dark, with on-info (white) on top. For information text on a surface use on-surface-info.",
+    "id": "VariableID:1110:29638",
+    "name": "info",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "info/40"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "info/40"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--info-container)",
+    "collection": "Semantic",
+    "description": "Background of an information message.",
+    "id": "VariableID:9:26",
+    "name": "info-container"
+   },
+   {
+    "codeSyntax": "var(--inverse-on-primary)",
+    "collection": "Semantic",
+    "description": "Text and icons on inverse-primary.",
+    "id": "VariableID:22:6",
+    "name": "inverse-on-primary"
+   },
+   {
+    "codeSyntax": "var(--inverse-on-surface)",
+    "collection": "Semantic",
+    "description": "Text and icons on inverse-surface.",
+    "id": "VariableID:9:10",
+    "name": "inverse-on-surface"
+   },
+   {
+    "codeSyntax": "var(--inverse-on-surface-variant)",
+    "collection": "Semantic",
+    "description": "Secondary text on inverse-surface.",
+    "id": "VariableID:1103:20",
+    "name": "inverse-on-surface-variant",
+    "scopes": [
+     "TEXT_FILL"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "neutral/750"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/500"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--inverse-outline)",
+    "collection": "Semantic",
+    "description": "Strong borders and focus on inverse-surface.",
+    "id": "VariableID:22:3",
+    "name": "inverse-outline"
+   },
+   {
+    "codeSyntax": "var(--inverse-outline-variant)",
+    "collection": "Semantic",
+    "description": "Dividers and quiet borders on inverse-surface.",
+    "id": "VariableID:9:15",
+    "name": "inverse-outline-variant"
+   },
+   {
+    "codeSyntax": "var(--inverse-primary)",
+    "collection": "Semantic",
+    "description": "Primary on inverse-surface.",
+    "id": "VariableID:22:5",
+    "name": "inverse-primary"
+   },
+   {
+    "codeSyntax": "var(--inverse-primary-hover)",
+    "collection": "Semantic",
+    "description": "Inverse-primary under the pointer.",
+    "id": "VariableID:1103:1417",
+    "name": "inverse-primary-hover",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "neutral/850"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/200"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--inverse-primary-pressed)",
+    "collection": "Semantic",
+    "description": "Inverse-primary while pressed.",
+    "id": "VariableID:1110:13479",
+    "name": "inverse-primary-pressed",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "neutral/800"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/400"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--inverse-surface)",
+    "collection": "Semantic",
+    "description": "A surface that is the opposite of the page: dark bands, toasts, tooltips.",
+    "id": "VariableID:9:6",
+    "name": "inverse-surface"
+   },
+   {
+    "codeSyntax": "var(--on-accent-container)",
+    "collection": "Semantic",
+    "description": "Text and icons on any accent container.",
+    "id": "VariableID:40:8",
+    "name": "on-accent-container"
+   },
+   {
+    "codeSyntax": "var(--on-error)",
+    "collection": "Semantic",
+    "description": "Text and icons on the solid error fill. White in both modes.",
+    "id": "VariableID:1110:24751",
+    "name": "on-error",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "brand/white"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "brand/white"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-error-container)",
+    "collection": "Semantic",
+    "description": "Text and icons on an error container.",
+    "id": "VariableID:1110:24752",
+    "name": "on-error-container",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "error/90"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "error/30"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-info)",
+    "collection": "Semantic",
+    "description": "Text and icons on the solid information fill. White in both modes.",
+    "id": "VariableID:1110:24757",
+    "name": "on-info",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "brand/white"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "brand/white"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-info-container)",
+    "collection": "Semantic",
+    "description": "Text and icons on an information container.",
+    "id": "VariableID:1110:24758",
+    "name": "on-info-container",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "info/90"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "info/30"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-primary)",
+    "collection": "Semantic",
+    "description": "Text and icons on primary.",
+    "id": "VariableID:9:22",
+    "name": "on-primary"
+   },
+   {
+    "codeSyntax": "var(--on-success)",
+    "collection": "Semantic",
+    "description": "Text and icons on the solid success fill. White in both modes.",
+    "id": "VariableID:1110:24755",
+    "name": "on-success",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "brand/white"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "brand/white"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-success-container)",
+    "collection": "Semantic",
+    "description": "Text and icons on a success container.",
+    "id": "VariableID:1110:24756",
+    "name": "on-success-container",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "success/90"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "success/30"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-surface)",
+    "collection": "Semantic",
+    "description": "Main text and icons on any surface.",
+    "id": "VariableID:9:7",
+    "name": "on-surface"
+   },
+   {
+    "codeSyntax": "var(--on-surface-error)",
+    "collection": "Semantic",
+    "description": "Error text, icons and borders on any surface. Tone 40 in Light, 80 in Dark, AA on every surface.",
+    "id": "VariableID:9:29",
+    "name": "on-surface-error",
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "error/80"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-surface-info)",
+    "collection": "Semantic",
+    "description": "Info text, icons and borders on any surface. Tone 40 in Light, 80 in Dark, AA on every surface.",
+    "id": "VariableID:9:25",
+    "name": "on-surface-info",
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "info/80"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-surface-placeholder)",
+    "collection": "Semantic",
+    "description": "Placeholder text inside empty fields.",
+    "id": "VariableID:9:9",
+    "name": "on-surface-placeholder",
+    "values": {
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/750"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-surface-success)",
+    "collection": "Semantic",
+    "description": "Success text, icons and borders on any surface. Tone 40 in Light, 80 in Dark, AA on every surface.",
+    "id": "VariableID:9:23",
+    "name": "on-surface-success",
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "success/80"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-surface-variant)",
+    "collection": "Semantic",
+    "description": "Secondary text, labels and quiet icons.",
+    "id": "VariableID:9:8",
+    "name": "on-surface-variant",
+    "values": {
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/750"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-surface-warning)",
+    "collection": "Semantic",
+    "description": "Warning text, icons and borders on any surface. Tone 40 in Light, 80 in Dark, AA on every surface.",
+    "id": "VariableID:9:27",
+    "name": "on-surface-warning",
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "warning/80"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-warning)",
+    "collection": "Semantic",
+    "description": "Text and icons on the solid warning fill. White in both modes.",
+    "id": "VariableID:1110:24753",
+    "name": "on-warning",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "brand/white"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "brand/white"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--on-warning-container)",
+    "collection": "Semantic",
+    "description": "Text and icons on a warning container.",
+    "id": "VariableID:1110:24754",
+    "name": "on-warning-container",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "warning/90"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "warning/30"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--outline)",
+    "collection": "Semantic",
+    "description": "Strong borders: fields, outline buttons, selected controls.",
+    "id": "VariableID:9:13",
+    "name": "outline"
+   },
+   {
+    "codeSyntax": "var(--outline-medium)",
+    "collection": "Semantic",
+    "description": "Medium borders: a search field at rest, drop zones, media placeholders and the empty-state ring. At least 3:1 on every surface where they sit.",
+    "id": "VariableID:69:2",
+    "name": "outline-medium",
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "neutral/600"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/650"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--outline-variant)",
+    "collection": "Semantic",
+    "description": "Dividers and card borders.",
+    "id": "VariableID:9:12",
+    "name": "outline-variant"
+   },
+   {
+    "codeSyntax": "var(--primary)",
+    "collection": "Semantic",
+    "description": "The main action: Solid button fill, links, selected controls.",
+    "id": "VariableID:9:21",
+    "name": "primary"
+   },
+   {
+    "codeSyntax": "var(--primary-hover)",
+    "collection": "Semantic",
+    "description": "Primary under the pointer.",
+    "id": "VariableID:1103:1416",
+    "name": "primary-hover",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "neutral/200"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/850"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--primary-pressed)",
+    "collection": "Semantic",
+    "description": "Primary while pressed.",
+    "id": "VariableID:1110:13478",
+    "name": "primary-pressed",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "neutral/400"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/800"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success)",
+    "collection": "Semantic",
+    "description": "Solid success fill: the same strong colour in Light and Dark, with on-success (white) on top. For success text on a surface use on-surface-success.",
+    "id": "VariableID:1110:29637",
+    "name": "success",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "success/40"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "success/40"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--success-container)",
+    "collection": "Semantic",
+    "description": "Background of a success message.",
+    "id": "VariableID:9:24",
+    "name": "success-container"
+   },
+   {
+    "codeSyntax": "var(--surface)",
+    "collection": "Semantic",
+    "description": "Page background. The base every other surface sits on.",
+    "id": "VariableID:9:3",
+    "name": "surface"
+   },
+   {
+    "codeSyntax": "var(--surface-container)",
+    "collection": "Semantic",
+    "description": "Cards, dialogs, panels and fields. One step up from the page.",
+    "id": "VariableID:9:4",
+    "name": "surface-container"
+   },
+   {
+    "codeSyntax": "var(--surface-container-high)",
+    "collection": "Semantic",
+    "description": "Menus, popovers and the hover of a row or card.",
+    "id": "VariableID:80:2",
+    "name": "surface-container-high"
+   },
+   {
+    "codeSyntax": "var(--surface-container-highest)",
+    "collection": "Semantic",
+    "description": "Highest container: skeleton blocks and tracks.",
+    "id": "VariableID:44:10",
+    "name": "surface-container-highest"
+   },
+   {
+    "codeSyntax": "var(--surface-container-low)",
+    "collection": "Semantic",
+    "description": "Quiet areas inside a page: rails, table headers, grouped rows.",
+    "id": "VariableID:9:5",
+    "name": "surface-container-low"
+   },
+   {
+    "codeSyntax": "var(--surface-hover)",
+    "collection": "Semantic",
+    "description": "An unselected control or neutral element under the pointer.",
+    "id": "VariableID:1110:15249",
+    "name": "surface-hover",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "neutral/850"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/200"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--surface-pressed)",
+    "collection": "Semantic",
+    "description": "An unselected control or neutral element while pressed.",
+    "id": "VariableID:1110:15250",
+    "name": "surface-pressed",
+    "scopes": [
+     "FRAME_FILL",
+     "SHAPE_FILL",
+     "STROKE_COLOR"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "neutral/800"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "neutral/400"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--transparent)",
+    "collection": "Semantic",
+    "description": "No fill. Outline and Ghost buttons at rest. 0% alpha because Figma has no transparent keyword.",
+    "id": "VariableID:9:31",
+    "name": "transparent"
+   },
+   {
+    "codeSyntax": "var(--warning)",
+    "collection": "Semantic",
+    "description": "Solid warning fill: the same strong colour in Light and Dark, with on-warning (white) on top. For warning text on a surface use on-surface-warning.",
+    "id": "VariableID:1110:29636",
+    "name": "warning",
+    "scopes": [
+     "ALL_SCOPES"
+    ],
+    "values": {
+     "Dark": {
+      "alias": [
+       "Primitives",
+       "warning/40"
+      ]
+     },
+     "Light": {
+      "alias": [
+       "Primitives",
+       "warning/40"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--warning-container)",
+    "collection": "Semantic",
+    "description": "Background of a warning message.",
+    "id": "VariableID:9:28",
+    "name": "warning-container"
+   }
+  ]
+ }
+}
