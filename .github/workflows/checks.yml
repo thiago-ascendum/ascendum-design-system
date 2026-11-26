@@ -114,3 +114,23 @@ jobs:
       - name: Publish on GitHub Pages
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: actions/deploy-pages@v4
+
+  report:
+    name: Result on the pull request
+    # When the checks were started by the Send to code button (workflow_dispatch), GitHub does not attach them to
+    # the pull request. This job writes the result on the commit, so the pull request shows green or red.
+    needs: [gate, components]
+    if: always() && github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      statuses: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          OK: ${{ needs.gate.result == 'success' && needs.components.result == 'success' }}
+        run: |
+          STATE=$([ "$OK" = "true" ] && echo success || echo failure)
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state="$STATE" -f context="Design system checks" \
+            -f description="Gate and documentation build: $STATE" \
+            -f target_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
