@@ -21,14 +21,16 @@ async function gh(token, path, method, body) {
 
 figma.showUI(__html__, { width: 360, height: 460, themeColors: true });
 
-(async () => {
+// The window asks for its data once it has loaded ("ready"); a message sent before that would be lost.
+async function init() {
   const cols = await figma.variables.getLocalVariableCollectionsAsync();
   const token = await figma.clientStorage.getAsync("githubToken");
   figma.ui.postMessage({ type: "init", collections: cols.map((c) => c.name), hasToken: !!token, user: figma.currentUser ? figma.currentUser.name : "" });
-})();
+}
 
 figma.ui.onmessage = async (msg) => {
   try {
+    if (msg.type === "ready") { await init(); return; }
     if (msg.type === "saveToken") {
       await figma.clientStorage.setAsync("githubToken", msg.token.trim());
       figma.ui.postMessage({ type: "tokenSaved" });
