@@ -149,7 +149,7 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Context mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.
 
 - **Style**: Ghost, Outline, Solid
-- **State**: Default, Disabled, Focus, Hover, Pressed
+- **State**: Default, Focus, Hover, Pressed
 - PROPOSAL, pending the owner: one Solid button per view is the primary action; Outline is secondary; Ghost only inside dense toolbars.
 - Hover and Focus are behaviours of one button in code, not separate designs. Do not draw them as separate components.
 

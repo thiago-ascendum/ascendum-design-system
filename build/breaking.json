@@ -4,7 +4,7 @@
     "textStyles": 0,
     "tokens": 60
   },
-  "breaking": 79,
+  "breaking": 80,
   "removedComponents": [
     "SectionTag"
   ],
@@ -171,6 +171,11 @@
       "component": "Badge",
       "property": "Tone",
       "value": "Solid"
+    },
+    {
+      "component": "Button",
+      "property": "State",
+      "value": "Disabled"
     },
     {
       "component": "Footer",

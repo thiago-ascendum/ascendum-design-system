@@ -199,7 +199,6 @@
     "properties": {
       "State": [
         "Default",
-        "Disabled",
         "Focus",
         "Hover",
         "Pressed"
@@ -216,7 +215,6 @@
     ],
     "states": [
       "Default",
-      "Disabled",
       "Focus",
       "Hover",
       "Pressed"
@@ -241,7 +239,7 @@
       "--transparent"
     ],
     "use": "Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Context mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.",
-    "variants": 15
+    "variants": 12
   },
   {
     "component": "Checkbox",
