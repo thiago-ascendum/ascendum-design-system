@@ -2,7 +2,10 @@ name: Design system checks
 
 on:
   push:
+    # figma/** branches come from the Send to code button: figma-sync.yml regenerates them first, then starts these checks.
+    branches-ignore: ['figma/**']
   pull_request:
+  workflow_dispatch:
 
 jobs:
   gate:
