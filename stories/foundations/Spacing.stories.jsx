@@ -66,7 +66,7 @@ const SpacingPage = () => (
 
 export default {
   title: 'Foundations/Spacing, Grid & Layout',
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: 'fullscreen', options: { showPanel: false } },
 };
 
 export const Spacing = { name: 'Spacing, Grid & Layout', render: () => <SpacingPage /> };

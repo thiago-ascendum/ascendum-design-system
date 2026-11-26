@@ -106,7 +106,7 @@ const TypographyPage = () => (
 
 export default {
   title: 'Foundations/Typography',
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: 'fullscreen', options: { showPanel: false } },
 };
 
 export const Typography = { name: 'Typography', render: () => <TypographyPage /> };

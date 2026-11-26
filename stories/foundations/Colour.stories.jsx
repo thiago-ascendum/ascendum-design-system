@@ -250,7 +250,7 @@ const ColourPage = () => (
 
 export default {
   title: 'Foundations/Colour',
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: 'fullscreen', options: { showPanel: false } },
 };
 
 export const Colour = { name: 'Colour', render: () => <ColourPage /> };
