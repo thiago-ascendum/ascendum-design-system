@@ -1,6 +1,6 @@
 # Ascendum Design System · contract for AI tools
 
-Generated from snapshot `5lhRMZkLHZijqgdigjk3J1` on 2026-11-26. Do not edit by hand: change the design system, then regenerate.
+Generated from snapshot `live` on 2026-11-26. Do not edit by hand: change the design system, then regenerate.
 
 Read this file instead of the Figma pages. The pages are documentation for people; their layout is not a pattern to copy.
 
