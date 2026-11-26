@@ -1,0 +1,84 @@
+name: Send to code
+
+# The other half of the "Send to code" button in the Figma plugin (figma-plugin/).
+# The plugin pushes a branch figma/... with figma-inbox/snapshot.json and figma-inbox/request.json.
+# This workflow turns that into a normal pull request: it regenerates everything from the snapshot,
+# opens the pull request with the token diff, and starts the checks on it. Red checks: nothing is published.
+on:
+  push:
+    branches: ['figma/**']
+    paths: ['figma-inbox/**']
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  sync:
+    name: From Figma to a pull request
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Take the snapshot
+        id: take
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          r = json.load(open("figma-inbox/request.json"))
+          v = json.load(open("figma-inbox/snapshot.json"))["meta"].get("figmaVersion") or {}
+          print("message=" + r["message"].replace("\n", " ")[:120])
+          print("collections=" + " ".join(r.get("collections") or []))
+          print("version=" + f'{v.get("id")} "{v.get("title")}"')
+          print("user=" + (r.get("user") or "a designer"))
+          PY
+          git show origin/main:build/ds-snapshot.json > /tmp/git.json
+
+      - name: Scoped or whole file
+        env:
+          ONLY: ${{ steps.take.outputs.collections }}
+        run: |
+          if [ -n "$ONLY" ]; then
+            read -r -a COLS <<< "$ONLY"
+            python3 pipeline/01c_take_collections.py /tmp/git.json figma-inbox/snapshot.json build/ds-snapshot.json "${COLS[@]}"
+          else
+            cp figma-inbox/snapshot.json build/ds-snapshot.json
+          fi
+          git rm -q -r figma-inbox
+
+      - name: Regenerate everything from the snapshot
+        run: |
+          python3 pipeline/02_build.py build/ds-snapshot.json governance build > /tmp/gate.txt || true
+          python3 pipeline/04_catalogue.py build/ds-snapshot.json build
+          python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json governance/accepted-breaking.json > /tmp/breaking.txt || true
+          python3 pipeline/06_changes.py build/before/ds-snapshot.json build/ds-snapshot.json build
+          python3 pipeline/09_migrate.py build/before/ds-snapshot.json build/ds-snapshot.json governance/accepted-breaking.json build
+          python3 pipeline/03_compare.py build/before/report.json build/report.json build/compare.js
+          python3 pipeline/token_diff.py /tmp/git.json build/ds-snapshot.json > /tmp/diff.md
+
+      - name: Commit and open the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MSG: ${{ steps.take.outputs.message }}
+          VERSION: ${{ steps.take.outputs.version }}
+          WHO: ${{ steps.take.outputs.user }}
+          ONLY: ${{ steps.take.outputs.collections }}
+        run: |
+          git config user.name "Send to code"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add build
+          git commit -q -m "Send to code: $MSG (Figma version $VERSION)"
+          git push -q origin "HEAD:${GITHUB_REF_NAME}"
+          {
+            echo "Sent from Figma by $WHO with the Send to code button. Figma version $VERSION."
+            [ -n "$ONLY" ] && echo "Collections taken: $ONLY. Everything else stays as it is in Git."
+            echo; echo "**Token changes**"; cat /tmp/diff.md
+            echo; echo "The checks run on this pull request. Red means it cannot be merged or published."
+            echo; head -1 /tmp/gate.txt; tail -1 /tmp/breaking.txt
+          } > /tmp/body.md
+          gh pr create --base main --head "$GITHUB_REF_NAME" --title "Send to code: $MSG" --body-file /tmp/body.md
+          # A push made with the workflow token does not start other workflows, so the checks are started here.
+          gh workflow run checks.yml --ref "$GITHUB_REF_NAME"

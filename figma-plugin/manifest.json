@@ -1,0 +1,13 @@
+{
+  "name": "Send to code",
+  "id": "ascendum-send-to-code",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["https://api.github.com"],
+    "reasoning": "Sends the design system snapshot to the GitHub repository, where the checks run."
+  }
+}

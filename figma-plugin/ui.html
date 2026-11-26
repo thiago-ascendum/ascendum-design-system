@@ -1,0 +1,75 @@
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 16px; font: 12px/1.45 Inter, system-ui, sans-serif; color: var(--figma-color-text); background: var(--figma-color-bg); }
+  h1 { font-size: 14px; margin: 0 0 4px; }
+  p { margin: 0 0 12px; color: var(--figma-color-text-secondary); }
+  label { display: block; font-weight: 600; margin: 12px 0 6px; }
+  textarea, input[type=password] { width: 100%; padding: 8px; border: 1px solid var(--figma-color-border); border-radius: 0; background: var(--figma-color-bg); color: var(--figma-color-text); font: inherit; }
+  textarea { height: 64px; resize: none; }
+  .cols { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+  .cols label { display: flex; align-items: center; gap: 6px; margin: 0; font-weight: 400; }
+  button { width: 100%; margin-top: 16px; padding: 10px; border: 0; border-radius: 0; font: inherit; font-weight: 600; cursor: pointer;
+    background: var(--figma-color-bg-brand); color: var(--figma-color-text-onbrand); }
+  button:disabled { opacity: .4; cursor: default; }
+  button.quiet { background: none; color: var(--figma-color-text-secondary); padding: 6px; margin-top: 8px; font-weight: 400; text-decoration: underline; }
+  #status { margin-top: 14px; min-height: 36px; }
+  #status.error { color: var(--figma-color-text-danger); }
+  a { color: var(--figma-color-text-brand); }
+  [hidden] { display: none !important; }
+</style>
+
+<section id="send" hidden>
+  <h1>Send to code</h1>
+  <p>Sends the variables of this file to the code repository. The checks run there, and a person approves before anything is published.</p>
+  <label for="msg">What changed?</label>
+  <textarea id="msg" placeholder="Button padding from 28 to 32"></textarea>
+  <label>Collections to send</label>
+  <div class="cols" id="cols"></div>
+  <button id="go" disabled>Send to code</button>
+  <div id="status"></div>
+  <button class="quiet" id="changeToken">Change GitHub token</button>
+</section>
+
+<section id="token" hidden>
+  <h1>Connect to GitHub</h1>
+  <p>Once per person. Create a fine-grained token for the ascendum-design-system repository with Contents: read and write. It stays on this computer.</p>
+  <label for="tok">GitHub token</label>
+  <input id="tok" type="password" autocomplete="off" />
+  <button id="saveToken">Save</button>
+</section>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  const post = (m) => parent.postMessage({ pluginMessage: m }, "*");
+  const show = (id) => { $("send").hidden = id !== "send"; $("token").hidden = id !== "token"; };
+  const ready = () => { $("go").disabled = !$("msg").value.trim() || !document.querySelectorAll("#cols input:checked").length; };
+  const status = (html, error) => { if (error) $("status").textContent = html; else $("status").innerHTML = html; $("status").className = error ? "error" : ""; };
+
+  onmessage = (e) => {
+    const m = e.data.pluginMessage;
+    if (m.type === "init") {
+      $("cols").replaceChildren(...m.collections.map((c) => {
+        const l = document.createElement("label"), i = document.createElement("input");
+        i.type = "checkbox"; i.value = c; i.checked = true; l.append(i, c); return l;
+      }));
+      $("cols").onchange = ready;
+      show(m.hasToken ? "send" : "token");
+    }
+    if (m.type === "tokenSaved") { $("tok").value = ""; show("send"); }
+    if (m.type === "step") status(m.text + "…");
+    if (m.type === "error") { status(m.text, true); ready(); }
+    if (m.type === "done") {
+      status(`Sent. Figma version ${m.version}.<br>GitHub is preparing the pull request now. <a href="${m.actions}" target="_blank">Follow it</a> or see <a href="${m.pulls}" target="_blank">pull requests</a>.`);
+      $("msg").value = ""; ready();
+    }
+  };
+  $("msg").oninput = ready;
+  $("go").onclick = () => {
+    const all = [...document.querySelectorAll("#cols input")];
+    const chosen = all.filter((x) => x.checked).map((x) => x.value);
+    $("go").disabled = true;
+    post({ type: "send", message: $("msg").value.trim(), collections: chosen.length === all.length ? [] : chosen });
+  };
+  $("saveToken").onclick = () => { if ($("tok").value.trim()) post({ type: "saveToken", token: $("tok").value }); };
+  $("changeToken").onclick = () => show("token");
+</script>
