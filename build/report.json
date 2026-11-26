@@ -4,27 +4,27 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T15:26:17.239Z",
-  "nodes": 16037,
+  "generatedAt": "2026-11-26T15:31:21.097Z",
+  "nodes": 16074,
   "pages": 77,
   "gate": "OPEN",
   "summary": {
    "block-pass": 5,
-   "warn-pass": 9,
-   "warn-fail": 2,
+   "warn-pass": 10,
+   "warn-fail": 1,
    "decision": 4
   },
   "totals": {
-   "tokens": 256,
+   "tokens": 253,
    "collections": 4,
    "componentSets": 39,
    "variants": 210,
    "icons": 211,
    "textStyles": 16,
-   "textLayers": 6135,
-   "paints": 10248,
+   "textLayers": 6150,
+   "paints": 10271,
    "fonts": {
-    "Barlow": 6135
+    "Barlow": 6150
    }
   }
  },
@@ -35,7 +35,7 @@
     "Desktop",
     "Mobile"
    ],
-   "tokens": 44,
+   "tokens": 43,
    "published": true
   },
   {
@@ -61,7 +61,7 @@
     "Desktop",
     "Mobile"
    ],
-   "tokens": 119,
+   "tokens": 117,
    "published": true
   }
  ],
@@ -151,7 +151,7 @@
    "level": "warn",
    "title": "Every colour is bound to a token or a style",
    "count": 0,
-   "summary": "0 of 10248 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
+   "summary": "0 of 10271 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
    "evidence": [
     "split: ",
     "where: ",
@@ -169,13 +169,13 @@
    "id": "unused-token",
    "level": "warn",
    "title": "Every token is used by a component",
-   "count": 22,
-   "summary": "Of 256 tokens, 3 are bound by nothing at all, and 19 more are used only by their own swatch on a documentation page, never by a component.",
+   "count": 11,
+   "summary": "Of 253 tokens, 0 are bound by nothing at all, and 11 more are used only by their own swatch on a documentation page, never by a component.",
    "evidence": [
-    "bound by nothing, by group: component (2), size (1)",
-    "names: component/combobox/max-width, component/dropzone/icon, size/container-half",
-    "documentation-only, by group: size (10), accent (4), space (2), brand (1), text (1), component (1)",
-    "names: accent/blue, accent/purple, accent/red, accent/stone, brand/grey, component/tabs/gap, size/col-1, size/col-2, size/col-3, size/col-4, size/col-5, size/col-6, size/container, size/full-width, size/icon-body, size/icon-md, space/lg, space/none, text/link"
+    "bound by nothing, by group: ",
+    "names: ",
+    "documentation-only, by group: accent (4), space (2), size (2), brand (1), text (1), component (1)",
+    "names: accent/blue, accent/purple, accent/red, accent/stone, brand/grey, component/tabs/gap, size/icon-body, size/icon-md, space/lg, space/none, text/link"
    ],
    "gary": [
     6,
@@ -217,18 +217,18 @@
    "id": "text-without-style",
    "level": "warn",
    "title": "Every text layer uses a text style",
-   "count": 2,
-   "summary": "2 of 6135 text layers have no text style, in 1 different sizes.",
+   "count": 0,
+   "summary": "0 of 6150 text layers have no text style, in 0 different sizes.",
    "evidence": [
-    "where: Jira Annotation (1), Annotation (1)",
-    "sizes (px): 12 (2)"
+    "where: ",
+    "sizes (px): "
    ],
    "gary": [
     9
    ],
    "fix": "Apply the nearest style; a size with no style is a missing role or drift.",
    "kind": "A",
-   "pass": false
+   "pass": true
   },
   {
    "id": "duplicate-text-style",
@@ -281,7 +281,7 @@
    "level": "warn",
    "title": "Every token names its code equivalent",
    "count": 0,
-   "summary": "The file says 'every variable carries a code syntax entry'. 0 of 256 do not.",
+   "summary": "The file says 'every variable carries a code syntax entry'. 0 of 253 do not.",
    "evidence": [
     ""
    ],
@@ -949,20 +949,20 @@
     "Desktop": 0,
     "Mobile": 0
    },
-   "direct": 585,
+   "direct": 599,
    "aliases": [],
-   "layers": 585,
+   "layers": 599,
    "productLayers": 0,
    "components": [
     [
      "(documentation, not a component)",
-     585
+     599
     ]
    ],
    "pages": [
     [
      "02 · Changelog",
-     194
+     208
     ],
     [
      "Spacing, Grid & Layout",
@@ -1003,14 +1003,14 @@
     "Desktop": 8,
     "Mobile": 8
    },
-   "direct": 468,
+   "direct": 474,
    "aliases": [],
-   "layers": 468,
+   "layers": 474,
    "productLayers": 43,
    "components": [
     [
      "(documentation, not a component)",
-     425
+     431
     ],
     [
      "Button",
@@ -1064,7 +1064,7 @@
     ],
     [
      "02 · Changelog",
-     66
+     72
     ],
     [
      "Spacing, Grid & Layout",
@@ -1097,14 +1097,14 @@
     "Desktop": 16,
     "Mobile": 12
    },
-   "direct": 668,
+   "direct": 670,
    "aliases": [],
-   "layers": 668,
+   "layers": 670,
    "productLayers": 39,
    "components": [
     [
      "(documentation, not a component)",
-     629
+     631
     ],
     [
      "Section / Columns",
@@ -1146,7 +1146,7 @@
     ],
     [
      "02 · Changelog",
-     48
+     50
     ],
     [
      "Photography",
@@ -1179,14 +1179,14 @@
     "Desktop": 32,
     "Mobile": 24
    },
-   "direct": 318,
+   "direct": 324,
    "aliases": [],
-   "layers": 318,
+   "layers": 324,
    "productLayers": 20,
    "components": [
     [
      "(documentation, not a component)",
-     298
+     304
     ],
     [
      "Section / Full Width",
@@ -1212,7 +1212,7 @@
    "pages": [
     [
      "02 · Changelog",
-     78
+     84
     ],
     [
      "Spacing, Grid & Layout",
@@ -1486,37 +1486,28 @@
     "Mobile": 264
    },
    "direct": 8,
-   "aliases": [],
-   "layers": 8,
+   "aliases": [
+    "size/col-1",
+    "size/col-2",
+    "size/col-3",
+    "size/col-4",
+    "size/col-5",
+    "size/col-6"
+   ],
+   "layers": 32,
    "productLayers": 0,
    "components": [
     [
      "(documentation, not a component)",
-     8
+     32
     ]
    ],
    "pages": [
     [
      "Spacing, Grid & Layout",
-     8
+     32
     ]
    ]
-  },
-  "size/container-half · Dimension": {
-   "name": "size/container-half",
-   "collection": "Dimension",
-   "type": "FLOAT",
-   "code": "--container-half-width",
-   "values": {
-    "Desktop": 587,
-    "Mobile": 132
-   },
-   "direct": 0,
-   "aliases": [],
-   "layers": 0,
-   "productLayers": 0,
-   "components": [],
-   "pages": []
   },
   "size/full-width · Dimension": {
    "name": "size/full-width",
@@ -1641,7 +1632,7 @@
    "code": "--columns-one",
    "values": {
     "Desktop": 982,
-    "Mobile": 982
+    "Mobile": "size/container"
    },
    "direct": 1,
    "aliases": [],
@@ -1667,7 +1658,7 @@
    "code": "--columns-two",
    "values": {
     "Desktop": 571,
-    "Mobile": 571
+    "Mobile": "size/container"
    },
    "direct": 2,
    "aliases": [],
@@ -1693,7 +1684,7 @@
    "code": "--columns-three",
    "values": {
     "Desktop": 370,
-    "Mobile": 370
+    "Mobile": "size/container"
    },
    "direct": 6,
    "aliases": [],
@@ -1718,8 +1709,8 @@
    "type": "FLOAT",
    "code": "--columns-four",
    "values": {
-    "Desktop": 268,
-    "Mobile": 268
+    "Desktop": 269.5,
+    "Mobile": "size/container"
    },
    "direct": 4,
    "aliases": [],
@@ -1744,8 +1735,8 @@
    "type": "FLOAT",
    "code": "--columns-five",
    "values": {
-    "Desktop": 206,
-    "Mobile": 206
+    "Desktop": 209.2,
+    "Mobile": "size/container"
    },
    "direct": 5,
    "aliases": [],
@@ -1771,7 +1762,7 @@
    "code": "--columns-six",
    "values": {
     "Desktop": 169,
-    "Mobile": 169
+    "Mobile": "size/container"
    },
    "direct": 6,
    "aliases": [],
@@ -2193,14 +2184,14 @@
     "Desktop": 999,
     "Mobile": 999
    },
-   "direct": 703,
+   "direct": 705,
    "aliases": [],
-   "layers": 703,
+   "layers": 705,
    "productLayers": 95,
    "components": [
     [
      "(documentation, not a component)",
-     608
+     610
     ],
     [
      "Overview Card",
@@ -2254,7 +2245,7 @@
    "pages": [
     [
      "02 · Changelog",
-     60
+     62
     ],
     [
      "Progress Bar",
@@ -2295,14 +2286,14 @@
     "Desktop": 1,
     "Mobile": 1
    },
-   "direct": 285,
+   "direct": 291,
    "aliases": [],
-   "layers": 285,
+   "layers": 291,
    "productLayers": 30,
    "components": [
     [
      "(documentation, not a component)",
-     255
+     261
     ],
     [
      "Table",
@@ -2356,7 +2347,7 @@
    "pages": [
     [
      "02 · Changelog",
-     76
+     82
     ],
     [
      "Colour",
@@ -2921,14 +2912,14 @@
     "Desktop": 16,
     "Mobile": 16
    },
-   "direct": 894,
+   "direct": 906,
    "aliases": [],
-   "layers": 894,
+   "layers": 906,
    "productLayers": 178,
    "components": [
     [
      "(documentation, not a component)",
-     716
+     728
     ],
     [
      "Overview Card",
@@ -3002,7 +2993,7 @@
    "pages": [
     [
      "02 · Changelog",
-     151
+     163
     ],
     [
      "Overview",
@@ -3211,14 +3202,14 @@
     "Desktop": 15,
     "Mobile": 15
    },
-   "direct": 698,
+   "direct": 700,
    "aliases": [],
-   "layers": 698,
+   "layers": 700,
    "productLayers": 69,
    "components": [
     [
      "(documentation, not a component)",
-     629
+     631
     ],
     [
      "Overview Card",
@@ -3272,7 +3263,7 @@
     ],
     [
      "02 · Changelog",
-     42
+     44
     ],
     [
      "Spacing, Grid & Layout",
@@ -3305,18 +3296,22 @@
     "Desktop": 13,
     "Mobile": 13
    },
-   "direct": 1976,
+   "direct": 1978,
    "aliases": [],
-   "layers": 1976,
-   "productLayers": 10,
+   "layers": 1978,
+   "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     1966
+     1967
     ],
     [
      "Form Field",
      10
+    ],
+    [
+     "Jira Annotation",
+     1
     ]
    ],
    "pages": [
@@ -3384,12 +3379,12 @@
     "text/link",
     "text/on-accent"
    ],
-   "layers": 4800,
+   "layers": 4809,
    "productLayers": 658,
    "components": [
     [
      "(documentation, not a component)",
-     4142
+     4151
     ],
     [
      "Overview Card",
@@ -3428,11 +3423,11 @@
      22
     ],
     [
-     "Alert",
+     "Select",
      18
     ],
     [
-     "Select",
+     "Alert",
      18
     ],
     [
@@ -3448,20 +3443,16 @@
      16
     ],
     [
-     "Search Bar",
+     "Section / Full Width",
      14
     ],
     [
-     "Section / Full Width",
+     "Search Bar",
      14
     ],
     [
      "Toast",
      13
-    ],
-    [
-     "Combobox",
-     12
     ],
     [
      "Section / Header",
@@ -3476,7 +3467,7 @@
      12
     ],
     [
-     "Avatar",
+     "Combobox",
      12
     ],
     [
@@ -3484,12 +3475,8 @@
      12
     ],
     [
-     "File Uploader",
-     10
-    ],
-    [
-     "Side Navigation",
-     10
+     "Avatar",
+     12
     ],
     [
      "Key Stakeholders Card",
@@ -3500,27 +3487,35 @@
      10
     ],
     [
-     "Tab",
-     8
+     "File Uploader",
+     10
+    ],
+    [
+     "Side Navigation",
+     10
     ],
     [
      "Section / Showcase",
      8
     ],
     [
-     "Side Nav Item",
-     7
+     "Tab",
+     8
     ],
     [
      "Slider",
      7
     ],
     [
-     "Accordion Item",
+     "Side Nav Item",
+     7
+    ],
+    [
+     "Empty State",
      6
     ],
     [
-     "Drawer",
+     "Modal",
      6
     ],
     [
@@ -3532,19 +3527,19 @@
      6
     ],
     [
-     "Empty State",
+     "Accordion Item",
      6
     ],
     [
-     "Modal",
+     "Drawer",
      6
-    ],
-    [
-     "Menu Item",
-     4
     ],
     [
      "Inline Edit",
+     4
+    ],
+    [
+     "Menu Item",
      4
     ],
     [
@@ -3579,7 +3574,7 @@
     ],
     [
      "02 · Changelog",
-     171
+     180
     ],
     [
      "Checkbox",
@@ -3628,12 +3623,12 @@
     "text/inverted",
     "text/link"
    ],
-   "layers": 4621,
+   "layers": 4630,
    "productLayers": 612,
    "components": [
     [
      "(documentation, not a component)",
-     4009
+     4018
     ],
     [
      "Button",
@@ -3672,11 +3667,11 @@
      19
     ],
     [
-     "Alert",
+     "Select",
      18
     ],
     [
-     "Select",
+     "Alert",
      18
     ],
     [
@@ -3692,20 +3687,16 @@
      16
     ],
     [
-     "Search Bar",
+     "Section / Full Width",
      14
     ],
     [
-     "Section / Full Width",
+     "Search Bar",
      14
     ],
     [
      "Toast",
      13
-    ],
-    [
-     "Combobox",
-     12
     ],
     [
      "Section / Header",
@@ -3720,8 +3711,16 @@
      12
     ],
     [
+     "Combobox",
+     12
+    ],
+    [
      "Table Row",
      12
+    ],
+    [
+     "Section / Let's Connect",
+     10
     ],
     [
      "File Uploader",
@@ -3732,15 +3731,7 @@
      10
     ],
     [
-     "Section / Let's Connect",
-     10
-    ],
-    [
      "Key Stakeholders Card",
-     8
-    ],
-    [
-     "Tab",
      8
     ],
     [
@@ -3748,19 +3739,23 @@
      8
     ],
     [
-     "Side Nav Item",
-     7
+     "Tab",
+     8
     ],
     [
      "Slider",
      7
     ],
     [
-     "Accordion Item",
+     "Side Nav Item",
+     7
+    ],
+    [
+     "Empty State",
      6
     ],
     [
-     "Drawer",
+     "Modal",
      6
     ],
     [
@@ -3772,19 +3767,19 @@
      6
     ],
     [
-     "Empty State",
+     "Accordion Item",
      6
     ],
     [
-     "Modal",
+     "Drawer",
      6
-    ],
-    [
-     "Menu Item",
-     4
     ],
     [
      "Inline Edit",
+     4
+    ],
+    [
+     "Menu Item",
      4
     ],
     [
@@ -3814,12 +3809,12 @@
      168
     ],
     [
-     "Checkbox",
-     160
+     "02 · Changelog",
+     167
     ],
     [
-     "02 · Changelog",
-     158
+     "Checkbox",
+     160
     ],
     [
      "Overview",
@@ -4300,12 +4295,12 @@
    "aliases": [
     "bg/subtle"
    ],
-   "layers": 671,
+   "layers": 673,
    "productLayers": 21,
    "components": [
     [
      "(documentation, not a component)",
-     650
+     652
     ],
     [
      "Section / Full Width",
@@ -4347,7 +4342,7 @@
     ],
     [
      "02 · Changelog",
-     22
+     24
     ],
     [
      "Section / Full Width",
@@ -4469,12 +4464,12 @@
     "button/fill-solid-hover",
     "button/fill-solid-hover-inverted"
    ],
-   "layers": 440,
+   "layers": 446,
    "productLayers": 56,
    "components": [
     [
      "(documentation, not a component)",
-     384
+     390
     ],
     [
      "Progress Bar",
@@ -4493,11 +4488,11 @@
      5
     ],
     [
-     "Table Row",
+     "Skeleton",
      4
     ],
     [
-     "Skeleton",
+     "Table Row",
      4
     ],
     [
@@ -4507,6 +4502,10 @@
     [
      "Accordion Item",
      3
+    ],
+    [
+     "Button",
+     2
     ],
     [
      "Divider",
@@ -4529,10 +4528,6 @@
      2
     ],
     [
-     "Button",
-     2
-    ],
-    [
      "Alert",
      1
     ],
@@ -4552,7 +4547,7 @@
    "pages": [
     [
      "02 · Changelog",
-     78
+     84
     ],
     [
      "Colour",
@@ -4685,12 +4680,12 @@
     "text/inverted-muted",
     "text/muted"
    ],
-   "layers": 2293,
+   "layers": 2299,
    "productLayers": 128,
    "components": [
     [
      "(documentation, not a component)",
-     2165
+     2171
     ],
     [
      "Section / Columns",
@@ -4717,11 +4712,11 @@
      6
     ],
     [
-     "Alert",
+     "Breadcrumb Item",
      5
     ],
     [
-     "Breadcrumb Item",
+     "Alert",
      5
     ],
     [
@@ -4735,6 +4730,10 @@
     [
      "Table",
      5
+    ],
+    [
+     "Search Bar",
+     4
     ],
     [
      "Menu Item",
@@ -4758,10 +4757,6 @@
     ],
     [
      "Table Row",
-     4
-    ],
-    [
-     "Search Bar",
      4
     ],
     [
@@ -4800,7 +4795,7 @@
     ],
     [
      "02 · Changelog",
-     91
+     97
     ],
     [
      "Group Cards",
@@ -4988,32 +4983,28 @@
      294
     ],
     [
-     "Overview Card",
-     6
-    ],
-    [
      "Section / Full Width",
      6
     ],
     [
-     "Section / Quote",
-     4
+     "Overview Card",
+     6
     ],
     [
      "Section / Showcase",
      4
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Section / Quote",
+     4
     ],
     [
      "Search Bar",
      2
     ],
     [
-     "Team Card",
-     1
+     "Key Stakeholders Card",
+     2
     ],
     [
      "Code Block",
@@ -5033,6 +5024,10 @@
     ],
     [
      "Jira Annotation",
+     1
+    ],
+    [
+     "Team Card",
      1
     ]
    ],
@@ -5084,12 +5079,12 @@
     "bg/skeleton",
     "border/default"
    ],
-   "layers": 433,
+   "layers": 439,
    "productLayers": 54,
    "components": [
     [
      "(documentation, not a component)",
-     379
+     385
     ],
     [
      "Progress Bar",
@@ -5108,11 +5103,11 @@
      5
     ],
     [
-     "Table Row",
+     "Skeleton",
      4
     ],
     [
-     "Skeleton",
+     "Table Row",
      4
     ],
     [
@@ -5163,7 +5158,7 @@
    "pages": [
     [
      "02 · Changelog",
-     77
+     83
     ],
     [
      "Colour",
@@ -5645,12 +5640,12 @@
    "aliases": [
     "feedback/info"
    ],
-   "layers": 47,
+   "layers": 48,
    "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     36
+     37
     ],
     [
      "Jira Annotation",
@@ -5680,7 +5675,7 @@
     ],
     [
      "02 · Changelog",
-     3
+     4
     ],
     [
      "Tone of Voice",
@@ -5712,12 +5707,12 @@
    "aliases": [
     "feedback/info-bg"
    ],
-   "layers": 34,
+   "layers": 35,
    "productLayers": 5,
    "components": [
     [
      "(documentation, not a component)",
-     29
+     30
     ],
     [
      "Badge",
@@ -5747,7 +5742,7 @@
     ],
     [
      "02 · Changelog",
-     3
+     4
     ],
     [
      "Tone of Voice",
@@ -5779,12 +5774,12 @@
    "aliases": [
     "feedback/warning"
    ],
-   "layers": 51,
+   "layers": 50,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     45
+     44
     ],
     [
      "Badge",
@@ -5802,7 +5797,7 @@
    "pages": [
     [
      "02 · Changelog",
-     14
+     13
     ],
     [
      "Badge",
@@ -5846,12 +5841,12 @@
    "aliases": [
     "feedback/warning-bg"
    ],
-   "layers": 43,
+   "layers": 42,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     40
+     39
     ],
     [
      "Badge",
@@ -5865,7 +5860,7 @@
    "pages": [
     [
      "02 · Changelog",
-     15
+     14
     ],
     [
      "Badge",
@@ -6368,14 +6363,14 @@
     "Light": "neutral/50",
     "Dark": "neutral/925"
    },
-   "direct": 670,
+   "direct": 672,
    "aliases": [],
-   "layers": 670,
+   "layers": 672,
    "productLayers": 21,
    "components": [
     [
      "(documentation, not a component)",
-     649
+     651
     ],
     [
      "Section / Full Width",
@@ -6417,7 +6412,7 @@
     ],
     [
      "02 · Changelog",
-     22
+     24
     ],
     [
      "Section / Full Width",
@@ -6584,14 +6579,14 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 2874,
+   "direct": 2883,
    "aliases": [],
-   "layers": 2874,
+   "layers": 2883,
    "productLayers": 192,
    "components": [
     [
      "(documentation, not a component)",
-     2682
+     2691
     ],
     [
      "Jira Annotation",
@@ -6741,7 +6736,7 @@
    "pages": [
     [
      "02 · Changelog",
-     141
+     150
     ],
     [
      "Group Cards",
@@ -6782,14 +6777,14 @@
     "Light": "neutral/750",
     "Dark": "neutral/500"
    },
-   "direct": 2150,
+   "direct": 2156,
    "aliases": [],
-   "layers": 2150,
+   "layers": 2156,
    "productLayers": 95,
    "components": [
     [
      "(documentation, not a component)",
-     2055
+     2061
     ],
     [
      "Overview Card",
@@ -6887,7 +6882,7 @@
     ],
     [
      "02 · Changelog",
-     91
+     97
     ],
     [
      "Group Cards",
@@ -7158,14 +7153,14 @@
     "Light": "neutral/200",
     "Dark": "neutral/800"
    },
-   "direct": 410,
+   "direct": 416,
    "aliases": [],
-   "layers": 410,
+   "layers": 416,
    "productLayers": 50,
    "components": [
     [
      "(documentation, not a component)",
-     360
+     366
     ],
     [
      "Progress Bar",
@@ -7235,7 +7230,7 @@
    "pages": [
     [
      "02 · Changelog",
-     77
+     83
     ],
     [
      "Colour",
@@ -8128,14 +8123,14 @@
     "Light": "status/info",
     "Dark": "status/info-on-dark"
    },
-   "direct": 47,
+   "direct": 48,
    "aliases": [],
-   "layers": 47,
+   "layers": 48,
    "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     36
+     37
     ],
     [
      "Jira Annotation",
@@ -8165,7 +8160,7 @@
     ],
     [
      "02 · Changelog",
-     3
+     4
     ],
     [
      "Tone of Voice",
@@ -8194,14 +8189,14 @@
     "Light": "status/info-bg",
     "Dark": "status/info-bg-dark"
    },
-   "direct": 34,
+   "direct": 35,
    "aliases": [],
-   "layers": 34,
+   "layers": 35,
    "productLayers": 5,
    "components": [
     [
      "(documentation, not a component)",
-     29
+     30
     ],
     [
      "Badge",
@@ -8231,7 +8226,7 @@
     ],
     [
      "02 · Changelog",
-     3
+     4
     ],
     [
      "Tone of Voice",
@@ -8260,14 +8255,14 @@
     "Light": "status/warning",
     "Dark": "status/warning-on-dark"
    },
-   "direct": 51,
+   "direct": 50,
    "aliases": [],
-   "layers": 51,
+   "layers": 50,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     45
+     44
     ],
     [
      "Badge",
@@ -8285,7 +8280,7 @@
    "pages": [
     [
      "02 · Changelog",
-     14
+     13
     ],
     [
      "Badge",
@@ -8326,14 +8321,14 @@
     "Light": "status/warning-bg",
     "Dark": "status/warning-bg-dark"
    },
-   "direct": 43,
+   "direct": 42,
    "aliases": [],
-   "layers": 43,
+   "layers": 42,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     40
+     39
     ],
     [
      "Badge",
@@ -8347,7 +8342,7 @@
    "pages": [
     [
      "02 · Changelog",
-     15
+     14
     ],
     [
      "Badge",
@@ -8617,12 +8612,12 @@
    "aliases": [
     "bg/subtle"
    ],
-   "layers": 671,
+   "layers": 673,
    "productLayers": 21,
    "components": [
     [
      "(documentation, not a component)",
-     650
+     652
     ],
     [
      "Section / Full Width",
@@ -8664,7 +8659,7 @@
     ],
     [
      "02 · Changelog",
-     22
+     24
     ],
     [
      "Section / Full Width",
@@ -8767,12 +8762,12 @@
    "aliases": [
     "feedback/info-bg"
    ],
-   "layers": 34,
+   "layers": 35,
    "productLayers": 5,
    "components": [
     [
      "(documentation, not a component)",
-     29
+     30
     ],
     [
      "Badge",
@@ -8802,7 +8797,7 @@
     ],
     [
      "02 · Changelog",
-     3
+     4
     ],
     [
      "Tone of Voice",
@@ -8834,12 +8829,12 @@
    "aliases": [
     "feedback/warning-bg"
    ],
-   "layers": 43,
+   "layers": 42,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     40
+     39
     ],
     [
      "Badge",
@@ -8853,7 +8848,7 @@
    "pages": [
     [
      "02 · Changelog",
-     15
+     14
     ],
     [
      "Badge",
@@ -9945,14 +9940,14 @@
     "Desktop": 6,
     "Mobile": 6
    },
-   "direct": 389,
+   "direct": 391,
    "aliases": [],
-   "layers": 389,
+   "layers": 391,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     377
+     379
     ],
     [
      "Badge",
@@ -9966,7 +9961,7 @@
    "pages": [
     [
      "02 · Changelog",
-     39
+     41
     ],
     [
      "Badge",
@@ -10007,14 +10002,14 @@
     "Desktop": 14,
     "Mobile": 14
    },
-   "direct": 389,
+   "direct": 391,
    "aliases": [],
-   "layers": 389,
+   "layers": 391,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     377
+     379
     ],
     [
      "Badge",
@@ -10028,7 +10023,7 @@
    "pages": [
     [
      "02 · Changelog",
-     39
+     41
     ],
     [
      "Badge",
@@ -10069,14 +10064,14 @@
     "Desktop": 6,
     "Mobile": 6
    },
-   "direct": 389,
+   "direct": 391,
    "aliases": [],
-   "layers": 389,
+   "layers": 391,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     377
+     379
     ],
     [
      "Badge",
@@ -10090,7 +10085,7 @@
    "pages": [
     [
      "02 · Changelog",
-     39
+     41
     ],
     [
      "Badge",
@@ -12374,22 +12369,6 @@
     ]
    ]
   },
-  "component/combobox/max-width · Component": {
-   "name": "component/combobox/max-width",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--combobox-max-width",
-   "values": {
-    "Desktop": 440,
-    "Mobile": 440
-   },
-   "direct": 0,
-   "aliases": [],
-   "layers": 0,
-   "productLayers": 0,
-   "components": [],
-   "pages": []
-  },
   "component/combobox/token-height · Component": {
    "name": "component/combobox/token-height",
    "collection": "Component",
@@ -12453,22 +12432,6 @@
      1
     ]
    ]
-  },
-  "component/dropzone/icon · Component": {
-   "name": "component/dropzone/icon",
-   "collection": "Component",
-   "type": "FLOAT",
-   "code": "--dropzone-icon",
-   "values": {
-    "Desktop": 56,
-    "Mobile": 56
-   },
-   "direct": 0,
-   "aliases": [],
-   "layers": 0,
-   "productLayers": 0,
-   "components": [],
-   "pages": []
   },
   "component/code/head-padding-v · Component": {
    "name": "component/code/head-padding-v",
@@ -12649,14 +12612,14 @@
     "Desktop": 24,
     "Mobile": 22
    },
-   "direct": 128,
+   "direct": 129,
    "aliases": [],
-   "layers": 128,
+   "layers": 129,
    "productLayers": 15,
    "components": [
     [
      "(documentation, not a component)",
-     113
+     114
     ],
     [
      "Avatar",
@@ -12694,7 +12657,7 @@
    "pages": [
     [
      "02 · Changelog",
-     20
+     21
     ],
     [
      "01 · Getting Started",
@@ -14294,12 +14257,12 @@
     "text/muted",
     "text/placeholder"
    ],
-   "layers": 2368,
+   "layers": 2374,
    "productLayers": 143,
    "components": [
     [
      "(documentation, not a component)",
-     2225
+     2231
     ],
     [
      "Section / Columns",
@@ -14421,7 +14384,7 @@
     ],
     [
      "02 · Changelog",
-     91
+     97
     ],
     [
      "Form Field",
@@ -14548,12 +14511,12 @@
    "aliases": [
     "feedback/warning"
    ],
-   "layers": 51,
+   "layers": 50,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     45
+     44
     ],
     [
      "Badge",
@@ -14571,7 +14534,7 @@
    "pages": [
     [
      "02 · Changelog",
-     14
+     13
     ],
     [
      "Badge",
@@ -14615,12 +14578,12 @@
    "aliases": [
     "feedback/info"
    ],
-   "layers": 47,
+   "layers": 48,
    "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     36
+     37
     ],
     [
      "Jira Annotation",
@@ -14650,7 +14613,7 @@
     ],
     [
      "02 · Changelog",
-     3
+     4
     ],
     [
      "Tone of Voice",
@@ -14933,11 +14896,11 @@
      5
     ],
     [
-     "Colour",
+     "03 · Contribution & Governance",
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "Colour",
      3
     ],
     [

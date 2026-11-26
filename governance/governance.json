@@ -250,7 +250,11 @@
     }
   },
   "referenceOnly": [
-    "gradient-stop/"
+    "gradient-stop/",
+    "size/col-",
+    "size/container",
+    "size/full-width",
+    "gap/columns"
   ],
   "artworkPages": [
     "logo",

@@ -67,14 +67,13 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--button-radius` | radius/none | 0 |  | SIGNATURE, the button radius |
 | `--radius-pill` | radius/pill | 999 |  | Pills and badges. |
 | `--radius-surface` | radius/surface | 8 |  | Overlay and notification corner, menus, popovers, alerts, toasts |
-| `--columns-one` | size/col-1 | 982 |  | Column width in a one-column layout. |
-| `--columns-two` | size/col-2 | 571 |  | Width of one column in a two-column layout. |
-| `--columns-three` | size/col-3 | 370 |  | Width of one column in a three-column layout. |
-| `--columns-four` | size/col-4 | 268 |  | Width of one column in a four-column layout. |
-| `--columns-five` | size/col-5 | 206 |  | Width of one column in a five-column layout. |
-| `--columns-six` | size/col-6 | 169 |  | Width of one column in a six-column layout. |
+| `--columns-one` | size/col-1 | 982 | 264 | Reading column in a one-column layout: narrower than the container on purpose |
+| `--columns-two` | size/col-2 | 571 | 264 | Width of one column in a two-column layout: six of the twelve grid columns |
+| `--columns-three` | size/col-3 | 370 | 264 | Width of one column in a three-column layout: four of the twelve grid columns |
+| `--columns-four` | size/col-4 | 269.5 | 264 | Width of one column in a four-column layout: three of the twelve grid columns |
+| `--columns-five` | size/col-5 | 209.2 | 264 | Width of one column in a five-column layout |
+| `--columns-six` | size/col-6 | 169 | 264 | Width of one column in a six-column layout: two of the twelve grid columns |
 | `--container-width` | size/container | 1174 | 264 | Width of the page container |
-| `--container-half-width` | size/container-half | 587 | 132 | Half of the container width. |
 | `--size-control` | size/control | 20 |  | Checkbox box and radio ring |
 | `--full-width-width` | size/full-width | 1366 | 360 | Full width of the page |
 | `--body-icon` | size/icon-body | 64 | 48 | Large in-body illustrative icon. |

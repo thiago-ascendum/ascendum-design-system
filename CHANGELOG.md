@@ -53,7 +53,7 @@ Clean-up after the design review of 5 November.
 - Getting Started, Changelog and Contribution & Governance are guided pages built from the components of the library.
 - Documentation cards: every card and every dark panel was looked at. Fixed: the logo in the inverted Key Stakeholders Card, the Side Nav Item rows, the Select samples and two raw labels.
 - Every page canvas in the Figma file is now dark (#1E1E1E), so the page frames read against it.
-- Variables and styles: every one of the 256 variables has a description (73 had none). 22 component variables are scoped to spacing instead of showing in every picker. The two text styles and five gradient styles without a description have one.
+- Variables and styles: every variable has a description (73 had none). 22 component variables are scoped to spacing instead of showing in every picker. The two text styles and five gradient styles without a description have one.
 
 ### Added
 
@@ -72,6 +72,17 @@ Clean-up after the design review of 5 November.
 - Tone of Voice: each principle has a before and after shown in a real component.
 - Colour: a contrast table of every text role on its surfaces, light and dark, computed from the variable values.
 - Code: 14 components built from the tokens, with a documentation site published on every change.
+
+### Proposed, to confirm
+
+Six decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.
+
+- Unused tokens: removed three that nothing bound: `component/combobox/max-width`, `component/dropzone/icon` and `size/container-half`. The layout sizes (`size/col-*`, `size/container`, `size/full-width`) stay as reference for page layouts.
+- Link colour: `text/link` keeps the colour of the text on purpose. A link is told apart by its underline, never by colour alone.
+- Column widths: `size/col-4` is 269.5 (was 268) and `size/col-5` is 209.2 (was 206), so both add up to the 1174 container. On mobile every `size/col` token is one container wide, so layouts stack on their own.
+- Gradient angles: all five gradients run at the same 44 degrees. Develop Beyond was turned and its stops mirrored, so it looks the same.
+- Small text: the 12px text in Jira Annotation uses UI/Caption (13px). No style existed at 12px.
+- Grid styles: two grid styles bound to the tokens: the 12-column page grid and the one-column mobile grid.
 
 ## 1.0.0 · never published
 

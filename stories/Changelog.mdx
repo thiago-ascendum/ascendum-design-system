@@ -16,7 +16,7 @@ import { Hero, Section, Index, Cards, Chips, Table, List } from './_shared/Doc.j
   ] },
 ]} />
 
-<Index items={['Version 1.1.0', 'Does this break my file?', 'Measured before and after', 'Removed', 'Changed', 'Added', 'Version 1.0.0', 'Requests from review', 'How this log is kept']} />
+<Index items={['Version 1.1.0', 'Does this break my file?', 'Measured before and after', 'Removed', 'Changed', 'Added', 'Proposed, to confirm', 'Version 1.0.0', 'Requests from review', 'How this log is kept']} />
 
 <Section n={1} title="Version 1.1.0" lead="26 November 2026. Clean-up after the design review of 5 November. Less of everything, and what stays is checked.">
   <Chips items={[<Badge tone="warning" label="Proposed" />]} />
@@ -73,7 +73,7 @@ import { Hero, Section, Index, Cards, Chips, Table, List } from './_shared/Doc.j
     'Getting Started, Changelog and Contribution & Governance are now guided pages, built from the components of the library.',
     'Documentation cards: every card and every dark panel was looked at. Fixed: the logo in the inverted Key Stakeholders Card, the Side Nav Item rows, the Select samples and two raw labels.',
     'Every page canvas in the Figma file is now dark (#1E1E1E), so the page frames read against it.',
-    'Variables and styles: every one of the 256 variables has a description (73 had none). 22 component variables are scoped to spacing instead of showing in every picker. The two text styles and five gradient styles without a description have one.',
+    'Variables and styles: every variable has a description (73 had none). 22 component variables are scoped to spacing instead of showing in every picker. The two text styles and five gradient styles without a description have one.',
   ]} />
 </Section>
 
@@ -98,7 +98,18 @@ import { Hero, Section, Index, Cards, Chips, Table, List } from './_shared/Doc.j
   ]} />
 </Section>
 
-<Section n={7} title="Version 1.0.0" lead="No date on record. Initial migration from the Claude Design code package. Nobody is on record as having checked or approved it.">
+<Section n={7} title="Proposed, to confirm" lead="Six decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.">
+  <List items={[
+    <>Unused tokens: removed three that nothing bound: <code>component/combobox/max-width</code>, <code>component/dropzone/icon</code> and <code>size/container-half</code>. The layout sizes (<code>size/col-*</code>, <code>size/container</code>, <code>size/full-width</code>) stay as reference for page layouts.</>,
+    <>Link colour: <code>text/link</code> keeps the colour of the text on purpose. A link is told apart by its underline, never by colour alone.</>,
+    <>Column widths: <code>size/col-4</code> is 269.5 (was 268) and <code>size/col-5</code> is 209.2 (was 206), so both add up to the 1174 container. On mobile every <code>size/col</code> token is one container wide, so layouts stack on their own.</>,
+    'Gradient angles: all five gradients run at the same 44 degrees. Develop Beyond was turned and its stops mirrored, so it looks the same.',
+    'Small text: the 12px text in Jira Annotation uses UI/Caption (13px). No style existed at 12px.',
+    'Grid styles: two grid styles bound to the tokens: the 12-column page grid and the one-column mobile grid.',
+  ]} />
+</Section>
+
+<Section n={8} title="Version 1.0.0" lead="No date on record. Initial migration from the Claude Design code package. Nobody is on record as having checked or approved it.">
   <Chips items={[<Badge tone="neutral" label="Never published" />]} />
   <Table head={['Sign-off', 'Who']} rows={[
     ['Proposed by', 'No name on record'],
@@ -127,10 +138,10 @@ import { Hero, Section, Index, Cards, Chips, Table, List } from './_shared/Doc.j
   ]} />
 </Section>
 
-<Section n={8} title="Requests from review" lead="These were loose notes pinned next to the foundation pages. They live here now, each with its state.">
+<Section n={9} title="Requests from review" lead="These were loose notes pinned next to the foundation pages. They live here now, each with its state.">
   <Table head={['Page', 'Request', 'State', 'Where it stands']} rows={[
     ['Colour', 'Remove department colours.', <Badge tone="success" label="Done" />, 'In 1.1.0.'],
-    ['Colour', 'Angle every gradient the same; rename Talent to Careers and Mortgages to Process Solutions; remove the Products gradient.', <Badge tone="warning" label="Open" />, 'The names and the tokens are done in 1.1.0. The angles are still open.'],
+    ['Colour', 'Angle every gradient the same; rename Talent to Careers and Mortgages to Process Solutions; remove the Products gradient.', <Badge tone="info" label="Answered" />, 'The names and the tokens are done in 1.1.0. All five gradients now run at 44 degrees: a proposal, to confirm.'],
     ['Colour', 'Not sure what the neutral ramp is for.', <Badge tone="info" label="Answered" />, 'Each step on the Colour page now says which role uses it.'],
     ['Typography', 'Develop Beyond only in the Develop Beyond gradient.', <Badge tone="warning" label="Open" />, 'Already so on the page. No check enforces it yet.'],
     ['Spacing', 'Not sure of the application of this section.', <Badge tone="info" label="Answered" />, 'An In use example, desktop and mobile.'],
@@ -139,10 +150,10 @@ import { Hero, Section, Index, Cards, Chips, Table, List } from './_shared/Doc.j
     ['Logo', 'Keep in line with the brand guide website.', <Badge tone="success" label="Done" />, 'Stated at the top of the page: the website wins.'],
     ['Photography', 'Add examples.', <Badge tone="warning" label="Open" />, 'The owner supplies six approved photographs.'],
   ]} />
-  <Chips items={['Two done, two answered, five open.']} />
+  <Chips items={['Two done, three answered, four open.']} />
 </Section>
 
-<Section n={9} title="How this log is kept" lead="An entry with an empty slot is a proposal, not a release.">
+<Section n={10} title="How this log is kept" lead="An entry with an empty slot is a proposal, not a release.">
   <Table head={['Role', 'What it means']} rows={[
     ['Written by', 'Whoever proposes the change, from what actually changed between two versions of the file. Not from memory.'],
     ['Checked by', 'The automated checks first, then one reviewer who is not the author.'],
