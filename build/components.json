@@ -1,5 +1,27 @@
 [
   {
+    "description": "Documentation demo, not a library component (the dot keeps it out of publishing). Click left, middle or right of the track to move the budget. Used in the In use panel of the Slider page.",
+    "name": ".Slider / In use demo",
+    "page": "Slider",
+    "properties": [
+      {
+        "name": "Value",
+        "options": [
+          "25000",
+          "50000",
+          "75000"
+        ],
+        "type": "VARIANT"
+      }
+    ],
+    "variantCount": 3,
+    "variants": [
+      "Value=25000",
+      "Value=50000",
+      "Value=75000"
+    ]
+  },
+  {
     "description": "One row of an accordion. Use it to tuck away secondary detail, such as FAQs, so the page stays short. Stack instances in an auto-layout and set the last row's bottom stroke to zero. Do not hide content people need to compare side by side.",
     "name": "Accordion Item",
     "page": "Accordion Item",

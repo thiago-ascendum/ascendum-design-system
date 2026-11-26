@@ -10,6 +10,7 @@
  },
  "components": {
   "added": [
+   ".Slider / In use demo (3 variants)",
    "Stat Card (1 variants)"
   ],
   "descriptionsChanged": 45,
@@ -426,7 +427,7 @@
     ]
    }
   ],
-  "variantsAfter": 207,
+  "variantsAfter": 210,
   "variantsBefore": 243
  },
  "from": "2026-11-25T22:35:13.816Z",
@@ -453,7 +454,7 @@
   "added": 101,
   "components": [
    47,
-   47
+   48
   ],
   "componentsWithNewVariants": 27,
   "removed": 32,
@@ -469,10 +470,10 @@
   ],
   "variants": [
    243,
-   207
+   210
   ]
  },
- "to": "2026-11-26T19:18:42.295Z",
+ "to": "2026-11-26T19:24:28.600Z",
  "variables": {
   "added": [
    [

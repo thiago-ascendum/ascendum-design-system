@@ -4,14 +4,14 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T19:18:42.295Z",
-  "nodes": 18119,
+  "generatedAt": "2026-11-26T19:24:28.600Z",
+  "nodes": 18120,
   "pages": 77,
   "fileKey": "5lhRMZkLHZijqgdigjk3J1",
   "figmaVersion": {
-   "id": "2426244373420584192",
+   "id": "2426246358245825729",
    "title": "Snapshot for Git",
-   "savedAt": "2026-11-26T19:18:42.295Z",
+   "savedAt": "2026-11-26T19:24:28.600Z",
    "status": "saved"
   },
   "aliasCount": 170,
@@ -25,12 +25,12 @@
   "totals": {
    "tokens": 323,
    "collections": 6,
-   "componentSets": 39,
-   "variants": 203,
+   "componentSets": 40,
+   "variants": 206,
    "icons": 211,
    "textStyles": 19,
    "textLayers": 6919,
-   "paints": 11629,
+   "paints": 11630,
    "fonts": {
     "Barlow": 6919
    }
@@ -177,7 +177,7 @@
    "level": "block",
    "title": "Every variant keeps the text when the variant changes",
    "count": 0,
-   "summary": "Checked 39 component sets. In every variant, each text layer must be bound to the set's text property (Label, Value...). If one is not, switching an instance to that variant replaces the designer's text with the default.",
+   "summary": "Checked 40 component sets. In every variant, each text layer must be bound to the set's text property (Label, Value...). If one is not, switching an instance to that variant replaces the designer's text with the default.",
    "evidence": [],
    "gary": [],
    "fix": "Bind the text layer to the property in that variant: select it, then Apply text property in the right panel.",
@@ -201,7 +201,7 @@
    "level": "warn",
    "title": "Every colour is bound to a token or a style",
    "count": 0,
-   "summary": "0 of 11629 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
+   "summary": "0 of 11630 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
    "evidence": [
     "split: ",
     "where: ",
@@ -397,7 +397,7 @@
    "level": "decision",
    "title": "Components over the variant budget (12)",
    "count": 0,
-   "summary": "203 variants across 39 component sets. The audit says 'probably half can go'. This lists each set with its axes, so the cut is a decision per axis, not a redesign.",
+   "summary": "206 variants across 40 component sets. The audit says 'probably half can go'. This lists each set with its axes, so the cut is a decision per axis, not a redesign.",
    "evidence": [
     "Button: 15 = Style(3) x State(5)",
     "Checkbox: 15 = Checked(3) x State(5)",
@@ -432,16 +432,16 @@
    "evidence": [
     "neutral/50 #FAFAFA: 1 tokens alias it, 16 component layers reached",
     "neutral/100 #F5F5F5: 1 tokens alias it, 7 component layers reached",
-    "neutral/200 #ECECEC: 7 tokens alias it, 78 component layers reached",
+    "neutral/200 #ECECEC: 7 tokens alias it, 81 component layers reached",
     "neutral/400 #D6D6D6: 4 tokens alias it, 9 component layers reached",
-    "neutral/500 #C0C0C0: 3 tokens alias it, 108 component layers reached",
+    "neutral/500 #C0C0C0: 3 tokens alias it, 114 component layers reached",
     "neutral/600 #999999: 4 tokens alias it, 55 component layers reached",
     "neutral/650 #888888: 1 tokens alias it, 12 component layers reached",
     "neutral/700 #777777: 2 tokens alias it, 11 component layers reached",
-    "neutral/750 #6F6F6F: 4 tokens alias it, 140 component layers reached",
-    "neutral/800 #555555: 7 tokens alias it, 67 component layers reached",
+    "neutral/750 #6F6F6F: 4 tokens alias it, 146 component layers reached",
+    "neutral/800 #555555: 7 tokens alias it, 70 component layers reached",
     "neutral/850 #444444: 5 tokens alias it, 27 component layers reached",
-    "neutral/900 #2A2A2A: 2 tokens alias it, 116 component layers reached",
+    "neutral/900 #2A2A2A: 2 tokens alias it, 122 component layers reached",
     "neutral/925 #262626: 1 tokens alias it, 16 component layers reached"
    ],
    "gary": [
@@ -760,6 +760,17 @@
      "Header",
      "Hover",
      "Selected"
+    ]
+   }
+  },
+  {
+   "name": ".Slider / In use demo",
+   "variants": 3,
+   "axes": {
+    "Value": [
+     "25000",
+     "50000",
+     "75000"
     ]
    }
   },
@@ -2005,14 +2016,18 @@
     "Desktop": 20,
     "Mobile": 20
    },
-   "direct": 343,
+   "direct": 344,
    "aliases": [],
-   "layers": 343,
-   "productLayers": 40,
+   "layers": 344,
+   "productLayers": 43,
    "components": [
     [
      "(documentation, not a component)",
-     303
+     301
+    ],
+    [
+     ".Slider / In use demo",
+     3
     ],
     [
      "Overview Card",
@@ -2918,11 +2933,11 @@
    "direct": 997,
    "aliases": [],
    "layers": 997,
-   "productLayers": 142,
+   "productLayers": 148,
    "components": [
     [
      "(documentation, not a component)",
-     855
+     849
     ],
     [
      "Jira Annotation",
@@ -2959,6 +2974,10 @@
     [
      "Section / Columns",
      9
+    ],
+    [
+     ".Slider / In use demo",
+     6
     ],
     [
      "Menu Item",
@@ -3302,15 +3321,19 @@
    "direct": 2367,
    "aliases": [],
    "layers": 2367,
-   "productLayers": 13,
+   "productLayers": 19,
    "components": [
     [
      "(documentation, not a component)",
-     2354
+     2348
     ],
     [
      "Form Field",
      12
+    ],
+    [
+     ".Slider / In use demo",
+     6
     ],
     [
      "Jira Annotation",
@@ -3384,12 +3407,12 @@
     "primary",
     "surface"
    ],
-   "layers": 5192,
-   "productLayers": 542,
+   "layers": 5193,
+   "productLayers": 557,
    "components": [
     [
      "(documentation, not a component)",
-     4650
+     4636
     ],
     [
      "Button",
@@ -3436,6 +3459,10 @@
      17
     ],
     [
+     ".Slider / In use demo",
+     15
+    ],
+    [
      "Input",
      14
     ],
@@ -3448,11 +3475,11 @@
      13
     ],
     [
-     "Team Card",
+     "Avatar",
      12
     ],
     [
-     "Section / Columns",
+     "Team Card",
      12
     ],
     [
@@ -3460,7 +3487,7 @@
      12
     ],
     [
-     "Avatar",
+     "Section / Columns",
      12
     ],
     [
@@ -3468,11 +3495,11 @@
      11
     ],
     [
-     "File Uploader",
+     "Side Navigation",
      10
     ],
     [
-     "Side Navigation",
+     "File Uploader",
      10
     ],
     [
@@ -3480,20 +3507,36 @@
      9
     ],
     [
+     "Tab",
+     8
+    ],
+    [
      "Navigation Bar",
      8
     ],
     [
-     "Tab",
-     8
+     "Side Nav Item",
+     7
     ],
     [
      "Section / Full Width",
      7
     ],
     [
-     "Side Nav Item",
-     7
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
+     6
+    ],
+    [
+     "Accordion Item",
+     6
+    ],
+    [
+     "Drawer",
+     6
     ],
     [
      "Empty State",
@@ -3512,32 +3555,12 @@
      6
     ],
     [
-     "Accordion Item",
-     6
-    ],
-    [
-     "Drawer",
-     6
-    ],
-    [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
-     "Section / Let's Connect",
-     5
-    ],
-    [
      "Key Stakeholders Card",
      5
     ],
     [
-     "Section / Showcase",
-     4
+     "Section / Let's Connect",
+     5
     ],
     [
      "Inline Edit",
@@ -3548,15 +3571,19 @@
      4
     ],
     [
+     "Section / Showcase",
+     4
+    ],
+    [
      "Badge",
      3
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
@@ -3630,12 +3657,12 @@
     "primary",
     "surface"
    ],
-   "layers": 4994,
-   "productLayers": 513,
+   "layers": 4995,
+   "productLayers": 528,
    "components": [
     [
      "(documentation, not a component)",
-     4481
+     4467
     ],
     [
      "Button",
@@ -3662,11 +3689,11 @@
      25
     ],
     [
-     "Overview Card",
+     "Search Bar",
      24
     ],
     [
-     "Search Bar",
+     "Overview Card",
      24
     ],
     [
@@ -3682,6 +3709,10 @@
      17
     ],
     [
+     ".Slider / In use demo",
+     15
+    ],
+    [
      "Input",
      14
     ],
@@ -3694,11 +3725,11 @@
      13
     ],
     [
-     "Section / Columns",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Section / Columns",
      12
     ],
     [
@@ -3706,11 +3737,11 @@
      11
     ],
     [
-     "File Uploader",
+     "Side Navigation",
      10
     ],
     [
-     "Side Navigation",
+     "File Uploader",
      10
     ],
     [
@@ -3718,12 +3749,16 @@
      9
     ],
     [
+     "Tab",
+     8
+    ],
+    [
      "Navigation Bar",
      8
     ],
     [
-     "Tab",
-     8
+     "Side Nav Item",
+     7
     ],
     [
      "Team Card",
@@ -3734,8 +3769,20 @@
      7
     ],
     [
-     "Side Nav Item",
-     7
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
+     6
+    ],
+    [
+     "Accordion Item",
+     6
+    ],
+    [
+     "Drawer",
+     6
     ],
     [
      "Empty State",
@@ -3754,32 +3801,8 @@
      6
     ],
     [
-     "Accordion Item",
-     6
-    ],
-    [
-     "Drawer",
-     6
-    ],
-    [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
      "Section / Let's Connect",
      5
-    ],
-    [
-     "Key Stakeholders Card",
-     4
-    ],
-    [
-     "Section / Showcase",
-     4
     ],
     [
      "Inline Edit",
@@ -3790,15 +3813,23 @@
      4
     ],
     [
+     "Key Stakeholders Card",
+     4
+    ],
+    [
+     "Section / Showcase",
+     4
+    ],
+    [
      "Badge",
      3
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
@@ -3859,11 +3890,11 @@
     "surface-container"
    ],
    "layers": 740,
-   "productLayers": 116,
+   "productLayers": 122,
    "components": [
     [
      "(documentation, not a component)",
-     624
+     618
     ],
     [
      "Input",
@@ -3887,6 +3918,10 @@
     ],
     [
      "Slider",
+     6
+    ],
+    [
+     ".Slider / In use demo",
      6
     ],
     [
@@ -4480,11 +4515,11 @@
     "surface-hover"
    ],
    "layers": 864,
-   "productLayers": 78,
+   "productLayers": 81,
    "components": [
     [
      "(documentation, not a component)",
-     786
+     783
     ],
     [
      "Progress Bar",
@@ -4527,6 +4562,14 @@
      4
     ],
     [
+     "Checkbox",
+     3
+    ],
+    [
+     ".Slider / In use demo",
+     3
+    ],
+    [
      "Accordion Item",
      3
     ],
@@ -4535,8 +4578,16 @@
      3
     ],
     [
-     "Checkbox",
-     3
+     "Toggle",
+     2
+    ],
+    [
+     "Radio",
+     2
+    ],
+    [
+     "Search Bar",
+     2
     ],
     [
      "Divider",
@@ -4547,20 +4598,12 @@
      2
     ],
     [
-     "Toggle",
-     2
-    ],
-    [
      "Key Stakeholders Card",
      2
     ],
     [
-     "Radio",
-     2
-    ],
-    [
-     "Search Bar",
-     2
+     "Combobox",
+     1
     ],
     [
      "Alert",
@@ -4576,10 +4619,6 @@
     ],
     [
      "Team Card",
-     1
-    ],
-    [
-     "Combobox",
      1
     ]
    ],
@@ -4645,11 +4684,11 @@
      3
     ],
     [
-     "Radio",
+     "Toggle",
      2
     ],
     [
-     "Toggle",
+     "Radio",
      2
     ],
     [
@@ -4667,11 +4706,11 @@
      9
     ],
     [
-     "Radio button",
+     "Toggle",
      6
     ],
     [
-     "Toggle",
+     "Radio button",
      6
     ],
     [
@@ -4703,11 +4742,11 @@
     "on-surface-variant"
    ],
    "layers": 2577,
-   "productLayers": 108,
+   "productLayers": 114,
    "components": [
     [
      "(documentation, not a component)",
-     2469
+     2463
     ],
     [
      "Overview Card",
@@ -4726,12 +4765,12 @@
      9
     ],
     [
-     "File Uploader",
+     ".Slider / In use demo",
      6
     ],
     [
-     "Team Card",
-     5
+     "File Uploader",
+     6
     ],
     [
      "Alert",
@@ -4739,6 +4778,10 @@
     ],
     [
      "Table",
+     5
+    ],
+    [
+     "Team Card",
      5
     ],
     [
@@ -4774,6 +4817,10 @@
      3
     ],
     [
+     "Drawer",
+     2
+    ],
+    [
      "Key Stakeholders Card",
      2
     ],
@@ -4783,10 +4830,6 @@
     ],
     [
      "Section / Showcase",
-     2
-    ],
-    [
-     "Drawer",
      2
     ],
     [
@@ -4888,16 +4931,12 @@
      5
     ],
     [
-     "Section / Full Width",
-     3
-    ],
-    [
      "Combobox",
      3
     ],
     [
-     "Section / Quote",
-     2
+     "Section / Full Width",
+     3
     ],
     [
      "Key Stakeholders Card",
@@ -4905,6 +4944,10 @@
     ],
     [
      "Section / Showcase",
+     2
+    ],
+    [
+     "Section / Quote",
      2
     ],
     [
@@ -4962,7 +5005,7 @@
      17
     ],
     [
-     "Section / Full Width",
+     "Combobox",
      10
     ]
    ]
@@ -5109,11 +5152,11 @@
      2
     ],
     [
-     "Page rhythm",
+     "Colour",
      1
     ],
     [
-     "Colour",
+     "Page rhythm",
      1
     ]
    ]
@@ -5137,11 +5180,11 @@
     "surface-pressed"
    ],
    "layers": 826,
-   "productLayers": 67,
+   "productLayers": 70,
    "components": [
     [
      "(documentation, not a component)",
-     759
+     756
     ],
     [
      "Progress Bar",
@@ -5172,12 +5215,28 @@
      4
     ],
     [
+     "Checkbox",
+     3
+    ],
+    [
+     ".Slider / In use demo",
+     3
+    ],
+    [
      "Accordion Item",
      3
     ],
     [
-     "Checkbox",
-     3
+     "Toggle",
+     2
+    ],
+    [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
+     "Radio",
+     2
     ],
     [
      "Divider",
@@ -5200,16 +5259,12 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Team Card",
+     1
     ],
     [
-     "Radio",
-     2
-    ],
-    [
-     "Toggle",
-     2
+     "Button",
+     1
     ],
     [
      "Alert",
@@ -5221,14 +5276,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Button",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -5299,10 +5346,6 @@
      3
     ],
     [
-     "Menu Item",
-     2
-    ],
-    [
      "Toggle",
      2
     ],
@@ -5327,6 +5370,18 @@
      2
     ],
     [
+     "Menu Item",
+     2
+    ],
+    [
+     "Slider",
+     1
+    ],
+    [
+     "Combobox",
+     1
+    ],
+    [
      "Inline Edit",
      1
     ],
@@ -5345,14 +5400,6 @@
     [
      "Table Row",
      1
-    ],
-    [
-     "Slider",
-     1
-    ],
-    [
-     "Combobox",
-     1
     ]
    ],
    "pages": [
@@ -5361,11 +5408,11 @@
      15
     ],
     [
-     "Colour",
+     "Checkbox",
      9
     ],
     [
-     "Checkbox",
+     "Colour",
      9
     ],
     [
@@ -5404,11 +5451,11 @@
     "surface-container"
    ],
    "layers": 708,
-   "productLayers": 116,
+   "productLayers": 122,
    "components": [
     [
      "(documentation, not a component)",
-     592
+     586
     ],
     [
      "Input",
@@ -5432,6 +5479,10 @@
     ],
     [
      "Slider",
+     6
+    ],
+    [
+     ".Slider / In use demo",
      6
     ],
     [
@@ -6175,18 +6226,18 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 228,
+   "direct": 229,
    "aliases": [
     "ctx/logo",
     "ctx/logo-glyph",
     "ctx/surface"
    ],
-   "layers": 314,
-   "productLayers": 22,
+   "layers": 315,
+   "productLayers": 25,
    "components": [
     [
      "(documentation, not a component)",
-     292
+     290
     ],
     [
      "Section / Full Width",
@@ -6202,6 +6253,10 @@
     ],
     [
      "Section / Header",
+     3
+    ],
+    [
+     ".Slider / In use demo",
      3
     ],
     [
@@ -6263,7 +6318,7 @@
      9
     ],
     [
-     "Button",
+     "Page rhythm",
      8
     ]
    ]
@@ -6282,11 +6337,11 @@
     "ctx/surface-container"
    ],
    "layers": 707,
-   "productLayers": 116,
+   "productLayers": 122,
    "components": [
     [
      "(documentation, not a component)",
-     591
+     585
     ],
     [
      "Input",
@@ -6310,6 +6365,10 @@
     ],
     [
      "Slider",
+     6
+    ],
+    [
+     ".Slider / In use demo",
      6
     ],
     [
@@ -6688,11 +6747,11 @@
      13
     ],
     [
-     "Group Cards",
+     "Overview",
      12
     ],
     [
-     "Overview",
+     "Group Cards",
      12
     ],
     [
@@ -6719,11 +6778,11 @@
     "ctx/on-surface"
    ],
    "layers": 3542,
-   "productLayers": 283,
+   "productLayers": 289,
    "components": [
     [
      "(documentation, not a component)",
-     3259
+     3253
     ],
     [
      "Jira Annotation",
@@ -6738,11 +6797,11 @@
      18
     ],
     [
-     "Overview Card",
+     "Table",
      17
     ],
     [
-     "Table",
+     "Overview Card",
      17
     ],
     [
@@ -6758,11 +6817,11 @@
      15
     ],
     [
-     "Button",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Button",
      12
     ],
     [
@@ -6786,11 +6845,7 @@
      8
     ],
     [
-     "Team Card",
-     6
-    ],
-    [
-     "Navigation Bar",
+     ".Slider / In use demo",
      6
     ],
     [
@@ -6802,8 +6857,12 @@
      6
     ],
     [
-     "Section / Quote",
-     4
+     "Team Card",
+     6
+    ],
+    [
+     "Navigation Bar",
+     6
     ],
     [
      "Input",
@@ -6818,7 +6877,15 @@
      4
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
+     4
+    ],
+    [
+     "Badge",
+     3
+    ],
+    [
+     "Inline Edit",
      3
     ],
     [
@@ -6827,6 +6894,14 @@
     ],
     [
      "Modal",
+     3
+    ],
+    [
+     "Side Nav Item",
+     3
+    ],
+    [
+     "Key Stakeholders Card",
      3
     ],
     [
@@ -6842,27 +6917,15 @@
      3
     ],
     [
-     "Badge",
-     3
-    ],
-    [
-     "Inline Edit",
-     3
-    ],
-    [
-     "Side Nav Item",
-     3
-    ],
-    [
-     "Section / Showcase",
-     2
-    ],
-    [
      "Breadcrumb Item",
      2
     ],
     [
      "Side Navigation",
+     2
+    ],
+    [
+     "Section / Showcase",
      2
     ],
     [
@@ -6923,11 +6986,11 @@
     "ctx/on-surface-variant"
    ],
    "layers": 2498,
-   "productLayers": 103,
+   "productLayers": 109,
    "components": [
     [
      "(documentation, not a component)",
-     2395
+     2389
     ],
     [
      "Overview Card",
@@ -6946,12 +7009,12 @@
      9
     ],
     [
-     "File Uploader",
+     ".Slider / In use demo",
      6
     ],
     [
-     "Team Card",
-     5
+     "File Uploader",
+     6
     ],
     [
      "Alert",
@@ -6959,6 +7022,10 @@
     ],
     [
      "Table",
+     5
+    ],
+    [
+     "Team Card",
      5
     ],
     [
@@ -6990,6 +7057,10 @@
      3
     ],
     [
+     "Drawer",
+     2
+    ],
+    [
      "Key Stakeholders Card",
      2
     ],
@@ -6999,10 +7070,6 @@
     ],
     [
      "Section / Showcase",
-     2
-    ],
-    [
-     "Drawer",
      2
     ],
     [
@@ -7196,12 +7263,16 @@
      5
     ],
     [
+     "Combobox",
+     4
+    ],
+    [
      "Section / Quote",
      4
     ],
     [
-     "Combobox",
-     4
+     "Side Nav Item",
+     3
     ],
     [
      "Key Stakeholders Card",
@@ -7220,8 +7291,8 @@
      3
     ],
     [
-     "Side Nav Item",
-     3
+     "Tooltip",
+     2
     ],
     [
      "File Uploader",
@@ -7237,10 +7308,6 @@
     ],
     [
      "Section / Showcase",
-     2
-    ],
-    [
-     "Tooltip",
      2
     ],
     [
@@ -7297,11 +7364,11 @@
     "ctx/outline-variant"
    ],
    "layers": 753,
-   "productLayers": 54,
+   "productLayers": 57,
    "components": [
     [
      "(documentation, not a component)",
-     699
+     696
     ],
     [
      "Progress Bar",
@@ -7328,8 +7395,16 @@
      4
     ],
     [
+     ".Slider / In use demo",
+     3
+    ],
+    [
      "Accordion Item",
      3
+    ],
+    [
+     "Key Stakeholders Card",
+     2
     ],
     [
      "Divider",
@@ -7352,8 +7427,8 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Team Card",
+     1
     ],
     [
      "Alert",
@@ -7365,10 +7440,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -7421,11 +7492,11 @@
     "ctx/outline"
    ],
    "layers": 410,
-   "productLayers": 92,
+   "productLayers": 98,
    "components": [
     [
      "(documentation, not a component)",
-     318
+     312
     ],
     [
      "Radio",
@@ -7452,6 +7523,10 @@
      8
     ],
     [
+     ".Slider / In use demo",
+     6
+    ],
+    [
      "Search Bar",
      6
     ],
@@ -7460,11 +7535,11 @@
      6
     ],
     [
-     "Button",
+     "Combobox",
      4
     ],
     [
-     "Combobox",
+     "Button",
      4
     ],
     [
@@ -7480,15 +7555,15 @@
      2
     ],
     [
+     "Inline Edit",
+     1
+    ],
+    [
      "Navigation Bar",
      1
     ],
     [
      "Section / Let's Connect",
-     1
-    ],
-    [
-     "Inline Edit",
      1
     ]
    ],
@@ -7518,11 +7593,11 @@
      27
     ],
     [
-     "Button",
+     "Select",
      22
     ],
     [
-     "Select",
+     "Button",
      22
     ]
    ]
@@ -7650,11 +7725,11 @@
      5
     ],
     [
-     "Tone of Voice",
+     "Overview",
      4
     ],
     [
-     "Overview",
+     "Tone of Voice",
      4
     ],
     [
@@ -10107,15 +10182,19 @@
    "direct": 20,
    "aliases": [],
    "layers": 20,
-   "productLayers": 5,
+   "productLayers": 8,
    "components": [
     [
      "(documentation, not a component)",
-     15
+     12
     ],
     [
      "Slider",
      5
+    ],
+    [
+     ".Slider / In use demo",
+     3
     ]
    ],
    "pages": [
@@ -10141,15 +10220,19 @@
    "direct": 40,
    "aliases": [],
    "layers": 40,
-   "productLayers": 10,
+   "productLayers": 16,
    "components": [
     [
      "(documentation, not a component)",
-     30
+     24
     ],
     [
      "Slider",
      10
+    ],
+    [
+     ".Slider / In use demo",
+     6
     ]
    ],
    "pages": [
@@ -10175,15 +10258,19 @@
    "direct": 40,
    "aliases": [],
    "layers": 40,
-   "productLayers": 10,
+   "productLayers": 16,
    "components": [
     [
      "(documentation, not a component)",
-     30
+     24
     ],
     [
      "Slider",
      10
+    ],
+    [
+     ".Slider / In use demo",
+     6
     ]
    ],
    "pages": [
@@ -10209,15 +10296,19 @@
    "direct": 17,
    "aliases": [],
    "layers": 17,
-   "productLayers": 4,
+   "productLayers": 7,
    "components": [
     [
      "(documentation, not a component)",
-     13
+     10
     ],
     [
      "Slider",
      4
+    ],
+    [
+     ".Slider / In use demo",
+     3
     ]
    ],
    "pages": [
@@ -10243,15 +10334,19 @@
    "direct": 20,
    "aliases": [],
    "layers": 20,
-   "productLayers": 5,
+   "productLayers": 8,
    "components": [
     [
      "(documentation, not a component)",
-     15
+     12
     ],
     [
      "Slider",
      5
+    ],
+    [
+     ".Slider / In use demo",
+     3
     ]
    ],
    "pages": [
@@ -11759,11 +11854,15 @@
    "direct": 611,
    "aliases": [],
    "layers": 611,
-   "productLayers": 17,
+   "productLayers": 20,
    "components": [
     [
      "(documentation, not a component)",
-     594
+     591
+    ],
+    [
+     ".Slider / In use demo",
+     3
     ],
     [
      "File Uploader",
@@ -14085,11 +14184,11 @@
     "on-surface-variant"
    ],
    "layers": 2714,
-   "productLayers": 140,
+   "productLayers": 146,
    "components": [
     [
      "(documentation, not a component)",
-     2574
+     2568
     ],
     [
      "Form Field",
@@ -14116,16 +14215,12 @@
      8
     ],
     [
-     "File Uploader",
+     ".Slider / In use demo",
      6
     ],
     [
-     "Team Card",
-     5
-    ],
-    [
-     "Select",
-     5
+     "File Uploader",
+     6
     ],
     [
      "Alert",
@@ -14136,8 +14231,12 @@
      5
     ],
     [
-     "Footer",
-     4
+     "Team Card",
+     5
+    ],
+    [
+     "Select",
+     5
     ],
     [
      "Breadcrumb Item",
@@ -14156,7 +14255,15 @@
      4
     ],
     [
+     "Footer",
+     4
+    ],
+    [
      "Section / Full Width",
+     3
+    ],
+    [
+     "Combobox",
      3
     ],
     [
@@ -14164,8 +14271,8 @@
      3
     ],
     [
-     "Combobox",
-     3
+     "Drawer",
+     2
     ],
     [
      "Key Stakeholders Card",
@@ -14178,14 +14285,6 @@
     [
      "Section / Showcase",
      2
-    ],
-    [
-     "Drawer",
-     2
-    ],
-    [
-     "Code Block",
-     1
     ],
     [
      "Stat Card",
@@ -14201,6 +14300,10 @@
     ],
     [
      "Modal",
+     1
+    ],
+    [
+     "Code Block",
      1
     ]
    ],
@@ -15230,11 +15333,11 @@
      4
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
@@ -15264,11 +15367,11 @@
      42
     ],
     [
-     "Section / Columns",
+     "Button",
      30
     ],
     [
-     "Button",
+     "Section / Columns",
      30
     ],
     [
@@ -15440,15 +15543,15 @@
      2
     ],
     [
+     "Button",
+     1
+    ],
+    [
      "Slider",
      1
     ],
     [
      "Toggle",
-     1
-    ],
-    [
-     "Button",
      1
     ]
    ],
@@ -17615,15 +17718,19 @@
     "font-size/caption"
    ],
    "layers": 2367,
-   "productLayers": 13,
+   "productLayers": 19,
    "components": [
     [
      "(documentation, not a component)",
-     2354
+     2348
     ],
     [
      "Form Field",
      12
+    ],
+    [
+     ".Slider / In use demo",
+     6
     ],
     [
      "Jira Annotation",
@@ -17699,15 +17806,15 @@
      5
     ],
     [
-     "Footer",
-     4
-    ],
-    [
      "Avatar",
      4
     ],
     [
      "Menu Item",
+     4
+    ],
+    [
+     "Footer",
      4
     ],
     [
@@ -17719,15 +17826,15 @@
      4
     ],
     [
-     "File Uploader",
-     3
-    ],
-    [
      "Tab",
      3
     ],
     [
      "Jira Annotation",
+     3
+    ],
+    [
+     "File Uploader",
      3
     ],
     [
@@ -17890,11 +17997,11 @@
     "font-size/h7"
    ],
    "layers": 1400,
-   "productLayers": 224,
+   "productLayers": 230,
    "components": [
     [
      "(documentation, not a component)",
-     1176
+     1170
     ],
     [
      "Jira Annotation",
@@ -17929,15 +18036,15 @@
      12
     ],
     [
+     "Select",
+     10
+    ],
+    [
      "Radio",
      10
     ],
     [
      "Toggle",
-     10
-    ],
-    [
-     "Select",
      10
     ],
     [
@@ -17949,12 +18056,12 @@
      9
     ],
     [
-     "Tab",
+     ".Slider / In use demo",
      6
     ],
     [
-     "Navigation Bar",
-     5
+     "Tab",
+     6
     ],
     [
      "Menu Item",
@@ -17965,7 +18072,11 @@
      5
     ],
     [
-     "Avatar",
+     "Navigation Bar",
+     5
+    ],
+    [
+     "Combobox",
      4
     ],
     [
@@ -17973,12 +18084,16 @@
      4
     ],
     [
+     "Avatar",
+     4
+    ],
+    [
      "Side Navigation",
      4
     ],
     [
-     "Combobox",
-     4
+     "Breadcrumb Item",
+     3
     ],
     [
      "Toast",
@@ -17987,18 +18102,6 @@
     [
      "Side Nav Item",
      3
-    ],
-    [
-     "Breadcrumb Item",
-     3
-    ],
-    [
-     "Empty State",
-     2
-    ],
-    [
-     "Modal",
-     2
     ],
     [
      "Key Stakeholders Card",
@@ -18010,6 +18113,14 @@
     ],
     [
      "Section / Quote",
+     2
+    ],
+    [
+     "Empty State",
+     2
+    ],
+    [
+     "Modal",
      2
     ],
     [
@@ -18047,7 +18158,7 @@
      46
     ],
     [
-     "Overview",
+     "Group Cards",
      42
     ]
    ]

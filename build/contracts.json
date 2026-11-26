@@ -1,5 +1,40 @@
 [
   {
+    "component": ".Slider / In use demo",
+    "figmaPage": "Slider",
+    "properties": {
+      "Value": [
+        "25000",
+        "50000",
+        "75000"
+      ]
+    },
+    "rules": [
+      "Use only the properties and values listed here. To add one, propose it.",
+      "Bind only the tokens listed here. Never type a raw colour, size or spacing value."
+    ],
+    "states": [],
+    "tokens": [
+      "--container-radius",
+      "--font-size-caption",
+      "--on-surface",
+      "--on-surface-variant",
+      "--outline",
+      "--outline-variant",
+      "--radius-card",
+      "--slider-height",
+      "--slider-thumb",
+      "--slider-thumb-border",
+      "--slider-track-height",
+      "--slider-track-radius",
+      "--surface",
+      "--surface-container",
+      "--text-body-size"
+    ],
+    "use": "Documentation demo, not a library component (the dot keeps it out of publishing). Click left, middle or right of the track to move the budget. Used in the In use panel of the Slider page.",
+    "variants": 3
+  },
+  {
     "component": "Accordion Item",
     "figmaPage": "Accordion Item",
     "properties": {
