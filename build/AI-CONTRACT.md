@@ -79,14 +79,14 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--border-width-focus` | border-width/focus | 2 |  | Weight of the keyboard focus ring. |
 | `--border-width-hairline` | border-width/hairline | 1 |  | Dividers and card borders. |
 | `--text-body-size` | font-size/body | 16 |  | Font size of Body/Default, Body/Default Semi-Bold. |
-| `--text-body-lg-size` | font-size/body-lg | 18 |  | Font size of Body/Large, Heading/H6. |
+| `--text-body-lg-size` | font-size/body-lg | 18 |  | Font size of Body/Large. |
 | `--font-size-body-sm` | font-size/body-sm | 15 |  | Dense-UI text, tables, meta rows, chips |
 | `--text-button-size` | font-size/button | 17 | 16 | 17px desktop / 16px mobile |
 | `--font-size-caption` | font-size/caption | 13 |  | Smallest supported size |
-| `--text-display-size` | font-size/display | 56 | 42 | Font size of Heading/Display |
+| `--text-display-size` | font-size/display | 56 | 42 | Font size of Heading/Display. |
 | `--text-footnote-size` | font-size/footnote | 14 |  | Font size of UI/Footnote. |
 | `--text-h1-size` | font-size/h1 | 48 | 36 | H1 size: the one title of a page. |
-| `--text-h2-size` | font-size/h2 | 40 | 32 | Font size of Heading/H2 |
+| `--text-h2-size` | font-size/h2 | 40 | 32 | Font size of Heading/H2. |
 | `--text-h3-size` | font-size/h3 | 32 | 28 | H3 size: a section title inside a page. |
 | `--text-h4-size` | font-size/h4 | 24 | 22 | Fills the gap between H3 (20) and H2 (40) |
 | `--text-h5-size` | font-size/h5 | 20 |  | H5 size: small section headings inside cards, alerts and panels. |

@@ -2363,7 +2363,7 @@
    },
    {
     "collection": "Dimension",
-    "description": "Font size of Body/Large, Heading/H6.",
+    "description": "Font size of Body/Large.",
     "id": "VariableID:7:35",
     "name": "font-size/body-lg",
     "values": {
@@ -2442,7 +2442,7 @@
    },
    {
     "collection": "Dimension",
-    "description": "Font size of Heading/Display. 42 on mobile.",
+    "description": "Font size of Heading/Display.",
     "id": "VariableID:7:32",
     "name": "font-size/display",
     "values": {
@@ -2506,7 +2506,7 @@
    },
    {
     "collection": "Dimension",
-    "description": "Font size of Heading/H2. 32 on mobile.",
+    "description": "Font size of Heading/H2.",
     "id": "VariableID:7:33",
     "name": "font-size/h2",
     "values": {

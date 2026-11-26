@@ -4,22 +4,22 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T18:56:52.850Z",
-  "nodes": 18107,
+  "generatedAt": "2026-11-26T19:13:42.550Z",
+  "nodes": 18096,
   "pages": 77,
   "fileKey": "5lhRMZkLHZijqgdigjk3J1",
   "figmaVersion": {
-   "id": "2426237762932425194",
+   "id": "2426243595526184925",
    "title": "Snapshot for Git",
-   "savedAt": "2026-11-26T18:56:52.850Z",
+   "savedAt": "2026-11-26T19:13:42.550Z",
    "status": "saved"
   },
   "aliasCount": 170,
   "gate": "OPEN",
   "summary": {
    "block-pass": 5,
-   "warn-pass": 9,
-   "warn-fail": 2,
+   "warn-pass": 10,
+   "warn-fail": 1,
    "decision": 4
   },
   "totals": {
@@ -29,10 +29,10 @@
    "variants": 203,
    "icons": 211,
    "textStyles": 19,
-   "textLayers": 6926,
-   "paints": 11621,
+   "textLayers": 6908,
+   "paints": 11607,
    "fonts": {
-    "Barlow": 6926
+    "Barlow": 6908
    }
   }
  },
@@ -177,7 +177,7 @@
    "level": "warn",
    "title": "Every colour is bound to a token or a style",
    "count": 0,
-   "summary": "0 of 11621 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
+   "summary": "0 of 11607 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
    "evidence": [
     "split: ",
     "where: ",
@@ -244,7 +244,7 @@
    "level": "warn",
    "title": "Every text layer uses a text style",
    "count": 0,
-   "summary": "0 of 6926 text layers have no text style, in 0 different sizes.",
+   "summary": "0 of 6908 text layers have no text style, in 0 different sizes.",
    "evidence": [
     "where: ",
     "sizes (px): "
@@ -339,18 +339,16 @@
    "id": "documentation-drift",
    "level": "warn",
    "title": "The documentation matches the file",
-   "count": 1,
+   "count": 0,
    "summary": "Numbers the library states about itself, compared with what is actually in it. Hand-written documentation goes stale the day after it is written.",
-   "evidence": [
-    "text styles (claim: 16): page says 16, file has 19"
-   ],
+   "evidence": [],
    "gary": [
     2,
     5
    ],
    "fix": "Stop writing these by hand: generate the overview and the changelog from the snapshot diff.",
    "kind": "A",
-   "pass": false
+   "pass": true
   },
   {
    "id": "uppercase-labels",
@@ -954,14 +952,14 @@
     "Desktop": 0,
     "Mobile": 0
    },
-   "direct": 957,
+   "direct": 951,
    "aliases": [],
-   "layers": 957,
+   "layers": 951,
    "productLayers": 0,
    "components": [
     [
      "(documentation, not a component)",
-     957
+     951
     ]
    ],
    "pages": [
@@ -971,7 +969,7 @@
     ],
     [
      "📝 02 · Changelog",
-     279
+     273
     ],
     [
      "Spacing, Grid & Layout",
@@ -1008,14 +1006,14 @@
     "Desktop": 8,
     "Mobile": 8
    },
-   "direct": 656,
+   "direct": 653,
    "aliases": [],
-   "layers": 656,
+   "layers": 653,
    "productLayers": 28,
    "components": [
     [
      "(documentation, not a component)",
-     628
+     625
     ],
     [
      "Button",
@@ -1065,7 +1063,7 @@
     ],
     [
      "📝 02 · Changelog",
-     105
+     102
     ],
     [
      "Button",
@@ -1102,14 +1100,14 @@
     "Desktop": 16,
     "Mobile": 12
    },
-   "direct": 770,
+   "direct": 763,
    "aliases": [],
-   "layers": 770,
+   "layers": 763,
    "productLayers": 21,
    "components": [
     [
      "(documentation, not a component)",
-     749
+     742
     ],
     [
      "Section / Columns",
@@ -1155,7 +1153,7 @@
     ],
     [
      "📝 02 · Changelog",
-     57
+     50
     ],
     [
      "Photography",
@@ -1184,14 +1182,14 @@
     "Desktop": 32,
     "Mobile": 24
    },
-   "direct": 361,
+   "direct": 356,
    "aliases": [],
-   "layers": 361,
+   "layers": 356,
    "productLayers": 10,
    "components": [
     [
      "(documentation, not a component)",
-     351
+     346
     ],
     [
      "Section / Full Width",
@@ -1217,7 +1215,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     124
+     119
     ],
     [
      "Spacing, Grid & Layout",
@@ -1983,14 +1981,14 @@
     "Desktop": 20,
     "Mobile": 20
    },
-   "direct": 351,
+   "direct": 342,
    "aliases": [],
-   "layers": 351,
+   "layers": 342,
    "productLayers": 40,
    "components": [
     [
      "(documentation, not a component)",
-     311
+     302
     ],
     [
      "Overview Card",
@@ -2151,10 +2149,6 @@
      23
     ],
     [
-     "📝 02 · Changelog",
-     18
-    ],
-    [
      "🧪 06 · Components: Molecules",
      18
     ],
@@ -2177,6 +2171,10 @@
     [
      "Tone of Voice",
      14
+    ],
+    [
+     "Photography",
+     14
     ]
    ]
   },
@@ -2189,14 +2187,14 @@
     "Desktop": 999,
     "Mobile": 999
    },
-   "direct": 746,
+   "direct": 747,
    "aliases": [],
-   "layers": 746,
+   "layers": 747,
    "productLayers": 86,
    "components": [
     [
      "(documentation, not a component)",
-     660
+     661
     ],
     [
      "Progress Bar",
@@ -2250,7 +2248,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     66
+     67
     ],
     [
      "Progress Bar",
@@ -2291,14 +2289,14 @@
     "Desktop": 1,
     "Mobile": 1
    },
-   "direct": 417,
+   "direct": 419,
    "aliases": [],
-   "layers": 417,
+   "layers": 419,
    "productLayers": 29,
    "components": [
     [
      "(documentation, not a component)",
-     388
+     390
     ],
     [
      "Table",
@@ -2356,7 +2354,7 @@
     ],
     [
      "📝 02 · Changelog",
-     115
+     117
     ],
     [
      "Table",
@@ -2623,14 +2621,14 @@
     "Desktop": "type-size/20",
     "Mobile": "type-size/20"
    },
-   "direct": 378,
+   "direct": 377,
    "aliases": [],
-   "layers": 378,
+   "layers": 377,
    "productLayers": 20,
    "components": [
     [
      "(documentation, not a component)",
-     358
+     357
     ],
     [
      "Section / Columns",
@@ -2779,14 +2777,14 @@
     "Desktop": "type-size/17",
     "Mobile": "type-size/16"
    },
-   "direct": 399,
+   "direct": 403,
    "aliases": [],
-   "layers": 399,
+   "layers": 403,
    "productLayers": 82,
    "components": [
     [
      "(documentation, not a component)",
-     317
+     321
     ],
     [
      "Button",
@@ -2856,7 +2854,7 @@
     ],
     [
      "Checkbox",
-     49
+     53
     ],
     [
      "Radio button",
@@ -2893,14 +2891,14 @@
     "Desktop": "type-size/16",
     "Mobile": "type-size/16"
    },
-   "direct": 986,
+   "direct": 992,
    "aliases": [],
-   "layers": 986,
+   "layers": 992,
    "productLayers": 142,
    "components": [
     [
      "(documentation, not a component)",
-     844
+     850
     ],
     [
      "Jira Annotation",
@@ -2974,7 +2972,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     233
+     237
     ],
     [
      "Colour",
@@ -2990,7 +2988,7 @@
     ],
     [
      "🤝 03 · Contribution & Governance",
-     43
+     44
     ],
     [
      "Group Cards",
@@ -3183,14 +3181,14 @@
     "Desktop": "type-size/15",
     "Mobile": "type-size/15"
    },
-   "direct": 724,
+   "direct": 721,
    "aliases": [],
-   "layers": 724,
+   "layers": 721,
    "productLayers": 49,
    "components": [
     [
      "(documentation, not a component)",
-     675
+     672
     ],
     [
      "Overview Card",
@@ -3235,12 +3233,12 @@
    ],
    "pages": [
     [
-     "📝 02 · Changelog",
-     52
-    ],
-    [
      "Group Cards",
      50
+    ],
+    [
+     "📝 02 · Changelog",
+     49
     ],
     [
      "Overview",
@@ -3277,14 +3275,14 @@
     "Desktop": "type-size/13",
     "Mobile": "type-size/13"
    },
-   "direct": 2380,
+   "direct": 2366,
    "aliases": [],
-   "layers": 2380,
+   "layers": 2366,
    "productLayers": 13,
    "components": [
     [
      "(documentation, not a component)",
-     2367
+     2353
     ],
     [
      "Form Field",
@@ -3318,7 +3316,7 @@
     ],
     [
      "Checkbox",
-     58
+     59
     ],
     [
      "Toggle",
@@ -3362,12 +3360,12 @@
     "primary",
     "surface"
    ],
-   "layers": 5194,
+   "layers": 5185,
    "productLayers": 542,
    "components": [
     [
      "(documentation, not a component)",
-     4652
+     4643
     ],
     [
      "Button",
@@ -3434,11 +3432,11 @@
      12
     ],
     [
-     "Avatar",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Avatar",
      12
     ],
     [
@@ -3490,19 +3488,19 @@
      6
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
      "Accordion Item",
      6
     ],
     [
      "Drawer",
+     6
+    ],
+    [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
      6
     ],
     [
@@ -3530,11 +3528,11 @@
      3
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
@@ -3553,15 +3551,15 @@
     ],
     [
      "📝 02 · Changelog",
-     246
+     224
+    ],
+    [
+     "Checkbox",
+     188
     ],
     [
      "Group Cards",
      178
-    ],
-    [
-     "Checkbox",
-     176
     ],
     [
      "Toggle",
@@ -3608,12 +3606,12 @@
     "primary",
     "surface"
    ],
-   "layers": 4996,
+   "layers": 4987,
    "productLayers": 513,
    "components": [
     [
      "(documentation, not a component)",
-     4483
+     4474
     ],
     [
      "Button",
@@ -3732,19 +3730,19 @@
      6
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
      "Accordion Item",
      6
     ],
     [
      "Drawer",
+     6
+    ],
+    [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
      6
     ],
     [
@@ -3772,11 +3770,11 @@
      3
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
@@ -3795,11 +3793,11 @@
     ],
     [
      "📝 02 · Changelog",
-     233
+     211
     ],
     [
      "Checkbox",
-     176
+     188
     ],
     [
      "Toggle",
@@ -3836,12 +3834,12 @@
     "on-warning",
     "surface-container"
    ],
-   "layers": 748,
+   "layers": 740,
    "productLayers": 116,
    "components": [
     [
      "(documentation, not a component)",
-     632
+     624
     ],
     [
      "Input",
@@ -4034,12 +4032,12 @@
      29
     ],
     [
-     "📝 02 · Changelog",
-     28
-    ],
-    [
      "Slider",
      27
+    ],
+    [
+     "Radius & Elevation",
+     25
     ]
    ]
   },
@@ -4457,12 +4455,12 @@
     "surface-container-highest",
     "surface-hover"
    ],
-   "layers": 857,
+   "layers": 859,
    "productLayers": 78,
    "components": [
     [
      "(documentation, not a component)",
-     779
+     781
     ],
     [
      "Progress Bar",
@@ -4473,11 +4471,11 @@
      7
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
@@ -4505,7 +4503,7 @@
      4
     ],
     [
-     "Accordion Item",
+     "Button",
      3
     ],
     [
@@ -4513,8 +4511,16 @@
      3
     ],
     [
-     "Button",
+     "Accordion Item",
      3
+    ],
+    [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
+     "Toggle",
+     2
     ],
     [
      "Divider",
@@ -4525,20 +4531,16 @@
      2
     ],
     [
-     "Toggle",
-     2
-    ],
-    [
-     "Key Stakeholders Card",
-     2
-    ],
-    [
      "Radio",
      2
     ],
     [
      "Search Bar",
      2
+    ],
+    [
+     "Team Card",
+     1
     ],
     [
      "Alert",
@@ -4553,10 +4555,6 @@
      1
     ],
     [
-     "Team Card",
-     1
-    ],
-    [
      "Combobox",
      1
     ]
@@ -4568,7 +4566,7 @@
     ],
     [
      "📝 02 · Changelog",
-     117
+     119
     ],
     [
      "Skeleton",
@@ -4631,11 +4629,11 @@
      2
     ],
     [
-     "Button",
+     "Slider",
      1
     ],
     [
-     "Slider",
+     "Button",
      1
     ]
    ],
@@ -4680,12 +4678,12 @@
     "inverse-on-surface-variant",
     "on-surface-variant"
    ],
-   "layers": 2579,
+   "layers": 2576,
    "productLayers": 108,
    "components": [
     [
      "(documentation, not a component)",
-     2471
+     2468
     ],
     [
      "Overview Card",
@@ -4708,6 +4706,10 @@
      6
     ],
     [
+     "Team Card",
+     5
+    ],
+    [
      "Alert",
      5
     ],
@@ -4716,8 +4718,8 @@
      5
     ],
     [
-     "Team Card",
-     5
+     "Footer",
+     4
     ],
     [
      "Breadcrumb Item",
@@ -4740,20 +4742,12 @@
      4
     ],
     [
-     "Footer",
-     4
-    ],
-    [
      "Section / Full Width",
      3
     ],
     [
      "Toast",
      3
-    ],
-    [
-     "Drawer",
-     2
     ],
     [
      "Key Stakeholders Card",
@@ -4766,6 +4760,14 @@
     [
      "Section / Showcase",
      2
+    ],
+    [
+     "Drawer",
+     2
+    ],
+    [
+     "Code Block",
+     1
     ],
     [
      "Stat Card",
@@ -4782,10 +4784,6 @@
     [
      "Modal",
      1
-    ],
-    [
-     "Code Block",
-     1
     ]
    ],
    "pages": [
@@ -4795,7 +4793,7 @@
     ],
     [
      "📝 02 · Changelog",
-     130
+     126
     ],
     [
      "Group Cards",
@@ -4866,11 +4864,11 @@
      5
     ],
     [
-     "Section / Full Width",
+     "Combobox",
      3
     ],
     [
-     "Combobox",
+     "Section / Full Width",
      3
     ],
     [
@@ -4878,11 +4876,11 @@
      2
     ],
     [
-     "Section / Showcase",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Section / Showcase",
      2
     ],
     [
@@ -4940,7 +4938,7 @@
      17
     ],
     [
-     "Section / Full Width",
+     "Combobox",
      10
     ]
    ]
@@ -5087,11 +5085,11 @@
      2
     ],
     [
-     "Colour",
+     "Page rhythm",
      1
     ],
     [
-     "Page rhythm",
+     "Colour",
      1
     ]
    ]
@@ -5114,12 +5112,12 @@
     "surface-container-highest",
     "surface-pressed"
    ],
-   "layers": 819,
+   "layers": 821,
    "productLayers": 67,
    "components": [
     [
      "(documentation, not a component)",
-     752
+     754
     ],
     [
      "Progress Bar",
@@ -5130,11 +5128,11 @@
      7
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
@@ -5150,12 +5148,20 @@
      4
     ],
     [
+     "Checkbox",
+     3
+    ],
+    [
      "Accordion Item",
      3
     ],
     [
-     "Checkbox",
-     3
+     "Key Stakeholders Card",
+     2
+    ],
+    [
+     "Toggle",
+     2
     ],
     [
      "Divider",
@@ -5178,16 +5184,16 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
-    ],
-    [
-     "Toggle",
-     2
-    ],
-    [
      "Radio",
      2
+    ],
+    [
+     "Team Card",
+     1
+    ],
+    [
+     "Button",
+     1
     ],
     [
      "Alert",
@@ -5200,14 +5206,6 @@
     [
      "Modal",
      1
-    ],
-    [
-     "Button",
-     1
-    ],
-    [
-     "Team Card",
-     1
     ]
    ],
    "pages": [
@@ -5217,7 +5215,7 @@
     ],
     [
      "📝 02 · Changelog",
-     116
+     118
     ],
     [
      "Skeleton",
@@ -5381,12 +5379,12 @@
     "ctx/surface-container",
     "surface-container"
    ],
-   "layers": 716,
+   "layers": 708,
    "productLayers": 116,
    "components": [
     [
      "(documentation, not a component)",
-     600
+     592
     ],
     [
      "Input",
@@ -5459,6 +5457,10 @@
     [
      "Table Row",
      2
+    ],
+    [
+     "Overview Card",
+     1
     ],
     [
      "Avatar",
@@ -5547,10 +5549,6 @@
     [
      "Section / Let's Connect",
      1
-    ],
-    [
-     "Overview Card",
-     1
     ]
    ],
    "pages": [
@@ -5575,15 +5573,15 @@
      29
     ],
     [
-     "📝 02 · Changelog",
-     28
-    ],
-    [
      "Slider",
      27
     ],
     [
      "Radius & Elevation",
+     25
+    ],
+    [
+     "Radio button",
      25
     ]
    ]
@@ -5871,12 +5869,12 @@
     "on-surface-warning",
     "warning"
    ],
-   "layers": 72,
+   "layers": 73,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     66
+     67
     ],
     [
      "Badge",
@@ -5898,7 +5896,7 @@
     ],
     [
      "📝 02 · Changelog",
-     17
+     18
     ],
     [
      "Badge",
@@ -5938,12 +5936,12 @@
    "aliases": [
     "warning-container"
    ],
-   "layers": 63,
+   "layers": 64,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     60
+     61
     ],
     [
      "Badge",
@@ -5956,11 +5954,11 @@
    ],
    "pages": [
     [
-     "Colour",
-     18
+     "📝 02 · Changelog",
+     19
     ],
     [
-     "📝 02 · Changelog",
+     "Colour",
      18
     ],
     [
@@ -6153,18 +6151,18 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 226,
+   "direct": 227,
    "aliases": [
     "ctx/logo",
     "ctx/logo-glyph",
     "ctx/surface"
    ],
-   "layers": 312,
+   "layers": 313,
    "productLayers": 22,
    "components": [
     [
      "(documentation, not a component)",
-     290
+     291
     ],
     [
      "Section / Full Width",
@@ -6241,7 +6239,7 @@
      9
     ],
     [
-     "Page rhythm",
+     "Button",
      8
     ]
    ]
@@ -6255,16 +6253,16 @@
     "Light": "brand/white",
     "Dark": "neutral/900"
    },
-   "direct": 712,
+   "direct": 704,
    "aliases": [
     "ctx/surface-container"
    ],
-   "layers": 715,
+   "layers": 707,
    "productLayers": 116,
    "components": [
     [
      "(documentation, not a component)",
-     599
+     591
     ],
     [
      "Input",
@@ -6453,15 +6451,15 @@
      29
     ],
     [
-     "📝 02 · Changelog",
-     28
-    ],
-    [
      "Slider",
      27
     ],
     [
      "Radius & Elevation",
+     25
+    ],
+    [
+     "Radio button",
      25
     ]
    ]
@@ -6580,10 +6578,6 @@
      4
     ],
     [
-     "Section / Full Width",
-     4
-    ],
-    [
      "Combobox",
      4
     ],
@@ -6592,15 +6586,19 @@
      4
     ],
     [
+     "Section / Full Width",
+     4
+    ],
+    [
+     "Toast",
+     3
+    ],
+    [
      "Section / Columns",
      3
     ],
     [
      "Section / Header",
-     3
-    ],
-    [
-     "Toast",
      3
     ],
     [
@@ -6616,22 +6614,6 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     1
-    ],
-    [
-     "Team Card",
-     1
-    ],
-    [
-     "Navigation Bar",
-     1
-    ],
-    [
-     "Section / Let's Connect",
-     1
-    ],
-    [
      "Code Block",
      1
     ],
@@ -6645,6 +6627,22 @@
     ],
     [
      "Side Navigation",
+     1
+    ],
+    [
+     "Key Stakeholders Card",
+     1
+    ],
+    [
+     "Team Card",
+     1
+    ],
+    [
+     "Navigation Bar",
+     1
+    ],
+    [
+     "Section / Let's Connect",
      1
     ]
    ],
@@ -6666,11 +6664,11 @@
      13
     ],
     [
-     "Group Cards",
+     "Overview",
      12
     ],
     [
-     "Overview",
+     "Group Cards",
      12
     ],
     [
@@ -6692,16 +6690,16 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 3175,
+   "direct": 3159,
    "aliases": [
     "ctx/on-surface"
    ],
-   "layers": 3552,
+   "layers": 3536,
    "productLayers": 283,
    "components": [
     [
      "(documentation, not a component)",
-     3269
+     3253
     ],
     [
      "Jira Annotation",
@@ -6716,11 +6714,11 @@
      18
     ],
     [
-     "Overview Card",
+     "Table",
      17
     ],
     [
-     "Table",
+     "Overview Card",
      17
     ],
     [
@@ -6736,11 +6734,11 @@
      15
     ],
     [
-     "Button",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Button",
      12
     ],
     [
@@ -6764,14 +6762,6 @@
      8
     ],
     [
-     "Team Card",
-     6
-    ],
-    [
-     "Navigation Bar",
-     6
-    ],
-    [
      "Accordion Item",
      6
     ],
@@ -6780,8 +6770,12 @@
      6
     ],
     [
-     "Section / Quote",
-     4
+     "Team Card",
+     6
+    ],
+    [
+     "Navigation Bar",
+     6
     ],
     [
      "Input",
@@ -6796,7 +6790,15 @@
      4
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
+     4
+    ],
+    [
+     "Badge",
+     3
+    ],
+    [
+     "Inline Edit",
      3
     ],
     [
@@ -6805,6 +6807,14 @@
     ],
     [
      "Modal",
+     3
+    ],
+    [
+     "Side Nav Item",
+     3
+    ],
+    [
+     "Key Stakeholders Card",
      3
     ],
     [
@@ -6820,27 +6830,15 @@
      3
     ],
     [
-     "Badge",
-     3
-    ],
-    [
-     "Inline Edit",
-     3
-    ],
-    [
-     "Side Nav Item",
-     3
-    ],
-    [
-     "Section / Showcase",
-     2
-    ],
-    [
      "Breadcrumb Item",
      2
     ],
     [
      "Side Navigation",
+     2
+    ],
+    [
+     "Section / Showcase",
      2
     ],
     [
@@ -6855,7 +6853,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     217
+     195
     ],
     [
      "Colour",
@@ -6878,12 +6876,12 @@
      97
     ],
     [
-     "Alert",
+     "Checkbox",
      95
     ],
     [
-     "Form Field",
-     92
+     "Alert",
+     95
     ]
    ]
   },
@@ -6896,16 +6894,16 @@
     "Light": "neutral/750",
     "Dark": "neutral/500"
    },
-   "direct": 2344,
+   "direct": 2341,
    "aliases": [
     "ctx/on-surface-variant"
    ],
-   "layers": 2500,
+   "layers": 2497,
    "productLayers": 103,
    "components": [
     [
      "(documentation, not a component)",
-     2397
+     2394
     ],
     [
      "Overview Card",
@@ -6928,15 +6926,15 @@
      6
     ],
     [
+     "Team Card",
+     5
+    ],
+    [
      "Alert",
      5
     ],
     [
      "Table",
-     5
-    ],
-    [
-     "Team Card",
      5
     ],
     [
@@ -6968,10 +6966,6 @@
      3
     ],
     [
-     "Drawer",
-     2
-    ],
-    [
      "Key Stakeholders Card",
      2
     ],
@@ -6981,6 +6975,10 @@
     ],
     [
      "Section / Showcase",
+     2
+    ],
+    [
+     "Drawer",
      2
     ],
     [
@@ -7007,7 +7005,7 @@
     ],
     [
      "📝 02 · Changelog",
-     130
+     126
     ],
     [
      "Group Cards",
@@ -7118,16 +7116,16 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 235,
+   "direct": 237,
    "aliases": [
     "ctx/on-surface"
    ],
-   "layers": 612,
+   "layers": 614,
    "productLayers": 130,
    "components": [
     [
      "(documentation, not a component)",
-     482
+     484
     ],
     [
      "Overview Card",
@@ -7244,12 +7242,12 @@
      34
     ],
     [
-     "Toast",
-     33
+     "Checkbox",
+     34
     ],
     [
-     "Checkbox",
-     32
+     "Toast",
+     33
     ],
     [
      "Section / Columns",
@@ -7270,16 +7268,16 @@
     "Light": "neutral/200",
     "Dark": "neutral/800"
    },
-   "direct": 708,
+   "direct": 710,
    "aliases": [
     "ctx/outline-variant"
    ],
-   "layers": 746,
+   "layers": 748,
    "productLayers": 54,
    "components": [
     [
      "(documentation, not a component)",
-     692
+     694
     ],
     [
      "Progress Bar",
@@ -7310,6 +7308,10 @@
      3
     ],
     [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
      "Divider",
      2
     ],
@@ -7330,8 +7332,8 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Team Card",
+     1
     ],
     [
      "Alert",
@@ -7344,10 +7346,6 @@
     [
      "Modal",
      1
-    ],
-    [
-     "Team Card",
-     1
     ]
    ],
    "pages": [
@@ -7357,7 +7355,7 @@
     ],
     [
      "📝 02 · Changelog",
-     116
+     118
     ],
     [
      "Group Cards",
@@ -7394,16 +7392,16 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 364,
+   "direct": 368,
    "aliases": [
     "ctx/outline"
    ],
-   "layers": 406,
+   "layers": 410,
    "productLayers": 92,
    "components": [
     [
      "(documentation, not a component)",
-     314
+     318
     ],
     [
      "Radio",
@@ -7438,11 +7436,11 @@
      6
     ],
     [
-     "Combobox",
+     "Button",
      4
     ],
     [
-     "Button",
+     "Combobox",
      4
     ],
     [
@@ -7458,15 +7456,15 @@
      2
     ],
     [
-     "Inline Edit",
-     1
-    ],
-    [
      "Navigation Bar",
      1
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Inline Edit",
      1
     ]
    ],
@@ -7481,7 +7479,7 @@
     ],
     [
      "Checkbox",
-     38
+     42
     ],
     [
      "Slider",
@@ -7496,11 +7494,11 @@
      27
     ],
     [
-     "Select",
+     "Button",
      22
     ],
     [
-     "Button",
+     "Select",
      22
     ]
    ]
@@ -7990,14 +7988,14 @@
     "Light": "warning/40",
     "Dark": "warning/80"
    },
-   "direct": 63,
+   "direct": 64,
    "aliases": [],
-   "layers": 63,
+   "layers": 64,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     57
+     58
     ],
     [
      "Badge",
@@ -8015,7 +8013,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     17
+     18
     ],
     [
      "Colour",
@@ -8056,14 +8054,14 @@
     "Light": "warning/95",
     "Dark": "warning/20"
    },
-   "direct": 57,
+   "direct": 58,
    "aliases": [],
-   "layers": 57,
+   "layers": 58,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     54
+     55
     ],
     [
      "Badge",
@@ -8077,7 +8075,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     18
+     19
     ],
     [
      "Colour",
@@ -8572,12 +8570,12 @@
    "aliases": [
     "warning-container"
    ],
-   "layers": 58,
+   "layers": 59,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     55
+     56
     ],
     [
      "Badge",
@@ -8591,7 +8589,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     18
+     19
     ],
     [
      "Colour",
@@ -8916,14 +8914,14 @@
     "Desktop": 1.5,
     "Mobile": 1.5
    },
-   "direct": 328,
+   "direct": 332,
    "aliases": [],
-   "layers": 328,
+   "layers": 332,
    "productLayers": 85,
    "components": [
     [
      "(documentation, not a component)",
-     243
+     247
     ],
     [
      "Checkbox",
@@ -8969,7 +8967,7 @@
    "pages": [
     [
      "Checkbox",
-     49
+     53
     ],
     [
      "Input",
@@ -9010,14 +9008,14 @@
     "Desktop": 20,
     "Mobile": 20
    },
-   "direct": 110,
+   "direct": 114,
    "aliases": [],
-   "layers": 110,
+   "layers": 114,
    "productLayers": 25,
    "components": [
     [
      "(documentation, not a component)",
-     85
+     89
     ],
     [
      "Checkbox",
@@ -9031,7 +9029,7 @@
    "pages": [
     [
      "Checkbox",
-     49
+     53
     ],
     [
      "Radio button",
@@ -9064,14 +9062,14 @@
     "Desktop": 10,
     "Mobile": 10
    },
-   "direct": 146,
+   "direct": 150,
    "aliases": [],
-   "layers": 146,
+   "layers": 150,
    "productLayers": 35,
    "components": [
     [
      "(documentation, not a component)",
-     111
+     115
     ],
     [
      "Checkbox",
@@ -9089,7 +9087,7 @@
    "pages": [
     [
      "Checkbox",
-     49
+     53
     ],
     [
      "Radio button",
@@ -9530,14 +9528,14 @@
     "Desktop": 3,
     "Mobile": 3
    },
-   "direct": 76,
+   "direct": 80,
    "aliases": [],
-   "layers": 76,
+   "layers": 80,
    "productLayers": 15,
    "components": [
     [
      "(documentation, not a component)",
-     61
+     65
     ],
     [
      "Checkbox",
@@ -9547,7 +9545,7 @@
    "pages": [
     [
      "Checkbox",
-     49
+     53
     ],
     [
      "🤝 03 · Contribution & Governance",
@@ -9732,14 +9730,14 @@
     "Desktop": 6,
     "Mobile": 6
    },
-   "direct": 416,
+   "direct": 417,
    "aliases": [],
-   "layers": 416,
+   "layers": 417,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     404
+     405
     ],
     [
      "Badge",
@@ -9753,7 +9751,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     45
+     46
     ],
     [
      "Badge",
@@ -9794,14 +9792,14 @@
     "Desktop": 14,
     "Mobile": 14
    },
-   "direct": 416,
+   "direct": 417,
    "aliases": [],
-   "layers": 416,
+   "layers": 417,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     404
+     405
     ],
     [
      "Badge",
@@ -9815,7 +9813,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     45
+     46
     ],
     [
      "Badge",
@@ -9856,14 +9854,14 @@
     "Desktop": 6,
     "Mobile": 6
    },
-   "direct": 416,
+   "direct": 417,
    "aliases": [],
-   "layers": 416,
+   "layers": 417,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     404
+     405
     ],
     [
      "Badge",
@@ -9877,7 +9875,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     45
+     46
     ],
     [
      "Badge",
@@ -12416,14 +12414,14 @@
     "Desktop": "type-size/24",
     "Mobile": "type-size/22"
    },
-   "direct": 157,
+   "direct": 147,
    "aliases": [],
-   "layers": 157,
+   "layers": 147,
    "productLayers": 14,
    "components": [
     [
      "(documentation, not a component)",
-     143
+     133
     ],
     [
      "Avatar",
@@ -12461,7 +12459,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     31
+     21
     ],
     [
      "📖 01 · Getting Started",
@@ -14062,12 +14060,12 @@
     "on-surface-placeholder",
     "on-surface-variant"
    ],
-   "layers": 2716,
+   "layers": 2713,
    "productLayers": 140,
    "components": [
     [
      "(documentation, not a component)",
-     2576
+     2573
     ],
     [
      "Form Field",
@@ -14098,6 +14096,10 @@
      6
     ],
     [
+     "Select",
+     5
+    ],
+    [
      "Alert",
      5
     ],
@@ -14106,12 +14108,12 @@
      5
     ],
     [
-     "Select",
+     "Team Card",
      5
     ],
     [
-     "Team Card",
-     5
+     "Footer",
+     4
     ],
     [
      "Breadcrumb Item",
@@ -14130,15 +14132,11 @@
      4
     ],
     [
-     "Footer",
-     4
-    ],
-    [
-     "Toast",
+     "Combobox",
      3
     ],
     [
-     "Combobox",
+     "Toast",
      3
     ],
     [
@@ -14162,6 +14160,10 @@
      2
     ],
     [
+     "Code Block",
+     1
+    ],
+    [
      "Stat Card",
      1
     ],
@@ -14176,10 +14178,6 @@
     [
      "Modal",
      1
-    ],
-    [
-     "Code Block",
-     1
     ]
    ],
    "pages": [
@@ -14189,7 +14187,7 @@
     ],
     [
      "📝 02 · Changelog",
-     130
+     126
     ],
     [
      "Form Field",
@@ -14946,11 +14944,11 @@
      45
     ],
     [
-     "Checkbox",
+     "Button",
      3
     ],
     [
-     "Button",
+     "Checkbox",
      3
     ],
     [
@@ -15208,11 +15206,11 @@
      4
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
@@ -15242,11 +15240,11 @@
      42
     ],
     [
-     "Button",
+     "Section / Columns",
      30
     ],
     [
-     "Section / Columns",
+     "Button",
      30
     ],
     [
@@ -16698,12 +16696,12 @@
    "aliases": [
     "on-surface-warning"
    ],
-   "layers": 64,
+   "layers": 65,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     58
+     59
     ],
     [
      "Badge",
@@ -16721,7 +16719,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     17
+     18
     ],
     [
      "Colour",
@@ -17592,12 +17590,12 @@
    "aliases": [
     "font-size/caption"
    ],
-   "layers": 2380,
+   "layers": 2366,
    "productLayers": 13,
    "components": [
     [
      "(documentation, not a component)",
-     2367
+     2353
     ],
     [
      "Form Field",
@@ -17631,7 +17629,7 @@
     ],
     [
      "Checkbox",
-     58
+     59
     ],
     [
      "Toggle",
@@ -17677,15 +17675,15 @@
      5
     ],
     [
+     "Footer",
+     4
+    ],
+    [
      "Avatar",
      4
     ],
     [
      "Menu Item",
-     4
-    ],
-    [
-     "Footer",
      4
     ],
     [
@@ -17697,15 +17695,15 @@
      4
     ],
     [
+     "File Uploader",
+     3
+    ],
+    [
      "Tab",
      3
     ],
     [
      "Jira Annotation",
-     3
-    ],
-    [
-     "File Uploader",
      3
     ],
     [
@@ -17769,12 +17767,12 @@
    "aliases": [
     "font-size/body-sm"
    ],
-   "layers": 724,
+   "layers": 721,
    "productLayers": 49,
    "components": [
     [
      "(documentation, not a component)",
-     675
+     672
     ],
     [
      "Overview Card",
@@ -17819,12 +17817,12 @@
    ],
    "pages": [
     [
-     "📝 02 · Changelog",
-     52
-    ],
-    [
      "Group Cards",
      50
+    ],
+    [
+     "📝 02 · Changelog",
+     49
     ],
     [
      "Overview",
@@ -17867,12 +17865,12 @@
     "font-size/button",
     "font-size/h7"
    ],
-   "layers": 1385,
+   "layers": 1395,
    "productLayers": 224,
    "components": [
     [
      "(documentation, not a component)",
-     1161
+     1171
     ],
     [
      "Jira Annotation",
@@ -17998,7 +17996,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     242
+     246
     ],
     [
      "Button",
@@ -18010,11 +18008,11 @@
     ],
     [
      "🤝 03 · Contribution & Governance",
-     54
+     55
     ],
     [
      "Checkbox",
-     50
+     55
     ],
     [
      "Table",
@@ -18043,12 +18041,12 @@
    "aliases": [
     "font-size/button"
    ],
-   "layers": 399,
+   "layers": 403,
    "productLayers": 82,
    "components": [
     [
      "(documentation, not a component)",
-     317
+     321
     ],
     [
      "Button",
@@ -18118,7 +18116,7 @@
     ],
     [
      "Checkbox",
-     49
+     53
     ],
     [
      "Radio button",
@@ -18176,6 +18174,10 @@
      5
     ],
     [
+     "Section / Full Width",
+     3
+    ],
+    [
      "File Uploader",
      3
     ],
@@ -18184,28 +18186,12 @@
      3
     ],
     [
-     "Section / Full Width",
-     3
-    ],
-    [
-     "Section / Quote",
-     2
-    ],
-    [
      "Section / Showcase",
      2
     ],
     [
-     "Key Stakeholders Card",
-     1
-    ],
-    [
-     "Team Card",
-     1
-    ],
-    [
-     "Side Navigation",
-     1
+     "Section / Quote",
+     2
     ],
     [
      "Accordion Item",
@@ -18217,6 +18203,18 @@
     ],
     [
      "Modal",
+     1
+    ],
+    [
+     "Key Stakeholders Card",
+     1
+    ],
+    [
+     "Team Card",
+     1
+    ],
+    [
+     "Side Navigation",
      1
     ]
    ],
@@ -18268,12 +18266,12 @@
    "aliases": [
     "font-size/h5"
    ],
-   "layers": 378,
+   "layers": 377,
    "productLayers": 20,
    "components": [
     [
      "(documentation, not a component)",
-     358
+     357
     ],
     [
      "Section / Columns",
@@ -18344,12 +18342,12 @@
    "aliases": [
     "font-size/h4"
    ],
-   "layers": 157,
+   "layers": 147,
    "productLayers": 14,
    "components": [
     [
      "(documentation, not a component)",
-     143
+     133
     ],
     [
      "Avatar",
@@ -18387,7 +18385,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     31
+     21
     ],
     [
      "📖 01 · Getting Started",
@@ -18432,12 +18430,12 @@
    "aliases": [
     "font-size/h4"
    ],
-   "layers": 157,
+   "layers": 147,
    "productLayers": 14,
    "components": [
     [
      "(documentation, not a component)",
-     143
+     133
     ],
     [
      "Avatar",
@@ -18475,7 +18473,7 @@
    "pages": [
     [
      "📝 02 · Changelog",
-     31
+     21
     ],
     [
      "📖 01 · Getting Started",
