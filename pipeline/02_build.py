@@ -204,6 +204,12 @@ add("code-name-collision", "block", "Every token has its own name in code", len(
     collisions[:12], gary=[3], fix="Give each token a unique code name before the export runs.")
 
 low = []
+# A pair that names a token the file no longer has is a failure, never a silent skip:
+# otherwise a rename quietly removes the pair from the gate.
+for fg, bg, minimum in GOV["contrastPairs"]:
+    for n in (fg, bg):
+        if n not in name_to_id:
+            low.append((0, f"{fg} on {bg}: '{n}' is not a token in the file (rename or remove the pair in governance.json)"))
 for mode in ("Light", "Dark"):
     for fg, bg, minimum in GOV["contrastPairs"]:
         if fg in name_to_id and bg in name_to_id:
