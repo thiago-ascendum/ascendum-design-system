@@ -63,3 +63,48 @@ export const TextAt200 = {
     </Page>
   ),
 };
+
+// The size layer and the roles, read from build/tokens.json (generated from the Figma snapshot).
+import tokens from '../../build/tokens.json';
+
+const ext = (t) => t?.$extensions?.['com.ascendum.ds'] || {};
+const sizeOf = (ref) => { const m = String(ref).match(/type-size\.(\d+)/); return m ? Number(m[1]) : Number(ref); };
+const rem = (n) => `${Math.round((n / 16) * 1000) / 1000}rem`;
+
+export const SizeLayer = {
+  name: 'Size layer and roles',
+  render: () => {
+    const sizes = Object.entries(tokens.Accessibility?.['type-size'] || {}).sort((a, b) => Number(a[0]) - Number(b[0]));
+    const roles = Object.entries(tokens.Dimension?.['font-size'] || {})
+      .map(([name, t]) => ({ name, t, desktop: sizeOf(t.$value), mobile: sizeOf(ext(t).modes?.Mobile ?? t.$value) }))
+      .sort((a, b) => b.desktop - a.desktop);
+    return (
+      <Page title="Size layer and roles" lead="Three layers, as in Figma. A text style reads its size from a role (font-size/*), and the role points to one size in the Accessibility layer (type-size/*). Text 200% doubles every size, as browser zoom does (WCAG 1.4.4). In code every size is rem.">
+        <h3>Roles, biggest first</h3>
+        <table className="dsx-table">
+          <thead><tr><th>Role</th><th>CSS</th><th>Desktop</th><th>Mobile</th><th>Used by</th></tr></thead>
+          <tbody>
+            {roles.map(({ name, t, desktop, mobile }) => (
+              <tr key={name}>
+                <td><b>font-size/{name}</b></td>
+                <td><code>{ext(t).code}</code></td>
+                <td>{desktop}px · {rem(desktop)}</td>
+                <td>{mobile}px · {rem(mobile)}</td>
+                <td className="dsx-muted">{(t.$description || '').replace(/^Font size of /, '').replace(/\.$/, '')}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <h3>The size layer</h3>
+        <table className="dsx-table">
+          <thead><tr><th>Size</th><th>CSS</th><th>Default</th><th>Text 200%</th></tr></thead>
+          <tbody>
+            {sizes.map(([n, t]) => (
+              <tr key={n}><td><b>type-size/{n}</b></td><td><code>{ext(t).code}</code></td><td>{n}px</td><td>{ext(t).modes?.['Text 200%'] ?? n * 2}px</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </Page>
+    );
+  },
+};
