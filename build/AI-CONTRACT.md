@@ -104,10 +104,10 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--accent-purple-container` | accent-purple-container | #E4C9F9 |  | Purple brand accent background. |
 | `--accent-red-container` | accent-red-container | #F0D3D5 |  | Red brand accent background: tags and avatars. |
 | `--accent-stone-container` | accent-stone-container | #DEDBDA |  | Stone brand accent background. |
-| `--error` | error | #B02A32 | #CE7B80 | Error text, icons and borders on any surface. |
+| `--error` | error | #B02A32 |  | Solid error fill: the same strong colour in Light and Dark, with on-error (white) on top |
 | `--error-container` | error-container | #FDF1F2 | #3E2324 | Background of an error message. |
 | `--focus` | focus | #212121 | #F5F5F5 | Focus ring on every interactive element. |
-| `--info` | info | #2369AA | #6C9AC6 | Information text and icons on any surface. |
+| `--info` | info | #2369AA |  | Solid information fill: the same strong colour in Light and Dark, with on-info (white) on  |
 | `--info-container` | info-container | #F3F8FD | #212F3C | Background of an information message. |
 | `--inverse-on-primary` | inverse-on-primary | #212121 | #F5F5F5 | Text and icons on inverse-primary. |
 | `--inverse-on-surface` | inverse-on-surface | #F5F5F5 | #212121 | Text and icons on inverse-surface. |
@@ -119,17 +119,29 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--inverse-primary-pressed` | inverse-primary-pressed | #D6D6D6 | #555555 | Inverse-primary while pressed. |
 | `--inverse-surface` | inverse-surface | #212121 | #F5F5F5 | A surface that is the opposite of the page: dark bands, toasts, tooltips. |
 | `--on-accent-container` | on-accent-container | #212121 |  | Text and icons on any accent container. |
+| `--on-error` | on-error | #FFFFFF |  | Text and icons on the solid error fill |
+| `--on-error-container` | on-error-container | #7A2D31 | #F4DDDF | Text and icons on an error container. |
+| `--on-info` | on-info | #FFFFFF |  | Text and icons on the solid information fill |
+| `--on-info-container` | on-info-container | #1E496E | #D9E4EE | Text and icons on an information container. |
 | `--on-primary` | on-primary | #F5F5F5 | #212121 | Text and icons on primary. |
+| `--on-success` | on-success | #FFFFFF |  | Text and icons on the solid success fill |
+| `--on-success-container` | on-success-container | #1B5035 | #D6E6DC | Text and icons on a success container. |
 | `--on-surface` | on-surface | #212121 | #F5F5F5 | Main text and icons on any surface. |
+| `--on-surface-error` | on-surface-error | #B02A32 | #E9BBBE | Error text, icons and borders on any surface |
+| `--on-surface-info` | on-surface-info | #2369AA | #B3C9DF | Info text, icons and borders on any surface |
 | `--on-surface-placeholder` | on-surface-placeholder | #6F6F6F | #999999 | Placeholder text inside empty fields. |
+| `--on-surface-success` | on-surface-success | #1C7A4A | #AECEBB | Success text, icons and borders on any surface |
 | `--on-surface-variant` | on-surface-variant | #6F6F6F | #C0C0C0 | Secondary text, labels and quiet icons. |
+| `--on-surface-warning` | on-surface-warning | #8A5A00 | #DAC49B | Warning text, icons and borders on any surface |
+| `--on-warning` | on-warning | #FFFFFF |  | Text and icons on the solid warning fill |
+| `--on-warning-container` | on-warning-container | #5C4212 | #F1E1C2 | Text and icons on a warning container. |
 | `--outline` | outline | #212121 | #F5F5F5 | Strong borders: fields, outline buttons, selected controls. |
-| `--outline-medium` | outline-medium | #D6D6D6 | #777777 | Borders of controls at rest: checkbox, radio, toggle track. |
+| `--outline-medium` | outline-medium | #888888 | #999999 | Medium borders: a search field at rest, drop zones, media placeholders and the empty-state |
 | `--outline-variant` | outline-variant | #ECECEC | #555555 | Dividers and card borders. |
 | `--primary` | primary | #212121 | #F5F5F5 | The main action: Solid button fill, links, selected controls. |
 | `--primary-hover` | primary-hover | #444444 | #ECECEC | Primary under the pointer. |
 | `--primary-pressed` | primary-pressed | #555555 | #D6D6D6 | Primary while pressed. |
-| `--success` | success | #1C7A4A | #65A584 | Success text and icons on any surface. |
+| `--success` | success | #1C7A4A |  | Solid success fill: the same strong colour in Light and Dark, with on-success (white) on t |
 | `--success-container` | success-container | #EEF7F1 | #203329 | Background of a success message. |
 | `--surface` | surface | #F5F5F5 | #212121 | Page background |
 | `--surface-container` | surface-container | #FFFFFF | #2A2A2A | Cards, dialogs, panels and fields |
@@ -139,7 +151,7 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--surface-hover` | surface-hover | #ECECEC | #444444 | An unselected control or neutral element under the pointer. |
 | `--surface-pressed` | surface-pressed | #D6D6D6 | #555555 | An unselected control or neutral element while pressed. |
 | `--transparent` | transparent | #00000000 |  | No fill |
-| `--warning` | warning | #8A5A00 | #B29257 | Warning text and icons on any surface. |
+| `--warning` | warning | #8A5A00 |  | Solid warning fill: the same strong colour in Light and Dark, with on-warning (white) on t |
 | `--warning-container` | warning-container | #FFF2D8 | #362C1A | Background of a warning message. |
 
 ## 5. Components in this slice

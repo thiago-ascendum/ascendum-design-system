@@ -12,7 +12,7 @@ import { Hero, Section, Index, Cards, Steps, Table, List, CodeCounts } from './_
 <Section n={1} title="Four steps" lead="This is the coded side of the library. The tokens are generated from the Figma file, and the three components are built from those tokens, binding for binding.">
   <Steps items={[
     ['Use the tokens', <>Import <code>build/tokens.css</code>. Every colour, radius, size and space is a CSS custom property with a light and a dark value.</>],
-    ['Bind roles, not colours', <>Use <code>--on-surface</code>, <code>--surface-container</code>, <code>--success</code>. The primitives (<code>--neutral-750</code>, <code>--brand-midnight</code>) sit behind the roles and you should never need one.</>],
+    ['Bind roles, not colours', <>Use <code>--on-surface</code>, <code>--surface-container</code>, <code>--on-surface-success</code>. The primitives (<code>--neutral-750</code>, <code>--brand-midnight</code>) sit behind the roles and you should never need one.</>],
     ['Place components, never rebuild them', <>Button, Input and Badge are in <code>src/components</code>. If the piece exists, use it and set its properties.</>],
     ['Change it the right way', 'Change the design in Figma, take a snapshot, and let the checks run. Nobody edits a token by hand.'],
   ]} />

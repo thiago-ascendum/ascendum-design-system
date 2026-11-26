@@ -3,6 +3,6 @@
 .ds-progress--sm { height: var(--progress-height-sm); }
 .ds-progress--lg { height: var(--progress-height-lg); }
 .ds-progress__fill { height: 100%; border-radius: var(--radius-pill); background: var(--outline); }
-.ds-progress__fill--success { background: var(--success); }
-.ds-progress__fill--warning { background: var(--warning); }
-.ds-progress__fill--error { background: var(--error); }
+.ds-progress__fill--success { background: var(--on-surface-success); }
+.ds-progress__fill--warning { background: var(--on-surface-warning); }
+.ds-progress__fill--error { background: var(--on-surface-error); }

@@ -25,7 +25,7 @@ export default {
         ['font-size/label', '--text-label-size', 'Label size'],
         ['on-surface', '--on-surface', 'Label colour'],
         ['font-size/caption', '--font-size-caption', 'Message size'],
-        ['error', '--error', 'Message colour'],
+        ['error', '--on-surface-error', 'Message colour'],
       ],
       a11y: [
         'The label is a real label tied to the field with for and id. A unique id is made when you leave it out.',
