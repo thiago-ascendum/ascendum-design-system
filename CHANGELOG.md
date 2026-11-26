@@ -53,6 +53,7 @@ Clean-up after the design review of 5 November.
 - Getting Started, Changelog and Contribution & Governance are guided pages built from the components of the library.
 - Documentation cards: every card and every dark panel was looked at. Fixed: the logo in the inverted Key Stakeholders Card, the Side Nav Item rows, the Select samples and two raw labels.
 - Every page canvas in the Figma file is now dark (#1E1E1E), so the page frames read against it.
+- Variables and styles: every one of the 256 variables has a description (73 had none). 22 component variables are scoped to spacing instead of showing in every picker. The two text styles and five gradient styles without a description have one.
 
 ### Added
 
