@@ -4,27 +4,27 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T16:09:28.785Z",
-  "nodes": 16488,
+  "generatedAt": "2026-11-26T16:18:56.358Z",
+  "nodes": 16593,
   "pages": 77,
   "gate": "OPEN",
   "summary": {
    "block-pass": 5,
-   "warn-fail": 3,
-   "warn-pass": 8,
+   "warn-pass": 9,
+   "warn-fail": 2,
    "decision": 4
   },
   "totals": {
-   "tokens": 253,
-   "collections": 4,
-   "componentSets": 40,
-   "variants": 210,
+   "tokens": 262,
+   "collections": 5,
+   "componentSets": 42,
+   "variants": 207,
    "icons": 211,
    "textStyles": 16,
-   "textLayers": 6298,
-   "paints": 10557,
+   "textLayers": 6331,
+   "paints": 10617,
    "fonts": {
-    "Barlow": 6298
+    "Barlow": 6331
    }
   }
  },
@@ -52,7 +52,7 @@
     "Light",
     "Dark"
    ],
-   "tokens": 45,
+   "tokens": 47,
    "published": true
   },
   {
@@ -62,6 +62,15 @@
     "Mobile"
    ],
    "tokens": 117,
+   "published": true
+  },
+  {
+   "name": "Surface",
+   "modes": [
+    "Default",
+    "Inverted"
+   ],
+   "tokens": 7,
    "published": true
   }
  ],
@@ -150,11 +159,11 @@
    "id": "raw-colour",
    "level": "warn",
    "title": "Every colour is bound to a token or a style",
-   "count": 1,
-   "summary": "1 of 10557 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
+   "count": 0,
+   "summary": "0 of 10617 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
    "evidence": [
-    "split: documentation and internal pages (1)",
-    "where: page: Button (1)",
+    "split: ",
+    "where: ",
     "off-palette colours: "
    ],
    "gary": [
@@ -163,14 +172,14 @@
    ],
    "fix": "Bind in bulk; what cannot be bound is a missing token or a mistake.",
    "kind": "A",
-   "pass": false
+   "pass": true
   },
   {
    "id": "unused-token",
    "level": "warn",
    "title": "Every token is used by a component",
    "count": 11,
-   "summary": "Of 253 tokens, 0 are bound by nothing at all, and 11 more are used only by their own swatch on a documentation page, never by a component.",
+   "summary": "Of 262 tokens, 0 are bound by nothing at all, and 11 more are used only by their own swatch on a documentation page, never by a component.",
    "evidence": [
     "bound by nothing, by group: ",
     "names: ",
@@ -218,7 +227,7 @@
    "level": "warn",
    "title": "Every text layer uses a text style",
    "count": 0,
-   "summary": "0 of 6298 text layers have no text style, in 0 different sizes.",
+   "summary": "0 of 6331 text layers have no text style, in 0 different sizes.",
    "evidence": [
     "where: ",
     "sizes (px): "
@@ -281,7 +290,7 @@
    "level": "warn",
    "title": "Every token names its code equivalent",
    "count": 0,
-   "summary": "The file says 'every variable carries a code syntax entry'. 0 of 253 do not.",
+   "summary": "The file says 'every variable carries a code syntax entry'. 0 of 262 do not.",
    "evidence": [
     ""
    ],
@@ -296,10 +305,10 @@
    "id": "component-without-description",
    "level": "warn",
    "title": "Every component says when to use it",
-   "count": 1,
+   "count": 3,
    "summary": "A component with no description gives an AI tool nothing to decide with.",
    "evidence": [
-    "Button-Solid-Primary"
+    "GhostButtonPrimary, OutlineButtonPrimary, SolidButtonPrimary"
    ],
    "gary": [
     19,
@@ -347,9 +356,9 @@
    "level": "decision",
    "title": "Components over the variant budget (12)",
    "count": 1,
-   "summary": "210 variants across 40 component sets. The audit says 'probably half can go'. This lists each set with its axes, so the cut is a decision per axis, not a redesign.",
+   "summary": "207 variants across 42 component sets. The audit says 'probably half can go'. This lists each set with its axes, so the cut is a decision per axis, not a redesign.",
    "evidence": [
-    "Button: 24 = Style(3) x Variant(2) x State(4)",
+    "Button: 15 = Style(3) x State(5)",
     "Avatar: 12 = Size(3) x Tone(4)",
     "Badge: 10 = Tone(5) x Dot(2)",
     "Input: 10 = Type(2) x State(5)",
@@ -382,15 +391,15 @@
    "evidence": [
     "neutral/50 #FAFAFA: 1 tokens alias it, 21 component layers reached",
     "neutral/100 #F5F5F5: 1 tokens alias it, 7 component layers reached",
-    "neutral/200 #ECECEC: 4 tokens alias it, 59 component layers reached",
-    "neutral/400 #D6D6D6: 1 tokens alias it, 17 component layers reached",
+    "neutral/200 #ECECEC: 5 tokens alias it, 60 component layers reached",
+    "neutral/400 #D6D6D6: 4 tokens alias it, 18 component layers reached",
     "neutral/500 #C0C0C0: 3 tokens alias it, 127 component layers reached",
     "neutral/600 #999999: 2 tokens alias it, 35 component layers reached",
     "neutral/650 #888888: 1 tokens alias it, 7 component layers reached",
     "neutral/700 #777777: 2 tokens alias it, 30 component layers reached",
     "neutral/750 #6F6F6F: 3 tokens alias it, 142 component layers reached",
-    "neutral/800 #555555: 2 tokens alias it, 56 component layers reached",
-    "neutral/850 #444444: 3 tokens alias it, 10 component layers reached",
+    "neutral/800 #555555: 5 tokens alias it, 57 component layers reached",
+    "neutral/850 #444444: 4 tokens alias it, 11 component layers reached",
     "neutral/900 #2A2A2A: 1 tokens alias it, 112 component layers reached",
     "neutral/925 #262626: 1 tokens alias it, 21 component layers reached"
    ],
@@ -421,22 +430,19 @@
  "components": [
   {
    "name": "Button",
-   "variants": 24,
+   "variants": 15,
    "axes": {
     "Style": [
      "Ghost",
      "Outline",
      "Solid"
     ],
-    "Variant": [
-     "Inverted",
-     "Primary"
-    ],
     "State": [
      "Default",
      "Disabled",
      "Focus",
-     "Hover"
+     "Hover",
+     "Pressed"
     ]
    }
   },
@@ -757,7 +763,29 @@
    }
   },
   {
-   "name": "Button-Solid-Primary",
+   "name": "GhostButtonPrimary",
+   "variants": 3,
+   "axes": {
+    "Property 1": [
+     "Default",
+     "Hover",
+     "Selected"
+    ]
+   }
+  },
+  {
+   "name": "OutlineButtonPrimary",
+   "variants": 3,
+   "axes": {
+    "Property 1": [
+     "Default",
+     "Hover",
+     "Selected"
+    ]
+   }
+  },
+  {
+   "name": "SolidButtonPrimary",
    "variants": 3,
    "axes": {
     "State": [
@@ -956,20 +984,20 @@
     "Desktop": 0,
     "Mobile": 0
    },
-   "direct": 639,
+   "direct": 648,
    "aliases": [],
-   "layers": 639,
+   "layers": 648,
    "productLayers": 0,
    "components": [
     [
      "(documentation, not a component)",
-     639
+     648
     ]
    ],
    "pages": [
     [
      "02 · Changelog",
-     235
+     244
     ],
     [
      "Spacing, Grid & Layout",
@@ -1010,25 +1038,33 @@
     "Desktop": 8,
     "Mobile": 8
    },
-   "direct": 494,
+   "direct": 507,
    "aliases": [],
-   "layers": 494,
-   "productLayers": 46,
+   "layers": 507,
+   "productLayers": 43,
    "components": [
     [
      "(documentation, not a component)",
-     448
+     464
     ],
     [
      "Button",
-     24
+     15
     ],
     [
      "Footer",
      6
     ],
     [
-     "Button-Solid-Primary",
+     "GhostButtonPrimary",
+     3
+    ],
+    [
+     "OutlineButtonPrimary",
+     3
+    ],
+    [
+     "SolidButtonPrimary",
      3
     ],
     [
@@ -1070,12 +1106,12 @@
      144
     ],
     [
-     "02 · Changelog",
-     85
+     "Button",
+     91
     ],
     [
-     "Button",
-     82
+     "02 · Changelog",
+     89
     ],
     [
      "Spacing, Grid & Layout",
@@ -1190,14 +1226,14 @@
     "Desktop": 32,
     "Mobile": 24
    },
-   "direct": 343,
+   "direct": 348,
    "aliases": [],
-   "layers": 343,
+   "layers": 348,
    "productLayers": 20,
    "components": [
     [
      "(documentation, not a component)",
-     323
+     328
     ],
     [
      "Section / Full Width",
@@ -1223,7 +1259,7 @@
    "pages": [
     [
      "02 · Changelog",
-     98
+     103
     ],
     [
      "Spacing, Grid & Layout",
@@ -1801,21 +1837,29 @@
     "Desktop": 0,
     "Mobile": 0
    },
-   "direct": 167,
+   "direct": 175,
    "aliases": [],
-   "layers": 167,
-   "productLayers": 46,
+   "layers": 175,
+   "productLayers": 42,
    "components": [
     [
      "(documentation, not a component)",
-     121
+     133
     ],
     [
      "Button",
-     30
+     18
     ],
     [
-     "Button-Solid-Primary",
+     "GhostButtonPrimary",
+     4
+    ],
+    [
+     "OutlineButtonPrimary",
+     4
+    ],
+    [
+     "SolidButtonPrimary",
      4
     ],
     [
@@ -1850,7 +1894,7 @@
    "pages": [
     [
      "Button",
-     101
+     109
     ],
     [
      "Empty State",
@@ -2199,14 +2243,14 @@
     "Desktop": 999,
     "Mobile": 999
    },
-   "direct": 715,
+   "direct": 716,
    "aliases": [],
-   "layers": 715,
+   "layers": 716,
    "productLayers": 95,
    "components": [
     [
      "(documentation, not a component)",
-     620
+     621
     ],
     [
      "Overview Card",
@@ -2260,7 +2304,7 @@
    "pages": [
     [
      "02 · Changelog",
-     63
+     64
     ],
     [
      "Progress Bar",
@@ -2301,14 +2345,14 @@
     "Desktop": 1,
     "Mobile": 1
    },
-   "direct": 305,
+   "direct": 310,
    "aliases": [],
-   "layers": 305,
+   "layers": 310,
    "productLayers": 30,
    "components": [
     [
      "(documentation, not a component)",
-     275
+     280
     ],
     [
      "Table",
@@ -2362,7 +2406,7 @@
    "pages": [
     [
      "02 · Changelog",
-     96
+     101
     ],
     [
      "Colour",
@@ -2403,18 +2447,18 @@
     "Desktop": 2,
     "Mobile": 2
    },
-   "direct": 156,
+   "direct": 160,
    "aliases": [],
-   "layers": 156,
-   "productLayers": 42,
+   "layers": 160,
+   "productLayers": 39,
    "components": [
     [
      "(documentation, not a component)",
-     114
+     121
     ],
     [
      "Button",
-     16
+     10
     ],
     [
      "Tab",
@@ -2429,7 +2473,11 @@
      4
     ],
     [
-     "Button-Solid-Primary",
+     "OutlineButtonPrimary",
+     3
+    ],
+    [
+     "SolidButtonPrimary",
      3
     ],
     [
@@ -2460,7 +2508,7 @@
    "pages": [
     [
      "Button",
-     57
+     61
     ],
     [
      "Tab",
@@ -2817,18 +2865,18 @@
     "Desktop": 17,
     "Mobile": 16
    },
-   "direct": 351,
+   "direct": 360,
    "aliases": [],
-   "layers": 351,
-   "productLayers": 87,
+   "layers": 360,
+   "productLayers": 84,
    "components": [
     [
      "(documentation, not a component)",
-     264
+     276
     ],
     [
      "Button",
-     24
+     15
     ],
     [
      "Navigation Bar",
@@ -2859,7 +2907,15 @@
      4
     ],
     [
-     "Button-Solid-Primary",
+     "GhostButtonPrimary",
+     3
+    ],
+    [
+     "OutlineButtonPrimary",
+     3
+    ],
+    [
+     "SolidButtonPrimary",
      3
     ],
     [
@@ -2894,7 +2950,7 @@
    "pages": [
     [
      "Button",
-     82
+     91
     ],
     [
      "Checkbox",
@@ -2935,14 +2991,14 @@
     "Desktop": 16,
     "Mobile": 16
    },
-   "direct": 944,
+   "direct": 955,
    "aliases": [],
-   "layers": 944,
+   "layers": 955,
    "productLayers": 175,
    "components": [
     [
      "(documentation, not a component)",
-     769
+     780
     ],
     [
      "Overview Card",
@@ -3016,7 +3072,7 @@
    "pages": [
     [
      "02 · Changelog",
-     192
+     203
     ],
     [
      "Overview",
@@ -3225,14 +3281,14 @@
     "Desktop": 15,
     "Mobile": 15
    },
-   "direct": 708,
+   "direct": 709,
    "aliases": [],
-   "layers": 708,
+   "layers": 709,
    "productLayers": 69,
    "components": [
     [
      "(documentation, not a component)",
-     639
+     640
     ],
     [
      "Overview Card",
@@ -3286,7 +3342,7 @@
     ],
     [
      "02 · Changelog",
-     45
+     46
     ],
     [
      "Spacing, Grid & Layout",
@@ -3319,14 +3375,14 @@
     "Desktop": 13,
     "Mobile": 13
    },
-   "direct": 2007,
+   "direct": 2019,
    "aliases": [],
-   "layers": 2007,
+   "layers": 2019,
    "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     1996
+     2008
     ],
     [
      "Form Field",
@@ -3343,12 +3399,12 @@
      216
     ],
     [
-     "Form Field",
-     85
+     "Button",
+     91
     ],
     [
-     "Button",
-     79
+     "Form Field",
+     85
     ],
     [
      "Group Cards",
@@ -3387,6 +3443,11 @@
     "border/field",
     "border/focus",
     "border/strong",
+    "button-surface/fill-hover",
+    "button-surface/focus",
+    "button-surface/label",
+    "button-surface/label-hover",
+    "button-surface/stroke",
     "button/fill-hover",
     "button/fill-hover-inverted",
     "button/label",
@@ -3402,12 +3463,12 @@
     "text/link",
     "text/on-accent"
    ],
-   "layers": 4944,
-   "productLayers": 665,
+   "layers": 4962,
+   "productLayers": 653,
    "components": [
     [
      "(documentation, not a component)",
-     4279
+     4309
     ],
     [
      "Overview Card",
@@ -3415,7 +3476,7 @@
     ],
     [
      "Button",
-     73
+     42
     ],
     [
      "Checkbox",
@@ -3446,11 +3507,11 @@
      22
     ],
     [
-     "Alert",
+     "Select",
      18
     ],
     [
-     "Select",
+     "Alert",
      18
     ],
     [
@@ -3478,7 +3539,7 @@
      13
     ],
     [
-     "Avatar",
+     "Combobox",
      12
     ],
     [
@@ -3490,16 +3551,20 @@
      12
     ],
     [
-     "Input",
+     "Avatar",
      12
     ],
     [
-     "Combobox",
+     "Input",
      12
     ],
     [
      "Table Row",
      12
+    ],
+    [
+     "OutlineButtonPrimary",
+     11
     ],
     [
      "Key Stakeholders Card",
@@ -3518,7 +3583,7 @@
      10
     ],
     [
-     "Button-Solid-Primary",
+     "SolidButtonPrimary",
      9
     ],
     [
@@ -3530,19 +3595,23 @@
      8
     ],
     [
-     "Slider",
-     7
+     "GhostButtonPrimary",
+     8
     ],
     [
      "Side Nav Item",
      7
     ],
     [
-     "Accordion Item",
+     "Slider",
+     7
+    ],
+    [
+     "Code Block",
      6
     ],
     [
-     "Drawer",
+     "Tooltip",
      6
     ],
     [
@@ -3554,19 +3623,19 @@
      6
     ],
     [
-     "Code Block",
+     "Accordion Item",
      6
     ],
     [
-     "Tooltip",
+     "Drawer",
      6
-    ],
-    [
-     "Inline Edit",
-     4
     ],
     [
      "Menu Item",
+     4
+    ],
+    [
+     "Inline Edit",
      4
     ],
     [
@@ -3589,19 +3658,19 @@
    "pages": [
     [
      "Button",
-     313
+     324
     ],
     [
      "Group Cards",
      210
     ],
     [
-     "Overview",
-     198
+     "02 · Changelog",
+     203
     ],
     [
-     "02 · Changelog",
-     196
+     "Overview",
+     198
     ],
     [
      "Checkbox",
@@ -3636,6 +3705,11 @@
     "border/field",
     "border/focus",
     "border/strong",
+    "button-surface/fill-hover",
+    "button-surface/focus",
+    "button-surface/label",
+    "button-surface/label-hover",
+    "button-surface/stroke",
     "button/fill-hover",
     "button/fill-hover-inverted",
     "button/label",
@@ -3650,20 +3724,20 @@
     "text/inverted",
     "text/link"
    ],
-   "layers": 4759,
-   "productLayers": 619,
+   "layers": 4777,
+   "productLayers": 607,
    "components": [
     [
      "(documentation, not a component)",
-     4140
-    ],
-    [
-     "Button",
-     73
+     4170
     ],
     [
      "Overview Card",
      59
+    ],
+    [
+     "Button",
+     42
     ],
     [
      "Checkbox",
@@ -3694,11 +3768,11 @@
      19
     ],
     [
-     "Alert",
+     "Select",
      18
     ],
     [
-     "Select",
+     "Alert",
      18
     ],
     [
@@ -3726,6 +3800,10 @@
      13
     ],
     [
+     "Combobox",
+     12
+    ],
+    [
      "Section / Header",
      12
     ],
@@ -3738,12 +3816,12 @@
      12
     ],
     [
-     "Combobox",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
-     12
+     "OutlineButtonPrimary",
+     11
     ],
     [
      "Side Navigation",
@@ -3758,15 +3836,15 @@
      10
     ],
     [
-     "Button-Solid-Primary",
+     "SolidButtonPrimary",
      9
     ],
     [
-     "Tab",
+     "Key Stakeholders Card",
      8
     ],
     [
-     "Key Stakeholders Card",
+     "Tab",
      8
     ],
     [
@@ -3774,19 +3852,23 @@
      8
     ],
     [
-     "Slider",
-     7
+     "GhostButtonPrimary",
+     8
     ],
     [
      "Side Nav Item",
      7
     ],
     [
-     "Accordion Item",
+     "Slider",
+     7
+    ],
+    [
+     "Code Block",
      6
     ],
     [
-     "Drawer",
+     "Tooltip",
      6
     ],
     [
@@ -3798,19 +3880,19 @@
      6
     ],
     [
-     "Code Block",
+     "Accordion Item",
      6
     ],
     [
-     "Tooltip",
+     "Drawer",
      6
-    ],
-    [
-     "Inline Edit",
-     4
     ],
     [
      "Menu Item",
+     4
+    ],
+    [
+     "Inline Edit",
      4
     ],
     [
@@ -3833,11 +3915,11 @@
    "pages": [
     [
      "Button",
-     313
+     324
     ],
     [
      "02 · Changelog",
-     183
+     190
     ],
     [
      "Group Cards",
@@ -3873,16 +3955,16 @@
    "values": {
     "Value": "#FFFFFF"
    },
-   "direct": 1,
+   "direct": 2,
    "aliases": [
     "bg/surface"
    ],
-   "layers": 690,
+   "layers": 691,
    "productLayers": 112,
    "components": [
     [
      "(documentation, not a component)",
-     578
+     579
     ],
     [
      "Input",
@@ -4492,15 +4574,16 @@
    "aliases": [
     "bg/skeleton",
     "border/default",
+    "button-surface/fill-solid-hover",
     "button/fill-solid-hover",
     "button/fill-solid-hover-inverted"
    ],
-   "layers": 490,
-   "productLayers": 59,
+   "layers": 504,
+   "productLayers": 60,
    "components": [
     [
      "(documentation, not a component)",
-     431
+     444
     ],
     [
      "Progress Bar",
@@ -4519,11 +4602,11 @@
      5
     ],
     [
-     "Table Row",
+     "Skeleton",
      4
     ],
     [
-     "Skeleton",
+     "Table Row",
      4
     ],
     [
@@ -4536,7 +4619,7 @@
     ],
     [
      "Button",
-     2
+     3
     ],
     [
      "Divider",
@@ -4579,14 +4662,14 @@
      1
     ],
     [
-     "Button-Solid-Primary",
+     "SolidButtonPrimary",
      1
     ]
    ],
    "pages": [
     [
      "02 · Changelog",
-     98
+     103
     ],
     [
      "Colour",
@@ -4605,16 +4688,16 @@
      23
     ],
     [
+     "Button",
+     17
+    ],
+    [
      "Group Cards",
      16
     ],
     [
      "Slider",
      15
-    ],
-    [
-     "Overview",
-     14
     ]
    ]
   },
@@ -4628,14 +4711,17 @@
    },
    "direct": 1,
    "aliases": [
-    "border/muted"
+    "border/muted",
+    "button-surface/fill-pressed",
+    "button/fill-pressed",
+    "button/fill-pressed-inverted"
    ],
-   "layers": 291,
-   "productLayers": 17,
+   "layers": 296,
+   "productLayers": 18,
    "components": [
     [
      "(documentation, not a component)",
-     274
+     278
     ],
     [
      "Section / Full Width",
@@ -4667,6 +4753,10 @@
     ],
     [
      "Jira Annotation",
+     1
+    ],
+    [
+     "Button",
      1
     ]
    ],
@@ -4719,12 +4809,12 @@
     "text/inverted-muted",
     "text/muted"
    ],
-   "layers": 2356,
+   "layers": 2372,
    "productLayers": 127,
    "components": [
     [
      "(documentation, not a component)",
-     2229
+     2245
     ],
     [
      "Section / Columns",
@@ -4743,12 +4833,16 @@
      8
     ],
     [
+     "Section / Full Width",
+     6
+    ],
+    [
      "File Uploader",
      6
     ],
     [
-     "Section / Full Width",
-     6
+     "Footer",
+     5
     ],
     [
      "Alert",
@@ -4759,12 +4853,20 @@
      5
     ],
     [
-     "Footer",
+     "Table",
      5
     ],
     [
-     "Table",
-     5
+     "Key Stakeholders Card",
+     4
+    ],
+    [
+     "Section / Quote",
+     4
+    ],
+    [
+     "Section / Showcase",
+     4
     ],
     [
      "Breadcrumb Item",
@@ -4779,19 +4881,7 @@
      4
     ],
     [
-     "Key Stakeholders Card",
-     4
-    ],
-    [
      "Tab",
-     4
-    ],
-    [
-     "Section / Quote",
-     4
-    ],
-    [
-     "Section / Showcase",
      4
     ],
     [
@@ -4805,6 +4895,10 @@
     [
      "Drawer",
      2
+    ],
+    [
+     "Code Block",
+     1
     ],
     [
      "Stat Card",
@@ -4821,10 +4915,6 @@
     [
      "Modal",
      1
-    ],
-    [
-     "Code Block",
-     1
     ]
    ],
    "pages": [
@@ -4834,7 +4924,7 @@
     ],
     [
      "02 · Changelog",
-     110
+     114
     ],
     [
      "Group Cards",
@@ -4842,7 +4932,7 @@
     ],
     [
      "Button",
-     70
+     82
     ],
     [
      "Form Field",
@@ -4853,11 +4943,11 @@
      60
     ],
     [
-     "Spacing, Grid & Layout",
+     "Overview",
      56
     ],
     [
-     "Overview",
+     "Spacing, Grid & Layout",
      56
     ]
    ]
@@ -4883,10 +4973,6 @@
      100
     ],
     [
-     "Overview Card",
-     6
-    ],
-    [
      "Input",
      6
     ],
@@ -4895,8 +4981,8 @@
      6
     ],
     [
-     "Section / Quote",
-     4
+     "Overview Card",
+     6
     ],
     [
      "Search Bar",
@@ -4907,11 +4993,15 @@
      4
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Section / Quote",
+     4
     ],
     [
      "Combobox",
+     2
+    ],
+    [
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -5116,14 +5206,17 @@
    "direct": 1,
    "aliases": [
     "bg/skeleton",
-    "border/default"
+    "border/default",
+    "button-surface/fill-pressed",
+    "button/fill-pressed",
+    "button/fill-pressed-inverted"
    ],
-   "layers": 482,
-   "productLayers": 56,
+   "layers": 492,
+   "productLayers": 57,
    "components": [
     [
      "(documentation, not a component)",
-     426
+     435
     ],
     [
      "Progress Bar",
@@ -5142,11 +5235,11 @@
      5
     ],
     [
-     "Table Row",
+     "Skeleton",
      4
     ],
     [
-     "Skeleton",
+     "Table Row",
      4
     ],
     [
@@ -5182,6 +5275,10 @@
      2
     ],
     [
+     "Button",
+     1
+    ],
+    [
      "Alert",
      1
     ],
@@ -5201,7 +5298,7 @@
    "pages": [
     [
      "02 · Changelog",
-     97
+     102
     ],
     [
      "Colour",
@@ -5244,27 +5341,24 @@
    "direct": 1,
    "aliases": [
     "bg/hover",
+    "button-surface/fill-solid-hover",
     "button/fill-solid-hover",
     "button/fill-solid-hover-inverted"
    ],
-   "layers": 39,
-   "productLayers": 10,
+   "layers": 48,
+   "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     29
+     37
     ],
     [
      "Button",
-     2
+     3
     ],
     [
      "Menu Item",
      2
-    ],
-    [
-     "Button-Solid-Primary",
-     1
     ],
     [
      "Inline Edit",
@@ -5285,12 +5379,16 @@
     [
      "Table Row",
      1
+    ],
+    [
+     "SolidButtonPrimary",
+     1
     ]
    ],
    "pages": [
     [
      "Button",
-     7
+     16
     ],
     [
      "Colour",
@@ -5821,12 +5919,12 @@
    "aliases": [
     "feedback/warning"
    ],
-   "layers": 51,
+   "layers": 52,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     45
+     46
     ],
     [
      "Badge",
@@ -5844,7 +5942,7 @@
    "pages": [
     [
      "02 · Changelog",
-     14
+     15
     ],
     [
      "Badge",
@@ -5888,12 +5986,12 @@
    "aliases": [
     "feedback/warning-bg"
    ],
-   "layers": 43,
+   "layers": 44,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     40
+     41
     ],
     [
      "Badge",
@@ -5907,7 +6005,7 @@
    "pages": [
     [
      "02 · Changelog",
-     15
+     16
     ],
     [
      "Badge",
@@ -6496,10 +6594,10 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 165,
+   "direct": 164,
    "aliases": [],
-   "layers": 165,
-   "productLayers": 41,
+   "layers": 164,
+   "productLayers": 40,
    "components": [
     [
      "(documentation, not a component)",
@@ -6544,10 +6642,6 @@
     [
      "Section / Showcase",
      2
-    ],
-    [
-     "Button",
-     1
     ],
     [
      "Code Block",
@@ -6600,12 +6694,12 @@
      9
     ],
     [
-     "Button",
+     "Overview",
      8
     ],
     [
-     "Overview",
-     8
+     "Button",
+     7
     ],
     [
      "Footer",
@@ -6626,14 +6720,14 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 2966,
+   "direct": 2973,
    "aliases": [],
-   "layers": 2966,
+   "layers": 2973,
    "productLayers": 190,
    "components": [
     [
      "(documentation, not a component)",
-     2776
+     2783
     ],
     [
      "Jira Annotation",
@@ -6783,7 +6877,7 @@
    "pages": [
     [
      "02 · Changelog",
-     166
+     173
     ],
     [
      "Group Cards",
@@ -6824,14 +6918,14 @@
     "Light": "neutral/750",
     "Dark": "neutral/500"
    },
-   "direct": 2206,
+   "direct": 2216,
    "aliases": [],
-   "layers": 2206,
+   "layers": 2216,
    "productLayers": 94,
    "components": [
     [
      "(documentation, not a component)",
-     2112
+     2122
     ],
     [
      "Overview Card",
@@ -6929,7 +7023,7 @@
     ],
     [
      "02 · Changelog",
-     110
+     114
     ],
     [
      "Group Cards",
@@ -6944,15 +7038,15 @@
      56
     ],
     [
+     "Button",
+     52
+    ],
+    [
      "Overview",
      52
     ],
     [
      "Alert",
-     50
-    ],
-    [
-     "File Uploader",
      50
     ]
    ]
@@ -7200,14 +7294,14 @@
     "Light": "neutral/200",
     "Dark": "neutral/800"
    },
-   "direct": 440,
+   "direct": 445,
    "aliases": [],
-   "layers": 440,
+   "layers": 445,
    "productLayers": 52,
    "components": [
     [
      "(documentation, not a component)",
-     388
+     393
     ],
     [
      "Progress Bar",
@@ -7281,7 +7375,7 @@
    "pages": [
     [
      "02 · Changelog",
-     97
+     102
     ],
     [
      "Colour",
@@ -7750,43 +7844,53 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 30,
-   "aliases": [],
-   "layers": 30,
-   "productLayers": 7,
+   "direct": 5,
+   "aliases": [
+    "button-surface/stroke"
+   ],
+   "layers": 46,
+   "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     23
+     34
     ],
     [
      "Button",
      4
     ],
     [
-     "File Uploader",
-     1
+     "OutlineButtonPrimary",
+     3
     ],
     [
      "Navigation Bar",
-     1
+     2
     ],
     [
      "Section / Let's Connect",
+     2
+    ],
+    [
+     "File Uploader",
      1
     ]
    ],
    "pages": [
     [
      "Button",
-     14
-    ],
-    [
-     "File Uploader",
-     4
+     25
     ],
     [
      "Navigation Bar",
+     6
+    ],
+    [
+     "Section / Let's Connect",
+     5
+    ],
+    [
+     "File Uploader",
      4
     ],
     [
@@ -7794,15 +7898,11 @@
      3
     ],
     [
-     "Section / Let's Connect",
-     3
+     "Page rhythm",
+     2
     ],
     [
      "Tooltip",
-     1
-    ],
-    [
-     "Page rhythm",
      1
     ]
    ]
@@ -7816,20 +7916,38 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 93,
-   "aliases": [],
-   "layers": 93,
-   "productLayers": 22,
+   "direct": 3,
+   "aliases": [
+    "button-surface/label"
+   ],
+   "layers": 137,
+   "productLayers": 34,
    "components": [
     [
      "(documentation, not a component)",
-     71
+     103
     ],
     [
      "Button",
      12
     ],
     [
+     "GhostButtonPrimary",
+     4
+    ],
+    [
+     "OutlineButtonPrimary",
+     4
+    ],
+    [
+     "Navigation Bar",
+     4
+    ],
+    [
+     "Section / Let's Connect",
+     4
+    ],
+    [
      "File Uploader",
      2
     ],
@@ -7839,21 +7957,17 @@
     ],
     [
      "Modal",
-     2
-    ],
-    [
-     "Navigation Bar",
-     2
-    ],
-    [
-     "Section / Let's Connect",
      2
     ]
    ],
    "pages": [
     [
      "Button",
-     42
+     76
+    ],
+    [
+     "Navigation Bar",
+     10
     ],
     [
      "File Uploader",
@@ -7868,8 +7982,8 @@
      8
     ],
     [
-     "Navigation Bar",
-     6
+     "Section / Let's Connect",
+     8
     ],
     [
      "Radius & Elevation",
@@ -7877,10 +7991,6 @@
     ],
     [
      "Tone of Voice",
-     4
-    ],
-    [
-     "Section / Let's Connect",
      4
     ]
    ]
@@ -7894,22 +8004,36 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 55,
-   "aliases": [],
-   "layers": 55,
-   "productLayers": 11,
+   "direct": 5,
+   "aliases": [
+    "button-surface/fill-hover"
+   ],
+   "layers": 70,
+   "productLayers": 14,
    "components": [
     [
      "(documentation, not a component)",
-     44
+     56
     ],
     [
      "Button",
      5
     ],
     [
-     "Button-Solid-Primary",
+     "SolidButtonPrimary",
      2
+    ],
+    [
+     "Overview Card",
+     2
+    ],
+    [
+     "GhostButtonPrimary",
+     1
+    ],
+    [
+     "OutlineButtonPrimary",
+     1
     ],
     [
      "Empty State",
@@ -7917,10 +8041,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Overview Card",
      1
     ],
     [
@@ -7931,7 +8051,7 @@
    "pages": [
     [
      "Button",
-     20
+     33
     ],
     [
      "Empty State",
@@ -7942,16 +8062,16 @@
      5
     ],
     [
+     "Overview",
+     5
+    ],
+    [
      "01 · Getting Started",
      4
     ],
     [
      "Tone of Voice",
      4
-    ],
-    [
-     "Overview",
-     3
     ],
     [
      "Annotation",
@@ -7972,22 +8092,36 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 111,
-   "aliases": [],
-   "layers": 111,
-   "productLayers": 26,
+   "direct": 1,
+   "aliases": [
+    "button-surface/label-hover"
+   ],
+   "layers": 175,
+   "productLayers": 38,
    "components": [
     [
      "(documentation, not a component)",
-     85
+     137
     ],
     [
      "Button",
-     12
+     18
     ],
     [
-     "Button-Solid-Primary",
+     "SolidButtonPrimary",
      6
+    ],
+    [
+     "Overview Card",
+     4
+    ],
+    [
+     "GhostButtonPrimary",
+     2
+    ],
+    [
+     "OutlineButtonPrimary",
+     2
     ],
     [
      "Empty State",
@@ -7998,10 +8132,6 @@
      2
     ],
     [
-     "Overview Card",
-     2
-    ],
-    [
      "Jira Annotation",
      2
     ]
@@ -8009,7 +8139,7 @@
    "pages": [
     [
      "Button",
-     47
+     107
     ],
     [
      "01 · Getting Started",
@@ -8028,15 +8158,15 @@
      8
     ],
     [
+     "Overview",
+     8
+    ],
+    [
      "Spacing, Grid & Layout",
      4
     ],
     [
      "Radius & Elevation",
-     4
-    ],
-    [
-     "Overview",
      4
     ]
    ]
@@ -8314,14 +8444,14 @@
     "Light": "status/warning",
     "Dark": "status/warning-on-dark"
    },
-   "direct": 51,
+   "direct": 52,
    "aliases": [],
-   "layers": 51,
+   "layers": 52,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     45
+     46
     ],
     [
      "Badge",
@@ -8339,7 +8469,7 @@
    "pages": [
     [
      "02 · Changelog",
-     14
+     15
     ],
     [
      "Badge",
@@ -8380,14 +8510,14 @@
     "Light": "status/warning-bg",
     "Dark": "status/warning-bg-dark"
    },
-   "direct": 43,
+   "direct": 44,
    "aliases": [],
-   "layers": 43,
+   "layers": 44,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     40
+     41
     ],
     [
      "Badge",
@@ -8401,7 +8531,7 @@
    "pages": [
     [
      "02 · Changelog",
-     15
+     16
     ],
     [
      "Badge",
@@ -8586,10 +8716,10 @@
     "Light": "#00000000",
     "Dark": "#00000000"
    },
-   "direct": 94,
+   "direct": 92,
    "aliases": [],
-   "layers": 94,
-   "productLayers": 23,
+   "layers": 92,
+   "productLayers": 21,
    "components": [
     [
      "(documentation, not a component)",
@@ -8597,11 +8727,19 @@
     ],
     [
      "Button",
-     12
+     6
     ],
     [
      "Tab",
      4
+    ],
+    [
+     "GhostButtonPrimary",
+     2
+    ],
+    [
+     "OutlineButtonPrimary",
+     2
     ],
     [
      "Navigation Bar",
@@ -8627,7 +8765,7 @@
    "pages": [
     [
      "Button",
-     40
+     38
     ],
     [
      "Tab",
@@ -8888,12 +9026,12 @@
    "aliases": [
     "feedback/warning-bg"
    ],
-   "layers": 43,
+   "layers": 44,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     40
+     41
     ],
     [
      "Badge",
@@ -8907,7 +9045,7 @@
    "pages": [
     [
      "02 · Changelog",
-     15
+     16
     ],
     [
      "Badge",
@@ -9007,43 +9145,70 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 27,
-   "aliases": [],
-   "layers": 27,
-   "productLayers": 9,
+   "direct": 0,
+   "aliases": [
+    "button-surface/focus",
+    "button-surface/stroke"
+   ],
+   "layers": 59,
+   "productLayers": 18,
    "components": [
     [
      "(documentation, not a component)",
-     18
+     41
     ],
     [
      "Button",
      7
     ],
     [
+     "OutlineButtonPrimary",
+     4
+    ],
+    [
      "Navigation Bar",
-     1
+     2
     ],
     [
      "Section / Let's Connect",
+     2
+    ],
+    [
+     "GhostButtonPrimary",
+     1
+    ],
+    [
+     "SolidButtonPrimary",
+     1
+    ],
+    [
+     "File Uploader",
      1
     ]
    ],
    "pages": [
     [
      "Button",
-     22
+     43
     ],
     [
      "Navigation Bar",
-     2
+     5
+    ],
+    [
+     "File Uploader",
+     4
     ],
     [
      "Section / Let's Connect",
-     2
+     4
     ],
     [
      "Page rhythm",
+     2
+    ],
+    [
+     "Tooltip",
      1
     ]
    ]
@@ -9057,44 +9222,82 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 48,
-   "aliases": [],
-   "layers": 48,
-   "productLayers": 16,
+   "direct": 0,
+   "aliases": [
+    "button-surface/label"
+   ],
+   "layers": 134,
+   "productLayers": 34,
    "components": [
     [
      "(documentation, not a component)",
-     32
+     100
     ],
     [
      "Button",
      12
     ],
     [
+     "GhostButtonPrimary",
+     4
+    ],
+    [
+     "OutlineButtonPrimary",
+     4
+    ],
+    [
      "Navigation Bar",
-     2
+     4
     ],
     [
      "Section / Let's Connect",
+     4
+    ],
+    [
+     "File Uploader",
+     2
+    ],
+    [
+     "Empty State",
+     2
+    ],
+    [
+     "Modal",
      2
     ]
    ],
    "pages": [
     [
      "Button",
-     38
+     76
     ],
     [
      "Navigation Bar",
-     4
+     10
+    ],
+    [
+     "File Uploader",
+     8
+    ],
+    [
+     "Empty State",
+     8
+    ],
+    [
+     "Modal",
+     8
     ],
     [
      "Section / Let's Connect",
+     8
+    ],
+    [
+     "Tone of Voice",
      4
     ],
     [
      "Page rhythm",
-     2
+     4
     ]
    ]
   },
@@ -9107,31 +9310,81 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 18,
-   "aliases": [],
-   "layers": 18,
-   "productLayers": 6,
+   "direct": 0,
+   "aliases": [
+    "button-surface/fill-hover"
+   ],
+   "layers": 65,
+   "productLayers": 14,
    "components": [
     [
      "(documentation, not a component)",
-     12
+     51
     ],
     [
      "Button",
      5
     ],
     [
+     "SolidButtonPrimary",
+     2
+    ],
+    [
      "Overview Card",
+     2
+    ],
+    [
+     "GhostButtonPrimary",
+     1
+    ],
+    [
+     "OutlineButtonPrimary",
+     1
+    ],
+    [
+     "Empty State",
+     1
+    ],
+    [
+     "Modal",
+     1
+    ],
+    [
+     "Jira Annotation",
      1
     ]
    ],
    "pages": [
     [
      "Button",
-     16
+     32
+    ],
+    [
+     "01 · Getting Started",
+     4
+    ],
+    [
+     "Tone of Voice",
+     4
+    ],
+    [
+     "Empty State",
+     4
+    ],
+    [
+     "Modal",
+     4
     ],
     [
      "Overview",
+     4
+    ],
+    [
+     "Spacing, Grid & Layout",
+     2
+    ],
+    [
+     "Radius & Elevation",
      2
     ]
    ]
@@ -9145,31 +9398,81 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 42,
-   "aliases": [],
-   "layers": 42,
-   "productLayers": 14,
+   "direct": 0,
+   "aliases": [
+    "button-surface/label-hover"
+   ],
+   "layers": 174,
+   "productLayers": 38,
    "components": [
     [
      "(documentation, not a component)",
-     28
+     136
     ],
     [
      "Button",
-     12
+     18
+    ],
+    [
+     "SolidButtonPrimary",
+     6
     ],
     [
      "Overview Card",
+     4
+    ],
+    [
+     "GhostButtonPrimary",
+     2
+    ],
+    [
+     "OutlineButtonPrimary",
+     2
+    ],
+    [
+     "Empty State",
+     2
+    ],
+    [
+     "Modal",
+     2
+    ],
+    [
+     "Jira Annotation",
      2
     ]
    ],
    "pages": [
     [
      "Button",
-     38
+     106
+    ],
+    [
+     "01 · Getting Started",
+     8
+    ],
+    [
+     "Tone of Voice",
+     8
+    ],
+    [
+     "Empty State",
+     8
+    ],
+    [
+     "Modal",
+     8
     ],
     [
      "Overview",
+     8
+    ],
+    [
+     "Spacing, Grid & Layout",
+     4
+    ],
+    [
+     "Radius & Elevation",
      4
     ]
    ]
@@ -9467,21 +9770,29 @@
     "Desktop": 16,
     "Mobile": 12
    },
-   "direct": 148,
+   "direct": 157,
    "aliases": [],
-   "layers": 148,
-   "productLayers": 39,
+   "layers": 157,
+   "productLayers": 36,
    "components": [
     [
      "(documentation, not a component)",
-     109
+     121
     ],
     [
      "Button",
-     24
+     15
     ],
     [
-     "Button-Solid-Primary",
+     "GhostButtonPrimary",
+     3
+    ],
+    [
+     "OutlineButtonPrimary",
+     3
+    ],
+    [
+     "SolidButtonPrimary",
      3
     ],
     [
@@ -9516,7 +9827,7 @@
    "pages": [
     [
      "Button",
-     82
+     91
     ],
     [
      "Empty State",
@@ -9557,21 +9868,29 @@
     "Desktop": 28,
     "Mobile": 22
    },
-   "direct": 150,
+   "direct": 159,
    "aliases": [],
-   "layers": 150,
-   "productLayers": 40,
+   "layers": 159,
+   "productLayers": 37,
    "components": [
     [
      "(documentation, not a component)",
-     110
+     122
     ],
     [
      "Button",
-     24
+     15
     ],
     [
-     "Button-Solid-Primary",
+     "GhostButtonPrimary",
+     3
+    ],
+    [
+     "OutlineButtonPrimary",
+     3
+    ],
+    [
+     "SolidButtonPrimary",
      3
     ],
     [
@@ -9606,7 +9925,7 @@
    "pages": [
     [
      "Button",
-     82
+     91
     ],
     [
      "Empty State",
@@ -10007,14 +10326,14 @@
     "Desktop": 6,
     "Mobile": 6
    },
-   "direct": 392,
+   "direct": 393,
    "aliases": [],
-   "layers": 392,
+   "layers": 393,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     380
+     381
     ],
     [
      "Badge",
@@ -10028,7 +10347,7 @@
    "pages": [
     [
      "02 · Changelog",
-     42
+     43
     ],
     [
      "Badge",
@@ -10069,14 +10388,14 @@
     "Desktop": 14,
     "Mobile": 14
    },
-   "direct": 392,
+   "direct": 393,
    "aliases": [],
-   "layers": 392,
+   "layers": 393,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     380
+     381
     ],
     [
      "Badge",
@@ -10090,7 +10409,7 @@
    "pages": [
     [
      "02 · Changelog",
-     42
+     43
     ],
     [
      "Badge",
@@ -10131,14 +10450,14 @@
     "Desktop": 6,
     "Mobile": 6
    },
-   "direct": 392,
+   "direct": 393,
    "aliases": [],
-   "layers": 392,
+   "layers": 393,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     380
+     381
     ],
     [
      "Badge",
@@ -10152,7 +10471,7 @@
    "pages": [
     [
      "02 · Changelog",
-     42
+     43
     ],
     [
      "Badge",
@@ -14336,12 +14655,12 @@
     "text/muted",
     "text/placeholder"
    ],
-   "layers": 2424,
+   "layers": 2440,
    "productLayers": 142,
    "components": [
     [
      "(documentation, not a component)",
-     2282
+     2298
     ],
     [
      "Section / Columns",
@@ -14463,7 +14782,7 @@
     ],
     [
      "02 · Changelog",
-     110
+     114
     ],
     [
      "Form Field",
@@ -14475,7 +14794,7 @@
     ],
     [
      "Button",
-     70
+     82
     ],
     [
      "Select",
@@ -14590,12 +14909,12 @@
    "aliases": [
     "feedback/warning"
    ],
-   "layers": 51,
+   "layers": 52,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     45
+     46
     ],
     [
      "Badge",
@@ -14613,7 +14932,7 @@
    "pages": [
     [
      "02 · Changelog",
-     14
+     15
     ],
     [
      "Badge",
@@ -14975,11 +15294,11 @@
      5
     ],
     [
-     "03 · Contribution & Governance",
+     "Colour",
      3
     ],
     [
-     "Colour",
+     "03 · Contribution & Governance",
      3
     ],
     [
@@ -15038,11 +15357,11 @@
      7
     ],
     [
-     "03 · Contribution & Governance",
+     "Colour",
      3
     ],
     [
-     "Colour",
+     "03 · Contribution & Governance",
      3
     ],
     [
@@ -15400,14 +15719,16 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 55,
-   "aliases": [],
-   "layers": 55,
-   "productLayers": 18,
+   "direct": 45,
+   "aliases": [
+    "button-surface/focus"
+   ],
+   "layers": 63,
+   "productLayers": 20,
    "components": [
     [
      "(documentation, not a component)",
-     37
+     43
     ],
     [
      "Button",
@@ -15438,7 +15759,15 @@
      2
     ],
     [
-     "Button-Solid-Primary",
+     "GhostButtonPrimary",
+     1
+    ],
+    [
+     "OutlineButtonPrimary",
+     1
+    ],
+    [
+     "SolidButtonPrimary",
      1
     ],
     [
@@ -15449,7 +15778,7 @@
    "pages": [
     [
      "Button",
-     10
+     18
     ],
     [
      "Checkbox",
@@ -15490,10 +15819,10 @@
     "Desktop": 2,
     "Mobile": 2
    },
-   "direct": 65,
+   "direct": 64,
    "aliases": [],
-   "layers": 65,
-   "productLayers": 21,
+   "layers": 64,
+   "productLayers": 20,
    "components": [
     [
      "(documentation, not a component)",
@@ -15501,7 +15830,7 @@
     ],
     [
      "Button",
-     6
+     3
     ],
     [
      "Checkbox",
@@ -15528,7 +15857,15 @@
      2
     ],
     [
-     "Button-Solid-Primary",
+     "GhostButtonPrimary",
+     1
+    ],
+    [
+     "OutlineButtonPrimary",
+     1
+    ],
+    [
+     "SolidButtonPrimary",
      1
     ],
     [
@@ -15539,7 +15876,7 @@
    "pages": [
     [
      "Button",
-     19
+     18
     ],
     [
      "Checkbox",
@@ -15652,14 +15989,14 @@
     "Light": "neutral/500",
     "Dark": "neutral/750"
    },
-   "direct": 116,
+   "direct": 122,
    "aliases": [],
-   "layers": 116,
+   "layers": 122,
    "productLayers": 26,
    "components": [
     [
      "(documentation, not a component)",
-     90
+     96
     ],
     [
      "Section / Columns",
@@ -15701,7 +16038,7 @@
    "pages": [
     [
      "Button",
-     24
+     30
     ],
     [
      "Section / Columns",
@@ -15772,28 +16109,30 @@
     "Light": "neutral/850",
     "Dark": "neutral/200"
    },
-   "direct": 5,
-   "aliases": [],
-   "layers": 5,
-   "productLayers": 2,
+   "direct": 0,
+   "aliases": [
+    "button-surface/fill-solid-hover"
+   ],
+   "layers": 17,
+   "productLayers": 4,
    "components": [
     [
      "(documentation, not a component)",
-     3
+     13
     ],
     [
      "Button",
-     1
+     3
     ],
     [
-     "Button-Solid-Primary",
+     "SolidButtonPrimary",
      1
     ]
    ],
    "pages": [
     [
      "Button",
-     4
+     16
     ],
     [
      "02 · Changelog",
@@ -15810,14 +16149,56 @@
     "Light": "neutral/200",
     "Dark": "neutral/850"
    },
-   "direct": 3,
-   "aliases": [],
-   "layers": 3,
+   "direct": 0,
+   "aliases": [
+    "button-surface/fill-solid-hover"
+   ],
+   "layers": 17,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     13
+    ],
+    [
+     "Button",
+     3
+    ],
+    [
+     "SolidButtonPrimary",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     16
+    ],
+    [
+     "02 · Changelog",
+     1
+    ]
+   ]
+  },
+  "button/fill-pressed · Semantic": {
+   "name": "button/fill-pressed",
+   "collection": "Semantic",
+   "type": "COLOR",
+   "code": "--button-fill-pressed",
+   "values": {
+    "Light": "neutral/800",
+    "Dark": "neutral/400"
+   },
+   "direct": 0,
+   "aliases": [
+    "button-surface/fill-pressed"
+   ],
+   "layers": 5,
    "productLayers": 1,
    "components": [
     [
      "(documentation, not a component)",
-     2
+     4
     ],
     [
      "Button",
@@ -15827,7 +16208,473 @@
    "pages": [
     [
      "Button",
+     5
+    ]
+   ]
+  },
+  "button/fill-pressed-inverted · Semantic": {
+   "name": "button/fill-pressed-inverted",
+   "collection": "Semantic",
+   "type": "COLOR",
+   "code": "--button-fill-pressed-inverted",
+   "values": {
+    "Light": "neutral/400",
+    "Dark": "neutral/800"
+   },
+   "direct": 0,
+   "aliases": [
+    "button-surface/fill-pressed"
+   ],
+   "layers": 5,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     4
+    ],
+    [
+     "Button",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     5
+    ]
+   ]
+  },
+  "button-surface/fill-hover · Surface": {
+   "name": "button-surface/fill-hover",
+   "collection": "Surface",
+   "type": "COLOR",
+   "code": "--button-surface-fill-hover",
+   "values": {
+    "Default": "button/fill-hover",
+    "Inverted": "button/fill-hover-inverted"
+   },
+   "direct": 65,
+   "aliases": [],
+   "layers": 65,
+   "productLayers": 14,
+   "components": [
+    [
+     "(documentation, not a component)",
+     51
+    ],
+    [
+     "Button",
+     5
+    ],
+    [
+     "SolidButtonPrimary",
+     2
+    ],
+    [
+     "Overview Card",
+     2
+    ],
+    [
+     "GhostButtonPrimary",
+     1
+    ],
+    [
+     "OutlineButtonPrimary",
+     1
+    ],
+    [
+     "Empty State",
+     1
+    ],
+    [
+     "Modal",
+     1
+    ],
+    [
+     "Jira Annotation",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     32
+    ],
+    [
+     "01 · Getting Started",
+     4
+    ],
+    [
+     "Tone of Voice",
+     4
+    ],
+    [
+     "Empty State",
+     4
+    ],
+    [
+     "Modal",
+     4
+    ],
+    [
+     "Overview",
+     4
+    ],
+    [
+     "Spacing, Grid & Layout",
+     2
+    ],
+    [
+     "Radius & Elevation",
+     2
+    ]
+   ]
+  },
+  "button-surface/label-hover · Surface": {
+   "name": "button-surface/label-hover",
+   "collection": "Surface",
+   "type": "COLOR",
+   "code": "--button-surface-label-hover",
+   "values": {
+    "Default": "button/label-hover",
+    "Inverted": "button/label-hover-inverted"
+   },
+   "direct": 174,
+   "aliases": [],
+   "layers": 174,
+   "productLayers": 38,
+   "components": [
+    [
+     "(documentation, not a component)",
+     136
+    ],
+    [
+     "Button",
+     18
+    ],
+    [
+     "SolidButtonPrimary",
+     6
+    ],
+    [
+     "Overview Card",
+     4
+    ],
+    [
+     "GhostButtonPrimary",
+     2
+    ],
+    [
+     "OutlineButtonPrimary",
+     2
+    ],
+    [
+     "Empty State",
+     2
+    ],
+    [
+     "Modal",
+     2
+    ],
+    [
+     "Jira Annotation",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     106
+    ],
+    [
+     "01 · Getting Started",
+     8
+    ],
+    [
+     "Tone of Voice",
+     8
+    ],
+    [
+     "Empty State",
+     8
+    ],
+    [
+     "Modal",
+     8
+    ],
+    [
+     "Overview",
+     8
+    ],
+    [
+     "Spacing, Grid & Layout",
+     4
+    ],
+    [
+     "Radius & Elevation",
+     4
+    ]
+   ]
+  },
+  "button-surface/fill-solid-hover · Surface": {
+   "name": "button-surface/fill-solid-hover",
+   "collection": "Surface",
+   "type": "COLOR",
+   "code": "--button-surface-fill-solid-hover",
+   "values": {
+    "Default": "button/fill-solid-hover",
+    "Inverted": "button/fill-solid-hover-inverted"
+   },
+   "direct": 17,
+   "aliases": [],
+   "layers": 17,
+   "productLayers": 4,
+   "components": [
+    [
+     "(documentation, not a component)",
+     13
+    ],
+    [
+     "Button",
      3
+    ],
+    [
+     "SolidButtonPrimary",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     16
+    ],
+    [
+     "02 · Changelog",
+     1
+    ]
+   ]
+  },
+  "button-surface/fill-pressed · Surface": {
+   "name": "button-surface/fill-pressed",
+   "collection": "Surface",
+   "type": "COLOR",
+   "code": "--button-surface-fill-pressed",
+   "values": {
+    "Default": "button/fill-pressed",
+    "Inverted": "button/fill-pressed-inverted"
+   },
+   "direct": 5,
+   "aliases": [],
+   "layers": 5,
+   "productLayers": 1,
+   "components": [
+    [
+     "(documentation, not a component)",
+     4
+    ],
+    [
+     "Button",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     5
+    ]
+   ]
+  },
+  "button-surface/stroke · Surface": {
+   "name": "button-surface/stroke",
+   "collection": "Surface",
+   "type": "COLOR",
+   "code": "--button-surface-stroke",
+   "values": {
+    "Default": "button/stroke",
+    "Inverted": "button/stroke-inverted"
+   },
+   "direct": 41,
+   "aliases": [],
+   "layers": 41,
+   "productLayers": 12,
+   "components": [
+    [
+     "(documentation, not a component)",
+     29
+    ],
+    [
+     "Button",
+     4
+    ],
+    [
+     "OutlineButtonPrimary",
+     3
+    ],
+    [
+     "Navigation Bar",
+     2
+    ],
+    [
+     "Section / Let's Connect",
+     2
+    ],
+    [
+     "File Uploader",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     25
+    ],
+    [
+     "Navigation Bar",
+     5
+    ],
+    [
+     "File Uploader",
+     4
+    ],
+    [
+     "Section / Let's Connect",
+     4
+    ],
+    [
+     "Page rhythm",
+     2
+    ],
+    [
+     "Tooltip",
+     1
+    ]
+   ]
+  },
+  "button-surface/label · Surface": {
+   "name": "button-surface/label",
+   "collection": "Surface",
+   "type": "COLOR",
+   "code": "--button-surface-label",
+   "values": {
+    "Default": "button/label",
+    "Inverted": "button/label-inverted"
+   },
+   "direct": 134,
+   "aliases": [],
+   "layers": 134,
+   "productLayers": 34,
+   "components": [
+    [
+     "(documentation, not a component)",
+     100
+    ],
+    [
+     "Button",
+     12
+    ],
+    [
+     "GhostButtonPrimary",
+     4
+    ],
+    [
+     "OutlineButtonPrimary",
+     4
+    ],
+    [
+     "Navigation Bar",
+     4
+    ],
+    [
+     "Section / Let's Connect",
+     4
+    ],
+    [
+     "File Uploader",
+     2
+    ],
+    [
+     "Empty State",
+     2
+    ],
+    [
+     "Modal",
+     2
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     76
+    ],
+    [
+     "Navigation Bar",
+     10
+    ],
+    [
+     "File Uploader",
+     8
+    ],
+    [
+     "Empty State",
+     8
+    ],
+    [
+     "Modal",
+     8
+    ],
+    [
+     "Section / Let's Connect",
+     8
+    ],
+    [
+     "Tone of Voice",
+     4
+    ],
+    [
+     "Page rhythm",
+     4
+    ]
+   ]
+  },
+  "button-surface/focus · Surface": {
+   "name": "button-surface/focus",
+   "collection": "Surface",
+   "type": "COLOR",
+   "code": "--button-surface-focus",
+   "values": {
+    "Default": "border/focus",
+    "Inverted": "button/stroke-inverted"
+   },
+   "direct": 18,
+   "aliases": [],
+   "layers": 18,
+   "productLayers": 6,
+   "components": [
+    [
+     "(documentation, not a component)",
+     12
+    ],
+    [
+     "Button",
+     3
+    ],
+    [
+     "GhostButtonPrimary",
+     1
+    ],
+    [
+     "OutlineButtonPrimary",
+     1
+    ],
+    [
+     "SolidButtonPrimary",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Button",
+     18
     ]
    ]
   }

@@ -73,46 +73,26 @@
     ]
   },
   {
-    "description": "Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. Use the Inverted variant on dark surfaces; it follows the mode. Corners stay at 0. No icon unless it adds meaning.",
+    "description": "Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Surface mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.",
     "name": "Button",
     "page": "Button",
-    "variantCount": 24,
+    "variantCount": 15,
     "variants": [
-      "Style=Ghost, Variant=Inverted, State=Default",
-      "Style=Ghost, Variant=Inverted, State=Disabled",
-      "Style=Ghost, Variant=Inverted, State=Focus",
-      "Style=Ghost, Variant=Inverted, State=Hover",
-      "Style=Ghost, Variant=Primary, State=Default",
-      "Style=Ghost, Variant=Primary, State=Disabled",
-      "Style=Ghost, Variant=Primary, State=Focus",
-      "Style=Ghost, Variant=Primary, State=Hover",
-      "Style=Outline, Variant=Inverted, State=Default",
-      "Style=Outline, Variant=Inverted, State=Disabled",
-      "Style=Outline, Variant=Inverted, State=Focus",
-      "Style=Outline, Variant=Inverted, State=Hover",
-      "Style=Outline, Variant=Primary, State=Default",
-      "Style=Outline, Variant=Primary, State=Disabled",
-      "Style=Outline, Variant=Primary, State=Focus",
-      "Style=Outline, Variant=Primary, State=Hover",
-      "Style=Solid, Variant=Inverted, State=Default",
-      "Style=Solid, Variant=Inverted, State=Disabled",
-      "Style=Solid, Variant=Inverted, State=Focus",
-      "Style=Solid, Variant=Inverted, State=Hover",
-      "Style=Solid, Variant=Primary, State=Default",
-      "Style=Solid, Variant=Primary, State=Disabled",
-      "Style=Solid, Variant=Primary, State=Focus",
-      "Style=Solid, Variant=Primary, State=Hover"
-    ]
-  },
-  {
-    "description": "",
-    "name": "Button-Solid-Primary",
-    "page": "Button",
-    "variantCount": 3,
-    "variants": [
-      "State=Default",
-      "State=Hover",
-      "State=Selected"
+      "Style=Ghost, State=Default",
+      "Style=Ghost, State=Disabled",
+      "Style=Ghost, State=Focus",
+      "Style=Ghost, State=Hover",
+      "Style=Ghost, State=Pressed",
+      "Style=Outline, State=Default",
+      "Style=Outline, State=Disabled",
+      "Style=Outline, State=Focus",
+      "Style=Outline, State=Hover",
+      "Style=Outline, State=Pressed",
+      "Style=Solid, State=Default",
+      "Style=Solid, State=Disabled",
+      "Style=Solid, State=Focus",
+      "Style=Solid, State=Hover",
+      "Style=Solid, State=Pressed"
     ]
   },
   {
@@ -217,6 +197,17 @@
     ]
   },
   {
+    "description": "",
+    "name": "GhostButtonPrimary",
+    "page": "Button",
+    "variantCount": 3,
+    "variants": [
+      "Property 1=Default",
+      "Property 1=Hover",
+      "Property 1=Selected"
+    ]
+  },
+  {
     "description": "Text that becomes a field when clicked. Use it for a title or name the person edits in place, such as a project name. It takes the text style of the heading it replaces, so nothing jumps when editing starts. Do not use it for forms with several fields, use Form Field instead.",
     "name": "Inline Edit",
     "page": "Inline Edit",
@@ -302,6 +293,17 @@
     "variants": [
       "Variant=Default",
       "Variant=Inverted"
+    ]
+  },
+  {
+    "description": "",
+    "name": "OutlineButtonPrimary",
+    "page": "Button",
+    "variantCount": 3,
+    "variants": [
+      "Property 1=Default",
+      "Property 1=Hover",
+      "Property 1=Selected"
     ]
   },
   {
@@ -491,6 +493,17 @@
       "State=Default",
       "State=Disabled",
       "State=Focus"
+    ]
+  },
+  {
+    "description": "",
+    "name": "SolidButtonPrimary",
+    "page": "Button",
+    "variantCount": 3,
+    "variants": [
+      "State=Default",
+      "State=Hover",
+      "State=Selected"
     ]
   },
   {

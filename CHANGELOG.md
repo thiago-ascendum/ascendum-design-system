@@ -17,6 +17,7 @@ Clean-up after the design review of 5 November.
 | Avatar | The Fill property is now Tone, and Size has three values instead of four. | Pick the tone and the size again on instances set to Fill=Midnight or Size=Small. |
 | Stat Card | The five Accent variants are gone. | Nothing. Those instances fall back to the plain card. |
 | Badge | The tones Muted and Solid are gone. | Pick a new tone on those instances. |
+| Button | The Variant property is gone. Inverted is now the Surface mode, set on the section. | Pick the style again on instances that were Inverted, and set the Surface mode to Inverted on their section. |
 | Breadcrumb Item | Three variants instead of six. Separator is now a switch, not a variant. | Turn the Separator switch off on instances that were set to Separator=False. |
 | A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: text/access-muted to text/muted, UI/Tag and UI/Eyebrow to UI/Label. |
 
@@ -28,7 +29,7 @@ Clean-up after the design review of 5 November.
 | Colour pairs failing contrast | 16 | 0 |
 | Colours set by hand | 75 | 0 |
 | Labels typed in capitals | 46 | 0 |
-| Variants | 258 | 210 |
+| Variants | 258 | 207 |
 
 ### Removed
 
@@ -47,7 +48,7 @@ Clean-up after the design review of 5 November.
 - Contrast: muted text, placeholder and muted icons in light mode, and the four feedback colours in dark mode, now pass WCAG AA.
 - Input: vertical padding 8 to 18.
 - Focus is a visible ring on Button, Input, Checkbox, Radio, Toggle and Slider.
-- Button: Solid has a visible hover.
+- Button: 15 variants instead of 24. Pressed is new. Inverted is no longer a variant: the section sets the Surface mode and every button inside follows, in light and in dark. Breaking. Solid has a visible hover.
 - Modal and Section / Showcase: the small label above the title is gone.
 - File Uploader: the failed state shows a warning icon, the reason and a Try again action.
 - Team and stakeholder cards use the Avatar component.
@@ -76,7 +77,9 @@ Clean-up after the design review of 5 November.
 - Tone of Voice: each principle has a before and after shown in a real component.
 - Colour: a contrast table of every text role on its surfaces, light and dark, computed from the variable values.
 - Code: 14 components built from the tokens, with a documentation site published on every change.
-- Interactions: 43 prototype interactions on 17 components. Hover, click and press move between the states that already exist. Button is being built separately.
+- Interactions: 52 prototype interactions on 18 components. Hover, click and press move between the states that already exist.
+- Surface collection: one collection with two modes, Default and Inverted, and seven button tokens that follow it.
+- Pressed tokens: `button/fill-pressed` and `button/fill-pressed-inverted`.
 - Skeleton: loading behaviour shown in three steps, and a two-frame prototype.
 - Slider: a three-frame prototype of the budget filter.
 - Select: the open state, drawn with Menu Item rows, and a consistency table measured against Input.
@@ -86,7 +89,7 @@ Clean-up after the design review of 5 November.
 
 ### Proposed, to confirm
 
-Ten decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.
+Twelve decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.
 
 - Unused tokens: removed three that nothing bound: `component/combobox/max-width`, `component/dropzone/icon` and `size/container-half`. The layout sizes (`size/col-*`, `size/container`, `size/full-width`) stay as reference for page layouts.
 - Link colour: `text/link` keeps the colour of the text on purpose. A link is told apart by its underline, never by colour alone.
@@ -98,6 +101,8 @@ Ten decisions taken with a reason and marked as proposals in the file. Each one 
 - Corner radius: brand-facing pages keep 0 px buttons. Internal tools may use `radius/field`, 4 px. Shown side by side on the Radius & Elevation page.
 - Behaviour: Skeleton and Slider each have a Behaviour block with timings, motion and keyboard steps.
 - Illustration guidelines: five rules for where brand illustrations may be used. For the brand owner to confirm.
+- Button surface: a Surface mode replaces the twelve Inverted variants. A section is inverted once, not button by button.
+- Pressed colour: one grey step past hover on Solid. Outline and Ghost take the Solid hover colour while pressed.
 
 ## 1.0.0 · never published
 

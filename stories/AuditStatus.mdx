@@ -9,12 +9,12 @@ export const Partly = () => <Badge tone="info" label="Partly" />;
 export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
 
 <Hero title="Audit status">
-  Every point of the design review of 5 November, with what is done in proposed version 1.1.0 and what is still open. 48 points: 31 done, 13 partly done, 4 waiting for the owner.
+  Every point of the design review of 5 November, with what is done in proposed version 1.1.0 and what is still open. 48 points: 33 done, 11 partly done, 4 waiting for the owner.
 </Hero>
 
 <Cards items={[
-  { title: 'Done: 31', text: 'Changed in the Figma file, checked by the automated checks or looked at page by page.', tone: 'do' },
-  { title: 'Partly: 13', text: 'The measurable part is done. What is left is a decision about how many states or variants stay, or a test that has not been run.', tone: 'ask' },
+  { title: 'Done: 33', text: 'Changed in the Figma file, checked by the automated checks or looked at page by page.', tone: 'do' },
+  { title: 'Partly: 11', text: 'The measurable part is done. What is left is a decision about how many states or variants stay, or a test that has not been run.', tone: 'ask' },
   { title: 'Needs the owner: 4', text: 'Nothing we can settle from inside the file: brand colours against the brand guide, corner radius for internal tools, border widths, illustration guidelines.', tone: 'avoid' },
 ]} />
 
@@ -53,7 +53,7 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
   <Table head={['Component', 'What the review asked', 'State', 'What was done']} rows={[
     ['Avatar', 'Saturated colours and light text.', <Done />, 'Soft tint, dark initials, three sizes, four tones. From 20 variants to 12.'],
     ['Badge', 'What does blue mean?', <Done />, 'Five tones, each with one meaning. Two tones with no meaning removed. Our reading of blue is "in progress": to confirm.'],
-    ['Button', 'Too many variants, unclear hierarchy, arrows.', <Partly />, 'Solid, Outline and a borderless Ghost, with the hierarchy shown in use. Still 24 variants: which stay is a decision.'],
+    ['Button', 'Too many variants, unclear hierarchy, arrows.', <Done />, 'Solid, Outline and a borderless Ghost, with the hierarchy shown in use. 15 variants instead of 24, with Pressed added and hover and press working in a prototype. Inverted is a Surface mode, not a variant.'],
     ['Checkbox', 'Redundant states.', <Partly />, 'Focus is now a visible ring. The nine states are kept and explained. Whether Disabled stays is a decision.'],
     ['Divider', 'No criticism.', <Done />, 'No change needed.'],
     ['Input', 'Too many states, wrong padding.', <Partly />, 'Vertical padding from 8 to 18. Five states remain: whether Filled is a state is a decision.'],
@@ -83,11 +83,11 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
 
 <Section n={5} title="Global issues">
   <Table head={['Issue', 'State', 'Where it stands']} rows={[
-    ['Component rationalisation', <Partly />, 'Variants went from 258 to 210. Breadcrumb Item went from six to three. Button is still over the limit of 12.'],
+    ['Component rationalisation', <Partly />, 'Variants went from 258 to 207. Button went from 24 to 15 and Breadcrumb Item from six to three. Button is still three over the limit of 12: Focus could become a switch.'],
     ['Token compliance', <Done />, 'Checked on every change: no colour set by hand, no component bound straight to a primitive, no text without a style.'],
     ['Contextual documentation', <Done />, '45 components and 5 patterns have a documentation card that ends with the component in use. 14 are also in code on this site.'],
     ['AI interpretation', <Done />, 'A contract file says what a tool may use, must never use and should ignore.'],
-    ['Interactive validation', <Partly />, '43 interactions on 17 components in Figma, and prototypes for Skeleton and Slider. 14 components can be tried on this site. Button interactions are being built.'],
+    ['Interactive validation', <Done />, '52 interactions on 18 components in Figma, Button included, and prototypes for Skeleton and Slider. 14 components can be tried on this site.'],
     ['Visual quality', <Partly />, 'Every page was looked at in a capture, three times. A second person should still look.'],
     ['Governance and ownership', <Partly />, 'Process, changelog with sign-offs, repository and automatic checks exist, and a closed gate stops the site publish. No owner is named and no library publish has been tested.'],
   ]} />

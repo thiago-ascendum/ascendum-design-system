@@ -36,7 +36,7 @@ export default {
         'The label is the accessible name. An icon alone is not a button in this system.',
       ],
       open: [
-        'Figma has 24 variants: three styles, two surfaces, four states. Which of them stay?',
+        'Figma has 15 variants: three styles and five states. Focus could become a switch, which would leave 12.',
         'Solid on hover is one grey step (button/fill-solid-hover). It is a proposal. Confirm it or change it.',
         'Should internal tools get rounded corners? The design review raises it at 9:30.',
       ],

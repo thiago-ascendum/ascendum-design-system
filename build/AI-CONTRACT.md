@@ -106,6 +106,8 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--button-fill` | button/fill | #00000000 |  | Transparent by default, the outline button fills only on hover |
 | `--button-fill-hover` | button/fill-hover | #212121 | #F5F5F5 | Fill of the Solid button, and of Outline and Ghost on hover. |
 | `--button-fill-hover-inverted` | button/fill-hover-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
+| `--button-fill-pressed` | button/fill-pressed | #555555 | #D6D6D6 | Solid button while it is pressed |
+| `--button-fill-pressed-inverted` | button/fill-pressed-inverted | #D6D6D6 | #555555 | Solid button on an inverted surface while it is pressed. |
 | `--button-fill-solid-hover` | button/fill-solid-hover | #444444 | #ECECEC | Solid button under the pointer |
 | `--button-fill-solid-hover-inverted` | button/fill-solid-hover-inverted | #ECECEC | #444444 | Solid inverted button under the pointer. |
 | `--button-label` | button/label | #212121 | #F5F5F5 | Label of the Outline and Ghost buttons. |
@@ -132,16 +134,22 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--text-muted` | text/muted | #6F6F6F | #C0C0C0 | Secondary text |
 | `--text-on-accent` | text/on-accent | #212121 |  | Dark text on a soft accent surface or a light gradient |
 | `--form-placeholder` | text/placeholder | #6F6F6F | #999999 | BUG FIX vs source: --form-placeholder aliased --brand-mid-grey, which is never declared an |
+| `--button-surface-fill-hover` | button-surface/fill-hover | #212121 | #F5F5F5 | Fill of the Solid button, and of Outline and Ghost on hover |
+| `--button-surface-fill-pressed` | button-surface/fill-pressed | #555555 | #D6D6D6 | Solid button while it is pressed |
+| `--button-surface-fill-solid-hover` | button-surface/fill-solid-hover | #444444 | #ECECEC | Solid button under the pointer, and Outline and Ghost while pressed |
+| `--button-surface-focus` | button-surface/focus | #212121 | #F5F5F5 | Focus ring of the button |
+| `--button-surface-label` | button-surface/label | #212121 | #F5F5F5 | Label of the Outline and Ghost buttons |
+| `--button-surface-label-hover` | button-surface/label-hover | #F5F5F5 | #212121 | Label of the Solid button, and of the others on hover |
+| `--button-surface-stroke` | button-surface/stroke | #212121 | #F5F5F5 | Border of the Outline button |
 
 ## 5. Components in this slice
 
 ### Button
 
-Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. Use the Inverted variant on dark surfaces; it follows the mode. Corners stay at 0. No icon unless it adds meaning.
+Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. On an inverted surface, set the Surface mode to Inverted on the section: every button inside follows. Corners stay at 0. No icon unless it adds meaning.
 
 - **Style**: Ghost, Outline, Solid
-- **Variant**: Inverted, Primary
-- **State**: Default, Disabled, Focus, Hover
+- **State**: Default, Disabled, Focus, Hover, Pressed
 - PROPOSAL, pending the owner: one Solid button per view is the primary action; Outline is secondary; Ghost only inside dense toolbars.
 - Hover and Focus are behaviours of one button in code, not separate designs. Do not draw them as separate components.
 

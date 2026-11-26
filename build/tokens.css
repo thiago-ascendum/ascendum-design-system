@@ -67,6 +67,8 @@
   --button-fill: #00000000;
   --button-fill-hover: var(--brand-midnight);
   --button-fill-hover-inverted: var(--brand-milkyway);
+  --button-fill-pressed: var(--neutral-800);
+  --button-fill-pressed-inverted: var(--neutral-400);
   --button-fill-solid-hover: var(--neutral-850);
   --button-fill-solid-hover-inverted: var(--neutral-200);
   --button-label: var(--brand-midnight);
@@ -93,6 +95,13 @@
   --text-muted: var(--neutral-750);
   --text-on-accent: var(--brand-midnight);
   --form-placeholder: var(--neutral-750);
+  --button-surface-fill-hover: var(--button-fill-hover);
+  --button-surface-fill-pressed: var(--button-fill-pressed);
+  --button-surface-fill-solid-hover: var(--button-fill-solid-hover);
+  --button-surface-focus: var(--border-focus);
+  --button-surface-label: var(--button-label);
+  --button-surface-label-hover: var(--button-label-hover);
+  --button-surface-stroke: var(--button-stroke);
   --border-width-button: 2px;
   --border-width-field: 1.5px;
   --border-width-focus: 2px;
@@ -269,6 +278,8 @@
   --border-strong: var(--brand-milkyway);
   --button-fill-hover: var(--brand-milkyway);
   --button-fill-hover-inverted: var(--brand-midnight);
+  --button-fill-pressed: var(--neutral-400);
+  --button-fill-pressed-inverted: var(--neutral-800);
   --button-fill-solid-hover: var(--neutral-200);
   --button-fill-solid-hover-inverted: var(--neutral-850);
   --button-label: var(--brand-milkyway);
@@ -294,6 +305,15 @@
   --link: var(--brand-milkyway);
   --text-muted: var(--neutral-500);
   --form-placeholder: var(--neutral-600);
+}
+[data-surface="inverted"] {
+  --button-surface-fill-hover: var(--button-fill-hover-inverted);
+  --button-surface-fill-pressed: var(--button-fill-pressed-inverted);
+  --button-surface-fill-solid-hover: var(--button-fill-solid-hover-inverted);
+  --button-surface-focus: var(--button-stroke-inverted);
+  --button-surface-label: var(--button-label-inverted);
+  --button-surface-label-hover: var(--button-label-hover-inverted);
+  --button-surface-stroke: var(--button-stroke-inverted);
 }
 @media (max-width: 767px) {
   :root {
