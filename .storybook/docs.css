@@ -151,3 +151,18 @@
 .ads-theme-switch button.is-on { color: var(--on-surface); background: var(--surface); box-shadow: 0 0 0 1px var(--outline-variant); }
 .ads-theme-switch button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 .dsx-page .ads-themebar { margin-bottom: 16px; }
+
+/* Phones: nothing pushes the page sideways. Wide blocks (the live preview, the controls table, page-wide components)
+   scroll inside their own box instead. Measured before: 46 component pages overflowed at 375px, up to 637px. */
+.fd-use, .fd-try { min-width: 0; max-width: 100%; overflow-x: auto; }
+@media (max-width: 767px) {
+  .sbdocs .sb-anchor, .sbdocs .sbdocs-preview, .sbdocs .docs-story { max-width: 100% !important; min-width: 0 !important; }
+  .sbdocs .sbdocs-preview { overflow-x: auto !important; }
+  .sbdocs .docblock-argstable { display: block !important; overflow-x: auto !important; max-width: 100% !important; }
+  .fd-cell-body { max-width: 100%; overflow-x: auto; }
+  .fd-cell:has(.ds-navigation-bar, .ds-footer, [class^="ds-section-"], .ds-table) .fd-cell-body { max-width: calc(100vw - 96px); }
+}
+
+/* Storybook's own buttons in the preview ("Show code", "Copy code") follow the page theme: they kept the light grey in dark. */
+.sbdocs .sbdocs-preview button[class^="css-"], .sbdocs .sbdocs-preview button[class*=" css-"] { color: var(--on-surface-variant) !important; }
+.sbdocs .sbdocs-preview button[class^="css-"]:hover { color: var(--on-surface) !important; }

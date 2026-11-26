@@ -32,7 +32,8 @@ Table.propTypes = {
 /** The title and the item count above the header row (the Toolbar frame of the Figma component). */
 export function TableToolbar({ title, count }) {
   return (
-    <div className="ds-table__toolbar">
+    // The toolbar names the table, so it is the table's caption (a table may only hold a caption, row groups and rows).
+    <div className="ds-table__toolbar" role="caption">
       <h4 className="ds-table__title">{title}</h4>
       {count ? <span className="ds-table__count">{count}</span> : null}
     </div>
