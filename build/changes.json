@@ -463,7 +463,7 @@
    27,
    28
   ],
-  "valueChanges": 49,
+  "valueChanges": 48,
   "variables": [
    254,
    323
@@ -983,13 +983,6 @@
    ]
   ],
   "changed": [
-   [
-    "Component",
-    "component/button/padding-h",
-    "Desktop",
-    "28",
-    "30"
-   ],
    [
     "Component",
     "component/inline-edit/padding-h",
