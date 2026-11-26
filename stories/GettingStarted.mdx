@@ -1,97 +1,67 @@
 import { Meta } from '@storybook/addon-docs/blocks';
-import { Hero, Section, Index, Cards, Steps, Table, List, CodeCounts } from './_shared/Doc.jsx';
+import { Hero, Section, Cards, Steps, Table } from './_shared/Doc.jsx';
 
 <Meta title="Start here/Getting started" />
 
-<Hero title="Ascendum Design System">
-  One Figma library and one set of tokens in code. AI proposes, checks verify, a person approves. Figma is the source of truth, and everything here is generated from it.
+{/* Mirrors page 01 · Getting Started in Figma, part by part. Change both together. */}
+
+<Hero title="Getting Started">
+  One Figma library and one set of tokens in code. Read this page once, about five minutes. Every other page is reference you come back to. Version 1.1.0, proposed.
 </Hero>
 
-<Index items={['Pick your path', 'Four steps', 'Do and don\'t', 'Before you hand off', 'Words we use', 'Where things live', 'What is in code', 'Known gaps', 'Need help']} />
-
-<Section n={1} title="Pick your path" lead="Start from what you came to do. Each path is three moves.">
-  <Cards items={[
-    { title: 'I design screens', text: ['Turn the library on in your Figma file.', 'Place components and bind colour roles.', 'Check Dark and Mobile by switching modes.'] },
-    { title: 'I build in code', text: [<>Import <code>build/tokens.css</code>.</>, 'Use role variables, never primitives.', <>Read <code>build/AI-CONTRACT.md</code> before generating UI.</>] },
-    { title: 'I want to change the library', text: ['Check Known gaps on this page first.', 'Change the design in Figma and take a snapshot.', 'Let the checks run: the gate decides what is published.'] },
-  ]} />
-</Section>
-
-<Section n={2} title="Four steps" lead="This is the coded side of the library. The tokens are generated from the Figma file, and the components are built from those tokens, binding for binding.">
+<Section n={1} title="Four steps" lead="The same for everyone.">
   <Steps items={[
-    ['Use the tokens', <>Import <code>build/tokens.css</code>. Every colour, radius, size and space is a CSS custom property with a light and a dark value.</>],
-    ['Bind roles, not colours', <>Use <code>--on-surface</code>, <code>--surface-container</code>, <code>--on-surface-success</code>. The primitives (<code>--neutral-750</code>, <code>--brand-midnight</code>) sit behind the roles and you should never need one.</>],
-    ['Place components, never rebuild them', <>The coded components are in <code>src/components</code>, counted below in What is in code. If the piece exists, use it and set its properties.</>],
-    ['Change it the right way', 'Change the design in Figma, take a snapshot, and let the checks run. Nobody edits a token by hand.'],
+    ['Turn the library on', <>In Figma, enable Ascendum Design System in the Assets panel. In code, import <code>build/tokens.css</code>.</>],
+    ['Bind roles, not colours', <>A role is a colour named by its job: <code>--surface</code>, <code>--on-surface</code>, <code>--outline</code>, <code>--primary</code>. Each has a Light and a Dark value. The raw values behind them, like <code>--neutral-750</code>, are never used.</>],
+    ['Place components, never rebuild them', <>If the piece exists, use it and set its properties. The coded components are in <code>src/components</code>.</>],
+    ['Change it the right way', 'Missing or wrong? Change it in Figma and send it to code. The checks decide what is published; the changelog records what it breaks.'],
+  ]} />
+  <Table head={['Then go to', '']} rows={[
+    ['Designing screens', <a href="https://www.figma.com/design/5lhRMZkLHZijqgdigjk3J1/Ascendum-Design-System">Figma file</a>],
+    ['Building in code', <>Components, in the sidebar</>],
+    ['Changing the library', <>Start here / Governance</>],
   ]} />
 </Section>
 
-<Section n={3} title="Do and don't" lead="The four mistakes we see most, and what to do instead.">
+<Section n={2} title="Do and don't" lead="The five mistakes we see most. Before you open a pull request, every Do should be true.">
   <Cards columns={2} items={[
-    { tone: 'do', title: 'Do: bind roles', text: <>Use <code>--on-surface</code> or <code>--on-surface-variant</code> for text.</> },
-    { tone: 'avoid', title: 'Don\'t: pick a primitive', text: <>Never use <code>--neutral-750</code> or a hex code in a component.</> },
+    { tone: 'do', title: 'Do', text: 'Every colour comes from a role.' },
+    { tone: 'avoid', title: 'Don\'t', text: <>A primitive like <code>--neutral-750</code>, or a typed hex code.</> },
   ]} />
   <Cards columns={2} items={[
-    { tone: 'do', title: 'Do: let the theme switch', text: <>Set <code>data-theme="dark"</code> and every role changes at once.</> },
-    { tone: 'avoid', title: 'Don\'t: write a dark override', text: 'A colour written for dark by hand stops following the tokens.' },
+    { tone: 'do', title: 'Do', text: 'Type, spacing and radius use tokens.' },
+    { tone: 'avoid', title: 'Don\'t', text: 'Font sizes or gaps typed in pixels.' },
   ]} />
   <Cards columns={2} items={[
-    { tone: 'do', title: 'Do: use the component', text: 'Import it and set its properties.' },
-    { tone: 'avoid', title: 'Don\'t: copy its CSS', text: 'A copy does not get the next fix.' },
+    { tone: 'do', title: 'Do', text: 'Use the component and set its properties.' },
+    { tone: 'avoid', title: 'Don\'t', text: 'Copy its CSS to change one thing.' },
   ]} />
   <Cards columns={2} items={[
-    { tone: 'do', title: 'Do: grey text on light surfaces', text: <>Grey or status text sits on <code>--surface</code>, <code>--surface-container</code> or <code>--surface-container-low</code>.</> },
-    { tone: 'avoid', title: 'Don\'t: grey text on hover or pressed', text: <>On <code>--surface-container-highest</code>, <code>--surface-hover</code> or <code>--surface-pressed</code> it falls under AA. Use <code>--on-surface</code> there.</> },
+    { tone: 'do', title: 'Do', text: 'Check Dark and Mobile by switching the theme and the width.' },
+    { tone: 'avoid', title: 'Don\'t', text: 'Write a dark or mobile override by hand.' },
+  ]} />
+  <Cards columns={2} items={[
+    { tone: 'do', title: 'Do', text: <>Grey or status text sits on <code>--surface</code>, <code>--surface-container</code> or <code>--surface-container-low</code>.</> },
+    { tone: 'avoid', title: 'Don\'t', text: <>Grey text on <code>--surface-container-highest</code>, <code>--surface-hover</code> or <code>--surface-pressed</code>: it falls under AA.</> },
   ]} />
 </Section>
 
-<Section n={4} title="Before you hand off" lead="Run this list before you open a pull request. If one item fails, the screen is not ready.">
-  <List items={[
-    'Every colour, space and radius comes from a token. No hex codes, no pixel values for spacing.',
-    'It reads well with the theme switched to Dark.',
-    'It holds at mobile width.',
-    'Grey text sits only on surface, container or container-low.',
-    'Existing components are used, not copied.',
-    'The checks pass: the gate is open.',
-  ]} />
+<Section n={3} title="Modes do the responsive work" lead="Switch Theme in the toolbar: every role changes at once, because the tokens change. Narrow the window: type, padding and widths follow. Nothing is redrawn.">
 </Section>
 
-<Section n={5} title="Words we use">
-  <Table head={['Word', 'What it means']} rows={[
-    ['Role', <>A colour named by its job, like <code>--on-surface</code> or <code>--outline</code>. You use roles.</>],
-    ['Primitive', <>A raw value, like <code>--neutral-750</code>. It sits behind a role. You never use it directly.</>],
-    ['Mode', 'Light or Dark, Desktop or Mobile. Switching it changes every value at once.'],
-    ['Context', <>Default or Inverted. <code>data-context="inverted"</code> flips a section to the dark band.</>],
-    ['Variant', 'One state or size of a component, chosen with its properties.'],
-    ['Gate', 'The checks that run on every change. A change that fails them is not published.'],
-  ]} />
-</Section>
-
-<Section n={6} title="Where things live">
+<Section n={4} title="Where things live">
   <Table head={['Where', 'What']} rows={[
-    [<a href="https://www.figma.com/design/5lhRMZkLHZijqgdigjk3J1/Ascendum-Design-System">Figma file</a>, 'The source. Proposed version 1.1.0. Its page 01 is the designer version of this page.'],
-    [<a href="report/" target="_top">Health report</a>, 'The gate, every check, the before and after, the impact map.'],
-    [<a href="https://github.com/thiago-ascendum/ascendum-design-system">Repository</a>, 'Tokens, AI contract, rules, checks, components.'],
+    [<a href="https://www.figma.com/design/5lhRMZkLHZijqgdigjk3J1/Ascendum-Design-System">Figma file</a>, 'The source. Everything here is generated from it.'],
+    [<a href="report/" target="_top">Health report</a>, 'The gate, every check, the before and after.'],
+    [<a href="https://github.com/thiago-ascendum/ascendum-design-system">Repository</a>, 'Tokens, rules, checks, components.'],
     [<code>build/AI-CONTRACT.md</code>, 'What an AI tool may use, must never use, and should ignore.'],
   ]} />
 </Section>
 
-<Section n={7} title="What is in code" lead="Counted from build/components.json and from the files in src/components.">
-  <CodeCounts />
-</Section>
-
-<Section n={8} title="Known gaps">
+<Section n={5} title="Known gaps" lead="What this library does not have yet.">
   <Cards items={[
-    { tone: 'ask', title: 'No named owner', text: 'The system has no named owner yet, so version 1.1.0 is proposed, not approved.' },
-    { tone: 'ask', title: 'Fewer components in code', text: 'Code has fewer components than the Figma library. What is in code shows both numbers.' },
-    { tone: 'ask', title: 'Publishing never tested', text: 'Publishing the Figma library to a file that uses it has never been tested.' },
-  ]} />
-</Section>
-
-<Section n={9} title="Need help" lead="There is no named owner yet, so questions go where everyone can see them.">
-  <Cards items={[
-    { title: 'A question about one piece', text: 'Leave a Figma comment on that component page.' },
-    { title: 'Something is missing or wrong', text: 'Open an issue in the repository, or propose it in Figma as page 03 explains.' },
-    { title: 'Did something change?', text: 'Start here / Changelog lists every change and what it breaks.' },
+    { tone: 'ask', title: 'No named owner', text: 'Version 1.1.0 is proposed, not approved.' },
+    { tone: 'ask', title: 'Code is behind Figma', text: 'Some Figma components and foundations are not in code yet. Components / Catalogue shows which.' },
+    { tone: 'ask', title: 'A question?', text: 'Leave a Figma comment on the page it is about.' },
   ]} />
 </Section>
