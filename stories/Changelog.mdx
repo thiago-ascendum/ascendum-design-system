@@ -1,0 +1,141 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Badge } from '../src/components/Badge.jsx';
+
+<Meta title="Start here/Changelog" />
+
+# Changelog
+
+What changed in each version, who signed it, and what it breaks in a file that uses the library. The same log lives in the Figma file on page `02 · Changelog` and in `CHANGELOG.md`.
+
+## 1.1.0 <Badge tone="warning" label="Proposed" />
+
+26 November 2026. Clean-up after the design review of 5 November. Less of everything, and what stays is checked.
+
+| Sign-off | Who | State |
+|---|---|---|
+| Proposed by | Hacksgiving team 2 | <Badge tone="success" label="Done" /> |
+| Checked by | The automated checks: all five blocking checks pass. No second reviewer yet. | <Badge tone="success" label="Checks pass" /> |
+| Approved by | Nobody yet. Do not publish until a named owner signs here. | <Badge tone="warning" label="Waiting" /> |
+
+### Does this break my file?
+
+Yes. Read this before you accept the update.
+
+| If your file uses | What changed | What you do |
+|---|---|---|
+| Avatar | The Fill property is now Tone, and Size has three values instead of four. | Pick the tone and the size again on instances set to Fill=Midnight or Size=Small. |
+| Stat Card | The five Accent variants are gone. | Nothing. Those instances fall back to the plain card. Check the row still lines up. |
+| Badge | The tones Muted and Solid are gone. | Pick a new tone on those instances. |
+| A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: `text/access-muted` to `text/muted`, `UI/Tag` and `UI/Eyebrow` to `UI/Label`. |
+
+### Measured before and after
+
+The same checks, run on the file as received and on this version.
+
+| Check | Before | After |
+|---|---|---|
+| Deprecated items still shipped | 28 | 0 |
+| Colour pairs failing contrast | 16 | 0 |
+| Colours set by hand | 75 | 0 |
+| Labels typed in capitals | 46 | 0 |
+| Variants | 258 | 210 |
+
+### Removed
+
+- Department colours as a concept. `dept/*` tokens are now `accent/red`, `purple`, `blue` and `stone`, each with one soft tint. SectionTag moved to page 90.
+- `neutral/0`, `neutral/300` and `neutral/950`. No role and no component used them.
+- `text/access-muted`, a second muted text colour that also failed contrast. Its 22 layers now use `text/muted`. Breaking.
+- Text styles `UI/Tag` and `UI/Eyebrow`, made for capitals. Nothing is set in capitals any more. Breaking.
+- Badge tones Muted and Solid. They carried no meaning and nothing used them. Breaking.
+- Stat Card accent strip and the five department variants that came with it. Breaking.
+- Two Progress Bar sizes. Two sizes stay: small and large.
+- Unused tokens: `status/*-border`, `text/on-gradient-light`, `component/tag/*` and `component/stat-card/accent-bar`.
+
+### Changed
+
+- Avatar: soft tint with dark initials, three sizes (32, 48, 72) and four tones. It was 20 variants with saturated gradients and light text. Breaking.
+- Contrast: `text/muted`, `text/placeholder` and `icon/muted` in light mode, and the four feedback colours in dark mode, now pass WCAG AA on every surface they sit on.
+- Input: vertical padding 8 to 18, so a typed value is no longer cramped.
+- Focus is a visible ring on Button, Input, Checkbox, Radio, Toggle and Slider.
+- Button: Solid has a visible hover, and the component set shows the Inverted variants on a dark half so none of them looks empty.
+- Modal and Section / Showcase: the small label above the title is gone.
+- Sample content: no more repeated rows, repeated links or buttons called Button.
+- File Uploader: the failed state shows a warning icon, the reason and a Try again action.
+- Team and stakeholder cards use the Avatar component instead of hand-drawn circles.
+- Getting Started, Changelog and Contribution & Governance are now guided pages, built from the components of the library.
+
+### Added
+
+- Tokens: `neutral/750`, `status/*-on-dark`, `accent/*-soft`, `bg/accent-*`, `text/on-accent` (renamed), `border/focus`, `border-width/focus`, `text/inverted-muted` and `button/fill-solid-hover`.
+- Colour page: two sections, Status and Semantic roles, each in light and dark.
+- A documentation card on 45 components: every variant named, use, measures, key tokens, accessibility as measured, open questions for the owner, and a footer with owner, version and reviewer. 31 also show dark mode.
+- A card on each pattern that lists the components it is built from.
+- Every component page ends with the component in a real layout.
+
+## 1.0.0 <Badge tone="neutral" label="Never published" />
+
+No date on record. Initial migration from the Claude Design code package. Nobody is on record as having checked or approved it.
+
+| Sign-off | Who |
+|---|---|
+| Proposed by | No name on record |
+| Checked by | No name on record |
+| Approved by | No name on record |
+
+### Added
+
+- Variables and styles: four variable collections. 11 text styles, 5 gradient paint styles, 4 effect styles.
+- Components: 203 icon components and 11 atom component sets (102 variants).
+- Foundations pages: colour, typography, spacing, radius and elevation, iconography, logo, tone of voice and photography.
+
+### Fixed
+
+- Two aliases to nothing: `--quote-line` and `--form-placeholder` both aliased `--brand-mid-grey`, a variable never declared anywhere. Repointed to the grey DESIGN.md specifies.
+- Inverted sections: the dark block never redeclared `--inverted-background` or `--inverted-text`, so inverted sections rendered midnight on midnight. Now they invert.
+- One off-palette fill: `#D9D9D9` in an icon, normalised to `neutral/400`.
+
+### Changed
+
+- Error red: standardised on `#b02a32` (`feedback/error`). The source used the Products department red `#de4b54` in five places and `#b02a32` in one: two reds for one meaning.
+- Neutral ramp: from 16 loose greys to 14 steps. Three imperceptible pairs merged, two kept distinct by decision.
+- Status colours and greys: promoted from hardcoded CSS values to real tokens. Token adherence in the source was about 65%.
+- Button padding and font size: reconciled. `Button.jsx` and `.btn` were the same button at two breakpoints, not two buttons.
+- Icon names match the source library (Icon/Elements/01) rather than being renamed descriptively.
+- Icons: shipped as 203 mode-aware components rather than 406 static files. Light and dark exports differed only by one colour.
+
+## Requests from review
+
+These were loose notes pinned next to the foundation pages. They live here now, each with its state.
+
+| Page | Request | State | Where it stands |
+|---|---|---|---|
+| Colour | Remove department colours. | <Badge tone="success" label="Done" /> | In 1.1.0. |
+| Colour | Angle every gradient the same; rename Talent to Careers and Mortgages to Process Solutions; remove the Products gradient. | <Badge tone="warning" label="Open" /> | The names and the tokens are done in 1.1.0. The angles are still open. |
+| Colour | Not sure what the neutral ramp is for. | <Badge tone="info" label="Answered" /> | Each step on the Colour page now says which role uses it. |
+| Typography | Develop Beyond only in the Develop Beyond gradient. | <Badge tone="warning" label="Open" /> | Already so on the page. No check enforces it yet. |
+| Spacing | Not sure of the application of this section. | <Badge tone="info" label="Answered" /> | An In use example, desktop and mobile. |
+| Radius and elevation | A section for UI designers and developers. | <Badge tone="warning" label="Open" /> | Nobody has taken it yet. |
+| Iconography | UI icons should be Google Material; brand illustrations are for communications only. | <Badge tone="warning" label="Open" /> | Stated at the top of the page. The Material set still has to be imported. |
+| Logo | Keep in line with the brand guide website. | <Badge tone="success" label="Done" /> | Stated at the top of the page: the website wins. |
+| Photography | Add examples. | <Badge tone="warning" label="Open" /> | The owner supplies six approved photographs. |
+
+Two done, two answered, five open.
+
+## How this log is kept
+
+An entry with an empty slot is a proposal, not a release.
+
+| Role | What it means |
+|---|---|
+| Written by | Whoever proposes the change, from what actually changed between two versions of the file. Not from memory. |
+| Checked by | The automated checks first, then one reviewer who is not the author. |
+| Approved by | The system owner, by name and date. The owner is not named yet, so nothing in this log is published. |
+
+An entry is ready when:
+
+- [ ] Changes are grouped under Added, Changed, Removed and Fixed
+- [ ] It says what breaks, and what a file using the library has to do about it
+- [ ] It carries two names: who checked it and who approved it
+- [ ] Nothing in it reads like "various improvements"
+
+Proposed in 1.1.0. Not reviewed by the owner yet.

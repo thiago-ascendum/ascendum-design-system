@@ -1,0 +1,26 @@
+{
+  "name": "ascendum-design-system",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Ascendum Design System: tokens, checks, AI contract, coded components and their documentation.",
+  "scripts": {
+    "checks": "python3 pipeline/02_build.py build/ds-snapshot.json governance build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -o dist",
+    "build:site": "storybook build -o dist && node scripts/assemble.mjs"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.6.9",
+    "@storybook/addon-docs": "^10.6.9",
+    "@storybook/react-vite": "^10.6.9",
+    "@vitejs/plugin-react": "^6.3.0",
+    "prop-types": "latest",
+    "storybook": "^10.6.9",
+    "vite": "^8.4.0"
+  }
+}

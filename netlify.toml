@@ -1,8 +1,12 @@
-# Publishes the report on every push. No build step: the page is static.
+# Publishes the documentation site on every push: Storybook at the root, the health report at /report/.
 [build]
-  publish = "."
+  command = "npm ci && npm run build:site"
+  publish = "dist"
 
-# Keep the page out of search engines. The link is for the team.
+[build.environment]
+  NODE_VERSION = "22"
+
+# Keep the site out of search engines. The link is for the team.
 [[headers]]
   for = "/*"
   [headers.values]

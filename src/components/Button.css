@@ -1,0 +1,24 @@
+/* Button. Every value is a token from build/tokens.css, bound the same way as the Figma component. */
+.ds-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-3xs);
+  padding: var(--button-padding-v) var(--button-padding-h);
+  font: 700 var(--text-button-size)/0.95 Barlow, system-ui, sans-serif; letter-spacing: 0;
+  border: var(--border-width-button) solid transparent; border-radius: var(--button-radius);
+  background: transparent; color: var(--button-label); cursor: pointer; text-decoration: none;
+}
+.ds-button:focus-visible { outline: var(--border-width-focus) solid var(--border-focus); outline-offset: 4px; }
+.ds-button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Primary surface */
+.ds-button--solid { background: var(--button-fill-hover); border-color: var(--button-fill-hover); color: var(--button-label-hover); }
+.ds-button--solid:hover:not(:disabled) { background: var(--button-fill-solid-hover); border-color: var(--button-fill-solid-hover); }
+.ds-button--outline { border-color: var(--button-stroke); }
+.ds-button--outline:hover:not(:disabled), .ds-button--ghost:hover:not(:disabled) { background: var(--button-fill-hover); color: var(--button-label-hover); }
+
+/* Inverted surface: for dark sections. It follows the mode. */
+.ds-button--inverted { color: var(--button-label-inverted); }
+.ds-button--inverted:focus-visible { outline-color: var(--button-stroke-inverted); }
+.ds-button--inverted.ds-button--solid { background: var(--button-fill-hover-inverted); border-color: var(--button-fill-hover-inverted); color: var(--button-label-hover-inverted); }
+.ds-button--inverted.ds-button--solid:hover:not(:disabled) { background: var(--button-fill-solid-hover-inverted); border-color: var(--button-fill-solid-hover-inverted); }
+.ds-button--inverted.ds-button--outline { border-color: var(--button-stroke-inverted); }
+.ds-button--inverted.ds-button--outline:hover:not(:disabled), .ds-button--inverted.ds-button--ghost:hover:not(:disabled) { background: var(--button-fill-hover-inverted); color: var(--button-label-hover-inverted); }

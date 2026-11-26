@@ -1,0 +1,108 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Start here/Governance" />
+
+# Contribution and governance
+
+How to change this library without quietly breaking the files that depend on it.
+
+## The short version
+
+**Small changes, checked by a machine, approved by a person.**
+
+## How a change moves
+
+1. **Figma working library.** The change is made and tried here first.
+2. **Review and testing.** The checks run and a person looks at it.
+3. **Approved Figma release.** The owner approves it by name and date.
+4. **Repository and CI.** The snapshot is taken, the tokens are generated, the checks run again.
+
+A working change is not a release. It becomes one when the checks pass and a named person approves it. Today the repository holds proposed version 1.1.0, clearly marked as not approved.
+
+## How a change gets in
+
+1. **Propose one thing.** A change that touches a token and three components is four changes.
+2. **Run the checks.** The blocking ones must pass: every alias resolves, nothing deprecated is still shipped, no colour from outside the palette, every text pair passes contrast.
+3. **Look at it.** Capture the page before and after. Structural checks pass on components that look wrong.
+4. **A person approves.** By name and date.
+5. **Publish.** With a changelog entry written from what actually changed.
+
+## Has this been tested?
+
+Asked in the design review of 5 November. The honest answer has two halves.
+
+**Tested on 26 November 2026**
+
+- The checks ran on the whole file before and after the clean-up: two blocking failures before, none after.
+- The changed pages were captured before and after and compared by eye.
+- Token removals were checked against usage first: `neutral/0`, `neutral/300` and `neutral/950` had no role and no component bound to them.
+
+**Not tested yet**
+
+- Publishing this library to a file that subscribes to it. This copy has never been published.
+- The breaking changes of 1.1.0 (Avatar, Stat Card, Badge) inside a real product file.
+- The approval step. No owner is named, so nobody has signed a change yet.
+
+Do the first publish against a copy of one product file, read the update dialog, and only then publish for everyone.
+
+## Who owns what
+
+| What | Owner | Note |
+|---|---|---|
+| The system | To be named | Until there is a name here, nothing is published. |
+| Design decisions | The system owner | How many states, which tones stay, rounded or sharp corners for internal tools. |
+| Tokens and components | The proposer and one reviewer | The reviewer is never the author. |
+| Icons and illustrations | John Norman | |
+| Logo | The brand guide website | This file mirrors it. If they differ, the website wins. |
+
+## Before you change a token, look at what moves
+
+Every token knows which roles alias it and which components bind it. Look at that list first. The [impact map](/report/#impact-map) in the health report shows it.
+
+For example, `neutral/300` had no role and no component, so it was safe to remove. A token such as `button/fill` or `bg/surface` is bound by components: preview all of them before you change it.
+
+## The token rule
+
+- A new `component/*` token needs no discussion. It is that component's own business.
+- A new `space/*`, `radius/*` or `font-size/*` token changes the shared language and needs a reason.
+- Ask: if this value changed, how many components should move? If the answer is one, it belongs in Component.
+
+## What an AI tool reads
+
+If a tool needs something that does not exist, it proposes it. It does not invent it. The rules are in [the contract file](https://github.com/thiago-ascendum/ascendum-design-system/blob/main/build/AI-CONTRACT.md).
+
+| Reads | Ignores |
+|---|---|
+| Token names and values. | The layout of these documentation pages. Cards, numbered steps and swatches are page furniture, not product patterns. |
+| Component names, variants and descriptions. | Page 90, deprecated. |
+| | Page 99, internal. |
+
+## Adding a component
+
+Most requests for a new component are a missing variant, or no component at all. A component nobody has seen in context is not ready.
+
+- [ ] No existing component already does the job
+- [ ] Every visual property is bound to a variable: no raw hex, no magic numbers
+- [ ] Twelve variants or fewer. Past twelve, split an axis into a property or a base component
+- [ ] The description says when to use it, and when not to
+- [ ] The page ends with its documentation card
+- [ ] It is shown in use
+
+## Things that are not up for redesign
+
+- **0px buttons on 20px cards.** That tension is the brand signature.
+- **Accents never mean status.** And status colours are never decoration.
+- **One typeface.** Barlow. No secondary face and no mono face.
+- **Depth from contrast.** Not from shadow. Only overlays carry elevation.
+- **Nothing in capitals.** Sentence case everywhere.
+
+## Before you publish
+
+Every file subscribed to this library receives the update.
+
+- [ ] Every new component checked in both Semantic modes and both Dimension modes
+- [ ] The checks run again on the whole file, not only on what you touched
+- [ ] Looked at by a person. Structural checks pass on components that are visually wrong
+- [ ] The changelog entry written before publishing, not after
+
+Proposed in 1.1.0. Not reviewed by the owner yet.

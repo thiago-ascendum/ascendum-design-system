@@ -1,0 +1,226 @@
+[
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      100,
+      "PERCENT"
+    ],
+    "name": "Heading/Display",
+    "size": 56,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -4,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      100,
+      "PERCENT"
+    ],
+    "name": "Heading/Stat",
+    "size": 44,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      100,
+      "PERCENT"
+    ],
+    "name": "Heading/H2",
+    "size": 40,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      110,
+      "PERCENT"
+    ],
+    "name": "Heading/H4",
+    "size": 24,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -1,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "Heading/H3",
+    "size": 20,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "Body/Large",
+    "size": 18,
+    "weight": "Regular"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "Body/Large Bold",
+    "size": 18,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      95,
+      "PERCENT"
+    ],
+    "name": "UI/Button",
+    "size": 17,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "UI/Control",
+    "size": 17,
+    "weight": "Regular"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      125,
+      "PERCENT"
+    ],
+    "name": "Body/Default",
+    "size": 16,
+    "weight": "Regular"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      125,
+      "PERCENT"
+    ],
+    "name": "Body/Default Semi-Bold",
+    "size": 16,
+    "weight": "SemiBold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "Body/Small",
+    "size": 15,
+    "weight": "Regular"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -1,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "UI/Pill",
+    "size": 15,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "UI/Footnote",
+    "size": 14,
+    "weight": "Regular"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "UI/Label",
+    "size": 14,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "UI/Caption",
+    "size": 13,
+    "weight": "Regular"
+  }
+]

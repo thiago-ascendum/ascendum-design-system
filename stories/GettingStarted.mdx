@@ -1,0 +1,37 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Start here/Getting started" />
+
+# Ascendum Design System
+
+**AI proposes. Checks verify. A person approves.**
+
+This is the coded side of the library. Figma is the source of truth: the tokens here are generated from the Figma file, and the three components below are built from those tokens, binding for binding.
+
+## Four steps
+
+1. **Use the tokens.** Import `build/tokens.css`. Every colour, radius, size and space is a CSS custom property with a light and a dark value.
+2. **Bind roles, not colours.** Use `--text`, `--container-fill`, `--feedback-success`. The primitives (`--neutral-750`, `--brand-midnight`) sit behind the roles and you should never need one.
+3. **Place components, never rebuild them.** Button, Input and Badge are in `src/components`. If the piece exists, use it and set its properties.
+4. **Change it the right way.** Change the design in Figma, take a snapshot, and let the checks run. Nobody edits a token by hand.
+
+## Try it
+
+- Switch **Theme** in the toolbar: the whole canvas changes because the tokens change.
+- Open **Components / Button** and use the controls.
+- Open **Foundations / Colour**: it is read live from `build/tokens.json`.
+
+## Where things live
+
+| Where | What |
+|---|---|
+| [Figma file](https://www.figma.com/design/5lhRMZkLHZijqgdigjk3J1/Ascendum-Design-System) | The source. Proposed version 1.1.0. |
+| [Health report](/report/) | The gate, every check, the before and after, the impact map. |
+| [Repository](https://github.com/thiago-ascendum/ascendum-design-system) | Tokens, AI contract, rules, checks, components. |
+| `build/AI-CONTRACT.md` | What an AI tool may use, must never use, and should ignore. |
+
+## Known gaps
+
+- The system has no named owner yet, so version 1.1.0 is proposed, not approved.
+- Three components are in code. The Figma library has 46.
+- Publishing the Figma library to a file that uses it has never been tested.

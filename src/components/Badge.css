@@ -1,0 +1,12 @@
+/* Badge. A small status pill: each tone has one meaning. */
+.ds-badge {
+  display: inline-flex; align-items: center; gap: var(--badge-gap);
+  padding: var(--badge-padding-v) var(--badge-padding-h); border-radius: var(--radius-pill);
+  font: 700 var(--font-size-body-sm)/1.3 Barlow, system-ui, sans-serif; white-space: nowrap;
+  background: var(--bg-subtle); color: var(--text);
+}
+.ds-badge__dot { width: var(--badge-dot); height: var(--badge-dot); border-radius: var(--radius-pill); background: currentColor; }
+.ds-badge--success { background: var(--feedback-success-bg); color: var(--feedback-success); }
+.ds-badge--info { background: var(--feedback-info-bg); color: var(--feedback-info); }
+.ds-badge--warning { background: var(--feedback-warning-bg); color: var(--feedback-warning); }
+.ds-badge--error { background: var(--feedback-error-bg); color: var(--feedback-error); }

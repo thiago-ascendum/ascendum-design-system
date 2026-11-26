@@ -1,0 +1,573 @@
+[
+  {
+    "description": "One row of an accordion. Use it to tuck away secondary detail, such as FAQs, so the page stays short. Stack instances in an auto-layout and set the last row's bottom stroke to zero. Do not hide content people need to compare side by side.",
+    "name": "Accordion Item",
+    "page": "Accordion Item",
+    "variantCount": 3,
+    "variants": [
+      "State=Collapsed",
+      "State=Expanded",
+      "State=Hover"
+    ]
+  },
+  {
+    "description": "Inline message about the state of the page or a form. Use it when the person needs to read something before carrying on. Use Neutral for general notes and the coloured tones for feedback only. For a message that disappears on its own, use Toast instead.",
+    "name": "Alert",
+    "page": "Alert",
+    "variantCount": 5,
+    "variants": [
+      "Tone=Error",
+      "Tone=Info",
+      "Tone=Neutral",
+      "Tone=Success",
+      "Tone=Warning"
+    ]
+  },
+  {
+    "description": "Initials on a soft accent tint with dark text. Three sizes: Small 32, Medium 48, Large 72. The tone only tells people apart; it carries no meaning, so never use it for status. For a photo, place an image fill on the instance.",
+    "name": "Avatar",
+    "page": "Avatar",
+    "variantCount": 12,
+    "variants": [
+      "Size=Large, Tone=Blue",
+      "Size=Large, Tone=Purple",
+      "Size=Large, Tone=Red",
+      "Size=Large, Tone=Stone",
+      "Size=Medium, Tone=Blue",
+      "Size=Medium, Tone=Purple",
+      "Size=Medium, Tone=Red",
+      "Size=Medium, Tone=Stone",
+      "Size=Small, Tone=Blue",
+      "Size=Small, Tone=Purple",
+      "Size=Small, Tone=Red",
+      "Size=Small, Tone=Stone"
+    ]
+  },
+  {
+    "description": "Small status pill. Use it to show the state of an item in a table or list. Do not use it for actions or for decoration.\n\nEach tone has one meaning. Neutral is the default state with nothing to flag. Success means done or healthy. Info means in progress or worth knowing, with no problem. Warning means it needs attention soon. Error means it is blocked or has failed.\n\nThe dot is optional and repeats the colour for people who cannot tell the tones apart.",
+    "name": "Badge",
+    "page": "Badge",
+    "variantCount": 10,
+    "variants": [
+      "Tone=Error, Dot=False",
+      "Tone=Error, Dot=True",
+      "Tone=Info, Dot=False",
+      "Tone=Info, Dot=True",
+      "Tone=Neutral, Dot=False",
+      "Tone=Neutral, Dot=True",
+      "Tone=Success, Dot=False",
+      "Tone=Success, Dot=True",
+      "Tone=Warning, Dot=False",
+      "Tone=Warning, Dot=True"
+    ]
+  },
+  {
+    "description": "One step in a breadcrumb trail, followed by a chevron. Use it on pages that sit two or more levels deep, so people can step back up. Set Separator to False on the last item, which is the current page. Do not use it on top-level pages.",
+    "name": "Breadcrumb Item",
+    "page": "Breadcrumb Item",
+    "variantCount": 6,
+    "variants": [
+      "State=Current, Separator=False",
+      "State=Current, Separator=True",
+      "State=Hover, Separator=False",
+      "State=Hover, Separator=True",
+      "State=Link, Separator=False",
+      "State=Link, Separator=True"
+    ]
+  },
+  {
+    "description": "Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. Use the Inverted variant on dark surfaces; it follows the mode. Corners stay at 0. No icon unless it adds meaning.",
+    "name": "Button",
+    "page": "Button",
+    "variantCount": 24,
+    "variants": [
+      "Style=Ghost, Variant=Inverted, State=Default",
+      "Style=Ghost, Variant=Inverted, State=Disabled",
+      "Style=Ghost, Variant=Inverted, State=Focus",
+      "Style=Ghost, Variant=Inverted, State=Hover",
+      "Style=Ghost, Variant=Primary, State=Default",
+      "Style=Ghost, Variant=Primary, State=Disabled",
+      "Style=Ghost, Variant=Primary, State=Focus",
+      "Style=Ghost, Variant=Primary, State=Hover",
+      "Style=Outline, Variant=Inverted, State=Default",
+      "Style=Outline, Variant=Inverted, State=Disabled",
+      "Style=Outline, Variant=Inverted, State=Focus",
+      "Style=Outline, Variant=Inverted, State=Hover",
+      "Style=Outline, Variant=Primary, State=Default",
+      "Style=Outline, Variant=Primary, State=Disabled",
+      "Style=Outline, Variant=Primary, State=Focus",
+      "Style=Outline, Variant=Primary, State=Hover",
+      "Style=Solid, Variant=Inverted, State=Default",
+      "Style=Solid, Variant=Inverted, State=Disabled",
+      "Style=Solid, Variant=Inverted, State=Focus",
+      "Style=Solid, Variant=Inverted, State=Hover",
+      "Style=Solid, Variant=Primary, State=Default",
+      "Style=Solid, Variant=Primary, State=Disabled",
+      "Style=Solid, Variant=Primary, State=Focus",
+      "Style=Solid, Variant=Primary, State=Hover"
+    ]
+  },
+  {
+    "description": "Choose any number of options from a list. Use it for settings and filters where each option stands alone. Use Radio when only one answer is allowed, and Toggle when the change takes effect straight away.\n\nChecked and Indeterminate fill the box so the state reads without colour. Indeterminate is for a parent whose children are only partly selected. Focus adds a ring around the box. Disabled is for options that are unavailable right now, so say why in nearby text.",
+    "name": "Checkbox",
+    "page": "Checkbox",
+    "variantCount": 9,
+    "variants": [
+      "Checked=False, State=Default",
+      "Checked=False, State=Disabled",
+      "Checked=False, State=Focus",
+      "Checked=Indeterminate, State=Default",
+      "Checked=Indeterminate, State=Disabled",
+      "Checked=Indeterminate, State=Focus",
+      "Checked=True, State=Default",
+      "Checked=True, State=Disabled",
+      "Checked=True, State=Focus"
+    ]
+  },
+  {
+    "description": "A read-only snippet of code with its language and a Copy action. Use it for short examples of five lines or fewer, in documentation or a hand-off. For longer files, link to the source instead. Barlow is the only typeface, so code does not align in columns.",
+    "name": "Code Block",
+    "page": "Code Block",
+    "variantCount": 0,
+    "variants": []
+  },
+  {
+    "description": "A multi-select field where people type to filter a list and pick several items, which then sit inside the field as removable tokens. Use it when there are more than about seven options. For a single choice use Select, for a handful of options use checkboxes. Pair it with Menu Item for the open list.",
+    "name": "Combobox",
+    "page": "Combobox",
+    "variantCount": 3,
+    "variants": [
+      "State=Empty",
+      "State=Filled",
+      "State=Focus"
+    ]
+  },
+  {
+    "description": "A thin line that separates groups of content. Use it between sections of a list or items in a toolbar when spacing alone is not clear enough. Do not stack it with borders or cards that already separate the content.\n\nOne hairline in border/default, horizontal or vertical. Stretch it to the width or height of the content it divides.",
+    "name": "Divider",
+    "page": "Divider",
+    "variantCount": 2,
+    "variants": [
+      "Orientation=Horizontal",
+      "Orientation=Vertical"
+    ]
+  },
+  {
+    "description": "Side panel for detail or editing while the page stays visible behind it. Use it for a secondary task on one item; use Modal for a short confirmation. Width and padding are not yet checked against a real design.",
+    "name": "Drawer",
+    "page": "Drawer",
+    "variantCount": 2,
+    "variants": [
+      "Side=Left",
+      "Side=Right"
+    ]
+  },
+  {
+    "description": "Shown when a list or search has nothing to display. Use it to say why it is empty and offer one next step. Do not use it for errors or loading. Body text is capped at 360px so the line stays readable.",
+    "name": "Empty State",
+    "page": "Empty State",
+    "variantCount": 0,
+    "variants": []
+  },
+  {
+    "description": "Drop zone for adding files. Use it when someone needs to upload one or more files to a form or project. Do not use it for a single small attachment, where a plain button is enough. The file list and progress live in code.",
+    "name": "File Uploader",
+    "page": "File Uploader",
+    "variantCount": 3,
+    "variants": [
+      "State=Active",
+      "State=Error",
+      "State=Idle"
+    ]
+  },
+  {
+    "description": "Page footer: a row of links above a legal bar. Use it once, at the bottom of every page. The legal bar is always dark, in both variants and both modes, so it anchors the page.",
+    "name": "Footer",
+    "page": "Footer",
+    "variantCount": 2,
+    "variants": [
+      "Variant=Default",
+      "Variant=Inverted"
+    ]
+  },
+  {
+    "description": "A label, an input and, only when needed, a message. Use it for every text entry in a form. Help text is hidden by default: add it only when the label alone is not enough, and show it before the person types. Validation messages replace help text and use the error colour.",
+    "name": "Form Field",
+    "page": "Form Field",
+    "variantCount": 10,
+    "variants": [
+      "Type=Text, State=Default",
+      "Type=Text, State=Disabled",
+      "Type=Text, State=Error",
+      "Type=Text, State=Filled",
+      "Type=Text, State=Focus",
+      "Type=Textarea, State=Default",
+      "Type=Textarea, State=Disabled",
+      "Type=Textarea, State=Error",
+      "Type=Textarea, State=Filled",
+      "Type=Textarea, State=Focus"
+    ]
+  },
+  {
+    "description": "Text that becomes a field when clicked. Use it for a title or name the person edits in place, such as a project name. It takes the text style of the heading it replaces, so nothing jumps when editing starts. Do not use it for forms with several fields, use Form Field instead.",
+    "name": "Inline Edit",
+    "page": "Inline Edit",
+    "variantCount": 3,
+    "variants": [
+      "State=Editing",
+      "State=Hover",
+      "State=Read"
+    ]
+  },
+  {
+    "description": "Text field for short answers, and a textarea for longer ones.\n\nUse it when the person has to type something. Use Select or Combobox when the answers come from a list. Always pair it with a visible label above the field; the placeholder is an example, not a label.\n\n1.5 px border and 4 px radius, between the sharp button and the round card. Focus adds a ring around the field. Errors use feedback/error and need a short message under the field that says how to fix it.",
+    "name": "Input",
+    "page": "Input",
+    "variantCount": 10,
+    "variants": [
+      "Type=Text, State=Default",
+      "Type=Text, State=Disabled",
+      "Type=Text, State=Error",
+      "Type=Text, State=Filled",
+      "Type=Text, State=Focus",
+      "Type=Textarea, State=Default",
+      "Type=Textarea, State=Disabled",
+      "Type=Textarea, State=Error",
+      "Type=Textarea, State=Filled",
+      "Type=Textarea, State=Focus"
+    ]
+  },
+  {
+    "description": "Jira-powered annotation panel for design review.\nBrings Jira context directly into Figma while preserving Ascendum Design System styling and structure. Populate using the shared Jira Annotation Agent skill and Atlassian connector. Jira remains the source of truth; Objective, Review Focus, Design Requirements, and Acceptance Criteria are semantically derived from the Jira work item.\n\n\n//INSTRUCTIONS\n\n\nFirst-time setup only\nOpen Figma Agent.\nClick Add context → Connectors → Atlassian.\nConnect your Atlassian account.\nWhen Atlassian asks which site to authorize, select the site that contains the Jira project you are working on.\nFor each Jira ticket\nInsert Jira Annotation from the Ascendum Design System.\nSelect the annotation component on the canvas.\nOpen Figma Agent.\nRun the /populate-jira-annotation skill.\nIn the same message, provide the actual Jira issue key for the ticket you want to display.\n\nFor example, if your real Jira ticket is RAIL-248, type:\n/populate-jira-annotation @Atlassian RAIL-248\nYou can also paste the full URL of the actual Jira ticket instead of the issue key.\nImportant: Do not type ABC-123, JIRA-123, PROJ-1234, <JIRA-KEY>, or any other example shown in documentation. These are placeholders, not real Jira tickets. Always replace them with the key or URL of the Jira ticket you are currently working on.\nThe Agent will retrieve the Jira ticket, populate the annotation, adjust the number of requirement and acceptance-criteria rows, apply the appropriate priority treatment, and link the Open Jira button to that ticket.\nDo not detach the annotation component.",
+    "name": "Jira Annotation",
+    "page": "Annotation",
+    "variantCount": 0,
+    "variants": []
+  },
+  {
+    "description": "A titled list of the client and delivery partners on a project. Use it in a project overview. Each row has a logo or Avatar, a name and a one-line relationship. Do not use it for more than four organisations.",
+    "name": "Key Stakeholders Card",
+    "page": "Group Cards",
+    "variantCount": 2,
+    "variants": [
+      "Inverted=False",
+      "Inverted=True"
+    ]
+  },
+  {
+    "description": "Ascendum logo. Size matches Logo.jsx (full = wordmark lockup, compact = mark only). Colours are deliberately NOT bound to mode variables, a logo should be chosen explicitly, not recoloured by a mode switch. WARNING: the Inverted mark has no backing layer; its glyph is transparent and reads only against a dark surface. On anything light the glyph disappears. Assets were scaled to a common height so toggling Inverted does not resize the component.",
+    "name": "Logo",
+    "page": "Logo",
+    "variantCount": 4,
+    "variants": [
+      "Size=Compact, Inverted=False",
+      "Size=Compact, Inverted=True",
+      "Size=Full, Inverted=False",
+      "Size=Full, Inverted=True"
+    ]
+  },
+  {
+    "description": "One row in a dropdown or context menu. Use Default for everyday actions and Error for the one action that destroys something. Selected shows a tick for a choice that is on. Do not use it for navigation between pages.",
+    "name": "Menu Item",
+    "page": "Menu Item",
+    "variantCount": 5,
+    "variants": [
+      "Tone=Default, State=Default",
+      "Tone=Default, State=Hover",
+      "Tone=Default, State=Selected",
+      "Tone=Error, State=Default",
+      "Tone=Error, State=Hover"
+    ]
+  },
+  {
+    "description": "Confirmation dialogue over a scrim. Use it when someone must confirm or cancel before carrying on, with the main action last on the right. Do not use it for long forms or content people may want to keep open (use Drawer).",
+    "name": "Modal",
+    "page": "Modal",
+    "variantCount": 0,
+    "variants": []
+  },
+  {
+    "description": "Top navigation with the logo, links and one call to action. Use it once per page, at the top. Inverted is for dark pages. Horizontal padding matches the page sections so the logo lines up with the content.",
+    "name": "Navigation Bar",
+    "page": "Navigation Bar",
+    "variantCount": 2,
+    "variants": [
+      "Variant=Default",
+      "Variant=Inverted"
+    ]
+  },
+  {
+    "description": "Project summary card for a project page: intro text, key stakeholders, team groups and a link out. Use it once per project as the single summary. Do not use it for a list of projects or for one number (use Stat Card). Has Light and Dark variants.",
+    "name": "Overview Card",
+    "page": "Overview",
+    "variantCount": 2,
+    "variants": [
+      "Inverted=False",
+      "Inverted=True"
+    ]
+  },
+  {
+    "description": "Determinate progress for a task with a known length, such as an upload or a migration. Set the width of the Fill layer on the instance to show the value. Use Small inside cards and tables and Large when the bar is the main thing on screen. Pair it with a label and a percentage. Do not use it when the length is unknown.",
+    "name": "Progress Bar",
+    "page": "Progress Bar",
+    "variantCount": 8,
+    "variants": [
+      "Size=LG, Tone=Default",
+      "Size=LG, Tone=Error",
+      "Size=LG, Tone=Success",
+      "Size=LG, Tone=Warning",
+      "Size=SM, Tone=Default",
+      "Size=SM, Tone=Error",
+      "Size=SM, Tone=Success",
+      "Size=SM, Tone=Warning"
+    ]
+  },
+  {
+    "description": "Choose one option from a short list. Use it when every option should be visible at once. Use a Select when there are more than five options, and Checkbox when more than one answer is allowed.\n\nThe selected option shows a filled dot. Focus is a separate ring around the circle, so it never gets mistaken for a selection. Always have one option selected by default.",
+    "name": "Radio",
+    "page": "Radio button",
+    "variantCount": 6,
+    "variants": [
+      "Checked=False, State=Default",
+      "Checked=False, State=Disabled",
+      "Checked=False, State=Focus",
+      "Checked=True, State=Default",
+      "Checked=True, State=Disabled",
+      "Checked=True, State=Focus"
+    ]
+  },
+  {
+    "description": "A single-line field for searching a list or a page. Use Default in page headers and Compact inside toolbars and tables. Muted is for a search that sits on a busy surface and should stay quiet until used. Do not use it for filtering by several fields, use Form Field instead.",
+    "name": "Search Bar",
+    "page": "Search Bar",
+    "variantCount": 6,
+    "variants": [
+      "Size=Compact, State=Default",
+      "Size=Compact, State=Focus",
+      "Size=Compact, State=Muted",
+      "Size=Default, State=Default",
+      "Size=Default, State=Focus",
+      "Size=Default, State=Muted"
+    ]
+  },
+  {
+    "description": "Feature block with two to four columns. Use it to set out parallel points of equal weight. Columns share the width evenly with gap/columns (32px). Built at 2, 3 and 4; for other counts, resize one of them.",
+    "name": "Section / Columns",
+    "page": "Section / Columns",
+    "variantCount": 6,
+    "variants": [
+      "Columns=2, Variant=Default",
+      "Columns=2, Variant=Inverted",
+      "Columns=3, Variant=Default",
+      "Columns=3, Variant=Inverted",
+      "Columns=4, Variant=Default",
+      "Columns=4, Variant=Inverted"
+    ]
+  },
+  {
+    "description": "Full-bleed section with four layouts: Text Left, Text Right, Text Only and Media Only. Use it for the main moments of a page, alternating Default and Inverted.",
+    "name": "Section / Full Width",
+    "page": "Section / Full Width",
+    "variantCount": 8,
+    "variants": [
+      "Layout=Media Only, Variant=Default",
+      "Layout=Media Only, Variant=Inverted",
+      "Layout=Text Left, Variant=Default",
+      "Layout=Text Left, Variant=Inverted",
+      "Layout=Text Only, Variant=Default",
+      "Layout=Text Only, Variant=Inverted",
+      "Layout=Text Right, Variant=Default",
+      "Layout=Text Right, Variant=Inverted"
+    ]
+  },
+  {
+    "description": "Section heading with a gradient second line. Use it to open a page section. Leave Gradient Line empty for a single line. Gradient paints do not follow Light and Dark, so the accent line looks the same in both. Padding binds to space/sm and space/md, so Mobile mode drops it to 32/48.",
+    "name": "Section / Header",
+    "page": "Section / Header",
+    "variantCount": 6,
+    "variants": [
+      "Level=H1, Variant=Default",
+      "Level=H1, Variant=Inverted",
+      "Level=H2, Variant=Default",
+      "Level=H2, Variant=Inverted",
+      "Level=H3, Variant=Default",
+      "Level=H3, Variant=Inverted"
+    ]
+  },
+  {
+    "description": "Closing call to action. Use it once, as the last block of a page. On dark backgrounds it uses the Inverted button, not a recoloured Primary. Centred, with the gradient on the second line.",
+    "name": "Section / Let's Connect",
+    "page": "Section / Let's Connect",
+    "variantCount": 2,
+    "variants": [
+      "Variant=Default",
+      "Variant=Inverted"
+    ]
+  },
+  {
+    "description": "Pull quote with attribution. Use it once per page to give weight to a customer's or leader's words. The 2px rule beside the attribution uses border/quote. On inverted variants the role line uses 70% opacity because text/muted does not invert.",
+    "name": "Section / Quote",
+    "page": "Section / Quote",
+    "variantCount": 4,
+    "variants": [
+      "Size=H1, Variant=Default",
+      "Size=H1, Variant=Inverted",
+      "Size=H2, Variant=Default",
+      "Size=H2, Variant=Inverted"
+    ]
+  },
+  {
+    "description": "Text beside an image or video. Use it to explain one idea with a visual. MediaLeft swaps the order, so do not drag layers to do it. The media slot is a dashed placeholder; replace its fill with an image on the instance.",
+    "name": "Section / Showcase",
+    "page": "Section / Showcase",
+    "variantCount": 4,
+    "variants": [
+      "Variant=Default, MediaLeft=False",
+      "Variant=Default, MediaLeft=True",
+      "Variant=Inverted, MediaLeft=False",
+      "Variant=Inverted, MediaLeft=True"
+    ]
+  },
+  {
+    "description": "A closed dropdown for choosing one option from a list of two to about seven. Use it inside forms and filter bars. For more options with typing, use Combobox, and for a handful of options consider radio buttons. Pair it with Menu Item for the open list.",
+    "name": "Select",
+    "page": "Select",
+    "variantCount": 8,
+    "variants": [
+      "Value=Placeholder, State=Default",
+      "Value=Placeholder, State=Disabled",
+      "Value=Placeholder, State=Error",
+      "Value=Placeholder, State=Focus",
+      "Value=Selected, State=Default",
+      "Value=Selected, State=Disabled",
+      "Value=Selected, State=Error",
+      "Value=Selected, State=Focus"
+    ]
+  },
+  {
+    "description": "One row in the side navigation. Use it only inside Side Navigation. The panel is always dark, so labels use text/inverted, and Active turns into a light pill. Hover is a 15% white wash.",
+    "name": "Side Nav Item",
+    "page": "Side Nav Item",
+    "variantCount": 3,
+    "variants": [
+      "State=Active",
+      "State=Default",
+      "State=Hover"
+    ]
+  },
+  {
+    "description": "Application side navigation, always dark in every mode. Use it for apps with several top-level areas. Do not use it on marketing pages (use Navigation Bar). Fixed width of 240px.",
+    "name": "Side Navigation",
+    "page": "Side Navigation",
+    "variantCount": 0,
+    "variants": []
+  },
+  {
+    "description": "A grey placeholder that holds the shape of content while it loads. Use it for lists and cards that take more than a moment to appear. Do not use it for actions or for content that is missing; use an empty state for that.\n\nMatch the real layout: Circle for an avatar, Line for text, Line Large for a heading and Block for an image. In code the placeholder pulses gently. Figma cannot animate, so this shows the still state.",
+    "name": "Skeleton",
+    "page": "Skeleton",
+    "variantCount": 4,
+    "variants": [
+      "Shape=Block",
+      "Shape=Circle",
+      "Shape=Line",
+      "Shape=Line Large"
+    ]
+  },
+  {
+    "description": "Pick a value inside a range by dragging. Use it when an approximate value is fine and the range is bounded. Use an Input when people need to type an exact number.\n\nAlways show a label and the current value next to it. Focus adds a ring around the thumb. Disabled is for a range that is locked, so say why in nearby text. Fill width and thumb position are set on the instance.",
+    "name": "Slider",
+    "page": "Slider",
+    "variantCount": 3,
+    "variants": [
+      "State=Default",
+      "State=Disabled",
+      "State=Focus"
+    ]
+  },
+  {
+    "description": "One number and what it counts. Label in sentence case, value in Heading/Stat. No accent strip, no icon, no capitals: the number is the emphasis. Use in a row of two to four, same height. Do not use for values that need a sentence to explain; use a table or a paragraph.",
+    "name": "Stat Card",
+    "page": "Stat Card",
+    "variantCount": 0,
+    "variants": []
+  },
+  {
+    "description": "One tab in a row that switches between views of the same page. Use it for two to five peer views. The count is optional and only for things that can be counted, such as open items. For steps in a process or navigation between pages, use something else.",
+    "name": "Tab",
+    "page": "Tab",
+    "variantCount": 6,
+    "variants": [
+      "State=Active, Count=False",
+      "State=Active, Count=True",
+      "State=Default, Count=False",
+      "State=Default, Count=True",
+      "State=Hover, Count=False",
+      "State=Hover, Count=True"
+    ]
+  },
+  {
+    "description": "Table with a toolbar, header row and body rows. Use it to compare many records across the same fields. Built from Table Row instances, so a change to the row reaches every table. The container clips to radius/card, which rounds the corner rows.",
+    "name": "Table",
+    "page": "Table",
+    "variantCount": 0,
+    "variants": []
+  },
+  {
+    "description": "One table row, including the Header variant. Use it only inside Table. Cells share the row by weight, so columns survive a resize. Stack rows in a clipped container and set the last row's bottom stroke to zero.",
+    "name": "Table Row",
+    "page": "Table Row",
+    "variantCount": 4,
+    "variants": [
+      "State=Default",
+      "State=Header",
+      "State=Hover",
+      "State=Selected"
+    ]
+  },
+  {
+    "description": "A titled list of the people on one discipline of a project. Each row has an Avatar, a name and a role with the company. Use one card per discipline and keep to six people or fewer.",
+    "name": "Team Card",
+    "page": "Group Cards",
+    "variantCount": 2,
+    "variants": [
+      "Inverted=False",
+      "Inverted=True"
+    ]
+  },
+  {
+    "description": "A short message that appears over the page after an action and goes away on its own. Use it to confirm something that already happened. Do not use it for errors that need a decision or for anything the person must read, use Alert instead.",
+    "name": "Toast",
+    "page": "Toast",
+    "variantCount": 3,
+    "variants": [
+      "Tone=Error",
+      "Tone=Neutral",
+      "Tone=Success"
+    ]
+  },
+  {
+    "description": "Switch one setting on or off, with the change applying straight away. Use Checkbox when the choice only counts after a Save button is pressed.\n\nThe track fills when On and the knob moves to the right. Focus adds a ring around the track. Label it with the setting itself, not the action, so the same words work for On and Off.",
+    "name": "Toggle",
+    "page": "Toggle",
+    "variantCount": 6,
+    "variants": [
+      "On=False, State=Default",
+      "On=False, State=Disabled",
+      "On=False, State=Focus",
+      "On=True, State=Default",
+      "On=True, State=Disabled",
+      "On=True, State=Focus"
+    ]
+  },
+  {
+    "description": "A short label that appears when someone hovers or focuses an icon or control. Use it to name an icon-only button or add a few words of context. Keep it to one line. Do not put links, buttons or anything needed to finish a task inside it.",
+    "name": "Tooltip",
+    "page": "Tooltip",
+    "variantCount": 2,
+    "variants": [
+      "Arrow=Above",
+      "Arrow=Below"
+    ]
+  }
+]

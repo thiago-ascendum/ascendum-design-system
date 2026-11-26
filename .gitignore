@@ -2,3 +2,7 @@
 __pycache__/
 build/raw.json
 node_modules/
+dist/
+storybook-static/
+*.log
+dist-*/

@@ -13,11 +13,11 @@ jobs:
 
       - name: Run the checks
         # Exit code 1 while a blocking check fails. That is the gate.
-        run: python3 pipeline/02_build.py build/ds-snapshot.json governance build
+        run: python3 pipeline/02_build.py build/ds-snapshot.json governance build && python3 pipeline/04_catalogue.py build/ds-snapshot.json build
 
       - name: Generated files match the snapshot
         # Tokens and the AI contract are never edited by hand.
-        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md
+        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md build/components.json build/text-styles.json
 
       - name: Before and after
         run: python3 pipeline/03_compare.py build/before/report.json build/report.json build/compare.js
@@ -30,3 +30,17 @@ jobs:
           path: |
             build/report.json
             build/AI-CONTRACT.md
+
+  components:
+    name: Components and documentation build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build the documentation site
+        # A component or a page that does not build stops here.
+        run: npm run build:site
