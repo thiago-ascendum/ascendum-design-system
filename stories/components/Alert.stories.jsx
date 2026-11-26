@@ -7,11 +7,47 @@ export default {
   args: { tone: 'success', title: 'Project saved', text: 'Your changes were saved to the Harbourside migration project.' },
   decorators: [(Story) => <div style={{ width: 480 }}><Story /></div>],
   parameters: {
-    docs: {
-      description: {
-        component:
-          'Inline message about the state of the page or a form. **Use:** when the person needs to read something before carrying on. Neutral is for general notes; the coloured tones are for feedback only. Success and error alerts are announced by screen readers as they appear. **Avoid:** messages that disappear on their own (use Toast), and long text: two sentences at most. **Open questions for the owner:** Neutral and Info look alike. Keep both?',
-      },
+    ds: {
+      lead: 'Tells the person something about the page or a form that they need to read before carrying on.',
+      group: 'Molecules',
+      figma: '80:126',
+      code: 'src/components/Alert.jsx',
+      when: [
+        ['Neutral: a general note', 'Scheduled work, a change in how something behaves. Nothing has gone right or wrong.'],
+        ['Success, warning, error: feedback', 'Done, needs attention, or failed. The colour and the border carry the meaning.'],
+        ['Not for passing messages', 'For a message that disappears on its own, use Toast instead.'],
+      ],
+      use: ['Give the alert a short title that names what happened.', 'Say what to do next in one or two sentences.', 'Use the coloured tones for feedback only.'],
+      avoid: ['Using an alert for a message that should disappear on its own.', 'Long text: two sentences at most.', 'Showing several alerts at once on one view.'],
+      tokens: [
+        ['component/alert/gap', '--alert-gap', 'Space between the icon and the text'],
+        ['component/alert/padding-v', '--alert-padding-v', 'Top and bottom padding'],
+        ['component/alert/padding-h', '--alert-padding-h', 'Left and right padding'],
+        ['component/alert/body-gap', '--alert-body-gap', 'Space between the title and the text'],
+        ['bg/surface', '--container-fill', 'Fill of the Neutral tone'],
+        ['border/default', '--border-default', 'Border of the Neutral tone'],
+        ['border-width/hairline', '--border-width-hairline', 'Border width'],
+        ['radius/surface', '--radius-surface', 'Corners'],
+        ['size/icon-md', '--size-icon-md', 'Icon size'],
+        ['icon/default', '--icon', 'Icon colour of the Neutral tone'],
+        ['font-size/h3', '--text-h3-size', 'Title size'],
+        ['font-size/body-lg', '--text-body-lg-size', 'Text size'],
+        ['text/default', '--text', 'Title colour'],
+        ['text/muted', '--text-muted', 'Text colour'],
+        ['feedback/info, feedback/info-bg', '--feedback-info, --feedback-info-bg', 'Border and icon, and fill, of Info'],
+        ['feedback/success, feedback/success-bg', '--feedback-success, --feedback-success-bg', 'Border and icon, and fill, of Success'],
+        ['feedback/warning, feedback/warning-bg', '--feedback-warning, --feedback-warning-bg', 'Border and icon, and fill, of Warning'],
+        ['feedback/error, feedback/error-bg', '--feedback-error, --feedback-error-bg', 'Border and icon, and fill, of Error'],
+      ],
+      a11y: [
+        'Error has role="alert", so a screen reader announces it as it appears. The other tones have role="status", which is announced politely.',
+        'The icon is hidden from assistive technology. The title and the text carry the meaning, so the tone is never colour alone.',
+        'The alert has no controls, so it takes no focus and has no touch target of its own.',
+      ],
+      open: [
+        'Neutral and Info look alike. Keep both?',
+        'Neutral and Info use the same icon, and Error uses the Warning icon. Should each tone have its own?',
+      ],
     },
   },
 };

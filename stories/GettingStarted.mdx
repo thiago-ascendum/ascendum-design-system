@@ -1,37 +1,48 @@
 import { Meta } from '@storybook/addon-docs/blocks';
+import { Hero, Section, Index, Cards, Steps, Table, List, CodeCounts } from './_shared/Doc.jsx';
 
 <Meta title="Start here/Getting started" />
 
-# Ascendum Design System
+<Hero title="Ascendum Design System">
+  AI proposes. Checks verify. A person approves. Figma is the source of truth, and everything here is generated from it.
+</Hero>
 
-**AI proposes. Checks verify. A person approves.**
+<Index items={['Four steps', 'Try it', 'Where things live', 'What is in code', 'Known gaps']} />
 
-This is the coded side of the library. Figma is the source of truth: the tokens here are generated from the Figma file, and the three components below are built from those tokens, binding for binding.
+<Section n={1} title="Four steps" lead="This is the coded side of the library. The tokens are generated from the Figma file, and the three components are built from those tokens, binding for binding.">
+  <Steps items={[
+    ['Use the tokens', <>Import <code>build/tokens.css</code>. Every colour, radius, size and space is a CSS custom property with a light and a dark value.</>],
+    ['Bind roles, not colours', <>Use <code>--text</code>, <code>--container-fill</code>, <code>--feedback-success</code>. The primitives (<code>--neutral-750</code>, <code>--brand-midnight</code>) sit behind the roles and you should never need one.</>],
+    ['Place components, never rebuild them', <>Button, Input and Badge are in <code>src/components</code>. If the piece exists, use it and set its properties.</>],
+    ['Change it the right way', 'Change the design in Figma, take a snapshot, and let the checks run. Nobody edits a token by hand.'],
+  ]} />
+</Section>
 
-## Four steps
+<Section n={2} title="Try it">
+  <Cards items={[
+    { title: 'Switch the theme', text: 'Switch Theme in the toolbar: the whole canvas changes because the tokens change.' },
+    { title: 'Open a component', text: 'Open Components / Button and use the controls.' },
+    { title: 'Read the colours', text: 'Open Foundations / Colour: it is read live from build/tokens.json.' },
+  ]} />
+</Section>
 
-1. **Use the tokens.** Import `build/tokens.css`. Every colour, radius, size and space is a CSS custom property with a light and a dark value.
-2. **Bind roles, not colours.** Use `--text`, `--container-fill`, `--feedback-success`. The primitives (`--neutral-750`, `--brand-midnight`) sit behind the roles and you should never need one.
-3. **Place components, never rebuild them.** Button, Input and Badge are in `src/components`. If the piece exists, use it and set its properties.
-4. **Change it the right way.** Change the design in Figma, take a snapshot, and let the checks run. Nobody edits a token by hand.
+<Section n={3} title="Where things live">
+  <Table head={['Where', 'What']} rows={[
+    [<a href="https://www.figma.com/design/5lhRMZkLHZijqgdigjk3J1/Ascendum-Design-System">Figma file</a>, 'The source. Proposed version 1.1.0.'],
+    [<a href="/report/" target="_top">Health report</a>, 'The gate, every check, the before and after, the impact map.'],
+    [<a href="https://github.com/thiago-ascendum/ascendum-design-system">Repository</a>, 'Tokens, AI contract, rules, checks, components.'],
+    [<code>build/AI-CONTRACT.md</code>, 'What an AI tool may use, must never use, and should ignore.'],
+  ]} />
+</Section>
 
-## Try it
+<Section n={4} title="What is in code" lead="Counted from build/components.json and from the files in src/components.">
+  <CodeCounts />
+</Section>
 
-- Switch **Theme** in the toolbar: the whole canvas changes because the tokens change.
-- Open **Components / Button** and use the controls.
-- Open **Foundations / Colour**: it is read live from `build/tokens.json`.
-
-## Where things live
-
-| Where | What |
-|---|---|
-| [Figma file](https://www.figma.com/design/5lhRMZkLHZijqgdigjk3J1/Ascendum-Design-System) | The source. Proposed version 1.1.0. |
-| [Health report](/report/) | The gate, every check, the before and after, the impact map. |
-| [Repository](https://github.com/thiago-ascendum/ascendum-design-system) | Tokens, AI contract, rules, checks, components. |
-| `build/AI-CONTRACT.md` | What an AI tool may use, must never use, and should ignore. |
-
-## Known gaps
-
-- The system has no named owner yet, so version 1.1.0 is proposed, not approved.
-- Three components are in code. The Figma library has 46.
-- Publishing the Figma library to a file that uses it has never been tested.
+<Section n={5} title="Known gaps">
+  <Cards items={[
+    { tone: 'ask', title: 'No named owner', text: 'The system has no named owner yet, so version 1.1.0 is proposed, not approved.' },
+    { tone: 'ask', title: 'Three components in code', text: 'Three components are in code. The Figma library has 46.' },
+    { tone: 'ask', title: 'Publishing never tested', text: 'Publishing the Figma library to a file that uses it has never been tested.' },
+  ]} />
+</Section>

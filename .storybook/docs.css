@@ -76,6 +76,10 @@
 .dsdoc-hero { background: var(--inverted-background); color: var(--inverted-text); border-radius: var(--container-radius); padding: var(--space-sm); display: grid; gap: var(--space-2xs); margin-bottom: var(--space-xs); }
 .dsdoc-hero h1 { color: var(--inverted-text) !important; margin: 0 !important; }
 .dsdoc-hero p { color: var(--text-inverted-muted) !important; font-size: var(--text-body-lg-size) !important; margin: 0 !important; max-width: 70ch; }
+/* In dark mode the hero stays dark: a bright block at the top of every page is too loud. */
+[data-theme='dark'] .dsdoc-hero { background: var(--container-fill); border: var(--border-width-hairline) solid var(--border-default); }
+[data-theme='dark'] .dsdoc-hero h1 { color: var(--text) !important; }
+[data-theme='dark'] .dsdoc-hero p { color: var(--text-muted) !important; }
 .dsdoc-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-2xs); margin: var(--space-2xs) 0 var(--space-xs); }
 .dsdoc-step { background: var(--container-fill); border: var(--border-width-hairline) solid var(--border-default); border-radius: var(--container-radius); padding: var(--space-xs); display: grid; gap: var(--space-2xs); align-content: start; }
 .dsdoc-step > i { font-style: normal; width: 48px; height: 48px; border-radius: var(--radius-pill); display: grid; place-items: center; font: 700 var(--text-h4-size)/1 Barlow, sans-serif; color: var(--text-on-accent); background: var(--bg-accent-blue); }

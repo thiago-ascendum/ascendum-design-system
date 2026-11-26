@@ -7,11 +7,36 @@ export default {
   args: { label: 'Active projects', value: '128' },
   decorators: [(Story) => <div style={{ width: 280 }}><Story /></div>],
   parameters: {
-    docs: {
-      description: {
-        component:
-          'One number and what it counts. The label is in sentence case and the number carries the emphasis: no accent strip, no icon, no capitals. **Use:** in a row of two to four with the same height. **Avoid:** values that need a sentence to explain; use a table or a paragraph. **Open questions for the owner:** none.',
-      },
+    ds: {
+      lead: 'One number and what it counts. The label sits above the value and the number is the emphasis.',
+      group: 'Molecules',
+      figma: '83:95',
+      code: 'src/components/StatCard.jsx',
+      when: [
+        ['A single figure', 'Active projects, open risks, delivered on time. One number with a short label.'],
+        ['In a row of two to four', 'Cards in a row keep the same height, so the figures line up.'],
+        ['Not for explanations', 'A value that needs a sentence belongs in a table or a paragraph.'],
+      ],
+      use: ['Write the label in sentence case.', 'Keep the value to a number or a short value such as 92%.', 'Place two to four cards in a row, at the same height.'],
+      avoid: ['Values that need a sentence to explain.', 'Accent strips, icons or capitals: the number is the emphasis.', 'More than four cards in one row.'],
+      tokens: [
+        ['component/stat-card/padding', '--stat-card-padding', 'Padding on all sides'],
+        ['component/stat-card/gap', '--stat-card-gap', 'Space between the label and the value'],
+        ['bg/surface', '--container-fill', 'Fill'],
+        ['border/default', '--border-default', 'Border'],
+        ['border-width/hairline', '--border-width-hairline', 'Border width'],
+        ['radius/card', '--radius-card', 'Corners'],
+        ['font-size/body-sm', '--font-size-body-sm', 'Label size'],
+        ['font-size/stat', '--text-stat-size', 'Value size: 44 desktop, 36 mobile'],
+        ['text/default', '--text', 'Value colour'],
+        ['text/muted', '--text-muted', 'Label colour'],
+      ],
+      a11y: [
+        'The card is a group, named by its label, so a screen reader reads "Active projects, group" and then the value.',
+        'The card has no controls, so it takes no focus and has no touch target of its own.',
+        'The label is muted text on the card fill. Both pass contrast in light and dark.',
+      ],
+      changes: ['1.1.0: the Stat Card accent strip and its five department variants are removed. Those instances fall back to the plain card.'],
     },
   },
 };

@@ -1,141 +1,146 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 import { Badge } from '../src/components/Badge.jsx';
+import { Hero, Section, Index, Cards, Chips, Table, List } from './_shared/Doc.jsx';
 
 <Meta title="Start here/Changelog" />
 
-# Changelog
+<Hero title="Changelog">
+  What changed in each version, who signed it, and what it breaks in a file that uses the library. The same log lives in the Figma file on page <code>02 · Changelog</code> and in <code>CHANGELOG.md</code>.
+</Hero>
 
-What changed in each version, who signed it, and what it breaks in a file that uses the library. The same log lives in the Figma file on page `02 · Changelog` and in `CHANGELOG.md`.
+<Cards items={[
+  { tone: 'ask', title: 'Now: 1.1.0, proposed, nothing published', text: [
+    'Name the owner of the system.',
+    'The owner approves 1.1.0.',
+    'Rename the document.',
+  ] },
+]} />
 
-## 1.1.0 <Badge tone="warning" label="Proposed" />
+<Index items={['Version 1.1.0', 'Does this break my file?', 'Measured before and after', 'Removed', 'Changed', 'Added', 'Version 1.0.0', 'Requests from review', 'How this log is kept']} />
 
-26 November 2026. Clean-up after the design review of 5 November. Less of everything, and what stays is checked.
+<Section n={1} title="Version 1.1.0" lead="26 November 2026. Clean-up after the design review of 5 November. Less of everything, and what stays is checked.">
+  <Chips items={[<Badge tone="warning" label="Proposed" />]} />
+  <Table head={['Sign-off', 'Who', 'State']} rows={[
+    ['Proposed by', 'Hacksgiving team 2', <Badge tone="success" label="Done" />],
+    ['Checked by', 'The automated checks: all five blocking checks pass. No second reviewer yet.', <Badge tone="success" label="Checks pass" />],
+    ['Approved by', 'Nobody yet. Do not publish until a named owner signs here.', <Badge tone="warning" label="Waiting" />],
+  ]} />
+</Section>
 
-| Sign-off | Who | State |
-|---|---|---|
-| Proposed by | Hacksgiving team 2 | <Badge tone="success" label="Done" /> |
-| Checked by | The automated checks: all five blocking checks pass. No second reviewer yet. | <Badge tone="success" label="Checks pass" /> |
-| Approved by | Nobody yet. Do not publish until a named owner signs here. | <Badge tone="warning" label="Waiting" /> |
+<Section n={2} title="Does this break my file?" lead="Yes. Read this before you accept the update.">
+  <Table head={['If your file uses', 'What changed', 'What you do']} rows={[
+    ['Avatar', 'The Fill property is now Tone, and Size has three values instead of four.', 'Pick the tone and the size again on instances set to Fill=Midnight or Size=Small.'],
+    ['Stat Card', 'The five Accent variants are gone.', 'Nothing. Those instances fall back to the plain card. Check the row still lines up.'],
+    ['Badge', 'The tones Muted and Solid are gone.', 'Pick a new tone on those instances.'],
+    ['A removed token or text style', 'The layer loses the binding and keeps its last value.', <>Bind it again: <code>text/access-muted</code> to <code>text/muted</code>, <code>UI/Tag</code> and <code>UI/Eyebrow</code> to <code>UI/Label</code>.</>],
+  ]} />
+</Section>
 
-### Does this break my file?
+<Section n={3} title="Measured before and after" lead="The same checks, run on the file as received and on this version.">
+  <Table head={['Check', 'Before', 'After']} rows={[
+    ['Deprecated items still shipped', '28', '0'],
+    ['Colour pairs failing contrast', '16', '0'],
+    ['Colours set by hand', '75', '0'],
+    ['Labels typed in capitals', '46', '0'],
+    ['Variants', '258', '210'],
+  ]} />
+</Section>
 
-Yes. Read this before you accept the update.
+<Section n={4} title="Removed">
+  <List items={[
+    <>Department colours as a concept. <code>dept/*</code> tokens are now <code>accent/red</code>, <code>purple</code>, <code>blue</code> and <code>stone</code>, each with one soft tint. SectionTag moved to page 90.</>,
+    <><code>neutral/0</code>, <code>neutral/300</code> and <code>neutral/950</code>. No role and no component used them.</>,
+    <><code>text/access-muted</code>, a second muted text colour that also failed contrast. Its 22 layers now use <code>text/muted</code>. Breaking.</>,
+    <>Text styles <code>UI/Tag</code> and <code>UI/Eyebrow</code>, made for capitals. Nothing is set in capitals any more. Breaking.</>,
+    'Badge tones Muted and Solid. They carried no meaning and nothing used them. Breaking.',
+    'Stat Card accent strip and the five department variants that came with it. Breaking.',
+    'Two Progress Bar sizes. Two sizes stay: small and large.',
+    <>Unused tokens: <code>status/*-border</code>, <code>text/on-gradient-light</code>, <code>component/tag/*</code> and <code>component/stat-card/accent-bar</code>.</>,
+  ]} />
+</Section>
 
-| If your file uses | What changed | What you do |
-|---|---|---|
-| Avatar | The Fill property is now Tone, and Size has three values instead of four. | Pick the tone and the size again on instances set to Fill=Midnight or Size=Small. |
-| Stat Card | The five Accent variants are gone. | Nothing. Those instances fall back to the plain card. Check the row still lines up. |
-| Badge | The tones Muted and Solid are gone. | Pick a new tone on those instances. |
-| A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: `text/access-muted` to `text/muted`, `UI/Tag` and `UI/Eyebrow` to `UI/Label`. |
+<Section n={5} title="Changed">
+  <List items={[
+    'Avatar: soft tint with dark initials, three sizes (32, 48, 72) and four tones. It was 20 variants with saturated gradients and light text. Breaking.',
+    <>Contrast: <code>text/muted</code>, <code>text/placeholder</code> and <code>icon/muted</code> in light mode, and the four feedback colours in dark mode, now pass WCAG AA on every surface they sit on.</>,
+    'Input: vertical padding 8 to 18, so a typed value is no longer cramped.',
+    'Focus is a visible ring on Button, Input, Checkbox, Radio, Toggle and Slider.',
+    'Button: Solid has a visible hover, and the component set shows the Inverted variants on a dark half so none of them looks empty.',
+    'Modal and Section / Showcase: the small label above the title is gone.',
+    'Sample content: no more repeated rows, repeated links or buttons called Button.',
+    'File Uploader: the failed state shows a warning icon, the reason and a Try again action.',
+    'Team and stakeholder cards use the Avatar component instead of hand-drawn circles.',
+    'Getting Started, Changelog and Contribution & Governance are now guided pages, built from the components of the library.',
+  ]} />
+</Section>
 
-### Measured before and after
+<Section n={6} title="Added">
+  <List items={[
+    <>Tokens: <code>neutral/750</code>, <code>status/*-on-dark</code>, <code>accent/*-soft</code>, <code>bg/accent-*</code>, <code>text/on-accent</code> (renamed), <code>border/focus</code>, <code>border-width/focus</code>, <code>text/inverted-muted</code> and <code>button/fill-solid-hover</code>.</>,
+    'Colour page: two sections, Status and Semantic roles, each in light and dark.',
+    'A documentation card on 45 components: every variant named, use, measures, key tokens, accessibility as measured, open questions for the owner, and a footer with owner, version and reviewer. 31 also show dark mode.',
+    'A card on each pattern that lists the components it is built from.',
+    'Every component page ends with the component in a real layout.',
+  ]} />
+</Section>
 
-The same checks, run on the file as received and on this version.
+<Section n={7} title="Version 1.0.0" lead="No date on record. Initial migration from the Claude Design code package. Nobody is on record as having checked or approved it.">
+  <Chips items={[<Badge tone="neutral" label="Never published" />]} />
+  <Table head={['Sign-off', 'Who']} rows={[
+    ['Proposed by', 'No name on record'],
+    ['Checked by', 'No name on record'],
+    ['Approved by', 'No name on record'],
+  ]} />
+  <Cards columns={2} items={[
+    { title: 'Added', text: [
+      'Variables and styles: four variable collections. 11 text styles, 5 gradient paint styles, 4 effect styles.',
+      'Components: 203 icon components and 11 atom component sets (102 variants).',
+      'Foundations pages: colour, typography, spacing, radius and elevation, iconography, logo, tone of voice and photography.',
+    ] },
+    { title: 'Fixed', tone: 'do', text: [
+      <>Two aliases to nothing: <code>--quote-line</code> and <code>--form-placeholder</code> both aliased <code>--brand-mid-grey</code>, a variable never declared anywhere. Repointed to the grey DESIGN.md specifies.</>,
+      <>Inverted sections: the dark block never redeclared <code>--inverted-background</code> or <code>--inverted-text</code>, so inverted sections rendered midnight on midnight. Now they invert.</>,
+      <>One off-palette fill: <code>#D9D9D9</code> in an icon, normalised to <code>neutral/400</code>.</>,
+    ] },
+    { title: 'Changed', text: [
+      <>Error red: standardised on <code>#b02a32</code> (<code>feedback/error</code>). The source used the Products department red <code>#de4b54</code> in five places and <code>#b02a32</code> in one: two reds for one meaning.</>,
+      'Neutral ramp: from 16 loose greys to 14 steps. Three imperceptible pairs merged, two kept distinct by decision.',
+      'Status colours and greys: promoted from hardcoded CSS values to real tokens. Token adherence in the source was about 65%.',
+      <>Button padding and font size: reconciled. <code>Button.jsx</code> and <code>.btn</code> were the same button at two breakpoints, not two buttons.</>,
+      'Icon names match the source library (Icon/Elements/01) rather than being renamed descriptively.',
+      'Icons: shipped as 203 mode-aware components rather than 406 static files. Light and dark exports differed only by one colour.',
+    ] },
+  ]} />
+</Section>
 
-| Check | Before | After |
-|---|---|---|
-| Deprecated items still shipped | 28 | 0 |
-| Colour pairs failing contrast | 16 | 0 |
-| Colours set by hand | 75 | 0 |
-| Labels typed in capitals | 46 | 0 |
-| Variants | 258 | 210 |
+<Section n={8} title="Requests from review" lead="These were loose notes pinned next to the foundation pages. They live here now, each with its state.">
+  <Table head={['Page', 'Request', 'State', 'Where it stands']} rows={[
+    ['Colour', 'Remove department colours.', <Badge tone="success" label="Done" />, 'In 1.1.0.'],
+    ['Colour', 'Angle every gradient the same; rename Talent to Careers and Mortgages to Process Solutions; remove the Products gradient.', <Badge tone="warning" label="Open" />, 'The names and the tokens are done in 1.1.0. The angles are still open.'],
+    ['Colour', 'Not sure what the neutral ramp is for.', <Badge tone="info" label="Answered" />, 'Each step on the Colour page now says which role uses it.'],
+    ['Typography', 'Develop Beyond only in the Develop Beyond gradient.', <Badge tone="warning" label="Open" />, 'Already so on the page. No check enforces it yet.'],
+    ['Spacing', 'Not sure of the application of this section.', <Badge tone="info" label="Answered" />, 'An In use example, desktop and mobile.'],
+    ['Radius and elevation', 'A section for UI designers and developers.', <Badge tone="warning" label="Open" />, 'Nobody has taken it yet.'],
+    ['Iconography', 'UI icons should be Google Material; brand illustrations are for communications only.', <Badge tone="warning" label="Open" />, 'Stated at the top of the page. The Material set still has to be imported.'],
+    ['Logo', 'Keep in line with the brand guide website.', <Badge tone="success" label="Done" />, 'Stated at the top of the page: the website wins.'],
+    ['Photography', 'Add examples.', <Badge tone="warning" label="Open" />, 'The owner supplies six approved photographs.'],
+  ]} />
+  <Chips items={['Two done, two answered, five open.']} />
+</Section>
 
-### Removed
-
-- Department colours as a concept. `dept/*` tokens are now `accent/red`, `purple`, `blue` and `stone`, each with one soft tint. SectionTag moved to page 90.
-- `neutral/0`, `neutral/300` and `neutral/950`. No role and no component used them.
-- `text/access-muted`, a second muted text colour that also failed contrast. Its 22 layers now use `text/muted`. Breaking.
-- Text styles `UI/Tag` and `UI/Eyebrow`, made for capitals. Nothing is set in capitals any more. Breaking.
-- Badge tones Muted and Solid. They carried no meaning and nothing used them. Breaking.
-- Stat Card accent strip and the five department variants that came with it. Breaking.
-- Two Progress Bar sizes. Two sizes stay: small and large.
-- Unused tokens: `status/*-border`, `text/on-gradient-light`, `component/tag/*` and `component/stat-card/accent-bar`.
-
-### Changed
-
-- Avatar: soft tint with dark initials, three sizes (32, 48, 72) and four tones. It was 20 variants with saturated gradients and light text. Breaking.
-- Contrast: `text/muted`, `text/placeholder` and `icon/muted` in light mode, and the four feedback colours in dark mode, now pass WCAG AA on every surface they sit on.
-- Input: vertical padding 8 to 18, so a typed value is no longer cramped.
-- Focus is a visible ring on Button, Input, Checkbox, Radio, Toggle and Slider.
-- Button: Solid has a visible hover, and the component set shows the Inverted variants on a dark half so none of them looks empty.
-- Modal and Section / Showcase: the small label above the title is gone.
-- Sample content: no more repeated rows, repeated links or buttons called Button.
-- File Uploader: the failed state shows a warning icon, the reason and a Try again action.
-- Team and stakeholder cards use the Avatar component instead of hand-drawn circles.
-- Getting Started, Changelog and Contribution & Governance are now guided pages, built from the components of the library.
-
-### Added
-
-- Tokens: `neutral/750`, `status/*-on-dark`, `accent/*-soft`, `bg/accent-*`, `text/on-accent` (renamed), `border/focus`, `border-width/focus`, `text/inverted-muted` and `button/fill-solid-hover`.
-- Colour page: two sections, Status and Semantic roles, each in light and dark.
-- A documentation card on 45 components: every variant named, use, measures, key tokens, accessibility as measured, open questions for the owner, and a footer with owner, version and reviewer. 31 also show dark mode.
-- A card on each pattern that lists the components it is built from.
-- Every component page ends with the component in a real layout.
-
-## 1.0.0 <Badge tone="neutral" label="Never published" />
-
-No date on record. Initial migration from the Claude Design code package. Nobody is on record as having checked or approved it.
-
-| Sign-off | Who |
-|---|---|
-| Proposed by | No name on record |
-| Checked by | No name on record |
-| Approved by | No name on record |
-
-### Added
-
-- Variables and styles: four variable collections. 11 text styles, 5 gradient paint styles, 4 effect styles.
-- Components: 203 icon components and 11 atom component sets (102 variants).
-- Foundations pages: colour, typography, spacing, radius and elevation, iconography, logo, tone of voice and photography.
-
-### Fixed
-
-- Two aliases to nothing: `--quote-line` and `--form-placeholder` both aliased `--brand-mid-grey`, a variable never declared anywhere. Repointed to the grey DESIGN.md specifies.
-- Inverted sections: the dark block never redeclared `--inverted-background` or `--inverted-text`, so inverted sections rendered midnight on midnight. Now they invert.
-- One off-palette fill: `#D9D9D9` in an icon, normalised to `neutral/400`.
-
-### Changed
-
-- Error red: standardised on `#b02a32` (`feedback/error`). The source used the Products department red `#de4b54` in five places and `#b02a32` in one: two reds for one meaning.
-- Neutral ramp: from 16 loose greys to 14 steps. Three imperceptible pairs merged, two kept distinct by decision.
-- Status colours and greys: promoted from hardcoded CSS values to real tokens. Token adherence in the source was about 65%.
-- Button padding and font size: reconciled. `Button.jsx` and `.btn` were the same button at two breakpoints, not two buttons.
-- Icon names match the source library (Icon/Elements/01) rather than being renamed descriptively.
-- Icons: shipped as 203 mode-aware components rather than 406 static files. Light and dark exports differed only by one colour.
-
-## Requests from review
-
-These were loose notes pinned next to the foundation pages. They live here now, each with its state.
-
-| Page | Request | State | Where it stands |
-|---|---|---|---|
-| Colour | Remove department colours. | <Badge tone="success" label="Done" /> | In 1.1.0. |
-| Colour | Angle every gradient the same; rename Talent to Careers and Mortgages to Process Solutions; remove the Products gradient. | <Badge tone="warning" label="Open" /> | The names and the tokens are done in 1.1.0. The angles are still open. |
-| Colour | Not sure what the neutral ramp is for. | <Badge tone="info" label="Answered" /> | Each step on the Colour page now says which role uses it. |
-| Typography | Develop Beyond only in the Develop Beyond gradient. | <Badge tone="warning" label="Open" /> | Already so on the page. No check enforces it yet. |
-| Spacing | Not sure of the application of this section. | <Badge tone="info" label="Answered" /> | An In use example, desktop and mobile. |
-| Radius and elevation | A section for UI designers and developers. | <Badge tone="warning" label="Open" /> | Nobody has taken it yet. |
-| Iconography | UI icons should be Google Material; brand illustrations are for communications only. | <Badge tone="warning" label="Open" /> | Stated at the top of the page. The Material set still has to be imported. |
-| Logo | Keep in line with the brand guide website. | <Badge tone="success" label="Done" /> | Stated at the top of the page: the website wins. |
-| Photography | Add examples. | <Badge tone="warning" label="Open" /> | The owner supplies six approved photographs. |
-
-Two done, two answered, five open.
-
-## How this log is kept
-
-An entry with an empty slot is a proposal, not a release.
-
-| Role | What it means |
-|---|---|
-| Written by | Whoever proposes the change, from what actually changed between two versions of the file. Not from memory. |
-| Checked by | The automated checks first, then one reviewer who is not the author. |
-| Approved by | The system owner, by name and date. The owner is not named yet, so nothing in this log is published. |
-
-An entry is ready when:
-
-- [ ] Changes are grouped under Added, Changed, Removed and Fixed
-- [ ] It says what breaks, and what a file using the library has to do about it
-- [ ] It carries two names: who checked it and who approved it
-- [ ] Nothing in it reads like "various improvements"
-
-Proposed in 1.1.0. Not reviewed by the owner yet.
+<Section n={9} title="How this log is kept" lead="An entry with an empty slot is a proposal, not a release.">
+  <Table head={['Role', 'What it means']} rows={[
+    ['Written by', 'Whoever proposes the change, from what actually changed between two versions of the file. Not from memory.'],
+    ['Checked by', 'The automated checks first, then one reviewer who is not the author.'],
+    ['Approved by', 'The system owner, by name and date. The owner is not named yet, so nothing in this log is published.'],
+  ]} />
+  <Cards items={[
+    { title: 'An entry is ready when', text: [
+      'Changes are grouped under Added, Changed, Removed and Fixed',
+      'It says what breaks, and what a file using the library has to do about it',
+      'It carries two names: who checked it and who approved it',
+      'Nothing in it reads like "various improvements"',
+    ] },
+    { tone: 'ask', title: 'Status', text: 'Proposed in 1.1.0. Not reviewed by the owner yet.' },
+  ]} />
+</Section>

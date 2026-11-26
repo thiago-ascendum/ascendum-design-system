@@ -1,4 +1,5 @@
 import tokens from '../../build/tokens.json';
+import { Page } from '../_shared/Doc.jsx';
 
 const flat = (o, p = []) => Object.entries(o).flatMap(([k, v]) => (k.startsWith('$') ? [] : v && typeof v === 'object' && '$value' in v ? [{ name: [...p, k].join('/'), ...v }] : flat(v, [...p, k])));
 const code = (t) => t.$extensions?.['com.ascendum.ds']?.code;
@@ -6,16 +7,16 @@ const colours = (group) => flat(tokens[group]).filter((t) => t.$type === 'color'
 
 function Swatch({ t }) {
   return (
-    <div style={{ display: 'grid', gap: 8 }}>
-      <div style={{ height: 64, borderRadius: 'var(--radius-surface)', background: `var(${code(t)})`, border: '1px solid var(--border-default)' }} />
-      <div style={{ font: '700 14px/1.3 Barlow, sans-serif', color: 'var(--text)' }}>{t.name}</div>
-      <code style={{ fontSize: 12, color: 'var(--text-muted)' }}>{code(t)}</code>
-      {t.$description ? <div style={{ font: '400 13px/1.3 Barlow, sans-serif', color: 'var(--text-muted)' }}>{t.$description}</div> : null}
+    <div className="dsx-swatch">
+      <div className="dsx-chip" style={{ background: `var(${code(t)})` }} />
+      <div className="dsx-name">{t.name}</div>
+      <code>{code(t)}</code>
+      {t.$description ? <div className="dsx-muted">{t.$description}</div> : null}
     </div>
   );
 }
 const Grid = ({ list }) => (
-  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: 24, width: 'min(1100px, 92vw)' }}>
+  <div className="dsx-swatches">
     {list.map((t) => <Swatch key={t.name} t={t} />)}
   </div>
 );
@@ -25,5 +26,19 @@ export default {
   parameters: { layout: 'padded', docs: { description: { component: 'Read live from build/tokens.json. Bind to the Semantic roles; the primitives sit behind them. Switch the theme in the toolbar: roles change, primitives do not.' } } },
 };
 
-export const SemanticRoles = { name: 'Semantic roles (bind to these)', render: () => <Grid list={colours('Semantic')} /> };
-export const Primitives = { name: 'Primitives (private)', render: () => <Grid list={colours('Primitives')} /> };
+export const SemanticRoles = {
+  name: 'Semantic roles (bind to these)',
+  render: () => (
+    <Page title="Semantic roles" lead="Bind to these. Each role has a light and a dark value, so the page follows the theme in the toolbar.">
+      <Grid list={colours('Semantic')} />
+    </Page>
+  ),
+};
+export const Primitives = {
+  name: 'Primitives (private)',
+  render: () => (
+    <Page title="Primitives" lead="These sit behind the roles and do not change with the theme. Do not bind to them.">
+      <Grid list={colours('Primitives')} />
+    </Page>
+  ),
+};

@@ -1,108 +1,119 @@
 import { Meta } from '@storybook/addon-docs/blocks';
+import { Hero, Section, Index, Cards, Steps, Table, List } from './_shared/Doc.jsx';
 
 <Meta title="Start here/Governance" />
 
-# Contribution and governance
+<Hero title="Small changes, checked by a machine, approved by a person.">
+  Contribution and governance: how to change this library without quietly breaking the files that depend on it.
+</Hero>
 
-How to change this library without quietly breaking the files that depend on it.
+<Index items={['How a change moves', 'How a change gets in', 'Has this been tested?', 'Who owns what', 'Before you change a token, look at what moves', 'The token rule', 'What an AI tool reads', 'Adding a component', 'Things that are not up for redesign', 'Before you publish']} />
 
-## The short version
+<Section n={1} title="How a change moves" lead="A working change is not a release. It becomes one when the checks pass and a named person approves it. Today the repository holds proposed version 1.1.0, clearly marked as not approved.">
+  <Steps items={[
+    ['Figma working library', 'The change is made and tried here first.'],
+    ['Review and testing', 'The checks run and a person looks at it.'],
+    ['Approved Figma release', 'The owner approves it by name and date.'],
+    ['Repository and CI', 'The snapshot is taken, the tokens are generated, the checks run again.'],
+  ]} />
+</Section>
 
-**Small changes, checked by a machine, approved by a person.**
+<Section n={2} title="How a change gets in">
+  <Steps items={[
+    ['Propose one thing', 'A change that touches a token and three components is four changes.'],
+    ['Run the checks', 'The blocking ones must pass: every alias resolves, nothing deprecated is still shipped, no colour from outside the palette, every text pair passes contrast.'],
+    ['Look at it', 'Capture the page before and after. Structural checks pass on components that look wrong.'],
+    ['A person approves', 'By name and date.'],
+    ['Publish', 'With a changelog entry written from what actually changed.'],
+  ]} />
+</Section>
 
-## How a change moves
+<Section n={3} title="Has this been tested?" lead="Asked in the design review of 5 November. The honest answer has two halves.">
+  <Cards columns={2} items={[
+    { tone: 'do', title: 'Tested on 26 November 2026', text: [
+      'The checks ran on the whole file before and after the clean-up: two blocking failures before, none after.',
+      'The changed pages were captured before and after and compared by eye.',
+      <>Token removals were checked against usage first: <code>neutral/0</code>, <code>neutral/300</code> and <code>neutral/950</code> had no role and no component bound to them.</>,
+    ] },
+    { tone: 'ask', title: 'Not tested yet', text: [
+      'Publishing this library to a file that subscribes to it. This copy has never been published.',
+      'The breaking changes of 1.1.0 (Avatar, Stat Card, Badge) inside a real product file.',
+      'The approval step. No owner is named, so nobody has signed a change yet.',
+    ] },
+  ]} />
+  <p className="dsdoc-lead">Do the first publish against a copy of one product file, read the update dialog, and only then publish for everyone.</p>
+</Section>
 
-1. **Figma working library.** The change is made and tried here first.
-2. **Review and testing.** The checks run and a person looks at it.
-3. **Approved Figma release.** The owner approves it by name and date.
-4. **Repository and CI.** The snapshot is taken, the tokens are generated, the checks run again.
+<Section n={4} title="Who owns what">
+  <Table head={['What', 'Owner', 'Note']} rows={[
+    ['The system', 'To be named', 'Until there is a name here, nothing is published.'],
+    ['Design decisions', 'The system owner', 'How many states, which tones stay, rounded or sharp corners for internal tools.'],
+    ['Tokens and components', 'The proposer and one reviewer', 'The reviewer is never the author.'],
+    ['Icons and illustrations', 'John Norman', ''],
+    ['Logo', 'The brand guide website', 'This file mirrors it. If they differ, the website wins.'],
+  ]} />
+</Section>
 
-A working change is not a release. It becomes one when the checks pass and a named person approves it. Today the repository holds proposed version 1.1.0, clearly marked as not approved.
+<Section n={5} title="Before you change a token, look at what moves">
+  <Cards items={[
+    { title: 'Look at the list first', text: <>Every token knows which roles alias it and which components bind it. Look at that list first. The <a href="/report/#impact-map" target="_top">impact map</a> in the health report shows it.</> },
+    { title: 'An example', text: <>For example, <code>neutral/300</code> had no role and no component, so it was safe to remove. A token such as <code>button/fill</code> or <code>bg/surface</code> is bound by components: preview all of them before you change it.</> },
+  ]} />
+</Section>
 
-## How a change gets in
+<Section n={6} title="The token rule">
+  <List items={[
+    <>A new <code>component/*</code> token needs no discussion. It is that component's own business.</>,
+    <>A new <code>space/*</code>, <code>radius/*</code> or <code>font-size/*</code> token changes the shared language and needs a reason.</>,
+    'Ask: if this value changed, how many components should move? If the answer is one, it belongs in Component.',
+  ]} />
+</Section>
 
-1. **Propose one thing.** A change that touches a token and three components is four changes.
-2. **Run the checks.** The blocking ones must pass: every alias resolves, nothing deprecated is still shipped, no colour from outside the palette, every text pair passes contrast.
-3. **Look at it.** Capture the page before and after. Structural checks pass on components that look wrong.
-4. **A person approves.** By name and date.
-5. **Publish.** With a changelog entry written from what actually changed.
+<Section n={7} title="What an AI tool reads" lead={<>If a tool needs something that does not exist, it proposes it. It does not invent it. The rules are in <a href="https://github.com/thiago-ascendum/ascendum-design-system/blob/main/build/AI-CONTRACT.md">the contract file</a>.</>}>
+  <Cards columns={2} items={[
+    { tone: 'do', title: 'Reads', text: [
+      'Token names and values.',
+      'Component names, variants and descriptions.',
+    ] },
+    { tone: 'avoid', title: 'Ignores', text: [
+      'The layout of these documentation pages. Cards, numbered steps and swatches are page furniture, not product patterns.',
+      'Page 90, deprecated.',
+      'Page 99, internal.',
+    ] },
+  ]} />
+</Section>
 
-## Has this been tested?
+<Section n={8} title="Adding a component" lead="Most requests for a new component are a missing variant, or no component at all. A component nobody has seen in context is not ready.">
+  <Cards items={[
+    { title: 'Before it goes in', text: [
+      'No existing component already does the job',
+      'Every visual property is bound to a variable: no raw hex, no magic numbers',
+      'Twelve variants or fewer. Past twelve, split an axis into a property or a base component',
+      'The description says when to use it, and when not to',
+      'The page ends with its documentation card',
+      'It is shown in use',
+    ] },
+  ]} />
+</Section>
 
-Asked in the design review of 5 November. The honest answer has two halves.
+<Section n={9} title="Things that are not up for redesign">
+  <Cards items={[
+    { title: '0px buttons on 20px cards', text: 'That tension is the brand signature.' },
+    { title: 'Accents never mean status', text: 'And status colours are never decoration.' },
+    { title: 'One typeface', text: 'Barlow. No secondary face and no mono face.' },
+    { title: 'Depth from contrast', text: 'Not from shadow. Only overlays carry elevation.' },
+    { title: 'Nothing in capitals', text: 'Sentence case everywhere.' },
+  ]} />
+</Section>
 
-**Tested on 26 November 2026**
-
-- The checks ran on the whole file before and after the clean-up: two blocking failures before, none after.
-- The changed pages were captured before and after and compared by eye.
-- Token removals were checked against usage first: `neutral/0`, `neutral/300` and `neutral/950` had no role and no component bound to them.
-
-**Not tested yet**
-
-- Publishing this library to a file that subscribes to it. This copy has never been published.
-- The breaking changes of 1.1.0 (Avatar, Stat Card, Badge) inside a real product file.
-- The approval step. No owner is named, so nobody has signed a change yet.
-
-Do the first publish against a copy of one product file, read the update dialog, and only then publish for everyone.
-
-## Who owns what
-
-| What | Owner | Note |
-|---|---|---|
-| The system | To be named | Until there is a name here, nothing is published. |
-| Design decisions | The system owner | How many states, which tones stay, rounded or sharp corners for internal tools. |
-| Tokens and components | The proposer and one reviewer | The reviewer is never the author. |
-| Icons and illustrations | John Norman | |
-| Logo | The brand guide website | This file mirrors it. If they differ, the website wins. |
-
-## Before you change a token, look at what moves
-
-Every token knows which roles alias it and which components bind it. Look at that list first. The [impact map](/report/#impact-map) in the health report shows it.
-
-For example, `neutral/300` had no role and no component, so it was safe to remove. A token such as `button/fill` or `bg/surface` is bound by components: preview all of them before you change it.
-
-## The token rule
-
-- A new `component/*` token needs no discussion. It is that component's own business.
-- A new `space/*`, `radius/*` or `font-size/*` token changes the shared language and needs a reason.
-- Ask: if this value changed, how many components should move? If the answer is one, it belongs in Component.
-
-## What an AI tool reads
-
-If a tool needs something that does not exist, it proposes it. It does not invent it. The rules are in [the contract file](https://github.com/thiago-ascendum/ascendum-design-system/blob/main/build/AI-CONTRACT.md).
-
-| Reads | Ignores |
-|---|---|
-| Token names and values. | The layout of these documentation pages. Cards, numbered steps and swatches are page furniture, not product patterns. |
-| Component names, variants and descriptions. | Page 90, deprecated. |
-| | Page 99, internal. |
-
-## Adding a component
-
-Most requests for a new component are a missing variant, or no component at all. A component nobody has seen in context is not ready.
-
-- [ ] No existing component already does the job
-- [ ] Every visual property is bound to a variable: no raw hex, no magic numbers
-- [ ] Twelve variants or fewer. Past twelve, split an axis into a property or a base component
-- [ ] The description says when to use it, and when not to
-- [ ] The page ends with its documentation card
-- [ ] It is shown in use
-
-## Things that are not up for redesign
-
-- **0px buttons on 20px cards.** That tension is the brand signature.
-- **Accents never mean status.** And status colours are never decoration.
-- **One typeface.** Barlow. No secondary face and no mono face.
-- **Depth from contrast.** Not from shadow. Only overlays carry elevation.
-- **Nothing in capitals.** Sentence case everywhere.
-
-## Before you publish
-
-Every file subscribed to this library receives the update.
-
-- [ ] Every new component checked in both Semantic modes and both Dimension modes
-- [ ] The checks run again on the whole file, not only on what you touched
-- [ ] Looked at by a person. Structural checks pass on components that are visually wrong
-- [ ] The changelog entry written before publishing, not after
-
-Proposed in 1.1.0. Not reviewed by the owner yet.
+<Section n={10} title="Before you publish" lead="Every file subscribed to this library receives the update.">
+  <Cards items={[
+    { tone: 'ask', title: 'Check each one', text: [
+      'Every new component checked in both Semantic modes and both Dimension modes',
+      'The checks run again on the whole file, not only on what you touched',
+      'Looked at by a person. Structural checks pass on components that are visually wrong',
+      'The changelog entry written before publishing, not after',
+    ] },
+    { title: 'Status', text: 'Proposed in 1.1.0. Not reviewed by the owner yet.' },
+  ]} />
+</Section>
