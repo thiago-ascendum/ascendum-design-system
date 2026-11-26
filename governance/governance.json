@@ -238,6 +238,26 @@
       "on-info-container",
       "info-container",
       4.5
+    ],
+    [
+      "outline-medium",
+      "surface",
+      3
+    ],
+    [
+      "outline-medium",
+      "surface-container",
+      3
+    ],
+    [
+      "outline-medium",
+      "surface-container-low",
+      3
+    ],
+    [
+      "outline-medium",
+      "surface-container-high",
+      3
     ]
   ],
   "neverRules": [

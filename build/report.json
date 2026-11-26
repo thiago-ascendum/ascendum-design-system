@@ -4,14 +4,14 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T17:47:53.582Z",
+  "generatedAt": "2026-11-26T17:52:23.800Z",
   "nodes": 17497,
   "pages": 77,
   "gate": "OPEN",
   "summary": {
    "block-pass": 5,
-   "warn-pass": 9,
-   "warn-fail": 2,
+   "warn-pass": 10,
+   "warn-fail": 1,
    "decision": 4
   },
   "totals": {
@@ -178,13 +178,13 @@
    "id": "unused-token",
    "level": "warn",
    "title": "Every token is used by a component",
-   "count": 53,
-   "summary": "Of 302 tokens, 2 are bound by nothing at all, and 51 more are used only by their own swatch on a documentation page, never by a component.",
+   "count": 52,
+   "summary": "Of 302 tokens, 2 are bound by nothing at all, and 50 more are used only by their own swatch on a documentation page, never by a component.",
    "evidence": [
     "bound by nothing, by group: ctx (2)",
     "names: ctx/logo, ctx/logo-glyph",
-    "documentation-only, by group: error (8), warning (8), info (8), success (8), accent (4), space (2), size (2), brand (1), neutral (1), component (1), on-error (1), on-error-container (1)",
-    "names: accent/blue, accent/purple, accent/red, accent/stone, brand/grey, component/tabs/gap, error, error/10, error/30, error/50, error/60, error/70, error/90, error/98, info, info/10, info/30, info/50, info/60, info/70, info/90, info/98, neutral/650, on-error, on-error-container, on-info, on-info-container, on-success, on-success-container, on-warning, on-warning-container, size/icon-body, size/icon-md, space/lg, space/none, success, success/10, success/30, success/50, success/60, success/70, success/90, success/98, warning, warning/10, warning/30, warning/50, warning/60, warning/70, warning/90, warning/98"
+    "documentation-only, by group: error (8), warning (8), info (8), success (8), accent (4), space (2), size (2), brand (1), component (1), on-error (1), on-error-container (1), on-warning (1)",
+    "names: accent/blue, accent/purple, accent/red, accent/stone, brand/grey, component/tabs/gap, error, error/10, error/30, error/50, error/60, error/70, error/90, error/98, info, info/10, info/30, info/50, info/60, info/70, info/90, info/98, on-error, on-error-container, on-info, on-info-container, on-success, on-success-container, on-warning, on-warning-container, size/icon-body, size/icon-md, space/lg, space/none, success, success/10, success/30, success/50, success/60, success/70, success/90, success/98, warning, warning/10, warning/30, warning/50, warning/60, warning/70, warning/90, warning/98"
    ],
    "gary": [
     6,
@@ -322,18 +322,16 @@
    "id": "documentation-drift",
    "level": "warn",
    "title": "The documentation matches the file",
-   "count": 1,
+   "count": 0,
    "summary": "Numbers the library states about itself, compared with what is actually in it. Hand-written documentation goes stale the day after it is written.",
-   "evidence": [
-    "Semantic variables: page says 49, file has 53"
-   ],
+   "evidence": [],
    "gary": [
     2,
     5
    ],
    "fix": "Stop writing these by hand: generate the overview and the changelog from the snapshot diff.",
    "kind": "A",
-   "pass": false
+   "pass": true
   },
   {
    "id": "uppercase-labels",
@@ -388,17 +386,17 @@
    "id": "neutral-ramp",
    "level": "decision",
    "title": "Neutral ramp: which steps earn their place?",
-   "count": 1,
-   "summary": "13 neutral steps. 1 of them reach 3 component layers or fewer, even counting every semantic token that points to them.",
+   "count": 0,
+   "summary": "13 neutral steps. 0 of them reach 3 component layers or fewer, even counting every semantic token that points to them.",
    "evidence": [
     "neutral/50 #FAFAFA: 1 tokens alias it, 16 component layers reached",
     "neutral/100 #F5F5F5: 1 tokens alias it, 7 component layers reached",
     "neutral/200 #ECECEC: 7 tokens alias it, 78 component layers reached",
-    "neutral/400 #D6D6D6: 5 tokens alias it, 21 component layers reached",
+    "neutral/400 #D6D6D6: 4 tokens alias it, 9 component layers reached",
     "neutral/500 #C0C0C0: 3 tokens alias it, 108 component layers reached",
-    "neutral/600 #999999: 3 tokens alias it, 41 component layers reached",
-    "neutral/650 #888888: 0 tokens alias it, 0 component layers reached",
-    "neutral/700 #777777: 3 tokens alias it, 23 component layers reached",
+    "neutral/600 #999999: 4 tokens alias it, 53 component layers reached",
+    "neutral/650 #888888: 1 tokens alias it, 12 component layers reached",
+    "neutral/700 #777777: 2 tokens alias it, 11 component layers reached",
     "neutral/750 #6F6F6F: 4 tokens alias it, 138 component layers reached",
     "neutral/800 #555555: 7 tokens alias it, 67 component layers reached",
     "neutral/850 #444444: 5 tokens alias it, 27 component layers reached",
@@ -3432,15 +3430,7 @@
      13
     ],
     [
-     "Avatar",
-     12
-    ],
-    [
      "Team Card",
-     12
-    ],
-    [
-     "Table Row",
      12
     ],
     [
@@ -3448,15 +3438,23 @@
      12
     ],
     [
+     "Avatar",
+     12
+    ],
+    [
+     "Table Row",
+     12
+    ],
+    [
      "Footer",
      11
     ],
     [
-     "Side Navigation",
+     "File Uploader",
      10
     ],
     [
-     "File Uploader",
+     "Side Navigation",
      10
     ],
     [
@@ -3464,36 +3462,20 @@
      9
     ],
     [
-     "Tab",
-     8
-    ],
-    [
      "Navigation Bar",
      8
     ],
     [
-     "Side Nav Item",
-     7
+     "Tab",
+     8
     ],
     [
      "Section / Full Width",
      7
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
-     "Accordion Item",
-     6
-    ],
-    [
-     "Drawer",
-     6
+     "Side Nav Item",
+     7
     ],
     [
      "Empty State",
@@ -3512,6 +3494,22 @@
      6
     ],
     [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
+     6
+    ],
+    [
+     "Accordion Item",
+     6
+    ],
+    [
+     "Drawer",
+     6
+    ],
+    [
      "Key Stakeholders Card",
      5
     ],
@@ -3520,15 +3518,15 @@
      5
     ],
     [
+     "Section / Showcase",
+     4
+    ],
+    [
      "Inline Edit",
      4
     ],
     [
      "Menu Item",
-     4
-    ],
-    [
-     "Section / Showcase",
      4
     ],
     [
@@ -3678,11 +3676,11 @@
      13
     ],
     [
-     "Table Row",
+     "Section / Columns",
      12
     ],
     [
-     "Section / Columns",
+     "Table Row",
      12
     ],
     [
@@ -3690,11 +3688,11 @@
      11
     ],
     [
-     "Side Navigation",
+     "File Uploader",
      10
     ],
     [
-     "File Uploader",
+     "Side Navigation",
      10
     ],
     [
@@ -3702,16 +3700,12 @@
      9
     ],
     [
-     "Tab",
-     8
-    ],
-    [
      "Navigation Bar",
      8
     ],
     [
-     "Side Nav Item",
-     7
+     "Tab",
+     8
     ],
     [
      "Team Card",
@@ -3722,20 +3716,8 @@
      7
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
-     "Accordion Item",
-     6
-    ],
-    [
-     "Drawer",
-     6
+     "Side Nav Item",
+     7
     ],
     [
      "Empty State",
@@ -3754,16 +3736,24 @@
      6
     ],
     [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
+     6
+    ],
+    [
+     "Accordion Item",
+     6
+    ],
+    [
+     "Drawer",
+     6
+    ],
+    [
      "Section / Let's Connect",
      5
-    ],
-    [
-     "Inline Edit",
-     4
-    ],
-    [
-     "Menu Item",
-     4
     ],
     [
      "Key Stakeholders Card",
@@ -3771,6 +3761,14 @@
     ],
     [
      "Section / Showcase",
+     4
+    ],
+    [
+     "Inline Edit",
+     4
+    ],
+    [
+     "Menu Item",
      4
     ],
     [
@@ -3922,10 +3920,6 @@
      2
     ],
     [
-     "Overview Card",
-     1
-    ],
-    [
      "Avatar",
      1
     ],
@@ -4011,6 +4005,10 @@
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Overview Card",
      1
     ]
    ],
@@ -4479,16 +4477,20 @@
      7
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
      "Jira Annotation",
      5
+    ],
+    [
+     "Skeleton",
+     4
     ],
     [
      "Input",
@@ -4503,19 +4505,15 @@
      4
     ],
     [
-     "Skeleton",
-     4
-    ],
-    [
      "Table Row",
      4
     ],
     [
-     "Button",
+     "Checkbox",
      3
     ],
     [
-     "Checkbox",
+     "Button",
      3
     ],
     [
@@ -4535,6 +4533,10 @@
      2
     ],
     [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
      "Divider",
      2
     ],
@@ -4543,11 +4545,11 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Combobox",
+     1
     ],
     [
-     "Combobox",
+     "Team Card",
      1
     ],
     [
@@ -4560,10 +4562,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -4614,35 +4612,22 @@
    "aliases": [
     "ctx/primary-pressed",
     "inverse-primary-pressed",
-    "outline-medium",
     "primary-pressed",
     "surface-pressed"
    ],
-   "layers": 279,
-   "productLayers": 21,
+   "layers": 32,
+   "productLayers": 9,
    "components": [
     [
      "(documentation, not a component)",
-     258
+     23
     ],
     [
      "Checkbox",
      3
     ],
     [
-     "Section / Full Width",
-     3
-    ],
-    [
      "Toggle",
-     2
-    ],
-    [
-     "Search Bar",
-     2
-    ],
-    [
-     "Section / Showcase",
      2
     ],
     [
@@ -4650,66 +4635,38 @@
      2
     ],
     [
-     "Slider",
-     1
-    ],
-    [
-     "Code Block",
-     1
-    ],
-    [
-     "File Uploader",
-     1
-    ],
-    [
-     "Inline Edit",
-     1
-    ],
-    [
-     "Empty State",
-     1
-    ],
-    [
-     "Jira Annotation",
-     1
-    ],
-    [
      "Button",
+     1
+    ],
+    [
+     "Slider",
      1
     ]
    ],
    "pages": [
     [
-     "Colour",
-     30
-    ],
-    [
-     "Section / Full Width",
-     14
-    ],
-    [
-     "Group Cards",
-     13
-    ],
-    [
      "Checkbox",
-     12
-    ],
-    [
-     "Section / Showcase",
-     11
+     9
     ],
     [
      "Toggle",
-     10
+     6
     ],
     [
-     "Empty State",
-     10
+     "Radio button",
+     6
     ],
     [
-     "Annotation",
-     10
+     "Button",
+     5
+    ],
+    [
+     "Colour",
+     3
+    ],
+    [
+     "Slider",
+     3
     ]
    ]
   },
@@ -4755,15 +4712,15 @@
      6
     ],
     [
+     "Team Card",
+     5
+    ],
+    [
      "Alert",
      5
     ],
     [
      "Table",
-     5
-    ],
-    [
-     "Team Card",
      5
     ],
     [
@@ -4799,10 +4756,6 @@
      3
     ],
     [
-     "Drawer",
-     2
-    ],
-    [
      "Key Stakeholders Card",
      2
     ],
@@ -4812,6 +4765,10 @@
     ],
     [
      "Section / Showcase",
+     2
+    ],
+    [
+     "Drawer",
      2
     ],
     [
@@ -4882,14 +4839,15 @@
    "aliases": [
     "ctx/outline-variant",
     "inverse-outline-variant",
-    "on-surface-placeholder"
+    "on-surface-placeholder",
+    "outline-medium"
    ],
-   "layers": 178,
-   "productLayers": 41,
+   "layers": 425,
+   "productLayers": 53,
    "components": [
     [
      "(documentation, not a component)",
-     137
+     372
     ],
     [
      "Input",
@@ -4901,7 +4859,7 @@
     ],
     [
      "Search Bar",
-     6
+     8
     ],
     [
      "Overview Card",
@@ -4916,12 +4874,40 @@
      3
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Section / Full Width",
+     3
     ],
     [
      "Section / Quote",
      2
+    ],
+    [
+     "Section / Showcase",
+     2
+    ],
+    [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
+     "Code Block",
+     1
+    ],
+    [
+     "File Uploader",
+     1
+    ],
+    [
+     "Inline Edit",
+     1
+    ],
+    [
+     "Empty State",
+     1
+    ],
+    [
+     "Jira Annotation",
+     1
     ],
     [
      "Team Card",
@@ -4930,36 +4916,36 @@
    ],
    "pages": [
     [
-     "Input",
-     27
-    ],
-    [
-     "Form Field",
-     26
-    ],
-    [
      "Colour",
-     21
-    ],
-    [
-     "Search Bar",
-     19
+     48
     ],
     [
      "Group Cards",
-     18
+     31
+    ],
+    [
+     "Input",
+     30
+    ],
+    [
+     "Form Field",
+     30
+    ],
+    [
+     "Search Bar",
+     28
     ],
     [
      "Overview",
-     18
+     24
     ],
     [
      "Select",
-     17
+     20
     ],
     [
-     "Combobox",
-     10
+     "Section / Full Width",
+     14
     ]
    ]
   },
@@ -4972,54 +4958,19 @@
     "Value": "#888888"
    },
    "direct": 1,
-   "aliases": [],
-   "layers": 1,
-   "productLayers": 0,
-   "components": [
-    [
-     "(documentation, not a component)",
-     1
-    ]
-   ],
-   "pages": [
-    [
-     "Colour",
-     1
-    ]
-   ]
-  },
-  "neutral/700 · Primitives": {
-   "name": "neutral/700",
-   "collection": "Primitives",
-   "type": "COLOR",
-   "code": "--neutral-700",
-   "values": {
-    "Value": "#777777"
-   },
-   "direct": 1,
    "aliases": [
-    "ctx/outline-variant",
-    "inverse-outline-variant",
     "outline-medium"
    ],
-   "layers": 294,
-   "productLayers": 23,
+   "layers": 248,
+   "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     271
-    ],
-    [
-     "Overview Card",
-     6
+     236
     ],
     [
      "Section / Full Width",
      3
-    ],
-    [
-     "Key Stakeholders Card",
-     2
     ],
     [
      "Search Bar",
@@ -5028,14 +4979,6 @@
     [
      "Section / Showcase",
      2
-    ],
-    [
-     "Section / Quote",
-     2
-    ],
-    [
-     "Team Card",
-     1
     ],
     [
      "Code Block",
@@ -5060,24 +5003,16 @@
    ],
    "pages": [
     [
-     "Group Cards",
-     31
-    ],
-    [
      "Colour",
      28
-    ],
-    [
-     "Overview",
-     24
     ],
     [
      "Section / Full Width",
      14
     ],
     [
-     "Section / Quote",
-     11
+     "Group Cards",
+     13
     ],
     [
      "Section / Showcase",
@@ -5090,6 +5025,78 @@
     [
      "Annotation",
      10
+    ],
+    [
+     "Search Bar",
+     9
+    ],
+    [
+     "Iconography",
+     8
+    ]
+   ]
+  },
+  "neutral/700 · Primitives": {
+   "name": "neutral/700",
+   "collection": "Primitives",
+   "type": "COLOR",
+   "code": "--neutral-700",
+   "values": {
+    "Value": "#777777"
+   },
+   "direct": 1,
+   "aliases": [
+    "ctx/outline-variant",
+    "inverse-outline-variant"
+   ],
+   "layers": 47,
+   "productLayers": 11,
+   "components": [
+    [
+     "(documentation, not a component)",
+     36
+    ],
+    [
+     "Overview Card",
+     6
+    ],
+    [
+     "Section / Quote",
+     2
+    ],
+    [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
+     "Team Card",
+     1
+    ]
+   ],
+   "pages": [
+    [
+     "Group Cards",
+     18
+    ],
+    [
+     "Overview",
+     18
+    ],
+    [
+     "Section / Quote",
+     7
+    ],
+    [
+     "06 · Components: Molecules",
+     2
+    ],
+    [
+     "Colour",
+     1
+    ],
+    [
+     "Page rhythm",
+     1
     ]
    ]
   },
@@ -5155,11 +5162,15 @@
      3
     ],
     [
+     "Toggle",
+     2
+    ],
+    [
      "Radio",
      2
     ],
     [
-     "Toggle",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -5183,8 +5194,8 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Team Card",
+     1
     ],
     [
      "Button",
@@ -5200,10 +5211,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -5274,15 +5281,19 @@
      3
     ],
     [
+     "Menu Item",
+     2
+    ],
+    [
+     "Toggle",
+     2
+    ],
+    [
      "Input",
      2
     ],
     [
      "Radio",
-     2
-    ],
-    [
-     "Toggle",
      2
     ],
     [
@@ -5296,14 +5307,6 @@
     [
      "Select",
      2
-    ],
-    [
-     "Menu Item",
-     2
-    ],
-    [
-     "Combobox",
-     1
     ],
     [
      "Inline Edit",
@@ -5328,6 +5331,10 @@
     [
      "Slider",
      1
+    ],
+    [
+     "Combobox",
+     1
     ]
    ],
    "pages": [
@@ -5348,15 +5355,15 @@
      7
     ],
     [
+     "Toggle",
+     6
+    ],
+    [
      "Input",
      6
     ],
     [
      "Radio button",
-     6
-    ],
-    [
-     "Toggle",
      6
     ],
     [
@@ -5953,11 +5960,11 @@
    ],
    "pages": [
     [
-     "02 · Changelog",
+     "Colour",
      18
     ],
     [
-     "Colour",
+     "02 · Changelog",
      18
     ],
     [
@@ -6565,14 +6572,6 @@
      172
     ],
     [
-     "Combobox",
-     4
-    ],
-    [
-     "Tooltip",
-     4
-    ],
-    [
      "Overview Card",
      4
     ],
@@ -6581,8 +6580,12 @@
      4
     ],
     [
-     "Toast",
-     3
+     "Combobox",
+     4
+    ],
+    [
+     "Tooltip",
+     4
     ],
     [
      "Section / Columns",
@@ -6590,6 +6593,10 @@
     ],
     [
      "Section / Header",
+     3
+    ],
+    [
+     "Toast",
      3
     ],
     [
@@ -6605,22 +6612,6 @@
      2
     ],
     [
-     "Code Block",
-     1
-    ],
-    [
-     "Tab",
-     1
-    ],
-    [
-     "Side Nav Item",
-     1
-    ],
-    [
-     "Side Navigation",
-     1
-    ],
-    [
      "Key Stakeholders Card",
      1
     ],
@@ -6634,6 +6625,22 @@
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Code Block",
+     1
+    ],
+    [
+     "Tab",
+     1
+    ],
+    [
+     "Side Nav Item",
+     1
+    ],
+    [
+     "Side Navigation",
      1
     ]
    ],
@@ -6917,15 +6924,15 @@
      6
     ],
     [
+     "Team Card",
+     5
+    ],
+    [
      "Alert",
      5
     ],
     [
      "Table",
-     5
-    ],
-    [
-     "Team Card",
      5
     ],
     [
@@ -6957,10 +6964,6 @@
      3
     ],
     [
-     "Drawer",
-     2
-    ],
-    [
      "Key Stakeholders Card",
      2
     ],
@@ -6970,6 +6973,10 @@
     ],
     [
      "Section / Showcase",
+     2
+    ],
+    [
+     "Drawer",
      2
     ],
     [
@@ -7299,6 +7306,10 @@
      3
     ],
     [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
      "Divider",
      2
     ],
@@ -7319,8 +7330,8 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Team Card",
+     1
     ],
     [
      "Alert",
@@ -7332,10 +7343,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -7519,11 +7526,11 @@
      6
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -7613,15 +7620,15 @@
      5
     ],
     [
-     "Overview",
-     4
-    ],
-    [
      "01 · Getting Started",
      4
     ],
     [
      "Tone of Voice",
+     4
+    ],
+    [
+     "Overview",
      4
     ],
     [
@@ -10688,8 +10695,8 @@
    "type": "COLOR",
    "code": "--outline-medium",
    "values": {
-    "Light": "neutral/400",
-    "Dark": "neutral/700"
+    "Light": "neutral/650",
+    "Dark": "neutral/600"
    },
    "direct": 247,
    "aliases": [],
@@ -14075,19 +14082,19 @@
      6
     ],
     [
-     "Alert",
-     5
-    ],
-    [
-     "Table",
-     5
-    ],
-    [
      "Select",
      5
     ],
     [
      "Team Card",
+     5
+    ],
+    [
+     "Alert",
+     5
+    ],
+    [
+     "Table",
      5
     ],
     [
@@ -14111,20 +14118,16 @@
      4
     ],
     [
-     "Toast",
+     "Combobox",
      3
     ],
     [
-     "Combobox",
+     "Toast",
      3
     ],
     [
      "Section / Full Width",
      3
-    ],
-    [
-     "Drawer",
-     2
     ],
     [
      "Key Stakeholders Card",
@@ -14136,6 +14139,10 @@
     ],
     [
      "Section / Showcase",
+     2
+    ],
+    [
+     "Drawer",
      2
     ],
     [
@@ -14923,11 +14930,11 @@
      45
     ],
     [
-     "Checkbox",
+     "Button",
      3
     ],
     [
-     "Button",
+     "Checkbox",
      3
     ],
     [
@@ -15185,11 +15192,11 @@
      4
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
@@ -15219,11 +15226,11 @@
      42
     ],
     [
-     "Button",
+     "Section / Columns",
      30
     ],
     [
-     "Section / Columns",
+     "Button",
      30
     ],
     [
@@ -15395,15 +15402,15 @@
      2
     ],
     [
+     "Button",
+     1
+    ],
+    [
      "Slider",
      1
     ],
     [
      "Toggle",
-     1
-    ],
-    [
-     "Button",
      1
     ]
    ],

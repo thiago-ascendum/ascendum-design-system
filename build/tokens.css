@@ -112,7 +112,7 @@
   --on-warning: var(--brand-white);
   --on-warning-container: var(--warning-30);
   --outline: var(--brand-midnight);
-  --outline-medium: var(--neutral-400);
+  --outline-medium: var(--neutral-650);
   --outline-variant: var(--neutral-200);
   --primary: var(--brand-midnight);
   --primary-hover: var(--neutral-850);
@@ -329,7 +329,7 @@
   --on-surface-warning: var(--warning-80);
   --on-warning-container: var(--warning-90);
   --outline: var(--brand-milkyway);
-  --outline-medium: var(--neutral-700);
+  --outline-medium: var(--neutral-600);
   --outline-variant: var(--neutral-800);
   --primary: var(--brand-milkyway);
   --primary-hover: var(--neutral-200);

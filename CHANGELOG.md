@@ -29,7 +29,7 @@ Clean-up after the design review of 5 November.
 - Five roles per status, as in the DS StratNova: `error` is the solid fill, tone 40 in both modes, with `on-error` (white) on it; `error-container` with `on-error-container`; `on-surface-error` for text, icons and borders on any surface (tone 40 Light, 80 Dark).
 - The old `error` role is now `on-surface-error`: every binding kept its colour. In code, `--error` used for text becomes `--on-surface-error`.
 - In Dark mode status text moved from tone 60 to 80: lighter, and AA on every dark surface.
-- Found while documenting: `outline-medium` (borders of controls at rest) is 1.3:1 on the Light page, under the 3:1 that control borders need. A decision for the owner.
+- `outline-medium` (search field at rest, drop zones, placeholders) was 1.3:1 on the Light page and 2.2:1 on container-high in Dark, under the 3:1 a control border needs. It now points to neutral/650 in Light and neutral/600 in Dark: 3.3:1 or more on every surface where it sits. Visible: those borders are darker in Light and lighter in Dark.
 
 ### Colour roles: old name to new name
 

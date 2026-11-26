@@ -136,7 +136,7 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--on-warning` | on-warning | #FFFFFF |  | Text and icons on the solid warning fill |
 | `--on-warning-container` | on-warning-container | #5C4212 | #F1E1C2 | Text and icons on a warning container. |
 | `--outline` | outline | #212121 | #F5F5F5 | Strong borders: fields, outline buttons, selected controls. |
-| `--outline-medium` | outline-medium | #D6D6D6 | #777777 | Borders of controls at rest: checkbox, radio, toggle track. |
+| `--outline-medium` | outline-medium | #888888 | #999999 | Medium borders: a search field at rest, drop zones, media placeholders and the empty-state |
 | `--outline-variant` | outline-variant | #ECECEC | #555555 | Dividers and card borders. |
 | `--primary` | primary | #212121 | #F5F5F5 | The main action: Solid button fill, links, selected controls. |
 | `--primary-hover` | primary-hover | #444444 | #ECECEC | Primary under the pointer. |
