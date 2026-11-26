@@ -345,11 +345,11 @@
    "id": "uppercase-labels",
    "level": "decision",
    "title": "Uppercase labels: rule or exception?",
-   "count": 74,
-   "summary": "74 text layers are typed in capitals. The file documents this as intentional for UI/Tag and UI/Eyebrow; the audit calls it against the typography rule. Both cannot be right.",
+   "count": 0,
+   "summary": "0 text layers are typed in capitals. The file documents this as intentional for UI/Tag and UI/Eyebrow; the audit calls it against the typography rule. Both cannot be right.",
    "evidence": [
-    "where: Colour (74)",
-    "styles: UI/Caption (74)"
+    "where: ",
+    "styles: "
    ],
    "gary": [
     26,
@@ -363,7 +363,7 @@
    "id": "variant-budget",
    "level": "decision",
    "title": "Components over the variant budget (12)",
-   "count": 2,
+   "count": 0,
    "summary": "203 variants across 39 component sets. The audit says 'probably half can go'. This lists each set with its axes, so the cut is a decision per axis, not a redesign.",
    "evidence": [
     "Button: 15 = Style(3) x State(5)",
@@ -3439,6 +3439,10 @@
      13
     ],
     [
+     "Table Row",
+     12
+    ],
+    [
      "Team Card",
      12
     ],
@@ -3451,19 +3455,15 @@
      12
     ],
     [
-     "Table Row",
-     12
-    ],
-    [
      "Footer",
      11
     ],
     [
-     "Side Navigation",
+     "File Uploader",
      10
     ],
     [
-     "File Uploader",
+     "Side Navigation",
      10
     ],
     [
@@ -3487,27 +3487,11 @@
      7
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
      "Empty State",
      6
     ],
     [
      "Modal",
-     6
-    ],
-    [
-     "Section / Header",
-     6
-    ],
-    [
-     "Section / Quote",
      6
     ],
     [
@@ -3519,11 +3503,27 @@
      6
     ],
     [
-     "Section / Let's Connect",
-     5
+     "Section / Header",
+     6
+    ],
+    [
+     "Section / Quote",
+     6
+    ],
+    [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
+     6
     ],
     [
      "Key Stakeholders Card",
+     5
+    ],
+    [
+     "Section / Let's Connect",
      5
     ],
     [
@@ -3531,11 +3531,11 @@
      4
     ],
     [
-     "Section / Showcase",
+     "Menu Item",
      4
     ],
     [
-     "Menu Item",
+     "Section / Showcase",
      4
     ],
     [
@@ -3543,11 +3543,11 @@
      3
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
@@ -3685,11 +3685,11 @@
      13
     ],
     [
-     "Section / Columns",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Section / Columns",
      12
     ],
     [
@@ -3697,11 +3697,11 @@
      11
     ],
     [
-     "Side Navigation",
+     "File Uploader",
      10
     ],
     [
-     "File Uploader",
+     "Side Navigation",
      10
     ],
     [
@@ -3729,27 +3729,11 @@
      7
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
-    ],
-    [
      "Empty State",
      6
     ],
     [
      "Modal",
-     6
-    ],
-    [
-     "Section / Header",
-     6
-    ],
-    [
-     "Section / Quote",
      6
     ],
     [
@@ -3761,11 +3745,31 @@
      6
     ],
     [
+     "Section / Header",
+     6
+    ],
+    [
+     "Section / Quote",
+     6
+    ],
+    [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
+     6
+    ],
+    [
      "Section / Let's Connect",
      5
     ],
     [
      "Inline Edit",
+     4
+    ],
+    [
+     "Menu Item",
      4
     ],
     [
@@ -3777,19 +3781,15 @@
      4
     ],
     [
-     "Menu Item",
-     4
-    ],
-    [
      "Badge",
      3
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
@@ -3929,10 +3929,6 @@
      2
     ],
     [
-     "Overview Card",
-     1
-    ],
-    [
      "Avatar",
      1
     ],
@@ -4018,6 +4014,10 @@
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Overview Card",
      1
     ]
    ],
@@ -4486,16 +4486,20 @@
      7
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
      "Jira Annotation",
      5
+    ],
+    [
+     "Skeleton",
+     4
     ],
     [
      "Input",
@@ -4510,12 +4514,12 @@
      4
     ],
     [
-     "Skeleton",
+     "Table Row",
      4
     ],
     [
-     "Table Row",
-     4
+     "Accordion Item",
+     3
     ],
     [
      "Checkbox",
@@ -4524,22 +4528,6 @@
     [
      "Button",
      3
-    ],
-    [
-     "Accordion Item",
-     3
-    ],
-    [
-     "Radio",
-     2
-    ],
-    [
-     "Toggle",
-     2
-    ],
-    [
-     "Search Bar",
-     2
     ],
     [
      "Key Stakeholders Card",
@@ -4554,8 +4542,16 @@
      2
     ],
     [
-     "Combobox",
-     1
+     "Toggle",
+     2
+    ],
+    [
+     "Radio",
+     2
+    ],
+    [
+     "Search Bar",
+     2
     ],
     [
      "Team Card",
@@ -4571,6 +4567,10 @@
     ],
     [
      "Modal",
+     1
+    ],
+    [
+     "Combobox",
      1
     ]
    ],
@@ -4644,11 +4644,11 @@
      2
     ],
     [
-     "Button",
+     "Slider",
      1
     ],
     [
-     "Slider",
+     "Button",
      1
     ]
    ],
@@ -4670,11 +4670,11 @@
      5
     ],
     [
-     "Colour",
+     "Slider",
      3
     ],
     [
-     "Slider",
+     "Colour",
      3
     ]
    ]
@@ -4757,11 +4757,11 @@
      4
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
@@ -4879,15 +4879,15 @@
      5
     ],
     [
-     "Section / Full Width",
-     3
-    ],
-    [
      "Combobox",
      3
     ],
     [
-     "Section / Showcase",
+     "Section / Full Width",
+     3
+    ],
+    [
+     "Section / Quote",
      2
     ],
     [
@@ -4895,8 +4895,12 @@
      2
     ],
     [
-     "Section / Quote",
+     "Section / Showcase",
      2
+    ],
+    [
+     "Team Card",
+     1
     ],
     [
      "Code Block",
@@ -4916,10 +4920,6 @@
     ],
     [
      "Jira Annotation",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -4953,7 +4953,7 @@
      17
     ],
     [
-     "Section / Full Width",
+     "Combobox",
      10
     ]
    ]
@@ -5070,11 +5070,11 @@
      6
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -5100,11 +5100,11 @@
      2
     ],
     [
-     "Colour",
+     "Page rhythm",
      1
     ],
     [
-     "Page rhythm",
+     "Colour",
      1
     ]
    ]
@@ -5143,11 +5143,11 @@
      7
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
@@ -5163,20 +5163,12 @@
      4
     ],
     [
-     "Checkbox",
-     3
-    ],
-    [
      "Accordion Item",
      3
     ],
     [
-     "Toggle",
-     2
-    ],
-    [
-     "Radio",
-     2
+     "Checkbox",
+     3
     ],
     [
      "Key Stakeholders Card",
@@ -5203,11 +5195,19 @@
      2
     ],
     [
-     "Button",
-     1
+     "Toggle",
+     2
+    ],
+    [
+     "Radio",
+     2
     ],
     [
      "Team Card",
+     1
+    ],
+    [
+     "Button",
      1
     ],
     [
@@ -5282,12 +5282,20 @@
      73
     ],
     [
+     "Checkbox",
+     3
+    ],
+    [
      "Button",
      3
     ],
     [
-     "Checkbox",
-     3
+     "Toggle",
+     2
+    ],
+    [
+     "Menu Item",
+     2
     ],
     [
      "Input",
@@ -5295,10 +5303,6 @@
     ],
     [
      "Radio",
-     2
-    ],
-    [
-     "Toggle",
      2
     ],
     [
@@ -5312,14 +5316,6 @@
     [
      "Select",
      2
-    ],
-    [
-     "Menu Item",
-     2
-    ],
-    [
-     "Combobox",
-     1
     ],
     [
      "Slider",
@@ -5344,6 +5340,10 @@
     [
      "Table Row",
      1
+    ],
+    [
+     "Combobox",
+     1
     ]
    ],
    "pages": [
@@ -5352,11 +5352,11 @@
      15
     ],
     [
-     "Colour",
+     "Checkbox",
      9
     ],
     [
-     "Checkbox",
+     "Colour",
      9
     ],
     [
@@ -5364,15 +5364,15 @@
      7
     ],
     [
+     "Toggle",
+     6
+    ],
+    [
      "Input",
      6
     ],
     [
      "Radio button",
-     6
-    ],
-    [
-     "Toggle",
      6
     ],
     [
@@ -5969,11 +5969,11 @@
    ],
    "pages": [
     [
-     "Colour",
+     "📝 02 · Changelog",
      18
     ],
     [
-     "📝 02 · Changelog",
+     "Colour",
      18
     ],
     [
@@ -6254,7 +6254,7 @@
      9
     ],
     [
-     "Page rhythm",
+     "Button",
      8
     ]
    ]
@@ -6593,6 +6593,10 @@
      4
     ],
     [
+     "Section / Full Width",
+     4
+    ],
+    [
      "Combobox",
      4
     ],
@@ -6601,19 +6605,15 @@
      4
     ],
     [
-     "Section / Full Width",
-     4
-    ],
-    [
-     "Toast",
-     3
-    ],
-    [
      "Section / Columns",
      3
     ],
     [
      "Section / Header",
+     3
+    ],
+    [
+     "Toast",
      3
     ],
     [
@@ -6629,22 +6629,6 @@
      2
     ],
     [
-     "Code Block",
-     1
-    ],
-    [
-     "Tab",
-     1
-    ],
-    [
-     "Side Nav Item",
-     1
-    ],
-    [
-     "Side Navigation",
-     1
-    ],
-    [
      "Key Stakeholders Card",
      1
     ],
@@ -6658,6 +6642,22 @@
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Code Block",
+     1
+    ],
+    [
+     "Tab",
+     1
+    ],
+    [
+     "Side Nav Item",
+     1
+    ],
+    [
+     "Side Navigation",
      1
     ]
    ],
@@ -6679,11 +6679,11 @@
      13
     ],
     [
-     "Overview",
+     "Group Cards",
      12
     ],
     [
-     "Group Cards",
+     "Overview",
      12
     ],
     [
@@ -7543,11 +7543,11 @@
      6
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -7641,11 +7641,11 @@
      5
     ],
     [
-     "Overview",
+     "Tone of Voice",
      4
     ],
     [
-     "Tone of Voice",
+     "Overview",
      4
     ],
     [
@@ -14123,15 +14123,15 @@
      5
     ],
     [
-     "Select",
-     5
-    ],
-    [
      "Alert",
      5
     ],
     [
      "Table",
+     5
+    ],
+    [
+     "Select",
      5
     ],
     [
@@ -15229,11 +15229,11 @@
      4
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
@@ -15263,11 +15263,11 @@
      42
     ],
     [
-     "Button",
+     "Section / Columns",
      30
     ],
     [
-     "Section / Columns",
+     "Button",
      30
     ],
     [

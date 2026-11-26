@@ -335,7 +335,10 @@ add("documentation-drift", "warn", "The documentation matches the file", len(dri
     drift, gary=[2, 5], fix="Stop writing these by hand: generate the overview and the changelog from the snapshot diff.")
 
 # ================================================================ DECISIONS (measured, owner decides)
-upper = [L for L in texts if (L["text"]["typedUpper"] or L["text"]["forcedCase"]) and not re.match(r"^[A-Z]+-\d+$", L["text"]["chars"]) and not L["text"]["chars"].startswith("#")]
+# WCAG levels (AA, AAA), mode marks (L, D) and contrast results ("4.5:1 AA") are notation, not labels.
+_notation = re.compile(r"^(AAA?|L|D)$|:1\s*(AAA?)?$|:1 (AAA?)(/AAA?)?$")
+upper = [L for L in texts if (L["text"]["typedUpper"] or L["text"]["forcedCase"]) and not re.match(r"^[A-Z]+-\d+$", L["text"]["chars"])
+         and not L["text"]["chars"].startswith("#") and not _notation.search(L["text"]["chars"].strip())]
 add("uppercase-labels", "decision", "Uppercase labels: rule or exception?", len(upper),
     f"{len(upper)} text layers are typed in capitals. The file documents this as intentional for UI/Tag and UI/Eyebrow; the audit calls it against the typography rule. Both cannot be right.",
     ["where: " + ", ".join(top(collections.Counter(L["component"] or L["page"] for L in upper), 12)),
@@ -352,7 +355,8 @@ for c in sorted((c for c in S["components"] if c["set"]), key=lambda c: -len(c["
                 ax[a].add(b)
     axes.append({"name": c["name"], "variants": len(c["variants"]), "axes": {a: sorted(b) for a, b in ax.items()}})
 budget = GOV["variantBudget"]
-over = [a for a in axes if a["variants"] > budget]
+_accepted_budget = {x["component"]: x for x in GOV.get("variantBudgetAccepted", [])}
+over = [a for a in axes if a["variants"] > budget and not (a["name"] in _accepted_budget and a["variants"] <= _accepted_budget[a["name"]]["variants"])]
 add("variant-budget", "decision", f"Components over the variant budget ({budget})", len(over),
     f"{sum(a['variants'] for a in axes)} variants across {len(axes)} component sets. The audit says 'probably half can go'. "
     "This lists each set with its axes, so the cut is a decision per axis, not a redesign.",
