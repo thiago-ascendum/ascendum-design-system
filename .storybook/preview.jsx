@@ -3,6 +3,7 @@ import '../build/tokens.css';
 import './preview.css';
 import './docs.css';
 import { DocPage, ThemedDocsContainer } from './DocPage.jsx';
+import { ThemeFloat } from './ThemeSwitch.jsx';
 
 /** @type { import('@storybook/react-vite').Preview } */
 const preview = {
@@ -17,6 +18,9 @@ const preview = {
     (Story, context) => {
       const theme = context.globals.theme || 'light';
       useEffect(() => { document.documentElement.dataset.theme = theme; }, [theme]);
+      // On a single story page (Colour, Spacing, a component's canvas) the Light / Dark switch floats at the top right.
+      // Docs pages carry it in their own frame (ThemedDocsContainer).
+      if (context.viewMode === 'story') return <><ThemeFloat /><Story /></>;
       return <Story />;
     },
   ],
