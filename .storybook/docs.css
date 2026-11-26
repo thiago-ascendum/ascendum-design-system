@@ -123,6 +123,11 @@
 .sbdocs .fd-banner a.fd-link { margin-left: 0; }
 .fd-figma-img { display: block; width: 100%; max-width: 1360px; height: auto; border-radius: var(--container-radius); }
 
+/* Images exported from Figma come in Light and Dark: show the one that matches the theme. */
+.ds-img-dark { display: none !important; }
+[data-theme="dark"] .ds-img-dark { display: block !important; }
+[data-theme="dark"] .ds-img-light:has(+ .ds-img-dark) { display: none !important; }
+
 /* Grids size their single column to the frame, never to the widest content, so the side column never overlaps. */
 .fd-main, .fd-group, .fd-row, .fd-dark { grid-template-columns: minmax(0, 1fr); min-width: 0; }
 

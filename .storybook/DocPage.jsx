@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { ThemeBar } from './ThemeSwitch.jsx';
 import { Primary, Controls, Story, DocsContainer, useOf } from '@storybook/addon-docs/blocks';
 import { themes } from 'storybook/theming';
+import { ThemedImg } from '../stories/_shared/ThemedImg.jsx';
 import figmaDocs from '../build/figma-docs.json';
 import { Badge } from '../src/components/Badge.jsx';
 
@@ -122,7 +123,7 @@ export function DocPage() {
           <span>This is the Figma page itself, exported. It becomes a live page, like Button, when the component is built in code.</span>
           {ds.figma ? <a className="fd-link" href={FIGMA + ds.figma.replace(':', '-')}>Open in Figma</a> : null}
         </div>
-        <img className="fd-figma-img" src={ds.img} alt={`${name}: the Figma documentation page.`} />
+        <ThemedImg className="fd-figma-img" src={ds.img} dark={ds.imgDark} alt={`${name}: the Figma documentation page.`} />
       </div>
     );
   }

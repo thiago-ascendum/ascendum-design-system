@@ -5,7 +5,8 @@
   background: var(--surface-container); color: var(--on-surface);
   border: var(--border-width-hairline) solid var(--outline-variant); border-radius: var(--radius-surface);
 }
-.ds-alert__icon { flex: none; width: var(--size-icon-md); height: var(--size-icon-md); color: var(--on-surface); }
+.ds-alert__icon { flex: none; width: var(--size-icon-md); height: var(--size-icon-md); color: var(--on-surface);
+  margin-top: max(0px, calc((var(--text-h5-size) * 1.3 - var(--size-icon-md)) / 2)); }
 .ds-alert__body { display: grid; gap: var(--alert-body-gap); min-width: 0; }
 .ds-alert__title { margin: 0; font: 700 var(--text-h5-size)/1.3 Barlow, system-ui, sans-serif; color: var(--on-surface); }
 .ds-alert__text { margin: 0; font: 400 var(--text-body-lg-size)/1.3 Barlow, system-ui, sans-serif; color: var(--on-surface-variant); }

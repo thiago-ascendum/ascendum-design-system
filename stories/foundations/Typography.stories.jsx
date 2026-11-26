@@ -1,19 +1,32 @@
+import { ThemedImg } from '../_shared/ThemedImg.jsx';
 import tokens from '../../build/tokens.json';
 import { Alert } from '../../src/components/Alert.jsx';
 import { Button } from '../../src/components/Button.jsx';
 import { Input } from '../../src/components/Input.jsx';
 import header from './img/type-header.png';
+import headerDark from './img/type-header-dark.png';
 import callout from './img/type-callout.png';
+import calloutDark from './img/type-callout-dark.png';
 import how from './img/type-how.png';
+import howDark from './img/type-how-dark.png';
 import scale from './img/type-scale.png';
+import scaleDark from './img/type-scale-dark.png';
 import headings from './img/type-headings.png';
+import headingsDark from './img/type-headings-dark.png';
 import developers from './img/type-developers.png';
+import developersDark from './img/type-developers-dark.png';
 import weights from './img/type-weights.png';
+import weightsDark from './img/type-weights-dark.png';
 import which from './img/type-which.png';
+import whichDark from './img/type-which-dark.png';
 import inuse from './img/type-inuse.png';
+import inuseDark from './img/type-inuse-dark.png';
 import rules from './img/type-rules.png';
+import rulesDark from './img/type-rules-dark.png';
 import doavoid from './img/type-doavoid.png';
+import doavoidDark from './img/type-doavoid-dark.png';
 import findings from './img/type-findings.png';
+import findingsDark from './img/type-findings-dark.png';
 import './foundations.css';
 
 /**
@@ -24,7 +37,7 @@ import './foundations.css';
 const ext = (t) => t?.$extensions?.['com.ascendum.ds'] || {};
 const sizeOf = (ref) => { const m = String(ref).match(/type-size\.(\d+)/); return m ? Number(m[1]) : Number(ref); };
 const rem = (n) => `${Math.round((n / 16) * 1000) / 1000}rem`;
-const Figma = ({ src, alt }) => <img className="fx-figma" src={src} alt={alt} />;
+const Figma = ({ src, dark, alt }) => <ThemedImg className="fx-figma" src={src} dark={dark} alt={alt} />;
 
 const Sample = () => (
   <div className="fx-sample">
@@ -67,27 +80,27 @@ function Sizes() {
 
 const TypographyPage = () => (
   <div className="fx-page fx-page--sections">
-    <Figma src={header} alt="Typography: the page header." />
-    <Figma src={callout} alt="What to take from this page." />
-    <Figma src={how} alt="How type works." />
-    <Figma src={scale} alt="The scale: every text style in three groups, Headings, Body and Interface." />
+    <Figma src={header} dark={headerDark} alt="Typography: the page header." />
+    <Figma src={callout} dark={calloutDark} alt="What to take from this page." />
+    <Figma src={how} dark={howDark} alt="How type works." />
+    <Figma src={scale} dark={scaleDark} alt="The scale: every text style in three groups, Headings, Body and Interface." />
     <Sizes />
-    <Figma src={headings} alt="Headings in a page." />
+    <Figma src={headings} dark={headingsDark} alt="Headings in a page." />
     <section className="fx-section">
       <h2 className="fx-h4">Text at 200%</h2>
       <p className="fx-lead">WCAG 1.4.4 asks that text can be doubled without losing content. On the web that is browser zoom, which doubles every size, so Text 200% does the same. Set it on a frame from the Appearance panel and check that nothing is cut. In code the sizes are rem, so browser zoom does it without a mode.</p>
       <div className="fx-two">
         <div className="fx-group"><span className="fx-cap">Default</span><Sample /></div>
-        <div className="fx-group" data-text-scale="200"><span className="fx-cap">Text 200%</span><Sample /></div>
+        <div className="fx-group"><span className="fx-cap">Text 200%</span><div data-text-scale="200"><Sample /></div></div>
       </div>
     </section>
-    <Figma src={developers} alt="For developers." />
-    <Figma src={weights} alt="Weight range." />
-    <Figma src={which} alt="Which style for what." />
-    <Figma src={inuse} alt="In use." />
-    <Figma src={rules} alt="Rules." />
-    <Figma src={doavoid} alt="Do and avoid." />
-    <Figma src={findings} alt="Findings." />
+    <Figma src={developers} dark={developersDark} alt="For developers." />
+    <Figma src={weights} dark={weightsDark} alt="Weight range." />
+    <Figma src={which} dark={whichDark} alt="Which style for what." />
+    <Figma src={inuse} dark={inuseDark} alt="In use." />
+    <Figma src={rules} dark={rulesDark} alt="Rules." />
+    <Figma src={doavoid} dark={doavoidDark} alt="Do and avoid." />
+    <Figma src={findings} dark={findingsDark} alt="Findings." />
   </div>
 );
 

@@ -3,6 +3,7 @@ import { TableRow } from '../../src/components/TableRow.jsx';
 export default {
   title: 'Components/Table Row',
   component: TableRow,
+  decorators: [(Story) => <div style={{ width: 880, maxWidth: '100%' }}><Story /></div>],
   tags: ['autodocs'],
   args: { state: 'default', children: ['Website redesign', 'Design', 'In review', '2 days ago'] },
   parameters: {
