@@ -49,10 +49,29 @@ for (const m of PLAN.collections.addModes) {
 
 // 2. Variables: rename in place, then create what is new.
 const find = (id, collection, name) => byId.get(id) || byName.get(collection + "/" + name);
+// Gone variables whose name is now used by another one are moved out of the way first: _review/<name>.
+for (const r of PLAN.variables.review) {
+  if (!r.parkAs) continue;
+  const v = byId.get(r.id) || byName.get(r.collection + "/" + r.name);
+  if (!v || v.id === r.nameNowUsedBy) { report.alreadyThere++; continue; }
+  if (v.name === r.parkAs) { report.alreadyThere++; continue; }
+  act(`move ${r.name} out of the way -> ${r.parkAs}`, () => { v.name = r.parkAs; });
+  byName.delete(r.collection + "/" + r.name);
+  byName.set(r.collection + "/" + r.parkAs, v);
+}
+
+// Renames run in two passes, through a temporary name, so a chain (h3 -> h5 while a new h3 is created, or
+// a -> b while b -> c) never meets a name that is still taken. The old name is freed in the lookup at once.
+const renames = [];
 for (const r of PLAN.variables.rename) {
   const v = find(r.id, r.oldCollection, r.from) || byName.get(r.collection + "/" + r.to);
   if (!v) { report.notFound.push(`${r.oldCollection}/${r.from}`); continue; }
   if (v.name === r.to) { report.alreadyThere++; continue; }
+  renames.push([r, v]);
+  if (byName.get(r.oldCollection + "/" + r.from) === v) byName.delete(r.oldCollection + "/" + r.from);
+}
+renames.forEach(([r, v], i) => { if (APPLY) v.name = "__migrating__/" + i; });
+for (const [r, v] of renames) {
   act(`rename ${r.from} -> ${r.to}`, () => { v.name = r.to; });
   byName.set(r.collection + "/" + r.to, v);
 }
