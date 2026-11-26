@@ -1,0 +1,9 @@
+# Publishes the report on every push. No build step: the page is static.
+[build]
+  publish = "."
+
+# Keep the page out of search engines. The link is for the team.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
