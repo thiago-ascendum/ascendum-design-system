@@ -1,4 +1,4 @@
-/* Generated from the design system snapshot 5lhRMZkLHZijqgdigjk3J1, Figma version 2426246358245825729 "Snapshot for Git". Do not edit by hand. */
+/* Generated from the design system snapshot 5lhRMZkLHZijqgdigjk3J1, Figma version 2426248921797867744 "Send to code: Button padding from 28 to 30 (end-to-end test)". Do not edit by hand. */
 :root, [data-theme="light"] {
   --accent-blue: #89cff0;
   --accent-blue-soft: #cae6f3;
@@ -212,7 +212,7 @@
   --badge-padding-h: 14px;
   --badge-padding-v: 6px;
   --breadcrumb-gap: 8px;
-  --button-padding-h: 28px;
+  --button-padding-h: 30px;
   --button-padding-v: 16px;
   --checkbox-radius: 3px;
   --code-body-padding: 16px;
