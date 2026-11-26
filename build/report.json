@@ -4,14 +4,14 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T19:13:42.550Z",
-  "nodes": 18096,
+  "generatedAt": "2026-11-26T19:18:42.295Z",
+  "nodes": 18119,
   "pages": 77,
   "fileKey": "5lhRMZkLHZijqgdigjk3J1",
   "figmaVersion": {
-   "id": "2426243595526184925",
+   "id": "2426244373420584192",
    "title": "Snapshot for Git",
-   "savedAt": "2026-11-26T19:13:42.550Z",
+   "savedAt": "2026-11-26T19:18:42.295Z",
    "status": "saved"
   },
   "aliasCount": 170,
@@ -29,10 +29,10 @@
    "variants": 203,
    "icons": 211,
    "textStyles": 19,
-   "textLayers": 6908,
-   "paints": 11607,
+   "textLayers": 6919,
+   "paints": 11629,
    "fonts": {
-    "Barlow": 6908
+    "Barlow": 6919
    }
   }
  },
@@ -177,7 +177,7 @@
    "level": "block",
    "title": "Every variant keeps the text when the variant changes",
    "count": 0,
-   "summary": "Checked 0 component sets. In every variant, each text layer must be bound to the set's text property (Label, Value...). If one is not, switching an instance to that variant replaces the designer's text with the default.",
+   "summary": "Checked 39 component sets. In every variant, each text layer must be bound to the set's text property (Label, Value...). If one is not, switching an instance to that variant replaces the designer's text with the default.",
    "evidence": [],
    "gary": [],
    "fix": "Bind the text layer to the property in that variant: select it, then Apply text property in the right panel.",
@@ -201,7 +201,7 @@
    "level": "warn",
    "title": "Every colour is bound to a token or a style",
    "count": 0,
-   "summary": "0 of 11607 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
+   "summary": "0 of 11629 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
    "evidence": [
     "split: ",
     "where: ",
@@ -268,7 +268,7 @@
    "level": "warn",
    "title": "Every text layer uses a text style",
    "count": 0,
-   "summary": "0 of 6908 text layers have no text style, in 0 different sizes.",
+   "summary": "0 of 6919 text layers have no text style, in 0 different sizes.",
    "evidence": [
     "where: ",
     "sizes (px): "
@@ -2005,14 +2005,14 @@
     "Desktop": 20,
     "Mobile": 20
    },
-   "direct": 342,
+   "direct": 343,
    "aliases": [],
-   "layers": 342,
+   "layers": 343,
    "productLayers": 40,
    "components": [
     [
      "(documentation, not a component)",
-     302
+     303
     ],
     [
      "Overview Card",
@@ -2211,14 +2211,14 @@
     "Desktop": 999,
     "Mobile": 999
    },
-   "direct": 747,
+   "direct": 752,
    "aliases": [],
-   "layers": 747,
+   "layers": 752,
    "productLayers": 86,
    "components": [
     [
      "(documentation, not a component)",
-     661
+     666
     ],
     [
      "Progress Bar",
@@ -2279,6 +2279,10 @@
      58
     ],
     [
+     "Badge",
+     44
+    ],
+    [
      "Group Cards",
      44
     ],
@@ -2295,10 +2299,6 @@
      43
     ],
     [
-     "Badge",
-     39
-    ],
-    [
      "Overview",
      37
     ]
@@ -2313,14 +2313,14 @@
     "Desktop": 1,
     "Mobile": 1
    },
-   "direct": 419,
+   "direct": 424,
    "aliases": [],
-   "layers": 419,
+   "layers": 424,
    "productLayers": 29,
    "components": [
     [
      "(documentation, not a component)",
-     390
+     395
     ],
     [
      "Table",
@@ -2389,6 +2389,10 @@
      17
     ],
     [
+     "Badge",
+     10
+    ],
+    [
      "Divider",
      10
     ],
@@ -2398,10 +2402,6 @@
     ],
     [
      "🎨 04 · Foundations",
-     9
-    ],
-    [
-     "Accordion Item",
      9
     ]
    ]
@@ -2915,14 +2915,14 @@
     "Desktop": "type-size/16",
     "Mobile": "type-size/16"
    },
-   "direct": 992,
+   "direct": 997,
    "aliases": [],
-   "layers": 992,
+   "layers": 997,
    "productLayers": 142,
    "components": [
     [
      "(documentation, not a component)",
-     850
+     855
     ],
     [
      "Jira Annotation",
@@ -3205,14 +3205,14 @@
     "Desktop": "type-size/15",
     "Mobile": "type-size/15"
    },
-   "direct": 721,
+   "direct": 726,
    "aliases": [],
-   "layers": 721,
+   "layers": 726,
    "productLayers": 49,
    "components": [
     [
      "(documentation, not a component)",
-     672
+     677
     ],
     [
      "Overview Card",
@@ -3265,16 +3265,16 @@
      49
     ],
     [
+     "Badge",
+     44
+    ],
+    [
      "Overview",
      43
     ],
     [
      "Spacing, Grid & Layout",
      41
-    ],
-    [
-     "Badge",
-     39
     ],
     [
      "Photography",
@@ -3299,14 +3299,14 @@
     "Desktop": "type-size/13",
     "Mobile": "type-size/13"
    },
-   "direct": 2366,
+   "direct": 2367,
    "aliases": [],
-   "layers": 2366,
+   "layers": 2367,
    "productLayers": 13,
    "components": [
     [
      "(documentation, not a component)",
-     2353
+     2354
     ],
     [
      "Form Field",
@@ -3384,12 +3384,12 @@
     "primary",
     "surface"
    ],
-   "layers": 5185,
+   "layers": 5192,
    "productLayers": 542,
    "components": [
     [
      "(documentation, not a component)",
-     4643
+     4650
     ],
     [
      "Button",
@@ -3448,10 +3448,6 @@
      13
     ],
     [
-     "Avatar",
-     12
-    ],
-    [
      "Team Card",
      12
     ],
@@ -3461,6 +3457,10 @@
     ],
     [
      "Table Row",
+     12
+    ],
+    [
+     "Avatar",
      12
     ],
     [
@@ -3488,20 +3488,12 @@
      8
     ],
     [
-     "Side Nav Item",
-     7
-    ],
-    [
      "Section / Full Width",
      7
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
+     "Side Nav Item",
+     7
     ],
     [
      "Empty State",
@@ -3525,6 +3517,14 @@
     ],
     [
      "Drawer",
+     6
+    ],
+    [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
      6
     ],
     [
@@ -3630,12 +3630,12 @@
     "primary",
     "surface"
    ],
-   "layers": 4987,
+   "layers": 4994,
    "productLayers": 513,
    "components": [
     [
      "(documentation, not a component)",
-     4474
+     4481
     ],
     [
      "Button",
@@ -3726,10 +3726,6 @@
      8
     ],
     [
-     "Side Nav Item",
-     7
-    ],
-    [
      "Team Card",
      7
     ],
@@ -3738,12 +3734,8 @@
      7
     ],
     [
-     "Code Block",
-     6
-    ],
-    [
-     "Tooltip",
-     6
+     "Side Nav Item",
+     7
     ],
     [
      "Empty State",
@@ -3767,6 +3759,14 @@
     ],
     [
      "Drawer",
+     6
+    ],
+    [
+     "Code Block",
+     6
+    ],
+    [
+     "Tooltip",
      6
     ],
     [
@@ -4307,12 +4307,12 @@
    "aliases": [
     "surface-container-low"
    ],
-   "layers": 675,
+   "layers": 676,
    "productLayers": 16,
    "components": [
     [
      "(documentation, not a component)",
-     659
+     660
     ],
     [
      "Section / Full Width",
@@ -4369,12 +4369,12 @@
      19
     ],
     [
-     "Group Cards",
+     "Badge",
      18
     ],
     [
-     "Badge",
-     17
+     "Group Cards",
+     18
     ],
     [
      "🧱 07 · Components: Organisms",
@@ -4479,12 +4479,12 @@
     "surface-container-highest",
     "surface-hover"
    ],
-   "layers": 859,
+   "layers": 864,
    "productLayers": 78,
    "components": [
     [
      "(documentation, not a component)",
-     781
+     786
     ],
     [
      "Progress Bar",
@@ -4495,11 +4495,11 @@
      7
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
@@ -4519,12 +4519,16 @@
      4
     ],
     [
+     "Table Row",
+     4
+    ],
+    [
      "Skeleton",
      4
     ],
     [
-     "Table Row",
-     4
+     "Accordion Item",
+     3
     ],
     [
      "Button",
@@ -4535,26 +4539,6 @@
      3
     ],
     [
-     "Accordion Item",
-     3
-    ],
-    [
-     "Radio",
-     2
-    ],
-    [
-     "Toggle",
-     2
-    ],
-    [
-     "Search Bar",
-     2
-    ],
-    [
-     "Key Stakeholders Card",
-     2
-    ],
-    [
      "Divider",
      2
     ],
@@ -4563,12 +4547,20 @@
      2
     ],
     [
-     "Combobox",
-     1
+     "Toggle",
+     2
     ],
     [
-     "Team Card",
-     1
+     "Key Stakeholders Card",
+     2
+    ],
+    [
+     "Radio",
+     2
+    ],
+    [
+     "Search Bar",
+     2
     ],
     [
      "Alert",
@@ -4580,6 +4572,14 @@
     ],
     [
      "Modal",
+     1
+    ],
+    [
+     "Team Card",
+     1
+    ],
+    [
+     "Combobox",
      1
     ]
    ],
@@ -4702,12 +4702,12 @@
     "inverse-on-surface-variant",
     "on-surface-variant"
    ],
-   "layers": 2576,
+   "layers": 2577,
    "productLayers": 108,
    "components": [
     [
      "(documentation, not a component)",
-     2468
+     2469
     ],
     [
      "Overview Card",
@@ -4766,11 +4766,11 @@
      4
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
@@ -4790,6 +4790,10 @@
      2
     ],
     [
+     "Code Block",
+     1
+    ],
+    [
      "Stat Card",
      1
     ],
@@ -4803,10 +4807,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Code Block",
      1
     ]
    ],
@@ -4896,11 +4896,11 @@
      3
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -5136,12 +5136,12 @@
     "surface-container-highest",
     "surface-pressed"
    ],
-   "layers": 821,
+   "layers": 826,
    "productLayers": 67,
    "components": [
     [
      "(documentation, not a component)",
-     754
+     759
     ],
     [
      "Progress Bar",
@@ -5200,15 +5200,15 @@
      2
     ],
     [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
      "Radio",
      2
     ],
     [
      "Toggle",
-     2
-    ],
-    [
-     "Key Stakeholders Card",
      2
     ],
     [
@@ -5224,11 +5224,11 @@
      1
     ],
     [
-     "Team Card",
+     "Button",
      1
     ],
     [
-     "Button",
+     "Team Card",
      1
     ]
    ],
@@ -5291,12 +5291,20 @@
      73
     ],
     [
+     "Checkbox",
+     3
+    ],
+    [
      "Button",
      3
     ],
     [
-     "Checkbox",
-     3
+     "Menu Item",
+     2
+    ],
+    [
+     "Toggle",
+     2
     ],
     [
      "Input",
@@ -5304,10 +5312,6 @@
     ],
     [
      "Radio",
-     2
-    ],
-    [
-     "Toggle",
      2
     ],
     [
@@ -5321,18 +5325,6 @@
     [
      "Select",
      2
-    ],
-    [
-     "Menu Item",
-     2
-    ],
-    [
-     "Combobox",
-     1
-    ],
-    [
-     "Slider",
-     1
     ],
     [
      "Inline Edit",
@@ -5352,6 +5344,14 @@
     ],
     [
      "Table Row",
+     1
+    ],
+    [
+     "Slider",
+     1
+    ],
+    [
+     "Combobox",
      1
     ]
    ],
@@ -5373,15 +5373,15 @@
      7
     ],
     [
+     "Toggle",
+     6
+    ],
+    [
      "Input",
      6
     ],
     [
      "Radio button",
-     6
-    ],
-    [
-     "Toggle",
      6
     ],
     [
@@ -5483,10 +5483,6 @@
      2
     ],
     [
-     "Overview Card",
-     1
-    ],
-    [
      "Avatar",
      1
     ],
@@ -5573,6 +5569,10 @@
     [
      "Section / Let's Connect",
      1
+    ],
+    [
+     "Overview Card",
+     1
     ]
    ],
    "pages": [
@@ -5623,12 +5623,12 @@
     "on-surface-success",
     "success"
    ],
-   "layers": 173,
+   "layers": 174,
    "productLayers": 10,
    "components": [
     [
      "(documentation, not a component)",
-     163
+     164
     ],
     [
      "Jira Annotation",
@@ -5654,7 +5654,7 @@
     ],
     [
      "Badge",
-     12
+     13
     ],
     [
      "Annotation",
@@ -5694,12 +5694,12 @@
    "aliases": [
     "success-container"
    ],
-   "layers": 60,
+   "layers": 61,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     57
+     58
     ],
     [
      "Badge",
@@ -5721,7 +5721,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "🤝 03 · Contribution & Governance",
@@ -5758,12 +5758,12 @@
     "info",
     "on-surface-info"
    ],
-   "layers": 65,
+   "layers": 66,
    "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     54
+     55
     ],
     [
      "Jira Annotation",
@@ -5789,7 +5789,7 @@
     ],
     [
      "Badge",
-     10
+     11
     ],
     [
      "Iconography",
@@ -5825,12 +5825,12 @@
    "aliases": [
     "info-container"
    ],
-   "layers": 51,
+   "layers": 52,
    "productLayers": 5,
    "components": [
     [
      "(documentation, not a component)",
-     46
+     47
     ],
     [
      "Badge",
@@ -5856,7 +5856,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "Annotation",
@@ -5893,12 +5893,12 @@
     "on-surface-warning",
     "warning"
    ],
-   "layers": 73,
+   "layers": 74,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     67
+     68
     ],
     [
      "Badge",
@@ -5924,7 +5924,7 @@
     ],
     [
      "Badge",
-     10
+     11
     ],
     [
      "📖 01 · Getting Started",
@@ -5960,12 +5960,12 @@
    "aliases": [
     "warning-container"
    ],
-   "layers": 64,
+   "layers": 65,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     61
+     62
     ],
     [
      "Badge",
@@ -5986,11 +5986,11 @@
      18
     ],
     [
-     "📖 01 · Getting Started",
-     7
+     "Badge",
+     8
     ],
     [
-     "Badge",
+     "📖 01 · Getting Started",
      7
     ],
     [
@@ -6024,12 +6024,12 @@
     "error",
     "on-surface-error"
    ],
-   "layers": 227,
+   "layers": 228,
    "productLayers": 23,
    "components": [
     [
      "(documentation, not a component)",
-     204
+     205
     ],
     [
      "File Uploader",
@@ -6087,7 +6087,7 @@
     ],
     [
      "Badge",
-     12
+     13
     ],
     [
      "Input",
@@ -6115,12 +6115,12 @@
    "aliases": [
     "error-container"
    ],
-   "layers": 54,
+   "layers": 55,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     51
+     52
     ],
     [
      "Badge",
@@ -6146,7 +6146,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "Alert",
@@ -6175,18 +6175,18 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 227,
+   "direct": 228,
    "aliases": [
     "ctx/logo",
     "ctx/logo-glyph",
     "ctx/surface"
    ],
-   "layers": 313,
+   "layers": 314,
    "productLayers": 22,
    "components": [
     [
      "(documentation, not a component)",
-     291
+     292
     ],
     [
      "Section / Full Width",
@@ -6361,10 +6361,6 @@
      2
     ],
     [
-     "Overview Card",
-     1
-    ],
-    [
      "Avatar",
      1
     ],
@@ -6451,6 +6447,10 @@
     [
      "Section / Let's Connect",
      1
+    ],
+    [
+     "Overview Card",
+     1
     ]
    ],
    "pages": [
@@ -6497,14 +6497,14 @@
     "Light": "neutral/50",
     "Dark": "neutral/925"
    },
-   "direct": 674,
+   "direct": 675,
    "aliases": [],
-   "layers": 674,
+   "layers": 675,
    "productLayers": 16,
    "components": [
     [
      "(documentation, not a component)",
-     658
+     659
     ],
     [
      "Section / Full Width",
@@ -6561,12 +6561,12 @@
      19
     ],
     [
-     "Group Cards",
+     "Badge",
      18
     ],
     [
-     "Badge",
-     17
+     "Group Cards",
+     18
     ],
     [
      "🧱 07 · Components: Organisms",
@@ -6688,11 +6688,11 @@
      13
     ],
     [
-     "Overview",
+     "Group Cards",
      12
     ],
     [
-     "Group Cards",
+     "Overview",
      12
     ],
     [
@@ -6714,16 +6714,16 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 3159,
+   "direct": 3165,
    "aliases": [
     "ctx/on-surface"
    ],
-   "layers": 3536,
+   "layers": 3542,
    "productLayers": 283,
    "components": [
     [
      "(documentation, not a component)",
-     3253
+     3259
     ],
     [
      "Jira Annotation",
@@ -6918,16 +6918,16 @@
     "Light": "neutral/750",
     "Dark": "neutral/500"
    },
-   "direct": 2341,
+   "direct": 2342,
    "aliases": [
     "ctx/on-surface-variant"
    ],
-   "layers": 2497,
+   "layers": 2498,
    "productLayers": 103,
    "components": [
     [
      "(documentation, not a component)",
-     2394
+     2395
     ],
     [
      "Overview Card",
@@ -7292,16 +7292,16 @@
     "Light": "neutral/200",
     "Dark": "neutral/800"
    },
-   "direct": 710,
+   "direct": 715,
    "aliases": [
     "ctx/outline-variant"
    ],
-   "layers": 748,
+   "layers": 753,
    "productLayers": 54,
    "components": [
     [
      "(documentation, not a component)",
-     694
+     699
     ],
     [
      "Progress Bar",
@@ -7332,10 +7332,6 @@
      3
     ],
     [
-     "Key Stakeholders Card",
-     2
-    ],
-    [
      "Divider",
      2
     ],
@@ -7356,8 +7352,8 @@
      2
     ],
     [
-     "Team Card",
-     1
+     "Key Stakeholders Card",
+     2
     ],
     [
      "Alert",
@@ -7369,6 +7365,10 @@
     ],
     [
      "Modal",
+     1
+    ],
+    [
+     "Team Card",
      1
     ]
    ],
@@ -7650,11 +7650,11 @@
      5
     ],
     [
-     "Overview",
+     "Tone of Voice",
      4
     ],
     [
-     "Tone of Voice",
+     "Overview",
      4
     ],
     [
@@ -7748,14 +7748,14 @@
     "Light": "success/40",
     "Dark": "success/80"
    },
-   "direct": 164,
+   "direct": 165,
    "aliases": [],
-   "layers": 164,
+   "layers": 165,
    "productLayers": 10,
    "components": [
     [
      "(documentation, not a component)",
-     154
+     155
     ],
     [
      "Jira Annotation",
@@ -7777,7 +7777,7 @@
    "pages": [
     [
      "Badge",
-     12
+     13
     ],
     [
      "Colour",
@@ -7818,14 +7818,14 @@
     "Light": "success/95",
     "Dark": "success/20"
    },
-   "direct": 54,
+   "direct": 55,
    "aliases": [],
-   "layers": 54,
+   "layers": 55,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     51
+     52
     ],
     [
      "Badge",
@@ -7847,7 +7847,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "🤝 03 · Contribution & Governance",
@@ -7880,14 +7880,14 @@
     "Light": "info/40",
     "Dark": "info/80"
    },
-   "direct": 56,
+   "direct": 57,
    "aliases": [],
-   "layers": 56,
+   "layers": 57,
    "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     45
+     46
     ],
     [
      "Jira Annotation",
@@ -7908,11 +7908,11 @@
      15
     ],
     [
-     "Colour",
-     10
+     "Badge",
+     11
     ],
     [
-     "Badge",
+     "Colour",
      10
     ],
     [
@@ -7946,14 +7946,14 @@
     "Light": "info/95",
     "Dark": "info/20"
    },
-   "direct": 45,
+   "direct": 46,
    "aliases": [],
-   "layers": 45,
+   "layers": 46,
    "productLayers": 5,
    "components": [
     [
      "(documentation, not a component)",
-     40
+     41
     ],
     [
      "Badge",
@@ -7979,7 +7979,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "Annotation",
@@ -8012,14 +8012,14 @@
     "Light": "warning/40",
     "Dark": "warning/80"
    },
-   "direct": 64,
+   "direct": 65,
    "aliases": [],
-   "layers": 64,
+   "layers": 65,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     58
+     59
     ],
     [
      "Badge",
@@ -8040,11 +8040,11 @@
      18
     ],
     [
-     "Colour",
-     10
+     "Badge",
+     11
     ],
     [
-     "Badge",
+     "Colour",
      10
     ],
     [
@@ -8078,14 +8078,14 @@
     "Light": "warning/95",
     "Dark": "warning/20"
    },
-   "direct": 58,
+   "direct": 59,
    "aliases": [],
-   "layers": 58,
+   "layers": 59,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     55
+     56
     ],
     [
      "Badge",
@@ -8106,11 +8106,11 @@
      12
     ],
     [
-     "📖 01 · Getting Started",
-     7
+     "Badge",
+     8
     ],
     [
-     "Badge",
+     "📖 01 · Getting Started",
      7
     ],
     [
@@ -8140,14 +8140,14 @@
     "Light": "error/40",
     "Dark": "error/80"
    },
-   "direct": 218,
+   "direct": 219,
    "aliases": [],
-   "layers": 218,
+   "layers": 219,
    "productLayers": 23,
    "components": [
     [
      "(documentation, not a component)",
-     195
+     196
     ],
     [
      "File Uploader",
@@ -8201,7 +8201,7 @@
     ],
     [
      "Badge",
-     12
+     13
     ],
     [
      "Colour",
@@ -8230,14 +8230,14 @@
     "Light": "error/95",
     "Dark": "error/20"
    },
-   "direct": 48,
+   "direct": 49,
    "aliases": [],
-   "layers": 48,
+   "layers": 49,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     45
+     46
     ],
     [
      "Badge",
@@ -8263,7 +8263,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "Alert",
@@ -8377,12 +8377,12 @@
    "aliases": [
     "surface-container-low"
    ],
-   "layers": 675,
+   "layers": 676,
    "productLayers": 16,
    "components": [
     [
      "(documentation, not a component)",
-     659
+     660
     ],
     [
      "Section / Full Width",
@@ -8439,12 +8439,12 @@
      19
     ],
     [
-     "Group Cards",
+     "Badge",
      18
     ],
     [
-     "Badge",
-     17
+     "Group Cards",
+     18
     ],
     [
      "🧱 07 · Components: Organisms",
@@ -8464,12 +8464,12 @@
    "aliases": [
     "success-container"
    ],
-   "layers": 55,
+   "layers": 56,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     52
+     53
     ],
     [
      "Badge",
@@ -8491,7 +8491,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "🤝 03 · Contribution & Governance",
@@ -8527,12 +8527,12 @@
    "aliases": [
     "info-container"
    ],
-   "layers": 46,
+   "layers": 47,
    "productLayers": 5,
    "components": [
     [
      "(documentation, not a component)",
-     41
+     42
     ],
     [
      "Badge",
@@ -8558,7 +8558,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "Annotation",
@@ -8594,12 +8594,12 @@
    "aliases": [
     "warning-container"
    ],
-   "layers": 59,
+   "layers": 60,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     56
+     57
     ],
     [
      "Badge",
@@ -8620,11 +8620,11 @@
      13
     ],
     [
-     "📖 01 · Getting Started",
-     7
+     "Badge",
+     8
     ],
     [
-     "Badge",
+     "📖 01 · Getting Started",
      7
     ],
     [
@@ -8657,12 +8657,12 @@
    "aliases": [
     "error-container"
    ],
-   "layers": 49,
+   "layers": 50,
    "productLayers": 3,
    "components": [
     [
      "(documentation, not a component)",
-     46
+     47
     ],
     [
      "Badge",
@@ -8688,7 +8688,7 @@
     ],
     [
      "Badge",
-     7
+     8
     ],
     [
      "Alert",
@@ -9754,14 +9754,14 @@
     "Desktop": 6,
     "Mobile": 6
    },
-   "direct": 417,
+   "direct": 422,
    "aliases": [],
-   "layers": 417,
+   "layers": 422,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     405
+     410
     ],
     [
      "Badge",
@@ -9779,7 +9779,7 @@
     ],
     [
      "Badge",
-     39
+     44
     ],
     [
      "📖 01 · Getting Started",
@@ -9816,14 +9816,14 @@
     "Desktop": 14,
     "Mobile": 14
    },
-   "direct": 417,
+   "direct": 422,
    "aliases": [],
-   "layers": 417,
+   "layers": 422,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     405
+     410
     ],
     [
      "Badge",
@@ -9841,7 +9841,7 @@
     ],
     [
      "Badge",
-     39
+     44
     ],
     [
      "📖 01 · Getting Started",
@@ -9878,14 +9878,14 @@
     "Desktop": 6,
     "Mobile": 6
    },
-   "direct": 417,
+   "direct": 422,
    "aliases": [],
-   "layers": 417,
+   "layers": 422,
    "productLayers": 12,
    "components": [
     [
      "(documentation, not a component)",
-     405
+     410
     ],
     [
      "Badge",
@@ -9903,7 +9903,7 @@
     ],
     [
      "Badge",
-     39
+     44
     ],
     [
      "📖 01 · Getting Started",
@@ -14084,12 +14084,12 @@
     "on-surface-placeholder",
     "on-surface-variant"
    ],
-   "layers": 2713,
+   "layers": 2714,
    "productLayers": 140,
    "components": [
     [
      "(documentation, not a component)",
-     2573
+     2574
     ],
     [
      "Form Field",
@@ -14124,15 +14124,15 @@
      5
     ],
     [
+     "Select",
+     5
+    ],
+    [
      "Alert",
      5
     ],
     [
      "Table",
-     5
-    ],
-    [
-     "Select",
      5
     ],
     [
@@ -14160,11 +14160,11 @@
      3
     ],
     [
-     "Combobox",
+     "Toast",
      3
     ],
     [
-     "Toast",
+     "Combobox",
      3
     ],
     [
@@ -14184,6 +14184,10 @@
      2
     ],
     [
+     "Code Block",
+     1
+    ],
+    [
      "Stat Card",
      1
     ],
@@ -14197,10 +14201,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Code Block",
      1
     ]
    ],
@@ -16471,12 +16471,12 @@
    "aliases": [
     "on-surface-error"
    ],
-   "layers": 219,
+   "layers": 220,
    "productLayers": 23,
    "components": [
     [
      "(documentation, not a component)",
-     196
+     197
     ],
     [
      "File Uploader",
@@ -16530,7 +16530,7 @@
     ],
     [
      "Badge",
-     12
+     13
     ],
     [
      "Colour",
@@ -16720,12 +16720,12 @@
    "aliases": [
     "on-surface-warning"
    ],
-   "layers": 65,
+   "layers": 66,
    "productLayers": 6,
    "components": [
     [
      "(documentation, not a component)",
-     59
+     60
     ],
     [
      "Badge",
@@ -16751,7 +16751,7 @@
     ],
     [
      "Badge",
-     10
+     11
     ],
     [
      "📖 01 · Getting Started",
@@ -16945,12 +16945,12 @@
    "aliases": [
     "on-surface-success"
    ],
-   "layers": 165,
+   "layers": 166,
    "productLayers": 10,
    "components": [
     [
      "(documentation, not a component)",
-     155
+     156
     ],
     [
      "Jira Annotation",
@@ -16972,7 +16972,7 @@
    "pages": [
     [
      "Badge",
-     12
+     13
     ],
     [
      "Colour",
@@ -17174,12 +17174,12 @@
    "aliases": [
     "on-surface-info"
    ],
-   "layers": 57,
+   "layers": 58,
    "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     46
+     47
     ],
     [
      "Jira Annotation",
@@ -17205,7 +17205,7 @@
     ],
     [
      "Badge",
-     10
+     11
     ],
     [
      "Iconography",
@@ -17614,12 +17614,12 @@
    "aliases": [
     "font-size/caption"
    ],
-   "layers": 2366,
+   "layers": 2367,
    "productLayers": 13,
    "components": [
     [
      "(documentation, not a component)",
-     2353
+     2354
     ],
     [
      "Form Field",
@@ -17699,15 +17699,15 @@
      5
     ],
     [
+     "Footer",
+     4
+    ],
+    [
      "Avatar",
      4
     ],
     [
      "Menu Item",
-     4
-    ],
-    [
-     "Footer",
      4
     ],
     [
@@ -17719,15 +17719,15 @@
      4
     ],
     [
+     "File Uploader",
+     3
+    ],
+    [
      "Tab",
      3
     ],
     [
      "Jira Annotation",
-     3
-    ],
-    [
-     "File Uploader",
      3
     ],
     [
@@ -17791,12 +17791,12 @@
    "aliases": [
     "font-size/body-sm"
    ],
-   "layers": 721,
+   "layers": 726,
    "productLayers": 49,
    "components": [
     [
      "(documentation, not a component)",
-     672
+     677
     ],
     [
      "Overview Card",
@@ -17849,16 +17849,16 @@
      49
     ],
     [
+     "Badge",
+     44
+    ],
+    [
      "Overview",
      43
     ],
     [
      "Spacing, Grid & Layout",
      41
-    ],
-    [
-     "Badge",
-     39
     ],
     [
      "Photography",
@@ -17889,12 +17889,12 @@
     "font-size/button",
     "font-size/h7"
    ],
-   "layers": 1395,
+   "layers": 1400,
    "productLayers": 224,
    "components": [
     [
      "(documentation, not a component)",
-     1171
+     1176
     ],
     [
      "Jira Annotation",
