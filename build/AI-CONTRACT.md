@@ -1,0 +1,170 @@
+# Ascendum Design System · contract for AI tools
+
+Generated from snapshot `5lhRMZkLHZijqgdigjk3J1` on 2026-11-26. Do not edit by hand: change the design system, then regenerate.
+
+Read this file instead of the Figma pages. The pages are documentation for people; their layout is not a pattern to copy.
+
+## 1. You may use
+
+- Only the tokens listed in section 4, by their code name.
+- Only the components and variants listed in section 5.
+- One typeface: Barlow.
+
+## 2. You must never
+
+- Write a raw colour, size or spacing value. If no token fits, stop and ask; do not invent one.
+- Use a token from a private collection (Primitives). They exist only to feed the semantic layer.
+- Use department colours and anything named after a department (dept/*, and Department / Accent / Fill variants called Digital, Mortgages, Products or Talent): the file's own note says: "Remove/delete 'Department' colors entirely - these are no longer used." The four hues stay as brand accents (accent/red, purple, blue, stone).
+- Round a button corner. 0px buttons on 20px cards is the brand signature.
+- Add a shadow to layout. Depth comes from contrast between sections; only overlays carry elevation.
+- Use the team gradient as a section background or on body text.
+- Add a state, tone or size that is not listed in section 5. Propose it instead.
+- Set text in capitals.
+- Use an accent colour to mean a status, or a status colour as decoration.
+
+## 3. What to take from the Figma file, and what to ignore
+
+- Take: token names and values, component names, variant names, component descriptions.
+- Ignore: the layout of the documentation pages. Small eyebrow titles over large text, sub-headings and annotation cards are page furniture, not product patterns.
+- Ignore: anything on a page numbered 90 (deprecated) or 99 (internal).
+- Ignore: sticky notes and 'Claude list' comments. They are open questions, not decisions.
+- Tone of voice: take the principles as writing rules. Do not copy the page's own example sentences into a product.
+
+## 4. Tokens
+
+| Code name | Token | Light / Desktop | Dark / Mobile | Use |
+|---|---|---|---|---|
+| `--badge-dot` | component/badge/dot | 6 |  | Status dot inside a pill |
+| `--badge-gap` | component/badge/gap | 6 |  | Gap between a pill's dot and its label. |
+| `--badge-padding-h` | component/badge/padding-h | 14 |  | Pill horizontal padding. |
+| `--badge-padding-v` | component/badge/padding-v | 6 |  | Pill vertical padding. |
+| `--button-padding-h` | component/button/padding-h | 28 | 22 | Horizontal button padding |
+| `--button-padding-v` | component/button/padding-v | 16 | 12 |  |
+| `--form-field-gap` | component/form-field/gap | 8 |  | Gap between label, field and message. |
+| `--input-padding-h` | component/input/padding-h | 16 |  |  |
+| `--input-padding-v` | component/input/padding-v | 18 |  |  |
+| `--input-textarea-min` | component/input/textarea-min | 80 |  | Minimum height for a multiline field, from textarea.field-input in components-fields.html. |
+| `--border-width-button` | border-width/button | 2 |  | Button outline weight. |
+| `--border-width-field` | border-width/field | 1.5 |  | Form field border |
+| `--border-width-focus` | border-width/focus | 2 |  | Weight of the keyboard focus ring. |
+| `--border-width-hairline` | border-width/hairline | 1 |  |  |
+| `--text-body-size` | font-size/body | 16 |  |  |
+| `--text-body-lg-size` | font-size/body-lg | 18 |  |  |
+| `--font-size-body-sm` | font-size/body-sm | 15 |  | Dense-UI text, tables, meta rows, chips |
+| `--text-button-size` | font-size/button | 17 | 16 | 17px desktop / 16px mobile |
+| `--font-size-caption` | font-size/caption | 13 |  | Smallest supported size |
+| `--text-display-size` | font-size/display | 56 | 42 |  |
+| `--text-footnote-size` | font-size/footnote | 14 |  |  |
+| `--text-h2-size` | font-size/h2 | 40 | 32 |  |
+| `--text-h3-size` | font-size/h3 | 20 |  |  |
+| `--text-h4-size` | font-size/h4 | 24 | 22 | Fills the gap between H3 (20) and H2 (40) |
+| `--text-label-size` | font-size/label | 14 |  |  |
+| `--text-stat-size` | font-size/stat | 44 | 36 | Metric value |
+| `--columns-gap` | gap/columns | 32 |  |  |
+| `--radius-card` | radius/card | 16 |  | Nested card corner |
+| `--container-radius` | radius/container | 20 |  | SIGNATURE, cards and containers. |
+| `--field-radius` | radius/field | 4 |  | Form fields only, the quiet middle ground. |
+| `--button-radius` | radius/none | 0 |  | SIGNATURE, the button radius |
+| `--radius-pill` | radius/pill | 999 |  | Pills and badges. |
+| `--radius-surface` | radius/surface | 8 |  | Overlay and notification corner, menus, popovers, alerts, toasts |
+| `--columns-one` | size/col-1 | 982 |  |  |
+| `--columns-two` | size/col-2 | 571 |  |  |
+| `--columns-three` | size/col-3 | 370 |  |  |
+| `--columns-four` | size/col-4 | 268 |  |  |
+| `--columns-five` | size/col-5 | 206 |  |  |
+| `--columns-six` | size/col-6 | 169 |  |  |
+| `--container-width` | size/container | 1174 | 264 |  |
+| `--container-half-width` | size/container-half | 587 | 132 |  |
+| `--size-control` | size/control | 20 |  | Checkbox box and radio ring |
+| `--full-width-width` | size/full-width | 1366 | 360 |  |
+| `--body-icon` | size/icon-body | 64 | 48 | Large in-body illustrative icon. |
+| `--size-icon-md` | size/icon-md | 24 |  |  |
+| `--size-icon-sm` | size/icon-sm | 20 |  |  |
+| `--space-2xs` | space/2xs | 16 | 12 |  |
+| `--space-3xs` | space/3xs | 8 |  |  |
+| `--space-control-gap` | space/control-gap | 10 |  | Gap between a control and its label |
+| `--space-lg` | space/lg | 288 | 96 | Largest section padding |
+| `--space-md` | space/md | 96 | 48 |  |
+| `--space-none` | space/none | 0 |  |  |
+| `--space-sm` | space/sm | 48 | 32 |  |
+| `--space-xs` | space/xs | 32 | 24 |  |
+| `--bg-accent-blue` | bg/accent-blue | #CAE6F3 |  | Soft accent surface (avatars, tags) |
+| `--bg-accent-purple` | bg/accent-purple | #E4C9F9 |  | Soft accent surface (avatars, tags) |
+| `--bg-accent-red` | bg/accent-red | #F0D3D5 |  | Soft accent surface (avatars, tags) |
+| `--bg-accent-stone` | bg/accent-stone | #DEDBDA |  | Soft accent surface (avatars, tags) |
+| `--bg-hover` | bg/hover | #F5F5F5 | #444444 | Row and menu-item hover |
+| `--inverted-background` | bg/inverted | #212121 | #F5F5F5 | BUG FIX vs source: --inverted-background was never redeclared in the dark block, so invert |
+| `--background` | bg/page | #F5F5F5 | #212121 |  |
+| `--bg-skeleton` | bg/skeleton | #ECECEC | #555555 | Skeleton placeholder fill |
+| `--bg-subtle` | bg/subtle | #FAFAFA | #262626 | Sits between page and surface |
+| `--container-fill` | bg/surface | #FFFFFF | #2A2A2A | Card and container fill. |
+| `--border-default` | border/default | #ECECEC | #555555 | Hairline divider. |
+| `--form-border` | border/field | #212121 | #F5F5F5 |  |
+| `--border-focus` | border/focus | #212121 | #F5F5F5 | Keyboard focus ring |
+| `--border-muted` | border/muted | #D6D6D6 | #777777 | De-emphasised field border |
+| `--quote-line` | border/quote | #777777 | #999999 | BUG FIX vs source: same undeclared --brand-mid-grey alias as text/placeholder. |
+| `--border-strong` | border/strong | #212121 | #F5F5F5 |  |
+| `--button-fill` | button/fill | #00000000 |  | Transparent by default, the outline button fills only on hover |
+| `--button-fill-hover` | button/fill-hover | #212121 | #F5F5F5 |  |
+| `--button-fill-hover-inverted` | button/fill-hover-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
+| `--button-fill-solid-hover` | button/fill-solid-hover | #444444 | #ECECEC | Solid button under the pointer |
+| `--button-fill-solid-hover-inverted` | button/fill-solid-hover-inverted | #ECECEC | #444444 | Solid inverted button under the pointer. |
+| `--button-label` | button/label | #212121 | #F5F5F5 |  |
+| `--button-label-hover` | button/label-hover | #F5F5F5 | #212121 |  |
+| `--button-label-hover-inverted` | button/label-hover-inverted | #212121 | #F5F5F5 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
+| `--button-label-inverted` | button/label-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
+| `--button-stroke` | button/stroke | #212121 | #F5F5F5 |  |
+| `--button-stroke-inverted` | button/stroke-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
+| `--feedback-error` | feedback/error | #B02A32 | #CE7B80 |  |
+| `--feedback-error-bg` | feedback/error-bg | #FDF1F2 | #3E2324 | Dark value is derived (status flattened over the dark page colour), not authored in the so |
+| `--feedback-info` | feedback/info | #2369AA | #6C9AC6 |  |
+| `--feedback-info-bg` | feedback/info-bg | #F3F8FD | #212F3C | Dark value is derived (status flattened over the dark page colour), not authored in the so |
+| `--feedback-success` | feedback/success | #1C7A4A | #65A584 |  |
+| `--feedback-success-bg` | feedback/success-bg | #EEF7F1 | #203329 | Dark value is derived (status flattened over the dark page colour), not authored in the so |
+| `--feedback-warning` | feedback/warning | #8A5A00 | #B29257 |  |
+| `--feedback-warning-bg` | feedback/warning-bg | #FFF2D8 | #362C1A | Dark value is derived (status flattened over the dark page colour), not authored in the so |
+| `--icon` | icon/default | #212121 | #F5F5F5 | Bind all 203 icon components to this |
+| `--icon-inverted` | icon/inverted | #F5F5F5 | #212121 |  |
+| `--icon-muted` | icon/muted | #888888 | #C0C0C0 |  |
+| `--text` | text/default | #212121 | #F5F5F5 |  |
+| `--inverted-text` | text/inverted | #F5F5F5 | #212121 |  |
+| `--text-inverted-muted` | text/inverted-muted | #C0C0C0 | #6F6F6F | Secondary text on bg/inverted |
+| `--link` | text/link | #212121 | #F5F5F5 |  |
+| `--text-muted` | text/muted | #6F6F6F | #C0C0C0 |  |
+| `--text-on-accent` | text/on-accent | #212121 |  | Dark text on a soft accent surface or a light gradient |
+| `--form-placeholder` | text/placeholder | #6F6F6F | #999999 | BUG FIX vs source: --form-placeholder aliased --brand-mid-grey, which is never declared an |
+
+## 5. Components in this slice
+
+### Button
+
+Starts an action. Solid is the main action and there is one per view. Outline is the second choice. Ghost has no border and is for quiet actions such as Back and Cancel. Use the Inverted variant on dark surfaces; it follows the mode. Corners stay at 0. No icon unless it adds meaning.
+
+- **Style**: Ghost, Outline, Solid
+- **Variant**: Inverted, Primary
+- **State**: Default, Disabled, Focus, Hover
+- PROPOSAL, pending the owner: one Solid button per view is the primary action; Outline is secondary; Ghost only inside dense toolbars.
+- Hover and Focus are behaviours of one button in code, not separate designs. Do not draw them as separate components.
+
+### Badge
+
+Small status pill. Use it to show the state of an item in a table or list. Do not use it for actions or for decoration.
+
+- **Tone**: Error, Info, Neutral, Success, Warning
+- **Dot**: False, True
+- PROPOSAL, pending the owner: a tone carries a meaning (Success, Info, Warning, Error). Neutral, Muted and Solid carry none; use Neutral unless told otherwise.
+- Never choose a tone for decoration.
+
+### Input
+
+Text field for short answers, and a textarea for longer ones.
+
+- **Type**: Text, Textarea
+- **State**: Default, Disabled, Error, Focus  ·  not allowed: Filled
+- PROPOSAL, pending the owner: 'Filled' is not a state, it is a Default input with a value.
+- The message slot under the field is always present, so validation never shifts the layout.
+
+## 6. Before you hand anything back
+
+- Run the checks. If a BLOCK check fails, your change is not ready.
+- Say which tokens and components you used. If you needed something that does not exist, list it as a proposal; a person decides.

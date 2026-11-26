@@ -1,0 +1,32 @@
+name: Design system checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  gate:
+    name: Gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run the checks
+        # Exit code 1 while a blocking check fails. That is the gate.
+        run: python3 pipeline/02_build.py build/ds-snapshot.json governance build
+
+      - name: Generated files match the snapshot
+        # Tokens and the AI contract are never edited by hand.
+        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md
+
+      - name: Before and after
+        run: python3 pipeline/03_compare.py build/before/report.json build/report.json build/compare.js
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: design-system-report
+          path: |
+            build/report.json
+            build/AI-CONTRACT.md

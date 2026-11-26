@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ascendum Design System · Health gate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* This page is drawn with the system's own values: Midnight, Milkyway, Barlow,
+     sharp controls on 20px cards, depth from contrast and no shadows. */
+  :root {
+    --page: #f5f5f5; --surface: #ffffff; --ink: #212121; --soft: #555555; --line: #d6d6d6; --subtle: #ececec;
+    --bad: #b02a32; --bad-bg: #f7e3e4; --warn: #8a5a00; --warn-bg: #f6ecd6; --ask: #2369aa; --ask-bg: #dfeaf5; --ok: #1c7a4a; --ok-bg: #dcefe4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --page: #212121; --surface: #2a2a2a; --ink: #f5f5f5; --soft: #c0c0c0; --line: #555555; --subtle: #333333;
+      --bad: #f0959b; --bad-bg: #3e2324; --warn: #e2b866; --warn-bg: #362c1a; --ask: #8fbfe8; --ask-bg: #212f3c; --ok: #7fcfa3; --ok-bg: #203329; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--page); color: var(--ink); font: 400 17px/1.45 Barlow, system-ui, sans-serif; letter-spacing: -0.01em; }
+  main { max-width: 1120px; margin: 0 auto; padding: 0 20px 96px; }
+  h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1; letter-spacing: -0.02em; margin: 0 0 16px; font-weight: 700; text-wrap: balance; }
+  h2 { font-size: clamp(26px, 4vw, 40px); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 12px; font-weight: 700; text-wrap: balance; }
+  h3 { font-size: 20px; line-height: 1.2; margin: 0 0 6px; font-weight: 700; }
+  p { margin: 0 0 12px; max-width: 68ch; }
+  .lead { font-size: 20px; color: var(--soft); }
+  section { padding: 64px 0 0; }
+  header.top { padding: 56px 0 0; }
+  .meta { color: var(--soft); font-size: 15px; margin-bottom: 28px; }
+  .card { background: var(--surface); border-radius: 20px; padding: 28px; }
+  .dark { background: var(--ink); color: var(--page); border-radius: 20px; padding: 32px; }
+  .dark .soft { color: color-mix(in srgb, var(--page) 70%, transparent); }
+  .gate { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; }
+  .gate .state { font-size: clamp(40px, 8vw, 84px); font-weight: 700; line-height: .95; letter-spacing: -0.03em; }
+  .tally { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .tally div { border-top: 2px solid currentColor; padding-top: 10px; }
+  .tally b { display: block; font-size: 40px; line-height: 1; font-variant-numeric: tabular-nums; }
+  .tally span { font-size: 15px; }
+  .facts { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; margin-top: 20px; border-top: 1px solid var(--line); }
+  .facts div { padding: 16px 12px 0 0; }
+  .facts b { display: block; font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .facts span { color: var(--soft); font-size: 15px; }
+  .group { margin-top: 28px; }
+  .group > h3 { display: flex; gap: 10px; align-items: baseline; }
+  .group > p { color: var(--soft); }
+  details { background: var(--surface); border-radius: 20px; margin-top: 8px; }
+  summary { list-style: none; cursor: pointer; padding: 18px 22px; display: grid; grid-template-columns: 76px 1fr auto; gap: 14px; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .n { font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1; }
+  .t { font-weight: 600; }
+  .pill { font-size: 14px; font-weight: 600; padding: 4px 10px; border-radius: 999px; white-space: nowrap; }
+  .pill.bad { color: var(--bad); background: var(--bad-bg); } .pill.warn { color: var(--warn); background: var(--warn-bg); }
+  .pill.ask { color: var(--ask); background: var(--ask-bg); } .pill.ok { color: var(--ok); background: var(--ok-bg); }
+  .body { padding: 0 22px 22px 112px; }
+  .body ul { margin: 8px 0 12px; padding-left: 18px; }
+  .body li { margin-bottom: 6px; overflow-wrap: anywhere; font-size: 16px; }
+  .fix { border-left: 2px solid var(--ink); padding-left: 12px; font-weight: 500; }
+  .ref { color: var(--soft); font-size: 15px; }
+  .explorer { display: grid; grid-template-columns: 320px 1fr; gap: 20px; margin-top: 20px; }
+  input[type=search] { width: 100%; font: inherit; padding: 12px 14px; border: 1.5px solid var(--ink); border-radius: 4px; background: var(--surface); color: var(--ink); }
+  .list { margin-top: 8px; max-height: 420px; overflow: auto; background: var(--surface); border-radius: 20px; padding: 8px; }
+  .list button { display: flex; justify-content: space-between; gap: 8px; width: 100%; text-align: left; font: inherit; font-size: 16px; padding: 8px 12px; border: 0; background: none; color: inherit; cursor: pointer; border-radius: 4px; }
+  .list button:hover { background: var(--subtle); } .list button[aria-current=true] { background: var(--ink); color: var(--page); }
+  .list small { opacity: .7; font-variant-numeric: tabular-nums; }
+  .bar { display: grid; grid-template-columns: minmax(120px, 240px) 1fr 44px; gap: 10px; align-items: center; font-size: 16px; margin-bottom: 6px; }
+  .bar i { display: block; height: 10px; background: var(--ink); min-width: 2px; }
+  .bar span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .swatch { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--line); vertical-align: -2px; margin-right: 6px; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .88em; letter-spacing: 0; }
+  .wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 16px; }
+  th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; color: var(--soft); }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 20px; counter-reset: s; }
+  .steps div { background: var(--surface); border-radius: 20px; padding: 20px; counter-increment: s; }
+  .steps div::before { content: counter(s); font-weight: 700; font-size: 28px; display: block; line-height: 1; margin-bottom: 10px; }
+  .steps p { font-size: 16px; color: var(--soft); margin: 0; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+  .two li { margin-bottom: 10px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+  .filters button { font: inherit; font-weight: 700; padding: 10px 18px; border: 2px solid var(--ink); border-radius: 0; background: transparent; color: var(--ink); cursor: pointer; }
+  .filters button[aria-pressed=true], .filters button:hover { background: var(--ink); color: var(--page); }
+  footer { margin-top: 72px; color: var(--soft); font-size: 15px; }
+  .pairs { display: grid; gap: 20px; margin-top: 20px; }
+  .pair { background: var(--surface); border-radius: 20px; padding: 24px; }
+  .pair h3 { margin-bottom: 4px; }
+  .pair p { color: var(--soft); font-size: 16px; }
+  .pair .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; align-items: start; }
+  .pair figure { margin: 0; }
+  .pair img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 4px; background: #f5f5f5; }
+  .pair figcaption { font-size: 15px; color: var(--soft); margin-bottom: 6px; }
+  td.better { font-weight: 700; }
+  @media (max-width: 860px) { .pair .shots { grid-template-columns: 1fr; } }
+  @media (max-width: 860px) {
+    .gate, .explorer, .two { grid-template-columns: 1fr; }
+    .facts { grid-template-columns: repeat(3, 1fr); } .steps { grid-template-columns: 1fr 1fr; }
+    summary { grid-template-columns: 56px 1fr; } summary .pill { grid-column: 2; justify-self: start; }
+    .body { padding-left: 22px; } .card, .dark { padding: 22px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <h1>AI proposes. Checks verify. A person approves.</h1>
+    <p class="lead">Hacksgiving, team 2. A working gate for the Ascendum Design System: one command reads the library, exports the tokens, runs the checks, writes the contract for AI tools, and refuses to publish while something that matters is broken.</p>
+    <p class="meta" id="meta"></p>
+    <div class="dark gate">
+      <div>
+        <div class="soft">The gate today</div>
+        <div class="state" id="state"></div>
+        <p class="soft" id="stateline" style="margin-top:12px"></p>
+      </div>
+      <div class="tally" id="tally"></div>
+    </div>
+    <div class="facts" id="facts"></div>
+  </header>
+
+  <section id="compare">
+    <h2>Before and after</h2>
+    <p class="lead">The file as we received it, and the working copy after one pass. Same checks, same rules, run twice.</p>
+    <div class="card wrap" style="margin-top:20px"><table id="cmp"><thead><tr><th>Check</th><th>Kind</th><th class="num">Before</th><th class="num">After</th></tr></thead><tbody></tbody></table></div>
+    <div class="pairs" id="pairs"></div>
+    <p class="ref" style="margin-top:16px">Before counts for unbound colours and direct primitives include 44 logo layers inside Footer and Navigation Bar that the later reader skips as artwork.</p>
+  </section>
+
+  <section>
+    <h2>What the checks still find</h2>
+    <p class="lead">Every number below was counted from the working copy, not judged by eye. Open a row for the evidence and the next step.</p>
+    <div id="findings"></div>
+  </section>
+
+  <section>
+    <h2>What breaks if I change this?</h2>
+    <p class="lead">The audit asks how to change the library without quietly breaking what depends on it. This is the answer, for every token: who aliases it, which components bind it, how many layers move.</p>
+    <div class="explorer">
+      <div>
+        <label for="q" class="ref">Find a token</label>
+        <input id="q" type="search" placeholder="neutral/700, button, radius…" autocomplete="off">
+        <div class="list" id="list"></div>
+      </div>
+      <div class="card" id="impact" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The audit, point by point</h2>
+    <p class="lead">All 33 points from Gary's video, sorted by who can close them: a check, the owner, or the process.</p>
+    <div class="filters" id="filters"></div>
+    <div class="card wrap"><table id="points"><thead><tr><th>#</th><th>Min</th><th>Topic</th><th>What the audit asks</th><th>Closed by</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <p class="lead">Five steps, one command, no manual copy. Each step only reads the one before it.</p>
+    <div class="steps">
+      <div><h3>Snapshot</h3><p>The library is read into one neutral file: tokens, styles, components, and what every layer binds.</p></div>
+      <div><h3>Tokens</h3><p><code>tokens.json</code> and <code>tokens.css</code>, light and dark, desktop and mobile, with their code names.</p></div>
+      <div><h3>Checks</h3><p>Rules that block, rules that warn, and questions that only the owner can answer.</p></div>
+      <div><h3>Contract</h3><p><code>AI-CONTRACT.md</code>: what an AI tool may use, what it must never use, what to ignore in Figma.</p></div>
+      <div><h3>Gate</h3><p>Exit code 1 while a blocking check fails. A pipeline cannot publish past it.</p></div>
+    </div>
+    <div class="two">
+      <div class="card">
+        <h3>Decisions live in one file</h3>
+        <p><code>governance/governance.json</code> holds what people decided: what is deprecated and why, the variant budget, which colour pairs must pass contrast, what an AI tool must never do. People change it through a reviewed change. The checks and the contract are generated from it, so a decision is written once and enforced everywhere.</p>
+      </div>
+      <div class="card">
+        <h3>Run it</h3>
+        <p class="mono">python3 pipeline/01_snapshot_from_fig.py &lt;decoded file&gt; build/ds-snapshot.json<br>python3 pipeline/02_build.py build/ds-snapshot.json governance build</p>
+        <p>Plain Python, no dependencies. The same checks run on a snapshot taken through the Figma Plugin API (<code>pipeline/01b_snapshot_plugin_api.js</code>), so nobody needs our reader to repeat this.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Limits and what we recommend</h2>
+    <div class="two">
+      <div class="card">
+        <h3>What this does not do</h3>
+        <ul>
+          <li><b>It cannot see.</b> Clipped shadows, cut-off text and weak composition pass every structural check. Those audit points stay with a person, on purpose.</li>
+          <li><b>It does not decide taste.</b> How many button states, whether labels are uppercase, which neutrals stay: it measures and asks. The owner answers once, in the governance file.</li>
+          <li><b>Severity is a proposal.</b> Which rules block and which warn is our suggestion. It is one line each to change.</li>
+          <li><b>We were wrong once, and the checking caught it.</b> Our first pass reported two typefaces mixed across the file. The layers carry stale font fields; resolved through their text styles it is Barlow on <span id="barlow"></span> layers and Inter on <span id="inter"></span>. A number nobody verified is exactly what the audit warns about.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What we would do next</h3>
+        <ul>
+          <li><b>Name one owner</b> and put the name in the governance file. Every open question on this page is waiting for that person.</li>
+          <li><b>Give the tools the contract, not the Figma link.</b> It answers "what does the AI take from this page?" by taking the pages out of the question.</li>
+          <li><b>Stop writing the changelog by hand.</b> Two snapshots give the real diff: added, changed, removed, and what each change touches.</li>
+          <li><b>Clean in this order:</b> remove what is deprecated, fix the contrast pairs, bind the loose values, then cut variants axis by axis.</li>
+          <li><b>Put the gate in front of publishing.</b> Same command, run on every change, before the library goes out.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer id="foot"></footer>
+</main>
+
+<script src="build/report.js"></script>
+<script src="build/compare.js"></script>
+<script>
+const R = window.DS_REPORT;
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmt = (n) => Number(n).toLocaleString("en-GB");
+
+// Gary's audit: [point, minute, topic, what it asks, type, check id or note]
+// type: A = one right answer, a check closes it · B = the owner decides · C = process
+const POINTS = [
+ [1,"03:00","Getting Started","Written by AI, nobody read it. Should guide.","B","Owner rewrites; the overview numbers come from the snapshot."],
+ [2,"04:13","Changelog","Where did it come from? Who verified it? Who administers it?","C","documentation-drift"],
+ [3,"04:40","Governance","How do we change the library without quietly breaking what depends on it?","C","impact"],
+ [4,"05:30","Foundations","The page is only a title.","A","Needs eyes: empty page."],
+ [5,"05:39","Colour notes","Loose comments on the page should be in the changelog.","C","documentation-drift"],
+ [6,"06:00","Neutrals","Do we need this many tones?","B","neutral-ramp"],
+ [7,"06:20","Leftovers","If we do not want it, why is it still here?","A","deprecated-still-shipped"],
+ [8,"07:00","Accents","Colours used elsewhere are not in the base.","B","raw-colour"],
+ [9,"07:42","Typography","Does the AI copy the page layout as a pattern?","C","contract"],
+ [10,"08:42","Spacing and grid","Not understandable in isolation. Show it in use.","B","Built in the three-component slice."],
+ [11,"09:30","Radius","Round for internal tools, angular for public?","B","Owner decides; one line in governance."],
+ [12,"10:10","Border width","Unclear what each one is for.","A","token-without-code-name"],
+ [13,"10:30","Elevation","Samples have clipped shadows. Will the AI copy that?","A","effect-without-style"],
+ [14,"10:55","Iconography","Fine if labelled. Illustrations are missing.","B","Owner (John Norman)."],
+ [15,"11:29","Tone of voice","Principles or page design? Tell the AI what to take.","C","contract"],
+ [16,"12:20","Logo","Duplicated with the brand website. One source.","C","foreign-leftovers"],
+ [17,"13:04","Photography","Examples are missing.","B","Owner supplies reference images."],
+ [18,"13:28","Avatar","Saturated department fills, off the palette.","A","deprecated-still-shipped"],
+ [19,"14:30","Badge","What does blue mean? How does the AI know which to use?","B","danger-vs-error"],
+ [20,"14:58","Buttons","Too many states, no hierarchy.","B","variant-budget"],
+ [21,"16:21","Checkbox","Several say the same thing.","B","variant-budget"],
+ [22,"16:55","Input","Too many states. AI adds, our job is to remove.","B","variant-budget"],
+ [23,"18:25","Radio","Is it used? Selected and focus are confusing.","B","variant-budget"],
+ [24,"18:57","Skeleton","What is this?","B","component-without-description"],
+ [25,"19:13","Slider","No context. Prototype it before giving it to AI.","B","Owner decides."],
+ [26,"19:56","Tags and labels","Uppercase, against the typography rule.","A","uppercase-labels"],
+ [27,"20:16","Alerts","Colours that are not in the base.","A","off-palette-in-component"],
+ [28,"20:56","Breadcrumbs","Show it in use.","B","Built in the slice pattern."],
+ [29,"21:18","Code block, Combobox","Spat out by AI. Review.","B","Owner decides; unused tokens listed."],
+ [30,"21:32","File uploader","Cramped text, unclear failed state.","A","Needs eyes."],
+ [31,"22:34","Form field","Helper text gets ugly fast.","B","Owner decides; contract records the rule."],
+ [32,"23:50","Menus","Half of this can go.","B","variant-budget"],
+ [33,"24:32","Stat cards, Tabs","AI slop: colour bar on top and capitals.","A","uppercase-labels"],
+];
+const TYPE = { A: ["A check closes it", "ok"], B: ["The owner decides", "ask"], C: ["The process closes it", "warn"] };
+const byId = Object.fromEntries(R.findings.map((f) => [f.id, f]));
+
+// ---- header
+const s = R.meta.summary, t = R.meta.totals;
+$("#meta").textContent = `Source: ${R.meta.sourceFile} · snapshot ${R.meta.sourceSha256} · ${R.meta.generatedAt.slice(0, 16).replace("T", " ")} · ${fmt(R.meta.nodes)} nodes on ${R.meta.pages} pages`;
+$("#state").textContent = R.meta.gate === "OPEN" ? "Open" : "Closed";
+$("#stateline").textContent = R.meta.gate === "OPEN"
+  ? "Nothing blocks a publish."
+  : `${s["block-fail"]} of ${(s["block-fail"] || 0) + (s["block-pass"] || 0)} blocking checks fail. Nothing is published until they pass.`;
+$("#tally").innerHTML = [[s["block-fail"] || 0, "blocking failures"], [s["warn-fail"] || 0, "clean-up items"], [s["decision"] || 0, "questions for the owner"]]
+  .map(([n, l]) => `<div><b>${n}</b><span>${l}</span></div>`).join("");
+$("#facts").innerHTML = [[t.tokens, "tokens"], [t.componentSets, "component sets"], [t.variants, "variants"], [t.icons, "icons"], [t.textLayers, "text layers"], [t.paints, "colour fills"]]
+  .map(([n, l]) => `<div><b>${fmt(n)}</b><span>${l}</span></div>`).join("");
+$("#barlow").textContent = fmt(t.fonts.Barlow || 0); $("#inter").textContent = fmt(t.fonts.Inter || 0);
+$("#foot").textContent = `Generated from snapshot ${R.meta.sourceSha256}. Nothing was written back to the design file.`;
+
+// ---- before and after
+const C = window.DS_COMPARE;
+if (C) {
+  const kind = { block: ["Blocks", "bad"], warn: ["Clean-up", "warn"], decision: ["Owner decides", "ask"] };
+  $("#cmp tbody").innerHTML = C.rows.filter((r) => r.before !== r.after || r.before > 0).map((r) =>
+    `<tr><td>${esc(r.title)}</td><td><span class="pill ${kind[r.level][1]}">${kind[r.level][0]}</span></td><td class="num">${r.before ?? "–"}</td><td class="num ${r.after < r.before ? "better" : ""}">${r.after ?? "–"}</td></tr>`).join("");
+  if (C.gate.before !== C.gate.after) $("#stateline").textContent = `It was ${C.gate.before.toLowerCase()} on the file as received: ${C.summary.before["block-fail"]} blocking checks failed. All ${C.summary.after["block-pass"]} pass on the working copy.`;
+}
+const PAIRS = [
+  ["Avatar", "Audit: saturated gradients with light text, not in sync with the palette. Now a soft tint with dark initials, three sizes, and a page that shows it in use.", "12-avatar"],
+  ["Stat Card", "Audit: the colour strip and the capitals are AI slop, redesign it. Now one card: a label and a number.", "34-stat-card"],
+  ["Button", "Audit: too many states, no hierarchy, show it in use. Every variant is now visible on its own background, focus and hover can be told apart, and the page is one documentation card: named variants in light and dark mode, use, measures, key tokens, measured accessibility, open questions, and the button in use.", "14-button"],
+  ["File Uploader", "Audit: text too tight, and a failed upload that still shows a plus. The failed state now says why and offers Try again.", "27-file-uploader"],
+  ["Colour", "Audit: loose notes on the page, tones nobody could explain, accents with no labels. Each neutral now says which role uses it, and status and roles are shown in light and dark.", "04-colour"],
+];
+$("#pairs").innerHTML = PAIRS.map(([name, text, file]) => `<div class="pair"><h3>${name}</h3><p>${text}</p><div class="shots">
+  <figure><figcaption>Before</figcaption><img loading="lazy" src="shots/before/${file}.jpg" alt="${name} page before"></figure>
+  <figure><figcaption>After</figcaption><img loading="lazy" src="shots/after/${file}.jpg" alt="${name} page after"></figure></div></div>`).join("");
+
+// ---- findings
+const GROUPS = [
+  ["block", "Blocks the publish", "One right answer, and getting it wrong breaks something downstream.", "bad"],
+  ["warn", "Clean-up", "Measurable debt. It does not stop a publish; it is the list to burn down.", "warn"],
+  ["decision", "The owner decides", "Measured here, but the answer is a design decision. Each one is waiting for a name.", "ask"],
+];
+$("#findings").innerHTML = GROUPS.map(([lvl, title, sub, cls]) => {
+  const rows = R.findings.filter((f) => f.level === lvl);
+  return `<div class="group"><h3>${title} <span class="ref">${rows.length} checks</span></h3><p>${sub}</p>` + rows.map((f) => `
+    <details id="f-${f.id}">
+      <summary><span class="n">${fmt(f.count)}</span><span class="t">${esc(f.title)}</span>
+        <span class="pill ${f.pass ? "ok" : cls}">${f.pass ? "Passes" : lvl === "block" ? "Blocks" : lvl === "warn" ? "Clean up" : "Needs an answer"}</span></summary>
+      <div class="body"><p>${esc(f.summary)}</p>
+        ${f.evidence.filter(Boolean).length ? `<ul>${f.evidence.filter(Boolean).map((e) => `<li>${esc(e)}</li>`).join("")}</ul>` : ""}
+        ${f.fix ? `<p class="fix">${esc(f.fix)}</p>` : ""}
+        ${f.gary.length ? `<p class="ref">Audit points: ${f.gary.join(", ")}</p>` : ""}
+      </div>
+    </details>`).join("") + `</div>`;
+}).join("");
+
+// ---- impact explorer
+const keys = Object.keys(R.impact).sort((a, b) => R.impact[b].productLayers - R.impact[a].productLayers);
+let current = keys.find((k) => R.impact[k].name === "neutral/700") || keys[0];
+function drawList() {
+  const q = $("#q").value.trim().toLowerCase();
+  const shown = keys.filter((k) => !q || k.toLowerCase().includes(q) || R.impact[k].code.includes(q)).slice(0, 80);
+  $("#list").innerHTML = shown.map((k) => `<button type="button" data-k="${esc(k)}" aria-current="${k === current}"><span>${esc(R.impact[k].name)}</span><small>${fmt(R.impact[k].productLayers)}</small></button>`).join("") || `<p class="ref" style="padding:8px 12px">No token matches.</p>`;
+}
+function drawImpact() {
+  const v = R.impact[current];
+  const vals = Object.entries(v.values).map(([m, x]) => `<span class="mono">${typeof x === "string" && x.startsWith("#") ? `<i class="swatch" style="background:${esc(x)}"></i>` : ""}${esc(m)}: ${esc(x)}</span>`).join(" &nbsp; ");
+  const comps = v.components.filter(([n]) => !n.startsWith("("));
+  const docs = v.components.find(([n]) => n.startsWith("("));
+  const max = Math.max(1, ...comps.map(([, n]) => n));
+  $("#impact").innerHTML = `<h3>${esc(v.name)}</h3>
+    <p class="ref">${esc(v.collection)} · <code>${esc(v.code)}</code></p><p>${vals}</p>
+    <p><b>${fmt(v.productLayers)}</b> component layers in <b>${comps.length}</b> components move if this value changes${v.aliases.length ? `, through <b>${v.aliases.length}</b> tokens that point to it` : ""}.${docs ? ` Another ${docs[1]} are documentation swatches.` : ""}</p>
+    ${v.aliases.length ? `<p class="ref">Aliased by: ${v.aliases.map(esc).join(", ")}</p>` : ""}
+    ${comps.slice(0, 16).map(([n, c]) => `<div class="bar"><span>${esc(n)}</span><i style="width:${(100 * c) / max}%"></i><span>${c}</span></div>`).join("")}
+    ${comps.length > 16 ? `<p class="ref">and ${comps.length - 16} more components</p>` : ""}
+    ${v.productLayers === 0 ? `<p class="fix">No component uses this token. Changing or removing it breaks nothing.</p>` : ""}`;
+}
+$("#q").addEventListener("input", drawList);
+$("#list").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { current = b.dataset.k; drawList(); drawImpact(); } });
+drawList(); drawImpact();
+
+// ---- audit points
+let filter = "all";
+function drawPoints() {
+  $("#filters").innerHTML = [["all", `All ${POINTS.length}`], ...Object.entries(TYPE).map(([k, [l]]) => [k, `${l} · ${POINTS.filter((p) => p[4] === k).length}`])]
+    .map(([k, l]) => `<button type="button" data-f="${k}" aria-pressed="${filter === k}">${l}</button>`).join("");
+  $("#points tbody").innerHTML = POINTS.filter((p) => filter === "all" || p[4] === filter).map(([n, min, topic, ask, type, by]) => {
+    const f = byId[by];
+    const closed = by === "impact" ? `<a href="#impact">Impact map</a>` : by === "contract" ? `AI contract, section 3` : f ? `<a href="#f-${f.id}">${esc(f.title)}</a> <span class="ref">(${fmt(f.count)})</span>` : esc(by);
+    return `<tr><td class="num">${n}</td><td class="num">${min}</td><td><b>${esc(topic)}</b></td><td>${esc(ask)}</td><td><span class="pill ${TYPE[type][1]}">${TYPE[type][0]}</span><br>${closed}</td></tr>`;
+  }).join("");
+}
+$("#filters").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { filter = b.dataset.f; drawPoints(); } });
+document.addEventListener("click", (e) => { const a = e.target.closest('a[href^="#f-"]'); if (a) { const d = document.querySelector(a.getAttribute("href")); if (d) d.open = true; } });
+drawPoints();
+</script>
+</body>
+</html>

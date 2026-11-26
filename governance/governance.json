@@ -1,0 +1,261 @@
+{
+  "_readme": "The decisions of the design system, written where a machine can read them. People edit this file through a reviewed change; the checks and the AI contract are generated from it.",
+  "owner": "TBD by Gary",
+  "typeface": "Barlow",
+  "mobileBreakpoint": 768,
+  "collectionOrder": [
+    "Primitives",
+    "Semantic",
+    "Dimension",
+    "Component"
+  ],
+  "privateCollections": [
+    "Primitives"
+  ],
+  "publicCollections": [
+    "Semantic",
+    "Dimension",
+    "Component"
+  ],
+  "ignoredPages": [
+    "internal only",
+    "_internal",
+    "deprecated"
+  ],
+  "deprecated": [
+    {
+      "what": "department colours and anything named after a department (dept/*, and Department / Accent / Fill variants called Digital, Mortgages, Products or Talent)",
+      "reason": "the file's own note says: \"Remove/delete 'Department' colors entirely - these are no longer used.\" The four hues stay as brand accents (accent/red, purple, blue, stone).",
+      "prefixes": [
+        "dept/"
+      ],
+      "variantAxes": [
+        "Department",
+        "Accent",
+        "Fill"
+      ],
+      "variantValues": [
+        "Digital",
+        "Mortgages",
+        "Products",
+        "Talent"
+      ],
+      "decidedBy": "note inside the Figma file (Colour page)",
+      "removeBy": "done in the proposed 1.1.0"
+    }
+  ],
+  "variantBudget": 12,
+  "rampMinimumUses": 3,
+  "contrastPairs": [
+    [
+      "text/default",
+      "bg/page",
+      4.5
+    ],
+    [
+      "text/default",
+      "bg/surface",
+      4.5
+    ],
+    [
+      "text/default",
+      "bg/subtle",
+      4.5
+    ],
+    [
+      "text/muted",
+      "bg/page",
+      4.5
+    ],
+    [
+      "text/muted",
+      "bg/surface",
+      4.5
+    ],
+    [
+      "text/muted",
+      "bg/subtle",
+      4.5
+    ],
+    [
+      "text/link",
+      "bg/page",
+      4.5
+    ],
+    [
+      "text/link",
+      "bg/surface",
+      4.5
+    ],
+    [
+      "text/placeholder",
+      "bg/surface",
+      4.5
+    ],
+    [
+      "text/inverted",
+      "bg/inverted",
+      4.5
+    ],
+    [
+      "button/label",
+      "bg/page",
+      4.5
+    ],
+    [
+      "button/label-hover",
+      "button/fill-hover",
+      4.5
+    ],
+    [
+      "feedback/error",
+      "feedback/error-bg",
+      4.5
+    ],
+    [
+      "feedback/success",
+      "feedback/success-bg",
+      4.5
+    ],
+    [
+      "feedback/warning",
+      "feedback/warning-bg",
+      4.5
+    ],
+    [
+      "feedback/info",
+      "feedback/info-bg",
+      4.5
+    ],
+    [
+      "feedback/error",
+      "bg/surface",
+      4.5
+    ],
+    [
+      "feedback/success",
+      "bg/surface",
+      4.5
+    ],
+    [
+      "feedback/warning",
+      "bg/surface",
+      4.5
+    ],
+    [
+      "feedback/info",
+      "bg/surface",
+      4.5
+    ],
+    [
+      "border/field",
+      "bg/surface",
+      3.0
+    ],
+    [
+      "icon/default",
+      "bg/page",
+      3.0
+    ],
+    [
+      "icon/muted",
+      "bg/page",
+      3.0
+    ],
+    [
+      "text/on-accent",
+      "bg/accent-red",
+      4.5
+    ],
+    [
+      "text/on-accent",
+      "bg/accent-purple",
+      4.5
+    ],
+    [
+      "text/on-accent",
+      "bg/accent-blue",
+      4.5
+    ],
+    [
+      "text/on-accent",
+      "bg/accent-stone",
+      4.5
+    ],
+    [
+      "text/inverted",
+      "bg/inverted-raised",
+      4.5
+    ],
+    [
+      "text/access-muted",
+      "bg/page",
+      4.5
+    ],
+    [
+      "text/access-muted",
+      "bg/surface",
+      4.5
+    ]
+  ],
+  "neverRules": [
+    "Round a button corner. 0px buttons on 20px cards is the brand signature.",
+    "Add a shadow to layout. Depth comes from contrast between sections; only overlays carry elevation.",
+    "Use the team gradient as a section background or on body text.",
+    "Add a state, tone or size that is not listed in section 5. Propose it instead.",
+    "Set text in capitals.",
+    "Use an accent colour to mean a status, or a status colour as decoration."
+  ],
+  "readingRules": [
+    "Take: token names and values, component names, variant names, component descriptions.",
+    "Ignore: the layout of the documentation pages. Small eyebrow titles over large text, sub-headings and annotation cards are page furniture, not product patterns.",
+    "Ignore: anything on a page numbered 90 (deprecated) or 99 (internal).",
+    "Ignore: sticky notes and 'Claude list' comments. They are open questions, not decisions.",
+    "Tone of voice: take the principles as writing rules. Do not copy the page's own example sentences into a product."
+  ],
+  "sliceTokens": [
+    "button",
+    "input",
+    "badge",
+    "form-field"
+  ],
+  "sliceComponents": {
+    "Button": {
+      "drop": {
+        "State": [],
+        "Style": []
+      },
+      "use": [
+        "PROPOSAL, pending the owner: one Solid button per view is the primary action; Outline is secondary; Ghost only inside dense toolbars.",
+        "Hover and Focus are behaviours of one button in code, not separate designs. Do not draw them as separate components."
+      ]
+    },
+    "Input": {
+      "drop": {
+        "State": [
+          "Filled"
+        ]
+      },
+      "use": [
+        "PROPOSAL, pending the owner: 'Filled' is not a state, it is a Default input with a value.",
+        "The message slot under the field is always present, so validation never shifts the layout."
+      ]
+    },
+    "Badge": {
+      "drop": {},
+      "use": [
+        "PROPOSAL, pending the owner: a tone carries a meaning (Success, Info, Warning, Error). Neutral, Muted and Solid carry none; use Neutral unless told otherwise.",
+        "Never choose a tone for decoration."
+      ]
+    }
+  },
+  "referenceOnly": [
+    "gradient-stop/"
+  ],
+  "artworkPages": [
+    "logo",
+    "cover",
+    "typography"
+  ],
+  "artwork": "The logo and the brand illustrations are used as supplied. They are not bound to mode variables and not restyled, so the colour, text-style and effect checks skip them. The typography page's weight samples are also exempt: they exist to show weights that have no style."
+}
