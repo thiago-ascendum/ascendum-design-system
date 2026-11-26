@@ -121,3 +121,6 @@
 .fd-banner { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: var(--space-2xs); font: 400 var(--text-footnote-size)/1.3 Barlow, sans-serif; color: var(--on-surface-variant); }
 .sbdocs .fd-banner a.fd-link { margin-left: 0; }
 .fd-figma-img { display: block; width: 100%; max-width: 1360px; height: auto; border-radius: var(--container-radius); }
+
+/* Grids size their single column to the frame, never to the widest content, so the side column never overlaps. */
+.fd-main, .fd-group, .fd-row, .fd-dark { grid-template-columns: minmax(0, 1fr); min-width: 0; }
