@@ -55,7 +55,7 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--badge-gap` | component/badge/gap | 6 |  | Gap between a pill's dot and its label. |
 | `--badge-padding-h` | component/badge/padding-h | 14 |  | Pill horizontal padding. |
 | `--badge-padding-v` | component/badge/padding-v | 6 |  | Pill vertical padding. |
-| `--button-padding-h` | component/button/padding-h | 28 | 22 | Horizontal button padding |
+| `--button-padding-h` | component/button/padding-h | 30 | 22 | Horizontal button padding |
 | `--button-padding-v` | component/button/padding-v | 16 | 12 | Button: top and bottom padding |
 | `--form-field-gap` | component/form-field/gap | 8 |  | Gap between label, field and message. |
 | `--input-padding-h` | component/input/padding-h | 16 |  | Input: left and right padding. |
