@@ -24,7 +24,7 @@ const preview = {
     layout: 'centered',
     controls: { expanded: true },
     docs: { page: DocPage, container: ThemedDocsContainer },
-    options: { storySort: { order: ['Start here', ['Getting started', 'Lifecycle', 'Audit status', 'Changelog', 'Governance'], 'Foundations', 'Components', ['Catalogue']] } },
+    options: { storySort: { order: ['Start here', ['Getting started', 'Lifecycle', 'Audit status', 'Changelog', 'Every change', 'Governance'], 'Foundations', 'Components', ['Catalogue']] } },
   },
 };
 

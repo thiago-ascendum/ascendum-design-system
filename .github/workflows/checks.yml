@@ -19,9 +19,13 @@ jobs:
         # Lists every token, component, property and text style a consumer would lose. It reports, it does not block.
         run: python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json
 
+      - name: Every change since the file as received
+        # The full list for the changelog, matched by Figma id. Written from the files, not from memory.
+        run: python3 pipeline/06_changes.py build/before/ds-snapshot.json build/ds-snapshot.json build
+
       - name: Generated files match the snapshot
         # Tokens and the AI contract are never edited by hand.
-        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md build/components.json build/text-styles.json build/contracts.json build/breaking.json
+        run: git diff --exit-code -- build/tokens.json build/tokens.css build/AI-CONTRACT.md build/components.json build/text-styles.json build/contracts.json build/breaking.json build/changes.json build/CHANGES.md
 
       - name: Before and after
         run: python3 pipeline/03_compare.py build/before/report.json build/report.json build/compare.js
