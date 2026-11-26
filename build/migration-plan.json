@@ -1663,12 +1663,7 @@
     "collection": "Component",
     "description": "Horizontal button padding. Reconciles Button.jsx (28px) and .btn (22px), they were the same button at desktop and mobile, never tokenised.",
     "id": "VariableID:42:4",
-    "name": "component/button/padding-h",
-    "values": {
-     "Desktop": {
-      "value": 30
-     }
-    }
+    "name": "component/button/padding-h"
    },
    {
     "collection": "Component",
