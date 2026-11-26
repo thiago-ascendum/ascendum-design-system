@@ -4,45 +4,94 @@ import { Hero, Section, Index, Cards, Steps, Table, List, CodeCounts } from './_
 <Meta title="Start here/Getting started" />
 
 <Hero title="Ascendum Design System">
-  AI proposes. Checks verify. A person approves. Figma is the source of truth, and everything here is generated from it.
+  One Figma library and one set of tokens in code. AI proposes, checks verify, a person approves. Figma is the source of truth, and everything here is generated from it.
 </Hero>
 
-<Index items={['Four steps', 'Try it', 'Where things live', 'What is in code', 'Known gaps']} />
+<Index items={['Pick your path', 'Four steps', 'Do and don\'t', 'Before you hand off', 'Words we use', 'Where things live', 'What is in code', 'Known gaps', 'Need help']} />
 
-<Section n={1} title="Four steps" lead="This is the coded side of the library. The tokens are generated from the Figma file, and the three components are built from those tokens, binding for binding.">
+<Section n={1} title="Pick your path" lead="Start from what you came to do. Each path is three moves.">
+  <Cards items={[
+    { title: 'I design screens', text: ['Turn the library on in your Figma file.', 'Place components and bind colour roles.', 'Check Dark and Mobile by switching modes.'] },
+    { title: 'I build in code', text: [<>Import <code>build/tokens.css</code>.</>, 'Use role variables, never primitives.', <>Read <code>build/AI-CONTRACT.md</code> before generating UI.</>] },
+    { title: 'I want to change the library', text: ['Check Known gaps on this page first.', 'Change the design in Figma and take a snapshot.', 'Let the checks run: the gate decides what is published.'] },
+  ]} />
+</Section>
+
+<Section n={2} title="Four steps" lead="This is the coded side of the library. The tokens are generated from the Figma file, and the components are built from those tokens, binding for binding.">
   <Steps items={[
     ['Use the tokens', <>Import <code>build/tokens.css</code>. Every colour, radius, size and space is a CSS custom property with a light and a dark value.</>],
     ['Bind roles, not colours', <>Use <code>--on-surface</code>, <code>--surface-container</code>, <code>--on-surface-success</code>. The primitives (<code>--neutral-750</code>, <code>--brand-midnight</code>) sit behind the roles and you should never need one.</>],
-    ['Place components, never rebuild them', <>Button, Input and Badge are in <code>src/components</code>. If the piece exists, use it and set its properties.</>],
+    ['Place components, never rebuild them', <>The coded components are in <code>src/components</code>, counted below in What is in code. If the piece exists, use it and set its properties.</>],
     ['Change it the right way', 'Change the design in Figma, take a snapshot, and let the checks run. Nobody edits a token by hand.'],
   ]} />
 </Section>
 
-<Section n={2} title="Try it">
-  <Cards items={[
-    { title: 'Switch the theme', text: 'Switch Theme in the toolbar: the whole canvas changes because the tokens change.' },
-    { title: 'Open a component', text: 'Open Components / Button and use the controls.' },
-    { title: 'Read the colours', text: 'Open Foundations / Colour: it is read live from build/tokens.json.' },
+<Section n={3} title="Do and don't" lead="The four mistakes we see most, and what to do instead.">
+  <Cards columns={2} items={[
+    { tone: 'do', title: 'Do: bind roles', text: <>Use <code>--on-surface</code> or <code>--on-surface-variant</code> for text.</> },
+    { tone: 'avoid', title: 'Don\'t: pick a primitive', text: <>Never use <code>--neutral-750</code> or a hex code in a component.</> },
+  ]} />
+  <Cards columns={2} items={[
+    { tone: 'do', title: 'Do: let the theme switch', text: <>Set <code>data-theme="dark"</code> and every role changes at once.</> },
+    { tone: 'avoid', title: 'Don\'t: write a dark override', text: 'A colour written for dark by hand stops following the tokens.' },
+  ]} />
+  <Cards columns={2} items={[
+    { tone: 'do', title: 'Do: use the component', text: 'Import it and set its properties.' },
+    { tone: 'avoid', title: 'Don\'t: copy its CSS', text: 'A copy does not get the next fix.' },
+  ]} />
+  <Cards columns={2} items={[
+    { tone: 'do', title: 'Do: grey text on light surfaces', text: <>Grey or status text sits on <code>--surface</code>, <code>--surface-container</code> or <code>--surface-container-low</code>.</> },
+    { tone: 'avoid', title: 'Don\'t: grey text on hover or pressed', text: <>On <code>--surface-container-highest</code>, <code>--surface-hover</code> or <code>--surface-pressed</code> it falls under AA. Use <code>--on-surface</code> there.</> },
   ]} />
 </Section>
 
-<Section n={3} title="Where things live">
+<Section n={4} title="Before you hand off" lead="Run this list before you open a pull request. If one item fails, the screen is not ready.">
+  <List items={[
+    'Every colour, space and radius comes from a token. No hex codes, no pixel values for spacing.',
+    'It reads well with the theme switched to Dark.',
+    'It holds at mobile width.',
+    'Grey text sits only on surface, container or container-low.',
+    'Existing components are used, not copied.',
+    'The checks pass: the gate is open.',
+  ]} />
+</Section>
+
+<Section n={5} title="Words we use">
+  <Table head={['Word', 'What it means']} rows={[
+    ['Role', <>A colour named by its job, like <code>--on-surface</code> or <code>--outline</code>. You use roles.</>],
+    ['Primitive', <>A raw value, like <code>--neutral-750</code>. It sits behind a role. You never use it directly.</>],
+    ['Mode', 'Light or Dark, Desktop or Mobile. Switching it changes every value at once.'],
+    ['Context', <>Default or Inverted. <code>data-context="inverted"</code> flips a section to the dark band.</>],
+    ['Variant', 'One state or size of a component, chosen with its properties.'],
+    ['Gate', 'The checks that run on every change. A change that fails them is not published.'],
+  ]} />
+</Section>
+
+<Section n={6} title="Where things live">
   <Table head={['Where', 'What']} rows={[
-    [<a href="https://www.figma.com/design/5lhRMZkLHZijqgdigjk3J1/Ascendum-Design-System">Figma file</a>, 'The source. Proposed version 1.1.0.'],
-    [<a href="/report/" target="_top">Health report</a>, 'The gate, every check, the before and after, the impact map.'],
+    [<a href="https://www.figma.com/design/5lhRMZkLHZijqgdigjk3J1/Ascendum-Design-System">Figma file</a>, 'The source. Proposed version 1.1.0. Its page 01 is the designer version of this page.'],
+    [<a href="report/" target="_top">Health report</a>, 'The gate, every check, the before and after, the impact map.'],
     [<a href="https://github.com/thiago-ascendum/ascendum-design-system">Repository</a>, 'Tokens, AI contract, rules, checks, components.'],
     [<code>build/AI-CONTRACT.md</code>, 'What an AI tool may use, must never use, and should ignore.'],
   ]} />
 </Section>
 
-<Section n={4} title="What is in code" lead="Counted from build/components.json and from the files in src/components.">
+<Section n={7} title="What is in code" lead="Counted from build/components.json and from the files in src/components.">
   <CodeCounts />
 </Section>
 
-<Section n={5} title="Known gaps">
+<Section n={8} title="Known gaps">
   <Cards items={[
     { tone: 'ask', title: 'No named owner', text: 'The system has no named owner yet, so version 1.1.0 is proposed, not approved.' },
-    { tone: 'ask', title: 'Three components in code', text: 'Three components are in code. The Figma library has 46.' },
+    { tone: 'ask', title: 'Fewer components in code', text: 'Code has fewer components than the Figma library. What is in code shows both numbers.' },
     { tone: 'ask', title: 'Publishing never tested', text: 'Publishing the Figma library to a file that uses it has never been tested.' },
+  ]} />
+</Section>
+
+<Section n={9} title="Need help" lead="There is no named owner yet, so questions go where everyone can see them.">
+  <Cards items={[
+    { title: 'A question about one piece', text: 'Leave a Figma comment on that component page.' },
+    { title: 'Something is missing or wrong', text: 'Open an issue in the repository, or propose it in Figma as page 03 explains.' },
+    { title: 'Did something change?', text: 'Start here / Changelog lists every change and what it breaks.' },
   ]} />
 </Section>
