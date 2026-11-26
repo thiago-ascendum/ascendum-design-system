@@ -17,8 +17,8 @@
   "aliasCount": 170,
   "gate": "OPEN",
   "summary": {
-   "block-pass": 5,
-   "warn-pass": 10,
+   "block-pass": 6,
+   "warn-pass": 11,
    "warn-fail": 1,
    "decision": 4
   },
@@ -169,6 +169,30 @@
     18
    ],
    "fix": "Adjust the token value, or restrict where the pair may be used in the contract.",
+   "kind": "A",
+   "pass": true
+  },
+  {
+   "id": "variant-text-bound",
+   "level": "block",
+   "title": "Every variant keeps the text when the variant changes",
+   "count": 0,
+   "summary": "Checked 0 component sets. In every variant, each text layer must be bound to the set's text property (Label, Value...). If one is not, switching an instance to that variant replaces the designer's text with the default.",
+   "evidence": [],
+   "gary": [],
+   "fix": "Bind the text layer to the property in that variant: select it, then Apply text property in the right panel.",
+   "kind": "A",
+   "pass": true
+  },
+  {
+   "id": "variant-timers",
+   "level": "warn",
+   "title": "No variant changes on its own after a delay",
+   "count": 0,
+   "summary": "An after-delay interaction on a variant also runs on every static instance of it in prototype mode, so the documentation grids change by themselves. Use mouse down and mouse up instead.",
+   "evidence": [],
+   "gary": [],
+   "fix": "Replace the after-delay interaction with mouse down to show the state and mouse up to leave it.",
    "kind": "A",
    "pass": true
   },
@@ -3424,7 +3448,7 @@
      13
     ],
     [
-     "Table Row",
+     "Avatar",
      12
     ],
     [
@@ -3436,7 +3460,7 @@
      12
     ],
     [
-     "Avatar",
+     "Table Row",
      12
     ],
     [
@@ -3456,11 +3480,11 @@
      9
     ],
     [
-     "Tab",
+     "Navigation Bar",
      8
     ],
     [
-     "Navigation Bar",
+     "Tab",
      8
     ],
     [
@@ -3472,14 +3496,6 @@
      7
     ],
     [
-     "Empty State",
-     6
-    ],
-    [
-     "Modal",
-     6
-    ],
-    [
      "Code Block",
      6
     ],
@@ -3488,11 +3504,11 @@
      6
     ],
     [
-     "Accordion Item",
+     "Empty State",
      6
     ],
     [
-     "Drawer",
+     "Modal",
      6
     ],
     [
@@ -3504,12 +3520,24 @@
      6
     ],
     [
+     "Accordion Item",
+     6
+    ],
+    [
+     "Drawer",
+     6
+    ],
+    [
      "Section / Let's Connect",
      5
     ],
     [
      "Key Stakeholders Card",
      5
+    ],
+    [
+     "Section / Showcase",
+     4
     ],
     [
      "Inline Edit",
@@ -3520,19 +3548,15 @@
      4
     ],
     [
-     "Section / Showcase",
-     4
-    ],
-    [
      "Badge",
      3
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
@@ -3638,11 +3662,11 @@
      25
     ],
     [
-     "Search Bar",
+     "Overview Card",
      24
     ],
     [
-     "Overview Card",
+     "Search Bar",
      24
     ],
     [
@@ -3670,11 +3694,11 @@
      13
     ],
     [
-     "Table Row",
+     "Section / Columns",
      12
     ],
     [
-     "Section / Columns",
+     "Table Row",
      12
     ],
     [
@@ -3694,11 +3718,11 @@
      9
     ],
     [
-     "Tab",
+     "Navigation Bar",
      8
     ],
     [
-     "Navigation Bar",
+     "Tab",
      8
     ],
     [
@@ -3714,14 +3738,6 @@
      7
     ],
     [
-     "Empty State",
-     6
-    ],
-    [
-     "Modal",
-     6
-    ],
-    [
      "Code Block",
      6
     ],
@@ -3730,11 +3746,11 @@
      6
     ],
     [
-     "Accordion Item",
+     "Empty State",
      6
     ],
     [
-     "Drawer",
+     "Modal",
      6
     ],
     [
@@ -3746,16 +3762,16 @@
      6
     ],
     [
+     "Accordion Item",
+     6
+    ],
+    [
+     "Drawer",
+     6
+    ],
+    [
      "Section / Let's Connect",
      5
-    ],
-    [
-     "Inline Edit",
-     4
-    ],
-    [
-     "Menu Item",
-     4
     ],
     [
      "Key Stakeholders Card",
@@ -3766,15 +3782,23 @@
      4
     ],
     [
+     "Inline Edit",
+     4
+    ],
+    [
+     "Menu Item",
+     4
+    ],
+    [
      "Badge",
      3
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
@@ -4471,11 +4495,11 @@
      7
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
@@ -4495,12 +4519,16 @@
      4
     ],
     [
+     "Skeleton",
+     4
+    ],
+    [
      "Table Row",
      4
     ],
     [
-     "Skeleton",
-     4
+     "Button",
+     3
     ],
     [
      "Checkbox",
@@ -4508,10 +4536,6 @@
     ],
     [
      "Accordion Item",
-     3
-    ],
-    [
-     "Button",
      3
     ],
     [
@@ -4527,6 +4551,10 @@
      2
     ],
     [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
      "Divider",
      2
     ],
@@ -4535,11 +4563,11 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Combobox",
+     1
     ],
     [
-     "Combobox",
+     "Team Card",
      1
     ],
     [
@@ -4552,10 +4580,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -4629,11 +4653,11 @@
      2
     ],
     [
-     "Button",
+     "Slider",
      1
     ],
     [
-     "Slider",
+     "Button",
      1
     ]
    ],
@@ -4742,11 +4766,11 @@
      4
     ],
     [
-     "Toast",
+     "Section / Full Width",
      3
     ],
     [
-     "Section / Full Width",
+     "Toast",
      3
     ],
     [
@@ -4766,10 +4790,6 @@
      2
     ],
     [
-     "Code Block",
-     1
-    ],
-    [
      "Stat Card",
      1
     ],
@@ -4783,6 +4803,10 @@
     ],
     [
      "Modal",
+     1
+    ],
+    [
+     "Code Block",
      1
     ]
    ],
@@ -4872,16 +4896,20 @@
      3
     ],
     [
-     "Section / Showcase",
-     2
-    ],
-    [
      "Key Stakeholders Card",
      2
     ],
     [
      "Section / Quote",
      2
+    ],
+    [
+     "Section / Showcase",
+     2
+    ],
+    [
+     "Team Card",
+     1
     ],
     [
      "Code Block",
@@ -4901,10 +4929,6 @@
     ],
     [
      "Jira Annotation",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -5055,11 +5079,11 @@
      6
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -5085,11 +5109,11 @@
      2
     ],
     [
-     "Colour",
+     "Page rhythm",
      1
     ],
     [
-     "Page rhythm",
+     "Colour",
      1
     ]
    ]
@@ -5148,20 +5172,12 @@
      4
     ],
     [
-     "Checkbox",
-     3
-    ],
-    [
      "Accordion Item",
      3
     ],
     [
-     "Radio",
-     2
-    ],
-    [
-     "Toggle",
-     2
+     "Checkbox",
+     3
     ],
     [
      "Divider",
@@ -5184,12 +5200,16 @@
      2
     ],
     [
-     "Key Stakeholders Card",
+     "Radio",
      2
     ],
     [
-     "Button",
-     1
+     "Toggle",
+     2
+    ],
+    [
+     "Key Stakeholders Card",
+     2
     ],
     [
      "Alert",
@@ -5205,6 +5225,10 @@
     ],
     [
      "Team Card",
+     1
+    ],
+    [
+     "Button",
      1
     ]
    ],
@@ -5267,16 +5291,12 @@
      73
     ],
     [
-     "Checkbox",
-     3
-    ],
-    [
      "Button",
      3
     ],
     [
-     "Menu Item",
-     2
+     "Checkbox",
+     3
     ],
     [
      "Input",
@@ -5303,6 +5323,18 @@
      2
     ],
     [
+     "Menu Item",
+     2
+    ],
+    [
+     "Combobox",
+     1
+    ],
+    [
+     "Slider",
+     1
+    ],
+    [
      "Inline Edit",
      1
     ],
@@ -5320,14 +5352,6 @@
     ],
     [
      "Table Row",
-     1
-    ],
-    [
-     "Combobox",
-     1
-    ],
-    [
-     "Slider",
      1
     ]
    ],
@@ -6926,15 +6950,15 @@
      6
     ],
     [
+     "Team Card",
+     5
+    ],
+    [
      "Alert",
      5
     ],
     [
      "Table",
-     5
-    ],
-    [
-     "Team Card",
      5
     ],
     [
@@ -6966,10 +6990,6 @@
      3
     ],
     [
-     "Drawer",
-     2
-    ],
-    [
      "Key Stakeholders Card",
      2
     ],
@@ -6979,6 +6999,10 @@
     ],
     [
      "Section / Showcase",
+     2
+    ],
+    [
+     "Drawer",
      2
     ],
     [
@@ -7308,6 +7332,10 @@
      3
     ],
     [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
      "Divider",
      2
     ],
@@ -7328,8 +7356,8 @@
      2
     ],
     [
-     "Key Stakeholders Card",
-     2
+     "Team Card",
+     1
     ],
     [
      "Alert",
@@ -7341,10 +7369,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -7528,11 +7552,11 @@
      6
     ],
     [
-     "Key Stakeholders Card",
+     "Section / Quote",
      2
     ],
     [
-     "Section / Quote",
+     "Key Stakeholders Card",
      2
     ],
     [
@@ -14096,7 +14120,7 @@
      6
     ],
     [
-     "Select",
+     "Team Card",
      5
     ],
     [
@@ -14108,8 +14132,12 @@
      5
     ],
     [
-     "Team Card",
+     "Select",
      5
+    ],
+    [
+     "Footer",
+     4
     ],
     [
      "Breadcrumb Item",
@@ -14128,24 +14156,16 @@
      4
     ],
     [
-     "Footer",
-     4
+     "Section / Full Width",
+     3
     ],
     [
      "Combobox",
      3
     ],
     [
-     "Section / Full Width",
-     3
-    ],
-    [
      "Toast",
      3
-    ],
-    [
-     "Drawer",
-     2
     ],
     [
      "Key Stakeholders Card",
@@ -14157,6 +14177,10 @@
     ],
     [
      "Section / Showcase",
+     2
+    ],
+    [
+     "Drawer",
      2
     ],
     [
@@ -14944,11 +14968,11 @@
      45
     ],
     [
-     "Checkbox",
+     "Button",
      3
     ],
     [
-     "Button",
+     "Checkbox",
      3
     ],
     [
@@ -15416,15 +15440,15 @@
      2
     ],
     [
-     "Button",
-     1
-    ],
-    [
      "Slider",
      1
     ],
     [
      "Toggle",
+     1
+    ],
+    [
+     "Button",
      1
     ]
    ],
@@ -17675,15 +17699,15 @@
      5
     ],
     [
-     "Footer",
-     4
-    ],
-    [
      "Avatar",
      4
     ],
     [
      "Menu Item",
+     4
+    ],
+    [
+     "Footer",
      4
     ],
     [
@@ -17695,15 +17719,15 @@
      4
     ],
     [
-     "File Uploader",
-     3
-    ],
-    [
      "Tab",
      3
     ],
     [
      "Jira Annotation",
+     3
+    ],
+    [
+     "File Uploader",
      3
     ],
     [
@@ -17905,15 +17929,15 @@
      12
     ],
     [
-     "Select",
-     10
-    ],
-    [
      "Radio",
      10
     ],
     [
      "Toggle",
+     10
+    ],
+    [
+     "Select",
      10
     ],
     [
@@ -17929,6 +17953,10 @@
      6
     ],
     [
+     "Navigation Bar",
+     5
+    ],
+    [
      "Menu Item",
      5
     ],
@@ -17937,11 +17965,7 @@
      5
     ],
     [
-     "Navigation Bar",
-     5
-    ],
-    [
-     "Combobox",
+     "Avatar",
      4
     ],
     [
@@ -17949,16 +17973,12 @@
      4
     ],
     [
-     "Avatar",
-     4
-    ],
-    [
      "Side Navigation",
      4
     ],
     [
-     "Breadcrumb Item",
-     3
+     "Combobox",
+     4
     ],
     [
      "Toast",
@@ -17967,6 +17987,18 @@
     [
      "Side Nav Item",
      3
+    ],
+    [
+     "Breadcrumb Item",
+     3
+    ],
+    [
+     "Empty State",
+     2
+    ],
+    [
+     "Modal",
+     2
     ],
     [
      "Key Stakeholders Card",
@@ -17978,14 +18010,6 @@
     ],
     [
      "Section / Quote",
-     2
-    ],
-    [
-     "Empty State",
-     2
-    ],
-    [
-     "Modal",
      2
     ],
     [
@@ -18023,7 +18047,7 @@
      46
     ],
     [
-     "Group Cards",
+     "Overview",
      42
     ]
    ]
