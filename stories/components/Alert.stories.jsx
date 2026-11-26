@@ -30,7 +30,7 @@ export default {
         ['radius/surface', '--radius-surface', 'Corners'],
         ['size/icon-md', '--size-icon-md', 'Icon size'],
         ['on-surface', '--on-surface', 'Icon colour of the Neutral tone'],
-        ['font-size/h3', '--text-h3-size', 'Title size'],
+        ['font-size/h5', '--text-h5-size', 'Title size'],
         ['font-size/body-lg', '--text-body-lg-size', 'Text size'],
         ['on-surface', '--on-surface', 'Title colour'],
         ['on-surface-variant', '--on-surface-variant', 'Text colour'],

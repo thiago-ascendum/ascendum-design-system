@@ -23,6 +23,13 @@ Clean-up after the design review of 5 November.
 | A colour token | Colour tokens are named by their job now: surface, on-surface, primary, outline and their inverse versions. 65 names became 41 roles and 13 Context tokens. | Nothing in Figma: every binding moved with the rename. In code, use the table below. |
 | A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: text/access-muted to on-surface-variant, UI/Tag and UI/Eyebrow to UI/Label. |
 
+### Type scale: H1 to H7, one size layer, Text 200%
+
+- Headings run H1 to H7 without gaps, biggest first. `Heading/H3` (20 px) is now `Heading/H5` and `Body/Large Bold` is now `Heading/H6`, so no text changed size. New: `Heading/H1` (48 / 36), `Heading/H3` (32 / 28), `Heading/H7` (16 bold).
+- Every size comes from one Accessibility layer (`type-size/13` to `type-size/56`), as in the DS StratNova. Roles in Dimension (`font-size/*`) point to it per Desktop and Mobile.
+- Text 200% doubles every size, as browser zoom does (WCAG 1.4.4). In code sizes are rem, and `[data-text-scale="200"]` reproduces the mode.
+- In code, `--text-h3-size` for the 20 px size becomes `--text-h5-size`.
+
 ### Code props named like Figma
 
 Code mirrors Figma, name for name. A new blocking check, `pipeline/07_props_mirror.py`, compares every coded component with the Figma component properties in the snapshot. The rule: the Figma property in camelCase is the prop (`Leading icon` is `leadingIcon`), options in lower case with hyphens (`Line Large` is `line-large`). Hover, Focus, Pressed and Filled come from the browser, so `state` only holds what a person sets.

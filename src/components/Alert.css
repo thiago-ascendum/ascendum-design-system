@@ -7,7 +7,7 @@
 }
 .ds-alert__icon { flex: none; width: var(--size-icon-md); height: var(--size-icon-md); color: var(--on-surface); }
 .ds-alert__body { display: grid; gap: var(--alert-body-gap); min-width: 0; }
-.ds-alert__title { margin: 0; font: 700 var(--text-h3-size)/1.3 Barlow, system-ui, sans-serif; color: var(--on-surface); }
+.ds-alert__title { margin: 0; font: 700 var(--text-h5-size)/1.3 Barlow, system-ui, sans-serif; color: var(--on-surface); }
 .ds-alert__text { margin: 0; font: 400 var(--text-body-lg-size)/1.3 Barlow, system-ui, sans-serif; color: var(--on-surface-variant); }
 
 .ds-alert--info { background: var(--info-container); border-color: var(--on-surface-info); }

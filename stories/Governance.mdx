@@ -66,6 +66,7 @@ import { Hero, Section, Index, Cards, Steps, Table, List } from './_shared/Doc.j
     <>A new <code>component/*</code> token needs no discussion. It is that component's own business.</>,
     <>A new <code>space/*</code>, <code>radius/*</code> or <code>font-size/*</code> token changes the shared language and needs a reason.</>,
     'Ask: if this value changed, how many components should move? If the answer is one, it belongs in Component.',
+    'Type works like colour: a text style reads its size from a role (font-size/h5) and the role points to one size in the Accessibility layer (type-size/20). Never type a size by hand. Headings run H1 to H7, biggest first.',
     'Status colours come in five roles: error (solid fill), on-error (text on it), error-container, on-error-container and on-surface-error (text on any surface). Never a status hex or a status primitive.',
     'A colour is named by its job, never by where it sits or the mode it is in: surface, on-surface, primary, outline. No colour tokens per component, no inverted or dark copies. Light and Dark, and an inverted band, are modes that switch the same names.',
   ]} />
