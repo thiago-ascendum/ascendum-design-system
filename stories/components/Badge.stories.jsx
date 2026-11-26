@@ -6,11 +6,39 @@ export default {
   tags: ['autodocs'],
   args: { label: 'On track', tone: 'success', dot: false },
   parameters: {
-    docs: {
-      description: {
-        component:
-          'Small status pill. **Each tone has one meaning.** Neutral: nothing to flag. Success: done or healthy. Info: in progress or worth knowing. Warning: needs attention soon. Error: blocked or failed. **Avoid:** using it as a button or as decoration. **Open questions for the owner:** our reading is that Info means in progress: confirm what blue means, or remove it. Neutral is the only tone without a meaning: is one enough?',
-      },
+    ds: {
+      lead: 'A small status pill that shows the state of an item in a table or list. Each tone has one meaning.',
+      group: 'Atoms',
+      figma: '39:40',
+      code: 'src/components/Badge.jsx',
+      when: [
+        ['Neutral and success: calm states', 'Neutral is the default, with nothing to flag. Success means done or healthy.'],
+        ['Info and warning: attention', 'Info means in progress or worth knowing, with no problem. Warning means it needs attention soon.'],
+        ['Error: blocked', 'Error means the item is blocked or has failed.'],
+      ],
+      use: ['Pick the tone by its meaning, not by its colour.', 'Keep the label to one or two words, in sentence case: "In progress".', 'Turn the dot on where the colour should be repeated.'],
+      avoid: ['Using a badge as a button or an action.', 'Using a badge as decoration.', 'Using a tone for something other than its meaning.'],
+      tokens: [
+        ['bg/subtle', '--bg-subtle', 'Fill of the neutral tone'],
+        ['feedback/success-bg, feedback/success', '--feedback-success-bg, --feedback-success', 'Success tone: tint and text'],
+        ['feedback/info-bg, feedback/info', '--feedback-info-bg, --feedback-info', 'Info tone: tint and text'],
+        ['feedback/warning-bg, feedback/warning', '--feedback-warning-bg, --feedback-warning', 'Warning tone: tint and text'],
+        ['feedback/error-bg, feedback/error', '--feedback-error-bg, --feedback-error', 'Error tone: tint and text'],
+        ['component/badge/padding-h', '--badge-padding-h', 'Left and right padding: 14'],
+        ['component/badge/padding-v', '--badge-padding-v', 'Top and bottom padding: 6'],
+        ['component/badge/dot', '--badge-dot', 'Size of the optional dot: 6'],
+        ['radius/pill', '--radius-pill', 'Fully rounded ends'],
+      ],
+      a11y: [
+        'It is a plain span with no role. A screen reader reads the label as text, so the label has to carry the meaning.',
+        'The dot is hidden from assistive technology. It uses the same colour as the text, so it adds no cue beyond colour.',
+        'It is about 32px high (6 + 6 padding, 19.5 text). It is not interactive, so the 44px touch target does not apply.',
+      ],
+      open: [
+        'Our reading: Info means in progress. Confirm what blue means, or remove it.',
+        'Neutral is the only tone without a meaning. Is one enough?',
+      ],
+      changes: ['1.1.0: The tones Muted and Solid are gone. Instances that used them need a new tone.'],
     },
   },
 };

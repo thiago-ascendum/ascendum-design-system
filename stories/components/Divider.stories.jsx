@@ -8,11 +8,26 @@ export default {
   argTypes: { orientation: { control: 'inline-radio' } },
   decorators: [(Story) => <div style={{ width: 280, height: 48, display: 'flex', alignItems: 'center' }}><Story /></div>],
   parameters: {
-    docs: {
-      description: {
-        component:
-          'A hairline in the default border colour that separates two groups of content. **Use:** only where spacing alone is not enough, and let it run the full width or height of its group. **Avoid:** changing its weight or colour, and adding it next to a card edge or table border that already separates the content. **Open questions for the owner:** none.',
-      },
+    ds: {
+      lead: 'A thin line that separates groups of content, where spacing alone is not clear enough.',
+      group: 'Atoms',
+      figma: '45:25',
+      code: 'src/components/Divider.jsx',
+      when: [
+        ['Horizontal: between sections', 'Between sections of a list, such as Profile and Notifications in a settings page.'],
+        ['Vertical: between toolbar items', 'Between items in a row, such as Archive and Edit. It runs the full height of the row.'],
+      ],
+      use: ['Stretch it to the width or height of the content it divides.', 'Use it only where spacing alone is not clear enough.'],
+      avoid: ['Stacking it with a border or a card that already separates the content.', 'Changing its weight or colour: it has no options for either.'],
+      tokens: [
+        ['border/default', '--border-default', 'Colour of the line'],
+        ['border-width/hairline', '--border-width-hairline', 'Weight of the line: 1'],
+      ],
+      a11y: [
+        'Horizontal is a native hr and vertical is a div with the separator role and a vertical orientation, so both are announced as separators.',
+        'A divider that is purely visual is still announced. There is no option to hide it from assistive technology.',
+        'It is 1px thick and not interactive, so it takes no focus and the 44px touch target does not apply.',
+      ],
     },
   },
 };

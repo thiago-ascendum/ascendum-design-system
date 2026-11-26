@@ -7,11 +7,39 @@ export default {
   args: { name: 'Amara Bello', size: 'medium', tone: 'blue' },
   argTypes: { size: { control: 'inline-radio' }, tone: { control: 'inline-radio' } },
   parameters: {
-    docs: {
-      description: {
-        component:
-          'Initials on a soft tint, with dark text. **The tint only helps tell people apart.** It never means a team, a role or a status. **Use:** Small in tables and lists, Medium in cards, Large on a profile, and keep the same tone for the same person everywhere. **Avoid:** a saturated colour, a gradient or light text. **Open questions for the owner:** Four tones only tell people apart. Are four needed, or fewer? Photo avatars are not drawn. Needed?',
-      },
+    ds: {
+      lead: 'Initials on a soft colour tint with dark text. The tint only helps tell people apart: it never means a team, a role or a status.',
+      group: 'Atoms',
+      figma: '40:52',
+      code: 'src/components/Avatar.jsx',
+      when: [
+        ['Small, 32: tables and lists', 'Next to a name in a row, such as a team list.'],
+        ['Medium, 48: cards', 'The default size, for team and stakeholder cards.'],
+        ['Large, 72: a profile', 'The head of a profile page.'],
+      ],
+      use: ['Keep the same tone for the same person everywhere.', 'Pass the full name: the initials come from its first and last word.', 'For a photo, place an image fill on the instance in Figma.'],
+      avoid: ['Using the tone to show a team, a role or a status.', 'A saturated colour, a gradient or light text.'],
+      tokens: [
+        ['bg/accent-blue', '--bg-accent-blue', 'Blue tone'],
+        ['bg/accent-purple', '--bg-accent-purple', 'Purple tone'],
+        ['bg/accent-red', '--bg-accent-red', 'Red tone'],
+        ['bg/accent-stone', '--bg-accent-stone', 'Stone tone'],
+        ['text/on-accent', '--text-on-accent', 'Initials'],
+        ['component/avatar/size-sm', '--avatar-size-sm', 'Small: 32'],
+        ['component/avatar/size-md', '--avatar-size-md', 'Medium: 48'],
+        ['component/avatar/size-lg', '--avatar-size-lg', 'Large: 72'],
+        ['radius/pill', '--radius-pill', 'Always round'],
+      ],
+      a11y: [
+        'It is an image role with the full name as its accessible name. The initials are hidden, so the name is read once.',
+        'The tone carries no meaning, so nothing depends on colour. Two people with the same initials differ only by accessible name.',
+        'It is not interactive, so the 44px touch target does not apply. It is 32, 48 or 72px.',
+      ],
+      open: [
+        'Four tones only tell people apart. Are four needed, or fewer?',
+        'Photo avatars are not drawn. Needed?',
+      ],
+      changes: ['1.1.0: The Fill property is now Tone, and Size has three values instead of four. Soft tint with dark initials, four tones. It was 20 variants. Team and stakeholder cards use Avatar.'],
     },
   },
 };
