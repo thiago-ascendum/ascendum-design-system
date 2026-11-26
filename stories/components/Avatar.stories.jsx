@@ -8,6 +8,7 @@ export default {
   argTypes: { size: { control: 'inline-radio' }, tone: { control: 'inline-radio' } },
   parameters: {
     ds: {
+      sample: { name: 'Amara Bello' },
       lead: 'Initials on a soft colour tint with dark text. The tint only helps tell people apart: it never means a team, a role or a status.',
       group: 'Atoms',
       figma: '40:52',

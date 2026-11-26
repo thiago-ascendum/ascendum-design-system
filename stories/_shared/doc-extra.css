@@ -1,6 +1,6 @@
 /* Extra classes for the foundations pages. Custom properties from build/tokens.css only. */
 .dsx-page { display: grid; gap: var(--space-xs); width: min(1100px, 92vw); padding: var(--space-sm) var(--space-xs) var(--space-md); font-family: Barlow, system-ui, sans-serif; color: var(--on-surface); }
-.dsx-head { display: grid; gap: var(--space-2xs); padding-bottom: var(--space-xs); border-bottom: var(--border-width-hairline) solid var(--outline-variant); }
+.dsx-head { display: grid; gap: var(--space-2xs); padding-bottom: var(--space-2xs); }
 .dsx-title { font-size: var(--text-display-size); line-height: 1; font-weight: 700; margin: 0; color: var(--on-surface); }
 .dsx-lead { font-size: var(--text-body-lg-size); line-height: 1.45; color: var(--on-surface-variant); margin: 0; max-width: 70ch; }
 .dsx-page code { background: var(--surface-container-low); border: var(--border-width-hairline) solid var(--outline-variant); border-radius: var(--field-radius); font-size: 0.86em; padding: 1px 6px; color: var(--on-surface); }

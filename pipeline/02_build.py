@@ -463,8 +463,11 @@ for block in (dark, surface, textscale):
     block += sorted(f"  {css_var(V[d])}: {base_val[d]};" for d in deps if d in base_val and css_name.get(css_var(V[d]), V[d])["id"] == d)
 _fv = S["meta"].get("figmaVersion") or {}
 _src = S["meta"]["sourceSha256"] + (f', Figma version {_fv["id"]} "{_fv["title"]}"' if _fv.get("id") else "")
+# A theme can be set on any element, not only the page: a dark block inside a light page (or the reverse) resolves
+# every role again there. The Context roles alias the Semantic ones, so they are declared again in each theme block.
+ctxbase = [ln for ln, v in zip(base, [v for v in sorted(local.values(), key=lambda v: (GOV["collectionOrder"].index(v["collection"]) if v["collection"] in GOV["collectionOrder"] else 9, v["name"])) if css_name.get(css_var(v), v)["id"] == v["id"] and css_val(v, list(v["values"].values())[0]) is not None]) if v["collection"] == "Context"]
 css = ["/* Generated from the design system snapshot " + _src + ". Do not edit by hand. */",
-       ":root {", *base, "}", '[data-theme="dark"] {', *dark, "}", '[data-context="inverted"] {', *surface, "}",
+       ':root, [data-theme="light"] {', *base, "}", '[data-theme="dark"] {', *dark, *ctxbase, "}", '[data-context="inverted"] {', *surface, "}",
        *(['[data-text-scale="200"] {', *textscale, "}"] if textscale else []),
        f"@media (max-width: {GOV['mobileBreakpoint'] - 1}px) {{", "  :root {", *["  " + x for x in mobile], "  }", "}", ""]
 open(os.path.join(out_dir, "tokens.css"), "w").write("\n".join(css))

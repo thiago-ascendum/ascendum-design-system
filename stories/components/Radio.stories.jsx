@@ -7,6 +7,7 @@ export default {
   args: { label: 'Monthly invoice', name: 'billing', value: 'monthly', state: 'default' },
   parameters: {
     ds: {
+      sample: { name: 'figma-matrix', value: 'one' },
       lead: 'Choose one option from a short list. Every option is visible at once, and one is selected by default.',
       group: 'Atoms',
       figma: '32:63',

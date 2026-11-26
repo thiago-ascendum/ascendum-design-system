@@ -9,13 +9,13 @@ const preview = {
   globalTypes: {
     theme: {
       description: 'Dark or light: the Semantic collection of the Figma file',
-      toolbar: { title: 'Theme', icon: 'circlehollow', items: [{ value: 'dark', title: 'Dark' }, { value: 'light', title: 'Light' }], dynamicTitle: true },
+      toolbar: { title: 'Theme', icon: 'circlehollow', items: [{ value: 'light', title: 'Light' }, { value: 'dark', title: 'Dark' }], dynamicTitle: true },
     },
   },
-  initialGlobals: { theme: 'dark' },
+  initialGlobals: { theme: 'light' },
   decorators: [
     (Story, context) => {
-      const theme = context.globals.theme || 'dark';
+      const theme = context.globals.theme || 'light';
       useEffect(() => { document.documentElement.dataset.theme = theme; }, [theme]);
       return <Story />;
     },
@@ -24,7 +24,7 @@ const preview = {
     layout: 'centered',
     controls: { expanded: true },
     docs: { page: DocPage, container: ThemedDocsContainer },
-    options: { storySort: { order: ['Start here', ['Getting started', 'Pipeline proof', 'Lifecycle', 'Audit status', 'Changelog', 'Every change', 'Governance'], 'Foundations', 'Components', ['Catalogue']] } },
+    options: { storySort: { order: ['Start here', ['Getting started', 'Pipeline proof', 'Lifecycle', 'Audit status', 'Changelog', 'Every change', 'Governance'], 'Foundations', ['Colour', 'Typography', 'Spacing, radius and type'], 'Components', ['Catalogue'], 'Patterns'] } },
   },
 };
 

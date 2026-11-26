@@ -1,0 +1,13 @@
+// The Figma page, exported (pipeline/08_figma_docs.py notes how). It becomes a live page when it has code.
+import img from './img/iconography.jpg';
+import { FigmaOnly } from '../_shared/FigmaOnly.jsx';
+
+export default {
+  title: "Foundations/Iconography",
+  component: FigmaOnly,
+  tags: ['autodocs', 'figma-only'],
+  args: { name: "Iconography", img },
+  parameters: { ds: { figmaOnly: true, img, figma: "1100:1639" } },
+};
+
+export const Figma = {};
