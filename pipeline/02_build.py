@@ -223,6 +223,30 @@ add("contrast", "block", "Text tokens meet WCAG AA contrast on their surfaces", 
     "Checked from the tokens themselves, in light and dark, so a failing pair is caught before any screen is drawn.",
     [x for _, x in low], gary=[18], fix="Adjust the token value, or restrict where the pair may be used in the contract.")
 
+# A variant whose text layer is not bound to the set's text property drops the text when someone switches to it.
+# Found on 26 November: the Hover, Pressed and Error variants added that day reset "New team members" to "Label".
+unbound, measured_sets = [], 0
+for c in S["components"]:
+    details = c.get("variantDetails")
+    if not c.get("set") or details is None:
+        continue
+    measured_sets += 1
+    text_props = sorted(p["name"] for p in c.get("properties", []) if p.get("type") == "TEXT")
+    for v in details:
+        missing = [t for t in text_props if t not in v.get("textBound", [])]
+        if missing:
+            unbound.append(f"{c['name']} / {v['name']}: {', '.join(missing)}")
+add("variant-text-bound", "block", "Every variant keeps the text when the variant changes", len(unbound),
+    f"Checked {measured_sets} component sets. In every variant, each text layer must be bound to the set's text property "
+    "(Label, Value...). If one is not, switching an instance to that variant replaces the designer's text with the default.",
+    unbound[:20], fix="Bind the text layer to the property in that variant: select it, then Apply text property in the right panel.")
+
+timers = [f"{c['name']} / {v['name']}" for c in S["components"] if c.get("set") for v in (c.get("variantDetails") or []) if v.get("timers")]
+add("variant-timers", "warn", "No variant changes on its own after a delay", len(timers),
+    "An after-delay interaction on a variant also runs on every static instance of it in prototype mode, "
+    "so the documentation grids change by themselves. Use mouse down and mouse up instead.",
+    timers[:20], fix="Replace the after-delay interaction with mouse down to show the state and mouse up to leave it.")
+
 # ================================================================ WARN checks
 add("raw-colour", "warn", "Every colour is bound to a token or a style", sum(raw_all.values()),
     f"{sum(raw_all.values())} of {bound_total + sum(raw_all.values())} visible solid paints are typed in by hand. "

@@ -60,7 +60,7 @@ Which rule sits in which group is a proposal. It is one word to change.
 ## Status on 26 November 2026
 
 - Before: the file as received. Gate closed, 2 of 5 blocking checks failed.
-- After: version 1.1.0, proposed. Gate open, all 5 blocking checks pass. 2 clean-up items and 4 questions for the owner remain.
+- After: version 1.1.0, proposed. Gate open, all 6 blocking checks pass. 2 clean-up items and 4 questions for the owner remain.
 - Nobody has approved 1.1.0. The system has no named owner yet.
 
 ## Not done yet

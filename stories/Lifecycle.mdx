@@ -21,7 +21,7 @@ export const button = contracts.find((c) => c.component === 'Button');
     ['Intent becomes code', 'Claude wrote Button.jsx and Button.css from the tokens the Figma component binds. A person checked it in the browser, light and dark.'],
     ['Contract, documentation, checks', 'The contract and the catalogue are generated from the same snapshot. The documentation page reads them.'],
     ['Repository', 'Snapshot, tokens, contract, components and changelog live in one versioned place.'],
-    ['Pipeline', 'On every push: five blocking checks, generated files compared with the snapshot, a breaking change report, and the site build.'],
+    ['Pipeline', 'On every push: six blocking checks, generated files compared with the snapshot, a breaking change report, and the site build.'],
     ['Release', 'A closed gate stops the site from publishing. An open gate publishes the components, this documentation and the AI context.'],
   ]} />
 </Section>
@@ -45,7 +45,7 @@ export const button = contracts.find((c) => c.component === 'Button');
 <Section n={3} title="What the checks caught" lead="The same checks, run on the file as we received it and on this version.">
   <Cards columns={3} items={[
     { tone: 'avoid', title: 'File as received: blocked', text: 'Two blocking checks failed: 28 deprecated items still published and 16 colour pairs under WCAG AA. The gate returned an error and nothing would have been released.' },
-    { tone: 'do', title: 'This version: passes', text: 'All five blocking checks pass. The site you are reading was published by that run.' },
+    { tone: 'do', title: 'This version: passes', text: 'All six blocking checks pass. The site you are reading was published by that run.' },
     { tone: 'ask', title: `Breaking changes: ${breaking.breaking}`, text: `Detected by comparing the two snapshots: ${breaking.removedTokens.length} tokens, ${breaking.removedComponents.length} component, ${breaking.removedProperties.length} properties, ${breaking.removedValues.length} property values and ${breaking.removedTextStyles.length} text styles are gone. The list feeds the changelog.` },
   ]} />
   <Table head={['Property removed', 'Values a file may still be using']} rows={breaking.removedProperties.map((p) => [`${p.component} · ${p.property}`, p.values.join(', ')])} />
