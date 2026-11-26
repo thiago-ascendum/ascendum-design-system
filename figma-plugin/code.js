@@ -81,15 +81,17 @@ const boundIds = (n) => {
   return [...out].filter((id) => varIds.has(id)).sort();
 };
 
+// Every component property, so code can mirror Figma name for name: VARIANT with its options, TEXT, BOOLEAN, INSTANCE_SWAP.
+const propsOf = (n) => { let d = {}; try { d = n.componentPropertyDefinitions || {}; } catch (e) { return []; } return Object.entries(d).map(([k, v]) => (v.type === "VARIANT" ? { name: k.split("#")[0], type: v.type, options: v.variantOptions } : { name: k.split("#")[0], type: v.type })); };
 const components = [], layers = [];
 for (const page of figma.root.children) {
   if (ONLY_PAGE && page.name !== ONLY_PAGE) continue;
   const pageName = page.name.replace(/^[\s\-—–↳]+|[\s\-—–↳]+$/g, "");
   for (const n of page.findAll(() => true)) {
     if (n.type === "COMPONENT_SET") {
-      components.push({ id: n.id, name: n.name, page: pageName, set: true, variants: n.children.filter((c) => c.type === "COMPONENT").map((c) => c.name), description: n.description || "" });
+      components.push({ id: n.id, name: n.name, page: pageName, set: true, variants: n.children.filter((c) => c.type === "COMPONENT").map((c) => c.name), properties: propsOf(n), description: n.description || "" });
     } else if (n.type === "COMPONENT" && (!n.parent || n.parent.type !== "COMPONENT_SET")) {
-      components.push({ id: n.id, name: n.name, page: pageName, set: false, variants: [], description: n.description || "" });
+      components.push({ id: n.id, name: n.name, page: pageName, set: false, variants: [], properties: propsOf(n), description: n.description || "" });
     }
     const L = { id: n.id, type: n.type, name: n.name, page: pageName, component: componentOf(n), isStyle: null, vars: boundIds(n), art: isArt(n) };
     const raw = []; let bound = 0, rawGradients = 0;
@@ -152,14 +154,16 @@ async function gh(token, path, method, body) {
 
 figma.showUI(__html__, { width: 360, height: 460, themeColors: true });
 
-(async () => {
+// The window asks for its data once it has loaded ("ready"); a message sent before that would be lost.
+async function init() {
   const cols = await figma.variables.getLocalVariableCollectionsAsync();
   const token = await figma.clientStorage.getAsync("githubToken");
   figma.ui.postMessage({ type: "init", collections: cols.map((c) => c.name), hasToken: !!token, user: figma.currentUser ? figma.currentUser.name : "" });
-})();
+}
 
 figma.ui.onmessage = async (msg) => {
   try {
+    if (msg.type === "ready") { await init(); return; }
     if (msg.type === "saveToken") {
       await figma.clientStorage.setAsync("githubToken", msg.token.trim());
       figma.ui.postMessage({ type: "tokenSaved" });

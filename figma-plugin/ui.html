@@ -72,4 +72,5 @@
   };
   $("saveToken").onclick = () => { if ($("tok").value.trim()) post({ type: "saveToken", token: $("tok").value }); };
   $("changeToken").onclick = () => show("token");
+  post({ type: "ready" });
 </script>
