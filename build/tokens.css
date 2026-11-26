@@ -1,4 +1,4 @@
-/* Generated from the design system snapshot 5lhRMZkLHZijqgdigjk3J1. Do not edit by hand. */
+/* Generated from the design system snapshot 5lhRMZkLHZijqgdigjk3J1, Figma version 2426224325050437201 "Pipeline proof: Button padding-h 28 to 32". Do not edit by hand. */
 :root {
   --accent-blue: #89cff0;
   --accent-blue-soft: #cae6f3;
@@ -168,7 +168,7 @@
   --badge-padding-h: 14px;
   --badge-padding-v: 6px;
   --breadcrumb-gap: 8px;
-  --button-padding-h: 28px;
+  --button-padding-h: 32px;
   --button-padding-v: 16px;
   --checkbox-radius: 3px;
   --code-body-padding: 16px;
