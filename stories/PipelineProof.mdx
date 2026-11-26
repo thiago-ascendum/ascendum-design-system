@@ -20,8 +20,8 @@ export const Who = ({ k }) => <b style={{ display: 'block', marginBottom: 4, fon
 <Section n={1} title="The path of a change" lead="Seven steps. Each one says who does it.">
   <Steps items={[
     ['Change in Figma', <><Who k="A designer" />Edit a variable, for example the horizontal padding of the Button, in the Component collection.</>],
-    ['Snapshot', <><Who k="One click" />The snapshot script reads every variable, alias, component and layer through the Figma Plugin API. It saves a named Figma version first and stores its id, so the snapshot always says where it came from.</>],
-    ['Pull request', <><Who k="Automatic" />The snapshot goes to a branch and a pull request. If another collection is still being edited, only the ready one is taken (scoped sync).</>],
+    ['Send to code', <><Who k="One click in Figma" />The designer writes what changed and clicks Send to code in the plugin. It reads every variable, alias, component and layer through the Figma Plugin API. It saves a named Figma version first and stores its id, so the snapshot always says where it came from.</>],
+    ['Pull request', <><Who k="Automatic" />GitHub Actions turns the snapshot into a branch and a pull request with the token diff. If another collection is still being edited, only the ready one is taken (scoped sync).</>],
     ['Tokens and contracts', <><Who k="Automatic" />One script turns the snapshot into tokens.json, tokens.css, the AI contract and one contract per component. Nobody edits these files by hand.</>],
     ['Gate', <><Who k="Automatic" />GitHub Actions runs the blocking checks: aliases, palette, contrast, code names, breaking changes, colours typed by hand in code, undefined CSS properties. One failure turns the pull request red.</>],
     ['Review', <><Who k="A person" />Someone looks at the preview build and merges. A breaking change must be accepted by name in the same pull request.</>],
@@ -56,11 +56,11 @@ export const Who = ({ k }) => <b style={{ display: 'block', marginBottom: 4, fon
   <Cards columns={3} items={[
     { tone: 'do', title: 'Runs alone', text: ['Tokens, contracts and the AI contract from the snapshot.', 'Every check on every pull request.', 'Blocking a bad change.', 'Publishing only after a green gate.'] },
     { tone: 'ask', title: 'One click', text: ['Taking the snapshot. Figma has to be open: the Plugin API works on any plan, but runs inside Figma.', 'Without Enterprise, nothing can read the file from a server.'] },
-    { tone: 'avoid', title: 'A person', text: ['Approving and merging.', 'Accepting a breaking change.', 'Looking at the result: a component can pass every check and still look wrong.'] },
+    { tone: 'avoid', title: 'A person', text: ['Coding a new variant or state. Token changes reach the coded components on their own; a new variant shows up in the pull request as a changed contract, and someone codes it.', 'Approving and merging.', 'Accepting a breaking change.', 'Looking at the result: a component can pass every check and still look wrong.'] },
   ]} />
   <Table head={['To make the snapshot fully automatic', 'What it takes']} rows={[
     ['Read variables from a server, on every publish', 'Figma Variables REST API: Enterprise plan.'],
-    ['Without Enterprise', 'A designer clicks "Send to code" in the plugin. It opens the pull request. Everything after that is automatic.'],
+    ['Without Enterprise', 'A designer clicks Send to code in the Figma plugin (figma-plugin/). Everything after that is automatic. Tested end to end: pull request 17.'],
   ]} />
 </Section>
 
