@@ -428,12 +428,15 @@ def css_val(v, m):
         return f"var({css_var(V[m['alias']])})" if m.get("resolves") else None
     x = m.get("value")
     if v["type"] == "FLOAT":
+        # Type sizes in rem, so browser zoom and text scaling work (WCAG 1.4.4). 16px is 1rem.
+        if "FONT_SIZE" in (v.get("scopes") or []) or v["name"].startswith(("type-size/", "font-size/")):
+            return f"{round(x / 16, 4):g}rem"
         unit = "" if any(s in v["name"] for s in ("opacity", "weight", "line-height")) else "px"
         return f"{x:g}{unit}"
     return str(x).lower() if isinstance(x, str) and x.startswith("#") else str(x)
 
 
-base, dark, mobile, surface = [], [], [], []  # surface: tokens that follow the Context mode (Default / Inverted)
+base, dark, mobile, surface, textscale = [], [], [], [], []  # surface: Context mode (Default / Inverted); textscale: Accessibility mode Text 200%
 for v in sorted(local.values(), key=lambda v: (GOV["collectionOrder"].index(v["collection"]) if v["collection"] in GOV["collectionOrder"] else 9, v["name"])):
     if css_name.get(css_var(v), v)["id"] != v["id"]:
         continue  # collision: first one wins here, and the gate reports it
@@ -445,11 +448,12 @@ for v in sorted(local.values(), key=lambda v: (GOV["collectionOrder"].index(v["c
     for mode, m in items[1:]:
         x = css_val(v, m)
         if x is not None and x != d0:
-            (dark if mode == "Dark" else surface if mode == "Inverted" else mobile).append(f"  {css_var(v)}: {x};")
+            (dark if mode == "Dark" else surface if mode == "Inverted" else textscale if mode.startswith("Text") else mobile).append(f"  {css_var(v)}: {x};")
 _fv = S["meta"].get("figmaVersion") or {}
 _src = S["meta"]["sourceSha256"] + (f', Figma version {_fv["id"]} "{_fv["title"]}"' if _fv.get("id") else "")
 css = ["/* Generated from the design system snapshot " + _src + ". Do not edit by hand. */",
        ":root {", *base, "}", '[data-theme="dark"] {', *dark, "}", '[data-context="inverted"] {', *surface, "}",
+       *(['[data-text-scale="200"] {', *textscale, "}"] if textscale else []),
        f"@media (max-width: {GOV['mobileBreakpoint'] - 1}px) {{", "  :root {", *["  " + x for x in mobile], "  }", "}", ""]
 open(os.path.join(out_dir, "tokens.css"), "w").write("\n".join(css))
 
