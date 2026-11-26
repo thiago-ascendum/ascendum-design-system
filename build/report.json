@@ -4,8 +4,8 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T16:56:19.304Z",
-  "nodes": 16629,
+  "generatedAt": "2026-11-26T17:01:30.081Z",
+  "nodes": 16645,
   "pages": 77,
   "gate": "OPEN",
   "summary": {
@@ -21,10 +21,10 @@
    "variants": 201,
    "icons": 211,
    "textStyles": 16,
-   "textLayers": 6343,
-   "paints": 10746,
+   "textLayers": 6348,
+   "paints": 10758,
    "fonts": {
-    "Barlow": 6343
+    "Barlow": 6348
    }
   }
  },
@@ -160,7 +160,7 @@
    "level": "warn",
    "title": "Every colour is bound to a token or a style",
    "count": 0,
-   "summary": "0 of 10746 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
+   "summary": "0 of 10758 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
    "evidence": [
     "split: ",
     "where: ",
@@ -227,7 +227,7 @@
    "level": "warn",
    "title": "Every text layer uses a text style",
    "count": 0,
-   "summary": "0 of 6343 text layers have no text style, in 0 different sizes.",
+   "summary": "0 of 6348 text layers have no text style, in 0 different sizes.",
    "evidence": [
     "where: ",
     "sizes (px): "
@@ -988,14 +988,14 @@
     "Desktop": 8,
     "Mobile": 8
    },
-   "direct": 497,
+   "direct": 499,
    "aliases": [],
-   "layers": 497,
+   "layers": 499,
    "productLayers": 28,
    "components": [
     [
      "(documentation, not a component)",
-     469
+     471
     ],
     [
      "Button",
@@ -1049,7 +1049,7 @@
     ],
     [
      "Button",
-     79
+     81
     ],
     [
      "Spacing, Grid & Layout",
@@ -1775,14 +1775,14 @@
     "Desktop": 0,
     "Mobile": 0
    },
-   "direct": 157,
+   "direct": 159,
    "aliases": [],
-   "layers": 157,
+   "layers": 159,
    "productLayers": 27,
    "components": [
     [
      "(documentation, not a component)",
-     130
+     132
     ],
     [
      "Button",
@@ -1820,7 +1820,7 @@
    "pages": [
     [
      "Button",
-     94
+     96
     ],
     [
      "Empty State",
@@ -1963,14 +1963,14 @@
     "Desktop": 20,
     "Mobile": 20
    },
-   "direct": 328,
+   "direct": 329,
    "aliases": [],
-   "layers": 328,
+   "layers": 329,
    "productLayers": 40,
    "components": [
     [
      "(documentation, not a component)",
-     288
+     289
     ],
     [
      "Overview Card",
@@ -2373,14 +2373,14 @@
     "Desktop": 2,
     "Mobile": 2
    },
-   "direct": 147,
+   "direct": 148,
    "aliases": [],
-   "layers": 147,
+   "layers": 148,
    "productLayers": 28,
    "components": [
     [
      "(documentation, not a component)",
-     119
+     120
     ],
     [
      "Button",
@@ -2426,7 +2426,7 @@
    "pages": [
     [
      "Button",
-     53
+     54
     ],
     [
      "Tab",
@@ -2783,14 +2783,14 @@
     "Desktop": 17,
     "Mobile": 16
    },
-   "direct": 383,
+   "direct": 385,
    "aliases": [],
-   "layers": 383,
+   "layers": 385,
    "productLayers": 82,
    "components": [
     [
      "(documentation, not a component)",
-     301
+     303
     ],
     [
      "Button",
@@ -2856,7 +2856,7 @@
    "pages": [
     [
      "Button",
-     79
+     81
     ],
     [
      "Checkbox",
@@ -2897,14 +2897,14 @@
     "Desktop": 16,
     "Mobile": 16
    },
-   "direct": 954,
+   "direct": 955,
    "aliases": [],
-   "layers": 954,
+   "layers": 955,
    "productLayers": 142,
    "components": [
     [
      "(documentation, not a component)",
-     812
+     813
     ],
     [
      "Jira Annotation",
@@ -3281,14 +3281,14 @@
     "Desktop": 13,
     "Mobile": 13
    },
-   "direct": 2075,
+   "direct": 2076,
    "aliases": [],
-   "layers": 2075,
+   "layers": 2076,
    "productLayers": 13,
    "components": [
     [
      "(documentation, not a component)",
-     2062
+     2063
     ],
     [
      "Form Field",
@@ -3310,7 +3310,7 @@
     ],
     [
      "Button",
-     91
+     92
     ],
     [
      "Group Cards",
@@ -3367,18 +3367,19 @@
     "surface/bg",
     "surface/bg-raised",
     "surface/logo",
+    "surface/logo-glyph",
     "surface/text",
     "text/default",
     "text/inverted",
     "text/link",
     "text/on-accent"
    ],
-   "layers": 4938,
+   "layers": 4946,
    "productLayers": 547,
    "components": [
     [
      "(documentation, not a component)",
-     4391
+     4399
     ],
     [
      "Checkbox",
@@ -3437,6 +3438,10 @@
      13
     ],
     [
+     "Table Row",
+     12
+    ],
+    [
      "Avatar",
      12
     ],
@@ -3446,10 +3451,6 @@
     ],
     [
      "Section / Columns",
-     12
-    ],
-    [
-     "Table Row",
      12
     ],
     [
@@ -3469,11 +3470,11 @@
      9
     ],
     [
-     "Navigation Bar",
+     "Tab",
      8
     ],
     [
-     "Tab",
+     "Navigation Bar",
      8
     ],
     [
@@ -3493,6 +3494,14 @@
      6
     ],
     [
+     "Accordion Item",
+     6
+    ],
+    [
+     "Drawer",
+     6
+    ],
+    [
      "Code Block",
      6
     ],
@@ -3509,14 +3518,6 @@
      6
     ],
     [
-     "Accordion Item",
-     6
-    ],
-    [
-     "Drawer",
-     6
-    ],
-    [
      "Key Stakeholders Card",
      5
     ],
@@ -3525,7 +3526,7 @@
      5
     ],
     [
-     "Section / Showcase",
+     "Inline Edit",
      4
     ],
     [
@@ -3533,7 +3534,7 @@
      4
     ],
     [
-     "Inline Edit",
+     "Section / Showcase",
      4
     ],
     [
@@ -3541,11 +3542,11 @@
      3
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
@@ -3556,7 +3557,7 @@
    "pages": [
     [
      "Button",
-     287
+     295
     ],
     [
      "02 · Changelog",
@@ -3627,12 +3628,12 @@
     "text/inverted",
     "text/link"
    ],
-   "layers": 4770,
+   "layers": 4778,
    "productLayers": 518,
    "components": [
     [
      "(documentation, not a component)",
-     4252
+     4260
     ],
     [
      "Checkbox",
@@ -3691,11 +3692,11 @@
      13
     ],
     [
-     "Section / Columns",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
+     "Section / Columns",
      12
     ],
     [
@@ -3715,11 +3716,11 @@
      9
     ],
     [
-     "Navigation Bar",
+     "Tab",
      8
     ],
     [
-     "Tab",
+     "Navigation Bar",
      8
     ],
     [
@@ -3743,6 +3744,14 @@
      6
     ],
     [
+     "Accordion Item",
+     6
+    ],
+    [
+     "Drawer",
+     6
+    ],
+    [
      "Code Block",
      6
     ],
@@ -3759,16 +3768,16 @@
      6
     ],
     [
-     "Accordion Item",
-     6
-    ],
-    [
-     "Drawer",
-     6
-    ],
-    [
      "Section / Let's Connect",
      5
+    ],
+    [
+     "Inline Edit",
+     4
+    ],
+    [
+     "Menu Item",
+     4
     ],
     [
      "Key Stakeholders Card",
@@ -3779,23 +3788,15 @@
      4
     ],
     [
-     "Menu Item",
-     4
-    ],
-    [
-     "Inline Edit",
-     4
-    ],
-    [
      "Badge",
      3
     ],
     [
-     "Progress Bar",
+     "Breadcrumb Item",
      2
     ],
     [
-     "Breadcrumb Item",
+     "Progress Bar",
      2
     ],
     [
@@ -3806,7 +3807,7 @@
    "pages": [
     [
      "Button",
-     287
+     295
     ],
     [
      "02 · Changelog",
@@ -3849,15 +3850,14 @@
    "direct": 1,
    "aliases": [
     "bg/surface",
-    "surface/bg-raised",
-    "surface/logo-glyph"
+    "surface/bg-raised"
    ],
-   "layers": 697,
+   "layers": 698,
    "productLayers": 114,
    "components": [
     [
      "(documentation, not a component)",
-     583
+     584
     ],
     [
      "Input",
@@ -3930,10 +3930,6 @@
     [
      "Table Row",
      2
-    ],
-    [
-     "Overview Card",
-     1
     ],
     [
      "Avatar",
@@ -4021,6 +4017,10 @@
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Overview Card",
      1
     ]
    ],
@@ -4490,16 +4490,20 @@
      7
     ],
     [
-     "Overview Card",
+     "Slider",
      6
     ],
     [
-     "Slider",
+     "Overview Card",
      6
     ],
     [
      "Jira Annotation",
      5
+    ],
+    [
+     "Skeleton",
+     4
     ],
     [
      "Input",
@@ -4518,8 +4522,8 @@
      4
     ],
     [
-     "Skeleton",
-     4
+     "Checkbox",
+     3
     ],
     [
      "Button",
@@ -4530,11 +4534,7 @@
      3
     ],
     [
-     "Checkbox",
-     3
-    ],
-    [
-     "Key Stakeholders Card",
+     "Toggle",
      2
     ],
     [
@@ -4546,20 +4546,16 @@
      2
     ],
     [
-     "Radio",
+     "Key Stakeholders Card",
      2
     ],
     [
-     "Toggle",
+     "Radio",
      2
     ],
     [
      "Search Bar",
      2
-    ],
-    [
-     "Team Card",
-     1
     ],
     [
      "Alert",
@@ -4571,6 +4567,10 @@
     ],
     [
      "Modal",
+     1
+    ],
+    [
+     "Team Card",
      1
     ],
     [
@@ -4630,12 +4630,12 @@
     "control/fill-pressed",
     "control/fill-selected-pressed"
    ],
-   "layers": 316,
+   "layers": 315,
    "productLayers": 21,
    "components": [
     [
      "(documentation, not a component)",
-     295
+     294
     ],
     [
      "Checkbox",
@@ -4644,6 +4644,10 @@
     [
      "Section / Full Width",
      3
+    ],
+    [
+     "Radio",
+     2
     ],
     [
      "Toggle",
@@ -4658,15 +4662,11 @@
      2
     ],
     [
-     "Radio",
-     2
-    ],
-    [
-     "Slider",
+     "Button",
      1
     ],
     [
-     "Button",
+     "Slider",
      1
     ],
     [
@@ -4740,12 +4740,12 @@
     "text/inverted-muted",
     "text/muted"
    ],
-   "layers": 2439,
+   "layers": 2441,
    "productLayers": 108,
    "components": [
     [
      "(documentation, not a component)",
-     2331
+     2333
     ],
     [
      "Overview Card",
@@ -4784,10 +4784,6 @@
      4
     ],
     [
-     "Search Bar",
-     4
-    ],
-    [
      "Menu Item",
      4
     ],
@@ -4797,6 +4793,10 @@
     ],
     [
      "Table Row",
+     4
+    ],
+    [
+     "Search Bar",
      4
     ],
     [
@@ -4863,7 +4863,7 @@
     ],
     [
      "Button",
-     82
+     84
     ],
     [
      "Form Field",
@@ -4913,11 +4913,11 @@
      8
     ],
     [
-     "Search Bar",
+     "Overview Card",
      6
     ],
     [
-     "Overview Card",
+     "Search Bar",
      6
     ],
     [
@@ -5053,6 +5053,14 @@
      3
     ],
     [
+     "Section / Quote",
+     2
+    ],
+    [
+     "Key Stakeholders Card",
+     2
+    ],
+    [
      "Search Bar",
      2
     ],
@@ -5061,12 +5069,8 @@
      2
     ],
     [
-     "Section / Quote",
-     2
-    ],
-    [
-     "Key Stakeholders Card",
-     2
+     "Team Card",
+     1
     ],
     [
      "Code Block",
@@ -5086,10 +5090,6 @@
     ],
     [
      "Jira Annotation",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -5147,12 +5147,12 @@
     "control/fill-selected-pressed",
     "surface/border"
    ],
-   "layers": 544,
+   "layers": 543,
    "productLayers": 67,
    "components": [
     [
      "(documentation, not a component)",
-     477
+     476
     ],
     [
      "Progress Bar",
@@ -5191,11 +5191,11 @@
      3
     ],
     [
-     "Toggle",
+     "Radio",
      2
     ],
     [
-     "Key Stakeholders Card",
+     "Toggle",
      2
     ],
     [
@@ -5219,16 +5219,8 @@
      2
     ],
     [
-     "Radio",
+     "Key Stakeholders Card",
      2
-    ],
-    [
-     "Button",
-     1
-    ],
-    [
-     "Team Card",
-     1
     ],
     [
      "Alert",
@@ -5240,6 +5232,14 @@
     ],
     [
      "Modal",
+     1
+    ],
+    [
+     "Button",
+     1
+    ],
+    [
+     "Team Card",
      1
     ]
    ],
@@ -5311,11 +5311,11 @@
      3
     ],
     [
-     "Toggle",
+     "Menu Item",
      2
     ],
     [
-     "Menu Item",
+     "Toggle",
      2
     ],
     [
@@ -5339,10 +5339,6 @@
      2
     ],
     [
-     "Slider",
-     1
-    ],
-    [
      "Inline Edit",
      1
     ],
@@ -5360,6 +5356,10 @@
     ],
     [
      "Table Row",
+     1
+    ],
+    [
+     "Slider",
      1
     ],
     [
@@ -5415,12 +5415,12 @@
     "bg/surface",
     "surface/bg-raised"
    ],
-   "layers": 697,
+   "layers": 698,
    "productLayers": 114,
    "components": [
     [
      "(documentation, not a component)",
-     583
+     584
     ],
     [
      "Input",
@@ -5493,10 +5493,6 @@
     [
      "Table Row",
      2
-    ],
-    [
-     "Overview Card",
-     1
     ],
     [
      "Avatar",
@@ -5584,6 +5580,10 @@
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Overview Card",
      1
     ]
    ],
@@ -6175,16 +6175,18 @@
     "Light": "brand/milkyway",
     "Dark": "brand/midnight"
    },
-   "direct": 209,
+   "direct": 210,
    "aliases": [
-    "surface/bg"
+    "surface/bg",
+    "surface/logo",
+    "surface/logo-glyph"
    ],
-   "layers": 291,
+   "layers": 292,
    "productLayers": 22,
    "components": [
     [
      "(documentation, not a component)",
-     269
+     270
     ],
     [
      "Section / Full Width",
@@ -6275,16 +6277,16 @@
     "Light": "brand/white",
     "Dark": "neutral/900"
    },
-   "direct": 693,
+   "direct": 694,
    "aliases": [
     "surface/bg-raised"
    ],
-   "layers": 696,
+   "layers": 697,
    "productLayers": 114,
    "components": [
     [
      "(documentation, not a component)",
-     582
+     583
     ],
     [
      "Input",
@@ -6357,10 +6359,6 @@
     [
      "Table Row",
      2
-    ],
-    [
-     "Overview Card",
-     1
     ],
     [
      "Avatar",
@@ -6448,6 +6446,10 @@
     ],
     [
      "Section / Let's Connect",
+     1
+    ],
+    [
+     "Overview Card",
      1
     ]
    ],
@@ -6584,7 +6586,9 @@
    "direct": 113,
    "aliases": [
     "surface/bg",
-    "surface/bg-raised"
+    "surface/bg-raised",
+    "surface/logo",
+    "surface/logo-glyph"
    ],
    "layers": 198,
    "productLayers": 39,
@@ -6710,27 +6714,27 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 2868,
+   "direct": 2869,
    "aliases": [
     "surface/text"
    ],
-   "layers": 3107,
+   "layers": 3108,
    "productLayers": 207,
    "components": [
     [
      "(documentation, not a component)",
-     2900
+     2901
     ],
     [
      "Jira Annotation",
      22
     ],
     [
-     "Table",
+     "Overview Card",
      17
     ],
     [
-     "Overview Card",
+     "Table",
      17
     ],
     [
@@ -6774,6 +6778,14 @@
      5
     ],
     [
+     "Navigation Bar",
+     4
+    ],
+    [
+     "Section / Quote",
+     4
+    ],
+    [
      "Input",
      4
     ],
@@ -6782,12 +6794,16 @@
      4
     ],
     [
-     "Navigation Bar",
-     4
+     "Key Stakeholders Card",
+     3
     ],
     [
-     "Section / Quote",
-     4
+     "Section / Full Width",
+     3
+    ],
+    [
+     "Section / Header",
+     3
     ],
     [
      "Badge",
@@ -6806,16 +6822,8 @@
      3
     ],
     [
-     "Key Stakeholders Card",
-     3
-    ],
-    [
-     "Section / Full Width",
-     3
-    ],
-    [
-     "Section / Header",
-     3
+     "Section / Showcase",
+     2
     ],
     [
      "Breadcrumb Item",
@@ -6834,8 +6842,8 @@
      2
     ],
     [
-     "Section / Showcase",
-     2
+     "Section / Let's Connect",
+     1
     ],
     [
      "Combobox",
@@ -6859,10 +6867,6 @@
     ],
     [
      "Side Navigation",
-     1
-    ],
-    [
-     "Section / Let's Connect",
      1
     ]
    ],
@@ -6910,16 +6914,16 @@
     "Light": "neutral/750",
     "Dark": "neutral/500"
    },
-   "direct": 2175,
+   "direct": 2177,
    "aliases": [
     "surface/text-muted"
    ],
-   "layers": 2327,
+   "layers": 2329,
    "productLayers": 96,
    "components": [
     [
      "(documentation, not a component)",
-     2231
+     2233
     ],
     [
      "Overview Card",
@@ -6942,15 +6946,15 @@
      6
     ],
     [
-     "Team Card",
-     5
-    ],
-    [
      "Alert",
      5
     ],
     [
      "Table",
+     5
+    ],
+    [
+     "Team Card",
      5
     ],
     [
@@ -6974,6 +6978,10 @@
      3
     ],
     [
+     "Drawer",
+     2
+    ],
+    [
      "Key Stakeholders Card",
      2
     ],
@@ -6983,10 +6991,6 @@
     ],
     [
      "Section / Showcase",
-     2
-    ],
-    [
-     "Drawer",
      2
     ],
     [
@@ -7036,12 +7040,12 @@
      56
     ],
     [
-     "Select",
-     53
+     "Button",
+     54
     ],
     [
-     "Button",
-     52
+     "Select",
+     53
     ]
    ]
   },
@@ -7168,14 +7172,6 @@
      5
     ],
     [
-     "Combobox",
-     4
-    ],
-    [
-     "Side Navigation",
-     4
-    ],
-    [
      "Navigation Bar",
      4
     ],
@@ -7184,8 +7180,12 @@
      4
     ],
     [
-     "Toast",
-     3
+     "Combobox",
+     4
+    ],
+    [
+     "Side Navigation",
+     4
     ],
     [
      "Key Stakeholders Card",
@@ -7200,6 +7200,14 @@
      3
     ],
     [
+     "Toast",
+     3
+    ],
+    [
+     "Section / Showcase",
+     2
+    ],
+    [
      "Tooltip",
      2
     ],
@@ -7208,15 +7216,11 @@
      2
     ],
     [
-     "Section / Showcase",
-     2
-    ],
-    [
-     "Tab",
+     "Section / Let's Connect",
      1
     ],
     [
-     "Section / Let's Connect",
+     "Tab",
      1
     ]
    ],
@@ -7242,11 +7246,11 @@
      27
     ],
     [
-     "Code Block",
+     "Page rhythm",
      21
     ],
     [
-     "Page rhythm",
+     "Code Block",
      21
     ],
     [
@@ -7886,11 +7890,11 @@
      5
     ],
     [
-     "File Uploader",
+     "Section / Let's Connect",
      4
     ],
     [
-     "Section / Let's Connect",
+     "File Uploader",
      4
     ],
     [
@@ -7920,12 +7924,12 @@
    "aliases": [
     "button-surface/label"
    ],
-   "layers": 121,
+   "layers": 123,
    "productLayers": 22,
    "components": [
     [
      "(documentation, not a component)",
-     99
+     101
     ],
     [
      "Button",
@@ -7955,7 +7959,7 @@
    "pages": [
     [
      "Button",
-     64
+     66
     ],
     [
      "File Uploader",
@@ -8000,12 +8004,12 @@
    "aliases": [
     "button-surface/fill-solid"
    ],
-   "layers": 63,
+   "layers": 65,
    "productLayers": 9,
    "components": [
     [
      "(documentation, not a component)",
-     54
+     56
     ],
     [
      "Button",
@@ -8031,7 +8035,7 @@
    "pages": [
     [
      "Button",
-     27
+     29
     ],
     [
      "Empty State",
@@ -8076,12 +8080,12 @@
    "aliases": [
     "button-surface/label-solid"
    ],
-   "layers": 161,
+   "layers": 163,
    "productLayers": 26,
    "components": [
     [
      "(documentation, not a component)",
-     135
+     137
     ],
     [
      "Button",
@@ -8107,7 +8111,7 @@
    "pages": [
     [
      "Button",
-     95
+     97
     ],
     [
      "01 · Getting Started",
@@ -8684,14 +8688,14 @@
     "Light": "#00000000",
     "Dark": "#00000000"
    },
-   "direct": 84,
+   "direct": 85,
    "aliases": [],
-   "layers": 84,
+   "layers": 85,
    "productLayers": 15,
    "components": [
     [
      "(documentation, not a component)",
-     69
+     70
     ],
     [
      "Button",
@@ -8725,7 +8729,7 @@
    "pages": [
     [
      "Button",
-     32
+     33
     ],
     [
      "Tab",
@@ -9174,12 +9178,12 @@
    "aliases": [
     "button-surface/label"
    ],
-   "layers": 118,
+   "layers": 120,
    "productLayers": 22,
    "components": [
     [
      "(documentation, not a component)",
-     96
+     98
     ],
     [
      "Button",
@@ -9209,7 +9213,7 @@
    "pages": [
     [
      "Button",
-     64
+     66
     ],
     [
      "File Uploader",
@@ -9254,12 +9258,12 @@
    "aliases": [
     "button-surface/fill-solid"
    ],
-   "layers": 58,
+   "layers": 60,
    "productLayers": 9,
    "components": [
     [
      "(documentation, not a component)",
-     49
+     51
     ],
     [
      "Button",
@@ -9285,7 +9289,7 @@
    "pages": [
     [
      "Button",
-     26
+     28
     ],
     [
      "01 · Getting Started",
@@ -9330,12 +9334,12 @@
    "aliases": [
     "button-surface/label-solid"
    ],
-   "layers": 160,
+   "layers": 162,
    "productLayers": 26,
    "components": [
     [
      "(documentation, not a component)",
-     134
+     136
     ],
     [
      "Button",
@@ -9361,7 +9365,7 @@
    "pages": [
     [
      "Button",
-     94
+     96
     ],
     [
      "01 · Getting Started",
@@ -9686,14 +9690,14 @@
     "Desktop": 16,
     "Mobile": 12
    },
-   "direct": 142,
+   "direct": 144,
    "aliases": [],
-   "layers": 142,
+   "layers": 144,
    "productLayers": 24,
    "components": [
     [
      "(documentation, not a component)",
-     118
+     120
     ],
     [
      "Button",
@@ -9731,7 +9735,7 @@
    "pages": [
     [
      "Button",
-     79
+     81
     ],
     [
      "Empty State",
@@ -9772,14 +9776,14 @@
     "Desktop": 28,
     "Mobile": 22
    },
-   "direct": 144,
+   "direct": 146,
    "aliases": [],
-   "layers": 144,
+   "layers": 146,
    "productLayers": 25,
    "components": [
     [
      "(documentation, not a component)",
-     119
+     121
     ],
     [
      "Button",
@@ -9817,7 +9821,7 @@
    "pages": [
     [
      "Button",
-     79
+     81
     ],
     [
      "Empty State",
@@ -12220,14 +12224,14 @@
     "Desktop": 16,
     "Mobile": 16
    },
-   "direct": 600,
+   "direct": 601,
    "aliases": [],
-   "layers": 600,
+   "layers": 601,
    "productLayers": 17,
    "components": [
     [
      "(documentation, not a component)",
-     583
+     584
     ],
     [
      "File Uploader",
@@ -12281,7 +12285,7 @@
     ],
     [
      "Button",
-     19
+     20
     ],
     [
      "06 · Components: Molecules",
@@ -12902,14 +12906,14 @@
     "Desktop": 24,
     "Mobile": 22
    },
-   "direct": 132,
+   "direct": 133,
    "aliases": [],
-   "layers": 132,
+   "layers": 133,
    "productLayers": 14,
    "components": [
     [
      "(documentation, not a component)",
-     118
+     119
     ],
     [
      "Avatar",
@@ -14548,12 +14552,12 @@
     "text/muted",
     "text/placeholder"
    ],
-   "layers": 2531,
+   "layers": 2533,
    "productLayers": 131,
    "components": [
     [
      "(documentation, not a component)",
-     2400
+     2402
     ],
     [
      "Form Field",
@@ -14687,7 +14691,7 @@
     ],
     [
      "Button",
-     82
+     84
     ],
     [
      "Input",
@@ -15250,11 +15254,11 @@
      6
     ],
     [
-     "Colour",
+     "03 · Contribution & Governance",
      3
     ],
     [
-     "03 · Contribution & Governance",
+     "Colour",
      3
     ],
     [
@@ -15624,11 +15628,11 @@
      43
     ],
     [
-     "Button",
+     "Checkbox",
      3
     ],
     [
-     "Checkbox",
+     "Button",
      3
     ],
     [
@@ -16060,12 +16064,12 @@
    "aliases": [
     "button-surface/fill-pressed"
    ],
-   "layers": 6,
+   "layers": 5,
    "productLayers": 1,
    "components": [
     [
      "(documentation, not a component)",
-     5
+     4
     ],
     [
      "Button",
@@ -16075,7 +16079,7 @@
    "pages": [
     [
      "Button",
-     6
+     5
     ]
    ]
   },
@@ -16092,12 +16096,12 @@
    "aliases": [
     "button-surface/fill-pressed"
    ],
-   "layers": 6,
+   "layers": 5,
    "productLayers": 1,
    "components": [
     [
      "(documentation, not a component)",
-     5
+     4
     ],
     [
      "Button",
@@ -16107,7 +16111,7 @@
    "pages": [
     [
      "Button",
-     6
+     5
     ]
    ]
   },
@@ -16120,14 +16124,14 @@
     "Default": "button/fill-solid",
     "Inverted": "button/fill-solid-inverted"
    },
-   "direct": 58,
+   "direct": 60,
    "aliases": [],
-   "layers": 58,
+   "layers": 60,
    "productLayers": 9,
    "components": [
     [
      "(documentation, not a component)",
-     49
+     51
     ],
     [
      "Button",
@@ -16153,7 +16157,7 @@
    "pages": [
     [
      "Button",
-     26
+     28
     ],
     [
      "01 · Getting Started",
@@ -16194,14 +16198,14 @@
     "Default": "button/label-solid",
     "Inverted": "button/label-solid-inverted"
    },
-   "direct": 160,
+   "direct": 162,
    "aliases": [],
-   "layers": 160,
+   "layers": 162,
    "productLayers": 26,
    "components": [
     [
      "(documentation, not a component)",
-     134
+     136
     ],
     [
      "Button",
@@ -16227,7 +16231,7 @@
    "pages": [
     [
      "Button",
-     94
+     96
     ],
     [
      "01 · Getting Started",
@@ -16302,14 +16306,14 @@
     "Default": "button/fill-pressed",
     "Inverted": "button/fill-pressed-inverted"
    },
-   "direct": 6,
+   "direct": 5,
    "aliases": [],
-   "layers": 6,
+   "layers": 5,
    "productLayers": 1,
    "components": [
     [
      "(documentation, not a component)",
-     5
+     4
     ],
     [
      "Button",
@@ -16319,7 +16323,7 @@
    "pages": [
     [
      "Button",
-     6
+     5
     ]
    ]
   },
@@ -16394,14 +16398,14 @@
     "Default": "button/label",
     "Inverted": "button/label-inverted"
    },
-   "direct": 118,
+   "direct": 120,
    "aliases": [],
-   "layers": 118,
+   "layers": 120,
    "productLayers": 22,
    "components": [
     [
      "(documentation, not a component)",
-     96
+     98
     ],
     [
      "Button",
@@ -16431,7 +16435,7 @@
    "pages": [
     [
      "Button",
-     64
+     66
     ],
     [
      "File Uploader",
@@ -16857,8 +16861,8 @@
    "type": "COLOR",
    "code": "--surface-logo",
    "values": {
-    "Default": "brand/midnight",
-    "Inverted": "brand/milkyway"
+    "Default": "bg/inverted",
+    "Inverted": "bg/page"
    },
    "direct": 0,
    "aliases": [],
@@ -16873,8 +16877,8 @@
    "type": "COLOR",
    "code": "--surface-logo-glyph",
    "values": {
-    "Default": "brand/milkyway",
-    "Inverted": "brand/white"
+    "Default": "bg/page",
+    "Inverted": "bg/inverted"
    },
    "direct": 0,
    "aliases": [],

@@ -109,8 +109,8 @@
   --surface-bg: var(--background);
   --surface-bg-raised: var(--container-fill);
   --surface-border: var(--border-default);
-  --surface-logo: var(--brand-midnight);
-  --surface-logo-glyph: var(--brand-milkyway);
+  --surface-logo: var(--inverted-background);
+  --surface-logo-glyph: var(--background);
   --surface-text: var(--text);
   --surface-text-muted: var(--text-muted);
   --border-width-button: 2px;
@@ -332,8 +332,8 @@
   --surface-bg: var(--inverted-background);
   --surface-bg-raised: var(--inverted-background);
   --surface-border: var(--quote-line);
-  --surface-logo: var(--brand-milkyway);
-  --surface-logo-glyph: var(--brand-white);
+  --surface-logo: var(--background);
+  --surface-logo-glyph: var(--inverted-background);
   --surface-text: var(--inverted-text);
   --surface-text-muted: var(--text-inverted-muted);
 }

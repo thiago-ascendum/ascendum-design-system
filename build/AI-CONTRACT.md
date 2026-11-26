@@ -149,7 +149,7 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--surface-bg-raised` | surface/bg-raised | #FFFFFF | #212121 | Background of a card that sits on a section |
 | `--surface-border` | surface/border | #ECECEC | #777777 | Hairlines and card borders on a section |
 | `--surface-logo` | surface/logo | #212121 | #F5F5F5 | Logo colour |
-| `--surface-logo-glyph` | surface/logo-glyph | #F5F5F5 | #FFFFFF | The glyph inside the compact logo mark |
+| `--surface-logo-glyph` | surface/logo-glyph | #F5F5F5 | #212121 | The glyph inside the compact logo mark |
 | `--surface-text` | surface/text | #212121 | #F5F5F5 | Text and logo colour on a section |
 | `--surface-text-muted` | surface/text-muted | #6F6F6F | #C0C0C0 | Secondary text on a section |
 
