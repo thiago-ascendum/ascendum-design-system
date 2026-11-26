@@ -11,13 +11,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run the checks
-        # Exit code 1 while a blocking check fails. That is the gate.
+      - name: Where this snapshot comes from
+        # The Figma version the tokens were read from, and the alias graph that links them.
+        run: |
+          python3 - <<'PY'
+          import json
+          m = json.load(open("build/ds-snapshot.json"))["meta"]
+          v = m.get("figmaVersion") or {}
+          print("Figma file   ", m.get("fileKey") or m["sourceSha256"])
+          print("Figma version", v.get("id") or "not recorded", "·", v.get("title") or "", "·", v.get("savedAt") or "")
+          print("Aliases      ", m.get("aliasCount", "not recorded"))
+          PY
+
+      - name: Design checks (blocking)
+        # Exit code 1 while a blocking check fails: broken alias, colour outside the palette, low contrast, name collision.
         run: python3 pipeline/02_build.py build/ds-snapshot.json governance build && python3 pipeline/04_catalogue.py build/ds-snapshot.json build
 
-      - name: Breaking changes since the last release
-        # Lists every token, component, property and text style a consumer would lose. It reports, it does not block.
-        run: python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json
+      - name: Breaking changes (blocking)
+        # A token, component, property or text style a consumer would lose stops the pipeline,
+        # unless it is accepted in governance/accepted-breaking.json in the same pull request.
+        run: python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json governance/accepted-breaking.json
+
+      - name: Code checks (blocking)
+        # No colour typed by hand in a component stylesheet, and no undefined custom property.
+        run: python3 pipeline/06_code_checks.py build/tokens.css src/components
 
       - name: Generated files match the snapshot
         # Tokens and the AI contract are never edited by hand.
@@ -33,6 +50,7 @@ jobs:
           name: design-system-report
           path: |
             build/report.json
+            build/breaking.json
             build/AI-CONTRACT.md
 
   components:
@@ -48,3 +66,25 @@ jobs:
       - name: Build the documentation site
         # A component or a page that does not build stops here.
         run: npm run build:site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: storybook-build
+          path: dist
+
+  publish:
+    name: Publish
+    # Runs only when every check passed. A red gate means nothing is published.
+    needs: [gate, components]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: storybook-build
+          path: dist
+      - name: Release candidate
+        run: echo "Checks passed. This build is the one that may be published." && ls dist | head
+      - uses: actions/upload-artifact@v4
+        with:
+          name: published-site
+          path: dist

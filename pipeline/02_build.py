@@ -436,7 +436,9 @@ for v in sorted(local.values(), key=lambda v: (GOV["collectionOrder"].index(v["c
         x = css_val(v, m)
         if x is not None and x != d0:
             (dark if mode == "Dark" else surface if mode == "Inverted" else mobile).append(f"  {css_var(v)}: {x};")
-css = ["/* Generated from the design system snapshot " + S["meta"]["sourceSha256"] + ". Do not edit by hand. */",
+_fv = S["meta"].get("figmaVersion") or {}
+_src = S["meta"]["sourceSha256"] + (f', Figma version {_fv["id"]} "{_fv["title"]}"' if _fv.get("id") else "")
+css = ["/* Generated from the design system snapshot " + _src + ". Do not edit by hand. */",
        ":root {", *base, "}", '[data-theme="dark"] {', *dark, "}", '[data-context="inverted"] {', *surface, "}",
        f"@media (max-width: {GOV['mobileBreakpoint'] - 1}px) {{", "  :root {", *["  " + x for x in mobile], "  }", "}", ""]
 open(os.path.join(out_dir, "tokens.css"), "w").write("\n".join(css))

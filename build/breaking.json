@@ -2,9 +2,9 @@
   "added": {
     "components": 0,
     "textStyles": 0,
-    "tokens": 75
+    "tokens": 60
   },
-  "breaking": 93,
+  "breaking": 79,
   "removedComponents": [
     "SectionTag"
   ],
@@ -135,10 +135,6 @@
     "component/tag/padding-v",
     "component/tag/swatch",
     "component/tag/swatch-radius",
-    "dept/digital",
-    "dept/mortgages",
-    "dept/products",
-    "dept/talent",
     "feedback/error",
     "feedback/error-bg",
     "feedback/info",
@@ -147,20 +143,10 @@
     "feedback/success-bg",
     "feedback/warning",
     "feedback/warning-bg",
-    "gradient-stop/mortgages-end",
-    "gradient-stop/products-end",
-    "gradient-stop/talent-end",
     "icon/default",
     "icon/inverted",
     "icon/muted",
-    "neutral/0",
-    "neutral/300",
-    "neutral/950",
     "size/container-half",
-    "status/error-border",
-    "status/info-border",
-    "status/success-border",
-    "status/warning-border",
     "text/access-muted",
     "text/default",
     "text/inverted",
