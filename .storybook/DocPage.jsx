@@ -1,6 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Title, Primary, Controls, Stories, DocsContainer, useOf } from '@storybook/addon-docs/blocks';
 import { themes } from 'storybook/theming';
+
+// The value a CSS property has right now, read from the page. It comes from build/tokens.css, so the
+// documentation can never show a number the code does not use.
+function LiveValue({ prop }) {
+  const [v, setV] = useState('');
+  useEffect(() => {
+    const read = () => setV(getComputedStyle(document.documentElement).getPropertyValue(prop).trim());
+    read();
+    window.addEventListener('resize', read);
+    return () => window.removeEventListener('resize', read);
+  }, [prop]);
+  return <code>{v || 'not defined'}</code>;
+}
 
 /**
  * One page layout for every component, so no two pages are built differently.
@@ -47,8 +60,8 @@ export function DocPage() {
     ['Variants and states', 'Every variant that exists in code, and the component in use.', <Stories title="" includePrimary={false} />],
     ds.tokens?.length && ['Tokens', 'What this component binds. The same names as in the Figma file.', (
       <div className="dsdoc-tablewrap"><table className="dsdoc-table">
-        <thead><tr><th>Figma variable</th><th>CSS property</th><th>What it sets</th></tr></thead>
-        <tbody>{ds.tokens.map(([f, c, w]) => <tr key={f + c}><td><code>{f}</code></td><td><code>{c}</code></td><td>{w}</td></tr>)}</tbody>
+        <thead><tr><th>Figma variable</th><th>CSS property</th><th>Value in code now</th><th>What it sets</th></tr></thead>
+        <tbody>{ds.tokens.map(([f, c, w]) => <tr key={f + c}><td><code>{f}</code></td><td><code>{c}</code></td><td><LiveValue prop={c} /></td><td>{w}</td></tr>)}</tbody>
       </table></div>
     )],
     ds.a11y?.length && ['Accessibility', null, <ul className="dsdoc-list">{ds.a11y.map((x) => <li key={x}>{x}</li>)}</ul>],
