@@ -19,13 +19,15 @@ proposed changes           checks + a person       the source of truth         t
 
 ## Start here
 
-Open `index.html`. It shows the gate, every check with its evidence, the before and after, and the impact map (pick a token, see every component that moves).
+Open the published site: https://ascendum-design-system.netlify.app (Storybook) and https://ascendum-design-system.netlify.app/report/ (health report). The report shows the gate, every check with its evidence, the before and after, and the impact map (pick a token, see every component that moves).
 
 ## What is here
 
 | Path | What it is |
 |---|---|
-| `index.html` | The report. Generated, nothing typed by hand. |
+| `index.html` | The health report, published at `/report/`. Generated, nothing typed by hand. |
+| `src/components/`, `stories/` | Coded components and their Storybook pages, published at the root of the site. |
+| `build/components.json`, `build/text-styles.json` | The component catalogue and the text styles, generated from the snapshot. |
 | `build/tokens.json`, `build/tokens.css` | Design tokens with their modes, and the CSS custom properties. |
 | `build/AI-CONTRACT.md` | What an AI tool may use, must never use, and should ignore in Figma. |
 | `build/report.json` | Every finding as data. |
@@ -63,6 +65,6 @@ Which rule sits in which group is a proposal. It is one word to change.
 
 ## Not done yet
 
-- Button, Input and Badge in code, built from `build/tokens.css`, with interactive documentation.
+- 32 of the 46 components are still Figma only. 14 are in code, built from `build/tokens.css`, with interactive documentation in Storybook.
 - A person reviewing every page of the Figma file by eye.
 - Publishing the library to a file that uses it. This has never been tested.

@@ -1,0 +1,20 @@
+/* Alert. Every value is a token from build/tokens.css, bound the same way as the Figma component. */
+.ds-alert {
+  display: flex; align-items: flex-start; gap: var(--alert-gap);
+  padding: var(--alert-padding-v) var(--alert-padding-h);
+  background: var(--container-fill); color: var(--text);
+  border: var(--border-width-hairline) solid var(--border-default); border-radius: var(--radius-surface);
+}
+.ds-alert__icon { flex: none; width: var(--size-icon-md); height: var(--size-icon-md); color: var(--icon); }
+.ds-alert__body { display: grid; gap: var(--alert-body-gap); min-width: 0; }
+.ds-alert__title { margin: 0; font: 700 var(--text-h3-size)/1.3 Barlow, system-ui, sans-serif; color: var(--text); }
+.ds-alert__text { margin: 0; font: 400 var(--text-body-lg-size)/1.3 Barlow, system-ui, sans-serif; color: var(--text-muted); }
+
+.ds-alert--info { background: var(--feedback-info-bg); border-color: var(--feedback-info); }
+.ds-alert--info .ds-alert__icon { color: var(--feedback-info); }
+.ds-alert--success { background: var(--feedback-success-bg); border-color: var(--feedback-success); }
+.ds-alert--success .ds-alert__icon { color: var(--feedback-success); }
+.ds-alert--warning { background: var(--feedback-warning-bg); border-color: var(--feedback-warning); }
+.ds-alert--warning .ds-alert__icon { color: var(--feedback-warning); }
+.ds-alert--error { background: var(--feedback-error-bg); border-color: var(--feedback-error); }
+.ds-alert--error .ds-alert__icon { color: var(--feedback-error); }
