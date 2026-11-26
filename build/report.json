@@ -4,8 +4,8 @@
   "reader": "Figma Plugin API",
   "sourceFile": "Ascendum Design System",
   "sourceSha256": "5lhRMZkLHZijqgdigjk3J1",
-  "generatedAt": "2026-11-26T15:31:21.097Z",
-  "nodes": 16074,
+  "generatedAt": "2026-11-26T15:34:56.455Z",
+  "nodes": 16080,
   "pages": 77,
   "gate": "OPEN",
   "summary": {
@@ -21,10 +21,10 @@
    "variants": 210,
    "icons": 211,
    "textStyles": 16,
-   "textLayers": 6150,
-   "paints": 10271,
+   "textLayers": 6152,
+   "paints": 10275,
    "fonts": {
-    "Barlow": 6150
+    "Barlow": 6152
    }
   }
  },
@@ -151,7 +151,7 @@
    "level": "warn",
    "title": "Every colour is bound to a token or a style",
    "count": 0,
-   "summary": "0 of 10271 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
+   "summary": "0 of 10275 visible solid paints are typed in by hand. 0 of them use 0 colours that exist in no token.",
    "evidence": [
     "split: ",
     "where: ",
@@ -218,7 +218,7 @@
    "level": "warn",
    "title": "Every text layer uses a text style",
    "count": 0,
-   "summary": "0 of 6150 text layers have no text style, in 0 different sizes.",
+   "summary": "0 of 6152 text layers have no text style, in 0 different sizes.",
    "evidence": [
     "where: ",
     "sizes (px): "
@@ -3296,14 +3296,14 @@
     "Desktop": 13,
     "Mobile": 13
    },
-   "direct": 1978,
+   "direct": 1980,
    "aliases": [],
-   "layers": 1978,
+   "layers": 1980,
    "productLayers": 11,
    "components": [
     [
      "(documentation, not a component)",
-     1967
+     1969
     ],
     [
      "Form Field",
@@ -3379,12 +3379,12 @@
     "text/link",
     "text/on-accent"
    ],
-   "layers": 4809,
+   "layers": 4811,
    "productLayers": 658,
    "components": [
     [
      "(documentation, not a component)",
-     4151
+     4153
     ],
     [
      "Overview Card",
@@ -3455,6 +3455,10 @@
      13
     ],
     [
+     "Combobox",
+     12
+    ],
+    [
      "Section / Header",
      12
     ],
@@ -3467,7 +3471,7 @@
      12
     ],
     [
-     "Combobox",
+     "Avatar",
      12
     ],
     [
@@ -3475,11 +3479,11 @@
      12
     ],
     [
-     "Avatar",
-     12
+     "Key Stakeholders Card",
+     10
     ],
     [
-     "Key Stakeholders Card",
+     "Side Navigation",
      10
     ],
     [
@@ -3491,32 +3495,20 @@
      10
     ],
     [
-     "Side Navigation",
-     10
+     "Tab",
+     8
     ],
     [
      "Section / Showcase",
      8
     ],
     [
-     "Tab",
-     8
-    ],
-    [
-     "Slider",
-     7
-    ],
-    [
      "Side Nav Item",
      7
     ],
     [
-     "Empty State",
-     6
-    ],
-    [
-     "Modal",
-     6
+     "Slider",
+     7
     ],
     [
      "Code Block",
@@ -3524,6 +3516,14 @@
     ],
     [
      "Tooltip",
+     6
+    ],
+    [
+     "Empty State",
+     6
+    ],
+    [
+     "Modal",
      6
     ],
     [
@@ -3623,12 +3623,12 @@
     "text/inverted",
     "text/link"
    ],
-   "layers": 4630,
+   "layers": 4632,
    "productLayers": 612,
    "components": [
     [
      "(documentation, not a component)",
-     4018
+     4020
     ],
     [
      "Button",
@@ -3699,6 +3699,10 @@
      13
     ],
     [
+     "Combobox",
+     12
+    ],
+    [
      "Section / Header",
      12
     ],
@@ -3711,12 +3715,12 @@
      12
     ],
     [
-     "Combobox",
+     "Table Row",
      12
     ],
     [
-     "Table Row",
-     12
+     "Side Navigation",
+     10
     ],
     [
      "Section / Let's Connect",
@@ -3727,15 +3731,7 @@
      10
     ],
     [
-     "Side Navigation",
-     10
-    ],
-    [
      "Key Stakeholders Card",
-     8
-    ],
-    [
-     "Section / Showcase",
      8
     ],
     [
@@ -3743,20 +3739,16 @@
      8
     ],
     [
-     "Slider",
-     7
+     "Section / Showcase",
+     8
     ],
     [
      "Side Nav Item",
      7
     ],
     [
-     "Empty State",
-     6
-    ],
-    [
-     "Modal",
-     6
+     "Slider",
+     7
     ],
     [
      "Code Block",
@@ -3764,6 +3756,14 @@
     ],
     [
      "Tooltip",
+     6
+    ],
+    [
+     "Empty State",
+     6
+    ],
+    [
+     "Modal",
      6
     ],
     [
@@ -4488,11 +4488,11 @@
      5
     ],
     [
-     "Skeleton",
+     "Table Row",
      4
     ],
     [
-     "Table Row",
+     "Skeleton",
      4
     ],
     [
@@ -4502,10 +4502,6 @@
     [
      "Accordion Item",
      3
-    ],
-    [
-     "Button",
-     2
     ],
     [
      "Divider",
@@ -4525,6 +4521,10 @@
     ],
     [
      "Drawer",
+     2
+    ],
+    [
+     "Button",
      2
     ],
     [
@@ -4680,12 +4680,12 @@
     "text/inverted-muted",
     "text/muted"
    ],
-   "layers": 2299,
+   "layers": 2301,
    "productLayers": 128,
    "components": [
     [
      "(documentation, not a component)",
-     2171
+     2173
     ],
     [
      "Section / Columns",
@@ -4704,12 +4704,16 @@
      8
     ],
     [
+     "Section / Full Width",
+     6
+    ],
+    [
      "File Uploader",
      6
     ],
     [
-     "Section / Full Width",
-     6
+     "Footer",
+     5
     ],
     [
      "Breadcrumb Item",
@@ -4724,12 +4728,20 @@
      5
     ],
     [
-     "Footer",
+     "Table",
      5
     ],
     [
-     "Table",
-     5
+     "Key Stakeholders Card",
+     4
+    ],
+    [
+     "Section / Quote",
+     4
+    ],
+    [
+     "Section / Showcase",
+     4
     ],
     [
      "Search Bar",
@@ -4740,19 +4752,7 @@
      4
     ],
     [
-     "Key Stakeholders Card",
-     4
-    ],
-    [
      "Tab",
-     4
-    ],
-    [
-     "Section / Quote",
-     4
-    ],
-    [
-     "Section / Showcase",
      4
     ],
     [
@@ -4768,6 +4768,10 @@
      2
     ],
     [
+     "Code Block",
+     1
+    ],
+    [
      "Stat Card",
      1
     ],
@@ -4781,10 +4785,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Code Block",
      1
     ]
    ],
@@ -4814,11 +4814,11 @@
      60
     ],
     [
-     "Spacing, Grid & Layout",
+     "Overview",
      56
     ],
     [
-     "Overview",
+     "Spacing, Grid & Layout",
      56
     ]
    ]
@@ -4844,6 +4844,10 @@
      100
     ],
     [
+     "Overview Card",
+     6
+    ],
+    [
      "Input",
      6
     ],
@@ -4852,8 +4856,8 @@
      6
     ],
     [
-     "Overview Card",
-     6
+     "Section / Quote",
+     4
     ],
     [
      "Search Bar",
@@ -4864,15 +4868,11 @@
      4
     ],
     [
-     "Section / Quote",
-     4
-    ],
-    [
-     "Combobox",
+     "Key Stakeholders Card",
      2
     ],
     [
-     "Key Stakeholders Card",
+     "Combobox",
      2
     ],
     [
@@ -4983,28 +4983,32 @@
      294
     ],
     [
-     "Section / Full Width",
-     6
-    ],
-    [
      "Overview Card",
      6
     ],
     [
-     "Section / Showcase",
-     4
+     "Section / Full Width",
+     6
     ],
     [
      "Section / Quote",
      4
     ],
     [
-     "Search Bar",
-     2
+     "Section / Showcase",
+     4
     ],
     [
      "Key Stakeholders Card",
      2
+    ],
+    [
+     "Search Bar",
+     2
+    ],
+    [
+     "Team Card",
+     1
     ],
     [
      "Code Block",
@@ -5024,10 +5028,6 @@
     ],
     [
      "Jira Annotation",
-     1
-    ],
-    [
-     "Team Card",
      1
     ]
    ],
@@ -5103,11 +5103,11 @@
      5
     ],
     [
-     "Skeleton",
+     "Table Row",
      4
     ],
     [
-     "Table Row",
+     "Skeleton",
      4
     ],
     [
@@ -5212,11 +5212,11 @@
      29
     ],
     [
-     "Button",
+     "Menu Item",
      2
     ],
     [
-     "Menu Item",
+     "Button",
      2
     ],
     [
@@ -6777,14 +6777,14 @@
     "Light": "neutral/750",
     "Dark": "neutral/500"
    },
-   "direct": 2156,
+   "direct": 2158,
    "aliases": [],
-   "layers": 2156,
+   "layers": 2158,
    "productLayers": 95,
    "components": [
     [
      "(documentation, not a component)",
-     2061
+     2063
     ],
     [
      "Overview Card",
@@ -7271,14 +7271,14 @@
     "Light": "brand/midnight",
     "Dark": "brand/milkyway"
    },
-   "direct": 107,
+   "direct": 109,
    "aliases": [],
-   "layers": 107,
+   "layers": 109,
    "productLayers": 25,
    "components": [
     [
      "(documentation, not a component)",
-     82
+     84
     ],
     [
      "Checkbox",
@@ -7335,8 +7335,8 @@
      4
     ],
     [
-     "Iconography",
-     3
+     "Radius & Elevation",
+     4
     ]
    ]
   },
@@ -9124,14 +9124,14 @@
     "Desktop": 1.5,
     "Mobile": 1.5
    },
-   "direct": 246,
+   "direct": 247,
    "aliases": [],
-   "layers": 246,
+   "layers": 247,
    "productLayers": 60,
    "components": [
     [
      "(documentation, not a component)",
-     186
+     187
     ],
     [
      "Input",
@@ -14257,12 +14257,12 @@
     "text/muted",
     "text/placeholder"
    ],
-   "layers": 2374,
+   "layers": 2376,
    "productLayers": 143,
    "components": [
     [
      "(documentation, not a component)",
-     2231
+     2233
     ],
     [
      "Section / Columns",
@@ -14281,7 +14281,7 @@
      11
     ],
     [
-     "Input",
+     "Section / Full Width",
      6
     ],
     [
@@ -14289,8 +14289,12 @@
      6
     ],
     [
-     "Section / Full Width",
+     "Input",
      6
+    ],
+    [
+     "Footer",
+     5
     ],
     [
      "Alert",
@@ -14301,31 +14305,11 @@
      5
     ],
     [
-     "Footer",
-     5
-    ],
-    [
      "Table",
      5
     ],
     [
-     "Search Bar",
-     4
-    ],
-    [
-     "Select",
-     4
-    ],
-    [
-     "Menu Item",
-     4
-    ],
-    [
      "Key Stakeholders Card",
-     4
-    ],
-    [
-     "Tab",
      4
     ],
     [
@@ -14337,16 +14321,28 @@
      4
     ],
     [
+     "Menu Item",
+     4
+    ],
+    [
+     "Tab",
+     4
+    ],
+    [
      "Table Row",
+     4
+    ],
+    [
+     "Search Bar",
+     4
+    ],
+    [
+     "Select",
      4
     ],
     [
      "Toast",
      3
-    ],
-    [
-     "Combobox",
-     2
     ],
     [
      "Breadcrumb Item",
@@ -14355,6 +14351,14 @@
     [
      "Drawer",
      2
+    ],
+    [
+     "Combobox",
+     2
+    ],
+    [
+     "Code Block",
+     1
     ],
     [
      "Stat Card",
@@ -14370,10 +14374,6 @@
     ],
     [
      "Modal",
-     1
-    ],
-    [
-     "Code Block",
      1
     ]
    ],
@@ -14407,7 +14407,7 @@
      60
     ],
     [
-     "Spacing, Grid & Layout",
+     "Overview",
      56
     ]
    ]
@@ -14896,11 +14896,11 @@
      5
     ],
     [
-     "03 · Contribution & Governance",
+     "Colour",
      3
     ],
     [
-     "Colour",
+     "03 · Contribution & Governance",
      3
     ],
     [
@@ -15403,14 +15403,14 @@
     "Desktop": 2,
     "Mobile": 2
    },
-   "direct": 56,
+   "direct": 57,
    "aliases": [],
-   "layers": 56,
+   "layers": 57,
    "productLayers": 18,
    "components": [
     [
      "(documentation, not a component)",
-     38
+     39
     ],
     [
      "Button",
@@ -15471,8 +15471,8 @@
      3
     ],
     [
-     "02 · Changelog",
-     1
+     "Radius & Elevation",
+     2
     ]
    ]
   },
