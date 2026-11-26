@@ -19,7 +19,7 @@ proposed changes           checks + a person       the source of truth         t
 
 ## Start here
 
-Open the published site: https://ascendum-design-system.netlify.app (Storybook) and https://ascendum-design-system.netlify.app/report/ (health report). The report shows the gate, every check with its evidence, the before and after, and the impact map (pick a token, see every component that moves).
+Open the published site: https://thiago-ascendum.github.io/ascendum-design-system/ (Storybook) and https://thiago-ascendum.github.io/ascendum-design-system/report/ (health report). It is published by GitHub Actions on GitHub Pages, only when every check passes. Start with the page Start here / Pipeline proof. The report shows the gate, every check with its evidence, the before and after, and the impact map (pick a token, see every component that moves).
 
 ## What is here
 
