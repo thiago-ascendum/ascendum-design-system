@@ -90,16 +90,11 @@ jobs:
   publish:
     name: Publish
     # Runs only when every check passed. A red gate means this job is skipped and nothing is published.
-    # On a pull request it publishes a preview build (an artifact). On main it publishes the site on GitHub Pages.
+    # On a pull request it keeps a preview build (an artifact). On main it packs the site for GitHub Pages.
     needs: [gate, components]
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      actions: read
-      pages: write
-      id-token: write
-    environment:
-      name: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' && 'github-pages' || 'preview' }}
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -115,8 +110,24 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         with:
           path: dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    # A job of its own: deploying in the same job as the upload sometimes ran before GitHub listed the
+    # artifact ("No artifacts named github-pages were found"). Re-running this job reuses the same artifact.
+    needs: publish
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Publish on GitHub Pages
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        id: deployment
         uses: actions/deploy-pages@v4
 
   report:
