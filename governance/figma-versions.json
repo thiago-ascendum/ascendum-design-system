@@ -1,10 +1,30 @@
 {
-  "about": "Named Figma versions that a release points to. The snapshot records its own version id from now on (meta.figmaVersion). Versions saved before that were saved by title only: their id is read from the Figma version history, which needs a REST token for the account that owns the file.",
+  "about": "Named Figma versions that a release points to. Ids and times are read from the Figma version history (REST API, GET /v1/files/:key/versions). The snapshot also records its own version id (meta.figmaVersion).",
   "fileKey": "5lhRMZkLHZijqgdigjk3J1",
   "versions": [
-    { "title": "Colour roles", "savedAt": "2026-11-26T17:28:15Z", "id": null, "content": "Colour tokens named by role: 41 Semantic roles, 13 Context tokens, 262 variables. The content of release 1.1.0." },
-    { "title": "Snapshot for Git", "savedAt": "2026-11-26T17:45:35Z", "id": "2426222688165894604", "content": "First version saved and recorded by the snapshot itself (pipeline/01b). Pull request 2." },
-    { "title": "Pipeline proof: Button padding-h 28 to 32", "savedAt": "2026-11-26T17:48:23Z", "id": "2426224325050437201", "content": "Token change test. Pull request 3." },
-    { "title": "Pipeline proof: Button padding-h back to 28", "savedAt": "2026-11-26T17:49Z", "id": "2426225909391439100", "content": "Token change reverted in Figma." }
+    {
+      "title": "Colour roles",
+      "savedAt": "2026-11-26T17:12:49Z",
+      "id": "2426219858297728301",
+      "content": "Colour tokens named by role: 41 Semantic roles, 13 Context tokens, 262 variables. The content of release 1.1.0."
+    },
+    {
+      "title": "Snapshot for Git",
+      "savedAt": "2026-11-26T17:38:36Z",
+      "id": "2426222688165894604",
+      "content": "First version saved and recorded by the snapshot itself (pipeline/01b). Pull request 2."
+    },
+    {
+      "title": "Pipeline proof: Button padding-h 28 to 32",
+      "savedAt": "2026-11-26T17:45:59Z",
+      "id": "2426224325050437201",
+      "content": "Token change test. Pull request 3."
+    },
+    {
+      "title": "Pipeline proof: Button padding-h back to 28",
+      "savedAt": "2026-11-26T17:48:46Z",
+      "id": "2426225909391439100",
+      "content": "Token change reverted in Figma."
+    }
   ]
 }
