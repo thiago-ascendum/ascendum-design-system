@@ -18,6 +18,15 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
   { title: 'Needs the owner: 4', text: 'Nothing we can settle from inside the file: brand colours against the brand guide, corner radius for internal tools, border widths, illustration guidelines.', tone: 'avoid' },
 ]} />
 
+<Cards columns={2} items={[
+  { title: 'Found while working, for the owner: status solids in Dark mode', tone: 'avoid', text: [
+    'The solid status fills (error, warning, success, info) are tone 40 in both modes, as in the DS StratNova. White on them passes: 5.3 to 6.5:1. Against the Dark page (#212121) the fill itself is 2.5 to 3.0:1, under the 3:1 a control edge needs when the fill is the only edge.',
+    'Option A, lighten the solid in Dark to tone 60 with tone 10 text on it: 5.2 to 5.6:1 against the page, 5.5 to 6.0:1 for the text. The same colour no longer looks the same in both modes.',
+    'Option B, keep tone 40 and use it only as a fill with on-X on top and a visible label, never as the only edge of a control. No value changes; one rule in Governance.',
+    'Nothing is changed until the owner picks one. Measured on 26 November 2026 from the tonal palettes.',
+  ] },
+]} />
+
 <Index items={['Getting started and governance', 'Foundations', 'Atoms', 'Composite components', 'Global issues']} />
 
 <Section n={1} title="Getting started and governance">
