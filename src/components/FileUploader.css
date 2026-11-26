@@ -1,0 +1,22 @@
+/* File Uploader. A dashed zone at rest, a solid black border while a file is over it, a solid error border on failure.
+   The error colour is never alone: the icon, the title and the reason say it too. */
+.ds-file-uploader {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  box-sizing: border-box; width: 100%; gap: var(--space-2xs); padding: var(--dropzone-padding);
+  font: 400 var(--text-body-size)/1.25 Barlow, system-ui, sans-serif; color: var(--on-surface);
+  background: var(--surface-container-low); border: var(--border-width-button) dashed var(--outline-medium); border-radius: var(--radius-card);
+}
+.ds-file-uploader--active { background: var(--surface-container); border: var(--border-width-button) solid var(--outline); }
+.ds-file-uploader--error { background: var(--surface-container); border: var(--border-width-button) solid var(--on-surface-error); }
+.ds-file-uploader__icon { display: inline-flex; color: var(--on-surface); }
+.ds-file-uploader--error .ds-file-uploader__icon { color: var(--on-surface-error); }
+.ds-file-uploader p { margin: 0; }
+.ds-file-uploader__title { font-weight: 700; font-size: var(--text-h6-size); color: var(--on-surface); }
+.ds-file-uploader--error .ds-file-uploader__title { color: var(--on-surface-error); }
+.ds-file-uploader__text { color: var(--on-surface-variant); }
+.ds-file-uploader__hint { font-size: var(--text-footnote-size); color: var(--on-surface-variant); }
+.ds-file-uploader__browse {
+  padding: 0; border: 0; background: transparent; font: inherit; color: inherit; text-decoration: underline; cursor: pointer;
+}
+.ds-file-uploader__browse:focus-visible { outline: var(--border-width-focus) solid var(--focus); outline-offset: 4px; }
+.ds-file-uploader__file { display: none; }

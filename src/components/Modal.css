@@ -1,0 +1,15 @@
+/* Modal. Tokens bound as in Figma: component/modal/*, radius/card, hairline top stroke on the actions in outline-variant. */
+.ds-modal { box-sizing: border-box; width: var(--modal-max-width); max-width: 100%; border-radius: var(--radius-card); background: var(--surface-container); color: var(--on-surface); overflow: hidden; }
+.ds-modal__header { padding: var(--modal-head-padding) var(--modal-padding-h) 0; }
+.ds-modal__title { margin: 0; font: 700 var(--text-h4-size)/1.2 Barlow, system-ui, sans-serif; color: var(--on-surface); }
+.ds-modal__body { padding: var(--space-3xs) var(--modal-padding-h) var(--modal-body-padding); }
+.ds-modal__text { margin: 0; font: 400 var(--text-body-lg-size)/1.5 Barlow, system-ui, sans-serif; color: var(--on-surface-variant); }
+.ds-modal__actions {
+  display: flex; justify-content: flex-end; align-items: center; gap: var(--modal-actions-gap);
+  padding: var(--modal-body-padding) var(--modal-padding-h) var(--modal-head-padding);
+  border-top: var(--border-width-hairline) solid var(--outline-variant);
+}
+/* In place by default. ModalOverlay is the only part that covers the page. */
+.ds-modal-overlay { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: var(--space-2xs); }
+.ds-modal-overlay::before { content: ''; position: absolute; inset: 0; background: var(--inverse-surface); opacity: 0.6; }
+.ds-modal-overlay > .ds-modal { position: relative; }

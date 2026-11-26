@@ -1,0 +1,16 @@
+/* Select. Same field measures as Input: 1.5px border, 4px radius. Colours follow the Figma bindings. */
+.ds-select {
+  display: inline-flex; align-items: center; justify-content: space-between; gap: var(--select-gap);
+  box-sizing: border-box; min-width: var(--select-min-width);
+  padding: var(--select-padding-v) var(--select-padding-h);
+  font: 400 var(--text-body-size)/1.0625 Barlow, system-ui, sans-serif; text-align: left;
+  color: var(--on-surface); background: var(--surface-container);
+  border: var(--border-width-field) solid var(--outline); border-radius: var(--field-radius); cursor: pointer;
+}
+.ds-select--placeholder .ds-select__label { color: var(--on-surface-placeholder); }
+.ds-select--selected .ds-select__label { color: var(--on-surface); }
+.ds-select__chevron { flex: none; color: var(--on-surface); }
+.ds-select:focus-visible { outline: var(--border-width-focus) solid var(--focus); outline-offset: 4px; }
+.ds-select[aria-invalid='true'] { border-color: var(--on-surface-error); }
+.ds-select:disabled { border-color: var(--outline-variant); opacity: 0.4; cursor: not-allowed; }
+.ds-select:hover:not(:disabled):not(:focus-visible) { background: var(--surface-hover); }

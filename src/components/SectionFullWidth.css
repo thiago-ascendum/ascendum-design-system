@@ -1,0 +1,14 @@
+/* Section / Full Width. Context roles (ctx/*) so data-context="inverted" on a parent inverts it. */
+.ds-section-full-width {
+  box-sizing: border-box; background: var(--ctx-surface); color: var(--ctx-on-surface);
+  padding: var(--space-sm) var(--space-md); border-radius: var(--container-radius);
+}
+.ds-section-full-width__row { display: flex; align-items: center; gap: var(--space-xs); }
+.ds-section-full-width--text-right .ds-section-full-width__row { flex-direction: row-reverse; }
+.ds-section-full-width__text { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: var(--space-2xs); }
+.ds-section-full-width__heading { margin: 0; font: 700 var(--text-h2-size)/0.95 Barlow, system-ui, sans-serif; color: var(--ctx-on-surface); }
+.ds-section-full-width__body { margin: 0; font: 400 var(--text-body-lg-size)/1.4 Barlow, system-ui, sans-serif; color: var(--ctx-on-surface-variant); }
+.ds-section-full-width__media {
+  flex: 1 1 0; min-width: 0; min-height: 240px; box-sizing: border-box; overflow: hidden;
+  background: var(--surface-container-low); border: 1px dashed var(--outline-medium); border-radius: var(--radius-card);
+}

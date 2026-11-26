@@ -1,0 +1,14 @@
+/* Section / Quote. Context roles (ctx/*) so data-context="inverted" on a parent inverts it. */
+.ds-section-quote {
+  display: flex; flex-direction: column; gap: var(--space-xs); margin: 0; box-sizing: border-box;
+  background: var(--ctx-surface); color: var(--ctx-on-surface);
+  padding: var(--space-sm) var(--space-md); border-radius: var(--container-radius);
+}
+.ds-section-quote__quote { margin: 0; font: 700 var(--text-display-size)/1.05 Barlow, system-ui, sans-serif; color: var(--ctx-on-surface); }
+.ds-section-quote--h2 .ds-section-quote__quote { font-size: var(--text-h2-size); }
+.ds-section-quote__attribution {
+  display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3xs);
+  padding-left: var(--space-2xs); border-left: var(--border-width-button) solid var(--inverse-outline-variant);
+}
+.ds-section-quote__author { font: 700 var(--text-h6-size)/1.2 Barlow, system-ui, sans-serif; color: var(--ctx-on-surface); }
+.ds-section-quote__role { font: 400 var(--text-body-size)/1.4 Barlow, system-ui, sans-serif; color: var(--ctx-on-surface-variant); }

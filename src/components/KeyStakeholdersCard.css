@@ -1,0 +1,19 @@
+/* Key Stakeholders Card. Every value is a token from build/tokens.css, bound as in Figma.
+   Surfaces and text use the Context roles (ctx/*), so a parent with data-context="inverted" inverts the card. */
+.ds-key-stakeholders-card {
+  display: flex; flex-direction: column; gap: var(--group-card-gap); box-sizing: border-box; width: 100%;
+  padding: var(--group-card-padding-v) var(--group-card-padding-h);
+  background: var(--ctx-surface); color: var(--ctx-on-surface);
+  border: var(--border-width-hairline) solid var(--ctx-outline-variant); border-radius: var(--container-radius);
+  font-family: Barlow, system-ui, sans-serif;
+}
+.ds-key-stakeholders-card__title { margin: 0; font-size: var(--text-h6-size); font-weight: 700; line-height: 1.3; color: var(--ctx-on-surface); }
+.ds-key-stakeholders-card__list { display: flex; flex-direction: column; gap: var(--group-card-body-gap-v); margin: 0; padding: 0; list-style: none; }
+.ds-key-stakeholders-card__row { display: flex; align-items: center; gap: var(--group-card-body-gap-h); }
+.ds-key-stakeholders-card__text { display: flex; flex-direction: column; min-width: 0; }
+.ds-key-stakeholders-card__name { font-size: var(--text-body-size); font-weight: 600; line-height: 1.3; color: var(--ctx-on-surface); }
+.ds-key-stakeholders-card__relationship { font-size: var(--font-size-body-sm); line-height: 1.3; color: var(--ctx-on-surface-variant); }
+.ds-key-stakeholders-card__logo {
+  display: inline-flex; flex: none; box-sizing: border-box; width: var(--avatar-size-sm); height: var(--avatar-size-sm);
+  color: var(--ctx-logo); border-radius: var(--radius-pill); border: var(--border-width-hairline) solid var(--ctx-outline-variant);
+}

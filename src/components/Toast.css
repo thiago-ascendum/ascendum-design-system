@@ -1,0 +1,11 @@
+/* Toast. Every value is a token from build/tokens.css, bound the same way as the Figma component.
+   It uses the inverse roles directly, so it stays inverted in every mode. */
+.ds-toast {
+  display: flex; align-items: center; box-sizing: border-box; width: 100%; max-width: var(--toast-max-width);
+  gap: var(--toast-gap); padding: var(--toast-padding-v) var(--toast-padding-h);
+  background: var(--inverse-surface); color: var(--inverse-on-surface); border-radius: var(--radius-surface);
+}
+.ds-toast__icon { flex: none; width: var(--size-icon-md); height: var(--size-icon-md); color: var(--inverse-on-surface); }
+.ds-toast__body { display: flex; flex: 1; align-items: center; justify-content: space-between; gap: var(--toast-body-gap); min-width: 0; }
+.ds-toast__title { font: 700 var(--text-button-size)/1.3 Barlow, system-ui, sans-serif; color: var(--inverse-on-surface); }
+.ds-toast__meta { font: 400 var(--font-size-body-sm)/1.3 Barlow, system-ui, sans-serif; color: var(--inverse-on-surface-variant); white-space: nowrap; }

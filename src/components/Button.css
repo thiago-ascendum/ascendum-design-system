@@ -5,7 +5,7 @@
   padding: var(--button-padding-v) var(--button-padding-h);
   font: 700 var(--text-button-size)/0.95 Barlow, system-ui, sans-serif; letter-spacing: 0;
   border: var(--border-width-button) solid transparent; border-radius: var(--button-radius);
-  background: transparent; color: var(--ctx-on-surface); cursor: pointer; text-decoration: none;
+  background: transparent; color: var(--ctx-on-surface); cursor: pointer; text-decoration: none; white-space: nowrap;
 }
 .ds-button:focus-visible { outline: var(--border-width-focus) solid var(--ctx-focus); outline-offset: 4px; }
 .ds-button:disabled { opacity: 0.4; cursor: not-allowed; }
