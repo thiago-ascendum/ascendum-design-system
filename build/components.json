@@ -99,17 +99,23 @@
     "description": "Choose any number of options from a list. Use it for settings and filters where each option stands alone. Use Radio when only one answer is allowed, and Toggle when the change takes effect straight away.\n\nChecked and Indeterminate fill the box so the state reads without colour. Indeterminate is for a parent whose children are only partly selected. Focus adds a ring around the box. Disabled is for options that are unavailable right now, so say why in nearby text.",
     "name": "Checkbox",
     "page": "Checkbox",
-    "variantCount": 9,
+    "variantCount": 15,
     "variants": [
       "Checked=False, State=Default",
       "Checked=False, State=Disabled",
       "Checked=False, State=Focus",
+      "Checked=False, State=Hover",
+      "Checked=False, State=Pressed",
       "Checked=Indeterminate, State=Default",
       "Checked=Indeterminate, State=Disabled",
       "Checked=Indeterminate, State=Focus",
+      "Checked=Indeterminate, State=Hover",
+      "Checked=Indeterminate, State=Pressed",
       "Checked=True, State=Default",
       "Checked=True, State=Disabled",
-      "Checked=True, State=Focus"
+      "Checked=True, State=Focus",
+      "Checked=True, State=Hover",
+      "Checked=True, State=Pressed"
     ]
   },
   {
@@ -123,11 +129,12 @@
     "description": "A multi-select field where people type to filter a list and pick several items, which then sit inside the field as removable tokens. Use it when there are more than about seven options. For a single choice use Select, for a handful of options use checkboxes. Pair it with Menu Item for the open list.",
     "name": "Combobox",
     "page": "Combobox",
-    "variantCount": 3,
+    "variantCount": 4,
     "variants": [
       "State=Empty",
       "State=Filled",
-      "State=Focus"
+      "State=Focus",
+      "State=Hover"
     ]
   },
   {
@@ -172,28 +179,29 @@
     "description": "Page footer: a row of links above a legal bar. Use it once, at the bottom of every page. The legal bar is always dark, in both variants and both modes, so it anchors the page.",
     "name": "Footer",
     "page": "Footer",
-    "variantCount": 2,
+    "variantCount": 1,
     "variants": [
-      "Variant=Default",
-      "Variant=Inverted"
+      "Variant=Default"
     ]
   },
   {
     "description": "A label, an input and, only when needed, a message. Use it for every text entry in a form. Help text is hidden by default: add it only when the label alone is not enough, and show it before the person types. Validation messages replace help text and use the error colour.",
     "name": "Form Field",
     "page": "Form Field",
-    "variantCount": 10,
+    "variantCount": 12,
     "variants": [
       "Type=Text, State=Default",
       "Type=Text, State=Disabled",
       "Type=Text, State=Error",
       "Type=Text, State=Filled",
       "Type=Text, State=Focus",
+      "Type=Text, State=Hover",
       "Type=Textarea, State=Default",
       "Type=Textarea, State=Disabled",
       "Type=Textarea, State=Error",
       "Type=Textarea, State=Filled",
-      "Type=Textarea, State=Focus"
+      "Type=Textarea, State=Focus",
+      "Type=Textarea, State=Hover"
     ]
   },
   {
@@ -222,18 +230,20 @@
     "description": "Text field for short answers, and a textarea for longer ones.\n\nUse it when the person has to type something. Use Select or Combobox when the answers come from a list. Always pair it with a visible label above the field; the placeholder is an example, not a label.\n\n1.5 px border and 4 px radius, between the sharp button and the round card. Focus adds a ring around the field. Errors use feedback/error and need a short message under the field that says how to fix it.",
     "name": "Input",
     "page": "Input",
-    "variantCount": 10,
+    "variantCount": 12,
     "variants": [
       "Type=Text, State=Default",
       "Type=Text, State=Disabled",
       "Type=Text, State=Error",
       "Type=Text, State=Filled",
       "Type=Text, State=Focus",
+      "Type=Text, State=Hover",
       "Type=Textarea, State=Default",
       "Type=Textarea, State=Disabled",
       "Type=Textarea, State=Error",
       "Type=Textarea, State=Filled",
-      "Type=Textarea, State=Focus"
+      "Type=Textarea, State=Focus",
+      "Type=Textarea, State=Hover"
     ]
   },
   {
@@ -247,22 +257,19 @@
     "description": "A titled list of the client and delivery partners on a project. Use it in a project overview. Each row has a logo or Avatar, a name and a one-line relationship. Do not use it for more than four organisations.",
     "name": "Key Stakeholders Card",
     "page": "Group Cards",
-    "variantCount": 2,
+    "variantCount": 1,
     "variants": [
-      "Inverted=False",
-      "Inverted=True"
+      "Inverted=False"
     ]
   },
   {
-    "description": "Ascendum logo. Size matches Logo.jsx (full = wordmark lockup, compact = mark only). Colours are deliberately NOT bound to mode variables, a logo should be chosen explicitly, not recoloured by a mode switch. WARNING: the Inverted mark has no backing layer; its glyph is transparent and reads only against a dark surface. On anything light the glyph disappears. Assets were scaled to a common height so toggling Inverted does not resize the component.",
+    "description": "Ascendum logo. Full is the wordmark lockup, Compact is the mark only. Colours are deliberately not bound to Light and Dark: a logo is chosen, not recoloured by a theme. The choice is the Surface mode: Default gives the dark logo, Inverted gives the light one. The light mark has no backing layer and reads only on a dark surface.",
     "name": "Logo",
     "page": "Logo",
-    "variantCount": 4,
+    "variantCount": 2,
     "variants": [
-      "Size=Compact, Inverted=False",
-      "Size=Compact, Inverted=True",
-      "Size=Full, Inverted=False",
-      "Size=Full, Inverted=True"
+      "Size=Compact",
+      "Size=Full"
     ]
   },
   {
@@ -286,13 +293,12 @@
     "variants": []
   },
   {
-    "description": "Top navigation with the logo, links and one call to action. Use it once per page, at the top. Inverted is for dark pages. Horizontal padding matches the page sections so the logo lines up with the content.",
+    "description": "Top navigation with the logo, links and one call to action. Use it once per page, at the top. For a dark bar, set the Surface mode to Inverted: the bar, the logo and the button follow. Horizontal padding matches the page sections so the logo lines up with the content.",
     "name": "Navigation Bar",
     "page": "Navigation Bar",
-    "variantCount": 2,
+    "variantCount": 1,
     "variants": [
-      "Variant=Default",
-      "Variant=Inverted"
+      "Variant=Default"
     ]
   },
   {
@@ -310,10 +316,9 @@
     "description": "Project summary card for a project page: intro text, key stakeholders, team groups and a link out. Use it once per project as the single summary. Do not use it for a list of projects or for one number (use Stat Card). Has Light and Dark variants.",
     "name": "Overview Card",
     "page": "Overview",
-    "variantCount": 2,
+    "variantCount": 1,
     "variants": [
-      "Inverted=False",
-      "Inverted=True"
+      "Inverted=False"
     ]
   },
   {
@@ -336,27 +341,33 @@
     "description": "Choose one option from a short list. Use it when every option should be visible at once. Use a Select when there are more than five options, and Checkbox when more than one answer is allowed.\n\nThe selected option shows a filled dot. Focus is a separate ring around the circle, so it never gets mistaken for a selection. Always have one option selected by default.",
     "name": "Radio",
     "page": "Radio button",
-    "variantCount": 6,
+    "variantCount": 10,
     "variants": [
       "Checked=False, State=Default",
       "Checked=False, State=Disabled",
       "Checked=False, State=Focus",
+      "Checked=False, State=Hover",
+      "Checked=False, State=Pressed",
       "Checked=True, State=Default",
       "Checked=True, State=Disabled",
-      "Checked=True, State=Focus"
+      "Checked=True, State=Focus",
+      "Checked=True, State=Hover",
+      "Checked=True, State=Pressed"
     ]
   },
   {
     "description": "A single-line field for searching a list or a page. Use Default in page headers and Compact inside toolbars and tables. Muted is for a search that sits on a busy surface and should stay quiet until used. Do not use it for filtering by several fields, use Form Field instead.",
     "name": "Search Bar",
     "page": "Search Bar",
-    "variantCount": 6,
+    "variantCount": 8,
     "variants": [
       "Size=Compact, State=Default",
       "Size=Compact, State=Focus",
+      "Size=Compact, State=Hover",
       "Size=Compact, State=Muted",
       "Size=Default, State=Default",
       "Size=Default, State=Focus",
+      "Size=Default, State=Hover",
       "Size=Default, State=Muted"
     ]
   },
@@ -364,94 +375,81 @@
     "description": "Feature block with two to four columns. Use it to set out parallel points of equal weight. Columns share the width evenly with gap/columns (32px). Built at 2, 3 and 4; for other counts, resize one of them.",
     "name": "Section / Columns",
     "page": "Section / Columns",
-    "variantCount": 6,
+    "variantCount": 3,
     "variants": [
-      "Columns=2, Variant=Default",
-      "Columns=2, Variant=Inverted",
-      "Columns=3, Variant=Default",
-      "Columns=3, Variant=Inverted",
-      "Columns=4, Variant=Default",
-      "Columns=4, Variant=Inverted"
+      "Columns=2",
+      "Columns=3",
+      "Columns=4"
     ]
   },
   {
-    "description": "Full-bleed section with four layouts: Text Left, Text Right, Text Only and Media Only. Use it for the main moments of a page, alternating Default and Inverted.",
+    "description": "Full-bleed section with four layouts: Text Left, Text Right, Text Only and Media Only. Use it for the main moments of a page, alternating the Surface mode between Default and Inverted.",
     "name": "Section / Full Width",
     "page": "Section / Full Width",
-    "variantCount": 8,
+    "variantCount": 4,
     "variants": [
-      "Layout=Media Only, Variant=Default",
-      "Layout=Media Only, Variant=Inverted",
-      "Layout=Text Left, Variant=Default",
-      "Layout=Text Left, Variant=Inverted",
-      "Layout=Text Only, Variant=Default",
-      "Layout=Text Only, Variant=Inverted",
-      "Layout=Text Right, Variant=Default",
-      "Layout=Text Right, Variant=Inverted"
+      "Layout=Media Only",
+      "Layout=Text Left",
+      "Layout=Text Only",
+      "Layout=Text Right"
     ]
   },
   {
     "description": "Section heading with a gradient second line. Use it to open a page section. Leave Gradient Line empty for a single line. Gradient paints do not follow Light and Dark, so the accent line looks the same in both. Padding binds to space/sm and space/md, so Mobile mode drops it to 32/48.",
     "name": "Section / Header",
     "page": "Section / Header",
-    "variantCount": 6,
+    "variantCount": 3,
     "variants": [
-      "Level=H1, Variant=Default",
-      "Level=H1, Variant=Inverted",
-      "Level=H2, Variant=Default",
-      "Level=H2, Variant=Inverted",
-      "Level=H3, Variant=Default",
-      "Level=H3, Variant=Inverted"
+      "Level=H1",
+      "Level=H2",
+      "Level=H3"
     ]
   },
   {
-    "description": "Closing call to action. Use it once, as the last block of a page. On dark backgrounds it uses the Inverted button, not a recoloured Primary. Centred, with the gradient on the second line.",
+    "description": "Closing call to action. Use it once, as the last block of a page. For a dark band, set the Surface mode to Inverted: the section and its button follow. Centred, with the gradient on the second line.",
     "name": "Section / Let's Connect",
     "page": "Section / Let's Connect",
-    "variantCount": 2,
+    "variantCount": 1,
     "variants": [
-      "Variant=Default",
-      "Variant=Inverted"
+      "Variant=Default"
     ]
   },
   {
-    "description": "Pull quote with attribution. Use it once per page to give weight to a customer's or leader's words. The 2px rule beside the attribution uses border/quote. On inverted variants the role line uses 70% opacity because text/muted does not invert.",
+    "description": "Pull quote with attribution. Use it once per page to give weight to a customer's or leader's words. The 2px rule beside the attribution uses border/quote. On an inverted surface the role line uses the inverted muted text colour, through the Surface mode.",
     "name": "Section / Quote",
     "page": "Section / Quote",
-    "variantCount": 4,
+    "variantCount": 2,
     "variants": [
-      "Size=H1, Variant=Default",
-      "Size=H1, Variant=Inverted",
-      "Size=H2, Variant=Default",
-      "Size=H2, Variant=Inverted"
+      "Size=H1",
+      "Size=H2"
     ]
   },
   {
     "description": "Text beside an image or video. Use it to explain one idea with a visual. MediaLeft swaps the order, so do not drag layers to do it. The media slot is a dashed placeholder; replace its fill with an image on the instance.",
     "name": "Section / Showcase",
     "page": "Section / Showcase",
-    "variantCount": 4,
+    "variantCount": 2,
     "variants": [
-      "Variant=Default, MediaLeft=False",
-      "Variant=Default, MediaLeft=True",
-      "Variant=Inverted, MediaLeft=False",
-      "Variant=Inverted, MediaLeft=True"
+      "MediaLeft=False",
+      "MediaLeft=True"
     ]
   },
   {
     "description": "A closed dropdown for choosing one option from a list of two to about seven. Use it inside forms and filter bars. For more options with typing, use Combobox, and for a handful of options consider radio buttons. Pair it with Menu Item for the open list.",
     "name": "Select",
     "page": "Select",
-    "variantCount": 8,
+    "variantCount": 10,
     "variants": [
       "Value=Placeholder, State=Default",
       "Value=Placeholder, State=Disabled",
       "Value=Placeholder, State=Error",
       "Value=Placeholder, State=Focus",
+      "Value=Placeholder, State=Hover",
       "Value=Selected, State=Default",
       "Value=Selected, State=Disabled",
       "Value=Selected, State=Error",
-      "Value=Selected, State=Focus"
+      "Value=Selected, State=Focus",
+      "Value=Selected, State=Hover"
     ]
   },
   {
@@ -488,11 +486,13 @@
     "description": "Pick a value inside a range by dragging. Use it when an approximate value is fine and the range is bounded. Use an Input when people need to type an exact number.\n\nAlways show a label and the current value next to it. Focus adds a ring around the thumb. Disabled is for a range that is locked, so say why in nearby text. Fill width and thumb position are set on the instance.",
     "name": "Slider",
     "page": "Slider",
-    "variantCount": 3,
+    "variantCount": 5,
     "variants": [
       "State=Default",
       "State=Disabled",
-      "State=Focus"
+      "State=Focus",
+      "State=Hover",
+      "State=Pressed"
     ]
   },
   {
@@ -550,10 +550,9 @@
     "description": "A titled list of the people on one discipline of a project. Each row has an Avatar, a name and a role with the company. Use one card per discipline and keep to six people or fewer.",
     "name": "Team Card",
     "page": "Group Cards",
-    "variantCount": 2,
+    "variantCount": 1,
     "variants": [
-      "Inverted=False",
-      "Inverted=True"
+      "Inverted=False"
     ]
   },
   {
@@ -571,14 +570,18 @@
     "description": "Switch one setting on or off, with the change applying straight away. Use Checkbox when the choice only counts after a Save button is pressed.\n\nThe track fills when On and the knob moves to the right. Focus adds a ring around the track. Label it with the setting itself, not the action, so the same words work for On and Off.",
     "name": "Toggle",
     "page": "Toggle",
-    "variantCount": 6,
+    "variantCount": 10,
     "variants": [
       "On=False, State=Default",
       "On=False, State=Disabled",
       "On=False, State=Focus",
+      "On=False, State=Hover",
+      "On=False, State=Pressed",
       "On=True, State=Default",
       "On=True, State=Disabled",
-      "On=True, State=Focus"
+      "On=True, State=Focus",
+      "On=True, State=Hover",
+      "On=True, State=Pressed"
     ]
   },
   {

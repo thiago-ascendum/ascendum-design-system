@@ -116,6 +116,10 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--button-label-inverted` | button/label-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
 | `--button-stroke` | button/stroke | #212121 | #F5F5F5 | Border of the Outline button. |
 | `--button-stroke-inverted` | button/stroke-inverted | #F5F5F5 | #212121 | For buttons sitting on an inverted (dark-in-light / light-in-dark) section |
+| `--control-fill-hover` | control/fill-hover | #ECECEC | #444444 | Fill of an empty control under the pointer: checkbox, radio, toggle, input and select. |
+| `--control-fill-pressed` | control/fill-pressed | #D6D6D6 | #555555 | Fill of an empty control while it is pressed. |
+| `--control-fill-selected-hover` | control/fill-selected-hover | #444444 | #ECECEC | Fill of a checked or switched-on control under the pointer. |
+| `--control-fill-selected-pressed` | control/fill-selected-pressed | #555555 | #D6D6D6 | Fill of a checked or switched-on control while it is pressed. |
 | `--feedback-error` | feedback/error | #B02A32 | #CE7B80 | Error text, icons and borders |
 | `--feedback-error-bg` | feedback/error-bg | #FDF1F2 | #3E2324 | Dark value is derived (status flattened over the dark page colour), not authored in the so |
 | `--feedback-info` | feedback/info | #2369AA | #6C9AC6 | Info text, icons and borders |
@@ -141,6 +145,13 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--button-surface-label` | button-surface/label | #212121 | #F5F5F5 | Label of the Outline and Ghost buttons |
 | `--button-surface-label-hover` | button-surface/label-hover | #F5F5F5 | #212121 | Label of the Solid button, and of the others on hover |
 | `--button-surface-stroke` | button-surface/stroke | #212121 | #F5F5F5 | Border of the Outline button |
+| `--surface-bg` | surface/bg | #F5F5F5 | #212121 | Background of a section |
+| `--surface-bg-raised` | surface/bg-raised | #FFFFFF | #212121 | Background of a card that sits on a section |
+| `--surface-border` | surface/border | #ECECEC | #777777 | Hairlines and card borders on a section |
+| `--surface-logo` | surface/logo | #212121 | #F5F5F5 | Logo colour |
+| `--surface-logo-glyph` | surface/logo-glyph | #F5F5F5 | #FFFFFF | The glyph inside the compact logo mark |
+| `--surface-text` | surface/text | #212121 | #F5F5F5 | Text and logo colour on a section |
+| `--surface-text-muted` | surface/text-muted | #6F6F6F | #C0C0C0 | Secondary text on a section |
 
 ## 5. Components in this slice
 
@@ -153,6 +164,15 @@ Starts an action. Solid is the main action and there is one per view. Outline is
 - PROPOSAL, pending the owner: one Solid button per view is the primary action; Outline is secondary; Ghost only inside dense toolbars.
 - Hover and Focus are behaviours of one button in code, not separate designs. Do not draw them as separate components.
 
+### Input
+
+Text field for short answers, and a textarea for longer ones.
+
+- **Type**: Text, Textarea
+- **State**: Default, Disabled, Error, Focus, Hover  ·  not allowed: Filled
+- PROPOSAL, pending the owner: 'Filled' is not a state, it is a Default input with a value.
+- The message slot under the field is always present, so validation never shifts the layout.
+
 ### Badge
 
 Small status pill. Use it to show the state of an item in a table or list. Do not use it for actions or for decoration.
@@ -161,15 +181,6 @@ Small status pill. Use it to show the state of an item in a table or list. Do no
 - **Dot**: False, True
 - PROPOSAL, pending the owner: a tone carries a meaning (Success, Info, Warning, Error). Neutral, Muted and Solid carry none; use Neutral unless told otherwise.
 - Never choose a tone for decoration.
-
-### Input
-
-Text field for short answers, and a textarea for longer ones.
-
-- **Type**: Text, Textarea
-- **State**: Default, Disabled, Error, Focus  ·  not allowed: Filled
-- PROPOSAL, pending the owner: 'Filled' is not a state, it is a Default input with a value.
-- The message slot under the field is always present, so validation never shifts the layout.
 
 ## 6. Before you hand anything back
 

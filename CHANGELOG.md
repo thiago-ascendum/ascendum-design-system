@@ -17,6 +17,7 @@ Clean-up after the design review of 5 November.
 | Avatar | The Fill property is now Tone, and Size has three values instead of four. | Pick the tone and the size again on instances set to Fill=Midnight or Size=Small. |
 | Stat Card | The five Accent variants are gone. | Nothing. Those instances fall back to the plain card. |
 | Badge | The tones Muted and Solid are gone. | Pick a new tone on those instances. |
+| A component set to Inverted | Inverted is no longer a variant on Logo, the three cards, Footer, Navigation Bar and the six sections. | Set the Surface mode to Inverted on the instance or on its section. |
 | Button | The Variant property is gone. Inverted is now the Surface mode, set on the section. | Pick the style again on instances that were Inverted, and set the Surface mode to Inverted on their section. |
 | Breadcrumb Item | Three variants instead of six. Separator is now a switch, not a variant. | Turn the Separator switch off on instances that were set to Separator=False. |
 | A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: text/access-muted to text/muted, UI/Tag and UI/Eyebrow to UI/Label. |
@@ -29,7 +30,7 @@ Clean-up after the design review of 5 November.
 | Colour pairs failing contrast | 16 | 0 |
 | Colours set by hand | 75 | 0 |
 | Labels typed in capitals | 46 | 0 |
-| Variants | 258 | 207 |
+| Variants | 258 | 210 |
 
 ### Removed
 
@@ -57,6 +58,7 @@ Clean-up after the design review of 5 November.
 - Every page canvas in the Figma file is now dark (#1E1E1E), so the page frames read against it.
 - Variables and styles: every variable has a description (73 had none). 22 component variables are scoped to spacing instead of showing in every picker. The two text styles and five gradient styles without a description have one.
 - Breadcrumb Item: three variants instead of six. The separator is a switch on the same three states. Breaking.
+- Inverted: Logo, the three cards, Footer, Navigation Bar and the six sections no longer have an Inverted variant. The section sets the Surface mode and everything inside follows. 44 variants became 22. Breaking.
 - Select: a visible focus ring like Input, and the disabled border uses the same token as Input.
 - Card labels: Checkbox and Radio say "Not checked", Toggle says "Off". Skeleton names its four shapes and lines its samples up.
 
@@ -77,8 +79,10 @@ Clean-up after the design review of 5 November.
 - Tone of Voice: each principle has a before and after shown in a real component.
 - Colour: a contrast table of every text role on its surfaces, light and dark, computed from the variable values.
 - Code: 14 components built from the tokens, with a documentation site published on every change.
-- Interactions: 52 prototype interactions on 18 components. Hover, click and press move between the states that already exist.
-- Surface collection: one collection with two modes, Default and Inverted, and seven button tokens that follow it.
+- Interactions: 98 prototype interactions on 18 components. Hover, click and press move between the states.
+- States: Hover and Pressed on Checkbox, Radio, Toggle and Slider. Hover on Input, Form Field, Select, Combobox and Search Bar. 25 new variants.
+- Surface collection: one collection with two modes, Default and Inverted, and 14 tokens that follow it: seven for Button, five for sections and cards, two for the logo.
+- Control tokens: control/fill-hover, control/fill-pressed, control/fill-selected-hover and control/fill-selected-pressed.
 - Pressed tokens: `button/fill-pressed` and `button/fill-pressed-inverted`.
 - Skeleton: loading behaviour shown in three steps, and a two-frame prototype.
 - Slider: a three-frame prototype of the budget filter.
@@ -89,7 +93,7 @@ Clean-up after the design review of 5 November.
 
 ### Proposed, to confirm
 
-Twelve decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.
+Fourteen decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.
 
 - Unused tokens: removed three that nothing bound: `component/combobox/max-width`, `component/dropzone/icon` and `size/container-half`. The layout sizes (`size/col-*`, `size/container`, `size/full-width`) stay as reference for page layouts.
 - Link colour: `text/link` keeps the colour of the text on purpose. A link is told apart by its underline, never by colour alone.
@@ -103,6 +107,8 @@ Twelve decisions taken with a reason and marked as proposals in the file. Each o
 - Illustration guidelines: five rules for where brand illustrations may be used. For the brand owner to confirm.
 - Button surface: a Surface mode replaces the twelve Inverted variants. A section is inverted once, not button by button.
 - Pressed colour: one grey step past hover on Solid. Outline and Ghost take the Solid hover colour while pressed.
+- Muted text on inverted: secondary text on inverted cards and on the footer uses the inverted muted colour, the same as the sections.
+- Control states: an empty control takes one grey step on hover and two when pressed. A checked one takes the same steps as the Solid button.
 
 ## 1.0.0 · never published
 
