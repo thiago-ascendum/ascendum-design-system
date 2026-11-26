@@ -67,6 +67,12 @@ function propsFor(variant, doc, sample) {
   return { props: p, force };
 }
 
+// Some parts only make sense inside a parent (ARIA): a menu item in a menu, a tab in a tab list, a row in a table.
+// The documentation shows them one by one, so each cell gets that parent. Fields get a name, since the page shows
+// them without the visible label they always have in a product.
+const PARENT_ROLE = { 'Menu Item': 'menu', Tab: 'tablist', 'Table Row': 'table' };
+const NEEDS_NAME = ['Input', 'Search Bar', 'Inline Edit'];
+
 function Rows({ doc, Component, sample, dark }) {
   return doc.rows.map((row) => (
     <div className={'fd-row' + (row.inverted ? ' fd-row--inverted' : '')} key={row.title} {...(row.inverted ? { 'data-context': 'inverted' } : {})}>
@@ -74,10 +80,13 @@ function Rows({ doc, Component, sample, dark }) {
       <div className="fd-cells">
         {row.cells.map((cell, i) => {
           const { props, force } = propsFor(cell.variant, doc, sample);
+          if (NEEDS_NAME.includes(doc.title) && !props['aria-label']) props['aria-label'] = `${doc.title}, ${cell.label}`;
+          const parent = PARENT_ROLE[doc.title];
+          const shown = parent ? <div role={parent} aria-label={`${doc.title}, ${cell.label}`}><Component {...props} /></div> : <Component {...props} />;
           return (
             <div className={'fd-cell' + force.map((f) => ' fd-force-' + f).join('')} key={i + (dark ? 'd' : '')}>
               <span className="fd-caption">{cell.label}</span>
-              <div className={"fd-cell-body sb-unstyled" + (!row.inverted && /invert/i.test(cell.label) ? " fd-cell-body--inverted" : "")} {...(!row.inverted && /invert/i.test(cell.label) ? { "data-context": "inverted" } : {})}><Component {...props} /></div>
+              <div className={"fd-cell-body sb-unstyled" + (!row.inverted && /invert/i.test(cell.label) ? " fd-cell-body--inverted" : "")} {...(!row.inverted && /invert/i.test(cell.label) ? { "data-context": "inverted" } : {})}>{shown}</div>
             </div>
           );
         })}
