@@ -4,10 +4,12 @@ Breaking change detection. Compares two snapshots of the design system and lists
 codebase that uses the old one would lose: tokens, components, properties, property values and text styles
 that are no longer there. Additions are counted, not listed: they break nothing.
 
-It reports and never blocks. Removing something can be the right decision; the point is that nobody
-finds out by accident. The list is the input for the "Does this break my file?" table of the changelog.
+Removing something can be the right decision; the point is that nobody finds out by accident. So it blocks
+(exit code 1) when a break is not written down in governance/accepted-breaking.json. Accepting a break is a
+reviewed change to that file, in the same pull request, with the release that announces it.
+The list is the input for the "Does this break my file?" table of the changelog.
 
-Usage: python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json
+Usage: python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json [governance/accepted-breaking.json]
 Plain Python 3, no dependencies. The output is sorted and carries no timestamp.
 """
 import json
@@ -16,7 +18,9 @@ import sys
 
 def load(path):
     snap = json.load(open(path))
-    tokens = {v["name"]: v for v in snap.get("variables", []) if not v.get("remote") and not v.get("deleted")}
+    published = {c["name"] for c in snap.get("collections", []) if c.get("published", True)}
+    # Only published collections reach a consumer. Primitives are private: renaming them breaks nobody.
+    tokens = {v["name"]: v for v in snap.get("variables", []) if v.get("collection") in published and not v.get("remote") and not v.get("deleted")}
     comps = {}
     for c in snap.get("components", []):
         name = c["name"]
@@ -74,4 +78,24 @@ print(f"  components removed    {len(removed_components)}" + (": " + ", ".join(r
 print(f"  properties removed    {len(removed_properties)}" + (": " + ", ".join(f"{p['component']}.{p['property']}" for p in removed_properties) if removed_properties else ""))
 print(f"  property values removed  {len(removed_values)}")
 print(f"  text styles removed   {len(removed_styles)}" + (": " + ", ".join(removed_styles) if removed_styles else ""))
+
+
+def keys(r):
+    out = [f"token removed: {t}" for t in r["removedTokens"]] + [f"token type changed: {t}" for t in r["retypedTokens"]]
+    out += [f"component removed: {c}" for c in r["removedComponents"]]
+    out += [f"property removed: {p['component']}.{p['property']}" for p in r["removedProperties"]]
+    out += [f"value removed: {v['component']}.{v['property']}={v['value']}" for v in r["removedValues"]]
+    out += [f"text style removed: {t}" for t in r["removedTextStyles"]]
+    return out
+
+
+unaccepted = []
+if len(sys.argv) > 4:
+    accepted = set(json.load(open(sys.argv[4]))["accepted"])
+    unaccepted = [k for k in keys(report) if k not in accepted]
 print(f"  added, not breaking: {report['added']['tokens']} tokens, {report['added']['components']} components, {report['added']['textStyles']} text styles")
+if len(sys.argv) > 4:
+    print(f"  {'ok ' if not unaccepted else 'BLOCK'}  breaks not accepted in {sys.argv[4]}: {len(unaccepted)}")
+    for k in unaccepted:
+        print("        " + k)
+    sys.exit(1 if unaccepted else 0)

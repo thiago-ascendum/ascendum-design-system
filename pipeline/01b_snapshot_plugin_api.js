@@ -6,6 +6,10 @@
 //
 // If the result is too large for one call, run it per page: set ONLY_PAGE to a page name.
 const ONLY_PAGE = null;
+// Every snapshot names the Figma version it was read from. The snapshot saves a named version first
+// and stores its id and title, so any token in Git can be traced back to one point in the file history.
+// Set SOURCE_VERSION to null to read without saving a version (then the snapshot says "unsaved").
+const SOURCE_VERSION = "Snapshot for Git";
 
 const hex = (c, a = 1) => {
   const h = "#" + [c.r, c.g, c.b].map((x) => Math.round(Math.max(0, Math.min(1, x)) * 255).toString(16).padStart(2, "0")).join("").toUpperCase();
@@ -17,6 +21,7 @@ const cols = await figma.variables.getLocalVariableCollectionsAsync();
 const vars = await figma.variables.getLocalVariablesAsync();
 const colById = Object.fromEntries(cols.map((c) => [c.id, c]));
 const varIds = new Set(vars.map((v) => v.id));
+const varName = Object.fromEntries(vars.map((v) => [v.id, v.name + " · " + (colById[v.variableCollectionId] || {}).name]));
 
 const collections = cols.map((c) => ({
   id: c.id, name: c.name, modes: c.modes.map((m) => m.name), remote: c.remote, published: !c.hiddenFromPublishing, library: null,
@@ -27,7 +32,7 @@ const variables = vars.map((v) => {
   const values = {};
   for (const m of c ? c.modes : []) {
     const x = v.valuesByMode[m.modeId];
-    if (x && x.type === "VARIABLE_ALIAS") values[m.name] = { alias: x.id, resolves: varIds.has(x.id) };
+    if (x && x.type === "VARIABLE_ALIAS") values[m.name] = { alias: x.id, aliasName: varName[x.id] || null, resolves: varIds.has(x.id) };
     else if (x && typeof x === "object" && "r" in x) values[m.name] = { value: hex(x, x.a) };
     else values[m.name] = { value: typeof x === "number" ? Math.round(x * 1e4) / 1e4 : x };
   }
@@ -107,8 +112,20 @@ for (const page of figma.root.children) {
   }
 }
 
+// Alias graph: one edge per token, per mode, that points to another token. This is what the impact map walks.
+const aliases = [];
+for (const v of variables) for (const [mode, x] of Object.entries(v.values)) if (x.alias)
+  aliases.push({ from: varName[v.id], mode, to: x.aliasName, resolves: x.resolves });
+
+let figmaVersion = { id: null, title: null, savedAt: null, status: "unsaved" };
+if (SOURCE_VERSION) {
+  const saved = await figma.saveVersionHistoryAsync(SOURCE_VERSION, "Read by pipeline/01b_snapshot_plugin_api.js. Git keeps this id in build/ds-snapshot.json.");
+  figmaVersion = { id: saved.id, title: SOURCE_VERSION, savedAt: new Date().toISOString(), status: "saved" };
+}
+
 return JSON.stringify({
   meta: { schema: "ds-snapshot/1", reader: "Figma Plugin API", sourceFile: figma.root.name, sourceSha256: figma.fileKey || "live",
-    generatedAt: new Date().toISOString(), nodes: layers.length, pages: figma.root.children.length },
-  collections, variables, styles, components, layers,
+    generatedAt: new Date().toISOString(), nodes: layers.length, pages: figma.root.children.length,
+    fileKey: figma.fileKey || null, figmaVersion, aliasCount: aliases.length },
+  collections, variables, aliases, styles, components, layers,
 });

@@ -1,0 +1,77 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Hero, Section, Index, Cards, Steps, Table, List } from './_shared/Doc.jsx';
+import breaking from '../build/breaking.json';
+import versions from '../governance/figma-versions.json';
+
+<Meta title="Start here/Pipeline proof" />
+
+export const REPO = 'https://github.com/thiago-ascendum/ascendum-design-system';
+export const L = ({ href, children }) => <a href={href} target="_blank" rel="noreferrer">{children}</a>;
+export const pr = (n) => `${REPO}/pull/${n}`;
+export const run = (id) => `${REPO}/actions/runs/${id}`;
+export const Who = ({ k }) => <b style={{ display: 'block', marginBottom: 4, fontSize: 12, letterSpacing: 0.2 }}>{k}</b>;
+
+<Hero title="From Figma to code, with a gate in the middle.">
+  A designer changes a variable in Figma. A few minutes later the same value is in the CSS, in the component and on its documentation page, or the change is stopped and nothing is published. This page shows the whole path and the five tests that prove it, each with its evidence.
+</Hero>
+
+<Index items={['The path of a change', 'The five proofs', 'What a change moves', 'What runs alone and what needs a person', 'How to run it']} />
+
+<Section n={1} title="The path of a change" lead="Seven steps. Each one says who does it.">
+  <Steps items={[
+    ['Change in Figma', <><Who k="A designer" />Edit a variable, for example the horizontal padding of the Button, in the Component collection.</>],
+    ['Snapshot', <><Who k="One click" />The snapshot script reads every variable, alias, component and layer through the Figma Plugin API. It saves a named Figma version first and stores its id, so the snapshot always says where it came from.</>],
+    ['Pull request', <><Who k="Automatic" />The snapshot goes to a branch and a pull request. If another collection is still being edited, only the ready one is taken (scoped sync).</>],
+    ['Tokens and contracts', <><Who k="Automatic" />One script turns the snapshot into tokens.json, tokens.css, the AI contract and one contract per component. Nobody edits these files by hand.</>],
+    ['Gate', <><Who k="Automatic" />GitHub Actions runs the blocking checks: aliases, palette, contrast, code names, breaking changes, colours typed by hand in code, undefined CSS properties. One failure turns the pull request red.</>],
+    ['Review', <><Who k="A person" />Someone looks at the preview build and merges. A breaking change must be accepted by name in the same pull request.</>],
+    ['Publish and release', <><Who k="Automatic" />After the merge, the site is built and published only if every check passed. A release in GitHub points to the commit and to the Figma version.</>],
+  ]} />
+</Section>
+
+<Section n={2} title="The five proofs" lead="Each one was run today, 26 November, against the real Figma file. Click the link to see the evidence.">
+  <Table head={['Proof', 'What we did', 'Result', 'Evidence']} rows={[
+    ['1 · Figma to Git', 'Read the file live. The snapshot saved the Figma version "Snapshot for Git" and stored its id, and 130 links between variables (aliases).', 'Version 2426222688165894604 inside the snapshot and in the first line of tokens.css. Gate green.', <><L href={pr(2)}>Pull request 2</L> · <L href={run(45871625293)}>run</L></>],
+    ['2 · Git to Storybook', 'Changed component/button/padding-h from 28 to 32 in Figma. New snapshot, new pull request. Then set it back to 28 in Figma.', 'tokens.css: one line, 28px to 32px. The Button renders with 32px and its page shows 32px, read from the CSS, not typed.', <><L href={pr(3)}>Pull request 3</L> · <L href={`${REPO}/pull/3/files`}>diff</L> · <L href={run(45871630257)}>run</L></>],
+    ['3 · CI blocks', 'Two bad changes. A colour typed by hand (#FF00AA) on the Button label. The Disabled state of the Button deleted.', 'Both pull requests red. The Gate job fails on the exact check, and Publish is skipped.', <><L href={pr(4)}>Colour: pull request 4</L> · <L href={run(45871635564)}>run</L><br /><L href={pr(5)}>Breaking: pull request 5</L> · <L href={run(45871642919)}>run</L></>],
+    ['4 · Traceability', 'Release v1.1.0 in GitHub. build/release.json names the commit and the Figma version "Colour roles".', 'From the release you reach the commit, the snapshot and the Figma version, and back.', <><L href={`${REPO}/releases/tag/v1.1.0`}>Release v1.1.0</L> · <L href={`${REPO}/blob/main/build/release.json`}>release.json</L></>],
+    ['5 · Dependencies', 'Asked "what moves if this token changes" and "what breaks for a file that uses the old version".', `Button padding moves 148 Figma layers in 8 components and 1 stylesheet. ${breaking.breaking} breaks since the file as received, all accepted by name.`, <><L href={`${REPO}/blob/main/pipeline/07_impact.py`}>impact</L> · <L href={`${REPO}/blob/main/build/breaking.json`}>breaking.json</L></>],
+  ]} />
+</Section>
+
+<Section n={3} title="What a change moves" lead="Before changing a token, ask what depends on it. The answer comes from the snapshot, for Figma and for code.">
+  <Cards columns={2} items={[
+    { title: 'component/button/padding-h', text: ['Figma: 148 layers bound, 25 inside components.', 'Components: Button 15, Empty State 2, Modal 2, Jira Annotation 2, File Uploader, Overview Card, Navigation Bar, Section / Let\'s Connect.', 'Code: Button.css.'] },
+    { title: 'primary (a colour role)', text: ['Figma: 80 layers bound, 9 inside components, 1 token aliases it.', 'Components: Button, Empty State, Modal, Overview Card, Jira Annotation.', 'Code: Button.css.'] },
+  ]} />
+  <List items={[
+    <>Breaking changes are measured against the file as we received it: {breaking.removedTokens.length} tokens, {breaking.removedComponents.length} component, {breaking.removedProperties.length} properties, {breaking.removedValues.length} property values and {breaking.removedTextStyles.length} text styles. Each one is listed in <code>governance/accepted-breaking.json</code>. A new one stops the pipeline until someone accepts it.</>,
+    'Only published collections count. Primitives are private, so renaming them breaks nobody.',
+    'Not measured: a real library update in a file that uses the library. The Figma file lives in drafts, so it cannot be published as a library. Moving it to a team project is the next step.',
+  ]} />
+</Section>
+
+<Section n={4} title="What runs alone and what needs a person">
+  <Cards columns={3} items={[
+    { tone: 'do', title: 'Runs alone', text: ['Tokens, contracts and the AI contract from the snapshot.', 'Every check on every pull request.', 'Blocking a bad change.', 'Publishing only after a green gate.'] },
+    { tone: 'ask', title: 'One click', text: ['Taking the snapshot. Figma has to be open: the Plugin API works on any plan, but runs inside Figma.', 'Without Enterprise, nothing can read the file from a server.'] },
+    { tone: 'avoid', title: 'A person', text: ['Approving and merging.', 'Accepting a breaking change.', 'Looking at the result: a component can pass every check and still look wrong.'] },
+  ]} />
+  <Table head={['To make the snapshot fully automatic', 'What it takes']} rows={[
+    ['Read variables from a server, on every publish', 'Figma Variables REST API: Enterprise plan.'],
+    ['Without Enterprise', 'A designer clicks "Send to code" in the plugin. It opens the pull request. Everything after that is automatic.'],
+  ]} />
+</Section>
+
+<Section n={5} title="How to run it">
+  <Table head={['Step', 'Command']} rows={[
+    ['Snapshot from Figma', <code>pipeline/01b_snapshot_plugin_api.js</code>],
+    ['Take one collection only', <code>python3 pipeline/01c_take_collections.py build/ds-snapshot.json fresh.json build/ds-snapshot.json Component</code>],
+    ['Tokens and checks', <code>python3 pipeline/02_build.py build/ds-snapshot.json governance build</code>],
+    ['Breaking changes', <code>python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json governance/accepted-breaking.json</code>],
+    ['Code checks', <code>python3 pipeline/06_code_checks.py build/tokens.css src/components</code>],
+    ['What a token moves', <code>python3 pipeline/07_impact.py build/report.json src/components component/button/padding-h</code>],
+    ['Release record', <code>python3 pipeline/08_release.py build/ds-snapshot.json governance/figma-versions.json &lt;commit&gt; build/release.json</code>],
+  ]} />
+  <List items={versions.versions.map((v) => <>Figma version <b>{v.title}</b>, {v.savedAt}: {v.id || 'id not read yet'}. {v.content}</>)} />
+</Section>
