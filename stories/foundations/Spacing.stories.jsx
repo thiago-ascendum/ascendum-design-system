@@ -1,8 +1,13 @@
+import { ThemedImg } from '../_shared/ThemedImg.jsx';
 import tokens from '../../build/tokens.json';
 import inuse from './img/space-inuse.png';
+import inuseDark from './img/space-inuse-dark.png';
 import grid from './img/space-grid.png';
+import gridDark from './img/space-grid-dark.png';
 import layout from './img/space-layout.png';
+import layoutDark from './img/space-layout-dark.png';
 import which from './img/space-which.png';
+import whichDark from './img/space-which-dark.png';
 import './foundations.css';
 
 /**
@@ -19,7 +24,7 @@ const USE = {
   sm: 'Gap between sections of a page.',
   md: 'Large separation around major blocks.',
 };
-const Figma = ({ src, alt }) => <img className="fx-figma" src={src} alt={alt} />;
+const Figma = ({ src, dark, alt }) => <ThemedImg className="fx-figma" src={src} dark={dark} alt={alt} />;
 
 function Scale() {
   const px = (t) => Number(ext(t).modes?.Desktop ?? t.$value) || 0;
@@ -51,11 +56,11 @@ const SpacingPage = () => (
       <h1 className="fx-title">Spacing, Grid & Layout</h1>
       <p className="fx-lead">The scale is non-linear, 0, 8, 16, 32, 48, 96, 288, and every step above 3xs changes at the 768px breakpoint. Switch the Dimension mode to Mobile and these gaps resize live; they are not two separate scales.</p>
     </header>
-    <Figma src={inuse} alt="In use: the same card in both Dimension modes." />
+    <Figma src={inuse} dark={inuseDark} alt="In use: the same card in both Dimension modes." />
     <Scale />
-    <Figma src={grid} alt="Grid." />
-    <Figma src={layout} alt="Layout on the grid." />
-    <Figma src={which} alt="Which step to use." />
+    <Figma src={grid} dark={gridDark} alt="Grid." />
+    <Figma src={layout} dark={layoutDark} alt="Layout on the grid." />
+    <Figma src={which} dark={whichDark} alt="Which step to use." />
   </div>
 );
 

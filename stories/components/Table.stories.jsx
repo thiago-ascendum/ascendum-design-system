@@ -4,6 +4,7 @@ import { TableRow } from '../../src/components/TableRow.jsx';
 export default {
   title: 'Components/Table',
   component: Table,
+  decorators: [(Story) => <div style={{ width: 880, maxWidth: '100%' }}><Story /></div>],
   tags: ['autodocs'],
   parameters: {
     ds: {

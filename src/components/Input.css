@@ -1,6 +1,6 @@
 /* Input. 1.5px border and 4px radius: between the sharp button and the round card. */
 .ds-input {
-  display: block; width: 100%; min-width: 0;
+  display: block; box-sizing: border-box; width: 100%; min-width: 0;
   padding: var(--input-padding-v) var(--input-padding-h);
   font: 400 var(--text-body-size)/1.25 Barlow, system-ui, sans-serif;
   color: var(--on-surface); background: var(--surface-container);
