@@ -46,8 +46,8 @@ const Sample = () => (
     <Alert tone="info" title="Heads up" text="Your changes were saved to the project." />
     <Input placeholder="Project name" aria-label="Project name" />
     <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-      <Button variant="solid" label="Save changes" />
-      <Button variant="ghost" label="Back" />
+      <Button style="solid" label="Save changes" />
+      <Button style="ghost" label="Back" />
     </div>
   </div>
 );

@@ -16,6 +16,20 @@
   {
     "family": "Barlow",
     "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      100,
+      "PERCENT"
+    ],
+    "name": "Heading/H1",
+    "size": 48,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
       -4,
       "PERCENT"
     ],
@@ -51,6 +65,20 @@
       110,
       "PERCENT"
     ],
+    "name": "Heading/H3",
+    "size": 32,
+    "weight": "Bold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -2,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      110,
+      "PERCENT"
+    ],
     "name": "Heading/H4",
     "size": 24,
     "weight": "Bold"
@@ -65,7 +93,7 @@
       130,
       "PERCENT"
     ],
-    "name": "Heading/H3",
+    "name": "Heading/H5",
     "size": 20,
     "weight": "Bold"
   },
@@ -93,7 +121,7 @@
       130,
       "PERCENT"
     ],
-    "name": "Body/Large Bold",
+    "name": "Heading/H6",
     "size": 18,
     "weight": "Bold"
   },
@@ -152,6 +180,20 @@
     "name": "Body/Default Semi-Bold",
     "size": 16,
     "weight": "SemiBold"
+  },
+  {
+    "family": "Barlow",
+    "letterSpacing": [
+      -1,
+      "PERCENT"
+    ],
+    "lineHeight": [
+      130,
+      "PERCENT"
+    ],
+    "name": "Heading/H7",
+    "size": 16,
+    "weight": "Bold"
   },
   {
     "family": "Barlow",

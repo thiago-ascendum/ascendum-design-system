@@ -1,4 +1,4 @@
-/* Generated from the design system snapshot 5lhRMZkLHZijqgdigjk3J1, Figma version 2426253977005724007 "Send to code: component properties for the props mirror". Do not edit by hand. */
+/* Generated from the design system snapshot 5lhRMZkLHZijqgdigjk3J1, Figma version 2426237762932425194 "Snapshot for Git". Do not edit by hand. */
 :root {
   --accent-blue: #89cff0;
   --accent-blue-soft: #cae6f3;
@@ -146,18 +146,22 @@
   --border-width-field: 1.5px;
   --border-width-focus: 2px;
   --border-width-hairline: 1px;
-  --text-body-size: 1rem;
-  --text-body-lg-size: 1.125rem;
-  --font-size-body-sm: 0.9375rem;
-  --text-button-size: 1.0625rem;
-  --font-size-caption: 0.8125rem;
-  --text-display-size: 3.5rem;
-  --text-footnote-size: 0.875rem;
-  --text-h2-size: 2.5rem;
-  --text-h3-size: 1.25rem;
-  --text-h4-size: 1.5rem;
-  --text-label-size: 0.875rem;
-  --text-stat-size: 2.75rem;
+  --text-body-size: var(--type-size-16);
+  --text-body-lg-size: var(--type-size-18);
+  --font-size-body-sm: var(--type-size-15);
+  --text-button-size: var(--type-size-17);
+  --font-size-caption: var(--type-size-13);
+  --text-display-size: var(--type-size-56);
+  --text-footnote-size: var(--type-size-14);
+  --text-h1-size: var(--type-size-48);
+  --text-h2-size: var(--type-size-40);
+  --text-h3-size: var(--type-size-32);
+  --text-h4-size: var(--type-size-24);
+  --text-h5-size: var(--type-size-20);
+  --text-h6-size: var(--type-size-18);
+  --text-h7-size: var(--type-size-16);
+  --text-label-size: var(--type-size-14);
+  --text-stat-size: var(--type-size-44);
   --columns-gap: 32px;
   --radius-card: 16px;
   --container-radius: 20px;
@@ -302,6 +306,23 @@
   --tooltip-arrow-overlap: -7px;
   --tooltip-padding-h: 12px;
   --tooltip-padding-v: 8px;
+  --type-size-13: 0.8125rem;
+  --type-size-14: 0.875rem;
+  --type-size-15: 0.9375rem;
+  --type-size-16: 1rem;
+  --type-size-17: 1.0625rem;
+  --type-size-18: 1.125rem;
+  --type-size-20: 1.25rem;
+  --type-size-22: 1.375rem;
+  --type-size-24: 1.5rem;
+  --type-size-28: 1.75rem;
+  --type-size-32: 2rem;
+  --type-size-36: 2.25rem;
+  --type-size-40: 2.5rem;
+  --type-size-42: 2.625rem;
+  --type-size-44: 2.75rem;
+  --type-size-48: 3rem;
+  --type-size-56: 3.5rem;
 }
 [data-theme="dark"] {
   --error-container: var(--error-20);
@@ -372,13 +393,50 @@
   --ctx-surface: var(--inverse-surface);
   --ctx-surface-container: var(--inverse-surface);
 }
+[data-text-scale="200"] {
+  --type-size-13: 1.625rem;
+  --type-size-14: 1.75rem;
+  --type-size-15: 1.875rem;
+  --type-size-16: 2rem;
+  --type-size-17: 2.125rem;
+  --type-size-18: 2.25rem;
+  --type-size-20: 2.5rem;
+  --type-size-22: 2.75rem;
+  --type-size-24: 3rem;
+  --type-size-28: 3.5rem;
+  --type-size-32: 4rem;
+  --type-size-36: 4.5rem;
+  --type-size-40: 5rem;
+  --type-size-42: 5.25rem;
+  --type-size-44: 5.5rem;
+  --type-size-48: 6rem;
+  --type-size-56: 7rem;
+  --font-size-body-sm: var(--type-size-15);
+  --font-size-caption: var(--type-size-13);
+  --text-body-lg-size: var(--type-size-18);
+  --text-body-size: var(--type-size-16);
+  --text-button-size: var(--type-size-17);
+  --text-display-size: var(--type-size-56);
+  --text-footnote-size: var(--type-size-14);
+  --text-h1-size: var(--type-size-48);
+  --text-h2-size: var(--type-size-40);
+  --text-h3-size: var(--type-size-32);
+  --text-h4-size: var(--type-size-24);
+  --text-h5-size: var(--type-size-20);
+  --text-h6-size: var(--type-size-18);
+  --text-h7-size: var(--type-size-16);
+  --text-label-size: var(--type-size-14);
+  --text-stat-size: var(--type-size-44);
+}
 @media (max-width: 767px) {
   :root {
-    --text-button-size: 1rem;
-    --text-display-size: 2.625rem;
-    --text-h2-size: 2rem;
-    --text-h4-size: 1.375rem;
-    --text-stat-size: 2.25rem;
+    --text-button-size: var(--type-size-16);
+    --text-display-size: var(--type-size-42);
+    --text-h1-size: var(--type-size-36);
+    --text-h2-size: var(--type-size-32);
+    --text-h3-size: var(--type-size-28);
+    --text-h4-size: var(--type-size-22);
+    --text-stat-size: var(--type-size-36);
     --columns-one: var(--container-width);
     --columns-two: var(--container-width);
     --columns-three: var(--container-width);

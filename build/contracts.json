@@ -72,7 +72,7 @@
       "--success-container",
       "--surface-container",
       "--text-body-lg-size",
-      "--text-h3-size",
+      "--text-h5-size",
       "--warning-container"
     ],
     "use": "Inline message about the state of the page or a form. Use it when the person needs to read something before carrying on. Use Neutral for general notes and the coloured tones for feedback only. For a message that disappears on its own, use Toast instead.",
@@ -489,10 +489,10 @@
       "--space-3xs",
       "--surface-container",
       "--surface-container-low",
-      "--text-body-lg-size",
       "--text-body-size",
       "--text-button-size",
       "--text-footnote-size",
+      "--text-h6-size",
       "--transparent"
     ],
     "use": "Drop zone for adding files. Use it when someone needs to upload one or more files to a form or project. Do not use it for a single small attachment, where a plain button is enough. The file list and progress live in code.",
@@ -616,7 +616,7 @@
       "--outline-medium",
       "--surface-container",
       "--surface-container-high",
-      "--text-h3-size"
+      "--text-h5-size"
     ],
     "use": "Text that becomes a field when clicked. Use it for a title or name the person edits in place, such as a project name. It takes the text style of the heading it replaces, so nothing jumps when editing starts. Do not use it for forms with several fields, use Form Field instead.",
     "variants": 3
@@ -754,8 +754,8 @@
       "--group-card-padding-v",
       "--on-accent-container",
       "--radius-pill",
-      "--text-body-lg-size",
       "--text-body-size",
+      "--text-h6-size",
       "--text-label-size"
     ],
     "use": "A titled list of the client and delivery partners on a project. Use it in a project overview. Each row has a logo or Avatar, a name and a one-line relationship. Do not use it for more than four organisations.",
@@ -943,11 +943,11 @@
       "--radius-card",
       "--radius-pill",
       "--space-3xs",
-      "--text-body-lg-size",
       "--text-body-size",
       "--text-button-size",
-      "--text-h3-size",
       "--text-h4-size",
+      "--text-h5-size",
+      "--text-h6-size",
       "--text-label-size"
     ],
     "use": "Project summary card for a project page: intro text, key stakeholders, team groups and a link out. Use it once per project as the single summary. Do not use it for a list of projects or for one number (use Stat Card). Has Light and Dark variants.",
@@ -1110,7 +1110,7 @@
       "--space-sm",
       "--surface-container",
       "--text-body-size",
-      "--text-h3-size"
+      "--text-h5-size"
     ],
     "use": "Feature block with two to four columns. Use it to set out parallel points of equal weight. Columns share the width evenly with gap/columns (32px). Built at 2, 3 and 4; for other counts, resize one of them.",
     "variants": 3
@@ -1174,7 +1174,7 @@
       "--surface-container",
       "--text-display-size",
       "--text-h2-size",
-      "--text-h3-size"
+      "--text-h5-size"
     ],
     "use": "Section heading with a gradient second line. Use it to open a page section. Leave Gradient Line empty for a single line. Gradient paints do not follow Light and Dark, so the accent line looks the same in both. Padding binds to space/sm and space/md, so Mobile mode drops it to 32/48.",
     "variants": 3
@@ -1239,10 +1239,10 @@
       "--space-sm",
       "--space-xs",
       "--surface-container",
-      "--text-body-lg-size",
       "--text-body-size",
       "--text-display-size",
-      "--text-h2-size"
+      "--text-h2-size",
+      "--text-h6-size"
     ],
     "use": "Pull quote with attribution. Use it once per page to give weight to a customer's or leader's words. The 2px rule beside the attribution uses border/quote. On an inverted surface the role line uses the inverted muted text colour, through the Context mode.",
     "variants": 2
@@ -1384,8 +1384,8 @@
       "--sidenav-padding-v",
       "--sidenav-width",
       "--surface-container",
-      "--text-body-lg-size",
-      "--text-button-size"
+      "--text-button-size",
+      "--text-h6-size"
     ],
     "use": "Application side navigation, always dark in every mode. Use it for apps with several top-level areas. Do not use it on marketing pages (use Navigation Bar). Fixed width of 240px.",
     "variants": 0
@@ -1631,8 +1631,8 @@
       "--group-card-padding-v",
       "--on-accent-container",
       "--radius-pill",
-      "--text-body-lg-size",
       "--text-body-size",
+      "--text-h6-size",
       "--text-label-size"
     ],
     "use": "A titled list of the people on one discipline of a project. Each row has an Avatar, a name and a role with the company. Use one card per discipline and keep to six people or fewer.",

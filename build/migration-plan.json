@@ -9,22 +9,132 @@
      "Inverted"
     ],
     "name": "Context"
+   },
+   {
+    "id": "VariableCollectionId:1122:37447",
+    "modes": [
+     "Default",
+     "Text 200%"
+    ],
+    "name": "Accessibility"
    }
   ],
   "rename": []
  },
  "summary": {
-  "collectionsCreated": 1,
+  "collectionsCreated": 2,
   "collectionsRenamed": 0,
   "modesAdded": 0,
   "toReview": 32,
   "toReviewNeedingDecision": 1,
-  "variablesCreated": 80,
-  "variablesRenamed": 50,
-  "variablesUpdated": 217
+  "variablesCreated": 101,
+  "variablesRenamed": 51,
+  "variablesUpdated": 240
  },
  "variables": {
   "create": [
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37448",
+    "name": "type-size/13",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37449",
+    "name": "type-size/14",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37450",
+    "name": "type-size/15",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37451",
+    "name": "type-size/16",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37452",
+    "name": "type-size/17",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37453",
+    "name": "type-size/18",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37454",
+    "name": "type-size/20",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37455",
+    "name": "type-size/22",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37456",
+    "name": "type-size/24",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37457",
+    "name": "type-size/28",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37458",
+    "name": "type-size/32",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37459",
+    "name": "type-size/36",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37460",
+    "name": "type-size/40",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37461",
+    "name": "type-size/42",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37462",
+    "name": "type-size/44",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37463",
+    "name": "type-size/48",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Accessibility",
+    "id": "VariableID:1122:37464",
+    "name": "type-size/56",
+    "type": "FLOAT"
+   },
    {
     "collection": "Component",
     "id": "VariableID:1103:1415",
@@ -137,6 +247,30 @@
     "collection": "Dimension",
     "id": "VariableID:1101:21",
     "name": "border-width/focus",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Dimension",
+    "id": "VariableID:1122:37465",
+    "name": "font-size/h1",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Dimension",
+    "id": "VariableID:1122:37466",
+    "name": "font-size/h3",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Dimension",
+    "id": "VariableID:1122:37467",
+    "name": "font-size/h6",
+    "type": "FLOAT"
+   },
+   {
+    "collection": "Dimension",
+    "id": "VariableID:1122:37468",
+    "name": "font-size/h7",
     "type": "FLOAT"
    },
    {
@@ -527,6 +661,13 @@
     "id": "VariableID:42:24",
     "oldCollection": "Component",
     "to": "component/avatar/size-sm"
+   },
+   {
+    "collection": "Dimension",
+    "from": "font-size/h3",
+    "id": "VariableID:7:34",
+    "oldCollection": "Dimension",
+    "to": "font-size/h5"
    },
    {
     "collection": "Primitives",
@@ -1087,6 +1228,312 @@
    }
   ],
   "update": [
+   {
+    "codeSyntax": "var(--type-size-13)",
+    "collection": "Accessibility",
+    "description": "Font size 13 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37448",
+    "name": "type-size/13",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 13
+     },
+     "Text 200%": {
+      "value": 26
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-14)",
+    "collection": "Accessibility",
+    "description": "Font size 14 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37449",
+    "name": "type-size/14",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 14
+     },
+     "Text 200%": {
+      "value": 28
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-15)",
+    "collection": "Accessibility",
+    "description": "Font size 15 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37450",
+    "name": "type-size/15",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 15
+     },
+     "Text 200%": {
+      "value": 30
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-16)",
+    "collection": "Accessibility",
+    "description": "Font size 16 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37451",
+    "name": "type-size/16",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 16
+     },
+     "Text 200%": {
+      "value": 32
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-17)",
+    "collection": "Accessibility",
+    "description": "Font size 17 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37452",
+    "name": "type-size/17",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 17
+     },
+     "Text 200%": {
+      "value": 34
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-18)",
+    "collection": "Accessibility",
+    "description": "Font size 18 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37453",
+    "name": "type-size/18",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 18
+     },
+     "Text 200%": {
+      "value": 36
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-20)",
+    "collection": "Accessibility",
+    "description": "Font size 20 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37454",
+    "name": "type-size/20",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 20
+     },
+     "Text 200%": {
+      "value": 40
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-22)",
+    "collection": "Accessibility",
+    "description": "Font size 22 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37455",
+    "name": "type-size/22",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 22
+     },
+     "Text 200%": {
+      "value": 44
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-24)",
+    "collection": "Accessibility",
+    "description": "Font size 24 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37456",
+    "name": "type-size/24",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 24
+     },
+     "Text 200%": {
+      "value": 48
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-28)",
+    "collection": "Accessibility",
+    "description": "Font size 28 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37457",
+    "name": "type-size/28",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 28
+     },
+     "Text 200%": {
+      "value": 56
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-32)",
+    "collection": "Accessibility",
+    "description": "Font size 32 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37458",
+    "name": "type-size/32",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 32
+     },
+     "Text 200%": {
+      "value": 64
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-36)",
+    "collection": "Accessibility",
+    "description": "Font size 36 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37459",
+    "name": "type-size/36",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 36
+     },
+     "Text 200%": {
+      "value": 72
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-40)",
+    "collection": "Accessibility",
+    "description": "Font size 40 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37460",
+    "name": "type-size/40",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 40
+     },
+     "Text 200%": {
+      "value": 80
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-42)",
+    "collection": "Accessibility",
+    "description": "Font size 42 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37461",
+    "name": "type-size/42",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 42
+     },
+     "Text 200%": {
+      "value": 84
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-44)",
+    "collection": "Accessibility",
+    "description": "Font size 44 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37462",
+    "name": "type-size/44",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 44
+     },
+     "Text 200%": {
+      "value": 88
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-48)",
+    "collection": "Accessibility",
+    "description": "Font size 48 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37463",
+    "name": "type-size/48",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 48
+     },
+     "Text 200%": {
+      "value": 96
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--type-size-56)",
+    "collection": "Accessibility",
+    "description": "Font size 56 px. Text 200% doubles it, as browser zoom does (WCAG 1.4.4). Roles point here; nothing else should.",
+    "id": "VariableID:1122:37464",
+    "name": "type-size/56",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Default": {
+      "value": 56
+     },
+     "Text 200%": {
+      "value": 112
+     }
+    }
+   },
    {
     "codeSyntax": "var(--annotation-body-gap)",
     "collection": "Component",
@@ -1898,61 +2345,336 @@
     "collection": "Dimension",
     "description": "Font size of Body/Default, Body/Default Semi-Bold.",
     "id": "VariableID:7:37",
-    "name": "font-size/body"
+    "name": "font-size/body",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/16"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/16"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",
-    "description": "Font size of Body/Large, Body/Large Bold.",
+    "description": "Font size of Body/Large, Heading/H6.",
     "id": "VariableID:7:35",
-    "name": "font-size/body-lg"
+    "name": "font-size/body-lg",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/18"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/18"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",
     "description": "Dense-UI text, tables, meta rows, chips. 43 hardcoded uses in the source CSS; legitimised as a role.",
     "id": "VariableID:8:2",
-    "name": "font-size/body-sm"
+    "name": "font-size/body-sm",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/15"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/15"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "id": "VariableID:7:36",
+    "name": "font-size/button",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/17"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/16"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",
     "description": "Smallest supported size. Only 3 uses in source, weakest case in the scale, drop if it stays unused.",
     "id": "VariableID:8:3",
-    "name": "font-size/caption"
+    "name": "font-size/caption",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/13"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/13"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",
     "description": "Font size of Heading/Display. 42 on mobile.",
     "id": "VariableID:7:32",
-    "name": "font-size/display"
+    "name": "font-size/display",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/56"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/42"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",
     "description": "Font size of UI/Footnote.",
     "id": "VariableID:7:39",
-    "name": "font-size/footnote"
+    "name": "font-size/footnote",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/14"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/14"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--text-h1-size)",
+    "collection": "Dimension",
+    "description": "H1 size: the one title of a page.",
+    "id": "VariableID:1122:37465",
+    "name": "font-size/h1",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/48"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/36"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",
     "description": "Font size of Heading/H2. 32 on mobile.",
     "id": "VariableID:7:33",
-    "name": "font-size/h2"
+    "name": "font-size/h2",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/40"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/32"
+      ]
+     }
+    }
    },
    {
+    "codeSyntax": "var(--text-h3-size)",
     "collection": "Dimension",
-    "description": "Font size of Heading/H3.",
-    "id": "VariableID:7:34",
-    "name": "font-size/h3"
+    "description": "H3 size: a section title inside a page.",
+    "id": "VariableID:1122:37466",
+    "name": "font-size/h3",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/32"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/28"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",
     "description": "Fills the gap between H3 (20) and H2 (40). The source used 22, 24 and 26 across empty states, accordions and modals, all drift around the same missing role.",
     "id": "VariableID:87:2",
-    "name": "font-size/h4"
+    "name": "font-size/h4",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/24"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/22"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--text-h5-size)",
+    "collection": "Dimension",
+    "description": "H5 size: small section headings inside cards, alerts and panels.",
+    "id": "VariableID:7:34",
+    "name": "font-size/h5",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/20"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/20"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--text-h6-size)",
+    "collection": "Dimension",
+    "description": "H6 size: the title of a card, a list group or a form section.",
+    "id": "VariableID:1122:37467",
+    "name": "font-size/h6",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/18"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/18"
+      ]
+     }
+    }
+   },
+   {
+    "codeSyntax": "var(--text-h7-size)",
+    "collection": "Dimension",
+    "description": "H7 size: the smallest heading, above a short block of text.",
+    "id": "VariableID:1122:37468",
+    "name": "font-size/h7",
+    "scopes": [
+     "FONT_SIZE"
+    ],
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/16"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/16"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",
     "description": "Font size of UI/Label.",
     "id": "VariableID:7:38",
-    "name": "font-size/label"
+    "name": "font-size/label",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/14"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/14"
+      ]
+     }
+    }
+   },
+   {
+    "collection": "Dimension",
+    "id": "VariableID:83:11",
+    "name": "font-size/stat",
+    "values": {
+     "Desktop": {
+      "alias": [
+       "Accessibility",
+       "type-size/44"
+      ]
+     },
+     "Mobile": {
+      "alias": [
+       "Accessibility",
+       "type-size/36"
+      ]
+     }
+    }
    },
    {
     "collection": "Dimension",

@@ -1,6 +1,7 @@
 {
  "collections": {
   "added": [
+   "Accessibility",
    "Context"
   ],
   "modes": [],
@@ -430,39 +431,135 @@
  },
  "from": "2026-11-25T22:35:13.816Z",
  "styles": {
-  "added": [],
-  "changed": [],
+  "added": [
+   "Heading/H1",
+   "Heading/H5",
+   "Heading/H6",
+   "Heading/H7"
+  ],
+  "changed": [
+   [
+    "Heading/H3",
+    "size: 20 to 32; lineHeight: [129.99999523162842, 'PERCENT'] to [110.00000238418579, 'PERCENT']; letterSpacing: [-1, 'PERCENT'] to [-2, 'PERCENT']"
+   ]
+  ],
   "removed": [
+   "Body/Large Bold",
    "UI/Eyebrow",
    "UI/Tag"
   ]
  },
  "summary": {
-  "added": 80,
+  "added": 101,
   "components": [
    47,
    47
   ],
   "componentsWithNewVariants": 27,
   "removed": 32,
-  "renamed": 50,
+  "renamed": 51,
   "styles": [
    27,
-   25
+   28
   ],
-  "valueChanges": 24,
+  "valueChanges": 48,
   "variables": [
    254,
-   302
+   323
   ],
   "variants": [
    243,
    207
   ]
  },
- "to": "2026-11-26T18:51:11.376Z",
+ "to": "2026-11-26T18:56:52.850Z",
  "variables": {
   "added": [
+   [
+    "Accessibility",
+    "type-size/13",
+    "Default: 13; Text 200%: 26"
+   ],
+   [
+    "Accessibility",
+    "type-size/14",
+    "Default: 14; Text 200%: 28"
+   ],
+   [
+    "Accessibility",
+    "type-size/15",
+    "Default: 15; Text 200%: 30"
+   ],
+   [
+    "Accessibility",
+    "type-size/16",
+    "Default: 16; Text 200%: 32"
+   ],
+   [
+    "Accessibility",
+    "type-size/17",
+    "Default: 17; Text 200%: 34"
+   ],
+   [
+    "Accessibility",
+    "type-size/18",
+    "Default: 18; Text 200%: 36"
+   ],
+   [
+    "Accessibility",
+    "type-size/20",
+    "Default: 20; Text 200%: 40"
+   ],
+   [
+    "Accessibility",
+    "type-size/22",
+    "Default: 22; Text 200%: 44"
+   ],
+   [
+    "Accessibility",
+    "type-size/24",
+    "Default: 24; Text 200%: 48"
+   ],
+   [
+    "Accessibility",
+    "type-size/28",
+    "Default: 28; Text 200%: 56"
+   ],
+   [
+    "Accessibility",
+    "type-size/32",
+    "Default: 32; Text 200%: 64"
+   ],
+   [
+    "Accessibility",
+    "type-size/36",
+    "Default: 36; Text 200%: 72"
+   ],
+   [
+    "Accessibility",
+    "type-size/40",
+    "Default: 40; Text 200%: 80"
+   ],
+   [
+    "Accessibility",
+    "type-size/42",
+    "Default: 42; Text 200%: 84"
+   ],
+   [
+    "Accessibility",
+    "type-size/44",
+    "Default: 44; Text 200%: 88"
+   ],
+   [
+    "Accessibility",
+    "type-size/48",
+    "Default: 48; Text 200%: 96"
+   ],
+   [
+    "Accessibility",
+    "type-size/56",
+    "Default: 56; Text 200%: 112"
+   ],
    [
     "Component",
     "component/skeleton/block",
@@ -557,6 +654,26 @@
     "Dimension",
     "border-width/focus",
     "Desktop: 2; Mobile: 2"
+   ],
+   [
+    "Dimension",
+    "font-size/h1",
+    "Desktop: type-size/48; Mobile: type-size/36"
+   ],
+   [
+    "Dimension",
+    "font-size/h3",
+    "Desktop: type-size/32; Mobile: type-size/28"
+   ],
+   [
+    "Dimension",
+    "font-size/h6",
+    "Desktop: type-size/18; Mobile: type-size/18"
+   ],
+   [
+    "Dimension",
+    "font-size/h7",
+    "Desktop: type-size/16; Mobile: type-size/16"
    ],
    [
     "Primitives",
@@ -923,6 +1040,174 @@
    ],
    [
     "Dimension",
+    "font-size/body",
+    "Desktop",
+    "16",
+    "type-size/16"
+   ],
+   [
+    "Dimension",
+    "font-size/body",
+    "Mobile",
+    "16",
+    "type-size/16"
+   ],
+   [
+    "Dimension",
+    "font-size/body-lg",
+    "Desktop",
+    "18",
+    "type-size/18"
+   ],
+   [
+    "Dimension",
+    "font-size/body-lg",
+    "Mobile",
+    "18",
+    "type-size/18"
+   ],
+   [
+    "Dimension",
+    "font-size/body-sm",
+    "Desktop",
+    "15",
+    "type-size/15"
+   ],
+   [
+    "Dimension",
+    "font-size/body-sm",
+    "Mobile",
+    "15",
+    "type-size/15"
+   ],
+   [
+    "Dimension",
+    "font-size/button",
+    "Desktop",
+    "17",
+    "type-size/17"
+   ],
+   [
+    "Dimension",
+    "font-size/button",
+    "Mobile",
+    "16",
+    "type-size/16"
+   ],
+   [
+    "Dimension",
+    "font-size/caption",
+    "Desktop",
+    "13",
+    "type-size/13"
+   ],
+   [
+    "Dimension",
+    "font-size/caption",
+    "Mobile",
+    "13",
+    "type-size/13"
+   ],
+   [
+    "Dimension",
+    "font-size/display",
+    "Desktop",
+    "56",
+    "type-size/56"
+   ],
+   [
+    "Dimension",
+    "font-size/display",
+    "Mobile",
+    "42",
+    "type-size/42"
+   ],
+   [
+    "Dimension",
+    "font-size/footnote",
+    "Desktop",
+    "14",
+    "type-size/14"
+   ],
+   [
+    "Dimension",
+    "font-size/footnote",
+    "Mobile",
+    "14",
+    "type-size/14"
+   ],
+   [
+    "Dimension",
+    "font-size/h2",
+    "Desktop",
+    "40",
+    "type-size/40"
+   ],
+   [
+    "Dimension",
+    "font-size/h2",
+    "Mobile",
+    "32",
+    "type-size/32"
+   ],
+   [
+    "Dimension",
+    "font-size/h4",
+    "Desktop",
+    "24",
+    "type-size/24"
+   ],
+   [
+    "Dimension",
+    "font-size/h4",
+    "Mobile",
+    "22",
+    "type-size/22"
+   ],
+   [
+    "Dimension",
+    "font-size/h5",
+    "Desktop",
+    "20",
+    "type-size/20"
+   ],
+   [
+    "Dimension",
+    "font-size/h5",
+    "Mobile",
+    "20",
+    "type-size/20"
+   ],
+   [
+    "Dimension",
+    "font-size/label",
+    "Desktop",
+    "14",
+    "type-size/14"
+   ],
+   [
+    "Dimension",
+    "font-size/label",
+    "Mobile",
+    "14",
+    "type-size/14"
+   ],
+   [
+    "Dimension",
+    "font-size/stat",
+    "Desktop",
+    "44",
+    "type-size/44"
+   ],
+   [
+    "Dimension",
+    "font-size/stat",
+    "Mobile",
+    "36",
+    "type-size/36"
+   ],
+   [
+    "Dimension",
     "size/col-1",
     "Mobile",
     "982",
@@ -1181,6 +1466,11 @@
     "Component",
     "component/avatar/size-xl",
     "component/avatar/size-lg"
+   ],
+   [
+    "Dimension",
+    "font-size/h3",
+    "font-size/h5"
    ],
    [
     "Primitives",

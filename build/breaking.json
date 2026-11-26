@@ -1,10 +1,10 @@
 {
   "added": {
     "components": 0,
-    "textStyles": 0,
-    "tokens": 72
+    "textStyles": 4,
+    "tokens": 93
   },
-  "breaking": 78,
+  "breaking": 79,
   "removedComponents": [
     "SectionTag"
   ],
@@ -98,6 +98,7 @@
     }
   ],
   "removedTextStyles": [
+    "Body/Large Bold",
     "UI/Eyebrow",
     "UI/Tag"
   ],

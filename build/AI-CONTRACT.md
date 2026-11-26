@@ -34,6 +34,23 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 
 | Code name | Token | Light / Desktop | Dark / Mobile | Use |
 |---|---|---|---|---|
+| `--type-size-13` | type-size/13 | 13 | 26 | Font size 13 px |
+| `--type-size-14` | type-size/14 | 14 | 28 | Font size 14 px |
+| `--type-size-15` | type-size/15 | 15 | 30 | Font size 15 px |
+| `--type-size-16` | type-size/16 | 16 | 32 | Font size 16 px |
+| `--type-size-17` | type-size/17 | 17 | 34 | Font size 17 px |
+| `--type-size-18` | type-size/18 | 18 | 36 | Font size 18 px |
+| `--type-size-20` | type-size/20 | 20 | 40 | Font size 20 px |
+| `--type-size-22` | type-size/22 | 22 | 44 | Font size 22 px |
+| `--type-size-24` | type-size/24 | 24 | 48 | Font size 24 px |
+| `--type-size-28` | type-size/28 | 28 | 56 | Font size 28 px |
+| `--type-size-32` | type-size/32 | 32 | 64 | Font size 32 px |
+| `--type-size-36` | type-size/36 | 36 | 72 | Font size 36 px |
+| `--type-size-40` | type-size/40 | 40 | 80 | Font size 40 px |
+| `--type-size-42` | type-size/42 | 42 | 84 | Font size 42 px |
+| `--type-size-44` | type-size/44 | 44 | 88 | Font size 44 px |
+| `--type-size-48` | type-size/48 | 48 | 96 | Font size 48 px |
+| `--type-size-56` | type-size/56 | 56 | 112 | Font size 56 px |
 | `--badge-dot` | component/badge/dot | 6 |  | Status dot inside a pill |
 | `--badge-gap` | component/badge/gap | 6 |  | Gap between a pill's dot and its label. |
 | `--badge-padding-h` | component/badge/padding-h | 14 |  | Pill horizontal padding. |
@@ -62,15 +79,19 @@ Read this file instead of the Figma pages. The pages are documentation for peopl
 | `--border-width-focus` | border-width/focus | 2 |  | Weight of the keyboard focus ring. |
 | `--border-width-hairline` | border-width/hairline | 1 |  | Dividers and card borders. |
 | `--text-body-size` | font-size/body | 16 |  | Font size of Body/Default, Body/Default Semi-Bold. |
-| `--text-body-lg-size` | font-size/body-lg | 18 |  | Font size of Body/Large, Body/Large Bold. |
+| `--text-body-lg-size` | font-size/body-lg | 18 |  | Font size of Body/Large, Heading/H6. |
 | `--font-size-body-sm` | font-size/body-sm | 15 |  | Dense-UI text, tables, meta rows, chips |
 | `--text-button-size` | font-size/button | 17 | 16 | 17px desktop / 16px mobile |
 | `--font-size-caption` | font-size/caption | 13 |  | Smallest supported size |
 | `--text-display-size` | font-size/display | 56 | 42 | Font size of Heading/Display |
 | `--text-footnote-size` | font-size/footnote | 14 |  | Font size of UI/Footnote. |
+| `--text-h1-size` | font-size/h1 | 48 | 36 | H1 size: the one title of a page. |
 | `--text-h2-size` | font-size/h2 | 40 | 32 | Font size of Heading/H2 |
-| `--text-h3-size` | font-size/h3 | 20 |  | Font size of Heading/H3. |
+| `--text-h3-size` | font-size/h3 | 32 | 28 | H3 size: a section title inside a page. |
 | `--text-h4-size` | font-size/h4 | 24 | 22 | Fills the gap between H3 (20) and H2 (40) |
+| `--text-h5-size` | font-size/h5 | 20 |  | H5 size: small section headings inside cards, alerts and panels. |
+| `--text-h6-size` | font-size/h6 | 18 |  | H6 size: the title of a card, a list group or a form section. |
+| `--text-h7-size` | font-size/h7 | 16 |  | H7 size: the smallest heading, above a short block of text. |
 | `--text-label-size` | font-size/label | 14 |  | Font size of UI/Label. |
 | `--text-stat-size` | font-size/stat | 44 | 36 | Metric value |
 | `--columns-gap` | gap/columns | 32 |  | Gap between the columns of the grid. |
