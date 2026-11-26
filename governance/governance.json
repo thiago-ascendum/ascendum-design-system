@@ -363,5 +363,21 @@
     "cover",
     "typography"
   ],
-  "artwork": "The logo and the brand illustrations are used as supplied. They are not bound to mode variables and not restyled, so the colour, text-style and effect checks skip them. The typography page's weight samples are also exempt: they exist to show weights that have no style."
+  "artwork": "The logo and the brand illustrations are used as supplied. They are not bound to mode variables and not restyled, so the colour, text-style and effect checks skip them. The typography page's weight samples are also exempt: they exist to show weights that have no style.",
+  "variantBudgetAccepted": [
+    {
+      "component": "Button",
+      "variants": 15,
+      "why": "3 styles x 5 states. Focus stays a state, not a switch: decided by Thiago on 26 November 2026.",
+      "decidedBy": "Thiago Soares",
+      "date": "2026-11-26"
+    },
+    {
+      "component": "Checkbox",
+      "variants": 15,
+      "why": "3 values x 5 states. Focus stays a state, not a switch: decided by Thiago on 26 November 2026.",
+      "decidedBy": "Thiago Soares",
+      "date": "2026-11-26"
+    }
+  ]
 }
