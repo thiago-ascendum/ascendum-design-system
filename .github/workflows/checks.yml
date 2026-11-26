@@ -121,10 +121,11 @@ jobs:
 
   report:
     name: Result on the pull request
-    # When the checks were started by the Send to code button (workflow_dispatch), GitHub does not attach them to
-    # the pull request. This job writes the result on the commit, so the pull request shows green or red.
+    # One result per pull request, whatever started the checks: "Design system checks", green or red.
+    # main is protected on this result, so nothing red can be merged. When the Send to code button started the
+    # checks (workflow_dispatch), GitHub does not attach them to the pull request; this status does.
     needs: [gate, components]
-    if: always() && github.event_name == 'workflow_dispatch'
+    if: always() && (github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request')
     runs-on: ubuntu-latest
     permissions:
       statuses: write
@@ -132,9 +133,11 @@ jobs:
       - env:
           GH_TOKEN: ${{ github.token }}
           OK: ${{ needs.gate.result == 'success' && needs.components.result == 'success' }}
+          # On a pull request the run checks a merge commit; the status belongs on the pull request's own commit.
+          SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           STATE=$([ "$OK" = "true" ] && echo success || echo failure)
-          gh api -X POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/statuses/${SHA}" \
             -f state="$STATE" -f context="Design system checks" \
             -f description="Gate and documentation build: $STATE" \
             -f target_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
