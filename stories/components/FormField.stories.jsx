@@ -5,7 +5,7 @@ export default {
   title: 'Components/Form Field',
   component: FormField,
   tags: ['autodocs'],
-  args: { label: 'Full name', placeholder: 'Jane Smith', type: 'text', invalid: false, disabled: false, message: 'Enter your full name.' },
+  args: { label: 'Full name', placeholder: 'Jane Smith', type: 'text', state: 'default', message: 'Enter your full name.' },
   decorators: [(Story) => <div style={{ width: 320 }}><Story /></div>],
   parameters: {
     ds: {
@@ -16,7 +16,7 @@ export default {
       when: [
         ['Short answers', 'A single line of text: a name, an email, a team. It uses the Input component.'],
         ['Longer answers', 'Set the type to textarea for a summary or a request.'],
-        ['Errors', 'The message shows only when the field is invalid. It says how to fix the problem.'],
+        ['Errors', 'The message shows only in the Error state. It says how to fix the problem.'],
       ],
       use: ['Always show the label. Write it in sentence case.', 'Say how to fix the problem in the error message.', 'Use it for every text entry in a form.'],
       avoid: ['Using the placeholder as the label.', 'Adding help text the label already covers.', 'Error messages that only say "Invalid".'],
@@ -43,16 +43,16 @@ export default {
 
 export const Default = {};
 export const Filled = { args: { defaultValue: 'Jane Smith' } };
-export const Error = { args: { invalid: true, defaultValue: 'Jane' } };
-export const Disabled = { args: { disabled: true } };
+export const Error = { args: { state: 'error', defaultValue: 'Jane' } };
+export const Disabled = { args: { state: 'disabled' } };
 export const Textarea = { args: { type: 'textarea', label: 'Project summary', placeholder: 'What does the project deliver?' } };
-export const TextareaError = { args: { type: 'textarea', label: 'Project summary', invalid: true, message: 'Add at least one sentence.' } };
+export const TextareaError = { args: { type: 'textarea', label: 'Project summary', state: 'error', message: 'Add at least one sentence.' } };
 
 export const InUse = {
   name: 'In use: a request form',
   render: () => (
     <form className="sb-col" style={{ width: 320 }} onSubmit={(e) => e.preventDefault()}>
-      <FormField label="Work email" defaultValue="jane@" invalid message="Enter a full address, like jane@ascendum.com." />
+      <FormField label="Work email" defaultValue="jane@" state="error" message="Enter a full address, like jane@ascendum.com." />
       <FormField label="Team" defaultValue="Platform engineering" />
       <FormField type="textarea" label="What do you need?" placeholder="Describe the request in a few sentences." />
       <div className="sb-row"><Button type="submit" label="Send request" /></div>

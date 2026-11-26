@@ -58,6 +58,7 @@ python3 pipeline/04_catalogue.py build/ds-snapshot.json build > /dev/null
 python3 pipeline/05_breaking.py build/before/ds-snapshot.json build/ds-snapshot.json build/breaking.json governance/accepted-breaking.json > "$TMP/breaking.txt" || GATE=red
 python3 pipeline/06_changes.py build/before/ds-snapshot.json build/ds-snapshot.json build > /dev/null
 python3 pipeline/06_code_checks.py build/tokens.css src/components > /dev/null || GATE=red
+python3 pipeline/07_props_mirror.py build/components.json src/components governance/props-mirror.json > "$TMP/mirror.txt" || GATE=red
 python3 pipeline/09_migrate.py build/before/ds-snapshot.json build/ds-snapshot.json governance/accepted-breaking.json build > /dev/null
 node pipeline/tests/migrate_sim.mjs build/before/ds-snapshot.json build/ds-snapshot.json build/migrate.figma.js > /dev/null || GATE=red
 python3 pipeline/03_compare.py build/before/report.json build/report.json build/compare.js > /dev/null

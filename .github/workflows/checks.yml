@@ -39,6 +39,10 @@ jobs:
         # No colour typed by hand in a component stylesheet, and no undefined custom property.
         run: python3 pipeline/06_code_checks.py build/tokens.css src/components
 
+      - name: Code mirrors Figma (blocking)
+        # Every coded component has the Figma properties as props, same names, same options.
+        run: python3 pipeline/07_props_mirror.py build/components.json src/components governance/props-mirror.json
+
       - name: Every change since the file as received
         # The full list for the changelog, matched by Figma id. Written from the files, not from memory.
         run: python3 pipeline/06_changes.py build/before/ds-snapshot.json build/ds-snapshot.json build

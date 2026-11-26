@@ -1,29 +1,21 @@
-/* Button. Every value is a token from build/tokens.css, bound the same way as the Figma component. */
+/* Button. Every value is a token from build/tokens.css, bound the same way as the Figma component:
+   the colours are the Context roles (ctx/*), so a section with data-context="inverted" inverts every button inside. */
 .ds-button {
   display: inline-flex; align-items: center; justify-content: center; gap: var(--space-3xs);
   padding: var(--button-padding-v) var(--button-padding-h);
   font: 700 var(--text-button-size)/0.95 Barlow, system-ui, sans-serif; letter-spacing: 0;
   border: var(--border-width-button) solid transparent; border-radius: var(--button-radius);
-  background: transparent; color: var(--on-surface); cursor: pointer; text-decoration: none;
+  background: transparent; color: var(--ctx-on-surface); cursor: pointer; text-decoration: none;
 }
-.ds-button:focus-visible { outline: var(--border-width-focus) solid var(--focus); outline-offset: 4px; }
+.ds-button:focus-visible { outline: var(--border-width-focus) solid var(--ctx-focus); outline-offset: 4px; }
 .ds-button:disabled { opacity: 0.4; cursor: not-allowed; }
+.ds-button__icon { display: inline-flex; }
 
-/* Primary surface */
-.ds-button--solid { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
-.ds-button--solid:hover:not(:disabled) { background: var(--primary-hover); border-color: var(--primary-hover); }
-.ds-button--outline { border-color: var(--outline); }
-.ds-button--outline:hover:not(:disabled), .ds-button--ghost:hover:not(:disabled) { background: var(--primary); color: var(--on-primary); }
+.ds-button--solid { background: var(--ctx-primary); border-color: var(--ctx-primary); color: var(--ctx-on-primary); }
+.ds-button--solid:hover:not(:disabled) { background: var(--ctx-primary-hover); border-color: var(--ctx-primary-hover); }
+.ds-button--outline { border-color: var(--ctx-outline); }
+.ds-button--outline:hover:not(:disabled), .ds-button--ghost:hover:not(:disabled) { background: var(--ctx-primary); color: var(--ctx-on-primary); }
 
 /* Pressed: one step past hover. */
-.ds-button--solid:active:not(:disabled) { background: var(--primary-pressed); border-color: var(--primary-pressed); }
-.ds-button--outline:active:not(:disabled), .ds-button--ghost:active:not(:disabled) { background: var(--primary-hover); border-color: var(--primary-hover); color: var(--on-primary); }
-/* Inverted surface: for dark sections. It follows the mode. */
-.ds-button--inverted { color: var(--inverse-on-surface); }
-.ds-button--inverted:focus-visible { outline-color: var(--inverse-outline); }
-.ds-button--inverted.ds-button--solid { background: var(--inverse-primary); border-color: var(--inverse-primary); color: var(--inverse-on-primary); }
-.ds-button--inverted.ds-button--solid:hover:not(:disabled) { background: var(--inverse-primary-hover); border-color: var(--inverse-primary-hover); }
-.ds-button--inverted.ds-button--outline { border-color: var(--inverse-outline); }
-.ds-button--inverted.ds-button--outline:hover:not(:disabled), .ds-button--inverted.ds-button--ghost:hover:not(:disabled) { background: var(--inverse-primary); color: var(--inverse-on-primary); }
-.ds-button--inverted.ds-button--solid:active:not(:disabled) { background: var(--inverse-primary-pressed); border-color: var(--inverse-primary-pressed); }
-.ds-button--inverted.ds-button--outline:active:not(:disabled), .ds-button--inverted.ds-button--ghost:active:not(:disabled) { background: var(--inverse-primary-hover); border-color: var(--inverse-primary-hover); color: var(--inverse-on-primary); }
+.ds-button--solid:active:not(:disabled) { background: var(--ctx-primary-pressed); border-color: var(--ctx-primary-pressed); }
+.ds-button--outline:active:not(:disabled), .ds-button--ghost:active:not(:disabled) { background: var(--ctx-primary-hover); border-color: var(--ctx-primary-hover); color: var(--ctx-on-primary); }

@@ -4,7 +4,7 @@ export default {
   title: 'Components/Radio',
   component: Radio,
   tags: ['autodocs'],
-  args: { label: 'Monthly invoice', name: 'billing', value: 'monthly', disabled: false },
+  args: { label: 'Monthly invoice', name: 'billing', value: 'monthly', state: 'default' },
   parameters: {
     ds: {
       lead: 'Choose one option from a short list. Every option is visible at once, and one is selected by default.',
@@ -43,8 +43,8 @@ export default {
 
 export const Unselected = {};
 export const Selected = { args: { defaultChecked: true } };
-export const Disabled = { args: { disabled: true } };
-export const DisabledSelected = { args: { disabled: true, defaultChecked: true } };
+export const Disabled = { args: { state: 'disabled' } };
+export const DisabledSelected = { args: { state: 'disabled', defaultChecked: true } };
 
 export const InUse = {
   name: 'In use: choosing a billing cycle',

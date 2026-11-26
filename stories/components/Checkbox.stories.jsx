@@ -4,7 +4,7 @@ export default {
   title: 'Components/Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
-  args: { label: 'Email me a weekly summary', indeterminate: false, disabled: false },
+  args: { label: 'Email me a weekly summary', checked: false, state: 'default' },
   parameters: {
     ds: {
       lead: 'Choose any number of options from a list. Each option stands alone and always has a visible label.',
@@ -42,17 +42,17 @@ export default {
 };
 
 export const Unchecked = {};
-export const Checked = { args: { defaultChecked: true } };
-export const Indeterminate = { args: { indeterminate: true, label: 'Select all projects' } };
-export const Disabled = { args: { disabled: true, label: 'Share with the client' } };
-export const DisabledChecked = { args: { disabled: true, defaultChecked: true, label: 'Share with the client' } };
+export const Checked = { args: { checked: true } };
+export const Indeterminate = { args: { checked: 'indeterminate', label: 'Select all projects' } };
+export const Disabled = { args: { state: 'disabled', label: 'Share with the client' } };
+export const DisabledChecked = { args: { state: 'disabled', checked: true, label: 'Share with the client' } };
 
 export const InUse = {
   name: 'In use: filters with a select-all parent',
   render: () => (
     <fieldset className="sb-card" style={{ border: 0, margin: 0 }}>
       <legend className="sb-label">Show projects from</legend>
-      <Checkbox label="All regions" indeterminate />
+      <Checkbox label="All regions" defaultChecked="indeterminate" />
       <div className="sb-col" style={{ paddingLeft: 'var(--space-xs)' }}>
         <Checkbox label="Lisbon" defaultChecked />
         <Checkbox label="Porto" defaultChecked />

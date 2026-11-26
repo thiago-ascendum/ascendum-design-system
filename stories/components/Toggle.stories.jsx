@@ -4,7 +4,7 @@ export default {
   title: 'Components/Toggle',
   component: Toggle,
   tags: ['autodocs'],
-  args: { label: 'Email alerts', disabled: false },
+  args: { label: 'Email alerts', state: 'default' },
   parameters: {
     ds: {
       lead: 'Switch one setting on or off, with the change applying straight away.',
@@ -42,18 +42,18 @@ export default {
 };
 
 export const Off = {};
-export const On = { args: { defaultChecked: true } };
-export const Disabled = { args: { disabled: true } };
-export const DisabledOn = { args: { disabled: true, defaultChecked: true } };
+export const On = { args: { defaultOn: true } };
+export const Disabled = { args: { state: 'disabled' } };
+export const DisabledOn = { args: { state: 'disabled', defaultOn: true } };
 
 export const InUse = {
   name: 'In use: account notification settings',
   render: () => (
     <div className="sb-card" style={{ width: 360 }}>
       <span className="sb-label">Notifications</span>
-      <Toggle label="Email alerts" defaultChecked />
+      <Toggle label="Email alerts" defaultOn />
       <Toggle label="Weekly digest" />
-      <Toggle label="Billing reminders" disabled defaultChecked />
+      <Toggle label="Billing reminders" state="disabled" defaultOn />
       <span className="sb-help">Billing reminders are required for your plan.</span>
     </div>
   ),

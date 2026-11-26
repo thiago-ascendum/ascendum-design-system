@@ -23,6 +23,27 @@ Clean-up after the design review of 5 November.
 | A colour token | Colour tokens are named by their job now: surface, on-surface, primary, outline and their inverse versions. 65 names became 41 roles and 13 Context tokens. | Nothing in Figma: every binding moved with the rename. In code, use the table below. |
 | A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: text/access-muted to on-surface-variant, UI/Tag and UI/Eyebrow to UI/Label. |
 
+### Code props named like Figma
+
+Code mirrors Figma, name for name. A new blocking check, `pipeline/07_props_mirror.py`, compares every coded component with the Figma component properties in the snapshot. The rule: the Figma property in camelCase is the prop (`Leading icon` is `leadingIcon`), options in lower case with hyphens (`Line Large` is `line-large`). Hover, Focus, Pressed and Filled come from the browser, so `state` only holds what a person sets.
+
+| Component | Old prop | New prop |
+|---|---|---|
+| Button | `variant` | `style` |
+| Button | `disabled` | `state="disabled"` |
+| Button | `surface="inverted"` | `data-context="inverted"` on the section, as Figma uses the Context mode |
+| Button | — | `leadingIcon`, `icon` (new, from Figma) |
+| Checkbox | `indeterminate` | `checked="indeterminate"` |
+| Checkbox, Radio | `disabled` | `state="disabled"` |
+| Toggle | `checked`, `defaultChecked` | `on`, `defaultOn` |
+| Toggle | `disabled` | `state="disabled"` |
+| Input | `multiline` | `type="textarea"` |
+| Input, Form Field | `invalid` | `state="error"` |
+| Input, Form Field | `disabled` | `state="disabled"` |
+| Tab | `selected` | `state="active"` |
+| Avatar | — | `initials` (new, from Figma; still taken from `name` when left out) |
+| Progress Bar | `label` | `ariaLabel` (it was only the screen reader name; Figma has no label) |
+
 ### Search Bar Error is back
 
 - The Error state was in the file as received and was lost when Hover was added. The generated list of every change found it. Error uses `on-surface-error` for the border, like Input. Search Bar has 10 variants.

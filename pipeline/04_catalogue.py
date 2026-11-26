@@ -35,7 +35,7 @@ styles.sort(key=lambda s: (-s["size"], s["name"]))
 
 components = [
     {"name": c["name"], "page": c.get("page"), "variantCount": len(c.get("variants", [])),
-     "variants": sorted(c.get("variants", [])), "description": c.get("description", "")}
+     "variants": sorted(c.get("variants", [])), "properties": c.get("properties", []), "description": c.get("description", "")}
     for c in snapshot["components"]
     if not c["name"].startswith("Icon/") and "(removed" not in c["name"]
 ]

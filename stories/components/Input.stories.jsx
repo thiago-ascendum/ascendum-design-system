@@ -4,7 +4,7 @@ export default {
   title: 'Components/Input',
   component: Input,
   tags: ['autodocs'],
-  args: { placeholder: 'Jane Smith', multiline: false, invalid: false, disabled: false },
+  args: { placeholder: 'Jane Smith', type: 'text', state: 'default' },
   decorators: [(Story) => <div style={{ width: 320 }}><Story /></div>],
   parameters: {
     ds: {
@@ -31,8 +31,8 @@ export default {
         ['focus', '--focus', 'Focus ring, 2px, set 4px off the edge'],
       ],
       a11y: [
-        'It is a native input, or a textarea when multiline. It has no label of its own, so pair it with a label element.',
-        'The error state sets aria-invalid. Link the message with aria-describedby, as the "In use" story does.',
+        'It is a native input, or a textarea when Type is textarea. It has no label of its own, so pair it with a label element.',
+        'The Error state sets aria-invalid. Link the message with aria-describedby, as the "In use" story does.',
         'Focus is a 2px ring set 4px away from the field.',
         'A single line is 59px high on desktop and mobile (18 + 18 padding, 20 text, 3 border), above the 44px touch target. Disabled is 40% opacity and the browser blocks focus.',
       ],
@@ -47,16 +47,16 @@ export default {
 
 export const Default = {};
 export const Filled = { args: { defaultValue: 'Jane Smith' } };
-export const Error = { args: { invalid: true, defaultValue: 'jane@' } };
-export const Disabled = { args: { disabled: true } };
-export const Textarea = { args: { multiline: true, placeholder: 'How can we help?' } };
+export const Error = { args: { state: 'error', defaultValue: 'jane@' } };
+export const Disabled = { args: { state: 'disabled' } };
+export const Textarea = { args: { type: 'textarea', placeholder: 'How can we help?' } };
 
 export const WithLabel = {
   name: 'In use: label, field and message',
   render: () => (
     <div className="sb-col">
       <label className="sb-label" htmlFor="email">Work email</label>
-      <Input id="email" invalid defaultValue="jane@" aria-describedby="email-msg" />
+      <Input id="email" state="error" defaultValue="jane@" aria-describedby="email-msg" />
       <span className="sb-error" id="email-msg">Enter a full address, like jane@ascendum.com.</span>
     </div>
   ),

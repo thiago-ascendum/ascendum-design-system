@@ -4,7 +4,7 @@ export default {
   title: 'Components/Button',
   component: Button,
   tags: ['autodocs'],
-  args: { label: 'Save changes', variant: 'solid', surface: 'primary', disabled: false },
+  args: { label: 'Save changes', style: 'solid', state: 'default' },
   parameters: {
     ds: {
       lead: 'Starts an action. One main action per view, and the button says what happens with a verb.',
@@ -16,18 +16,18 @@ export default {
         ['Outline: the second choice', 'A real alternative next to the main action: Save draft, Preview.'],
         ['Ghost: quiet actions', 'No border. For Back, Cancel and Skip, so they never compete with the main action.'],
       ],
-      use: ['Start the label with a verb and say what happens: "Save changes".', 'Keep one Solid button per view.', 'Use the inverted surface on dark sections.'],
+      use: ['Start the label with a verb and say what happens: "Save changes".', 'Keep one Solid button per view.', 'On a dark band, set data-context="inverted" on the section: every button inside follows.'],
       avoid: ['Two Solid buttons side by side.', 'Labels such as "Button", "OK" or "Click here".', 'Decorative arrows or icons that add no meaning.', 'Rounded corners: 0px is the brand signature.'],
       tokens: [
-        ['primary', '--primary', 'Fill and border of Solid; fill of Outline and Ghost on hover'],
-        ['primary-hover', '--primary-hover', 'Solid on hover (a proposal)'],
-        ['outline', '--outline', 'Border of Outline'],
-        ['on-surface', '--on-surface', 'Label of Outline and Ghost'],
-        ['on-primary', '--on-primary', 'Label of Solid, and of the others on hover'],
+        ['ctx/primary', '--ctx-primary', 'Fill and border of Solid; fill of Outline and Ghost on hover'],
+        ['ctx/primary-hover', '--ctx-primary-hover', 'Solid on hover; Outline and Ghost when pressed'],
+        ['ctx/outline', '--ctx-outline', 'Border of Outline'],
+        ['ctx/on-surface', '--ctx-on-surface', 'Label of Outline and Ghost'],
+        ['ctx/on-primary', '--ctx-on-primary', 'Label of Solid, and of the others on hover'],
         ['component/button/padding-h', '--button-padding-h', 'Left and right padding (smaller on mobile)'],
         ['component/button/padding-v', '--button-padding-v', 'Top and bottom padding (smaller on mobile)'],
         ['radius/none', '--button-radius', 'Corners: 0'],
-        ['focus', '--focus', 'Focus ring, 2px, set 4px off the edge'],
+        ['ctx/focus', '--ctx-focus', 'Focus ring, 2px, set 4px off the edge'],
       ],
       a11y: [
         'Focus is a 2px ring set 4px away from the button, so it shows on any surface.',
@@ -46,17 +46,17 @@ export default {
 };
 
 export const Solid = {};
-export const Outline = { args: { variant: 'outline', label: 'Preview' } };
-export const Ghost = { args: { variant: 'ghost', label: 'Back' } };
-export const Disabled = { args: { disabled: true } };
+export const Outline = { args: { style: 'outline', label: 'Preview' } };
+export const Ghost = { args: { style: 'ghost', label: 'Back' } };
+export const Disabled = { args: { state: 'disabled' } };
 
 export const Hierarchy = {
   name: 'In use: one main action',
   render: () => (
     <div className="sb-row">
-      <Button variant="ghost" label="Back" />
-      <Button variant="outline" label="Save draft" />
-      <Button variant="solid" label="Publish" />
+      <Button style="ghost" label="Back" />
+      <Button style="outline" label="Save draft" />
+      <Button style="solid" label="Publish" />
     </div>
   ),
 };
@@ -64,10 +64,10 @@ export const Hierarchy = {
 export const OnDark = {
   name: 'Inverted, on a dark surface',
   render: () => (
-    <div className="sb-surface-inverted sb-row">
-      <Button surface="inverted" variant="solid" label="Get in touch" />
-      <Button surface="inverted" variant="outline" label="See the work" />
-      <Button surface="inverted" variant="ghost" label="Skip" />
+    <div className="sb-surface-inverted sb-row" data-context="inverted">
+      <Button style="solid" label="Get in touch" />
+      <Button style="outline" label="See the work" />
+      <Button style="ghost" label="Skip" />
     </div>
   ),
 };

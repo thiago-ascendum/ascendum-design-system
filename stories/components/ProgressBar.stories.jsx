@@ -4,7 +4,7 @@ export default {
   title: 'Components/Progress Bar',
   component: ProgressBar,
   tags: ['autodocs'],
-  args: { value: 60, label: 'Upload progress', size: 'sm', tone: 'default' },
+  args: { value: 60, ariaLabel: 'Upload progress', size: 'sm', tone: 'default' },
   argTypes: { value: { control: { type: 'range', min: 0, max: 100, step: 1 } } },
   decorators: [(Story) => <div style={{ width: 280 }}><Story /></div>],
   parameters: {
@@ -32,7 +32,7 @@ export default {
       ],
       a11y: [
         'The bar has role="progressbar" with aria-valuenow, aria-valuemin 0 and aria-valuemax 100. The value is kept between 0 and 100.',
-        'The label prop becomes the accessible name. Without a visible label and percentage next to it, sighted people lose the number.',
+        'The ariaLabel prop becomes the accessible name. Without a visible label and percentage next to it, sighted people lose the number.',
         'The bar has no controls, so it takes no focus and has no touch target of its own.',
       ],
       open: [
@@ -61,7 +61,7 @@ export const InUse = {
         <span className="sb-label">Migrating Harbourside data</span>
         <span className="sb-help">72%</span>
       </div>
-      <ProgressBar value={72} label="Harbourside data migration" size="lg" />
+      <ProgressBar value={72} ariaLabel="Harbourside data migration" size="lg" />
       <span className="sb-help">About 6 minutes left. You can leave this page.</span>
     </div>
   ),

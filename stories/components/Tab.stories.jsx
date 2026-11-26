@@ -5,7 +5,7 @@ export default {
   title: 'Components/Tab',
   component: Tab,
   tags: ['autodocs'],
-  args: { label: 'Overview', selected: false },
+  args: { label: 'Overview', state: 'default' },
   parameters: {
     ds: {
       lead: 'One tab in a row that switches between views of the same page.',
@@ -51,9 +51,9 @@ export default {
 };
 
 export const Default = {};
-export const Selected = { args: { selected: true } };
+export const Active = { args: { state: 'active' } };
 export const WithCount = { args: { count: 12 } };
-export const SelectedWithCount = { args: { selected: true, count: 12 } };
+export const ActiveWithCount = { args: { state: 'active', count: 12 } };
 
 function ProjectTabs() {
   const tabs = [
@@ -74,7 +74,7 @@ function ProjectTabs() {
     <div className="sb-col" style={{ width: 420, maxWidth: 'none' }}>
       <div role="tablist" aria-label="Project views" className="sb-row" style={{ gap: 'var(--tabs-gap)' }} onKeyDown={onKeyDown}>
         {tabs.map((t) => (
-          <Tab key={t.id} label={t.label} count={t.count} selected={t.id === active} onClick={() => setActive(t.id)} />
+          <Tab key={t.id} label={t.label} count={t.count} state={t.id === active ? 'active' : 'default'} onClick={() => setActive(t.id)} />
         ))}
       </div>
       <p className="sb-help" role="tabpanel">Showing the {active} view of the Harbourside migration project. Use the arrow keys to move between tabs.</p>

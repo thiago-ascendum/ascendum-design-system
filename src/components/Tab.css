@@ -14,5 +14,5 @@
   font: 700 var(--text-label-size)/1.3 Barlow, system-ui, sans-serif;
   background: var(--surface-container-low); color: var(--on-surface-variant);
 }
-.ds-tab--selected { font: 700 var(--text-button-size)/0.95 Barlow, system-ui, sans-serif; color: var(--on-surface); border-bottom-color: var(--outline); }
-.ds-tab--selected .ds-tab__count { background: var(--inverse-surface); color: var(--inverse-on-surface); }
+.ds-tab--active { font: 700 var(--text-button-size)/0.95 Barlow, system-ui, sans-serif; color: var(--on-surface); border-bottom-color: var(--outline); }
+.ds-tab--active .ds-tab__count { background: var(--inverse-surface); color: var(--inverse-on-surface); }
