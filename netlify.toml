@@ -1,6 +1,7 @@
 # Publishes the documentation site on every push: Storybook at the root, the health report at /report/.
 [build]
-  command = "npm ci && npm run build:site"
+  # The gate runs first. If a blocking check fails, the command stops and nothing is published.
+  command = "python3 pipeline/02_build.py build/ds-snapshot.json governance build && npm ci && npm run build:site"
   publish = "dist"
 
 [build.environment]

@@ -17,6 +17,7 @@ Clean-up after the design review of 5 November.
 | Avatar | The Fill property is now Tone, and Size has three values instead of four. | Pick the tone and the size again on instances set to Fill=Midnight or Size=Small. |
 | Stat Card | The five Accent variants are gone. | Nothing. Those instances fall back to the plain card. |
 | Badge | The tones Muted and Solid are gone. | Pick a new tone on those instances. |
+| Breadcrumb Item | Three variants instead of six. Separator is now a switch, not a variant. | Turn the Separator switch off on instances that were set to Separator=False. |
 | A removed token or text style | The layer loses the binding and keeps its last value. | Bind it again: text/access-muted to text/muted, UI/Tag and UI/Eyebrow to UI/Label. |
 
 ### Measured before and after
@@ -54,6 +55,9 @@ Clean-up after the design review of 5 November.
 - Documentation cards: every card and every dark panel was looked at. Fixed: the logo in the inverted Key Stakeholders Card, the Side Nav Item rows, the Select samples and two raw labels.
 - Every page canvas in the Figma file is now dark (#1E1E1E), so the page frames read against it.
 - Variables and styles: every variable has a description (73 had none). 22 component variables are scoped to spacing instead of showing in every picker. The two text styles and five gradient styles without a description have one.
+- Breadcrumb Item: three variants instead of six. The separator is a switch on the same three states. Breaking.
+- Select: a visible focus ring like Input, and the disabled border uses the same token as Input.
+- Card labels: Checkbox and Radio say "Not checked", Toggle says "Off". Skeleton names its four shapes and lines its samples up.
 
 ### Added
 
@@ -72,10 +76,17 @@ Clean-up after the design review of 5 November.
 - Tone of Voice: each principle has a before and after shown in a real component.
 - Colour: a contrast table of every text role on its surfaces, light and dark, computed from the variable values.
 - Code: 14 components built from the tokens, with a documentation site published on every change.
+- Interactions: 43 prototype interactions on 17 components. Hover, click and press move between the states that already exist. Button is being built separately.
+- Skeleton: loading behaviour shown in three steps, and a two-frame prototype.
+- Slider: a three-frame prototype of the budget filter.
+- Select: the open state, drawn with Menu Item rows, and a consistency table measured against Input.
+- Radio: a States block that says why all six states stay.
+- Iconography: four rules for naming, size, colour and labels.
+- Release gate: the site build runs the checks first. A closed gate stops the publish.
 
 ### Proposed, to confirm
 
-Six decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.
+Ten decisions taken with a reason and marked as proposals in the file. Each one is a single change to undo.
 
 - Unused tokens: removed three that nothing bound: `component/combobox/max-width`, `component/dropzone/icon` and `size/container-half`. The layout sizes (`size/col-*`, `size/container`, `size/full-width`) stay as reference for page layouts.
 - Link colour: `text/link` keeps the colour of the text on purpose. A link is told apart by its underline, never by colour alone.
@@ -83,6 +94,10 @@ Six decisions taken with a reason and marked as proposals in the file. Each one 
 - Gradient angles: all five gradients run at the same 44 degrees. Develop Beyond was turned and its stops mirrored, so it looks the same.
 - Small text: the 12px text in Jira Annotation uses UI/Caption (13px). No style existed at 12px.
 - Grid styles: two grid styles bound to the tokens: the 12-column page grid and the one-column mobile grid.
+- Select height: vertical padding 12 to 13.5, so Select is 47 px high, the same as Input.
+- Corner radius: brand-facing pages keep 0 px buttons. Internal tools may use `radius/field`, 4 px. Shown side by side on the Radius & Elevation page.
+- Behaviour: Skeleton and Slider each have a Behaviour block with timings, motion and keyboard steps.
+- Illustration guidelines: five rules for where brand illustrations may be used. For the brand owner to confirm.
 
 ## 1.0.0 · never published
 

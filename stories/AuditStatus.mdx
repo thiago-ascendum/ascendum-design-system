@@ -9,12 +9,12 @@ export const Partly = () => <Badge tone="info" label="Partly" />;
 export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
 
 <Hero title="Audit status">
-  Every point of the design review of 5 November, with what is done in proposed version 1.1.0 and what is still open. 48 points: 27 done, 17 partly done, 4 waiting for the owner.
+  Every point of the design review of 5 November, with what is done in proposed version 1.1.0 and what is still open. 48 points: 31 done, 13 partly done, 4 waiting for the owner.
 </Hero>
 
 <Cards items={[
-  { title: 'Done: 27', text: 'Changed in the Figma file, checked by the automated checks or looked at page by page.', tone: 'do' },
-  { title: 'Partly: 17', text: 'The measurable part is done. What is left is a decision about how many states or variants stay, or a test that has not been run.', tone: 'ask' },
+  { title: 'Done: 31', text: 'Changed in the Figma file, checked by the automated checks or looked at page by page.', tone: 'do' },
+  { title: 'Partly: 13', text: 'The measurable part is done. What is left is a decision about how many states or variants stay, or a test that has not been run.', tone: 'ask' },
   { title: 'Needs the owner: 4', text: 'Nothing we can settle from inside the file: brand colours against the brand guide, corner radius for internal tools, border widths, illustration guidelines.', tone: 'avoid' },
 ]} />
 
@@ -38,11 +38,11 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
     ['Status colours', 'Components use colours not in the foundations.', <Done />, 'No component uses a colour from outside the palette (checked). Each status has its meaning written.'],
     ['Typography', 'A tool may read the specimen as a layout.', <Done />, 'A note says what to take from the page, and the AI contract tells tools to ignore page layouts. All 16 styles have a specimen and a job.'],
     ['Spacing, Grid & Layout', 'Hard to understand in isolation.', <Done />, 'The scale says what each step is for, the grid is drawn, and one layout is shown on desktop and mobile.'],
-    ['Corner radius', 'Angular may not suit every product.', <Owner />, 'Every radius is shown on a real component. Whether internal tools get rounded corners is an open question.'],
+    ['Corner radius', 'Angular may not suit every product.', <Owner />, 'Every radius is shown on a real component. A proposal is drawn side by side: 0 px on brand-facing pages, 4 px on internal tools. It waits for a decision.'],
     ['Border width', 'Is it needed?', <Owner />, 'All four widths are shown. Whether all four stay is not decided.'],
     ['Elevation', 'Shadows and strokes are clipped.', <Done />, 'Clipping fixed on 156 frames. Elevation is shown on real overlays.'],
-    ['Iconography', 'Icons need labelling.', <Partly />, 'The page lists which components use which icon. The UI icon set itself is still missing.'],
-    ['Illustrations', 'Missing from the foundations.', <Owner />, 'Marked as not for product UI. Guidelines need John Norman.'],
+    ['Iconography', 'Icons need labelling.', <Done />, 'Every icon is named, with four rules for name, size, colour and label, and a list of which components use it. The real icon set is a separate gap, stated on the page.'],
+    ['Illustrations', 'Missing from the foundations.', <Owner />, 'Marked as not for product UI. Five guidelines are proposed on the page. John Norman has to confirm them.'],
     ['Tone of Voice', 'A tool may copy the layout, subtitles and pills.', <Done />, 'A note separates the principles from the presentation. Each principle has a before and after in a real component.'],
     ['Logo', 'Duplicates the brand website.', <Done />, 'The page says the website is the source and wins. Clear space and minimum size are marked as proposals.'],
     ['Photography', 'Words without visual references.', <Partly />, 'Six briefs say exactly which photographs are needed. The owner has to supply them.'],
@@ -58,9 +58,9 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
     ['Divider', 'No criticism.', <Done />, 'No change needed.'],
     ['Input', 'Too many states, wrong padding.', <Partly />, 'Vertical padding from 8 to 18. Five states remain: whether Filled is a state is a decision.'],
     ['Textarea', 'Composition and spacing.', <Partly />, 'It shares the Input padding fix. Same open decision.'],
-    ['Radio button', 'Selected and focus look alike.', <Done />, 'Focus is a ring and selected is a dot.'],
-    ['Skeleton', 'What is this?', <Done />, 'It says what it is and is shown in a loading card.'],
-    ['Slider', 'No context.', <Partly />, 'Shown with a label and a value. Not built as an interactive prototype yet.'],
+    ['Radio button', 'Selected and focus look alike.', <Done />, 'Focus is an outer ring and selected is a dot. A States block says why all six states stay. A click selects it in a prototype.'],
+    ['Skeleton', 'What is this?', <Done />, 'It says what it is and is shown in a loading card. Loading behaviour is drawn in three steps, with a prototype.'],
+    ['Slider', 'No context.', <Done />, 'Shown with a label and a value. A three-frame prototype moves the value, and pressing shows the focus state.'],
     ['Tags', 'Capitals.', <Done />, 'The department tag is removed. Nothing is set in capitals.'],
     ['Labels', 'Needs improvement.', <Partly />, 'One label style is used everywhere. No further redesign.'],
   ]} />
@@ -69,12 +69,12 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
 <Section n={4} title="Composite components">
   <Table head={['Component', 'What the review asked', 'State', 'What was done']} rows={[
     ['Alerts', 'Icons, unapproved colours, text wrapping.', <Partly />, 'Colours come only from the feedback roles and the last line is no longer one word. Two tones still share an icon.'],
-    ['Breadcrumbs', 'Reconsider the treatment.', <Partly />, 'Documented and shown in use. Variants unchanged.'],
+    ['Breadcrumbs', 'Reconsider the treatment.', <Done />, 'Three variants instead of six: the separator is a switch. Hover works in a prototype.'],
     ['File upload', 'Crowded, confusing failure state.', <Done />, 'More space. The failed state shows a warning icon, the reason and a Try again action.'],
     ['Form field', 'Helper text too close and often unneeded.', <Done />, 'The message shows only when it is needed.'],
     ['Inline text', 'Wrong font size.', <Done />, 'It takes the heading style of the title it replaces. Padding fixed.'],
     ['Menu item', 'Half of it can go.', <Partly />, 'Five variants, "Danger" renamed to "Error". Real use cases still to validate.'],
-    ['Select', 'Audit for consistency.', <Partly />, 'Documented. No change.'],
+    ['Select', 'Audit for consistency.', <Done />, 'Measured against Input: same height, border, radius and text style. It has a focus ring now, and the open state is drawn.'],
     ['Stat cards', 'Generic styling, top stroke, capitals.', <Done />, 'One card: a label and a number. No stroke, no capitals.'],
     ['Avatars inside cards', 'Different from the Avatar component.', <Done />, 'Team and stakeholder cards use Avatar instances.'],
     ['Tabs', 'Weak counter, clipped text.', <Done />, 'The count is a pill, every variant has the same height, nothing is clipped.'],
@@ -83,12 +83,12 @@ export const Owner = () => <Badge tone="warning" label="Needs the owner" />;
 
 <Section n={5} title="Global issues">
   <Table head={['Issue', 'State', 'Where it stands']} rows={[
-    ['Component rationalisation', <Partly />, 'Variants went from 258 to 210 and component sets from 46 to 39. Button is still over the limit of 12.'],
+    ['Component rationalisation', <Partly />, 'Variants went from 258 to 210. Breadcrumb Item went from six to three. Button is still over the limit of 12.'],
     ['Token compliance', <Done />, 'Checked on every change: no colour set by hand, no component bound straight to a primitive, no text without a style.'],
     ['Contextual documentation', <Done />, '45 components and 5 patterns have a documentation card that ends with the component in use. 14 are also in code on this site.'],
     ['AI interpretation', <Done />, 'A contract file says what a tool may use, must never use and should ignore.'],
-    ['Interactive validation', <Partly />, '14 components can be tried on this site. There are no Figma prototypes.'],
+    ['Interactive validation', <Partly />, '43 interactions on 17 components in Figma, and prototypes for Skeleton and Slider. 14 components can be tried on this site. Button interactions are being built.'],
     ['Visual quality', <Partly />, 'Every page was looked at in a capture, three times. A second person should still look.'],
-    ['Governance and ownership', <Partly />, 'Process, changelog with sign-offs, repository and automatic checks exist. No owner is named and no publish has been tested.'],
+    ['Governance and ownership', <Partly />, 'Process, changelog with sign-offs, repository and automatic checks exist, and a closed gate stops the site publish. No owner is named and no library publish has been tested.'],
   ]} />
 </Section>

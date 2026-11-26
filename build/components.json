@@ -65,14 +65,11 @@
     "description": "One step in a breadcrumb trail, followed by a chevron. Use it on pages that sit two or more levels deep, so people can step back up. Set Separator to False on the last item, which is the current page. Do not use it on top-level pages.",
     "name": "Breadcrumb Item",
     "page": "Breadcrumb Item",
-    "variantCount": 6,
+    "variantCount": 3,
     "variants": [
-      "State=Current, Separator=False",
-      "State=Current, Separator=True",
-      "State=Hover, Separator=False",
-      "State=Hover, Separator=True",
-      "State=Link, Separator=False",
-      "State=Link, Separator=True"
+      "State=Current",
+      "State=Hover",
+      "State=Link"
     ]
   },
   {
@@ -105,6 +102,17 @@
       "Style=Solid, Variant=Primary, State=Disabled",
       "Style=Solid, Variant=Primary, State=Focus",
       "Style=Solid, Variant=Primary, State=Hover"
+    ]
+  },
+  {
+    "description": "",
+    "name": "Button-Solid-Primary",
+    "page": "Button",
+    "variantCount": 3,
+    "variants": [
+      "State=Default",
+      "State=Hover",
+      "State=Selected"
     ]
   },
   {
