@@ -1,6 +1,6 @@
 /* Navigation Bar. Colours are the Context roles (ctx/*): data-context="inverted" on the bar or a parent inverts bar, logo and button. */
 .ds-navigation-bar {
-  display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; width: 100%; min-height: 80px;
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); box-sizing: border-box; width: 100%; min-height: 80px;
   padding: var(--space-2xs) var(--space-md); background: var(--ctx-surface); color: var(--ctx-on-surface); border-radius: 0;
 }
 .ds-navigation-bar__logo { font: 700 32px/1 Barlow, system-ui, sans-serif; letter-spacing: -0.02em; color: var(--ctx-logo); text-decoration: none; }

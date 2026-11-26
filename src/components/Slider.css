@@ -39,3 +39,10 @@
 
 .ds-slider__input:disabled { opacity: 0.4; cursor: not-allowed; }
 .ds-slider:has(:disabled) .ds-slider__track { opacity: 0.4; }
+
+/* Pressed: the thumb grows a quarter, as in Figma, so it reads apart from hover. Figma leaves that size unbound. */
+.ds-slider__input:active:not(:disabled)::-webkit-slider-thumb {
+  width: calc(var(--slider-thumb) * 1.25); height: calc(var(--slider-thumb) * 1.25);
+  margin-top: calc((var(--slider-height) - var(--slider-thumb) * 1.25) / 2);
+}
+.ds-slider__input:active:not(:disabled)::-moz-range-thumb { width: calc(var(--slider-thumb) * 1.25); height: calc(var(--slider-thumb) * 1.25); }

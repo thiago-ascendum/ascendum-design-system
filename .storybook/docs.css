@@ -132,3 +132,7 @@
 .fd-cell-body > .ds-divider--vertical { width: auto; height: 100%; }
 /* A cell Figma draws in the Inverted Context mode: the cell sets data-context, so the component inverts, as in Figma. */
 .fd-cell-body--inverted { background: var(--ctx-surface); padding: 12px; border-radius: var(--radius-surface); }
+/* Page-wide components (bars, footers, sections, tables) take the whole row of the matrix, as in the Figma doc. */
+.fd-cell:has(.ds-navigation-bar, .ds-footer, [class^="ds-section-"], .ds-table) { flex: 1 1 100%; }
+.fd-cell:has(.ds-navigation-bar, .ds-footer, [class^="ds-section-"], .ds-table) .fd-cell-body { display: block; width: 100%; overflow-x: auto; }
+.fd-cell { min-width: 0; max-width: 100%; }
