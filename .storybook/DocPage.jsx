@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { ThemeBar } from './ThemeSwitch.jsx';
 import { Primary, Controls, Story, DocsContainer, useOf } from '@storybook/addon-docs/blocks';
 import { themes } from 'storybook/theming';
 import figmaDocs from '../build/figma-docs.json';
@@ -175,5 +176,5 @@ export function ThemedDocsContainer({ children, context, ...rest }) {
   try { const g = context.store.userGlobals; theme = (g.get ? g.get() : g.globals).theme || 'light'; } catch (e) { /* first paint */ }
   useEffect(() => { document.documentElement.dataset.theme = theme; }, [theme]);
   document.documentElement.dataset.theme = theme;
-  return <DocsContainer context={context} theme={theme === 'dark' ? themes.dark : themes.light} {...rest}>{children}</DocsContainer>;
+  return <DocsContainer context={context} theme={theme === 'dark' ? themes.dark : themes.light} {...rest}><ThemeBar />{children}</DocsContainer>;
 }
