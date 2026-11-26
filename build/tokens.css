@@ -343,6 +343,19 @@
   --surface-hover: var(--neutral-850);
   --surface-pressed: var(--neutral-800);
   --warning-container: var(--warning-20);
+  --ctx-focus: var(--focus);
+  --ctx-logo-glyph: var(--surface);
+  --ctx-logo: var(--inverse-surface);
+  --ctx-on-primary: var(--on-primary);
+  --ctx-on-surface-variant: var(--on-surface-variant);
+  --ctx-on-surface: var(--on-surface);
+  --ctx-outline-variant: var(--outline-variant);
+  --ctx-outline: var(--outline);
+  --ctx-primary-hover: var(--primary-hover);
+  --ctx-primary-pressed: var(--primary-pressed);
+  --ctx-primary: var(--primary);
+  --ctx-surface-container: var(--surface-container);
+  --ctx-surface: var(--surface);
 }
 [data-context="inverted"] {
   --ctx-focus: var(--inverse-outline);

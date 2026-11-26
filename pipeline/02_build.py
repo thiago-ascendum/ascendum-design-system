@@ -436,6 +436,7 @@ def css_val(v, m):
     return str(x).lower() if isinstance(x, str) and x.startswith("#") else str(x)
 
 
+base_val, redeclared = {}, collections.defaultdict(set)
 base, dark, mobile, surface, textscale = [], [], [], [], []  # surface: Context mode (Default / Inverted); textscale: Accessibility mode Text 200%
 for v in sorted(local.values(), key=lambda v: (GOV["collectionOrder"].index(v["collection"]) if v["collection"] in GOV["collectionOrder"] else 9, v["name"])):
     if css_name.get(css_var(v), v)["id"] != v["id"]:
@@ -445,10 +446,21 @@ for v in sorted(local.values(), key=lambda v: (GOV["collectionOrder"].index(v["c
     if d0 is None:
         continue
     base.append(f"  {css_var(v)}: {d0};")
+    base_val[v["id"]] = d0
     for mode, m in items[1:]:
         x = css_val(v, m)
         if x is not None and x != d0:
-            (dark if mode == "Dark" else surface if mode == "Inverted" else textscale if mode.startswith("Text") else mobile).append(f"  {css_var(v)}: {x};")
+            block = dark if mode == "Dark" else surface if mode == "Inverted" else textscale if mode.startswith("Text") else mobile
+            block.append(f"  {css_var(v)}: {x};")
+            redeclared[id(block)].add(v["id"])
+
+# A custom property that points to another one is resolved where it is declared (:root), and children inherit the
+# result. So inside a scoped block ([data-theme], [data-context], [data-text-scale], which can sit on any element),
+# every property that depends on a redeclared one is declared again with its same var(), to be resolved there.
+for block in (dark, surface, textscale):
+    own = redeclared[id(block)]
+    deps = set().union(*(dependents(x) for x in own)) - own if own else set()
+    block += sorted(f"  {css_var(V[d])}: {base_val[d]};" for d in deps if d in base_val and css_name.get(css_var(V[d]), V[d])["id"] == d)
 _fv = S["meta"].get("figmaVersion") or {}
 _src = S["meta"]["sourceSha256"] + (f', Figma version {_fv["id"]} "{_fv["title"]}"' if _fv.get("id") else "")
 css = ["/* Generated from the design system snapshot " + _src + ". Do not edit by hand. */",
