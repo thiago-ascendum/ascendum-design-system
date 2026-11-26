@@ -6,11 +6,41 @@ export default {
   tags: ['autodocs'],
   args: { label: 'Save changes', variant: 'solid', surface: 'primary', disabled: false },
   parameters: {
-    docs: {
-      description: {
-        component:
-          'Built from the tokens of the Figma component, binding for binding. **Use:** Solid for the one main action of a view, Outline for the second choice, Ghost for quiet actions such as Back and Cancel. **Avoid:** two Solid buttons side by side, decorative arrows, labels like "Button" or "Click here". **Open questions for the owner:** 24 variants in Figma (three styles, two surfaces, four states): which stay? Solid on hover is one grey step, a proposal. Should internal tools get rounded corners?',
-      },
+    ds: {
+      lead: 'Starts an action. One main action per view, and the button says what happens with a verb.',
+      group: 'Atoms',
+      figma: '23:50',
+      code: 'src/components/Button.jsx',
+      when: [
+        ['Solid: the main action', 'One per view. It is the thing the person came to do: Save, Publish, Send.'],
+        ['Outline: the second choice', 'A real alternative next to the main action: Save draft, Preview.'],
+        ['Ghost: quiet actions', 'No border. For Back, Cancel and Skip, so they never compete with the main action.'],
+      ],
+      use: ['Start the label with a verb and say what happens: "Save changes".', 'Keep one Solid button per view.', 'Use the inverted surface on dark sections.'],
+      avoid: ['Two Solid buttons side by side.', 'Labels such as "Button", "OK" or "Click here".', 'Decorative arrows or icons that add no meaning.', 'Rounded corners: 0px is the brand signature.'],
+      tokens: [
+        ['button/fill-hover', '--button-fill-hover', 'Fill and border of Solid; fill of Outline and Ghost on hover'],
+        ['button/fill-solid-hover', '--button-fill-solid-hover', 'Solid on hover (a proposal)'],
+        ['button/stroke', '--button-stroke', 'Border of Outline'],
+        ['button/label', '--button-label', 'Label of Outline and Ghost'],
+        ['button/label-hover', '--button-label-hover', 'Label of Solid, and of the others on hover'],
+        ['component/button/padding-h', '--button-padding-h', 'Left and right padding: 28 desktop, 22 mobile'],
+        ['component/button/padding-v', '--button-padding-v', 'Top and bottom padding: 16 desktop, 12 mobile'],
+        ['radius/none', '--button-radius', 'Corners: 0'],
+        ['border/focus', '--border-focus', 'Focus ring, 2px, set 4px off the edge'],
+      ],
+      a11y: [
+        'Focus is a 2px ring set 4px away from the button, so it shows on any surface.',
+        'The button is 48px high on desktop and 40px on mobile. Mobile is under the 44px touch target: an open point.',
+        'Disabled is 40% opacity and cannot be focused. Prefer explaining why an action is unavailable.',
+        'The label is the accessible name. An icon alone is not a button in this system.',
+      ],
+      open: [
+        'Figma has 24 variants: three styles, two surfaces, four states. Which of them stay?',
+        'Solid on hover is one grey step (button/fill-solid-hover). It is a proposal. Confirm it or change it.',
+        'Should internal tools get rounded corners? The design review raises it at 9:30.',
+      ],
+      changes: ['1.1.0: Solid has a visible hover. The Figma set shows the inverted variants on a dark half. Focus is a visible ring.'],
     },
   },
 };
