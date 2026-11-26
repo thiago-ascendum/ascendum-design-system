@@ -37,6 +37,13 @@ for f in sorted(os.listdir(src_dir)):
     src = open(os.path.join(src_dir, f)).read()
     block = re.search(r"\.propTypes\s*=\s*\{(.*?)\n\};", src, re.S)
     types = dict(re.findall(r"^\s*(\w+):\s*(PropTypes[^\n]*?),?\s*$", block.group(1), re.M)) if block else {}
+    # Every prop the component reads must be declared, so an undeclared prop cannot slip past this check.
+    sig = re.search(r"export function " + re.escape(name) + r"\(\{([^}]*)\}", src)
+    if sig:
+        for part in sig.group(1).split(","):
+            p = part.strip().split("=")[0].strip()
+            if p and not p.startswith("...") and p not in types:
+                fails.append(f"{name}: prop '{p}' is read but not declared in propTypes")
     props = c.get("properties")
     if props is None:
         fails.append(f"{name}: the snapshot has no properties for it; take a new snapshot")

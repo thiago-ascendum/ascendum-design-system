@@ -1,0 +1,24 @@
+/* Combobox. Tokens sit inside the field; focus is the border going solid, with no separate ring, as in Figma. */
+.ds-combobox {
+  display: flex; flex-wrap: wrap; align-items: center; box-sizing: border-box; width: 100%;
+  gap: var(--combobox-gap); min-height: var(--combobox-min-height); padding: var(--combobox-padding-v) var(--combobox-padding-h);
+  background: var(--surface-container); color: var(--on-surface);
+  border: var(--border-width-field) solid var(--outline); border-radius: var(--field-radius);
+}
+.ds-combobox:hover { background: var(--surface-hover); }
+.ds-combobox:has(.ds-combobox__input:focus-visible) { background: var(--surface-container); }
+.ds-combobox__token {
+  display: inline-flex; align-items: center; gap: var(--combobox-gap); box-sizing: border-box;
+  height: var(--combobox-token-height); padding: 0 var(--combobox-padding-h);
+  font: 400 var(--font-size-body-sm)/1 Barlow, system-ui, sans-serif;
+  background: var(--inverse-surface); color: var(--inverse-on-surface); border-radius: var(--field-radius);
+}
+.ds-combobox__remove {
+  display: inline-flex; margin: 0; padding: 0; border: 0; background: transparent; color: var(--inverse-on-surface); cursor: pointer;
+}
+.ds-combobox__remove:focus-visible { outline: var(--border-width-focus) solid var(--inverse-outline); outline-offset: 2px; }
+.ds-combobox__input {
+  flex: 1; min-width: 80px; margin: 0; padding: 0; border: 0; outline: 0; background: transparent;
+  font: 400 var(--text-body-size)/1.25 Barlow, system-ui, sans-serif; color: var(--on-surface);
+}
+.ds-combobox__input::placeholder { color: var(--on-surface-placeholder); opacity: 1; }

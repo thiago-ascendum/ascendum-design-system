@@ -1,0 +1,21 @@
+/* Code Block. Every value is a token from build/tokens.css, bound the same way as the Figma component. */
+.ds-code-block {
+  margin: 0; overflow: hidden; width: 100%; max-width: 520px; box-sizing: border-box;
+  background: var(--inverse-surface); color: var(--inverse-on-surface); border-radius: var(--radius-card);
+}
+.ds-code-block__header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--code-head-padding-v) var(--code-head-padding-h);
+  border-bottom: var(--border-width-hairline) solid var(--outline-medium);
+  font: 700 var(--text-label-size)/1.3 Barlow, system-ui, sans-serif;
+}
+.ds-code-block__language { color: var(--inverse-on-surface-variant); }
+.ds-code-block__action {
+  padding: 0; border: 0; background: transparent; cursor: pointer;
+  font: inherit; color: var(--inverse-on-surface);
+}
+.ds-code-block__action:hover { text-decoration: underline; }
+.ds-code-block__action:focus-visible, .ds-code-block__body:focus-visible { outline: var(--border-width-focus) solid var(--focus); outline-offset: 2px; }
+.ds-code-block__body { margin: 0; padding: var(--code-body-padding); overflow-x: auto; }
+.ds-code-block__body code { display: flex; flex-direction: column; gap: var(--space-3xs); }
+.ds-code-block__line { white-space: pre; font: 400 var(--font-size-body-sm)/1.3 Barlow, system-ui, sans-serif; color: var(--inverse-on-surface); }

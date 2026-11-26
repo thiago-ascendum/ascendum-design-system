@@ -1,0 +1,15 @@
+/* Inline Edit. Takes the Heading/H5 size so nothing jumps when editing starts: the box is the same in every state,
+   the border is always there and only its colour changes. */
+.ds-inline-edit {
+  display: inline-block; box-sizing: border-box; margin: 0; text-align: left;
+  padding: var(--inline-edit-padding-v) var(--inline-edit-padding-h);
+  font: 700 var(--text-h5-size)/1.1 Barlow, system-ui, sans-serif; color: var(--on-surface);
+  background: var(--surface-container); border: var(--border-width-field) solid transparent; border-radius: var(--field-radius);
+  cursor: text;
+}
+.ds-inline-edit:hover:not(.ds-inline-edit--editing) {
+  background: var(--surface-container-high); border-color: var(--outline-medium); border-width: var(--border-width-hairline); padding: calc(var(--inline-edit-padding-v) + 0.5px) calc(var(--inline-edit-padding-h) + 0.5px);
+}
+.ds-inline-edit:focus-visible { outline: var(--border-width-focus) solid var(--focus); outline-offset: 4px; }
+.ds-inline-edit--editing { border-color: var(--outline); cursor: text; }
+.ds-inline-edit--editing:focus-visible { outline: none; }

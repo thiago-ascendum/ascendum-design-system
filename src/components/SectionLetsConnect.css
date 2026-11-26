@@ -1,0 +1,12 @@
+/* Section / Let's Connect. Context roles (ctx/*) so data-context="inverted" on a parent inverts it, button included. */
+.ds-section-lets-connect {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-xs); box-sizing: border-box;
+  background: var(--ctx-surface); color: var(--ctx-on-surface);
+  padding: var(--space-sm) var(--space-md); border-radius: var(--container-radius);
+}
+.ds-section-lets-connect__title { margin: 0; display: flex; flex-direction: column; align-items: center; font: 700 var(--text-h2-size)/0.95 Barlow, system-ui, sans-serif; }
+.ds-section-lets-connect__heading { color: var(--ctx-on-surface); }
+.ds-section-lets-connect__gradient {
+  background: linear-gradient(90deg, var(--gradient-stop-team-1), var(--gradient-stop-team-2), var(--gradient-stop-team-3)); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}

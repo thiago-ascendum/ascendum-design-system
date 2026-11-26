@@ -1,0 +1,17 @@
+/* Accordion Item. Tokens bound as in Figma: hairline bottom stroke in outline-variant, header padding from component/accordion/*. */
+.ds-accordion-item { box-sizing: border-box; width: 100%; background: var(--surface-container); border-bottom: var(--border-width-hairline) solid var(--outline-variant); color: var(--on-surface); }
+.ds-accordion-item__heading { margin: 0; font: inherit; }
+.ds-accordion-item__header {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--accordion-gap); width: 100%; box-sizing: border-box;
+  margin: 0; border: 0; border-radius: 0; text-align: left; cursor: pointer;
+  padding: var(--accordion-padding-v) var(--accordion-padding-h);
+  background: var(--surface-container); color: var(--on-surface);
+  font: 700 var(--text-h4-size)/1.2 Barlow, system-ui, sans-serif;
+}
+.ds-accordion-item__header:hover { background: var(--surface-container-high); }
+.ds-accordion-item__header:focus-visible { outline: var(--border-width-focus) solid var(--focus); outline-offset: -2px; }
+.ds-accordion-item__chevron { flex: none; color: var(--on-surface); }
+.ds-accordion-item--expanded .ds-accordion-item__chevron { transform: rotate(180deg); }
+.ds-accordion-item__body { padding: 0 var(--accordion-padding-h) var(--accordion-padding-v); }
+.ds-accordion-item__body[hidden] { display: none; }
+.ds-accordion-item__text { margin: 0; color: var(--on-surface-variant); font: 400 var(--text-body-lg-size)/1.5 Barlow, system-ui, sans-serif; }

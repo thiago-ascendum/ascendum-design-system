@@ -1,0 +1,11 @@
+/* Side Nav Item. Sits on the panel fill (inverse-surface); Hover and Active use the surface roles, as in Figma. */
+.ds-side-nav-item {
+  display: flex; align-items: center; gap: var(--space-2xs); box-sizing: border-box; width: 100%; max-width: 208px;
+  padding: var(--sidenav-item-padding-v) var(--sidenav-item-padding-h);
+  background: var(--inverse-surface); color: var(--inverse-on-surface); border-radius: var(--field-radius);
+  font: 400 var(--text-button-size)/1.2 Barlow, system-ui, sans-serif; text-decoration: none; cursor: pointer;
+}
+.ds-side-nav-item__icon { flex: none; }
+.ds-side-nav-item:hover { background: var(--surface-container-high); color: var(--on-surface); }
+.ds-side-nav-item:focus-visible { outline: var(--border-width-focus) solid var(--inverse-outline); outline-offset: 2px; }
+.ds-side-nav-item--active, .ds-side-nav-item--active:hover { background: var(--surface-container); color: var(--on-surface); font-weight: 700; }

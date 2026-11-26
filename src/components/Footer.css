@@ -1,0 +1,18 @@
+/* Footer. The links area follows the Context mode (ctx/*). The legal bar is always inverse-surface, in both variants and both modes. */
+.ds-footer { display: flex; flex-direction: column; width: 100%; box-sizing: border-box; border-radius: 0; }
+.ds-footer__links {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md); background: var(--ctx-surface); color: var(--ctx-on-surface);
+}
+.ds-footer__group { display: flex; flex-direction: column; gap: var(--space-3xs); }
+.ds-footer__title { margin: 0; font: 700 var(--text-label-size)/1.2 Barlow, system-ui, sans-serif; color: var(--ctx-on-surface-variant); }
+.ds-footer__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.ds-footer__link { font: 400 var(--text-body-size)/1.2 Barlow, system-ui, sans-serif; color: var(--ctx-on-surface); text-decoration: none; }
+.ds-footer__link:hover { text-decoration: underline; }
+.ds-footer__link:focus-visible { outline: var(--border-width-focus) solid var(--ctx-focus); outline-offset: 2px; }
+.ds-footer__legal {
+  display: flex; align-items: center; justify-content: space-between; padding: var(--space-2xs) var(--space-md);
+  background: var(--inverse-surface); color: var(--inverse-on-surface-variant);
+}
+.ds-footer__logo { font: 700 32px/1 Barlow, system-ui, sans-serif; letter-spacing: -0.02em; color: var(--inverse-on-surface); }
+.ds-footer__legal-text { font: 400 var(--text-footnote-size)/1.2 Barlow, system-ui, sans-serif; color: var(--inverse-on-surface-variant); }

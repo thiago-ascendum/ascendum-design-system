@@ -75,7 +75,7 @@ function Rows({ doc, Component, sample, dark }) {
           return (
             <div className={'fd-cell' + force.map((f) => ' fd-force-' + f).join('')} key={i + (dark ? 'd' : '')}>
               <span className="fd-caption">{cell.label}</span>
-              <div className="fd-cell-body"><Component {...props} /></div>
+              <div className={"fd-cell-body sb-unstyled" + (!row.inverted && /invert/i.test(cell.label) ? " fd-cell-body--inverted" : "")} {...(!row.inverted && /invert/i.test(cell.label) ? { "data-context": "inverted" } : {})}><Component {...props} /></div>
             </div>
           );
         })}
@@ -153,7 +153,7 @@ export function DocPage() {
             {inUse.length ? (
               <section className="fd-group">
                 <h3 className="fd-h5">In use</h3>
-                {inUse.map((s) => <div className="fd-use" key={s.id}><Story of={s.moduleExport} /></div>)}
+                {inUse.map((s) => <div className="fd-use sb-unstyled" key={s.id}><Story of={s.moduleExport} /></div>)}
               </section>
             ) : null}
             <section className="fd-group">

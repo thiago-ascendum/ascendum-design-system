@@ -124,3 +124,11 @@
 
 /* Grids size their single column to the frame, never to the widest content, so the side column never overlaps. */
 .fd-main, .fd-group, .fd-row, .fd-dark { grid-template-columns: minmax(0, 1fr); min-width: 0; }
+
+/* Pieces that take the width (or height) of their container get a size in the variant matrix, as in the Figma doc. */
+.fd-cell-body > .ds-slider, .fd-cell-body > .ds-skeleton--line, .fd-cell-body > .ds-skeleton--line-large, .fd-cell-body > .ds-skeleton--block { width: 240px; }
+.fd-cell-body > .ds-divider { width: 240px; }
+.fd-cell-body:has(> .ds-divider--vertical) { height: 48px; }
+.fd-cell-body > .ds-divider--vertical { width: auto; height: 100%; }
+/* A cell Figma draws in the Inverted Context mode: the cell sets data-context, so the component inverts, as in Figma. */
+.fd-cell-body--inverted { background: var(--ctx-surface); padding: 12px; border-radius: var(--radius-surface); }

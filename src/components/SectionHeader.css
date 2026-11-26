@@ -1,0 +1,13 @@
+/* Section / Header. Tokens only. Colours are the Context roles (ctx/*), so data-context="inverted" on a parent inverts it. */
+.ds-section-header {
+  display: block; box-sizing: border-box; background: var(--ctx-surface); color: var(--ctx-on-surface);
+  padding: var(--space-sm) var(--space-md); border-radius: var(--container-radius);
+}
+.ds-section-header__title { margin: 0; display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3xs); font: 700 var(--text-display-size)/0.95 Barlow, system-ui, sans-serif; letter-spacing: 0; }
+.ds-section-header__heading { color: var(--ctx-on-surface); }
+.ds-section-header__gradient {
+  background: linear-gradient(90deg, var(--gradient-stop-team-1), var(--gradient-stop-team-2), var(--gradient-stop-team-3)); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.ds-section-header--h2 .ds-section-header__title { font-size: var(--text-h2-size); }
+.ds-section-header--h3 .ds-section-header__title { font-size: var(--text-h5-size); }

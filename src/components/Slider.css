@@ -1,0 +1,41 @@
+/* Slider. Every value is a token from build/tokens.css, bound the same way as the Figma component.
+   Track = outline-variant, fill = outline, thumb = outline with a surface-container ring.
+   The track and fill are drawn by the spans, the native input on top gives the thumb, drag and keyboard. */
+.ds-slider { position: relative; display: block; width: 100%; height: var(--slider-height); }
+.ds-slider__track {
+  position: absolute; top: 50%; left: calc(var(--slider-thumb) / 2); right: calc(var(--slider-thumb) / 2);
+  height: var(--slider-track-height); transform: translateY(-50%);
+  border-radius: var(--slider-track-radius); background: var(--outline-variant);
+}
+.ds-slider__fill { display: block; height: 100%; border-radius: var(--slider-track-radius); background: var(--outline); }
+.ds-slider__input {
+  -webkit-appearance: none; appearance: none; position: absolute; inset: 0; width: 100%; height: 100%;
+  margin: 0; padding: 0; background: transparent; cursor: pointer; outline: none;
+}
+.ds-slider__input::-webkit-slider-runnable-track { height: var(--slider-height); background: transparent; }
+.ds-slider__input::-moz-range-track { height: var(--slider-height); background: transparent; }
+.ds-slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; box-sizing: border-box;
+  width: var(--slider-thumb); height: var(--slider-thumb);
+  margin-top: calc((var(--slider-height) - var(--slider-thumb)) / 2);
+  border: var(--slider-thumb-border) solid var(--surface-container); border-radius: var(--radius-pill);
+  background: var(--outline); box-shadow: 0 0 0 var(--border-width-hairline) var(--outline);
+}
+.ds-slider__input::-moz-range-thumb {
+  box-sizing: border-box; width: var(--slider-thumb); height: var(--slider-thumb);
+  border: var(--slider-thumb-border) solid var(--surface-container); border-radius: var(--radius-pill);
+  background: var(--outline); box-shadow: 0 0 0 var(--border-width-hairline) var(--outline);
+}
+
+/* Hover and pressed: the thumb steps through the primary roles. */
+.ds-slider__input:hover:not(:disabled)::-webkit-slider-thumb { background: var(--primary-hover); }
+.ds-slider__input:active:not(:disabled)::-webkit-slider-thumb { background: var(--primary-pressed); }
+.ds-slider__input:hover:not(:disabled)::-moz-range-thumb { background: var(--primary-hover); }
+.ds-slider__input:active:not(:disabled)::-moz-range-thumb { background: var(--primary-pressed); }
+
+/* Focus: a ring around the thumb. */
+.ds-slider__input:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 var(--border-width-focus) var(--surface-container), 0 0 0 calc(var(--border-width-focus) * 2) var(--focus); }
+.ds-slider__input:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 var(--border-width-focus) var(--surface-container), 0 0 0 calc(var(--border-width-focus) * 2) var(--focus); }
+
+.ds-slider__input:disabled { opacity: 0.4; cursor: not-allowed; }
+.ds-slider:has(:disabled) .ds-slider__track { opacity: 0.4; }

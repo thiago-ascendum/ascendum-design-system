@@ -1,5 +1,21 @@
 {
   "$description": "Read by pipeline/07_props_mirror.py. Code props mirror Figma properties name for name; these are the only exceptions.",
-  "browserStates": ["hover", "focus", "pressed", "filled"],
-  "plumbing": ["onChange", "onClick", "id", "name", "placeholder", "children", "type", "value"]
+  "browserStates": [
+    "hover",
+    "focus",
+    "pressed",
+    "filled"
+  ],
+  "plumbing": [
+    "onChange",
+    "onClick",
+    "id",
+    "name",
+    "placeholder",
+    "children",
+    "type",
+    "value",
+    "href",
+    "language"
+  ]
 }

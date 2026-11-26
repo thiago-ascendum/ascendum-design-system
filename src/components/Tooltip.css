@@ -1,0 +1,13 @@
+/* Tooltip. Every value is a token from build/tokens.css, bound the same way as the Figma component. */
+.ds-tooltip { display: inline-flex; flex-direction: column; align-items: center; gap: var(--tooltip-arrow-overlap); }
+.ds-tooltip--below { flex-direction: column-reverse; }
+.ds-tooltip__bubble {
+  position: relative; z-index: 1; white-space: nowrap;
+  padding: var(--tooltip-padding-v) var(--tooltip-padding-h); border-radius: var(--field-radius);
+  background: var(--inverse-surface); color: var(--inverse-on-surface);
+  font: 400 var(--text-label-size)/1.3 Barlow, system-ui, sans-serif;
+}
+.ds-tooltip__arrow {
+  display: block; width: 14px; height: 14px; transform: rotate(45deg);
+  background: var(--inverse-surface);
+}

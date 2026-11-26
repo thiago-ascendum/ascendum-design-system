@@ -1,0 +1,14 @@
+/* Table. The container clips to radius/card and draws a hairline border, as in Figma. */
+.ds-table {
+  display: flex; flex-direction: column; box-sizing: border-box; width: 100%; max-width: 880px; overflow: hidden;
+  background: var(--surface-container); border: var(--border-width-hairline) solid var(--outline-variant); border-radius: var(--radius-card);
+}
+.ds-table__toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--table-toolbar-padding-h);
+  padding: var(--table-toolbar-padding-v) var(--table-toolbar-padding-h);
+  border-bottom: var(--border-width-hairline) solid var(--outline-variant);
+}
+.ds-table__title { margin: 0; font: 700 var(--text-h4-size)/1.2 Barlow, system-ui, sans-serif; color: var(--on-surface); }
+.ds-table__count { font: 400 var(--font-size-body-sm)/1.2 Barlow, system-ui, sans-serif; color: var(--on-surface-variant); }
+/* The last row has no bottom stroke. */
+.ds-table > .ds-table-row:last-child { border-bottom-width: 0; }

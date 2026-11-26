@@ -1,0 +1,10 @@
+/* Side Navigation. Fixed 240px panel on inverse-surface; the placeholder mark is a surface-container circle, as in Figma. */
+.ds-side-navigation {
+  display: flex; flex-direction: column; gap: var(--sidenav-gap); box-sizing: border-box; width: var(--sidenav-width); min-height: 540px;
+  padding: var(--sidenav-padding-v) var(--sidenav-padding-h); background: var(--inverse-surface); color: var(--inverse-on-surface); border-radius: 0;
+}
+.ds-side-navigation__brand { display: flex; align-items: center; gap: var(--space-2xs); padding: 0 var(--sidenav-item-padding-h); }
+.ds-side-navigation__mark { width: 32px; height: 32px; border-radius: 50%; background: var(--surface-container); }
+.ds-side-navigation__name { font: 700 var(--text-h6-size)/1.2 Barlow, system-ui, sans-serif; color: var(--inverse-on-surface); }
+.ds-side-navigation__items { display: flex; flex-direction: column; gap: var(--space-3xs); }
+.ds-side-navigation__items > .ds-side-nav-item { max-width: none; }

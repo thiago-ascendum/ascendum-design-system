@@ -1,0 +1,13 @@
+/* Empty State. Tokens bound as in Figma: component/empty/*, radius/card, dashed ring in outline-medium. */
+.ds-empty-state {
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-2xs); box-sizing: border-box; width: 520px; max-width: 100%;
+  padding: var(--empty-padding-v) var(--empty-padding-h); border-radius: var(--radius-card);
+  background: var(--surface-container); color: var(--on-surface); text-align: center;
+}
+.ds-empty-state__ring {
+  display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; width: var(--empty-icon); height: var(--empty-icon);
+  border: var(--border-width-field) dashed var(--outline-medium); border-radius: 50%; color: var(--on-surface);
+}
+.ds-empty-state__title { margin: 0; font: 700 var(--text-h4-size)/1.2 Barlow, system-ui, sans-serif; color: var(--on-surface); }
+.ds-empty-state__text { margin: 0; max-width: var(--empty-max-width); font: 400 var(--text-body-lg-size)/1.5 Barlow, system-ui, sans-serif; color: var(--on-surface-variant); }
+.ds-empty-state__actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--space-2xs); }

@@ -1,0 +1,13 @@
+/* Table Row. Tokens bound as in Figma: fill by state, hairline at the bottom, cell padding from component/table. */
+.ds-table-row {
+  display: flex; align-items: center; gap: var(--table-cell-padding-h); box-sizing: border-box; width: 100%;
+  padding: var(--table-cell-padding-v) var(--table-cell-padding-h);
+  background: var(--surface-container); color: var(--on-surface);
+  border-bottom: var(--border-width-hairline) solid var(--outline-variant); border-radius: 0;
+  font: 400 var(--text-body-size)/1.2 Barlow, system-ui, sans-serif;
+}
+.ds-table-row__cell { flex: 1 1 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ds-table-row__cell:first-child { flex-grow: 1.5; }
+.ds-table-row:hover { background: var(--surface-container-high); }
+.ds-table-row--selected { background: var(--surface-container-low); }
+.ds-table-row--header, .ds-table-row--header:hover { background: var(--surface-container-low); color: var(--on-surface-variant); font: 700 var(--text-label-size)/1.2 Barlow, system-ui, sans-serif; }

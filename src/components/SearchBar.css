@@ -1,0 +1,19 @@
+/* Search Bar. Default 52 high, Compact 44. Focus is the border going solid, with no separate ring, as in Figma. */
+.ds-search {
+  display: flex; align-items: center; box-sizing: border-box; width: 100%; min-width: 0;
+  gap: var(--search-gap); height: var(--search-height); padding: 0 var(--search-padding-h);
+  background: var(--surface-container); color: var(--on-surface);
+  border: var(--border-width-field) solid var(--outline); border-radius: var(--field-radius);
+}
+.ds-search--compact { gap: var(--search-gap-compact); height: var(--search-height-compact); padding: 0 var(--search-padding-h-compact); }
+.ds-search__icon { flex: none; color: var(--on-surface); }
+.ds-search__input {
+  flex: 1; min-width: 0; margin: 0; padding: 0; border: 0; outline: 0; background: transparent;
+  font: 400 var(--text-body-lg-size)/1.25 Barlow, system-ui, sans-serif; color: var(--on-surface);
+}
+.ds-search__input::placeholder { color: var(--on-surface-placeholder); opacity: 1; }
+.ds-search--muted { border-color: var(--outline-medium); }
+.ds-search--muted .ds-search__icon { color: var(--on-surface-variant); }
+.ds-search--error { border-color: var(--on-surface-error); }
+.ds-search:hover { background: var(--surface-hover); }
+.ds-search:has(.ds-search__input:focus-visible) { background: var(--surface-container); border-color: var(--outline); }

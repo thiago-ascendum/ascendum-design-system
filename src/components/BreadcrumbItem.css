@@ -1,0 +1,10 @@
+/* Breadcrumb Item. Every value is a token from build/tokens.css, bound the same way as the Figma component. */
+.ds-breadcrumb-item { display: inline-flex; align-items: center; gap: var(--breadcrumb-gap); }
+.ds-breadcrumb-item__label {
+  font: 400 var(--text-body-size)/1.3 Barlow, system-ui, sans-serif;
+  color: var(--on-surface-variant); text-decoration: none;
+}
+.ds-breadcrumb-item__label:hover { color: var(--on-surface); }
+.ds-breadcrumb-item__label:focus-visible { outline: var(--border-width-focus) solid var(--focus); outline-offset: 2px; }
+.ds-breadcrumb-item--current .ds-breadcrumb-item__label { font-weight: 600; color: var(--on-surface); cursor: default; }
+.ds-breadcrumb-item__separator { flex: none; width: var(--size-icon-sm); height: var(--size-icon-sm); color: var(--on-surface-variant); }
